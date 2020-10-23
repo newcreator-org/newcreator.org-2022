@@ -8,9 +8,9 @@ export default function Philosophy() {
                     <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">基本情報・理念</h1>
                 </div>
                 <div className="flex flex-wrap -m-12 justify-center">
-                    <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-center">
-                        2019年1月に発足した次世代の学びをオープンに制作・提供するNPO法人です。<br />
-                            誰でも自由に使用や改変を行うことができ、無料で使える「オープンソース」という形で提供される教材の<br />開発およびそれらを利用したイベントの開催を行っています。</p>
+                    <p className="leading-relaxed text-base text-center">
+                        「特定非営利活動法人ニュークリエイター・オルグ」は、<br />2019年1月に発足した次世代の学びをオープンに制作・提供するNPO法人です。<br />
+                            誰でも自由に使用や改変を行うことができ、無料で使えるオープンソースという形で提供される教材の<br />開発およびそれらを利用したイベントの開催を行っています。</p>
                     <div className="p-12 md:w-full xl:w-1/2 flex flex-col items-center text-center">
                         <span
                             className="inline-block py-1 px-3 rounded bg-indigo-100 text-indigo-500 text-sm font-medium tracking-widest">VISION</span>
