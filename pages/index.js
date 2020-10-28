@@ -6,6 +6,7 @@ import Board from './components/board';
 import Sponser from './components/sponser';
 import Footer from './components/footer';
 import Font from './components/font';
+import News from './components/news';
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
                 <Board />
                 <Sponser />
                 <Font />
+                <News />
             </main>
             <Footer />
         </>
