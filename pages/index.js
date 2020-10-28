@@ -7,6 +7,7 @@ import Sponser from './components/sponser';
 import Footer from './components/footer';
 import Font from './components/font';
 import News from './components/news';
+import Withus from './components/with-us';
 
 export default function Home() {
     return (
@@ -19,6 +20,7 @@ export default function Home() {
                 <Sponser />
                 <Font />
                 <News />
+                <Withus />
             </main>
             <Footer />
         </>
