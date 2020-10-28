@@ -1,4 +1,12 @@
 export default function Philosophy() {
+
+    const messageEnglish = {
+        fontFamily: 'Ubuntu',
+        fontStyle: 'italic',
+        fontWeight: 400,
+        letterSpacing: '.08em'
+    };
+
     return (
         <section className="text-gray-700 body-font overflow-hidden">
 
@@ -17,7 +25,7 @@ export default function Philosophy() {
                         <h2 className="text-xl title-font font-medium text-gray-900 mt-4 mb-4">
                             IT教育を全国の子どもたちに<br />格差なく届ける
               </h2>
-                        <p className="leading-relaxed mb-8 message-english">Delivering IT education to
+                        <p className="leading-relaxed mb-8" style={messageEnglish}>Delivering IT education to
                 all children without disparity</p>
                     </div>
                     <div className="p-12 md:w-full xl:w-1/2 flex flex-col items-center text-center">
@@ -26,7 +34,7 @@ export default function Philosophy() {
                         <h2 className="text-xl title-font font-medium text-gray-900 mt-4 mb-4">
                             オープンソース教材の提供を通して<br />
                                             教育の変革を促進する</h2>
-                        <p className="leading-relaxed mb-8 message-english">Promoting educational reforms
+                        <p className="leading-relaxed mb-8" style={messageEnglish}>Promoting educational reforms
                 by providing open source materials</p>
                     </div>
                 </div>
