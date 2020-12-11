@@ -40,14 +40,17 @@ export default function Home({news}) {
                                 >
                                     <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                                         <span className="mt-1 text-gray-500 text-sm">
-                                            {format(parseISO(news.create_at), 'LLLL d, yyyy')}
+                                            {format(
+                                                parseISO(news.create_at),
+                                                "LLLL d, yyyy"
+                                            )}
                                         </span>
                                     </div>
                                     <div className="md:flex-grow">
                                         <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">
                                             {news.title}
                                         </h2>
-                                        <Link href={`news/${news.id}`}>
+                                        <Link href={news.link}>
                                             <a className="text-indigo-500 inline-flex items-center mt-4">
                                                 詳しく見る
                                                 <svg
