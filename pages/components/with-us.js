@@ -11,7 +11,7 @@ export default function Withus() {
               <div className="flex border-2 rounded-lg border-gray-200 p-8 sm:flex-row flex-col">
                 {/* <!-- <div
                             className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                               className="w-8 h-8" viewBox="0 0 24 24">
                               <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                             </svg>
@@ -22,8 +22,8 @@ export default function Withus() {
                     教材の企画やキャンプの計画など、直接的にnewCreatorを支えてくださる方を募集しています。</p>
                   <a className="mt-3 text-indigo-500 inline-flex items-center"
                     href="mailto:contact@newcreator.org">お問い合わせはこちら
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                      stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
+                      strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                       <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
                   </a>
@@ -34,7 +34,7 @@ export default function Withus() {
               <div className="flex border-2 rounded-lg border-gray-200 p-8 sm:flex-row flex-col">
                 {/* <!--   <div
                             className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                               className="w-10 h-10" viewBox="0 0 24 24">
                               <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                               <circle cx="12" cy="7" r="4"></circle>
@@ -46,8 +46,8 @@ export default function Withus() {
                     オープンソース版教材の開発に是非参加してください。GitHubで管理しているため、誰でも参加可能です。</p>
                   <a className="mt-3 text-indigo-500 inline-flex items-center"
                     href="https://github.com/newcreator-org">GitHubで開発に参加
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                      stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
+                      strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                       <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
                   </a>
@@ -58,7 +58,7 @@ export default function Withus() {
               <div className="flex border-2 rounded-lg border-gray-200 p-8 sm:flex-row flex-col">
                 {/* <!--   <div
                                         className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                           className="w-10 h-10" viewBox="0 0 24 24">
                                           <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                                           <circle cx="12" cy="7" r="4"></circle>
@@ -70,8 +70,8 @@ export default function Withus() {
                     教育の行き届かない地域での、ＩＴ教育を広める取り組みに資金面や様々な形でのリソース提供にご協力ください。</p>
                   <a className="mt-3 text-indigo-500 inline-flex items-center"
                     href="mailto:contact@newcreator.org">お問い合わせはこちら
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                      stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
+                      strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                       <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
                   </a>
@@ -82,7 +82,7 @@ export default function Withus() {
               <div className="flex border-2 rounded-lg border-gray-200 p-8 sm:flex-row flex-col">
                 {/* <!--   <div
                                         className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                           className="w-10 h-10" viewBox="0 0 24 24">
                                           <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                                           <circle cx="12" cy="7" r="4"></circle>
@@ -94,8 +94,8 @@ export default function Withus() {
                     newCreator教材を活用した、プログラミング教室をあなたの街や学校で実施してくださる団体を募集しています。</p>
                   <a className="mt-3 text-indigo-500 inline-flex items-center"
                     href="mailto:contact@newcreator.org">お問い合わせはこちら
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                      stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
+                      strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                       <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
                   </a>
