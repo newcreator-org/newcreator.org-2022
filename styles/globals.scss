@@ -29,3 +29,20 @@ body {
         "Helvetica Neue",
         sans-serif;
 }
+
+.footer--sticky {
+  position: fixed;
+  bottom: 0;
+  background-color: #53B1F0;
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  display: table;
+  z-index: 1;
+
+  &__text {
+    color: #FFF;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}

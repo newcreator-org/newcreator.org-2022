@@ -13,7 +13,7 @@ export default function Sponser() {
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
               <a className="block relative h-48 rounded overflow-hidden" href="https://logy.app">
                 <img alt="sponser" className="object-cover object-center w-full h-full block"
-                  src="/sponser/logy.png"/>
+                  src="/img/sponser/logy.png"/>
               </a>
               <div className="mt-4">
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">プログラミング教室
@@ -24,7 +24,7 @@ export default function Sponser() {
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
               <a className="block relative h-48 rounded overflow-hidden">
                 <img alt="sponser" className="object-cover object-center w-full h-full block"
-                  src="/sponser/iteens-lab.png"/>
+                  src="/img/sponser/iteens-lab.png"/>
               </a>
               <div className="mt-4">
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">子どもプログラミング教室</h3>
@@ -34,7 +34,7 @@ export default function Sponser() {
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
               <a className="block relative h-48 rounded overflow-hidden" href="https://www.kidsweekend.jp/portal">
                 <img alt="sponser" className="object-cover object-center w-full h-full block"
-                  src="/sponser/kids-weekend.png"/>
+                  src="/img/sponser/kids-weekend.png"/>
               </a>
               <div className="mt-4">
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">子供向け教室検索・予約サービス
@@ -45,7 +45,7 @@ export default function Sponser() {
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
               <a className="block relative h-48 rounded overflow-hidden" href="https://geolonia.com/">
                 <img alt="sponser" className="object-cover object-center w-full h-full block"
-                  src="/sponser/geolonia.png"/>
+                  src="/img/sponser/geolonia.png"/>
               </a>
               <div className="mt-4">
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">地図サービス</h3>
@@ -55,7 +55,7 @@ export default function Sponser() {
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
               <a className="block relative h-48 rounded overflow-hidden">
                 <img alt="sponser" className="object-cover object-center w-full h-full block"
-                  src="/sponser/kamiyama-kousen.png"/>
+                  src="/img/sponser/kamiyama-kousen.png"/>
               </a>
               <div className="mt-4">
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">神山まるごと高専設立委員会</h3>
@@ -65,7 +65,7 @@ export default function Sponser() {
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
               <a className="block relative h-48 rounded overflow-hidden">
                 <img alt="sponser" className="object-cover object-center w-full h-full block"
-                  src="/sponser/nakamura.png"/>
+                  src="/img/sponser/nakamura.png"/>
               </a>
               <div className="mt-4">
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">京都産業大学 非常勤講師
@@ -76,7 +76,7 @@ export default function Sponser() {
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
               <a className="block relative h-48 rounded overflow-hidden">
                 <img alt="sponser" className="object-cover object-center w-full h-full block"
-                  src="/sponser/morikawa.png"/>
+                  src="/img/sponser/morikawa.png"/>
               </a>
               <div className="mt-4">
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">micro:bitプログラミング研究室 運営
