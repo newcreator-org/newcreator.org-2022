@@ -8,13 +8,13 @@ export default function Apply() {
             <Heads />
             <Header />
             <main>
-                <footer class="footer--sticky">
+                {/* <footer class="footer--sticky">
                     <p class="footer--sticky__text">
                         ご好評につき、一次募集は終了いたしました。
                         <br />
                         みなさまのご応募ありがとうございました！
                     </p>
-                </footer>
+                </footer> */}
                 <section class="hero__cover--apply">
                     <div class="hero-body">
                         <h1 class="hero__title--apply">
