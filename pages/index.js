@@ -1,10 +1,8 @@
 import Header from "../components/header";
 import Hero from "../components/hero";
-import Board from "../components/board";
-import Sponser from "../components/sponser";
+// import Board from "../components/board";
 import Footer from "../components/footer";
-import Font from "../components/font";
-import Withus from "../components/with-us";
+// import Withus from "../components/with-us";
 import Heads from "./_head";
 import moment from "moment";
 
@@ -20,10 +18,10 @@ export default function Home({ news }) {
                         <div className="container px-5 py-24 mx-auto flex flex-wrap">
                             <div class="mb-2 md:w-1/3">
                                 <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
-                                    Activities
+                                    About
                                 </h2>
                                 <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-                                    主な活動内容
+                                    newCreator.org とは？
                                 </h1>
                             </div>
                             <div className="md:w-2/3 md:pl-6">
@@ -39,15 +37,15 @@ export default function Home({ news }) {
                         <div className="container mx-auto">
                             <div className="p-4 lg:w-full">
                                 <div className="h-full bg-gray-100 bg-opacity-75 px-8 p-16 rounded-lg overflow-hidden text-center relative">
-                                    <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                                        VISION
+                                    <h2 className="tracking-widest text-xs title-font font-medium text-indigo-500  mb-1">
+                                        Vision
                                     </h2>
                                     <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
                                         IT教育を全国の子どもたちに格差なく届ける
                                     </h1>
-                                    <p className="leading-relaxed mb-3">
-                                        DELIVERING IT EUCATION TO ALL CHILDREN
-                                        WITHOUT DISPARITY
+                                    <p className="leading-relaxed mb-3 italic">
+                                        Delivering IT education to all children
+                                        without disparity
                                     </p>
                                 </div>
                             </div>
@@ -162,7 +160,7 @@ export default function Home({ news }) {
                             <div className="-my-8">
                                 {news.map((news) => (
                                     <div
-                                        className="py-8 flex flex-wrap md:flex-no-wrap border-t-2 "
+                                        className="py-8 flex flex-wrap md:flex-no-wrap border-b-2 "
                                         key={news.id}
                                     >
                                         <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
@@ -200,10 +198,215 @@ export default function Home({ news }) {
                             </div>
                         </div>
                     </section>
-                    <Board />
-                    <Sponser />
-                    <Font />
-                    <Withus />
+                    <section className="text-gray-700 body-font">
+                        <div className="container px-5 py-24 mx-auto">
+                            <div className="flex flex-col text-center w-full mb-20">
+                                <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
+                                    Sponsers
+                                </h2>
+                                <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+                                    支援者の方々
+                                </h1>
+                                <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+                                    当法人はさまざまな団体、個人にご支援いただき成り立っています。
+                                    <br />
+                                    あなたもその一員になりませんか？
+                                </p>
+                            </div>
+                            <div className="flex flex-wrap -m-4">
+                                <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                    <a
+                                        className="block relative h-48 rounded overflow-hidden"
+                                        href="https://logy.app"
+                                    >
+                                        <img
+                                            alt="sponser"
+                                            className="object-cover object-center w-full h-full block rounded-lg border-2 "
+                                            src="/img/sponser/logy.png"
+                                        />
+                                    </a>
+                                    <div className="mt-4">
+                                        <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
+                                            プログラミング教室
+                                        </h3>
+                                        <h2 className="text-gray-900 title-font text-lg font-medium">
+                                            LOGYさま
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                    <a className="block relative h-48 rounded overflow-hidden">
+                                        <img
+                                            alt="sponser"
+                                            className="object-cover object-center w-full h-full block rounded-lg border-2 "
+                                            src="/img/sponser/iteens-lab.png"
+                                        />
+                                    </a>
+                                    <div className="mt-4">
+                                        <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
+                                            子どもプログラミング教室
+                                        </h3>
+                                        <h2 className="text-gray-900 title-font text-lg font-medium">
+                                            ITeens Labさま
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                    <a className="block relative h-48 rounded overflow-hidden">
+                                        <img
+                                            alt="sponser"
+                                            className="object-cover object-center w-full h-full block rounded-lg border-2 "
+                                            src="/img/sponser/kamiyama-kousen.png"
+                                        />
+                                    </a>
+                                    <div className="mt-4">
+                                        <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
+                                            神山まるごと高専設立委員会
+                                        </h3>
+                                        <h2 className="text-gray-900 title-font text-lg font-medium">
+                                            池田 朋弘さま
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                    <a className="block relative h-48 rounded overflow-hidden">
+                                        <img
+                                            alt="sponser"
+                                            className="object-cover object-center w-full h-full block rounded-lg border-2 "
+                                            src="/img/sponser/nakamura.png"
+                                        />
+                                    </a>
+                                    <div className="mt-4">
+                                        <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
+                                            京都産業大学 非常勤講師
+                                        </h3>
+                                        <h2 className="text-gray-900 title-font text-lg font-medium">
+                                            中村 亮太さま
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                    <a className="block relative h-48 rounded overflow-hidden">
+                                        <img
+                                            alt="sponser"
+                                            className="object-cover object-center w-full h-full block rounded-lg border-2 "
+                                            src="/img/sponser/morikawa.png"
+                                        />
+                                    </a>
+                                    <div className="mt-4">
+                                        <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
+                                            micro:bitプログラミング研究室 運営
+                                        </h3>
+                                        <h2 className="text-gray-900 title-font text-lg font-medium">
+                                            森川 治雄さま
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="text-gray-600 body-font">
+                        <div class="container px-5 py-24 mx-auto">
+                            <div className="flex flex-col text-center w-full mb-12">
+                                <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
+                                    Message
+                                </h2>
+                                <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
+                                    想い
+                                </h1>
+                            </div>
+                            <div class="flex flex-wrap -m-4">
+                                <div class="p-4 w-full">
+                                    <div class="h-full bg-gray-100 p-8 rounded">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor"
+                                            class="block w-5 h-5 text-gray-400 mb-4"
+                                            viewBox="0 0 975.036 975.036"
+                                        >
+                                            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                                        </svg>
+                                        <p class="leading-relaxed mb-12">
+                                            近年インターネットなどの情報通信技術により、社会はこれまでにない速度で変化し続けていますが、教育の内容はそう大きくは変わっていないのが現状です。
+                                            <br />
+                                            そのため、最新の情報にあわせた、最新の教育を提供していくことが我々の使命ではないかと考えています。
+                                            <br />
+                                            地域の方々、行政・企業の皆さまと協力し、よりよい「まなび」をつくっていくことはもちろん、すべての子どもたちに楽しく学習に取り組んでもらえる社会をめざします。
+                                        </p>
+                                        <a class="flex items-center">
+                                            <img
+                                                alt="testimonial"
+                                                src="/img/member/yoshi.jpg"
+                                                class="w-16 h-16 rounded-full flex-shrink-0 object-cover object-center"
+                                            />
+                                            <span class="flex-grow flex flex-col pl-6">
+                                                <span class="title-font font-medium text-gray-900">
+                                                    改野 由尚
+                                                </span>
+                                                <span class="text-gray-500 text-sm">
+                                                    理事長 / Co-Founder
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="text-gray-600 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                            <div class="w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
+                                <div className="flex flex-col text-center w-full mb-12">
+                                    <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
+                                        Detail
+                                    </h2>
+                                    <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
+                                        法人情報
+                                    </h1>
+                                </div>
+                                <div class="lg:px-20 px-2 flex border-t border-gray-200 py-4">
+                                    <span class="text-gray-500">法人名</span>
+                                    <span class="ml-auto text-gray-900">
+                                        特定非営利活動法人ニュークリエイター・オルグ
+                                    </span>
+                                </div>
+                                <div class="lg:px-20 px-2 flex border-t border-gray-200 py-4">
+                                    <span class="text-gray-500">法人番号</span>
+                                    <span class="ml-auto text-gray-900">
+                                        3120905005839
+                                    </span>
+                                </div>
+                                <div class="lg:px-20 px-2 flex border-t border-gray-200 py-4">
+                                    <span class="text-gray-500">設立</span>
+                                    <span class="ml-auto text-gray-900">
+                                        2017年より活動、2019年1月法人化
+                                    </span>
+                                </div>
+                                <div class="lg:px-20 px-2 flex border-t border-gray-200 py-4">
+                                    <span class="text-gray-500">従業員数</span>
+                                    <span class="ml-auto text-gray-900">
+                                        7名
+                                    </span>
+                                </div>
+                                <div class="lg:px-20 px-2 flex border-t border-gray-200 py-4">
+                                    <span class="text-gray-500">事業内容</span>
+                                    <span class="ml-auto text-gray-900">
+                                        IT教育事業及び啓発事業
+                                        <br />
+                                        次世代人材の育成に関する情報提供事業
+                                    </span>
+                                </div>
+                                <div class="lg:px-20 px-2 flex border-t border-b mb-6 border-gray-200 py-4">
+                                    <span class="text-gray-500">所在地</span>
+                                    <span class="ml-auto text-gray-900">
+                                        大阪府豊中市桜の町 3-7-7
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    {/* <Board /> */}
+                    {/* <Withus /> */}
                 </main>
                 <Footer />
             </body>
