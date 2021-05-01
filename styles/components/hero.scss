@@ -1,9 +1,9 @@
 .hero {
   &__cover {
-    background-image: url(../../public/img/cover.jpg) !important;
-    background-position: center;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.5), rgba(255, 255, 255, 0.8) ) fixed,url(../../public/img/cover2.jpg) !important;
+    background-position: center!important;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover!important;
     padding: 30vh 1.5rem;
     text-align: center;
 
@@ -16,15 +16,19 @@
       background-size: cover;
       padding: 26vh 1.5rem 18vh 1.5rem;
       text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
   &__title {
     color: hsl(192, 17%, 99%) !important;
     font-size: 3.5rem;
-    font-family: 'Seaweed Script', cursive;
-    transform: rotate(-2.5deg);
+    // font-family: 'Seaweed Script', cursive;
+    // transform: rotate(-2.5deg);
     line-height: 110%;
+    font-family: 'Source Code Pro', monospace;
 
     &--apply {
       color: hsl(192, 17%, 99%) !important;

@@ -8,17 +8,23 @@
 // --- add scss --- //
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Seaweed+Script&Ubuntu:ital,wght@1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 
 @import './components/header.scss';
 @import './components/hero.scss';
 
+html{
+  margin: 0;
+  padding: 0;
+}
 body {
-    margin: 0;
+    margin: 0!important;
+
     // background: #EFF3F4;
     background-color: #FFF;
     font-family:
         // minmoji,'minmoji',
-        'Noto Sans JP',
+        // 'Noto Sans JP',
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
