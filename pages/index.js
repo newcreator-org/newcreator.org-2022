@@ -4,7 +4,7 @@ import Hero from "../components/hero";
 import Footer from "../components/footer";
 // import Withus from "../components/with-us";
 import Heads from "./_head";
-import moment from "moment";
+import dayjs from "dayjs";
 
 export default function Home({ news }) {
     return (
@@ -165,7 +165,7 @@ export default function Home({ news }) {
                                     >
                                         <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                                             <span className="mt-1 text-gray-500 text-sm">
-                                                {moment(news.create_at).format(
+                                                {dayjs(news.create_at).format(
                                                     "YYYY.MM.DD"
                                                 )}
                                             </span>
@@ -365,15 +365,27 @@ export default function Home({ news }) {
                                     </h1>
                                 </div>
                                 <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
-                                    <span className="text-gray-500">法人名</span>
+                                    <span className="text-gray-500">
+                                        法人名
+                                    </span>
                                     <span className="ml-auto text-gray-900">
                                         特定非営利活動法人ニュークリエイター・オルグ
                                     </span>
                                 </div>
                                 <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
-                                    <span className="text-gray-500">法人番号</span>
+                                    <span className="text-gray-500">
+                                        法人番号
+                                    </span>
                                     <span className="ml-auto text-gray-900">
                                         3120905005839
+                                    </span>
+                                </div>
+                                <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
+                                    <span className="text-gray-500">
+                                        代表者名
+                                    </span>
+                                    <span className="ml-auto text-gray-900">
+                                        改野 由尚
                                     </span>
                                 </div>
                                 <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
@@ -383,13 +395,17 @@ export default function Home({ news }) {
                                     </span>
                                 </div>
                                 <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
-                                    <span className="text-gray-500">従業員数</span>
+                                    <span className="text-gray-500">
+                                        従業員数
+                                    </span>
                                     <span className="ml-auto text-gray-900">
                                         7名
                                     </span>
                                 </div>
                                 <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
-                                    <span className="text-gray-500">事業内容</span>
+                                    <span className="text-gray-500">
+                                        事業内容
+                                    </span>
                                     <span className="ml-auto text-gray-900">
                                         IT教育事業及び啓発事業
                                         <br />
@@ -397,7 +413,9 @@ export default function Home({ news }) {
                                     </span>
                                 </div>
                                 <div className="lg:px-20 px-2 flex border-t border-b mb-6 border-gray-200 py-4">
-                                    <span className="text-gray-500">所在地</span>
+                                    <span className="text-gray-500">
+                                        所在地
+                                    </span>
                                     <span className="ml-auto text-gray-900">
                                         大阪府豊中市桜の町 3-7-7
                                     </span>
