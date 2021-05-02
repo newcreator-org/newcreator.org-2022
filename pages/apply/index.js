@@ -8,13 +8,6 @@ export default function Apply() {
             <Heads />
             <Header />
             <main>
-                {/* <footer className="footer--sticky">
-                    <p className="footer--sticky__text">
-                        ご好評につき、一次募集は終了いたしました。
-                        <br />
-                        みなさまのご応募ありがとうございました！
-                    </p>
-                </footer> */}
                 <section className="hero__cover--apply">
                     <div className="hero-body">
                         <h1 className="hero__title--apply">
@@ -29,6 +22,13 @@ export default function Apply() {
                         </h2>
                     </div>
                 </section>
+                <footer className="footer--sticky">
+                    <p className="footer--sticky__text">
+                        ご好評につき、募集は終了いたしました。
+                        <br />
+                        みなさまのご応募ありがとうございました！
+                    </p>
+                </footer>
                 <section className="text-gray-700 body-font">
                     <div className="container px-5 py-24 mx-auto flex flex-wrap">
                         <div className="flex flex-col text-center w-full mb-10">
@@ -740,20 +740,22 @@ export default function Apply() {
                                 お知らせ
                             </h1>
                             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                                クラウドファンディングは終了しました。<br/>たくさんのご支援ありがとうございました！
+                                クラウドファンディングは終了しました。
+                                <br />
+                                たくさんのご支援ありがとうございました！
                             </p>
                         </div>
                         <div
                             className="lg:w-1/2 md:w-2/3 mx-auto"
-                            style={{width: "100%"}}
+                            style={{ width: "100%" }}
                         >
                             <iframe
                                 frameborder="0"
                                 marginheight="0"
-                                marginwidth="0"
+                                marginWidth="0"
                                 height="365"
                                 scrolling="no"
-                                style={{margin: "0 auto"}}
+                                style={{ margin: "0 auto" }}
                                 src="https://camp-fire.jp/projects/272924/widget"
                             >
                                 読み込んでいます…

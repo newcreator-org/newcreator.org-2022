@@ -1,13 +1,11 @@
+// custom class
 @tailwind base;
 @tailwind components;
-
-// custom class
-
 @tailwind utilities;
 
 // --- add scss --- //
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Seaweed+Script&Ubuntu:ital,wght@1,400&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 
 @import './components/header.scss';
@@ -17,9 +15,9 @@ html{
   margin: 0;
   padding: 0;
 }
+
 body {
     margin: 0!important;
-
     // background: #EFF3F4;
     background-color: #FFF;
     font-family:
@@ -37,10 +35,10 @@ body {
 }
 
 .footer--sticky {
-  position: fixed;
-  bottom: 0;
+  // position: fixed;
+  // top: 0;
   background-color: #53B1F0;
-  height: 60px;
+  height: 80px;
   width: 100%;
   text-align: center;
   display: table;

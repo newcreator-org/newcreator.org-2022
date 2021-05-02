@@ -16,11 +16,11 @@ export default function Home({ news }) {
                     <Hero />
                     <section className="text-gray-600 body-font">
                         <div className="container px-5 py-24 mx-auto flex flex-wrap">
-                            <div class="mb-2 md:w-1/3">
+                            <div className="mb-2 md:w-1/3">
                                 <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
                                     About
                                 </h2>
-                                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+                                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
                                     newCreator.org とは？
                                 </h1>
                             </div>
@@ -51,18 +51,18 @@ export default function Home({ news }) {
                             </div>
                         </div>
                     </section>
-                    <section class="text-gray-600 body-font">
-                        <div class="container px-5 py-24 mx-auto">
-                            <div class="flex flex-wrap w-full mb-12">
-                                <div class="lg:w-1/3 w-full mb-6 lg:mb-0">
+                    <section className="text-gray-600 body-font">
+                        <div className="container px-5 py-24 mx-auto">
+                            <div className="flex flex-wrap w-full mb-12">
+                                <div className="lg:w-1/3 w-full mb-6 lg:mb-0">
                                     <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
                                         Activities
                                     </h2>
-                                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+                                    <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
                                         主な活動内容
                                     </h1>
                                 </div>
-                                <p class="lg:w-2/3 w-full leading-relaxed text-gray-500">
+                                <p className="lg:w-2/3 w-full leading-relaxed text-gray-500">
                                     Whatever cardigan tote bag tumblr hexagon
                                     brooklyn asymmetrical gentrify, subway tile
                                     poke farm-to-table. Franzen you probably
@@ -71,73 +71,73 @@ export default function Home({ news }) {
                                     celiac humblebrag.
                                 </p>
                             </div>
-                            <div class="flex flex-wrap -m-4">
-                                <div class="xl:w-1/2 md:w-1/2 p-4">
-                                    <div class="bg-gray-100 p-6 rounded-lg">
+                            <div className="flex flex-wrap -m-4">
+                                <div className="xl:w-1/2 md:w-1/2 p-4">
+                                    <div className="bg-gray-100 p-6 rounded-lg">
                                         <img
-                                            class="h-60 rounded w-full object-cover object-center mb-6"
+                                            className="h-60 rounded w-full object-cover object-center mb-6"
                                             src="https://dummyimage.com/720x400"
                                             alt="content"
                                         />
-                                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
-                                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                                        <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
+                                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
                                             プログラミング体験ワークショップ開催
                                         </h2>
-                                        <p class="leading-relaxed text-base">
+                                        <p className="leading-relaxed text-base">
                                             2017年より、子ども向けのプログラミング教室「newCreator（ニュークリエイター）」を開催・運営してきました。
                                             <br />
                                             有名企業とのコラボレーションイベントや、地域でのワークショップなどを通して、多くの子どもたちにプログラミング教育を提供しています。
                                         </p>
                                     </div>
                                 </div>
-                                <div class="xl:w-1/2 md:w-1/2 p-4">
-                                    <div class="bg-gray-100 p-6 rounded-lg">
+                                <div className="xl:w-1/2 md:w-1/2 p-4">
+                                    <div className="bg-gray-100 p-6 rounded-lg">
                                         <img
-                                            class="h-60 rounded w-full object-cover object-center mb-6"
+                                            className="h-60 rounded w-full object-cover object-center mb-6"
                                             src="https://dummyimage.com/720x400"
                                             alt="content"
                                         />
-                                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
-                                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                                        <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
+                                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
                                             プログラミング体験ワークショップ開催
                                         </h2>
-                                        <p class="leading-relaxed text-base">
+                                        <p className="leading-relaxed text-base">
                                             2017年より、子ども向けのプログラミング教室「newCreator（ニュークリエイター）」を開催・運営してきました。
                                             <br />
                                             有名企業とのコラボレーションイベントや、地域でのワークショップなどを通して、多くの子どもたちにプログラミング教育を提供しています。
                                         </p>
                                     </div>
                                 </div>
-                                <div class="xl:w-1/2 md:w-1/2 p-4">
-                                    <div class="bg-gray-100 p-6 rounded-lg">
+                                <div className="xl:w-1/2 md:w-1/2 p-4">
+                                    <div className="bg-gray-100 p-6 rounded-lg">
                                         <img
-                                            class="h-60 rounded w-full object-cover object-center mb-6"
+                                            className="h-60 rounded w-full object-cover object-center mb-6"
                                             src="https://dummyimage.com/720x400"
                                             alt="content"
                                         />
-                                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
-                                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                                        <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
+                                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
                                             プログラミング体験ワークショップ開催
                                         </h2>
-                                        <p class="leading-relaxed text-base">
+                                        <p className="leading-relaxed text-base">
                                             2017年より、子ども向けのプログラミング教室「newCreator（ニュークリエイター）」を開催・運営してきました。
                                             <br />
                                             有名企業とのコラボレーションイベントや、地域でのワークショップなどを通して、多くの子どもたちにプログラミング教育を提供しています。
                                         </p>
                                     </div>
                                 </div>
-                                <div class="xl:w-1/2 md:w-1/2 p-4">
-                                    <div class="bg-gray-100 p-6 rounded-lg">
+                                <div className="xl:w-1/2 md:w-1/2 p-4">
+                                    <div className="bg-gray-100 p-6 rounded-lg">
                                         <img
-                                            class="h-60 rounded w-full object-cover object-center mb-6"
+                                            className="h-60 rounded w-full object-cover object-center mb-6"
                                             src="https://dummyimage.com/720x400"
                                             alt="content"
                                         />
-                                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
-                                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                                        <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
+                                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
                                             プログラミング体験ワークショップ開催
                                         </h2>
-                                        <p class="leading-relaxed text-base">
+                                        <p className="leading-relaxed text-base">
                                             2017年より、子ども向けのプログラミング教室「newCreator（ニュークリエイター）」を開催・運営してきました。
                                             <br />
                                             有名企業とのコラボレーションイベントや、地域でのワークショップなどを通して、多くの子どもたちにプログラミング教育を提供しています。
@@ -305,8 +305,8 @@ export default function Home({ news }) {
                             </div>
                         </div>
                     </section>
-                    <section class="text-gray-600 body-font">
-                        <div class="container px-5 py-24 mx-auto">
+                    <section className="text-gray-600 body-font">
+                        <div className="container px-5 py-24 mx-auto">
                             <div className="flex flex-col text-center w-full mb-12">
                                 <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
                                     Message
@@ -315,35 +315,35 @@ export default function Home({ news }) {
                                     想い
                                 </h1>
                             </div>
-                            <div class="flex flex-wrap -m-4">
-                                <div class="p-4 w-full">
-                                    <div class="h-full bg-gray-100 p-8 rounded">
+                            <div className="flex flex-wrap -m-4">
+                                <div className="p-4 w-full">
+                                    <div className="h-full bg-gray-100 p-8 rounded">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             fill="currentColor"
-                                            class="block w-5 h-5 text-gray-400 mb-4"
+                                            className="block w-5 h-5 text-gray-400 mb-4"
                                             viewBox="0 0 975.036 975.036"
                                         >
                                             <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
                                         </svg>
-                                        <p class="leading-relaxed mb-12">
+                                        <p className="leading-relaxed mb-12">
                                             近年インターネットなどの情報通信技術により、社会はこれまでにない速度で変化し続けていますが、教育の内容はそう大きくは変わっていないのが現状です。
                                             <br />
                                             そのため、最新の情報にあわせた、最新の教育を提供していくことが我々の使命ではないかと考えています。
                                             <br />
                                             地域の方々、行政・企業の皆さまと協力し、よりよい「まなび」をつくっていくことはもちろん、すべての子どもたちに楽しく学習に取り組んでもらえる社会をめざします。
                                         </p>
-                                        <a class="flex items-center">
+                                        <a className="flex items-center">
                                             <img
                                                 alt="testimonial"
                                                 src="/img/member/yoshi.jpg"
-                                                class="w-16 h-16 rounded-full flex-shrink-0 object-cover object-center"
+                                                className="w-16 h-16 rounded-full flex-shrink-0 object-cover object-center"
                                             />
-                                            <span class="flex-grow flex flex-col pl-6">
-                                                <span class="title-font font-medium text-gray-900">
+                                            <span className="flex-grow flex flex-col pl-6">
+                                                <span className="title-font font-medium text-gray-900">
                                                     改野 由尚
                                                 </span>
-                                                <span class="text-gray-500 text-sm">
+                                                <span className="text-gray-500 text-sm">
                                                     理事長 / Co-Founder
                                                 </span>
                                             </span>
@@ -353,9 +353,9 @@ export default function Home({ news }) {
                             </div>
                         </div>
                     </section>
-                    <section class="text-gray-600 body-font overflow-hidden">
-                        <div class="container px-5 py-24 mx-auto">
-                            <div class="w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
+                    <section className="text-gray-600 body-font overflow-hidden">
+                        <div className="container px-5 py-24 mx-auto">
+                            <div className="w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
                                 <div className="flex flex-col text-center w-full mb-12">
                                     <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
                                         Detail
@@ -364,41 +364,41 @@ export default function Home({ news }) {
                                         法人情報
                                     </h1>
                                 </div>
-                                <div class="lg:px-20 px-2 flex border-t border-gray-200 py-4">
-                                    <span class="text-gray-500">法人名</span>
-                                    <span class="ml-auto text-gray-900">
+                                <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
+                                    <span className="text-gray-500">法人名</span>
+                                    <span className="ml-auto text-gray-900">
                                         特定非営利活動法人ニュークリエイター・オルグ
                                     </span>
                                 </div>
-                                <div class="lg:px-20 px-2 flex border-t border-gray-200 py-4">
-                                    <span class="text-gray-500">法人番号</span>
-                                    <span class="ml-auto text-gray-900">
+                                <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
+                                    <span className="text-gray-500">法人番号</span>
+                                    <span className="ml-auto text-gray-900">
                                         3120905005839
                                     </span>
                                 </div>
-                                <div class="lg:px-20 px-2 flex border-t border-gray-200 py-4">
-                                    <span class="text-gray-500">設立</span>
-                                    <span class="ml-auto text-gray-900">
+                                <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
+                                    <span className="text-gray-500">設立</span>
+                                    <span className="ml-auto text-gray-900">
                                         2017年より活動、2019年1月法人化
                                     </span>
                                 </div>
-                                <div class="lg:px-20 px-2 flex border-t border-gray-200 py-4">
-                                    <span class="text-gray-500">従業員数</span>
-                                    <span class="ml-auto text-gray-900">
+                                <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
+                                    <span className="text-gray-500">従業員数</span>
+                                    <span className="ml-auto text-gray-900">
                                         7名
                                     </span>
                                 </div>
-                                <div class="lg:px-20 px-2 flex border-t border-gray-200 py-4">
-                                    <span class="text-gray-500">事業内容</span>
-                                    <span class="ml-auto text-gray-900">
+                                <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
+                                    <span className="text-gray-500">事業内容</span>
+                                    <span className="ml-auto text-gray-900">
                                         IT教育事業及び啓発事業
                                         <br />
                                         次世代人材の育成に関する情報提供事業
                                     </span>
                                 </div>
-                                <div class="lg:px-20 px-2 flex border-t border-b mb-6 border-gray-200 py-4">
-                                    <span class="text-gray-500">所在地</span>
-                                    <span class="ml-auto text-gray-900">
+                                <div className="lg:px-20 px-2 flex border-t border-b mb-6 border-gray-200 py-4">
+                                    <span className="text-gray-500">所在地</span>
+                                    <span className="ml-auto text-gray-900">
                                         大阪府豊中市桜の町 3-7-7
                                     </span>
                                 </div>
