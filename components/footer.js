@@ -3,96 +3,96 @@ import dayjs from 'dayjs';
 export default function Footer() {
     return (
         <>
-            <footer class="text-gray-600 body-font">
-                <div class="container px-5  py-12 mx-auto">
-                    <div class="flex flex-wrap md:text-left text-center order-first">
-                        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+            <footer className="text-gray-600 body-font">
+                {/* <div className="container px-5  py-12 mx-auto">
+                    <div className="flex flex-wrap md:text-left text-center order-first">
+                        <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+                            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
                                 CATEGORIES
                             </h2>
-                            <nav class="list-none mb-10">
+                            <nav className="list-none mb-10">
                                 <li>
-                                    <a class="text-gray-600 hover:text-gray-800">
+                                    <a className="text-gray-600 hover:text-gray-800">
                                         First Link
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="text-gray-600 hover:text-gray-800">
+                                    <a className="text-gray-600 hover:text-gray-800">
                                         Second Link
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="text-gray-600 hover:text-gray-800">
+                                    <a className="text-gray-600 hover:text-gray-800">
                                         Third Link
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="text-gray-600 hover:text-gray-800">
+                                    <a className="text-gray-600 hover:text-gray-800">
                                         Fourth Link
                                     </a>
                                 </li>
                             </nav>
                         </div>
-                        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+                        <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+                            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
                                 CATEGORIES
                             </h2>
-                            <nav class="list-none mb-10">
+                            <nav className="list-none mb-10">
                                 <li>
-                                    <a class="text-gray-600 hover:text-gray-800">
+                                    <a className="text-gray-600 hover:text-gray-800">
                                         First Link
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="text-gray-600 hover:text-gray-800">
+                                    <a className="text-gray-600 hover:text-gray-800">
                                         Second Link
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="text-gray-600 hover:text-gray-800">
+                                    <a className="text-gray-600 hover:text-gray-800">
                                         Third Link
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="text-gray-600 hover:text-gray-800">
+                                    <a className="text-gray-600 hover:text-gray-800">
                                         Fourth Link
                                     </a>
                                 </li>
                             </nav>
                         </div>
-                        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-                                CATEGORIES
+                        <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+                            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+                                newCreator School
                             </h2>
-                            <nav class="list-none mb-10">
+                            <nav className="list-none mb-10">
                                 <li>
-                                    <a class="text-gray-600 hover:text-gray-800">
-                                        First Link
+                                    <a className="text-gray-600 hover:text-gray-800">
+                                        Schoolとは？
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="text-gray-600 hover:text-gray-800">
-                                        Second Link
+                                    <a className="text-gray-600 hover:text-gray-800">
+                                     コース紹介
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="text-gray-600 hover:text-gray-800">
-                                        Third Link
+                                    <a className="text-gray-600 hover:text-gray-800">
+                                        料金
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="text-gray-600 hover:text-gray-800">
-                                        Fourth Link
+                                    <a className="text-gray-600 hover:text-gray-800">
+                                       相談する
                                     </a>
                                 </li>
                             </nav>
                         </div>
-                        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-                                Hosting:
+                        <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+                            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+                              Sponser (Web server)
                             </h2>
-                            <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
-                                <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+                            <div className="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+                                <div className="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
                                     <a
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -108,15 +108,15 @@ export default function Footer() {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="bg-gray-100">
-                    <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
-                        <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
+                </div> */}
+                <div className="bg-gray-100">
+                    <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+                        <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
                             © 2019 - {dayjs().format("YYYY")} -
                             <a
                                 href="https://twitter.com/knyttneve"
                                 rel="noopener noreferrer"
-                                class="text-gray-600 ml-1"
+                                className="text-gray-600 ml-1"
                                 target="_blank"
                             >
                                 特定非営利活動法人 ニュークリエイター・オルグ
@@ -158,13 +158,6 @@ export default function Footer() {
                     </div>
                 </div>
             </footer>
-            {/* // <!-- < footer className="footer" >
-        //     <div className="has-text-centered">
-        //         <p>特定非営利活動法人 ニュークリエイター・オルグ<br/>
-        //             〒560-0054 大阪府豊中市桜の町3-7-7 ｜ 法人番号 3120905005839</p>
-        //             <p className="copyright"><small lang="en">© 2020 newCreator.org</small></p>
-        //   </div>
-        // </footer> --> */}
         </>
     );
 }

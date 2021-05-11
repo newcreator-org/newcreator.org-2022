@@ -1,10 +1,9 @@
 import Header from "../components/header";
 import Hero from "../components/hero";
-// import Board from "../components/board";
 import Footer from "../components/footer";
-// import Withus from "../components/with-us";
 import Heads from "./_head";
 import dayjs from "dayjs";
+import { TwitterTimelineEmbed, TwitterFollowButton } from "react-twitter-embed";
 
 export default function Home({ news }) {
     return (
@@ -63,12 +62,9 @@ export default function Home({ news }) {
                                     </h1>
                                 </div>
                                 <p className="lg:w-2/3 w-full leading-relaxed text-gray-500">
-                                    Whatever cardigan tote bag tumblr hexagon
-                                    brooklyn asymmetrical gentrify, subway tile
-                                    poke farm-to-table. Franzen you probably
-                                    haven't heard of them man bun deep jianbing
-                                    selfies heirloom prism food truck ugh squid
-                                    celiac humblebrag.
+                                    子どもたちに高い品質の教育・体験を届けるために、さまざまな形での活動を行っています。
+                                    <br />
+                                    また、ここに掲載している限りではないため、地域や団体などでご協力が必要な際はぜひお声がけくださいませ。
                                 </p>
                             </div>
                             <div className="flex flex-wrap -m-4">
@@ -76,7 +72,7 @@ export default function Home({ news }) {
                                     <div className="bg-gray-100 p-6 rounded-lg">
                                         <img
                                             className="h-60 rounded w-full object-cover object-center mb-6"
-                                            src="https://dummyimage.com/720x400"
+                                            src="/img/works/workshop.jpg"
                                             alt="content"
                                         />
                                         <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
@@ -94,17 +90,16 @@ export default function Home({ news }) {
                                     <div className="bg-gray-100 p-6 rounded-lg">
                                         <img
                                             className="h-60 rounded w-full object-cover object-center mb-6"
-                                            src="https://dummyimage.com/720x400"
+                                            src="/img/works/microbit.jpg"
                                             alt="content"
                                         />
                                         <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
                                         <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                                            プログラミング体験ワークショップ開催
+                                            教材提供（子ども向け）
                                         </h2>
                                         <p className="leading-relaxed text-base">
-                                            2017年より、子ども向けのプログラミング教室「newCreator（ニュークリエイター）」を開催・運営してきました。
-                                            <br />
-                                            有名企業とのコラボレーションイベントや、地域でのワークショップなどを通して、多くの子どもたちにプログラミング教育を提供しています。
+                                            教育用マイコンボード「micro:bit」とニュークリエイター・オルグが制作したテキスト教材を配布するプロジェクトを企画・実施。
+                                            クラウドファンディングを通じて資金の調達をおこない、多くの子どもたちにプログラミングを体験してもらう機会をとどけることができました。
                                         </p>
                                     </div>
                                 </div>
@@ -112,17 +107,16 @@ export default function Home({ news }) {
                                     <div className="bg-gray-100 p-6 rounded-lg">
                                         <img
                                             className="h-60 rounded w-full object-cover object-center mb-6"
-                                            src="https://dummyimage.com/720x400"
+                                            src="/img/works/logy.jpg"
                                             alt="content"
                                         />
                                         <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
                                         <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                                            プログラミング体験ワークショップ開催
+                                            教材提供（法人向け）
                                         </h2>
                                         <p className="leading-relaxed text-base">
-                                            2017年より、子ども向けのプログラミング教室「newCreator（ニュークリエイター）」を開催・運営してきました。
-                                            <br />
-                                            有名企業とのコラボレーションイベントや、地域でのワークショップなどを通して、多くの子どもたちにプログラミング教育を提供しています。
+                                            教材提供を行うことで安価でより多くの子どもたちにプログラミングを学ぶ機会を提供できるようになりました。
+                                            micro:bitを使ったマンツーマンオンラインレッスンの提供や、共同でのイベントの企画および運営を行っています。
                                         </p>
                                     </div>
                                 </div>
@@ -130,17 +124,17 @@ export default function Home({ news }) {
                                     <div className="bg-gray-100 p-6 rounded-lg">
                                         <img
                                             className="h-60 rounded w-full object-cover object-center mb-6"
-                                            src="https://dummyimage.com/720x400"
+                                            src="/img/works/school.jpg"
                                             alt="content"
                                         />
                                         <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
                                         <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                                            プログラミング体験ワークショップ開催
+                                            オンライン・プログラミング教室
                                         </h2>
                                         <p className="leading-relaxed text-base">
-                                            2017年より、子ども向けのプログラミング教室「newCreator（ニュークリエイター）」を開催・運営してきました。
-                                            <br />
-                                            有名企業とのコラボレーションイベントや、地域でのワークショップなどを通して、多くの子どもたちにプログラミング教育を提供しています。
+                                            小学生・中学生向けのプログラミング教室「newCreator
+                                            School（ニュークリエイター
+                                            スクール）」を、他社のプランよりもリーズナブルな価格で、１対１のオンライン授業という形で提供しております。
                                         </p>
                                     </div>
                                 </div>
@@ -423,8 +417,388 @@ export default function Home({ news }) {
                             </div>
                         </div>
                     </section>
-                    {/* <Board /> */}
-                    {/* <Withus /> */}
+                    <section className="text-gray-600 body-font">
+                        <div className="container px-5 py-24 mx-auto">
+                            <div className="text-center mb-12">
+                                <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
+                                    Follow us
+                                </h2>
+                                <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
+                                    私たちの活動を支援して頂けませんか？
+                                </h1>
+                                <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto">
+                                    私たちの活動は、300円より応援していただくことができます。
+                                    <br />
+                                    寄付いただいた資金は当法人の活動資金としてさまざまな活動に使われます。
+                                </p>
+                            </div>
+                            <button
+                                className="flex mx-auto mt-12 text-white bg-indigo-500 border-0 py-3 px-16 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                                style={{
+                                    cursor: "not-allowed",
+                                    display: "flex",
+                                    alignItems: "baseline",
+                                }}
+                            >
+                                寄付する<small>（準備中）</small>
+                            </button>
+                            {/* <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+                                <div className="p-2 sm:w-1/2 w-full">
+                                    <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                                        <svg
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="3"
+                                            className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                            <path d="M22 4L12 14.01l-3-3"></path>
+                                        </svg>
+                                        <span className="title-font font-medium">
+                                            Authentic Cliche Forage
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="p-2 sm:w-1/2 w-full">
+                                    <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                                        <svg
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="3"
+                                            className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                            <path d="M22 4L12 14.01l-3-3"></path>
+                                        </svg>
+                                        <span className="title-font font-medium">
+                                            Kinfolk Chips Snackwave
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="p-2 sm:w-1/2 w-full">
+                                    <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                                        <svg
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="3"
+                                            className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                            <path d="M22 4L12 14.01l-3-3"></path>
+                                        </svg>
+                                        <span className="title-font font-medium">
+                                            Coloring Book Ethical
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="p-2 sm:w-1/2 w-full">
+                                    <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                                        <svg
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="3"
+                                            className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                            <path d="M22 4L12 14.01l-3-3"></path>
+                                        </svg>
+                                        <span className="title-font font-medium">
+                                            Typewriter Polaroid Cray
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="p-2 sm:w-1/2 w-full">
+                                    <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                                        <svg
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="3"
+                                            className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                            <path d="M22 4L12 14.01l-3-3"></path>
+                                        </svg>
+                                        <span className="title-font font-medium">
+                                            Pack Truffaut Blue
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="p-2 sm:w-1/2 w-full">
+                                    <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                                        <svg
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="3"
+                                            className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                            <path d="M22 4L12 14.01l-3-3"></path>
+                                        </svg>
+                                        <span className="title-font font-medium">
+                                            The Catcher In The Rye
+                                        </span>
+                                    </div>
+                                </div>
+                            </div> */}
+                            {/* <div className="lg:w-1/2 md:w-2/3 mx-auto mt-12">
+                                <div className="flex flex-wrap -m-2">
+                                    <div className="p-2 w-1/2">
+                                        <div className="relative">
+                                            <label
+                                                for="email"
+                                                className="leading-7 text-sm text-gray-600"
+                                            >
+                                                Email
+                                            </label>
+                                            <input
+                                                type="email"
+                                                id="email"
+                                                name="email"
+                                                className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="p-2 w-full">
+                                        <div className="relative">
+                                            <label
+                                                for="message"
+                                                className="leading-7 text-sm text-gray-600"
+                                            >
+                                                Message
+                                            </label>
+                                            <textarea
+                                                id="message"
+                                                name="message"
+                                                className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                                            ></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                       
+                            </div> */}
+                        </div>
+                    </section>
+                    <section className="text-gray-600 body-font">
+                        <div className="container px-5 pt-24  pb-40 mx-auto">
+                            <div className="flex flex-col text-center w-full mb-20">
+                                <h2 className="text-xs text-blue-500 tracking-widest font-medium title-font mb-1">
+                                    With us
+                                </h2>
+                                <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
+                                    一緒に新しい教育をつくりませんか？
+                                </h1>
+                                <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto">
+                                    各種応募、コラボレーションのご提案などを積極的に募集しております。
+                                    <br />
+                                    ぜひご相談くださいませ。
+                                </p>
+                            </div>
+                            <div className="flex flex-wrap -m-4">
+                                <div className="p-4 md:w-1/3">
+                                    <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                                        <div className="flex items-center mb-3">
+                                            <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                                                <svg
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    className="w-5 h-5"
+                                                    viewBox="0 0 24 24"
+                                                >
+                                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                                </svg>
+                                            </div>
+                                            <h2 className="text-gray-900 text-lg title-font font-medium">
+                                                企業スポンサー/コラボ
+                                            </h2>
+                                        </div>
+                                        <div className="flex-grow">
+                                            <p className="leading-relaxed text-base">
+                                                教育の行き届かない地域での、IT教育を広める取り組みに資金面や様々な形でのリソース提供・共同イベントにご協力ください。
+                                            </p>
+                                            {/* <a
+                                                className="mt-3 text-blue-500 inline-flex items-center"
+                                                href="mailto:contact@newcreator.org"
+                                            >
+                                                問い合わせる
+                                                <svg
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    className="w-4 h-4 ml-2"
+                                                    viewBox="0 0 24 24"
+                                                >
+                                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                                </svg>
+                                            </a> */}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="p-4 md:w-1/3">
+                                    <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                                        <div className="flex items-center mb-3">
+                                            <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                                                <svg
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    className="w-5 h-5"
+                                                    viewBox="0 0 24 24"
+                                                >
+                                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                                    <circle
+                                                        cx="12"
+                                                        cy="7"
+                                                        r="4"
+                                                    ></circle>
+                                                </svg>
+                                            </div>
+                                            <h2 className="text-gray-900 text-lg title-font font-medium">
+                                                プロジェクトスタッフ
+                                            </h2>
+                                        </div>
+                                        <div className="flex-grow">
+                                            <p className="leading-relaxed text-base">
+                                                教材の企画やキャンプの計画など、直接的にnewCreatorを支えてくださる方を募集しています。
+                                            </p>
+                                            {/* <a className="mt-3 text-blue-500 inline-flex items-center">
+                                                詳しく見る
+                                                <svg
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    className="w-4 h-4 ml-2"
+                                                    viewBox="0 0 24 24"
+                                                >
+                                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                                </svg>
+                                            </a> */}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="p-4 md:w-1/3">
+                                    <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                                        <div className="flex items-center mb-3">
+                                            <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                                                <svg
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    className="w-5 h-5"
+                                                    viewBox="0 0 24 24"
+                                                >
+                                                    <circle
+                                                        cx="6"
+                                                        cy="6"
+                                                        r="3"
+                                                    ></circle>
+                                                    <circle
+                                                        cx="6"
+                                                        cy="18"
+                                                        r="3"
+                                                    ></circle>
+                                                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                                                </svg>
+                                            </div>
+                                            <h2 className="text-gray-900 text-lg title-font font-medium">
+                                                協力コミュニティー
+                                            </h2>
+                                        </div>
+                                        <div className="flex-grow">
+                                            <p className="leading-relaxed text-base">
+                                                newCreator教材を活用した、プログラミング教室をあなたの街や学校で実施してくださる団体を募集しています。
+                                            </p>
+                                            {/* <a className="mt-3 text-blue-500 inline-flex items-center">
+                                                問い合わせる
+                                                <svg
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    className="w-4 h-4 ml-2"
+                                                    viewBox="0 0 24 24"
+                                                >
+                                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                                </svg>
+                                            </a> */}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="mailto:contact@newcreator.org">
+                                <button className="text-center flex flex-col justify-center mx-auto mt-12 text-white bg-indigo-500 border-0 py-3 px-16 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                                    <p className="text-center mx-auto">
+                                        お問い合わせ
+                                    </p>
+                                    <small className="text-center mx-auto">
+                                        contact@newcreator.org
+                                    </small>
+                                </button>
+                            </a>
+                        </div>
+                    </section>
+                    <section className="text-gray-600 body-font relative">
+                        <div className="absolute inset-0 bg-gray-300">
+                            <iframe
+                                width="100%"
+                                height="100%"
+                                frameborder="0"
+                                marginheight="0"
+                                marginwidth="0"
+                                title="map"
+                                scrolling="no"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.154364186492!2d135.46238851612793!3d34.802058080408514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000fa8dc4958889%3A0x9f74e5c550b052c9!2z44CSNTYwLTAwNTQg5aSn6Ziq5bqc6LGK5Lit5biC5qGc44Gu55S677yT5LiB55uu77yX4oiS77yX!5e0!3m2!1sja!2sjp!4v1620366469450!5m2!1sja!2sjp"
+                                style={{
+                                    filter:
+                                        "grayscale(0.2) contrast(1.0) opacity(0.6)",
+                                }}
+                            ></iframe>
+                        </div>
+                        <div className="container px-5 py-24 mx-auto flex">
+                            <div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-4 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md h-96">
+                                <TwitterTimelineEmbed
+                                    sourceType="profile"
+                                    screenName="nc_org"
+                                    options={{ height: 150 }}
+                                />
+                                <div className="mt-4 flex items-center justify-center">
+                                    <TwitterFollowButton
+                                        screenName={"nC_org"}
+                                        style={{ margin: "0 auto" }}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </main>
                 <Footer />
             </body>

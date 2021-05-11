@@ -1,6 +1,7 @@
 import Footer from "../../components/footer";
 import Header from "../../components/header";
 import Heads from "./_head";
+import component from '../../styles/components/hero.module.scss'
 
 export default function Apply() {
     return (
@@ -8,14 +9,14 @@ export default function Apply() {
             <Heads />
             <Header />
             <main>
-                <section className="hero__cover--apply">
-                    <div className="hero-body">
-                        <h1 className="hero__title--apply">
+                <section className={component.hero__cover}>
+                    <div>
+                        <h1 className={component.hero__title__apply}>
                             おうちでプログラミングをはじめよう。
                             <br />
                             全国の小学生に micro:bit プレゼント！
                         </h1>
-                        <h2 className="hero__subtitle">
+                        <h2 className={component.hero__subtitle}>
                             クラウドファンディングで集めた資金で、小学生のまなびをサポートします。
                             <br />
                             micro:bit でプログラミングをはじめてみませんか？
