@@ -1,0 +1,48 @@
+.hero {
+  &__cover {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.5), rgba(255, 255, 255, 0.8) ) fixed,url(../../public/img/cover2.jpg) !important;
+    background-position: center!important;
+    background-repeat: no-repeat;
+    background-size: cover!important;
+    padding: 30vh 1.5rem;
+    text-align: center;
+
+  }
+
+  &__title {
+    color: hsl(192, 17%, 99%) !important;
+    font-size: 3.5rem;
+    // font-family: 'Seaweed Script', cursive;
+    // transform: rotate(-2.5deg);
+    line-height: 110%;
+    font-family: 'Source Code Pro', monospace;
+
+    &__apply {
+      @extend .hero__title;
+      color: hsl(192, 17%, 99%) !important;
+      font-size: 3rem;
+      line-height: 140%;
+      font-weight: bold;
+    }
+  }
+
+  &__subtitle {
+    color: hsl(192, 17%, 99%) !important;
+    padding-top: 3rem;
+    line-height: 1.5;
+  }
+}
+
+
+
+@media screen and (max-width: 980px) {
+  .hero {
+    &__title {
+      font-size: 2.5rem;
+      &--apply {
+        font-size: 2rem;
+        line-height: 140%;
+      }
+    }
+  }
+}
