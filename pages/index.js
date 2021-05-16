@@ -432,16 +432,14 @@ export default function Home({ news }) {
                                     寄付いただいた資金は当法人の活動資金としてさまざまな活動に使われます。
                                 </p>
                             </div>
-                            <button
-                                className="flex mx-auto mt-12 text-white bg-indigo-500 border-0 py-3 px-16 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-                                style={{
-                                    cursor: "not-allowed",
-                                    display: "flex",
-                                    alignItems: "baseline",
-                                }}
+                            <a
+                                href="https://syncable.biz/associate/newcreator-org"
+                                target="_blank"
                             >
-                                寄付する<small>（準備中）</small>
-                            </button>
+                                <button className="flex mx-auto mt-12 text-white bg-indigo-500 border-0 py-3 px-16 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                                    寄付する
+                                </button>
+                            </a>
                             {/* <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
                                 <div className="p-2 sm:w-1/2 w-full">
                                     <div className="bg-gray-100 rounded flex p-4 h-full items-center">
@@ -772,8 +770,8 @@ export default function Home({ news }) {
                                 width="100%"
                                 height="100%"
                                 frameborder="0"
-                                marginheight="0"
-                                marginwidth="0"
+                                marginHeight="0"
+                                marginWidth="0"
                                 title="map"
                                 scrolling="no"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.154364186492!2d135.46238851612793!3d34.802058080408514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000fa8dc4958889%3A0x9f74e5c550b052c9!2z44CSNTYwLTAwNTQg5aSn6Ziq5bqc6LGK5Lit5biC5qGc44Gu55S677yT5LiB55uu77yX4oiS77yX!5e0!3m2!1sja!2sjp!4v1620366469450!5m2!1sja!2sjp"
