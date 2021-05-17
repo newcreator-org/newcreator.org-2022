@@ -114,9 +114,9 @@ export default function Footer() {
                         <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
                             © 2019 - {dayjs().format("YYYY")} -
                             <a
-                                href="https://twitter.com/knyttneve"
-                                rel="noopener noreferrer"
+                                href="/"
                                 className="text-gray-600 ml-1"
+                                rel="noopener noreferrer"
                                 target="_blank"
                             >
                                 特定非営利活動法人 ニュークリエイター・オルグ
@@ -125,6 +125,8 @@ export default function Footer() {
                         <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                             <a
                                 className="text-gray-500"
+                                rel="noopener noreferrer"
+                                target="_blank"
                                 href="https://www.facebook.com/newcreator.org/"
                             >
                                 <svg
@@ -141,6 +143,8 @@ export default function Footer() {
 
                             <a
                                 className="ml-3 text-gray-500"
+                                rel="noopener noreferrer"
+                                target="_blank"
                                 href="https://twitter.com/nC_org"
                             >
                                 <svg
