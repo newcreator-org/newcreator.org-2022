@@ -432,12 +432,22 @@ export default function Home({ news }) {
                                     寄付いただいた資金は当法人の活動資金としてさまざまな活動に使われます。
                                 </p>
                             </div>
+                            <p className="w-full mx-auto text-center">
+                                <small>
+                                    GMOあおぞら銀行 法人営業部(101) 1193846
+                                    トクヒ）ニュークリエイターオルグ 宛
+                                </small>
+                            </p>
+
+                            <p className="mt-4 text-base leading-relaxed w-full mx-auto text-center">
+                                <small>上記へ振り込みもしくは</small>
+                            </p>
                             <a
                                 href="https://syncable.biz/associate/newcreator-org"
                                 target="_blank"
                             >
-                                <button className="flex mx-auto mt-12 text-white bg-indigo-500 border-0 py-3 px-16 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                                    寄付する
+                                <button className="flex mx-auto mt-4 text-white bg-indigo-500 border-0 py-3 px-16 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                                    クレジットカードで寄付
                                 </button>
                             </a>
                             {/* <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
