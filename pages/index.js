@@ -199,7 +199,7 @@ export default function Home({ news }) {
                                     Sponsers
                                 </h2>
                                 <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
-                                    支援者の方々
+                                    ご支援くださっている方々
                                 </h1>
                                 <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
                                     当法人はさまざまな団体、個人にご支援いただき成り立っています。
@@ -209,56 +209,17 @@ export default function Home({ news }) {
                             </div>
                             <div className="flex flex-wrap -m-4">
                                 <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
-                                    <a
-                                        className="block relative h-48 rounded overflow-hidden"
-                                        href="https://logy.app"
-                                    >
-                                        <img
-                                            alt="sponser"
-                                            className="object-cover object-center w-full h-full block rounded-lg border-2 "
-                                            src="/img/sponser/logy.png"
-                                        />
-                                    </a>
+                                    <img
+                                        alt="sponser"
+                                        className="object-cover object-center w-full block rounded-lg border-2 h-48 rounded "
+                                        src="/img/sponser/noimage.png"
+                                    />
                                     <div className="mt-4">
                                         <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                                            プログラミング教室
+                                            （賛助会員）
                                         </h3>
                                         <h2 className="text-gray-900 title-font text-lg font-medium">
-                                            LOGYさま
-                                        </h2>
-                                    </div>
-                                </div>
-                                <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
-                                    <a className="block relative h-48 rounded overflow-hidden">
-                                        <img
-                                            alt="sponser"
-                                            className="object-cover object-center w-full h-full block rounded-lg border-2 "
-                                            src="/img/sponser/iteens-lab.png"
-                                        />
-                                    </a>
-                                    <div className="mt-4">
-                                        <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                                            子どもプログラミング教室
-                                        </h3>
-                                        <h2 className="text-gray-900 title-font text-lg font-medium">
-                                            ITeens Labさま
-                                        </h2>
-                                    </div>
-                                </div>
-                                <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
-                                    <a className="block relative h-48 rounded overflow-hidden">
-                                        <img
-                                            alt="sponser"
-                                            className="object-cover object-center w-full h-full block rounded-lg border-2 "
-                                            src="/img/sponser/kamiyama-kousen.png"
-                                        />
-                                    </a>
-                                    <div className="mt-4">
-                                        <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                                            神山まるごと高専設立委員会
-                                        </h3>
-                                        <h2 className="text-gray-900 title-font text-lg font-medium">
-                                            池田 朋弘さま
+                                            株式会社ゼロディバイドさま
                                         </h2>
                                     </div>
                                 </div>
@@ -458,7 +419,7 @@ export default function Home({ news }) {
                                             stroke="currentColor"
                                             stroke-linecap="round"
                                             stroke-linejoin="round"
-                                            stroke-width="3"
+                                            strokeWidth="3"
                                             className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
                                             viewBox="0 0 24 24"
                                         >
@@ -477,7 +438,7 @@ export default function Home({ news }) {
                                             stroke="currentColor"
                                             stroke-linecap="round"
                                             stroke-linejoin="round"
-                                            stroke-width="3"
+                                            strokeWidth="3"
                                             className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
                                             viewBox="0 0 24 24"
                                         >
@@ -496,7 +457,7 @@ export default function Home({ news }) {
                                             stroke="currentColor"
                                             stroke-linecap="round"
                                             stroke-linejoin="round"
-                                            stroke-width="3"
+                                            strokeWidth="3"
                                             className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
                                             viewBox="0 0 24 24"
                                         >
@@ -515,7 +476,7 @@ export default function Home({ news }) {
                                             stroke="currentColor"
                                             stroke-linecap="round"
                                             stroke-linejoin="round"
-                                            stroke-width="3"
+                                            strokeWidth="3"
                                             className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
                                             viewBox="0 0 24 24"
                                         >
@@ -534,7 +495,7 @@ export default function Home({ news }) {
                                             stroke="currentColor"
                                             stroke-linecap="round"
                                             stroke-linejoin="round"
-                                            stroke-width="3"
+                                            strokeWidth="3"
                                             className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
                                             viewBox="0 0 24 24"
                                         >
@@ -553,7 +514,7 @@ export default function Home({ news }) {
                                             stroke="currentColor"
                                             stroke-linecap="round"
                                             stroke-linejoin="round"
-                                            stroke-width="3"
+                                            strokeWidth="3"
                                             className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
                                             viewBox="0 0 24 24"
                                         >
@@ -629,7 +590,7 @@ export default function Home({ news }) {
                                                     stroke="currentColor"
                                                     stroke-linecap="round"
                                                     stroke-linejoin="round"
-                                                    stroke-width="2"
+                                                    strokeWidth="2"
                                                     className="w-5 h-5"
                                                     viewBox="0 0 24 24"
                                                 >
@@ -654,7 +615,7 @@ export default function Home({ news }) {
                                                     stroke="currentColor"
                                                     stroke-linecap="round"
                                                     stroke-linejoin="round"
-                                                    stroke-width="2"
+                                                    strokeWidth="2"
                                                     className="w-4 h-4 ml-2"
                                                     viewBox="0 0 24 24"
                                                 >
@@ -673,7 +634,7 @@ export default function Home({ news }) {
                                                     stroke="currentColor"
                                                     stroke-linecap="round"
                                                     stroke-linejoin="round"
-                                                    stroke-width="2"
+                                                    strokeWidth="2"
                                                     className="w-5 h-5"
                                                     viewBox="0 0 24 24"
                                                 >
@@ -700,7 +661,7 @@ export default function Home({ news }) {
                                                     stroke="currentColor"
                                                     stroke-linecap="round"
                                                     stroke-linejoin="round"
-                                                    stroke-width="2"
+                                                    strokeWidth="2"
                                                     className="w-4 h-4 ml-2"
                                                     viewBox="0 0 24 24"
                                                 >
@@ -719,7 +680,7 @@ export default function Home({ news }) {
                                                     stroke="currentColor"
                                                     stroke-linecap="round"
                                                     stroke-linejoin="round"
-                                                    stroke-width="2"
+                                                    strokeWidth="2"
                                                     className="w-5 h-5"
                                                     viewBox="0 0 24 24"
                                                 >
@@ -751,7 +712,7 @@ export default function Home({ news }) {
                                                     stroke="currentColor"
                                                     stroke-linecap="round"
                                                     stroke-linejoin="round"
-                                                    stroke-width="2"
+                                                    strokeWidth="2"
                                                     className="w-4 h-4 ml-2"
                                                     viewBox="0 0 24 24"
                                                 >
@@ -779,7 +740,7 @@ export default function Home({ news }) {
                             <iframe
                                 width="100%"
                                 height="100%"
-                                frameborder="0"
+                                frameBorder="0"
                                 marginHeight="0"
                                 marginWidth="0"
                                 title="map"

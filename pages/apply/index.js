@@ -82,7 +82,7 @@ export default function Apply() {
                                         className="w-4 h-4 ml-2"
                                         viewBox="0 0 24 24"
                                         stroke="currentColor"
-                                        stroke-width="2"
+                                        strokeWidth="2"
                                         fill="none"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
@@ -183,7 +183,7 @@ export default function Apply() {
                                         stroke="currentColor"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="3"
+                                        strokeWidth="3"
                                         className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
                                         viewBox="0 0 24 24"
                                     >
@@ -202,7 +202,7 @@ export default function Apply() {
                                         stroke="currentColor"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="3"
+                                        strokeWidth="3"
                                         className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
                                         viewBox="0 0 24 24"
                                     >
@@ -221,7 +221,7 @@ export default function Apply() {
                                         stroke="currentColor"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="3"
+                                        strokeWidth="3"
                                         className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
                                         viewBox="0 0 24 24"
                                     >
@@ -240,7 +240,7 @@ export default function Apply() {
                                         stroke="currentColor"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="3"
+                                        strokeWidth="3"
                                         className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
                                         viewBox="0 0 24 24"
                                     >
@@ -259,7 +259,7 @@ export default function Apply() {
                                         stroke="currentColor"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="3"
+                                        strokeWidth="3"
                                         className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
                                         viewBox="0 0 24 24"
                                     >
@@ -278,7 +278,7 @@ export default function Apply() {
                                         stroke="currentColor"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="3"
+                                        strokeWidth="3"
                                         className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
                                         viewBox="0 0 24 24"
                                     >
@@ -326,7 +326,7 @@ export default function Apply() {
                                         stroke="currentColor"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="2"
+                                        strokeWidth="2"
                                         className="w-12 h-12"
                                         viewBox="0 0 24 24"
                                     >
@@ -350,7 +350,7 @@ export default function Apply() {
                                                 className="w-4 h-4 ml-2"
                                                 viewBox="0 0 24 24"
                                                 stroke="currentColor"
-                                                stroke-width="2"
+                                                strokeWidth="2"
                                                 fill="none"
                                                 stroke-linecap="round"
                                                 stroke-linejoin="round"
@@ -370,7 +370,7 @@ export default function Apply() {
                                                 className="w-4 h-4 ml-2"
                                                 viewBox="0 0 24 24"
                                                 stroke="currentColor"
-                                                stroke-width="2"
+                                                strokeWidth="2"
                                                 fill="none"
                                                 stroke-linecap="round"
                                                 stroke-linejoin="round"
@@ -397,7 +397,7 @@ export default function Apply() {
                                         stroke="currentColor"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="2"
+                                        strokeWidth="2"
                                         className="w-12 h-12"
                                         viewBox="0 0 24 24"
                                     >
@@ -428,7 +428,7 @@ export default function Apply() {
                                         stroke="currentColor"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="2"
+                                        strokeWidth="2"
                                         className="w-12 h-12"
                                         viewBox="0 0 24 24"
                                     >
@@ -751,7 +751,7 @@ export default function Apply() {
                             style={{ width: "100%" }}
                         >
                             <iframe
-                                frameborder="0"
+                                frameBorder="0"
                                 marginHeight="0"
                                 marginWidth="0"
                                 height="365"
@@ -794,7 +794,7 @@ export default function Apply() {
                                                 className="w-4 h-4 ml-2"
                                                 viewBox="0 0 24 24"
                                                 stroke="currentColor"
-                                                stroke-width="2"
+                                                strokeWidth="2"
                                                 fill="none"
                                                 stroke-linecap="round"
                                                 stroke-linejoin="round"
@@ -814,7 +814,7 @@ export default function Apply() {
                                                 className="w-4 h-4 ml-2"
                                                 viewBox="0 0 24 24"
                                                 stroke="currentColor"
-                                                stroke-width="2"
+                                                strokeWidth="2"
                                                 fill="none"
                                                 stroke-linecap="round"
                                                 stroke-linejoin="round"
