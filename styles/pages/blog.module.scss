@@ -32,6 +32,13 @@ font-weight: 600;
   width: 1120px;
   margin: 40px auto;
   min-height: 45vh;
+  .link{
+    margin: 12px 0 0 0;
+  }
+  .top{
+    text-align: center;
+    margin: 8px auto 0 auto;
+  }
   *{
       line-height: 190%;
       letter-spacing: 0.2px;
@@ -69,7 +76,7 @@ margin-bottom: 12px;
     }
      .sns{
     display: flex;
-    margin: 60px auto;
+    margin: 60px auto 0 auto;
     justify-content: center;
     align-items: center;
     *{
