@@ -1,0 +1,19 @@
+$breakpoints: ('sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+);
+
+@mixin mq($size) {
+  @media screen and (max-width: #{map-get($breakpoints, $size)}) {
+    @content;
+  }
+}
+
+// 使い方イメージ
+// .. {
+//   // ↓768px以下で適用したいCSS
+//   @include mq(md) {
+//     margin: 0 1rem;
+//   }
+// }

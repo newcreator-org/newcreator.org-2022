@@ -170,7 +170,7 @@ export default function Home({ news }) {
                                             </h2>
                                             <a
                                                 className="text-indigo-500 inline-flex items-center mt-4"
-                                                href={news.link}
+                                                href={"/information/" + news.id}
                                             >
                                                 詳しく見る
                                                 <svg
