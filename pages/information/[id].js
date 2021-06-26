@@ -32,9 +32,15 @@ export default function BlogId({ blog }) {
                     <section className={blogStyle.content}>
                         <div
                             dangerouslySetInnerHTML={{
-                                __html: `${blog.content}`,
+                                __html: blog.content
+                                    ? `${blog.content}`
+                                    : "本文はありません",
                             }}
                         />
+                        <p className={blogStyle.link}>
+                            関連リンク: 
+                            <a href={blog.link}> {blog.link}</a>
+                        </p>
                         <div className={blogStyle.sns}>
                             <p>Share: </p>
                             <FacebookShareButton
@@ -62,6 +68,9 @@ export default function BlogId({ blog }) {
                                 <LineIcon size={28} round />
                             </LineShareButton>
                         </div>
+                        <a href="/">
+                            <p className={blogStyle.top}>TOPに戻る</p>
+                        </a>
                     </section>
                 </main>
                 <Footer />
@@ -81,7 +90,7 @@ export const getStaticPaths = async () => {
     )
         .then((res) => res.json())
         .catch(() => null);
-    const paths = data.contents.map((content) => `/blog/${content.id}`);
+    const paths = data.contents.map((content) => `/information/${content.id}`);
     return { paths, fallback: false };
 };
 
