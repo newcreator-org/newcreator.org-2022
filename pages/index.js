@@ -165,7 +165,7 @@ export default function Home({ news }) {
                                             </span>
                                         </div>
                                         <div className="md:flex-grow">
-                                            <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">
+                                            <h2 className="text-2xl font-medium text-gray-900 title-font mb-2 leading-relaxed">
                                                 {news.title}
                                             </h2>
                                             <a

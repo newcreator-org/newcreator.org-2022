@@ -47,7 +47,7 @@ export default function BlogId({ blog }) {
                                 url={[
                                     `https://newcreator.org/information/${blog.id}`,
                                 ]}
-                                quote={[`newcreator.org｜${blog.title}`]}
+                                quote={[`特定非営利活動法人ニュークリエイター・オルグ｜${blog.title}`]}
                             >
                                 <FacebookIcon size={28} round />
                             </FacebookShareButton>
@@ -55,7 +55,8 @@ export default function BlogId({ blog }) {
                                 url={[
                                     `https://newcreator.org/information/${blog.id}`,
                                 ]}
-                                quote={[`newcreator.org｜${blog.title}`]}
+                                title={[`特定非営利活動法人ニュークリエイター・オルグ｜${blog.title}`]}
+                                via={"nC_org"}
                             >
                                 <TwitterIcon size={28} round />
                             </TwitterShareButton>
@@ -63,7 +64,7 @@ export default function BlogId({ blog }) {
                                 url={[
                                     `https://newcreator.org/information/${blog.id}`,
                                 ]}
-                                quote={[`newcreator.org｜${blog.title}`]}
+                                quote={[`特定非営利活動法人ニュークリエイター・オルグ｜${blog.title}`]}
                             >
                                 <LineIcon size={28} round />
                             </LineShareButton>
