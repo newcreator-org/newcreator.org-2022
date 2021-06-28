@@ -37,10 +37,10 @@ export default function BlogId({ blog }) {
                                     : "本文はありません",
                             }}
                         />
-                        <p className={blogStyle.link}>
-                            関連リンク: 
-                            <a href={blog.link}> {blog.link}</a>
-                        </p>
+                          
+                            <p className={blogStyle.link}>関連リンク: 
+                            <a  href={blog.link}> {blog.link}</a>
+                            </p>
                         <div className={blogStyle.sns}>
                             <p>Share: </p>
                             <FacebookShareButton

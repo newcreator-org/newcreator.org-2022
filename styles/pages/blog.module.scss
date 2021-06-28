@@ -33,7 +33,12 @@ font-weight: 600;
   margin: 40px auto;
   min-height: 45vh;
   .link{
+    width: 100%;
+    max-width: 100%;
     margin: 12px 0 0 0;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
   }
   .top{
     text-align: center;
