@@ -1,3 +1,4 @@
+import Heads from "../_head";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import dayjs from "dayjs";
@@ -14,6 +15,7 @@ import {
 export default function BlogId({ blog }) {
     return (
         <>
+            <Heads />
             <body>
                 <Header />
                 <main>
