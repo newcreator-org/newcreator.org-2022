@@ -15,7 +15,7 @@ import {
 export default function BlogId({ blog }) {
     return (
         <>
-            <Heads />
+            <Heads child={blog.title}/>
             <body>
                 <Header />
                 <main>
