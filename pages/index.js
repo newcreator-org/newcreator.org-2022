@@ -208,6 +208,62 @@ export default function Home({ news }) {
                                 </p>
                             </div>
                             <div className="flex flex-wrap -m-4">
+                              <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                    <a className="block relative h-48 rounded overflow-hidden">
+                                        <img
+                                            alt="sponser"
+                                            className="object-cover object-center w-full h-full block rounded-lg border-2 "
+                                            src="/img/sponser/google.jpg"
+                                        />
+                                    </a>
+                                    <div className="mt-4">
+                                        <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
+                                            グーグル合同会社さま
+                                        </h2>
+                                    </div>
+                                </div>
+                              <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                    <a className="block relative h-48 rounded overflow-hidden">
+                                        <img
+                                            alt="sponser"
+                                            className="object-cover object-center w-full h-full block rounded-lg border-2 "
+                                            src="/img/sponser/lenovo.png"
+                                        />
+                                    </a>
+                                    <div className="mt-4">
+                                        <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
+                                            レノボ・ジャパン合同会社さま
+                                        </h2>
+                                    </div>
+                                </div>
+                                    <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                    <a className="block relative h-48 rounded overflow-hidden">
+                                        <img
+                                            alt="sponser"
+                                            className="object-cover object-center w-full h-full block rounded-lg border-2 "
+                                            src="/img/sponser/sakurainternet.png"
+                                        />
+                                    </a>
+                                    <div className="mt-4">
+                                        <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
+                                            さくらインターネット株式会社さま
+                                        </h2>
+                                    </div>
+                                </div>
+                                         <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                    <a className="block relative h-48 rounded overflow-hidden">
+                                        <img
+                                            alt="sponser"
+                                            className="object-cover object-center w-full h-full block rounded-lg border-2 "
+                                            src="/img/sponser/gmo.jpg"
+                                        />
+                                    </a>
+                                    <div className="mt-4">
+                                        <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
+                                            GMOインターネット株式会社さま
+                                        </h2>
+                                    </div>
+                                </div>
                                 <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                                     <img
                                         alt="sponser"
@@ -215,15 +271,26 @@ export default function Home({ news }) {
                                         src="/img/sponser/noimage.png"
                                     />
                                     <div className="mt-4">
-                                        <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                                            （賛助会員）
-                                        </h3>
-                                        <h2 className="text-gray-900 title-font text-lg font-medium">
+                                        <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
                                             株式会社ゼロディバイドさま
                                         </h2>
                                     </div>
                                 </div>
-                                <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                 <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                    <a className="block relative h-48 rounded overflow-hidden">
+                                        <img
+                                            alt="sponser"
+                                            className="object-cover object-center w-full h-full block rounded-lg border-2 "
+                                            src="/img/sponser/osaka.jpg"
+                                        />
+                                    </a>
+                                    <div className="mt-4">
+                                        <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
+                                              大阪市
+                                        </h2>
+                                    </div>
+                                </div>
+                                {/* <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                                     <a className="block relative h-48 rounded overflow-hidden">
                                         <img
                                             alt="sponser"
@@ -232,31 +299,14 @@ export default function Home({ news }) {
                                         />
                                     </a>
                                     <div className="mt-4">
-                                        <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                                            京都産業大学 非常勤講師
-                                        </h3>
-                                        <h2 className="text-gray-900 title-font text-lg font-medium">
+                                        <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
                                             中村 亮太さま
                                         </h2>
-                                    </div>
-                                </div>
-                                <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
-                                    <a className="block relative h-48 rounded overflow-hidden">
-                                        <img
-                                            alt="sponser"
-                                            className="object-cover object-center w-full h-full block rounded-lg border-2 "
-                                            src="/img/sponser/morikawa.png"
-                                        />
-                                    </a>
-                                    <div className="mt-4">
-                                        <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                                            micro:bitプログラミング研究室 運営
+                                        <h3 className="text-gray-500 text-xs tracking-widest title-font">
+                                            京都産業大学 非常勤講師
                                         </h3>
-                                        <h2 className="text-gray-900 title-font text-lg font-medium">
-                                            森川 治雄さま
-                                        </h2>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </section>
