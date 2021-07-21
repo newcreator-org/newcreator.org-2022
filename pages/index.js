@@ -208,6 +208,20 @@ export default function Home({ news }) {
                                 </p>
                             </div>
                             <div className="flex flex-wrap -m-4">
+                                 <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                    <a className="block relative h-48 rounded overflow-hidden">
+                                        <img
+                                            alt="sponser"
+                                            className="object-cover object-center w-full h-full block rounded-lg border-2 "
+                                            src="/img/sponser/noevir.png"
+                                        />
+                                    </a>
+                                    <div className="mt-4">
+                                        <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
+                                            ノエビアグリーン財団
+                                        </h2>
+                                    </div>
+                                </div>
                               <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                                     <a className="block relative h-48 rounded overflow-hidden">
                                         <img
@@ -218,7 +232,7 @@ export default function Home({ news }) {
                                     </a>
                                     <div className="mt-4">
                                         <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
-                                            グーグル合同会社さま
+                                            グーグル合同会社
                                         </h2>
                                     </div>
                                 </div>
@@ -232,7 +246,7 @@ export default function Home({ news }) {
                                     </a>
                                     <div className="mt-4">
                                         <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
-                                            レノボ・ジャパン合同会社さま
+                                            レノボ・ジャパン合同会社
                                         </h2>
                                     </div>
                                 </div>
@@ -241,12 +255,12 @@ export default function Home({ news }) {
                                         <img
                                             alt="sponser"
                                             className="object-cover object-center w-full h-full block rounded-lg border-2 "
-                                            src="/img/sponser/sakurainternet.png"
+                                            src="/img/sponser/sakura.png"
                                         />
                                     </a>
                                     <div className="mt-4">
                                         <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
-                                            さくらインターネット株式会社さま
+                                            さくらインターネット株式会社
                                         </h2>
                                     </div>
                                 </div>
@@ -260,7 +274,21 @@ export default function Home({ news }) {
                                     </a>
                                     <div className="mt-4">
                                         <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
-                                            GMOインターネット株式会社さま
+                                            GMOインターネット株式会社
+                                        </h2>
+                                    </div>
+                                </div>
+                                          <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                    <a className="block relative h-48 rounded overflow-hidden">
+                                        <img
+                                            alt="sponser"
+                                            className="object-cover object-center w-full h-full block rounded-lg border-2 "
+                                            src="/img/sponser/eduo.png"
+                                        />
+                                    </a>
+                                    <div className="mt-4">
+                                        <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
+                                            株式会社Yoki / eduo
                                         </h2>
                                     </div>
                                 </div>
@@ -272,7 +300,7 @@ export default function Home({ news }) {
                                     />
                                     <div className="mt-4">
                                         <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
-                                            株式会社ゼロディバイドさま
+                                            株式会社ゼロディバイド
                                         </h2>
                                     </div>
                                 </div>
@@ -281,7 +309,7 @@ export default function Home({ news }) {
                                         <img
                                             alt="sponser"
                                             className="object-cover object-center w-full h-full block rounded-lg border-2 "
-                                            src="/img/sponser/osaka.jpg"
+                                            src="/img/sponser/osaka.png"
                                         />
                                     </a>
                                     <div className="mt-4">
@@ -300,7 +328,7 @@ export default function Home({ news }) {
                                     </a>
                                     <div className="mt-4">
                                         <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
-                                            中村 亮太さま
+                                            中村 亮太
                                         </h2>
                                         <h3 className="text-gray-500 text-xs tracking-widest title-font">
                                             京都産業大学 非常勤講師
