@@ -292,6 +292,20 @@ export default function Home({ news }) {
                                         </h2>
                                     </div>
                                 </div>
+                                           <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                    <a className="block relative h-48 rounded overflow-hidden">
+                                        <img
+                                            alt="sponser"
+                                            className="object-cover object-center w-full h-full block rounded-lg border-2 "
+                                            src="/img/sponser/yukai.png"
+                                        />
+                                    </a>
+                                    <div className="mt-4">
+                                        <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
+                                            ユカイ工学株式会社
+                                        </h2>
+                                    </div>
+                                </div>
                                 <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                                     <img
                                         alt="sponser"
