@@ -236,7 +236,7 @@ export default function Home({ news }) {
                                         </h2>
                                     </div>
                                 </div>
-                              {/* <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                              <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                                     <a className="block relative h-48 rounded overflow-hidden">
                                         <img
                                             alt="sponser"
@@ -249,7 +249,7 @@ export default function Home({ news }) {
                                             レノボ・ジャパン合同会社
                                         </h2>
                                     </div>
-                                </div> */}
+                                </div>
                                     <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                                     <a className="block relative h-48 rounded overflow-hidden">
                                         <img
