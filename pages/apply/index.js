@@ -1,7 +1,7 @@
 import Footer from "../../components/footer";
 import Header from "../../components/header";
 import Heads from "./_head";
-import component from '../../styles/components/hero.module.scss'
+import component from "../../styles/components/hero.module.scss";
 
 export default function Apply() {
     return (

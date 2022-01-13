@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default function Heads({child}) {
+export default function Heads({ child }) {
     const title =
             "特定非営利活動法人ニュークリエイター・オルグ｜newCreator.org",
         description =
@@ -13,16 +13,25 @@ export default function Heads({child}) {
         <Head>
             <title>{child ? `${child}｜${title}` : title}</title>
             <meta name="description" content={description} />
-            <meta property="og:title" content={child ? `${child}｜${title}` : title} />
+            <meta
+                property="og:title"
+                content={child ? `${child}｜${title}` : title}
+            />
             <meta property="og:description" content={description} />
             <meta property="og:type" content="blog" />
             <meta property="og:url" content={url} />
             <meta property="og:image" content={url + image} />
-            <meta property="og:site_name" content={child ? `${child}｜${title}` : title} />
+            <meta
+                property="og:site_name"
+                content={child ? `${child}｜${title}` : title}
+            />
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:site" content={twitter} />
             <meta name="twitter:url" content={url} />
-            <meta name="twitter:title" content={child ? `${child}｜${title}` : title} />
+            <meta
+                name="twitter:title"
+                content={child ? `${child}｜${title}` : title}
+            />
             <meta name="twitter:description" content={description} />
             <meta name="twitter:image" content={url + image} />
             <link rel="canonical" href={url} />

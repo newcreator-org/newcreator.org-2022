@@ -208,7 +208,7 @@ export default function Home({ news }) {
                                 </p>
                             </div>
                             <div className="flex flex-wrap -m-4">
-                                 <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                                     <a className="block relative h-48 rounded overflow-hidden">
                                         <img
                                             alt="sponser"
@@ -222,7 +222,7 @@ export default function Home({ news }) {
                                         </h2>
                                     </div>
                                 </div>
-                              <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                                     <a className="block relative h-48 rounded overflow-hidden">
                                         <img
                                             alt="sponser"
@@ -236,7 +236,7 @@ export default function Home({ news }) {
                                         </h2>
                                     </div>
                                 </div>
-                              <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                                     <a className="block relative h-48 rounded overflow-hidden">
                                         <img
                                             alt="sponser"
@@ -250,7 +250,7 @@ export default function Home({ news }) {
                                         </h2>
                                     </div>
                                 </div>
-                                    <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                                     <a className="block relative h-48 rounded overflow-hidden">
                                         <img
                                             alt="sponser"
@@ -264,7 +264,7 @@ export default function Home({ news }) {
                                         </h2>
                                     </div>
                                 </div>
-                                         <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                                     <a className="block relative h-48 rounded overflow-hidden">
                                         <img
                                             alt="sponser"
@@ -278,7 +278,7 @@ export default function Home({ news }) {
                                         </h2>
                                     </div>
                                 </div>
-                                          <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                                     <a className="block relative h-48 rounded overflow-hidden">
                                         <img
                                             alt="sponser"
@@ -292,7 +292,7 @@ export default function Home({ news }) {
                                         </h2>
                                     </div>
                                 </div>
-                                           <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                                     <a className="block relative h-48 rounded overflow-hidden">
                                         <img
                                             alt="sponser"
@@ -318,7 +318,7 @@ export default function Home({ news }) {
                                         </h2>
                                     </div>
                                 </div>
-                                 <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                                     <a className="block relative h-48 rounded overflow-hidden">
                                         <img
                                             alt="sponser"
@@ -328,7 +328,7 @@ export default function Home({ news }) {
                                     </a>
                                     <div className="mt-4">
                                         <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
-                                              大阪市
+                                            大阪市
                                         </h2>
                                     </div>
                                 </div>

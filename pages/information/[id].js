@@ -2,7 +2,7 @@ import Heads from "../_head";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import dayjs from "dayjs";
-import blogStyle from '../../styles/pages/blog.module.scss';
+import blogStyle from "../../styles/pages/blog.module.scss";
 import {
     FacebookShareButton,
     FacebookIcon,
@@ -15,7 +15,7 @@ import {
 export default function BlogId({ blog }) {
     return (
         <>
-            <Heads child={blog.title}/>
+            <Heads child={blog.title} />
             <body>
                 <Header />
                 <main>
@@ -39,17 +39,20 @@ export default function BlogId({ blog }) {
                                     : "本文はありません",
                             }}
                         />
-                          
-                            <p className={blogStyle.link}>関連リンク: 
-                            <a  href={blog.link}> {blog.link}</a>
-                            </p>
+
+                        <p className={blogStyle.link}>
+                            関連リンク:
+                            <a href={blog.link}> {blog.link}</a>
+                        </p>
                         <div className={blogStyle.sns}>
                             <p>Share: </p>
                             <FacebookShareButton
                                 url={[
                                     `https://newcreator.org/information/${blog.id}`,
                                 ]}
-                                quote={[`特定非営利活動法人ニュークリエイター・オルグ｜${blog.title}`]}
+                                quote={[
+                                    `特定非営利活動法人ニュークリエイター・オルグ｜${blog.title}`,
+                                ]}
                             >
                                 <FacebookIcon size={28} round />
                             </FacebookShareButton>
@@ -57,7 +60,9 @@ export default function BlogId({ blog }) {
                                 url={[
                                     `https://newcreator.org/information/${blog.id}`,
                                 ]}
-                                title={[`特定非営利活動法人ニュークリエイター・オルグ｜${blog.title}`]}
+                                title={[
+                                    `特定非営利活動法人ニュークリエイター・オルグ｜${blog.title}`,
+                                ]}
                                 via={"nC_org"}
                             >
                                 <TwitterIcon size={28} round />
@@ -66,7 +71,9 @@ export default function BlogId({ blog }) {
                                 url={[
                                     `https://newcreator.org/information/${blog.id}`,
                                 ]}
-                                quote={[`特定非営利活動法人ニュークリエイター・オルグ｜${blog.title}`]}
+                                quote={[
+                                    `特定非営利活動法人ニュークリエイター・オルグ｜${blog.title}`,
+                                ]}
                             >
                                 <LineIcon size={28} round />
                             </LineShareButton>

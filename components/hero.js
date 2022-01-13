@@ -1,7 +1,6 @@
-import component from '../styles/components/hero.module.scss';
+import component from "../styles/components/hero.module.scss";
 
 export default function Hero() {
-
     return (
         <>
             <section className={component.hero__cover}>
