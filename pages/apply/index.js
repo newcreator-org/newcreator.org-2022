@@ -1,7 +1,7 @@
 import Footer from "../../components/footer";
 import Header from "../../components/header";
 import Heads from "./_head";
-import component from "../../styles/components/hero.module.scss";
+import component from "../../components/hero.module.scss";
 
 export default function Apply() {
     return (
@@ -85,7 +85,7 @@ export default function Apply() {
                                         strokeWidth="2"
                                         fill="none"
                                         stroke-linecap="round"
-                                        stroke-linejoin="round"
+                                        strokeLinejoin="round"
                                     >
                                         <path d="M5 12h14"></path>
                                         <path d="M12 5l7 7-7 7"></path>
@@ -182,7 +182,7 @@ export default function Apply() {
                                         fill="none"
                                         stroke="currentColor"
                                         stroke-linecap="round"
-                                        stroke-linejoin="round"
+                                        strokeLinejoin="round"
                                         strokeWidth="3"
                                         className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
                                         viewBox="0 0 24 24"
@@ -201,7 +201,7 @@ export default function Apply() {
                                         fill="none"
                                         stroke="currentColor"
                                         stroke-linecap="round"
-                                        stroke-linejoin="round"
+                                        strokeLinejoin="round"
                                         strokeWidth="3"
                                         className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
                                         viewBox="0 0 24 24"
@@ -220,7 +220,7 @@ export default function Apply() {
                                         fill="none"
                                         stroke="currentColor"
                                         stroke-linecap="round"
-                                        stroke-linejoin="round"
+                                        strokeLinejoin="round"
                                         strokeWidth="3"
                                         className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
                                         viewBox="0 0 24 24"
@@ -239,7 +239,7 @@ export default function Apply() {
                                         fill="none"
                                         stroke="currentColor"
                                         stroke-linecap="round"
-                                        stroke-linejoin="round"
+                                        strokeLinejoin="round"
                                         strokeWidth="3"
                                         className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
                                         viewBox="0 0 24 24"
@@ -258,7 +258,7 @@ export default function Apply() {
                                         fill="none"
                                         stroke="currentColor"
                                         stroke-linecap="round"
-                                        stroke-linejoin="round"
+                                        strokeLinejoin="round"
                                         strokeWidth="3"
                                         className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
                                         viewBox="0 0 24 24"
@@ -277,7 +277,7 @@ export default function Apply() {
                                         fill="none"
                                         stroke="currentColor"
                                         stroke-linecap="round"
-                                        stroke-linejoin="round"
+                                        strokeLinejoin="round"
                                         strokeWidth="3"
                                         className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
                                         viewBox="0 0 24 24"
@@ -325,7 +325,7 @@ export default function Apply() {
                                         fill="none"
                                         stroke="currentColor"
                                         stroke-linecap="round"
-                                        stroke-linejoin="round"
+                                        strokeLinejoin="round"
                                         strokeWidth="2"
                                         className="w-12 h-12"
                                         viewBox="0 0 24 24"
@@ -353,7 +353,7 @@ export default function Apply() {
                                                 strokeWidth="2"
                                                 fill="none"
                                                 stroke-linecap="round"
-                                                stroke-linejoin="round"
+                                                strokeLinejoin="round"
                                             >
                                                 <path d="M5 12h14"></path>
                                                 <path d="M12 5l7 7-7 7"></path>
@@ -373,7 +373,7 @@ export default function Apply() {
                                                 strokeWidth="2"
                                                 fill="none"
                                                 stroke-linecap="round"
-                                                stroke-linejoin="round"
+                                                strokeLinejoin="round"
                                             >
                                                 <path d="M5 12h14"></path>
                                                 <path d="M12 5l7 7-7 7"></path>
@@ -396,7 +396,7 @@ export default function Apply() {
                                         fill="none"
                                         stroke="currentColor"
                                         stroke-linecap="round"
-                                        stroke-linejoin="round"
+                                        strokeLinejoin="round"
                                         strokeWidth="2"
                                         className="w-12 h-12"
                                         viewBox="0 0 24 24"
@@ -427,7 +427,7 @@ export default function Apply() {
                                         fill="none"
                                         stroke="currentColor"
                                         stroke-linecap="round"
-                                        stroke-linejoin="round"
+                                        strokeLinejoin="round"
                                         strokeWidth="2"
                                         className="w-12 h-12"
                                         viewBox="0 0 24 24"
@@ -797,7 +797,7 @@ export default function Apply() {
                                                 strokeWidth="2"
                                                 fill="none"
                                                 stroke-linecap="round"
-                                                stroke-linejoin="round"
+                                                strokeLinejoin="round"
                                             >
                                                 <path d="M5 12h14"></path>
                                                 <path d="M12 5l7 7-7 7"></path>
@@ -817,7 +817,7 @@ export default function Apply() {
                                                 strokeWidth="2"
                                                 fill="none"
                                                 stroke-linecap="round"
-                                                stroke-linejoin="round"
+                                                strokeLinejoin="round"
                                             >
                                                 <path d="M5 12h14"></path>
                                                 <path d="M12 5l7 7-7 7"></path>

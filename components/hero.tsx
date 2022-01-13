@@ -1,4 +1,4 @@
-import component from "../styles/components/hero.module.scss";
+import component from "./hero.module.scss";
 
 export default function Hero() {
     return (
