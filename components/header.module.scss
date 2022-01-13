@@ -1,0 +1,42 @@
+.header {
+  height: 70px;
+  width: 100%;
+
+  .nav {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 3;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    .logo {
+      background-image: url(../public/img/logo-black.svg);
+      height: 32px;
+      background-position: top left;
+      background-repeat: no-repeat;
+      background-size: contain;
+      color: transparent;
+      margin: 0;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 980px) {
+  .header {
+    .nav {
+         justify-content: start;
+    }
+  }
+}
