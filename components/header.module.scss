@@ -13,7 +13,7 @@
     transition: all 0.5s ease;
     z-index: 3;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 
     .logo {
@@ -36,7 +36,7 @@
 @media screen and (max-width: 980px) {
   .header {
     .nav {
-         justify-content: start;
+      justify-content: flex-start;
     }
   }
 }

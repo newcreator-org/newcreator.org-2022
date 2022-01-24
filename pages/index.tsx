@@ -8,7 +8,7 @@ import { TwitterTimelineEmbed, TwitterFollowButton } from "react-twitter-embed";
 export default function Home({ news }) {
     return (
       <>
-        <Heads child={undefined} />
+        <Heads child={null} />
         <body>
           <Header />
           <main>
