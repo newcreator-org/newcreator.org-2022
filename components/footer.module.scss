@@ -1,12 +1,29 @@
 .footer {
   color: rgba(113, 128, 150, 1);
-  text-align: center;
-  .box{
-    padding: 20px 0;
+  text-align: left;
+  .left{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     p{
-      font-size:.875rem;
+      font-size:.775rem;
       a{
         margin-left: 4px;
+      }
+    }
+  }
+  .right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    p{
+      margin-left: 4px;
+      a{
+        cursor: pointer;
+        &:hover{
+          text-decoration: underline;
+        }
       }
     }
   }

@@ -23,8 +23,19 @@ export default function Apply() {
                         </h2>
                     </div>
                 </section>
-                <footer className="footer--sticky">
-                    <p className="footer--sticky__text">
+                <footer style={{
+                    backgroundColor: "#53B1F0",
+                    height: 80,
+                    width: "100%",
+                    textAlign: "center",
+                    display: "table",
+                    zIndex: 1
+                }}>
+                    <p style={{
+                          color: "#FFFFFF",
+                          display: "table-cell",
+                          verticalAlign: "middle",
+                    }}>
                         ご好評につき、募集は終了いたしました。
                         <br />
                         みなさまのご応募ありがとうございました！
@@ -84,7 +95,7 @@ export default function Apply() {
                                         stroke="currentColor"
                                         strokeWidth="2"
                                         fill="none"
-                                        stroke-linecap="round"
+                                        strokeLinecap="round"
                                         strokeLinejoin="round"
                                     >
                                         <path d="M5 12h14"></path>
@@ -181,7 +192,7 @@ export default function Apply() {
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
-                                        stroke-linecap="round"
+                                        strokeLinecap="round"
                                         strokeLinejoin="round"
                                         strokeWidth="3"
                                         className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
@@ -200,7 +211,7 @@ export default function Apply() {
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
-                                        stroke-linecap="round"
+                                        strokeLinecap="round"
                                         strokeLinejoin="round"
                                         strokeWidth="3"
                                         className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
@@ -219,7 +230,7 @@ export default function Apply() {
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
-                                        stroke-linecap="round"
+                                        strokeLinecap="round"
                                         strokeLinejoin="round"
                                         strokeWidth="3"
                                         className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
@@ -238,7 +249,7 @@ export default function Apply() {
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
-                                        stroke-linecap="round"
+                                        strokeLinecap="round"
                                         strokeLinejoin="round"
                                         strokeWidth="3"
                                         className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
@@ -257,7 +268,7 @@ export default function Apply() {
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
-                                        stroke-linecap="round"
+                                        strokeLinecap="round"
                                         strokeLinejoin="round"
                                         strokeWidth="3"
                                         className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
@@ -276,7 +287,7 @@ export default function Apply() {
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
-                                        stroke-linecap="round"
+                                        strokeLinecap="round"
                                         strokeLinejoin="round"
                                         strokeWidth="3"
                                         className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
@@ -324,7 +335,7 @@ export default function Apply() {
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
-                                        stroke-linecap="round"
+                                        strokeLinecap="round"
                                         strokeLinejoin="round"
                                         strokeWidth="2"
                                         className="w-12 h-12"
@@ -352,7 +363,7 @@ export default function Apply() {
                                                 stroke="currentColor"
                                                 strokeWidth="2"
                                                 fill="none"
-                                                stroke-linecap="round"
+                                                strokeLinecap="round"
                                                 strokeLinejoin="round"
                                             >
                                                 <path d="M5 12h14"></path>
@@ -372,7 +383,7 @@ export default function Apply() {
                                                 stroke="currentColor"
                                                 strokeWidth="2"
                                                 fill="none"
-                                                stroke-linecap="round"
+                                                strokeLinecap="round"
                                                 strokeLinejoin="round"
                                             >
                                                 <path d="M5 12h14"></path>
@@ -395,7 +406,7 @@ export default function Apply() {
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
-                                        stroke-linecap="round"
+                                        strokeLinecap="round"
                                         strokeLinejoin="round"
                                         strokeWidth="2"
                                         className="w-12 h-12"
@@ -426,7 +437,7 @@ export default function Apply() {
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
-                                        stroke-linecap="round"
+                                        strokeLinecap="round"
                                         strokeLinejoin="round"
                                         strokeWidth="2"
                                         className="w-12 h-12"
@@ -796,7 +807,7 @@ export default function Apply() {
                                                 stroke="currentColor"
                                                 strokeWidth="2"
                                                 fill="none"
-                                                stroke-linecap="round"
+                                                strokeLinecap="round"
                                                 strokeLinejoin="round"
                                             >
                                                 <path d="M5 12h14"></path>
@@ -816,7 +827,7 @@ export default function Apply() {
                                                 stroke="currentColor"
                                                 strokeWidth="2"
                                                 fill="none"
-                                                stroke-linecap="round"
+                                                strokeLinecap="round"
                                                 strokeLinejoin="round"
                                             >
                                                 <path d="M5 12h14"></path>
