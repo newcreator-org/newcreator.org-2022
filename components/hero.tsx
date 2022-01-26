@@ -1,12 +1,12 @@
-import component from "./hero.module.scss";
+import style from "./hero.module.scss";
 
 export default function Hero() {
     return (
         <>
-            <section className={component.hero__cover}>
+            <section className={style.hero__cover}>
                 <div>
-                    <h1 className={component.hero__title}>new Creator();</h1>
-                    <h2 className={component.hero__subtitle}>
+                    <h1 className={style.hero__title}>new Creator();</h1>
+                    <h2 className={style.hero__subtitle}>
                         いまの「まなび」がミライをつくる。
                         <br />
                         特定非営利活動法人ニュークリエイター・オルグは、子どもたちの「まなび」をサポートします。{" "}

@@ -1,10 +1,10 @@
-import component from "./footer.module.scss";
+import style from "./footer.module.scss";
 
 export default function Footer() {
     return (
         <>
-        <footer className={component.footer}>
-                    <div className={component.box}>
+        <footer className={style.footer}>
+                    <div className={style.box}>
                         <p>
                             © 2019, 
                             <a
