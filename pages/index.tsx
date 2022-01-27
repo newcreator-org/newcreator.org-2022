@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import Heads from "./_head";
 import dayjs from "dayjs";
 import { TwitterTimelineEmbed, TwitterFollowButton } from "react-twitter-embed";
+import Contact from "../components/contact";
 
 export default function Home({ news }) {
     return (
@@ -488,7 +489,7 @@ export default function Home({ news }) {
                                         <svg
                                             fill="none"
                                             stroke="currentColor"
-                                            stroke-linecap="round"
+                                            strokeLinecap="round"
                                             strokeLinejoin="round"
                                             strokeWidth="3"
                                             className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
@@ -507,7 +508,7 @@ export default function Home({ news }) {
                                         <svg
                                             fill="none"
                                             stroke="currentColor"
-                                            stroke-linecap="round"
+                                            strokeLinecap="round"
                                             strokeLinejoin="round"
                                             strokeWidth="3"
                                             className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
@@ -526,7 +527,7 @@ export default function Home({ news }) {
                                         <svg
                                             fill="none"
                                             stroke="currentColor"
-                                            stroke-linecap="round"
+                                            strokeLinecap="round"
                                             strokeLinejoin="round"
                                             strokeWidth="3"
                                             className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
@@ -545,7 +546,7 @@ export default function Home({ news }) {
                                         <svg
                                             fill="none"
                                             stroke="currentColor"
-                                            stroke-linecap="round"
+                                            strokeLinecap="round"
                                             strokeLinejoin="round"
                                             strokeWidth="3"
                                             className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
@@ -564,7 +565,7 @@ export default function Home({ news }) {
                                         <svg
                                             fill="none"
                                             stroke="currentColor"
-                                            stroke-linecap="round"
+                                            strokeLinecap="round"
                                             strokeLinejoin="round"
                                             strokeWidth="3"
                                             className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
@@ -583,7 +584,7 @@ export default function Home({ news }) {
                                         <svg
                                             fill="none"
                                             stroke="currentColor"
-                                            stroke-linecap="round"
+                                            strokeLinecap="round"
                                             strokeLinejoin="round"
                                             strokeWidth="3"
                                             className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
@@ -636,7 +637,8 @@ export default function Home({ news }) {
                             </div> */}
               </div>
             </section>
-            <section className="text-gray-600 body-font">
+            <Contact/>
+            {/* <section className="text-gray-600 body-font">
               <div className="container px-5 pt-24  pb-40 mx-auto">
                 <div className="flex flex-col text-center w-full mb-20">
                   <h2 className="text-xs text-blue-500 tracking-widest font-medium title-font mb-1">
@@ -659,7 +661,7 @@ export default function Home({ news }) {
                           <svg
                             fill="none"
                             stroke="currentColor"
-                            stroke-linecap="round"
+                            strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeWidth="2"
                             className="w-5 h-5"
@@ -675,8 +677,7 @@ export default function Home({ news }) {
                       <div className="flex-grow">
                         <p className="leading-relaxed text-base">
                           教育の行き届かない地域での、IT教育を広める取り組みに資金面や様々な形でのリソース提供・共同イベントにご協力ください。
-                        </p>
-                        {/* <a
+                        </p><a
                                                 className="mt-3 text-blue-500 inline-flex items-center"
                                                 href="mailto:contact@newcreator.org"
                                             >
@@ -684,7 +685,7 @@ export default function Home({ news }) {
                                                 <svg
                                                     fill="none"
                                                     stroke="currentColor"
-                                                    stroke-linecap="round"
+                                                    strokeLinecap="round"
                                                     strokeLinejoin="round"
                                                     strokeWidth="2"
                                                     className="w-4 h-4 ml-2"
@@ -692,7 +693,7 @@ export default function Home({ news }) {
                                                 >
                                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                                 </svg>
-                                            </a> */}
+                                            </a> *
                       </div>
                     </div>
                   </div>
@@ -703,7 +704,7 @@ export default function Home({ news }) {
                           <svg
                             fill="none"
                             stroke="currentColor"
-                            stroke-linecap="round"
+                            strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeWidth="2"
                             className="w-5 h-5"
@@ -721,12 +722,12 @@ export default function Home({ news }) {
                         <p className="leading-relaxed text-base">
                           教材の企画やキャンプの計画など、直接的にnewCreatorを支えてくださる方を募集しています。
                         </p>
-                        {/* <a className="mt-3 text-blue-500 inline-flex items-center">
+                        <a className="mt-3 text-blue-500 inline-flex items-center">
                                                 詳しく見る
                                                 <svg
                                                     fill="none"
                                                     stroke="currentColor"
-                                                    stroke-linecap="round"
+                                                    strokeLinecap="round"
                                                     strokeLinejoin="round"
                                                     strokeWidth="2"
                                                     className="w-4 h-4 ml-2"
@@ -734,7 +735,7 @@ export default function Home({ news }) {
                                                 >
                                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                                 </svg>
-                                            </a> */}
+                                            </a>
                       </div>
                     </div>
                   </div>
@@ -745,7 +746,7 @@ export default function Home({ news }) {
                           <svg
                             fill="none"
                             stroke="currentColor"
-                            stroke-linecap="round"
+                            strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeWidth="2"
                             className="w-5 h-5"
@@ -764,12 +765,12 @@ export default function Home({ news }) {
                         <p className="leading-relaxed text-base">
                           newCreator教材を活用した、プログラミング教室をあなたの街や学校で実施してくださる団体を募集しています。
                         </p>
-                        {/* <a className="mt-3 text-blue-500 inline-flex items-center">
+                        <a className="mt-3 text-blue-500 inline-flex items-center">
                                                 問い合わせる
                                                 <svg
                                                     fill="none"
                                                     stroke="currentColor"
-                                                    stroke-linecap="round"
+                                                    strokeLinecap="round"
                                                     strokeLinejoin="round"
                                                     strokeWidth="2"
                                                     className="w-4 h-4 ml-2"
@@ -777,7 +778,7 @@ export default function Home({ news }) {
                                                 >
                                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                                 </svg>
-                                            </a> */}
+                                            </a>
                       </div>
                     </div>
                   </div>
@@ -791,7 +792,7 @@ export default function Home({ news }) {
                   </button>
                 </a>
               </div>
-            </section>
+            </section> */}
             <section className="text-gray-600 body-font relative">
               <div className="absolute inset-0 bg-gray-300">
                 <iframe

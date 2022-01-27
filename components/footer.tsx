@@ -11,6 +11,7 @@ export default function Footer() {
                 newCreator.org
               </a>
             </p>
+            </div>
             <div className={style.right}>
               <p>
                 <a href="https://legal.newcreator.org/privacy-policy/" target={"_blank"}>
@@ -23,7 +24,6 @@ export default function Footer() {
                 </a>
               </p>
             </div>
-          </div>
         </footer>
       </>
     );
