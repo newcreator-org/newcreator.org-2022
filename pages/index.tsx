@@ -281,6 +281,20 @@ export default function Home({ news }) {
                       <img
                         alt="sponser"
                         className="object-cover object-center w-full h-full block rounded-lg border-2 "
+                        src="/img/sponser/epara.png"
+                      />
+                    </a>
+                    <div className="mt-4">
+                      <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
+                        株式会社ePARA
+                      </h2>
+                    </div>
+                  </div>
+                  <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                    <a className="block relative h-48 rounded overflow-hidden">
+                      <img
+                        alt="sponser"
+                        className="object-cover object-center w-full h-full block rounded-lg border-2 "
                         src="/img/sponser/eduo.png"
                       />
                     </a>
@@ -637,7 +651,7 @@ export default function Home({ news }) {
                             </div> */}
               </div>
             </section>
-            <Contact/>
+            <Contact />
             {/* <section className="text-gray-600 body-font">
               <div className="container px-5 pt-24  pb-40 mx-auto">
                 <div className="flex flex-col text-center w-full mb-20">
