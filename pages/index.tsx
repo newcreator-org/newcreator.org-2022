@@ -26,11 +26,14 @@ export default function Home({ news }) {
                 </div>
                 <div className="md:w-2/3 md:pl-6">
                   <p className="leading-relaxed text-base">
-                    2019年1月に発足した次世代の学びをオープンに制作・提供するNPO法人です。
+                    特定非営利活動法人ニュークリエイター・オルグは、「全国の子どもたちにIT教育を格差なく届ける」というビジョンのもと活動を行っております。
                     <br />
-                    誰でも自由に使用や改変を行うことができ、無料で使えるオープンソースという形で提供される教材の
+                    とりわけIT教育は、都市部と地方部で大きな環境の差があります。
                     <br />
-                    開発およびそれらを利用したイベントの開催を行っています。
+                    文部科学省の調査でもプログラミング教育の趣旨、目的、基本的な考え方などの情報が不足していることから都市部と比較して地方部でのプログラミング・ITに関する教育が遅れていることがわかっていることのほか、子どもが進路や将来を考えるときに参考となるロールモデルが身近にいないことなど、地方が抱える課題は大きい
+                    と考えます。
+                    <br />
+                    そのような課題の解決に向け、全国の子どもたちが隔てなくITに親しみ、利活用できるようにするために、オンライン及び全国各地でのイベントを実施しています。
                   </p>
                 </div>
               </div>
@@ -64,7 +67,8 @@ export default function Home({ news }) {
                   <p className="lg:w-2/3 w-full leading-relaxed text-gray-500">
                     子どもたちに高い品質の教育・体験を届けるために、さまざまな形での活動を行っています。
                     <br />
-                    また、ここに掲載している限りではないため、地域や団体などでご協力が必要な際はぜひお声がけくださいませ。
+                    ニュークリエイター・オルグではNPO法人という立場を活かし、民間企業と行政、そして参加者をつなぐイベント・プログラムを
+                    行っています。これによりステークホルダーに左右されず、内容の濃いプログラムを提供できます。
                   </p>
                 </div>
                 <div className="flex flex-wrap -m-4">
@@ -80,9 +84,7 @@ export default function Home({ news }) {
                         プログラミング体験ワークショップ開催
                       </h2>
                       <p className="leading-relaxed text-base">
-                        2017年より、子ども向けのプログラミング教室「newCreator（ニュークリエイター）」を開催・運営してきました。
-                        <br />
-                        有名企業とのコラボレーションイベントや、地域でのワークショップなどを通して、多くの子どもたちにプログラミング教育を提供しています。
+                        これからの子どもたちが必ず必要とされる技術の１つでもあるプログラミング教育を企業や行政とコラボして提供しています。自社主催のワークショップに限らず講師の派遣などにより2017年度より全国各地での教室を随時開講。
                       </p>
                     </div>
                   </div>
@@ -135,6 +137,25 @@ export default function Home({ news }) {
                         小学生・中学生向けのプログラミング教室「newCreator
                         School（ニュークリエイター
                         スクール）」を、他社のプランよりもリーズナブルな価格で、１対１のオンライン授業という形で提供しております。
+                      </p>
+                    </div>
+                  </div>
+                  <div className="xl:w-1/2 md:w-1/2 p-4">
+                    <div className="bg-gray-100 p-6 rounded-lg">
+                      <img
+                        className="h-60 rounded w-full object-cover object-center mb-6"
+                        src="/img/works/school-plus.png"
+                        alt="content"
+                      />
+                      <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
+                      <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
+                        学校へのカリキュラム・授業導入
+                      </h2>
+                      <p className="leading-relaxed text-base">
+                        「newCreator School
+                        +」という名称でプログラミング教育支援としてカリキュラムや教職員向けのマニュアルなどを提供しています。
+                        <br />
+                        2021年4月より兵庫県たつの市立龍野西中学校の特別支援学級にてオンライン授業とマニュアルの提供を行っています。
                       </p>
                     </div>
                   </div>
@@ -194,10 +215,10 @@ export default function Home({ news }) {
               <div className="container px-5 py-24 mx-auto">
                 <div className="flex flex-col text-center w-full mb-20">
                   <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
-                    Sponsers
+                    Partner
                   </h2>
                   <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
-                    ご支援くださっている方々
+                    支援・協力企業
                   </h1>
                   <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
                     当法人はさまざまな団体、個人にご支援いただき成り立っています。
@@ -230,7 +251,7 @@ export default function Home({ news }) {
                     </a>
                     <div className="mt-4">
                       <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
-                        グーグル合同会社
+                        グーグル合同会社<small>（イベントパートナー）</small>
                       </h2>
                     </div>
                   </div>
@@ -245,6 +266,7 @@ export default function Home({ news }) {
                     <div className="mt-4">
                       <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
                         レノボ・ジャパン合同会社
+                        <small>（イベントパートナー）</small>
                       </h2>
                     </div>
                   </div>
@@ -259,6 +281,7 @@ export default function Home({ news }) {
                     <div className="mt-4">
                       <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
                         さくらインターネット株式会社
+                        <small>（イベントパートナー）</small>
                       </h2>
                     </div>
                   </div>
@@ -273,6 +296,7 @@ export default function Home({ news }) {
                     <div className="mt-4">
                       <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
                         GMOインターネット株式会社
+                        <small>（イベントパートナー）</small>
                       </h2>
                     </div>
                   </div>
@@ -315,10 +339,11 @@ export default function Home({ news }) {
                     <div className="mt-4">
                       <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
                         ユカイ工学株式会社
+                        <small>（イベントパートナー）</small>
                       </h2>
                     </div>
                   </div>
-                  <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                  {/* <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                     <img
                       alt="sponser"
                       className="object-cover object-center w-full block rounded-lg border-2 h-48 rounded "
@@ -329,7 +354,7 @@ export default function Home({ news }) {
                         株式会社ゼロディバイド
                       </h2>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                     <a className="block relative h-48 rounded overflow-hidden">
                       <img
@@ -445,7 +470,7 @@ export default function Home({ news }) {
                   </div>
                   <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
                     <span className="text-gray-500">従業員数</span>
-                    <span className="ml-auto text-gray-900">7名</span>
+                    <span className="ml-auto text-gray-900">13名</span>
                   </div>
                   <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
                     <span className="text-gray-500">事業内容</span>
@@ -455,12 +480,20 @@ export default function Home({ news }) {
                       次世代人材の育成に関する情報提供事業
                     </span>
                   </div>
-                  <div className="lg:px-20 px-2 flex border-t border-b mb-6 border-gray-200 py-4">
+                  <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
                     <span className="text-gray-500">所在地</span>
                     <span className="ml-auto text-gray-900">
+                      〒560-0054<br/>
                       大阪府豊中市桜の町 3-7-7
                     </span>
                   </div>
+                  <div className="lg:px-20 px-2 flex border-t border-b mb-6 border-gray-200 py-4">
+                    <span className="text-gray-500">横浜事業所</span>
+                    <span className="ml-auto text-gray-900">
+                      〒231-0037<br/>横浜市中区富士見町4-1-104
+                    </span>
+                  </div>
+                    <small>※ 郵便物等は横浜事業所へお願いいたします。</small>
                 </div>
               </div>
             </section>
