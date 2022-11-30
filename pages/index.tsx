@@ -488,12 +488,12 @@ export default function Home({ news }) {
                     </span>
                   </div>
                   <div className="lg:px-20 px-2 flex border-t border-b mb-6 border-gray-200 py-4">
-                    <span className="text-gray-500">横浜事業所</span>
+                    <span className="text-gray-500">東京・五反田事業所</span>
                     <span className="ml-auto text-gray-900">
-                      〒231-0037<br/>横浜市中区富士見町4-1-104
+                      〒141-0031<br/>東京都品川区西五反田７丁目２２ ＴＯＣビル１２Ｆ－５１号室
                     </span>
                   </div>
-                    <small>※ 郵便物等は横浜事業所へお願いいたします。</small>
+                    <small>※ 郵便物等は東京・五反田事業所へお願いいたします。</small>
                 </div>
               </div>
             </section>
