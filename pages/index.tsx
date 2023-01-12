@@ -3,7 +3,6 @@ import Hero from "../components/hero";
 import Footer from "../components/footer";
 import Heads from "./_head";
 import dayjs from "dayjs";
-import { TwitterTimelineEmbed, TwitterFollowButton } from "react-twitter-embed";
 import Contact from "../components/contact";
 
 export default function Home({ news }) {
@@ -680,7 +679,7 @@ export default function Home({ news }) {
                                         </div>
                                     </div>
                                 </div>
-                       
+
                             </div> */}
               </div>
             </section>
@@ -840,38 +839,6 @@ export default function Home({ news }) {
                 </a>
               </div>
             </section> */}
-            <section className="text-gray-600 body-font relative">
-              <div className="absolute inset-0 bg-gray-300">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  frameBorder="0"
-                  marginHeight={0}
-                  marginWidth={0}
-                  title="map"
-                  scrolling="no"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.154364186492!2d135.46238851612793!3d34.802058080408514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000fa8dc4958889%3A0x9f74e5c550b052c9!2z44CSNTYwLTAwNTQg5aSn6Ziq5bqc6LGK5Lit5biC5qGc44Gu55S677yT5LiB55uu77yX4oiS77yX!5e0!3m2!1sja!2sjp!4v1620366469450!5m2!1sja!2sjp"
-                  style={{
-                    filter: "grayscale(0.2) contrast(1.0) opacity(0.6)",
-                  }}
-                ></iframe>
-              </div>
-              <div className="container px-5 py-24 mx-auto flex">
-                <div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-4 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md h-96">
-                  <TwitterTimelineEmbed
-                    sourceType="profile"
-                    screenName="nc_org"
-                    options={{ height: 150 }}
-                  />
-                  <div className="mt-4 flex items-center justify-center">
-                    <TwitterFollowButton
-                      screenName={"nC_org"}
-                      style={{ margin: "0 auto" }}
-                    />
-                  </div>
-                </div>
-              </div>
-            </section>
           </main>
           <Footer />
         </body>
