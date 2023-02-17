@@ -289,12 +289,12 @@ export default function Home({ news }) {
                       <img
                         alt="sponser"
                         className="object-cover object-center w-full h-full block rounded-lg border-2 "
-                        src="/img/sponser/gmo.jpg"
+                        src="https://www.ruby.or.jp/assets/images/ja/showcase/57/regular_padded.png"
                       />
                     </a>
                     <div className="mt-4">
                       <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
-                        GMOインターネット株式会社
+                        GMOペパボ株式会社
                         <small>（イベントパートナー）</small>
                       </h2>
                     </div>
@@ -342,10 +342,10 @@ export default function Home({ news }) {
                       </h2>
                     </div>
                   </div>
-                  {/* <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                  <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                     <img
                       alt="sponser"
-                      className="object-cover object-center w-full block rounded-lg border-2 h-48 rounded "
+                      className="object-cover object-center w-full block rounded-lg border-2 h-48"
                       src="/img/sponser/noimage.png"
                     />
                     <div className="mt-4">
@@ -353,38 +353,41 @@ export default function Home({ news }) {
                         株式会社ゼロディバイド
                       </h2>
                     </div>
-                  </div> */}
+                  </div>
                   <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                     <a className="block relative h-48 rounded overflow-hidden">
                       <img
                         alt="sponser"
                         className="object-cover object-center w-full h-full block rounded-lg border-2 "
-                        src="/img/sponser/osaka.png"
+                        src="/img/sponser/nakamura.png"
                       />
                     </a>
                     <div className="mt-4">
                       <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
-                        大阪市
+                        中村 亮太
                       </h2>
+                      <h3 className="text-gray-500 text-xs tracking-widest title-font">
+                        京都産業大学 非常勤講師
+                      </h3>
                     </div>
                   </div>
-                  {/* <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
-                                    <a className="block relative h-48 rounded overflow-hidden">
-                                        <img
-                                            alt="sponser"
-                                            className="object-cover object-center w-full h-full block rounded-lg border-2 "
-                                            src="/img/sponser/nakamura.png"
-                                        />
-                                    </a>
-                                    <div className="mt-4">
-                                        <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
-                                            中村 亮太
-                                        </h2>
-                                        <h3 className="text-gray-500 text-xs tracking-widest title-font">
-                                            京都産業大学 非常勤講師
-                                        </h3>
-                                    </div>
-                                </div> */}
+                  <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                    <a className="block relative h-48 rounded overflow-hidden">
+                      <img
+                        alt="sponser"
+                        className="object-cover object-center w-full h-full block rounded-lg border-2 "
+                        src="https://image-careerhack.en-japan.com/807/0863.jpg"
+                      />
+                    </a>
+                    <div className="mt-4">
+                      <h2 className="text-gray-900 title-font text-lg font-medium mb-2">
+                        星 功基
+                      </h2>
+                      <h3 className="text-gray-500 text-xs tracking-widest title-font">
+                        学びの表現作家
+                      </h3>
+                    </div>
+                  </div>
                 </div>
               </div>
             </section>
@@ -482,18 +485,20 @@ export default function Home({ news }) {
                   <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
                     <span className="text-gray-500">所在地</span>
                     <span className="ml-auto text-gray-900">
-                      〒560-0054<br/>
+                      〒560-0054
+                      <br />
                       大阪府豊中市桜の町 3-7-7
                     </span>
                   </div>
                   <div className="lg:px-20 px-2 flex border-t border-b mb-6 border-gray-200 py-4">
                     <span className="text-gray-500">兵庫事業所</span>
                     <span className="ml-auto text-gray-900">
-                      〒671-1523<br/>
+                      〒671-1523
+                      <br />
                       兵庫県揖保郡太子町東南 235-1
                     </span>
                   </div>
-                    <small>※ 郵便物等は兵庫事業所へお願いいたします。</small>
+                  <small>※ 郵便物等は兵庫事業所へお願いいたします。</small>
                 </div>
               </div>
             </section>
