@@ -461,18 +461,10 @@ export default function Home({ news }) {
                     <span className="ml-auto text-gray-900">3120905005839</span>
                   </div>
                   <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
-                    <span className="text-gray-500">代表者名</span>
-                    <span className="ml-auto text-gray-900">改野 由尚</span>
-                  </div>
-                  <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
                     <span className="text-gray-500">設立</span>
                     <span className="ml-auto text-gray-900">
-                      2017年より活動、2019年1月法人化
+                      2016年より活動、2019年1月法人化
                     </span>
-                  </div>
-                  <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
-                    <span className="text-gray-500">従業員数</span>
-                    <span className="ml-auto text-gray-900">13名</span>
                   </div>
                   <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
                     <span className="text-gray-500">事業内容</span>
