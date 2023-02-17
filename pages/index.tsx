@@ -27,12 +27,12 @@ export default function Home({ news }) {
                   <p className="leading-relaxed text-base">
                     特定非営利活動法人ニュークリエイター・オルグは、「全国の子どもたちにSTEAM教育を格差なく届ける」というビジョンのもと活動を行っております。
                     <br />
-                    とりわけIT教育は、都市部と地方部で大きな環境の差があります。
+                    とりわけSTEAM教育は、都市部と地方部で大きな環境の差があります。
                     <br />
-                    文部科学省の調査でもプログラミング教育の趣旨、目的、基本的な考え方などの情報が不足していることから都市部と比較して地方部でのプログラミング・ITに関する教育が遅れていることがわかっていることのほか、子どもが進路や将来を考えるときに参考となるロールモデルが身近にいないことなど、地方が抱える課題は大きい
+                    文部科学省の調査でもプログラミング教育の趣旨、目的、基本的な考え方などの情報が不足していることから都市部と比較して地方部でのプログラミング・STEAMに関する教育が遅れていることがわかっていることのほか、子どもが進路や将来を考えるときに参考となるロールモデルが身近にいないことなど、地方が抱える課題は大きい
                     と考えます。
                     <br />
-                    そのような課題の解決に向け、全国の子どもたちが隔てなくITに親しみ、利活用できるようにするために、オンライン及び全国各地でのイベントを実施しています。
+                    そのような課題の解決に向け、全国の子どもたちが隔てなくSTEAMに親しみ、利活用できるようにするために、オンライン及び全国各地でのイベントを実施しています。
                   </p>
                 </div>
               </div>
@@ -43,10 +43,10 @@ export default function Home({ news }) {
                       Vision
                     </h2>
                     <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
-                      IT教育を全国の子どもたちに格差なく届ける
+                      STEAM教育を全国の子どもたちに格差なく届ける
                     </h1>
                     <p className="leading-relaxed mb-3 italic">
-                      Delivering IT education to all children without disparity
+                      Delivering STEAM education to all children without disparity
                     </p>
                   </div>
                 </div>
@@ -469,7 +469,7 @@ export default function Home({ news }) {
                   <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
                     <span className="text-gray-500">事業内容</span>
                     <span className="ml-auto text-gray-900">
-                      IT教育事業及び啓発事業
+                      STEAM教育事業及び啓発事業
                       <br />
                       次世代人材の育成に関する情報提供事業
                     </span>
@@ -720,7 +720,7 @@ export default function Home({ news }) {
                       </div>
                       <div className="flex-grow">
                         <p className="leading-relaxed text-base">
-                          教育の行き届かない地域での、IT教育を広める取り組みに資金面や様々な形でのリソース提供・共同イベントにご協力ください。
+                          教育の行き届かない地域での、STEAM教育を広める取り組みに資金面や様々な形でのリソース提供・共同イベントにご協力ください。
                         </p><a
                                                 className="mt-3 text-blue-500 inline-flex items-center"
                                                 href="mailto:contact@newcreator.org"
