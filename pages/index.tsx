@@ -174,10 +174,10 @@ export default function Home({ news }) {
                 <div className="-my-8">
                   {news.map((news) => (
                     <div
-                      className="py-8 flex flex-wrap md:flex-no-wrap border-b-2 "
+                      className="py-8 flex flex-col md:flex-no-wrap border-b-2 "
                       key={news.id}
                     >
-                      <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                      <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0">
                         <span className="mt-1 text-gray-500 text-sm">
                           {dayjs(news.create_at).format("YYYY.MM.DD")}
                         </span>
