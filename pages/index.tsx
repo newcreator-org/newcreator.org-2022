@@ -25,7 +25,7 @@ export default function Home({ news }) {
                 </div>
                 <div className="md:w-2/3 md:pl-6">
                   <p className="leading-relaxed text-base">
-                    特定非営利活動法人ニュークリエイター・オルグは、「全国の子どもたちにIT教育を格差なく届ける」というビジョンのもと活動を行っております。
+                    特定非営利活動法人ニュークリエイター・オルグは、「全国の子どもたちにSTEAM教育を格差なく届ける」というビジョンのもと活動を行っております。
                     <br />
                     とりわけIT教育は、都市部と地方部で大きな環境の差があります。
                     <br />
