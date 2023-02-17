@@ -511,7 +511,7 @@ export default function Home({ news }) {
                 </div>
                 <p className="w-full mx-auto text-center">
                   <small>
-                    GMOあおぞら銀行 法人営業部(101) 1193846
+                    GMOあおぞらネット銀行 法人営業部(101) 1193846
                     トクヒ）ニュークリエイターオルグ 宛
                   </small>
                 </p>
