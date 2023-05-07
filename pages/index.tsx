@@ -245,7 +245,7 @@ export default function Home({ news }) {
                       <img
                         alt="sponser"
                         className="object-cover object-center w-full h-full block rounded-lg border-2 "
-                        src="/img/sponser/google.jpg"
+                        src="/img/sponser/google.jpeg"
                       />
                     </a>
                     <div className="mt-4">
