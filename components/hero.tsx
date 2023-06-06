@@ -13,6 +13,8 @@ export default function Hero() {
             </h2>
           </div>
         </section>
+        <div className="slider">
+        </div>
       </>
     );
 }
