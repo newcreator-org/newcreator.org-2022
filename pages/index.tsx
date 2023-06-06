@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import Heads from "./_head";
 import dayjs from "dayjs";
 import Contact from "../components/contact";
+import Link from "next/link";
 
 export default function Home({ news }) {
     return (
@@ -11,8 +12,8 @@ export default function Home({ news }) {
         <Heads child={null} />
         <body>
           <Header />
-          <main>
-            <Hero />
+          <Hero />
+          <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <section className="text-gray-600 body-font">
               <div className="container px-5 py-24 mx-auto flex flex-wrap">
                 <div className="mb-2 md:w-1/3">
@@ -46,7 +47,8 @@ export default function Home({ news }) {
                       STEAM教育を全国の子どもたちに格差なく届ける
                     </h1>
                     <p className="leading-relaxed mb-3 italic">
-                      Delivering STEAM education to all children without disparity
+                      Delivering STEAM education to all children without
+                      disparity
                     </p>
                   </div>
                 </div>
@@ -171,61 +173,45 @@ export default function Home({ news }) {
                     最新のお知らせ
                   </h1>
                 </div>
-                <div className="-my-8">
+                <div className="-my-8 max-w-5xl mx-auto">
                   {news.map((news) => (
-                    <div
-                      className="py-8 flex flex-col md:flex-no-wrap border-b-2 "
+                    <a
+                      className="p-4 flex flex-col md:flex-no-wrap border-b-2 "
                       key={news.id}
+                      href={"/information/" + news.id}
                     >
-                      <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0">
+                      <div className="md:w-64">
                         <span className="mt-1 text-gray-500 text-sm">
                           {dayjs(news.create_at).format("YYYY.MM.DD")}
                         </span>
                       </div>
-                      <div className="md:flex-grow">
-                        <h2 className="text-2xl font-medium text-gray-900 title-font mb-2 leading-relaxed">
+                      <div className="mt-1">
+                        <h2 className="text-md text-gray-900 title-font mb-2 leading-relaxed font-medium">
                           {news.title}
                         </h2>
-                        <a
-                          className="text-indigo-500 inline-flex items-center mt-4"
-                          href={"/information/" + news.id}
-                        >
-                          詳しく見る
-                          <svg
-                            className="w-4 h-4 ml-2"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            fill="none"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          >
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5l7 7-7 7"></path>
-                          </svg>
-                        </a>
                       </div>
-                    </div>
+                    </a>
                   ))}
                 </div>
               </div>
             </section>
             <section className="text-gray-700 body-font">
               <div className="container px-5 py-24 mx-auto">
-                <div className="flex flex-col text-center w-full mb-20">
+                <div className="flex flex-col text-center w-full">
                   <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
-                    Partner
+                    Media
                   </h2>
                   <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
-                    支援・協力企業
+                    メディア掲載
                   </h1>
-                  <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                    当法人はさまざまな団体、個人にご支援いただき成り立っています。
-                    <br />
-                    あなたもその一員になりませんか？
-                  </p>
+                  {/* <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+                    newCreatorは、メディア掲載を通して、プログラミング教育の普及に努めています。
+                  </p> */}
                 </div>
-                <div className="flex flex-wrap -m-4">
+                <div className="container mx-auto w-full">
+                  <img src="/img/media.png" alt="media" className="mx-auto" />
+                </div>
+                {/* <div className="flex flex-wrap -m-4">
                   <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                     <a className="block relative h-48 rounded overflow-hidden">
                       <img
@@ -388,7 +374,7 @@ export default function Home({ news }) {
                       </h3>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </section>
             <section className="text-gray-600 body-font">
