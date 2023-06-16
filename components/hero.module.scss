@@ -1,12 +1,11 @@
 .hero {
   &__cover {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.5), rgba(255, 255, 255, 0.8) ) fixed,url(../public/img/cover2.jpg) !important;
-    background-position: center!important;
+    background: url(../public/img/digital-connections-bg.png);
+    // https://www.freepik.com/free-vector/white-background-with-low-poly-digital-lines-connection_8562954.htm
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: cover!important;
-    padding: 30vh 1.5rem;
-    text-align: center;
-
+    background-position-x: left;
+    background-position-y: top;
   }
 
   &__title {
@@ -37,6 +36,9 @@
 
 @media screen and (max-width: 980px) {
   .hero {
+    &__cover {
+      background: url(../public/img/digital-connections-bg-sp.png);
+    }
     &__title {
       font-size: 2.5rem;
       &--apply {
