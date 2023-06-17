@@ -2,7 +2,7 @@ import style from './contact.module.scss';
 
 const Contact = () => {
   return (
-    <section className={style.section}>
+    <section className={style.section} id="contact">
       <div className={style.card}>
         <div className={style.texts}>
           <h2 className="h2-footer-contact">Contact</h2>

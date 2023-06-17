@@ -54,7 +54,7 @@ export default function Home({ news }) {
                 </div>
               </div>
             </section>
-            <section className="text-gray-600 body-font">
+            <section className="text-gray-600 body-font" id="activities">
               <div className="container px-5 py-24 mx-auto">
                 <div className="flex flex-wrap w-full mb-12">
                   <div className="lg:w-1/3 w-full mb-6 lg:mb-0">
@@ -163,7 +163,7 @@ export default function Home({ news }) {
                 </div>
               </div>
             </section>
-            <section className="text-gray-700 body-font overflow-hidden">
+            <section className="text-gray-700 body-font overflow-hidden" id="information">
               <div className="container px-5 py-24 mx-auto">
                 <div className="flex flex-col text-center w-full mb-20">
                   <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
