@@ -34,7 +34,7 @@ export default function Hero() {
               <div className="mb-12 flex w-full md:mb-16 lg:w-2/3">
                 <div className="relative top-12 left-12 z-10 -ml-12 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:top-16 md:left-16 lg:ml-0">
                   <img
-                    src="/img/hero1.png"
+                    src="/img/hero3.webp"
                     loading="lazy"
                     alt="イベント画像"
                     className="h-full w-full object-cover object-center"
@@ -42,7 +42,7 @@ export default function Hero() {
                 </div>
                 <div className="overflow-hidden rounded-lg bg-gray-100 shadow-lg">
                   <img
-                    src="/img/hero2.png"
+                    src="/img/hero2.webp"
                     loading="lazy"
                     alt="イベント画像"
                     className="h-full w-full object-cover object-center"
