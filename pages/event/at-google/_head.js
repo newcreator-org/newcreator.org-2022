@@ -2,9 +2,9 @@ import Head from "next/head";
 
 export default function Heads() {
     const title =
-            "new Creator with Google｜特定非営利活動法人ニュークリエイター・オルグ",
+            "new Creator at Google｜特定非営利活動法人ニュークリエイター・オルグ",
         description =
-            "小学生に、micro:bitをプレゼント。おうちでプログラミングをはじめる機会を届けよう。",
+            "ジェネレーティブAIを使って、将来の夢を叶えよう",
         image = "/ogp.png",
         url = "https://newcreator.org",
         twitter = "@nC_org",
