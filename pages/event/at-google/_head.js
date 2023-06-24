@@ -5,7 +5,7 @@ export default function Heads() {
             "new Creator at Google｜特定非営利活動法人ニュークリエイター・オルグ",
         description =
             "ジェネレーティブAIを使って、将来の夢を叶えよう",
-        image = "/ogp.png",
+        image = "/event/at-google/CVG-94.jpg",
         url = "https://newcreator.org",
         twitter = "@nC_org",
         color = "#53B1F0";

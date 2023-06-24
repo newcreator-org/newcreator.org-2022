@@ -75,13 +75,21 @@ export default function Apply() {
 
                 <section className="text-gray-700 body-font">
                     <div className="container px-5 py-12 mx-auto flex flex-wrap">
-                        <div className="flex flex-col text-left w-full mb-10">
+                        <div className="flex flex-col text-left w-full mb-7">
                             <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
                                 タイムテーブル
                             </h1>
                         </div>
-                        <div className="flex text-left w-full mb-10 items-center justify-center">
-                            <div className="flex-initial px-2 sm:w-full md:w-1/3 lg:w-1/3 xl:w-1/2">
+                        <div className="px-2 flex-initial w-1/1 sm:w-1/1 md:w-0 lg:w-0 xl:w-0">
+                            <div className="overflow-hidden rounded-lg">
+                                <img
+                                    src="/img/event/at-google/CVG-94-black.jpg"
+                                    className=""
+                                />
+                            </div>
+                        </div>
+                        <div className="flex text-left w-full mt-4 mb-10 items-center justify-center">
+                            <div className="flex-initial px-2 w-full sm:w-full md:w-2/3 lg:w-1/2 xl:w-1/2">
                                 <table className="table-auto border-spacing-y-4 border-separate leading-relaxed">
                                     <tbody>
                                         <tr>
@@ -130,8 +138,8 @@ export default function Apply() {
                                     </tbody>
                                 </table>
                             </div>
-                            <div className="lg:px-12 flex-initial sm:w-0 md:w-2/3 md:px-4 lg:w-2/3 xl:w-1/2">
-                                <div className="overflow-hidden md:rounded-tl-3xl md:rounded-br-3xl lg:rounded-tl-extraLarge lg:rounded-br-extraLarge">
+                            <div className="lg:px-12 flex-initial w-0 sm:w-0 md:w-2/3 md:px-4 lg:w-1/2 xl:w-1/2">
+                                <div className="overflow-hidden md:rounded-tl-extraLarge md:rounded-br-extraLarge lg:rounded-tl-extraLarge lg:rounded-br-extraLarge">
                                     <img
                                         src="/img/event/at-google/CVG-94-black.jpg"
                                         className=""
@@ -169,10 +177,10 @@ export default function Apply() {
                         </div>
                         <div className="text-left w-full">
                             <p className="leading-relaxed text-base">
-                                <table class="table-auto border-spacing-y-4 border-separate">
+                                <table className="table-fixed border-spacing-y-4 border-separate">
                                     <tbody>
                                         <tr>
-                                            <td>開催日時　</td>
+                                            <td className="pr-5 w-24">開催日時</td>
                                             <td>
                                                 2023年7月23日
                                                 12:30〜17:00（大阪）
@@ -182,7 +190,7 @@ export default function Apply() {
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>会場</td>
+                                            <td className="pr-5 w-24">会場</td>
                                             <td>
                                                 Google
                                                 大阪オフィス、渋谷オフィス{" "}
@@ -191,17 +199,17 @@ export default function Apply() {
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>参加費</td>
+                                            <td className="pr-5 w-24">参加費</td>
                                             <td>無償</td>
                                         </tr>
                                         <tr>
-                                            <td>参加定員</td>
+                                            <td className="pr-5 w-24">参加定員</td>
                                             <td>
                                                 各会場15名〜20名程度（応募者多数の場合には抽選）
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>一次締切</td>
+                                            <td className="pr-5 w-24">一次締切</td>
                                             <td>2023年7月14日（金）20:00</td>
                                         </tr>
                                     </tbody>
@@ -226,6 +234,7 @@ export default function Apply() {
                                 主催：特定非営利活動法人ニュークリエイター・オルグ
                             </p>
                             <p>共催：NPO法人クリッパー</p>
+                            <p>お問い合わせ：<a href="mailto:contact@newcreator.org">contact@newcreator.org</a></p>
                         </div>
                     </div>
                 </section>
