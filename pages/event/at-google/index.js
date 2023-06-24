@@ -154,15 +154,15 @@ export default function Apply() {
                     <div className="container px-5 py-3 mx-auto flex flex-wrap">
                         <div className="flex flex-col text-left w-full mb-5">
                             <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
-                                コンプライアンス遵守への取り組み
+                                安心・安全なAI利用のための私たちの取り組み
                             </h1>
                         </div>
                         <div className="text-left w-full">
                             <p className="leading-relaxed text-base">
                                 ジェネレーティブAI（生成AI）のワークショップでは、利便性だけでなく、危険性やリスク、情報セキュリティについても学びます。
-                                ワークショップでは、各AIサービス提供事業者の利用規約に従い、利用範囲や年齢制限に沿った形でAIサービスを利用します。
-                                一部のAIサービスについては、指導者が代わりにプロンプトを入力し、出力結果を他の方法で提供する場合もあります。
-                                ジェネレーティブAIの利用については、社会情勢により様々な意見がありますが、ニュークリエイター・オルグでは、参加者は保護者の同意書を提出する必要があります。
+                                ニュークリエイター・オルグが主催するワークショップでは、各AIサービス提供事業者の利用規約に従い、利用範囲や年齢制限に沿った形でAIサービスを利用します。
+                                一部のAIサービスは、指導者が代わりにプロンプトを入力し、出力結果を他の方法で提供する場合もあります。
+                                ジェネレーティブAIの利用については、社会情勢により様々な意見があり、ニュークリエイター・オルグでは、18歳未満を対象とするワークショップにおいては保護者の同意を必要とし、保護者の同意がない場合は参加をお断りさせて頂いております。
                             </p>
                         </div>
                     </div>
@@ -180,7 +180,9 @@ export default function Apply() {
                                 <table className="table-fixed border-spacing-y-4 border-separate">
                                     <tbody>
                                         <tr>
-                                            <td className="pr-5 w-24">開催日時</td>
+                                            <td className="pr-5 w-24">
+                                                開催日時
+                                            </td>
                                             <td>
                                                 2023年7月23日
                                                 12:30〜17:00（大阪）
@@ -199,17 +201,23 @@ export default function Apply() {
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td className="pr-5 w-24">参加費</td>
+                                            <td className="pr-5 w-24">
+                                                参加費
+                                            </td>
                                             <td>無償</td>
                                         </tr>
                                         <tr>
-                                            <td className="pr-5 w-24">参加定員</td>
+                                            <td className="pr-5 w-24">
+                                                参加定員
+                                            </td>
                                             <td>
                                                 各会場15名〜20名程度（応募者多数の場合には抽選）
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td className="pr-5 w-24">一次締切</td>
+                                            <td className="pr-5 w-24">
+                                                一次締切
+                                            </td>
                                             <td>2023年7月14日（金）20:00</td>
                                         </tr>
                                     </tbody>
@@ -234,7 +242,12 @@ export default function Apply() {
                                 主催：特定非営利活動法人ニュークリエイター・オルグ
                             </p>
                             <p>共催：NPO法人クリッパー</p>
-                            <p>お問い合わせ：<a href="mailto:contact@newcreator.org">contact@newcreator.org</a></p>
+                            <p>
+                                お問い合わせ：
+                                <a href="mailto:contact@newcreator.org">
+                                    contact@newcreator.org
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </section>
