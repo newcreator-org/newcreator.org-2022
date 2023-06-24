@@ -133,7 +133,7 @@ export default function Apply() {
                             <div className="lg:px-12 flex-initial sm:w-0 md:w-2/3 md:px-4 lg:w-2/3 xl:w-1/2">
                                 <div className="overflow-hidden md:rounded-tl-3xl md:rounded-br-3xl lg:rounded-tl-extraLarge lg:rounded-br-extraLarge">
                                     <img
-                                        src="/img/event/with-google/CVG-94-black.jpg"
+                                        src="/img/event/at-google/CVG-94-black.jpg"
                                         className=""
                                     />
                                 </div>
