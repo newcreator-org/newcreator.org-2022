@@ -12,7 +12,7 @@ export default function Apply() {
                 <section
                     className={component.hero__subpage_cover}
                     style={{
-                        backgroundImage: `url(/img/event/at-google/google-event-thumb-3206.jpg)`,
+                        backgroundImage: `url(/img/event/at-google/google-event-thumb-3206-black.jpg)`,
                     }}
                 >
                     <div class={component.hero__subpage_cover_container}>
@@ -104,8 +104,7 @@ export default function Apply() {
                                             <td>13:00</td>
                                             <td>
                                                 <span className="font-bold">
-                                                    [実演]
-                                                    様々なジェネレーティブAIの活用方法について知ろう
+                                                [学び] 様々なジェネレーティブAIの活用方法について知ろう
                                                 </span>
                                             </td>
                                         </tr>
@@ -113,8 +112,7 @@ export default function Apply() {
                                             <td className="pr-7">13:45</td>
                                             <td>
                                                 <span className="font-bold">
-                                                    [実践]
-                                                    ジェネレーティブAIを使ったワークショップ
+                                                [実践] ジェネレーティブAIを使ったワークショップ
                                                 </span>
                                             </td>
                                         </tr>
@@ -122,8 +120,7 @@ export default function Apply() {
                                             <td className="pr-7">16:20</td>
                                             <td>
                                                 <span className="font-bold">
-                                                    [発表]
-                                                    AIを活用して広がった夢を叶えるためのステップをプレゼンテーション
+                                                [発表] ワークショップの成果をプレゼンテーション
                                                 </span>
                                             </td>
                                         </tr>
@@ -162,6 +159,7 @@ export default function Apply() {
                                 ジェネレーティブAI（生成AI）のワークショップでは、利便性だけでなく、危険性やリスク、情報セキュリティについても学びます。
                                 ニュークリエイター・オルグが主催するワークショップでは、各AIサービス提供事業者の利用規約に従い、利用範囲や年齢制限に沿った形でAIサービスを利用します。
                                 一部のAIサービスは、指導者が代わりにプロンプトを入力し、出力結果を他の方法で提供する場合もあります。
+                                なお、本ワークショップで高校生が操作するAIサービスはニュークリエイター・オルグが教育機関利用向けに独自開発したサービスを使用して実施します。
                                 ジェネレーティブAIの利用については、社会情勢により様々な意見があり、ニュークリエイター・オルグでは、18歳未満を対象とするワークショップにおいては保護者の同意を必要とし、保護者の同意がない場合は参加をお断りさせて頂いております。
                             </p>
                         </div>
