@@ -59,7 +59,7 @@ export default function Apply() {
                         <div className="text-left w-full">
                             <p className="leading-loose text-base">
                                 2022年後半から急激に注目を集めている対話形式でまるで人間と話しているように会話できる技術を持った生成系AIに注目が集まっています。
-                                newCreater at Google
+                                newCreator Generative AI 2023
                                 では、Googleの有志社員と一緒にジェネレーティブAIを使ったワークショップを開催します。
                             </p>
                             <br />
