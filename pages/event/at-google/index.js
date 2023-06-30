@@ -17,7 +17,7 @@ export default function Apply() {
                 >
                     <div class={component.hero__subpage_cover_container}>
                         <h1 className={component.hero__subpage_cover_title}>
-                            newCreator Generative AI 2023
+                            【高校生対象】newCreator Generative AI 2023
                         </h1>
                         <h2 className={component.hero__subpage_cover_subtitle}>
                             ジェネレーティブAIを使って、将来の夢を叶えよう
@@ -187,6 +187,12 @@ export default function Apply() {
                                                 <br />
                                                 2023年7月30日
                                                 12:30〜17:00（東京）
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td className="pr-5 w-24">対象</td>
+                                            <td>
+                                                高校１年生から高校３年生
                                             </td>
                                         </tr>
                                         <tr>
