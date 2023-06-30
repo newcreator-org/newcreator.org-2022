@@ -17,7 +17,7 @@ export default function Apply() {
                 >
                     <div class={component.hero__subpage_cover_container}>
                         <h1 className={component.hero__subpage_cover_title}>
-                            newCreator at Google 2023
+                            newCreator Generative AI 2023
                         </h1>
                         <h2 className={component.hero__subpage_cover_subtitle}>
                             ジェネレーティブAIを使って、将来の夢を叶えよう
@@ -220,7 +220,7 @@ export default function Apply() {
                                         </tr>
                                     </tbody>
                                 </table>
-                                <a href="https://microbit.org/">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbIg1GD8oSiQ2CUexsCOFHrX5zEkc5euXEIdlk5CnfxextKQ/viewform?usp=sf_link">
                                     <button className="mx-auto mt-2 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                                         参加申込する
                                     </button>
