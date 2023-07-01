@@ -30,6 +30,56 @@
     padding-top: 3rem;
     line-height: 1.5;
   }
+
+  &__subpage_cover {
+    background-color:#9c9c9c;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+
+
+    &_container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 50px 0;
+      line-height: 1.6;
+      color: #fff;
+      text-shadow: #000 0 0 1px;
+    }
+
+    &_title {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    &_subtitle {
+      font-size: 1.2rem;
+      padding-bottom: 5px;
+      font-weight: bold;
+    }
+
+    &_text {
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    &__subpage_cover {
+      height: 300px;
+
+      &_title {
+        font-size: 1.7rem;
+        font-weight: bold;
+      }
+
+      &_subtitle {
+        font-size: 1.3rem;
+      }
+    }
+  }
 }
 
 
