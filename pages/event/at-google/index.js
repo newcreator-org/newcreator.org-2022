@@ -17,7 +17,7 @@ export default function Apply() {
                 >
                     <div class={component.hero__subpage_cover_container}>
                         <h1 className={component.hero__subpage_cover_title}>
-                            【高校生対象】newCreator Generative AI 2023
+                            【高校生対象/無料】newCreator Generative AI 2023
                         </h1>
                         <h2 className={component.hero__subpage_cover_subtitle}>
                             ジェネレーティブAIを使って、将来の夢を叶えよう
@@ -202,6 +202,17 @@ export default function Apply() {
                                                 大阪オフィス、渋谷オフィス{" "}
                                                 <br />
                                                 ※会場住所ならび集合場所は、セキュリティーの都合上、参加が決定した方にメールでご案内させていただきます。
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td className="pr-5 w-24">
+                                                持ち物
+                                            </td>
+                                            <td>・PC / タブレット（あれば）<br />
+                                            ・スマホ / 携帯電話 <br />
+                                            ・筆記用具 <br />
+                                            ・生徒手帳 / 学生証 <br />
+                                            ・参加同意書
                                             </td>
                                         </tr>
                                         <tr>
