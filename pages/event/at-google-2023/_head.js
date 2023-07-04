@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function Heads() {
     const title =
-            "new Creator Generative AI 2023｜特定非営利活動法人ニュークリエイター・オルグ",
+            "newCreator Generative AI 2023｜特定非営利活動法人ニュークリエイター・オルグ",
         description =
             "ジェネレーティブAIを使って、将来の夢を叶えよう",
         image = "/event/at-google/CVG-94.jpg",
