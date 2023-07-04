@@ -33,7 +33,7 @@
 
   &__subpage_cover {
     background-color:#9c9c9c;
-    height: 250px;
+    height: 330px;
     background-position: center;
     background-size: cover;
     z-index: 0;
@@ -68,7 +68,7 @@
 @media screen and (max-width: 800px) {
   .hero {
     &__subpage_cover {
-      height: 300px;
+      height: 360px;
 
       &_title {
         font-size: 1.7rem;

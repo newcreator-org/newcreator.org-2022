@@ -15,7 +15,7 @@ export default function Apply() {
                         backgroundImage: `url(/img/event/at-google/google-event-thumb-3206-black.jpg)`,
                     }}
                 >
-                    <div class={component.hero__subpage_cover_container}>
+                    <div className={`${component.hero__subpage_cover_container} container px-5`}>
                         <h1 className={component.hero__subpage_cover_title}>
                             【高校生対象/無料】newCreator Generative AI 2023
                         </h1>
