@@ -36,19 +36,12 @@
       }
     }
 
-    ul {
-      li {
-        display: inline;
-        padding: 20px;
-      }
-    }
-    
     .cta {
       display: flex;
       flex-direction: row;
       align-items: flex-start;
       padding: 0px;
-      
+
       position: absolute;
       width: 400px;
       height: 90px;
