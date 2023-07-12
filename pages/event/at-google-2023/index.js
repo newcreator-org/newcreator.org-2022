@@ -17,7 +17,7 @@ export default function Apply() {
                 >
                     <div className={`${component.hero__subpage_cover_container} container max-w-6xl`}>
                         <h1 className={component.hero__subpage_cover_title}>
-                            【高校生向け/参加費無料】<br/>Creative Village 2023
+                            【中高校生向け/参加費無料】<br/>Creative Village 2023
                         </h1>
                         <h2 className={component.hero__subpage_cover_subtitle}>
                         身近な課題をテクノロジーを使って解決するアイデアを考えよう
@@ -64,7 +64,7 @@ export default function Apply() {
                             </p>
                             <br />
                             <p className="leading-loose text-base">
-                                本ワークショップは、高校1年生〜高校3年生であれば、どなたでもご参加いただけます。参加費無料です。なお、中学生についても参加可能です。
+                                本ワークショップは、中学1年生〜高校3年生（高専など相当年齢であれば学校種別は問いません）であれば、どなたでもご参加いただけます。参加費無料です。
                             </p>
                         </div>
                     </div>
