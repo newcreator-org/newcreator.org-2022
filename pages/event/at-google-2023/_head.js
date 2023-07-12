@@ -5,7 +5,7 @@ export default function Heads() {
             "Creative Village 2023｜特定非営利活動法人ニュークリエイター・オルグ",
         description =
             "身近な課題をテクノロジーを使って解決するアイデアを考えよう",
-        image = "/event/at-google/CVG-94.jpg",
+        image = "/event/at-google/CV201906-90.jpg",
         url = "https://newcreator.org",
         twitter = "@nC_org",
         color = "#53B1F0";

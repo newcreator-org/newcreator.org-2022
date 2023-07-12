@@ -12,18 +12,18 @@ export default function Apply() {
                 <section
                     className={component.hero__subpage_cover}
                     style={{
-                        backgroundImage: `url(/img/event/at-google/google-event-thumb-3206-black.jpg)`,
+                        backgroundImage: `url(/img/event/at-google/CV201906-90-black.jpg)`,
                     }}
                 >
                     <div className={`${component.hero__subpage_cover_container} container px-5`}>
                         <h1 className={component.hero__subpage_cover_title}>
-                            【高校生対象/無料】Creative Village 2023
+                            【高校生向け/参加費無料】<br/>Creative Village 2023
                         </h1>
                         <h2 className={component.hero__subpage_cover_subtitle}>
                         身近な課題をテクノロジーを使って解決するアイデアを考えよう
                         </h2>
                         <div className={component.hero__subpage_cover_text}>
-                            2023年7月30日（東京）
+                            日時：2023年7月30日（東京）
                             <br />
                             会場：Google 渋谷オフィス
                         </div>
@@ -78,7 +78,7 @@ export default function Apply() {
                         <div className="px-2 flex-initial w-1/1 sm:w-1/1 md:w-0 lg:w-0 xl:w-0">
                             <div className="overflow-hidden rounded-lg">
                                 <img
-                                    src="/img/event/at-google/CVG-94-black.jpg"
+                                    src="/img/event/at-google/CV201906-90.jpg"
                                     className=""
                                 />
                             </div>
@@ -137,7 +137,7 @@ export default function Apply() {
                             <div className="lg:px-12 flex-initial w-0 sm:w-0 md:w-2/3 md:px-4 lg:w-1/2 xl:w-1/2">
                                 <div className="overflow-hidden md:rounded-tl-extraLarge md:rounded-br-extraLarge lg:rounded-tl-extraLarge lg:rounded-br-extraLarge">
                                     <img
-                                        src="/img/event/at-google/CVG-94-black.jpg"
+                                        src="/img/event/at-google/CV201906-90.jpg"
                                         className=""
                                     />
                                 </div>
@@ -204,7 +204,7 @@ export default function Apply() {
                                                 参加定員
                                             </td>
                                             <td>
-                                                各会場15名〜20名程度（先着順）
+                                                15名〜20名程度（先着順）
                                             </td>
                                         </tr>
                                     </tbody>
