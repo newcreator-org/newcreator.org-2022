@@ -15,7 +15,7 @@ export default function Apply() {
                         backgroundImage: `url(/img/event/at-google/CV201906-90-black.jpg)`,
                     }}
                 >
-                    <div className={`${component.hero__subpage_cover_container} container px-5`}>
+                    <div className={`${component.hero__subpage_cover_container} container max-w-6xl`}>
                         <h1 className={component.hero__subpage_cover_title}>
                             【高校生向け/参加費無料】<br/>Creative Village 2023
                         </h1>
@@ -50,7 +50,7 @@ export default function Apply() {
                 </footer>
                 */}
                 <section className="text-gray-700 body-font">
-                    <div className="container px-5 py-12 mx-auto flex flex-wrap">
+                    <div className="container px-5 py-12 mx-auto flex flex-wrap max-w-6xl">
                         <div className="flex flex-col text-left w-full mb-10">
                             <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
                                 身近な課題を解決するアイデアを考えよう！
@@ -71,7 +71,7 @@ export default function Apply() {
                 </section>
 
                 <section className="text-gray-700 body-font">
-                    <div className="container px-5 py-12 mx-auto flex flex-wrap">
+                    <div className="container px-5 py-12 mx-auto flex flex-wrap max-w-6xl">
                         <div className="flex flex-col text-left w-full mb-7">
                             <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
                                 タイムテーブル
@@ -150,7 +150,7 @@ export default function Apply() {
 
 
                 <section className="text-gray-700 body-font">
-                    <div className="container px-5 py-12 mx-auto flex flex-wrap">
+                    <div className="container px-5 py-12 mx-auto flex flex-wrap max-w-6xl">
                         <div className="flex flex-col text-left w-full mb-5">
                             <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
                                 参加申込
@@ -222,7 +222,7 @@ export default function Apply() {
                 </section>
 
                 <section className="text-gray-700 body-font">
-                    <div className="container px-5 py-10 mx-auto flex flex-wrap">
+                    <div className="container px-5 py-10 mx-auto flex flex-wrap max-w-6xl">
                         <div className="flex flex-col text-left w-full mb-5 leading-relaxed text-base">
                             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
                                 企画・運営
