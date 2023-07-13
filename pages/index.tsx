@@ -1,16 +1,15 @@
 import Header from "../components/header";
 import Hero from "../components/hero";
 import Footer from "../components/footer";
-import Heads from "./_head";
+import Heads from "../components/customHead";
 import dayjs from "dayjs";
 import Contact from "../components/contact";
-import Link from "next/link";
 
 export default function Home({ news }) {
     return (
       <>
         <Heads child={null} />
-        <body>
+        <div>
           <Header />
           <Hero />
           <main className="mx-auto px-4 sm:px-6 lg:px-8">
@@ -825,7 +824,7 @@ export default function Home({ news }) {
             </section> */}
           </main>
           <Footer />
-        </body>
+        </div>
       </>
     );
 }
