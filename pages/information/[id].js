@@ -1,4 +1,4 @@
-import Heads from "../_head";
+import Heads from "../../components/customHead";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import dayjs from "dayjs";
@@ -16,7 +16,7 @@ export default function BlogId ({ blog }) {
   return (
     <>
       <Heads child={blog.title} />
-      <body>
+      <div>
         <Header />
         <main>
           <section className={blogStyle.header}>
@@ -88,7 +88,7 @@ export default function BlogId ({ blog }) {
           </section>
         </main>
         <Footer />
-      </body>
+      </div>
     </>
   );
 }

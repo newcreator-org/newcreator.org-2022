@@ -51,20 +51,7 @@ export default function Heads({ child }) {
             {/* <link rel="manifest" href="/site.webmanifest" /> */}
             <meta name="msapplication-TileColor" content={color} />
             <meta name="theme-color" content={color} />
-            <script
-                async
-                src="https://www.googletagmanager.com/gtag/js?id=UA-159919918-4"
-            ></script>
-            <script
-                dangerouslySetInnerHTML={{
-                    __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){window.dataLayer.push(arguments)}
-        gtag("js", new Date());
-        gtag("config", "UA-159919918-4");
-    `,
-                }}
-            />
+
         </Head>
     );
 }
