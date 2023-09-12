@@ -100,7 +100,7 @@ export default function Home({ news }) {
                         生成AI・体験授業プログラム
                       </h2>
                       <p className="leading-relaxed text-base">
-                        中学校・高等学校を対象に無償でChatGPTを利用したプロンプトエンジニアリングの体験授業を提供しています。
+                        中学校・高等学校を対象にChatGPTを利用したプロンプトエンジニアリングの体験授業を提供しています。
                         <br />
                         AIの特性を理解したり、AIを活用した問題解決を行うことでクリエイティブな学びの機会を提供します。
                       </p>
