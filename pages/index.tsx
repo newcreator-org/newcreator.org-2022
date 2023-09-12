@@ -76,15 +76,15 @@ export default function Home({ news }) {
                     <div className="bg-gray-100 p-6 rounded-lg">
                       <img
                         className="h-60 rounded w-full object-cover object-center mb-6"
-                        src="/img/works/workshop.jpg"
+                        src="/img/works/teacher.jpg"
                         alt="content"
                       />
                       <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
                       <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                        プログラミング体験ワークショップ開催
+                        生成AI・教員研修プログラム
                       </h2>
                       <p className="leading-relaxed text-base">
-                        これからの子どもたちが必ず必要とされる技術の１つでもあるプログラミング教育を企業や行政とコラボして提供しています。自社主催のワークショップに限らず講師の派遣などにより2017年度より全国各地での教室を随時開講。
+                        急速に進化するテクノロジーの中で教育現場をリードするためのツールとして、生成AIの可能性を探求し、教育の未来に新たな視点を提供するための学校・教員向け研修プログラムを提供しています。
                       </p>
                     </div>
                   </div>
@@ -92,16 +92,33 @@ export default function Home({ news }) {
                     <div className="bg-gray-100 p-6 rounded-lg">
                       <img
                         className="h-60 rounded w-full object-cover object-center mb-6"
-                        src="/img/works/microbit.jpg"
+                        src="/img/works/class.png"
                         alt="content"
                       />
                       <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
                       <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                        教材提供（子ども向け）
+                        生成AI・体験授業プログラム
                       </h2>
                       <p className="leading-relaxed text-base">
-                        教育用マイコンボード「micro:bit」とニュークリエイター・オルグが制作したテキスト教材を配布するプロジェクトを企画・実施。
-                        クラウドファンディングを通じて資金の調達をおこない、多くの子どもたちにプログラミングを体験してもらう機会をとどけることができました。
+                        中学校・高等学校を対象に無償でChatGPTを利用したプロンプトエンジニアリングの体験授業を提供しています。
+                        <br />
+                        AIの特性を理解したり、AIを活用した問題解決を行うことでクリエイティブな学びの機会を提供します。
+                      </p>
+                    </div>
+                  </div>
+                  <div className="xl:w-1/2 md:w-1/2 p-4">
+                    <div className="bg-gray-100 p-6 rounded-lg">
+                      <img
+                        className="h-60 rounded w-full object-cover object-center mb-6"
+                        src="/img/works/workshop.jpg"
+                        alt="content"
+                      />
+                      <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
+                      <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
+                        STEAM体験ワークショップ開催
+                      </h2>
+                      <p className="leading-relaxed text-base">
+                        これからの子どもたちが必ず必要とされる技術の１つでもあるSTEAM教育を企業や行政とコラボして提供しています。自社主催のワークショップに限らず講師の派遣などにより2017年度より全国各地での教室を随時開講。
                       </p>
                     </div>
                   </div>
@@ -114,29 +131,11 @@ export default function Home({ news }) {
                       />
                       <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
                       <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                        教材提供（法人向け）
+                        教材提供
                       </h2>
                       <p className="leading-relaxed text-base">
                         教材提供を行うことで安価でより多くの子どもたちにプログラミングを学ぶ機会を提供できるようになりました。
                         micro:bitを使ったマンツーマンオンラインレッスンの提供や、共同でのイベントの企画および運営を行っています。
-                      </p>
-                    </div>
-                  </div>
-                  <div className="xl:w-1/2 md:w-1/2 p-4">
-                    <div className="bg-gray-100 p-6 rounded-lg">
-                      <img
-                        className="h-60 rounded w-full object-cover object-center mb-6"
-                        src="/img/works/school.jpg"
-                        alt="content"
-                      />
-                      <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
-                      <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                        オンライン・プログラミング教室
-                      </h2>
-                      <p className="leading-relaxed text-base">
-                        小学生・中学生向けのプログラミング教室「newCreator
-                        School（ニュークリエイター
-                        スクール）」を、他社のプランよりもリーズナブルな価格で、１対１のオンライン授業という形で提供しております。
                       </p>
                     </div>
                   </div>
@@ -152,17 +151,18 @@ export default function Home({ news }) {
                         学校へのカリキュラム・授業導入
                       </h2>
                       <p className="leading-relaxed text-base">
-                        「newCreator School
-                        +」という名称でプログラミング教育支援としてカリキュラムや教職員向けのマニュアルなどを提供しています。
-                        <br />
-                        2021年4月より兵庫県たつの市立龍野西中学校の特別支援学級にてオンライン授業とマニュアルの提供を行っています。
+                        2021年4月より「newCreator School
+                        +」という名称でプログラミング教育支援としてオンライン授業、カリキュラムや教職員向けのマニュアルなどを提供しています。
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
             </section>
-            <section className="text-gray-700 body-font overflow-hidden" id="information">
+            <section
+              className="text-gray-700 body-font overflow-hidden"
+              id="information"
+            >
               <div className="container px-5 py-24 mx-auto">
                 <div className="flex flex-col text-center w-full mb-20">
                   <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
