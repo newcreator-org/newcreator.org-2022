@@ -12,7 +12,7 @@ export default function Home({ news }) {
         <>
           <Header />
           <Hero />
-          <main className="mx-auto px-4 sm:px-6 lg:px-8">
+          <main className="mx-auto">
             <section className="text-gray-600 body-font">
               <div className="container px-5 py-24 mx-auto flex flex-wrap">
                 <div className="mb-2 md:w-1/3">
