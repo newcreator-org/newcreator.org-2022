@@ -76,7 +76,7 @@ export default function Home({ news }) {
                     <div className="bg-gray-100 p-6 rounded-lg">
                       <img
                         className="h-60 rounded w-full object-cover object-center mb-6"
-                        src="/img/works/workshop.jpg"
+                        src="/img/works/otsumajyoshi.jpg"
                         alt="content"
                       />
                       <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
@@ -84,7 +84,7 @@ export default function Home({ news }) {
                         生成AI教育事業
                       </h2>
                       <p className="leading-relaxed text-base">
-                        これからの子どもたちが必ず必要とされる技術の１つでもあるプログラミング教育を企業や行政とコラボして提供しています。自社主催のワークショップに限らず講師の派遣などにより2017年度より全国各地での教室を随時開講。
+                        生成AIを使うことにとどまらず、どう使いこなしていくかを学ぶことができる生徒向けプログラムの提供、校務効率化や生徒への指導を支援する教員向けプログラムの提供を行っています。
                       </p>
                     </div>
                   </div>
@@ -484,17 +484,26 @@ export default function Home({ news }) {
                     <span className="ml-auto text-gray-900">
                       〒560-0054
                       <br />
-                      大阪府豊中市桜の町 3-7-7<br/>
+                      大阪府豊中市桜の町 3-7-7
+                      <br />
                     </span>
                   </div>
                   <div className="lg:px-20 px-2 flex border-t border-b mb-6 border-gray-200 py-4">
                     <span className="text-gray-500">東京オフィス（拠点）</span>
                     <span className="ml-auto text-gray-900">
-                      〒101-0054<br/>
-                      東京都千代田区神田錦町三丁目７番地２<br/>東京堂錦町ビル９階
+                      〒101-0054
+                      <br />
+                      東京都千代田区神田錦町三丁目７番地２
+                      <br />
+                      東京堂錦町ビル９階
                     </span>
                   </div>
-                  <small>※ 現在大阪オフィスへの出社は行っておらず、東京拠点となっております。<br/>また、郵便物については、東京オフィスへお願いいたします。</small>
+                  <small>
+                    ※
+                    現在大阪オフィスへの出社は行っておらず、東京拠点となっております。
+                    <br />
+                    また、郵便物については、東京オフィスへお願いいたします。
+                  </small>
                 </div>
               </div>
             </section>
