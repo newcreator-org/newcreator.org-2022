@@ -1,7 +1,4 @@
-import { googleTagManagerId } from "../utils/gtm";
-import GoogleTagManager, {
-  GoogleTagManagerId,
-} from "../components/googleTagManager";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { Head, Html, Main, NextScript } from "next/document";
 
 export default function Document() {
@@ -12,7 +9,9 @@ export default function Document() {
           href="https://fonts.googleapis.com/css?family=Noto+Sans+JP"
           rel="stylesheet"
         />
-        <GoogleTagManager gtmId={googleTagManagerId} />
+        <GoogleTagManager gtmId={
+          process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID as `GTM-${string}`
+        } />
       </Head>
       <body>
         <Main />
@@ -20,4 +19,4 @@ export default function Document() {
       </body>
     </Html>
   );
-};
+}
