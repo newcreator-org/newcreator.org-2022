@@ -1,19 +1,23 @@
+import Image from "next/image";
 import style from "./header.module.scss";
 
 export default function Header() {
     return (
       <>
         <header className={style.header}>
-          <nav className={style.nav}>
+          <nav className={`${style.nav}`}>
             <a href="/">
-              <h1 className={style.logo}>
+              <Image
+                src="/img/logo.svg"
+                alt="特定非営利活動法人ニュークリエイター・オルグ"
+                width={160}
+                height={50}
+              />
+              {/* <div className={`${style.logo}`}>
                 特定非営利活動法人ニュークリエイター・オルグ
-              </h1>
+              </div> */}
             </a>
-            <ul className="font-[500] flex gap-8 text-gray-800 items-center text-sm">
-              <li>
-                |
-              </li>
+            <ul className="font-bold flex gap-8 text-gray-800 items-center text-sm ml-8">
               <li>
                 <a href="/#activities">活動内容</a>
               </li>

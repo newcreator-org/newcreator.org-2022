@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import Heads from "../components/customHead";
 import dayjs from "dayjs";
 import Contact from "../components/contact";
+import Link from "next/link";
 
 export default function Home({ news }) {
     return (
@@ -188,10 +189,10 @@ export default function Home({ news }) {
                     Information
                   </h2>
                   <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
-                    最新のお知らせ
+                    お知らせ
                   </h1>
                 </div>
-                <div className="-my-8 max-w-5xl mx-auto">
+                <div className=" mx-auto">
                   {news &&
                     news.map((news) => (
                       <a
@@ -212,6 +213,23 @@ export default function Home({ news }) {
                       </a>
                     ))}
                 </div>
+                {/* 右寄せでリンク、もっと見る */}
+                <Link href="/information">
+                  <a className="flex justify-center text-indigo-500 mt-12 hover:text-indigo-600">
+                    <span>すべてのお知らせを見る</span>
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      className="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </Link>
               </div>
             </section>
             <section className="text-gray-700 body-font">

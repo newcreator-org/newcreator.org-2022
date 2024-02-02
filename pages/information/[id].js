@@ -16,7 +16,7 @@ export default function BlogId ({ blog }) {
   return (
     <>
       <Heads child={blog.title} />
-      <div>
+      <>
         <Header />
         <main>
           <section className={blogStyle.header}>
@@ -88,7 +88,7 @@ export default function BlogId ({ blog }) {
           </section>
         </main>
         <Footer />
-      </div>
+      </>
     </>
   );
 }
