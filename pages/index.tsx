@@ -9,7 +9,7 @@ export default function Home({ news }) {
     return (
       <>
         <Heads child={null} />
-        <div>
+        <>
           <Header />
           <Hero />
           <main className="mx-auto px-4 sm:px-6 lg:px-8">
@@ -843,7 +843,7 @@ export default function Home({ news }) {
             </section> */}
           </main>
           <Footer />
-        </div>
+        </>
       </>
     );
 }
