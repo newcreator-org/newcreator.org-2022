@@ -81,7 +81,7 @@ export default function Home({ news }) {
                       />
                       <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
                       <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                        プログラミング体験ワークショップ開催
+                        生成AI教育事業
                       </h2>
                       <p className="leading-relaxed text-base">
                         これからの子どもたちが必ず必要とされる技術の１つでもあるプログラミング教育を企業や行政とコラボして提供しています。自社主催のワークショップに限らず講師の派遣などにより2017年度より全国各地での教室を随時開講。
@@ -89,6 +89,22 @@ export default function Home({ news }) {
                     </div>
                   </div>
                   <div className="xl:w-1/2 md:w-1/2 p-4">
+                    <div className="bg-gray-100 p-6 rounded-lg">
+                      <img
+                        className="h-60 rounded w-full object-cover object-center mb-6"
+                        src="/img/works/workshop.jpg"
+                        alt="content"
+                      />
+                      <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
+                      <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
+                        プログラミング/IT教育事業
+                      </h2>
+                      <p className="leading-relaxed text-base">
+                        これからの子どもたちが必ず必要とされる技術の１つでもあるプログラミング教育を企業や行政とコラボして提供しています。自社主催のワークショップに限らず講師の派遣などにより2017年度より全国各地での教室を随時開講。
+                      </p>
+                    </div>
+                  </div>
+                  {/* <div className="xl:w-1/2 md:w-1/2 p-4">
                     <div className="bg-gray-100 p-6 rounded-lg">
                       <img
                         className="h-60 rounded w-full object-cover object-center mb-6"
@@ -121,7 +137,7 @@ export default function Home({ news }) {
                         micro:bitを使ったマンツーマンオンラインレッスンの提供や、共同でのイベントの企画および運営を行っています。
                       </p>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="xl:w-1/2 md:w-1/2 p-4">
                     <div className="bg-gray-100 p-6 rounded-lg">
                       <img
@@ -131,7 +147,7 @@ export default function Home({ news }) {
                       />
                       <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
                       <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                        オンライン・プログラミング教室
+                        オンラインプログラミングスクール事業
                       </h2>
                       <p className="leading-relaxed text-base">
                         小学生・中学生向けのプログラミング教室「newCreator
@@ -149,7 +165,7 @@ export default function Home({ news }) {
                       />
                       <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
                       <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                        学校へのカリキュラム・授業導入
+                        学校支援事業
                       </h2>
                       <p className="leading-relaxed text-base">
                         「newCreator School
@@ -162,7 +178,10 @@ export default function Home({ news }) {
                 </div>
               </div>
             </section>
-            <section className="text-gray-700 body-font overflow-hidden" id="information">
+            <section
+              className="text-gray-700 body-font overflow-hidden"
+              id="information"
+            >
               <div className="container px-5 py-24 mx-auto">
                 <div className="flex flex-col text-center w-full mb-20">
                   <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
@@ -173,24 +192,25 @@ export default function Home({ news }) {
                   </h1>
                 </div>
                 <div className="-my-8 max-w-5xl mx-auto">
-                  {news && news.map((news) => (
-                    <a
-                      className="p-4 flex flex-col md:flex-no-wrap border-b-2 "
-                      key={news.id}
-                      href={"/information/" + news.id}
-                    >
-                      <div className="md:w-64">
-                        <span className="mt-1 text-gray-500 text-sm">
-                          {dayjs(news.create_at).format("YYYY.MM.DD")}
-                        </span>
-                      </div>
-                      <div className="mt-1">
-                        <h2 className="text-md text-gray-900 title-font mb-2 leading-relaxed font-medium">
-                          {news.title}
-                        </h2>
-                      </div>
-                    </a>
-                  ))}
+                  {news &&
+                    news.map((news) => (
+                      <a
+                        className="p-4 flex flex-col md:flex-no-wrap border-b-2 "
+                        key={news.id}
+                        href={"/information/" + news.id}
+                      >
+                        <div className="md:w-64">
+                          <span className="mt-1 text-gray-500 text-sm">
+                            {dayjs(news.create_at).format("YYYY.MM.DD")}
+                          </span>
+                        </div>
+                        <div className="mt-1">
+                          <h2 className="text-md text-gray-900 title-font mb-2 leading-relaxed font-medium">
+                            {news.title}
+                          </h2>
+                        </div>
+                      </a>
+                    ))}
                 </div>
               </div>
             </section>
@@ -460,22 +480,21 @@ export default function Home({ news }) {
                     </span>
                   </div>
                   <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
-                    <span className="text-gray-500">所在地</span>
+                    <span className="text-gray-500">大阪オフィス（登記）</span>
                     <span className="ml-auto text-gray-900">
                       〒560-0054
                       <br />
-                      大阪府豊中市桜の町 3-7-7
+                      大阪府豊中市桜の町 3-7-7<br/>
                     </span>
                   </div>
                   <div className="lg:px-20 px-2 flex border-t border-b mb-6 border-gray-200 py-4">
-                    <span className="text-gray-500">兵庫事業所</span>
+                    <span className="text-gray-500">東京オフィス（拠点）</span>
                     <span className="ml-auto text-gray-900">
-                      〒671-1523
-                      <br />
-                      兵庫県揖保郡太子町東南 235-1
+                      〒101-0054<br/>
+                      東京都千代田区神田錦町三丁目７番地２<br/>東京堂錦町ビル９階
                     </span>
                   </div>
-                  <small>※ 郵便物等は兵庫事業所へお願いいたします。</small>
+                  <small>※ 現在大阪オフィスへの出社は行っておらず、東京拠点となっております。<br/>また、郵便物については、東京オフィスへお願いいたします。</small>
                 </div>
               </div>
             </section>
