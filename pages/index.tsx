@@ -173,7 +173,7 @@ export default function Home({ news }) {
                   </h1>
                 </div>
                 <div className="-my-8 max-w-5xl mx-auto">
-                  {news.map((news) => (
+                  {news && news.map((news) => (
                     <a
                       className="p-4 flex flex-col md:flex-no-wrap border-b-2 "
                       key={news.id}
