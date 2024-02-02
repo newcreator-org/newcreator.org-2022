@@ -22,7 +22,7 @@ export default function Header() {
                 <a href="/#activities">活動内容</a>
               </li>
               <li>
-                <a href="/#information">お知らせ</a>
+                <a href="/information">お知らせ</a>
               </li>
               <li>
                 <a href="/#contact">お問い合わせ</a>
@@ -36,17 +36,19 @@ export default function Header() {
                 <div className={style.cta_buton_contents}>
                   ボランティアに
                   <br />
-                  参加する<span>VOLUNTEER</span>
+                  参加する
+                  <span className="italic mt-1 font-bold">VOLUNTEER</span>
                 </div>
               </a>
               <a
                 className={style.cta_button_yello}
                 href="https://syncable.biz/associate/newcreator-org"
               >
-                <div className={style.cta_buton_contents}>
+                <div className={`${style.cta_buton_contents}`}>
                   寄付で活動を
                   <br />
-                  支援する<span>DONATION</span>
+                  支援する
+                  <span className="italic mt-1 font-bold">DONATION</span>
                 </div>
               </a>
             </div>
