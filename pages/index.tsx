@@ -455,42 +455,44 @@ export default function Home({ news }) {
                       法人情報
                     </h1>
                   </div>
-                  <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
+                  <div className="lg:px-20 px-2 flex  py-4 flex-col space-y-3 text-center">
                     <span className="text-gray-500">法人名</span>
-                    <span className="ml-auto text-gray-900">
+                    <span className="text-gray-900">
                       特定非営利活動法人ニュークリエイター・オルグ
                     </span>
                   </div>
-                  <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
+                  <div className="lg:px-20 px-2 flex  py-4  flex-col space-y-3 text-center">
                     <span className="text-gray-500">法人番号</span>
-                    <span className="ml-auto text-gray-900">3120905005839</span>
+                    <span className=" text-gray-900 leading-relaxed">
+                      3120905005839
+                    </span>
                   </div>
-                  <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
+                  <div className="lg:px-20 px-2 flex  py-4  flex-col space-y-3 text-center">
                     <span className="text-gray-500">設立</span>
-                    <span className="ml-auto text-gray-900">
+                    <span className=" text-gray-900 leading-relaxed">
                       2016年より活動、2019年1月法人化
                     </span>
                   </div>
-                  <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
+                  <div className="lg:px-20 px-2 flex  py-4 flex-col space-y-3 text-center">
                     <span className="text-gray-500">事業内容</span>
-                    <span className="ml-auto text-gray-900">
+                    <span className=" text-gray-900 leading-relaxed">
                       STEAM教育事業及び啓発事業
                       <br />
                       次世代人材の育成に関する情報提供事業
                     </span>
                   </div>
-                  <div className="lg:px-20 px-2 flex border-t border-gray-200 py-4">
+                  <div className="lg:px-20 px-2 flex  py-4 flex-col space-y-3 text-center">
                     <span className="text-gray-500">大阪オフィス（登記）</span>
-                    <span className="ml-auto text-gray-900">
+                    <span className="text-gray-900 leading-relaxed">
                       〒560-0054
                       <br />
                       大阪府豊中市桜の町 3-7-7
                       <br />
                     </span>
                   </div>
-                  <div className="lg:px-20 px-2 flex border-t border-b mb-6 border-gray-200 py-4">
+                  <div className="lg:px-20 px-2 flex mb-6 border-gray-200 py-4 flex-col space-y-3 text-center">
                     <span className="text-gray-500">東京オフィス（拠点）</span>
-                    <span className="ml-auto text-gray-900">
+                    <span className="text-gray-900 leading-relaxed">
                       〒101-0054
                       <br />
                       東京都千代田区神田錦町三丁目７番地２
@@ -498,12 +500,12 @@ export default function Home({ news }) {
                       東京堂錦町ビル９階
                     </span>
                   </div>
-                  <small>
+                  <p className="text-gray-500 lg:px-20 px-2 text-sm text-center leading-relaxed">
                     ※
                     現在大阪オフィスへの出社は行っておらず、東京拠点となっております。
                     <br />
                     また、郵便物については、東京オフィスへお願いいたします。
-                  </small>
+                  </p>
                 </div>
               </div>
             </section>
