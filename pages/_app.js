@@ -7,9 +7,7 @@ import GoogleTagManager, {
 function MyApp({ Component, pageProps }) {
     return (
         <>
-            <GoogleTagManager
-                googleTagManagerId={GoogleTagManagerId}
-            />
+            <GoogleTagManager gtmId={googleTagManagerId} />
             <Component {...pageProps} />
         </>
     );
