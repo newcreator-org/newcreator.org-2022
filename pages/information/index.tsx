@@ -4,7 +4,17 @@ import dayjs from "dayjs";
 import Heads from "../../components/customHead";
 import Header from "../../components/header";
 
-const InformationPage: NextPage = ({ news }) => {
+interface News {
+  id: string;
+  title: string;
+  create_at: string;
+}
+
+interface InformationPageProps {
+  news: News[];
+}
+
+const InformationPage: NextPage<InformationPageProps> = ({ news }) => {
   return (
     <>
       <Heads child={undefined} />
