@@ -195,7 +195,7 @@ export default function Home({ news, achieves }) {
               <div className="flex flex-wrap -m-4">
                 {achieves &&
                   achieves.map((achieve) => (
-                    <div className="xl:w-1/4 md:w-1/2 p-4">
+                    <div className="w-full xl:w-1/4 md:w-1/2 p-4">
                       <div className="bg-gray-100 p-6 rounded-lg">
                         <img
                           className="h-40 rounded w-full object-cover object-center mb-6"
