@@ -11,8 +11,9 @@ import {
   TwitterShareButton,
   TwitterIcon,
 } from "react-share";
+import { client } from "../../libs/client";
 
-export default function BlogId ({ blog }) {
+export default function BlogId({ blog }) {
   return (
     <>
       <Heads child={blog.title} />
@@ -21,11 +22,7 @@ export default function BlogId ({ blog }) {
         <main>
           <section className={blogStyle.header}>
             <div>
-              <time
-                dateTime={dayjs(blog.publishedAt).format(
-                  "YYYY-MM-DD"
-                )}
-              >
+              <time dateTime={dayjs(blog.publishedAt).format("YYYY-MM-DD")}>
                 {dayjs(blog.publishedAt).format("YYYY.MM.DD")}
               </time>
               <h1>{blog.title}</h1>
@@ -34,47 +31,37 @@ export default function BlogId ({ blog }) {
           <section className={blogStyle.content}>
             <div
               dangerouslySetInnerHTML={{
-                __html: blog.content
-                  ? `${blog.content}`
-                  : "本文はありません",
+                __html: blog.content ? `${blog.content}` : "本文はありません",
               }}
             />
 
-            {
-              blog.link && (
-                <p className={blogStyle.link}>
-                  関連リンク:
-                  <a href={blog.link}> {blog.link}</a>
-                </p>
-              )
-            }
+            {blog.link && (
+              <p className={blogStyle.link}>
+                関連リンク:
+                <a href={blog.link}> {blog.link}</a>
+              </p>
+            )}
             <div className={blogStyle.sns}>
               <p>Share: </p>
               <FacebookShareButton
-                url={[
-                  `https://newcreator.org/information/${blog.id}`,
-                ]}
-                quote={[
-                  `特定非営利活動法人ニュークリエイター・オルグ｜${blog.title}`,
-                ]}
+                url={"https://newcreator.org/information/${blog.id}"}
+                quote={
+                  "特定非営利活動法人ニュークリエイター・オルグ｜${blog.title}"
+                }
               >
                 <FacebookIcon size={28} round />
               </FacebookShareButton>
               <TwitterShareButton
-                url={[
-                  `https://newcreator.org/information/${blog.id}`,
-                ]}
-                title={[
-                  `特定非営利活動法人ニュークリエイター・オルグ｜${blog.title}`,
-                ]}
+                url={"https://newcreator.org/information/${blog.id}"}
+                title={
+                  "特定非営利活動法人ニュークリエイター・オルグ｜${blog.title}"
+                }
                 via={"nC_org"}
               >
                 <TwitterIcon size={28} round />
               </TwitterShareButton>
               <LineShareButton
-                url={[
-                  `https://newcreator.org/information/${blog.id}`,
-                ]}
+                url={[`https://newcreator.org/information/${blog.id}`]}
                 quote={[
                   `特定非営利活動法人ニュークリエイター・オルグ｜${blog.title}`,
                 ]}
@@ -93,33 +80,16 @@ export default function BlogId ({ blog }) {
   );
 }
 
-// 静的生成のためのパスを指定します
 export const getStaticPaths = async () => {
-  const key = {
-    headers: { "X-API-KEY": process.env.API_KEY },
-  };
-  const data = await fetch(
-    "https://newcreator-org.microcms.io/api/v1/news",
-    key
-  )
-    .then((res) => res.json())
-    .catch(() => null);
+  const data = await client.get({ endpoint: "news" });
   const paths = data.contents.map((content) => `/information/${content.id}`);
   return { paths, fallback: false };
 };
 
-// データをテンプレートに受け渡す部分の処理を記述します
 export const getStaticProps = async (context) => {
   const id = context.params.id;
-  const key = {
-    headers: { "X-API-KEY": process.env.API_KEY },
-  };
-  const data = await fetch(
-    "https://newcreator-org.microcms.io/api/v1/news/" + id,
-    key
-  )
-    .then((res) => res.json())
-    .catch(() => null);
+  const data = await client.get({ endpoint: "news", contentId: id });
+
   return {
     props: {
       blog: data,

@@ -2,110 +2,110 @@ import Header from "../components/header";
 import Hero from "../components/hero";
 import Footer from "../components/footer";
 import Heads from "../components/customHead";
-import dayjs from "dayjs";
+import dayjs, { Dayjs } from "dayjs";
 import Contact from "../components/contact";
 import Link from "next/link";
+import { client } from "../libs/client";
 
-export default function Home({ news }) {
-    return (
+export default function Home({ news, achieves }) {
+  return (
+    <>
+      <Heads child={null} />
       <>
-        <Heads child={null} />
-        <>
-          <Header />
-          <Hero />
-          <main className="mx-auto">
-            <section className="text-gray-600 body-font">
-              <div className="container px-5 py-24 mx-auto flex flex-wrap">
-                <div className="mb-2 md:w-1/3">
-                  <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
-                    About
+        <Header />
+        <Hero />
+        <main className="mx-auto">
+          <section className="text-gray-600 body-font">
+            <div className="container px-5 py-24 mx-auto flex flex-wrap">
+              <div className="mb-2 md:w-1/3">
+                <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
+                  About
+                </h2>
+                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+                  newCreator.org とは？
+                </h1>
+              </div>
+              <div className="md:w-2/3 md:pl-6">
+                <p className="leading-relaxed text-base">
+                  特定非営利活動法人ニュークリエイター・オルグは、「全国の子どもたちにSTEAM教育を格差なく届ける」というビジョンのもと活動を行っております。
+                  <br />
+                  とりわけSTEAM教育は、都市部と地方部で大きな環境の差があります。
+                  <br />
+                  文部科学省の調査でもプログラミング教育の趣旨、目的、基本的な考え方などの情報が不足していることから都市部と比較して地方部でのプログラミング・STEAMに関する教育が遅れていることがわかっていることのほか、子どもが進路や将来を考えるときに参考となるロールモデルが身近にいないことなど、地方が抱える課題は大きい
+                  と考えます。
+                  <br />
+                  そのような課題の解決に向け、全国の子どもたちが隔てなくSTEAMに親しみ、利活用できるようにするために、オンライン及び全国各地でのイベントを実施しています。
+                </p>
+              </div>
+            </div>
+            <div className="container mx-auto">
+              <div className="p-4 lg:w-full">
+                <div className="h-full bg-gray-100 bg-opacity-75 px-8 p-16 rounded-lg overflow-hidden text-center relative">
+                  <h2 className="tracking-widest text-xs title-font font-medium text-indigo-500  mb-1">
+                    Vision
                   </h2>
-                  <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-                    newCreator.org とは？
+                  <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
+                    STEAM教育を全国の子どもたちに格差なく届ける
                   </h1>
-                </div>
-                <div className="md:w-2/3 md:pl-6">
-                  <p className="leading-relaxed text-base">
-                    特定非営利活動法人ニュークリエイター・オルグは、「全国の子どもたちにSTEAM教育を格差なく届ける」というビジョンのもと活動を行っております。
-                    <br />
-                    とりわけSTEAM教育は、都市部と地方部で大きな環境の差があります。
-                    <br />
-                    文部科学省の調査でもプログラミング教育の趣旨、目的、基本的な考え方などの情報が不足していることから都市部と比較して地方部でのプログラミング・STEAMに関する教育が遅れていることがわかっていることのほか、子どもが進路や将来を考えるときに参考となるロールモデルが身近にいないことなど、地方が抱える課題は大きい
-                    と考えます。
-                    <br />
-                    そのような課題の解決に向け、全国の子どもたちが隔てなくSTEAMに親しみ、利活用できるようにするために、オンライン及び全国各地でのイベントを実施しています。
+                  <p className="leading-relaxed mb-3 italic">
+                    Delivering STEAM education to all children without disparity
                   </p>
                 </div>
               </div>
-              <div className="container mx-auto">
-                <div className="p-4 lg:w-full">
-                  <div className="h-full bg-gray-100 bg-opacity-75 px-8 p-16 rounded-lg overflow-hidden text-center relative">
-                    <h2 className="tracking-widest text-xs title-font font-medium text-indigo-500  mb-1">
-                      Vision
+            </div>
+          </section>
+          <section className="text-gray-600 body-font" id="activities">
+            <div className="container px-5 py-24 mx-auto">
+              <div className="flex flex-wrap w-full mb-12">
+                <div className="lg:w-1/3 w-full mb-6 lg:mb-0">
+                  <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
+                    Activities
+                  </h2>
+                  <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+                    主な活動内容
+                  </h1>
+                </div>
+                <p className="lg:w-2/3 w-full leading-relaxed text-gray-500">
+                  子どもたちに高い品質の教育・体験を届けるために、さまざまな形での活動を行っています。
+                  <br />
+                  ニュークリエイター・オルグではNPO法人という立場を活かし、民間企業と行政、そして参加者をつなぐイベント・プログラムを
+                  行っています。これによりステークホルダーに左右されず、内容の濃いプログラムを提供できます。
+                </p>
+              </div>
+              <div className="flex flex-wrap -m-4">
+                <div className="xl:w-1/2 md:w-1/2 p-4">
+                  <div className="bg-gray-100 p-6 rounded-lg">
+                    <img
+                      className="h-60 rounded w-full object-cover object-center mb-6"
+                      src="/img/works/otsumajyoshi.jpg"
+                      alt="content"
+                    />
+                    <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
+                    <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
+                      生成AI教育事業
                     </h2>
-                    <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
-                      STEAM教育を全国の子どもたちに格差なく届ける
-                    </h1>
-                    <p className="leading-relaxed mb-3 italic">
-                      Delivering STEAM education to all children without
-                      disparity
+                    <p className="leading-relaxed text-base">
+                      生成AIを使うことにとどまらず、どう使いこなしていくかを学ぶことができる生徒向けプログラムの提供、校務効率化や生徒への指導を支援する教員向けプログラムの提供を行っています。
                     </p>
                   </div>
                 </div>
-              </div>
-            </section>
-            <section className="text-gray-600 body-font" id="activities">
-              <div className="container px-5 py-24 mx-auto">
-                <div className="flex flex-wrap w-full mb-12">
-                  <div className="lg:w-1/3 w-full mb-6 lg:mb-0">
-                    <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
-                      Activities
+                <div className="xl:w-1/2 md:w-1/2 p-4">
+                  <div className="bg-gray-100 p-6 rounded-lg">
+                    <img
+                      className="h-60 rounded w-full object-cover object-center mb-6"
+                      src="/img/works/workshop.jpg"
+                      alt="content"
+                    />
+                    <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
+                    <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
+                      プログラミング/IT教育事業
                     </h2>
-                    <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-                      主な活動内容
-                    </h1>
+                    <p className="leading-relaxed text-base">
+                      これからの子どもたちが必ず必要とされる技術の１つでもあるプログラミング教育を企業や行政とコラボして提供しています。自社主催のワークショップに限らず講師の派遣などにより2017年度より全国各地での教室を随時開講。
+                    </p>
                   </div>
-                  <p className="lg:w-2/3 w-full leading-relaxed text-gray-500">
-                    子どもたちに高い品質の教育・体験を届けるために、さまざまな形での活動を行っています。
-                    <br />
-                    ニュークリエイター・オルグではNPO法人という立場を活かし、民間企業と行政、そして参加者をつなぐイベント・プログラムを
-                    行っています。これによりステークホルダーに左右されず、内容の濃いプログラムを提供できます。
-                  </p>
                 </div>
-                <div className="flex flex-wrap -m-4">
-                  <div className="xl:w-1/2 md:w-1/2 p-4">
-                    <div className="bg-gray-100 p-6 rounded-lg">
-                      <img
-                        className="h-60 rounded w-full object-cover object-center mb-6"
-                        src="/img/works/otsumajyoshi.jpg"
-                        alt="content"
-                      />
-                      <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
-                      <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                        生成AI教育事業
-                      </h2>
-                      <p className="leading-relaxed text-base">
-                        生成AIを使うことにとどまらず、どう使いこなしていくかを学ぶことができる生徒向けプログラムの提供、校務効率化や生徒への指導を支援する教員向けプログラムの提供を行っています。
-                      </p>
-                    </div>
-                  </div>
-                  <div className="xl:w-1/2 md:w-1/2 p-4">
-                    <div className="bg-gray-100 p-6 rounded-lg">
-                      <img
-                        className="h-60 rounded w-full object-cover object-center mb-6"
-                        src="/img/works/workshop.jpg"
-                        alt="content"
-                      />
-                      <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
-                      <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                        プログラミング/IT教育事業
-                      </h2>
-                      <p className="leading-relaxed text-base">
-                        これからの子どもたちが必ず必要とされる技術の１つでもあるプログラミング教育を企業や行政とコラボして提供しています。自社主催のワークショップに限らず講師の派遣などにより2017年度より全国各地での教室を随時開講。
-                      </p>
-                    </div>
-                  </div>
-                  {/* <div className="xl:w-1/2 md:w-1/2 p-4">
+                {/* <div className="xl:w-1/2 md:w-1/2 p-4">
                     <div className="bg-gray-100 p-6 rounded-lg">
                       <img
                         className="h-60 rounded w-full object-cover object-center mb-6"
@@ -139,116 +139,169 @@ export default function Home({ news }) {
                       </p>
                     </div>
                   </div> */}
-                  <div className="xl:w-1/2 md:w-1/2 p-4">
-                    <div className="bg-gray-100 p-6 rounded-lg">
-                      <img
-                        className="h-60 rounded w-full object-cover object-center mb-6"
-                        src="/img/works/school.jpg"
-                        alt="content"
-                      />
-                      <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
-                      <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                        オンラインプログラミングスクール事業
-                      </h2>
-                      <p className="leading-relaxed text-base">
-                        小学生・中学生向けのプログラミング教室「newCreator
-                        School（ニュークリエイター
-                        スクール）」を、他社のプランよりもリーズナブルな価格で、１対１のオンライン授業という形で提供しております。
-                      </p>
-                    </div>
+                <div className="xl:w-1/2 md:w-1/2 p-4">
+                  <div className="bg-gray-100 p-6 rounded-lg">
+                    <img
+                      className="h-60 rounded w-full object-cover object-center mb-6"
+                      src="/img/works/school.jpg"
+                      alt="content"
+                    />
+                    <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
+                    <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
+                      オンラインプログラミングスクール事業
+                    </h2>
+                    <p className="leading-relaxed text-base">
+                      小学生・中学生向けのプログラミング教室「newCreator
+                      School（ニュークリエイター
+                      スクール）」を、他社のプランよりもリーズナブルな価格で、１対１のオンライン授業という形で提供しております。
+                    </p>
                   </div>
-                  <div className="xl:w-1/2 md:w-1/2 p-4">
-                    <div className="bg-gray-100 p-6 rounded-lg">
-                      <img
-                        className="h-60 rounded w-full object-cover object-center mb-6"
-                        src="/img/works/school-plus.png"
-                        alt="content"
-                      />
-                      <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
-                      <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                        学校支援事業
-                      </h2>
-                      <p className="leading-relaxed text-base">
-                        「newCreator School
-                        +」という名称でプログラミング教育支援としてカリキュラムや教職員向けのマニュアルなどを提供しています。
-                        <br />
-                        2021年4月より兵庫県たつの市立龍野西中学校の特別支援学級にてオンライン授業とマニュアルの提供を行っています。
-                      </p>
-                    </div>
+                </div>
+                <div className="xl:w-1/2 md:w-1/2 p-4">
+                  <div className="bg-gray-100 p-6 rounded-lg">
+                    <img
+                      className="h-60 rounded w-full object-cover object-center mb-6"
+                      src="/img/works/school-plus.png"
+                      alt="content"
+                    />
+                    <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
+                    <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
+                      学校支援事業
+                    </h2>
+                    <p className="leading-relaxed text-base">
+                      「newCreator School
+                      +」という名称でプログラミング教育支援としてカリキュラムや教職員向けのマニュアルなどを提供しています。
+                      <br />
+                      2021年4月より兵庫県たつの市立龍野西中学校の特別支援学級にてオンライン授業とマニュアルの提供を行っています。
+                    </p>
                   </div>
                 </div>
               </div>
-            </section>
-            <section
-              className="text-gray-700 body-font overflow-hidden"
-              id="information"
-            >
-              <div className="container px-5 py-24 mx-auto">
-                <div className="flex flex-col text-center w-full mb-20">
-                  <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
-                    Information
-                  </h2>
-                  <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
-                    お知らせ
+            </div>
+          </section>
+          <section className="text-gray-600 body-font">
+            <div className="container px-5 py-24 mx-auto">
+              <div className="flex flex-wrap w-full mb-20">
+                <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
+                  <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+                    活動アーカイブ
                   </h1>
+                  <div className="h-1 w-20 bg-indigo-500 rounded" />
                 </div>
-                <div className=" mx-auto">
-                  {news &&
-                    news.map((news) => (
-                      <a
-                        className="p-4 flex flex-col md:flex-no-wrap border-b-2 "
-                        key={news.id}
-                        href={"/information/" + news.id}
-                      >
-                        <div className="md:w-64">
-                          <span className="mt-1 text-gray-500 text-sm">
-                            {dayjs(news.create_at).format("YYYY.MM.DD")}
-                          </span>
-                        </div>
-                        <div className="mt-1">
-                          <h2 className="text-md text-gray-900 title-font mb-2 leading-relaxed font-medium">
-                            {news.title}
-                          </h2>
-                        </div>
-                      </a>
-                    ))}
-                </div>
-                {/* 右寄せでリンク、もっと見る */}
-                <Link href="/information">
-                  <a className="flex justify-center text-indigo-500 mt-12 hover:text-indigo-600">
-                    <span>すべてのお知らせを見る</span>
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="w-4 h-4 ml-2"
-                      viewBox="0 0 24 24"
+                <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
+                  私たちのこれまでの活動の一部をご紹介します。
+                </p>
+              </div>
+              <div className="flex flex-wrap -m-4">
+                {achieves &&
+                  achieves.map((achieve) => (
+                    <div className="xl:w-1/4 md:w-1/2 p-4">
+                      <div className="bg-gray-100 p-6 rounded-lg">
+                        <img
+                          className="h-40 rounded w-full object-cover object-center mb-6"
+                          src="/ogp.png"
+                          alt="content"
+                        />
+                        <h2 className="text-lg text-gray-900 font-medium title-fon mb-2">
+                          {achieve.title}
+                        </h2>
+                        <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                          {dayjs(achieve.publishedAt).format("YYYY.MM.DD")}
+                        </h3>
+                        <p className="leading-relaxed text-base">
+                          {achieve.description}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+              </div>
+              <Link href="/achieves">
+                <a className="flex justify-center items-center text-indigo-500 mt-12 hover:text-indigo-600">
+                  <span>すべての活動を見る（更新中）</span>
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    className="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </Link>
+            </div>
+          </section>
+          <section
+            className="text-gray-700 body-font overflow-hidden"
+            id="information"
+          >
+            <div className="container px-5 py-24 mx-auto">
+              <div className="flex flex-col text-center w-full mb-20">
+                <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
+                  Information
+                </h2>
+                <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
+                  お知らせ
+                </h1>
+              </div>
+              <div className=" mx-auto">
+                {news &&
+                  news.map((news) => (
+                    <a
+                      className="p-4 flex flex-col md:flex-no-wrap border-b-2 "
+                      key={news.id}
+                      href={"/information/" + news.id}
                     >
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-                </Link>
+                      <div className="md:w-64">
+                        <span className="mt-1 text-gray-500 text-sm">
+                          {dayjs(news.create_at).format("YYYY.MM.DD")}
+                        </span>
+                      </div>
+                      <div className="mt-1">
+                        <h2 className="text-md text-gray-900 title-font mb-2 leading-relaxed font-medium">
+                          {news.title}
+                        </h2>
+                      </div>
+                    </a>
+                  ))}
               </div>
-            </section>
-            <section className="text-gray-700 body-font">
-              <div className="container px-5 py-24 mx-auto">
-                <div className="flex flex-col text-center w-full">
-                  <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
-                    Media
-                  </h2>
-                  <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
-                    メディア掲載
-                  </h1>
-                  {/* <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+              <Link href="/information">
+                <a className="flex justify-center items-center text-indigo-500 mt-12 hover:text-indigo-600">
+                  <span>すべてのお知らせを見る</span>
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    className="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </Link>
+            </div>
+          </section>
+          <section className="text-gray-700 body-font">
+            <div className="container px-5 py-24 mx-auto">
+              <div className="flex flex-col text-center w-full">
+                <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
+                  Media
+                </h2>
+                <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+                  メディア掲載
+                </h1>
+                {/* <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
                     newCreatorは、メディア掲載を通して、プログラミング教育の普及に努めています。
                   </p> */}
-                </div>
-                <div className="container mx-auto w-full">
-                  <img src="/img/media.png" alt="media" className="mx-auto" />
-                </div>
-                {/* <div className="flex flex-wrap -m-4">
+              </div>
+              <div className="container mx-auto w-full">
+                <img src="/img/media.png" alt="media" className="mx-auto" />
+              </div>
+              {/* <div className="flex flex-wrap -m-4">
                   <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                     <a className="block relative h-48 rounded overflow-hidden">
                       <img
@@ -412,155 +465,155 @@ export default function Home({ news }) {
                     </div>
                   </div>
                 </div> */}
+            </div>
+          </section>
+          <section className="text-gray-600 body-font">
+            <div className="container px-5 py-24 mx-auto">
+              <div className="flex flex-col text-center w-full mb-12">
+                <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
+                  Message
+                </h2>
+                <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
+                  想い
+                </h1>
               </div>
-            </section>
-            <section className="text-gray-600 body-font">
-              <div className="container px-5 py-24 mx-auto">
+              <div className="flex flex-wrap -m-4">
+                <div className="p-4 w-full">
+                  <div className="h-full bg-gray-100 p-8 rounded">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      className="block w-5 h-5 text-gray-400 mb-4"
+                      viewBox="0 0 975.036 975.036"
+                    >
+                      <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                    </svg>
+                    <p className="leading-relaxed mb-12">
+                      近年インターネットなどの情報通信技術により、社会はこれまでにない速度で変化し続けていますが、教育の内容はそう大きくは変わっていないのが現状です。
+                      <br />
+                      そのため、最新の情報にあわせた、最新の教育を提供していくことが我々の使命ではないかと考えています。
+                      <br />
+                      地域の方々、行政・企業の皆さまと協力し、よりよい「まなび」をつくっていくことはもちろん、すべての子どもたちに楽しく学習に取り組んでもらえる社会をめざします。
+                    </p>
+                    <a className="flex items-center">
+                      <img
+                        alt="testimonial"
+                        src="/img/member/yoshi.jpg"
+                        className="w-16 h-16 rounded-full flex-shrink-0 object-cover object-center"
+                      />
+                      <span className="flex-grow flex flex-col pl-6">
+                        <span className="title-font font-medium text-gray-900">
+                          改野 由尚
+                        </span>
+                        <span className="text-gray-500 text-sm">
+                          理事長 / Co-Founder
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className="text-gray-600 body-font overflow-hidden">
+            <div className="container px-5 py-24 mx-auto">
+              <div className="w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
                 <div className="flex flex-col text-center w-full mb-12">
                   <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
-                    Message
+                    Detail
                   </h2>
                   <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
-                    想い
+                    法人情報
                   </h1>
                 </div>
-                <div className="flex flex-wrap -m-4">
-                  <div className="p-4 w-full">
-                    <div className="h-full bg-gray-100 p-8 rounded">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        className="block w-5 h-5 text-gray-400 mb-4"
-                        viewBox="0 0 975.036 975.036"
-                      >
-                        <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-                      </svg>
-                      <p className="leading-relaxed mb-12">
-                        近年インターネットなどの情報通信技術により、社会はこれまでにない速度で変化し続けていますが、教育の内容はそう大きくは変わっていないのが現状です。
-                        <br />
-                        そのため、最新の情報にあわせた、最新の教育を提供していくことが我々の使命ではないかと考えています。
-                        <br />
-                        地域の方々、行政・企業の皆さまと協力し、よりよい「まなび」をつくっていくことはもちろん、すべての子どもたちに楽しく学習に取り組んでもらえる社会をめざします。
-                      </p>
-                      <a className="flex items-center">
-                        <img
-                          alt="testimonial"
-                          src="/img/member/yoshi.jpg"
-                          className="w-16 h-16 rounded-full flex-shrink-0 object-cover object-center"
-                        />
-                        <span className="flex-grow flex flex-col pl-6">
-                          <span className="title-font font-medium text-gray-900">
-                            改野 由尚
-                          </span>
-                          <span className="text-gray-500 text-sm">
-                            理事長 / Co-Founder
-                          </span>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
+                <div className="lg:px-20 px-2 flex  py-4 flex-col space-y-3 text-center">
+                  <span className="text-gray-500">法人名</span>
+                  <span className="text-gray-900">
+                    特定非営利活動法人ニュークリエイター・オルグ
+                  </span>
                 </div>
-              </div>
-            </section>
-            <section className="text-gray-600 body-font overflow-hidden">
-              <div className="container px-5 py-24 mx-auto">
-                <div className="w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
-                  <div className="flex flex-col text-center w-full mb-12">
-                    <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
-                      Detail
-                    </h2>
-                    <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
-                      法人情報
-                    </h1>
-                  </div>
-                  <div className="lg:px-20 px-2 flex  py-4 flex-col space-y-3 text-center">
-                    <span className="text-gray-500">法人名</span>
-                    <span className="text-gray-900">
-                      特定非営利活動法人ニュークリエイター・オルグ
-                    </span>
-                  </div>
-                  <div className="lg:px-20 px-2 flex  py-4  flex-col space-y-3 text-center">
-                    <span className="text-gray-500">法人番号</span>
-                    <span className=" text-gray-900 leading-relaxed">
-                      3120905005839
-                    </span>
-                  </div>
-                  <div className="lg:px-20 px-2 flex  py-4  flex-col space-y-3 text-center">
-                    <span className="text-gray-500">設立</span>
-                    <span className=" text-gray-900 leading-relaxed">
-                      2016年より活動、2019年1月法人化
-                    </span>
-                  </div>
-                  <div className="lg:px-20 px-2 flex  py-4 flex-col space-y-3 text-center">
-                    <span className="text-gray-500">事業内容</span>
-                    <span className=" text-gray-900 leading-relaxed">
-                      STEAM教育事業及び啓発事業
-                      <br />
-                      次世代人材の育成に関する情報提供事業
-                    </span>
-                  </div>
-                  <div className="lg:px-20 px-2 flex  py-4 flex-col space-y-3 text-center">
-                    <span className="text-gray-500">大阪オフィス（登記）</span>
-                    <span className="text-gray-900 leading-relaxed">
-                      〒560-0054
-                      <br />
-                      大阪府豊中市桜の町 3-7-7
-                      <br />
-                    </span>
-                  </div>
-                  <div className="lg:px-20 px-2 flex mb-6 border-gray-200 py-4 flex-col space-y-3 text-center">
-                    <span className="text-gray-500">東京オフィス（拠点）</span>
-                    <span className="text-gray-900 leading-relaxed">
-                      〒101-0054
-                      <br />
-                      東京都千代田区神田錦町三丁目７番地２
-                      <br />
-                      東京堂錦町ビル９階
-                    </span>
-                  </div>
-                  <p className="text-gray-500 lg:px-20 px-2 text-sm text-center leading-relaxed">
-                    ※
-                    現在大阪オフィスへの出社は行っておらず、東京拠点となっております。
+                <div className="lg:px-20 px-2 flex  py-4  flex-col space-y-3 text-center">
+                  <span className="text-gray-500">法人番号</span>
+                  <span className=" text-gray-900 leading-relaxed">
+                    3120905005839
+                  </span>
+                </div>
+                <div className="lg:px-20 px-2 flex  py-4  flex-col space-y-3 text-center">
+                  <span className="text-gray-500">設立</span>
+                  <span className=" text-gray-900 leading-relaxed">
+                    2016年より活動、2019年1月法人化
+                  </span>
+                </div>
+                <div className="lg:px-20 px-2 flex  py-4 flex-col space-y-3 text-center">
+                  <span className="text-gray-500">事業内容</span>
+                  <span className=" text-gray-900 leading-relaxed">
+                    STEAM教育事業及び啓発事業
                     <br />
-                    また、郵便物については、東京オフィスへお願いいたします。
-                  </p>
+                    次世代人材の育成に関する情報提供事業
+                  </span>
                 </div>
-              </div>
-            </section>
-            <section className="text-gray-600 body-font">
-              <div className="container px-5 py-24 mx-auto">
-                <div className="text-center mb-12">
-                  <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
-                    Follow us
-                  </h2>
-                  <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
-                    私たちの活動を支援して頂けませんか？
-                  </h1>
-                  <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto">
-                    私たちの活動は、300円より応援していただくことができます。
+                <div className="lg:px-20 px-2 flex  py-4 flex-col space-y-3 text-center">
+                  <span className="text-gray-500">大阪オフィス（登記）</span>
+                  <span className="text-gray-900 leading-relaxed">
+                    〒560-0054
                     <br />
-                    寄付いただいた資金は当法人の活動資金としてさまざまな活動に使われます。
-                  </p>
+                    大阪府豊中市桜の町 3-7-7
+                    <br />
+                  </span>
                 </div>
-                <p className="w-full mx-auto text-center">
-                  <small>
-                    GMOあおぞらネット銀行 法人営業部(101) 1193846
-                    トクヒ）ニュークリエイターオルグ 宛
-                  </small>
+                <div className="lg:px-20 px-2 flex mb-6 border-gray-200 py-4 flex-col space-y-3 text-center">
+                  <span className="text-gray-500">東京オフィス（拠点）</span>
+                  <span className="text-gray-900 leading-relaxed">
+                    〒101-0054
+                    <br />
+                    東京都千代田区神田錦町三丁目７番地２
+                    <br />
+                    東京堂錦町ビル９階
+                  </span>
+                </div>
+                <p className="text-gray-500 lg:px-20 px-2 text-sm text-center leading-relaxed">
+                  ※
+                  現在大阪オフィスへの出社は行っておらず、東京拠点となっております。
+                  <br />
+                  また、郵便物については、東京オフィスへお願いいたします。
                 </p>
+              </div>
+            </div>
+          </section>
+          <section className="text-gray-600 body-font">
+            <div className="container px-5 py-24 mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
+                  Follow us
+                </h2>
+                <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
+                  私たちの活動を支援して頂けませんか？
+                </h1>
+                <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto">
+                  私たちの活動は、300円より応援していただくことができます。
+                  <br />
+                  寄付いただいた資金は当法人の活動資金としてさまざまな活動に使われます。
+                </p>
+              </div>
+              <p className="w-full mx-auto text-center">
+                <small>
+                  GMOあおぞらネット銀行 法人営業部(101) 1193846
+                  トクヒ）ニュークリエイターオルグ 宛
+                </small>
+              </p>
 
-                <p className="mt-4 text-base leading-relaxed w-full mx-auto text-center">
-                  <small>上記へ振り込みもしくは</small>
-                </p>
-                <a
-                  href="https://syncable.biz/associate/newcreator-org"
-                  target="_blank"
-                >
-                  <button className="flex mx-auto mt-4 text-white bg-indigo-500 border-0 py-3 px-16 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                    クレジットカードで寄付
-                  </button>
-                </a>
-                {/* <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+              <p className="mt-4 text-base leading-relaxed w-full mx-auto text-center">
+                <small>上記へ振り込みもしくは</small>
+              </p>
+              <a
+                href="https://syncable.biz/associate/newcreator-org"
+                target="_blank"
+              >
+                <button className="flex mx-auto mt-4 text-white bg-indigo-500 border-0 py-3 px-16 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                  クレジットカードで寄付
+                </button>
+              </a>
+              {/* <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
                                 <div className="p-2 sm:w-1/2 w-full">
                                     <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                                         <svg
@@ -676,7 +729,7 @@ export default function Home({ news }) {
                                     </div>
                                 </div>
                             </div> */}
-                {/* <div className="lg:w-1/2 md:w-2/3 mx-auto mt-12">
+              {/* <div className="lg:w-1/2 md:w-2/3 mx-auto mt-12">
                                 <div className="flex flex-wrap -m-2">
                                     <div className="p-2 w-1/2">
                                         <div className="relative">
@@ -712,10 +765,10 @@ export default function Home({ news }) {
                                 </div>
 
                             </div> */}
-              </div>
-            </section>
-            <Contact />
-            {/* <section className="text-gray-600 body-font">
+            </div>
+          </section>
+          <Contact />
+          {/* <section className="text-gray-600 body-font">
               <div className="container px-5 pt-24  pb-40 mx-auto">
                 <div className="flex flex-col text-center w-full mb-20">
                   <h2 className="text-xs text-blue-500 tracking-widest font-medium title-font mb-1">
@@ -870,26 +923,26 @@ export default function Home({ news }) {
                 </a>
               </div>
             </section> */}
-          </main>
-          <Footer />
-        </>
+        </main>
+        <Footer />
       </>
-    );
+    </>
+  );
 }
 
 export const getStaticProps = async () => {
-    const key = {
-        headers: { "X-API-KEY": process.env.API_KEY },
-    };
-    const data = await fetch(
-        "https://newcreator-org.microcms.io/api/v1/news?orders=-create_at&limit=3",
-        key
-    )
-        .then((res) => res.json())
-        .catch(() => null);
-    return {
-        props: {
-            news: data.contents,
-        },
-    };
+  const news = await client.get({
+    endpoint: "news",
+    queries: { limit: 5, orders: "-createAt" },
+  });
+  const achieve = await client.get({
+    endpoint: "achieve",
+    queries: { limit: 4, orders: "-createAt" },
+  });
+  return {
+    props: {
+      news: news.contents,
+      achieves: achieve.contents,
+    },
+  };
 };
