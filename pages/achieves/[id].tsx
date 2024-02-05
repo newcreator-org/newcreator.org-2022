@@ -60,12 +60,6 @@ export default function AchieveId({ achieves }) {
               >
                 <TwitterIcon size={28} round />
               </TwitterShareButton>
-              <LineShareButton
-                url={'https://newcreator.org/information/${achieves.id}'}
-                quote={'特定非営利活動法人ニュークリエイター・オルグ｜${achieves.title}'}
-              >
-                <LineIcon size={28} round />
-              </LineShareButton>
             </div>
             <a href="/">
               <p className={blogStyle.top}>TOPに戻る</p>

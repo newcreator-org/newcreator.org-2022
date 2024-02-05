@@ -6,7 +6,14 @@ import Header from "../../components/header";
 import { client } from "../../libs/client";
 import Footer from "../../components/footer";
 
-const AchivePage: NextPage = ({ achieves }) => {
+type AchieveType = {
+  id: string;
+  title: string;
+  description: string;
+  publishedAt: string;
+};
+
+const AchivePage: NextPage<{ achieves: AchieveType[] }> = ({ achieves }) => {
   return (
     <>
       <Heads child={undefined} />
