@@ -60,7 +60,7 @@ export default AchivePage;
 
 export const getStaticProps = async () => {
   const data = await client.get({
-    endpoint: "achieve", queries: { limit: 1000, orders: "-create_at" },
+    endpoint: "achieve", queries: { limit: 1000, orders: "-date" },
   });
   return {
     props: {

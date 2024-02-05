@@ -933,11 +933,11 @@ export default function Home({ news, achieves }) {
 export const getStaticProps = async () => {
   const news = await client.get({
     endpoint: "news",
-    queries: { limit: 5, orders: "-createAt" },
+    queries: { limit: 5, orders: "-create_at" },
   });
   const achieve = await client.get({
     endpoint: "achieve",
-    queries: { limit: 4, orders: "-createAt" },
+    queries: { limit: 4, orders: "-date" },
   });
   return {
     props: {
