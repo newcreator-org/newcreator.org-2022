@@ -206,7 +206,7 @@ export default function Home({ news, achieves }) {
                           {achieve.title}
                         </h2>
                         <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                          {dayjs(achieve.publishedAt).format("YYYY.MM.DD")}
+                          {dayjs(achieve.date).format("YYYY.MM.DD")}
                         </h3>
                         <p className="leading-relaxed text-base">
                           {achieve.description}
