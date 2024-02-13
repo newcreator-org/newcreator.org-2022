@@ -13,48 +13,48 @@ import {
 } from "react-share";
 import { client } from "../../libs/client";
 
-export default function AchieveId({ achieves }) {
+export default function AchieveId({ archives }) {
   return (
     <>
-      <Heads child={achieves.title} />
+      <Heads child={archives.title} />
       <>
         <Header />
         <main>
           <section className={blogStyle.header}>
             <div>
-              <time dateTime={dayjs(achieves.publishedAt).format("YYYY-MM-DD")}>
-                {dayjs(achieves.publishedAt).format("YYYY.MM.DD")}
+              <time dateTime={dayjs(archives.publishedAt).format("YYYY-MM-DD")}>
+                {dayjs(archives.publishedAt).format("YYYY.MM.DD")}
               </time>
-              <h1>{achieves.title}</h1>
+              <h1>{archives.title}</h1>
             </div>
           </section>
           <section className={blogStyle.content}>
             <div
               dangerouslySetInnerHTML={{
-                __html: achieves.content ? `${achieves.content}` : "本文はありません",
+                __html: archives.content ? `${archives.content}` : "本文はありません",
               }}
             />
 
-            {achieves.link && (
+            {archives.link && (
               <p className={blogStyle.link}>
                 関連リンク:
-                <a href={achieves.link}> {achieves.link}</a>
+                <a href={archives.link}> {archives.link}</a>
               </p>
             )}
             <div className={blogStyle.sns}>
               <p>Share: </p>
               <FacebookShareButton
-                url={"https://newcreator.org/information/${achieves.id}"}
+                url={"https://newcreator.org/information/${archives.id}"}
                 quote={
-                  "特定非営利活動法人ニュークリエイター・オルグ｜${achieves.title}"
+                  "特定非営利活動法人ニュークリエイター・オルグ｜${archives.title}"
                 }
               >
                 <FacebookIcon size={28} round />
               </FacebookShareButton>
               <TwitterShareButton
-                url={"https://newcreator.org/information/${achieves.id}"}
+                url={"https://newcreator.org/information/${archives.id}"}
                 title={
-                  "特定非営利活動法人ニュークリエイター・オルグ｜${achieves.title}"
+                  "特定非営利活動法人ニュークリエイター・オルグ｜${archives.title}"
                 }
                 via={"nC_org"}
               >
@@ -73,18 +73,18 @@ export default function AchieveId({ achieves }) {
 }
 
 export const getStaticPaths = async () => {
-  const data = await client.get({ endpoint: "achieve" });
-  const paths = data.contents.map((content) => `/achieves/${content.id}`);
+  const data = await client.get({ endpoint: "archive" });
+  const paths = data.contents.map((content) => `/archives/${content.id}`);
   return { paths, fallback: false };
 };
 
 export const getStaticProps = async (context) => {
   const id = context.params.id;
-  const data = await client.get({ endpoint: "achieve", contentId: id });
+  const data = await client.get({ endpoint: "archive", contentId: id });
 
   return {
     props: {
-      achieves: data,
+      archives: data,
     },
   };
 };

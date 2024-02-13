@@ -14,7 +14,7 @@ type AchieveType = {
   date: string;
 };
 
-const AchivePage: NextPage<{ achieves: AchieveType[] }> = ({ achieves }) => {
+const AchivePage: NextPage<{ archives: AchieveType[] }> = ({ archives }) => {
   return (
     <>
       <Heads child={undefined} />
@@ -34,8 +34,8 @@ const AchivePage: NextPage<{ achieves: AchieveType[] }> = ({ achieves }) => {
               </h1>
             </div>
             <div className="flex flex-wrap -m-4">
-              {achieves &&
-                achieves.map((achieve) => (
+              {archives &&
+                archives.map((archive) => (
                   <div className="w-full xl:w-1/4 md:w-1/2 p-4">
                     <div className="bg-gray-100 p-6 rounded-lg">
                       <img
@@ -44,13 +44,13 @@ const AchivePage: NextPage<{ achieves: AchieveType[] }> = ({ achieves }) => {
                         alt="content"
                       />
                       <h2 className="text-lg text-gray-900 font-medium title-fon mb-2">
-                        {achieve.title}
+                        {archive.title}
                       </h2>
                       <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                        {dayjs(achieve.date).format("YYYY.MM.DD")}
+                        {dayjs(archive.date).format("YYYY.MM.DD")}
                       </h3>
                       <p className="leading-relaxed text-base">
-                        {achieve.description}
+                        {archive.description}
                       </p>
                     </div>
                   </div>
@@ -68,11 +68,11 @@ export default AchivePage;
 
 export const getStaticProps = async () => {
   const data = await client.get({
-    endpoint: "achieve", queries: { limit: 1000, orders: "-date" },
+    endpoint: "archive", queries: { limit: 1000, orders: "-date" },
   });
   return {
     props: {
-      achieves: data.contents,
+      archives: data.contents,
     },
   };
 };

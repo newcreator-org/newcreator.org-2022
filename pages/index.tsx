@@ -7,7 +7,7 @@ import Contact from "../components/contact";
 import Link from "next/link";
 import { client } from "../libs/client";
 
-export default function Home({ news, achieves }) {
+export default function Home({ news, archives }) {
   return (
     <>
       <Heads child={null} />
@@ -193,8 +193,8 @@ export default function Home({ news, achieves }) {
                 </p>
               </div>
               <div className="flex flex-wrap -m-4">
-                {achieves &&
-                  achieves.map((achieve) => (
+                {archives &&
+                  archives.map((archive) => (
                     <div className="w-full xl:w-1/4 md:w-1/2 p-4">
                       <div className="bg-gray-100 p-6 rounded-lg">
                         <img
@@ -203,19 +203,19 @@ export default function Home({ news, achieves }) {
                           alt="content"
                         />
                         <h2 className="text-lg text-gray-900 font-medium title-fon mb-2">
-                          {achieve.title}
+                          {archive.title}
                         </h2>
                         <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                          {dayjs(achieve.date).format("YYYY.MM.DD")}
+                          {dayjs(archive.date).format("YYYY.MM.DD")}
                         </h3>
                         <p className="leading-relaxed text-base">
-                          {achieve.description}
+                          {archive.description}
                         </p>
                       </div>
                     </div>
                   ))}
               </div>
-              <Link href="/achieves">
+              <Link href="/archives">
                 <a className="flex justify-center items-center text-indigo-500 mt-12 hover:text-indigo-600">
                   <span>すべての活動を見る（更新中）</span>
                   <svg
@@ -935,14 +935,14 @@ export const getStaticProps = async () => {
     endpoint: "news",
     queries: { limit: 5, orders: "-create_at" },
   });
-  const achieve = await client.get({
-    endpoint: "achieve",
+  const archive = await client.get({
+    endpoint: "archive",
     queries: { limit: 4, orders: "-date" },
   });
   return {
     props: {
       news: news.contents,
-      achieves: achieve.contents,
+      archives: archive.contents,
     },
   };
 };
