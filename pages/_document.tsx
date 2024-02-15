@@ -5,14 +5,14 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <GoogleTagManager gtmId={
-          process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID as `GTM-${string}`
-        } />
       </Head>
       <body>
         <Main />
         <NextScript />
       </body>
+      <GoogleTagManager gtmId={
+          process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID as `GTM-${string}`
+        } />
     </Html>
   );
 }
