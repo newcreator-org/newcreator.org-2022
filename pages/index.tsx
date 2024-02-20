@@ -73,7 +73,7 @@ export default function Home({ news, archives }) {
                 </p>
               </div>
               <div className="flex flex-wrap -m-4">
-                <div className="xl:w-1/2 md:w-1/2 p-4">
+                <div className="w-full p-4">
                   <div className="bg-gray-100 p-6 rounded-lg">
                     <img
                       className="h-60 rounded w-full object-cover object-center mb-6"
@@ -86,6 +86,22 @@ export default function Home({ news, archives }) {
                     </h2>
                     <p className="leading-relaxed text-base">
                       生成AIを使うことにとどまらず、どう使いこなしていくかを学ぶことができる生徒向けプログラムの提供、校務効率化や生徒への指導を支援する教員向けプログラムの提供を行っています。
+                    </p>
+                  </div>
+                </div>
+                <div className="xl:w-1/2 md:w-1/2 p-4">
+                  <div className="bg-gray-100 p-6 rounded-lg">
+                    <img
+                      className="h-60 rounded w-full object-cover object-center mb-6"
+                      src="/img/works/gpt.jpg"
+                      alt="content"
+                    />
+                    <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font"></h3>
+                    <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
+                      プライベートGPTの提供
+                    </h2>
+                    <p className="leading-relaxed text-base">
+                      生成AIを教育機関で安全に利活用できる環境の提供およびそのサポートを行っています。生徒数単位、契約期間の縛りなし、請求書ベースでの契約が可能です。
                     </p>
                   </div>
                 </div>
