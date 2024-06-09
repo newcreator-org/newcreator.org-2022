@@ -568,17 +568,8 @@ export default function Home({ news, archives }) {
                     次世代人材の育成に関する情報提供事業
                   </span>
                 </div>
-                <div className="lg:px-20 px-2 flex  py-4 flex-col space-y-3 text-center">
-                  <span className="text-gray-500">大阪オフィス（登記）</span>
-                  <span className="text-gray-900 leading-relaxed">
-                    〒560-0054
-                    <br />
-                    大阪府豊中市桜の町 3-7-7
-                    <br />
-                  </span>
-                </div>
                 <div className="lg:px-20 px-2 flex mb-6 border-gray-200 py-4 flex-col space-y-3 text-center">
-                  <span className="text-gray-500">東京オフィス（拠点）</span>
+                  <span className="text-gray-500">所在地</span>
                   <span className="text-gray-900 leading-relaxed">
                     〒101-0054
                     <br />
@@ -587,12 +578,6 @@ export default function Home({ news, archives }) {
                     東京堂錦町ビル９階
                   </span>
                 </div>
-                <p className="text-gray-500 lg:px-20 px-2 text-sm text-center leading-relaxed">
-                  ※
-                  現在大阪オフィスへの出社は行っておらず、東京拠点となっております。
-                  <br />
-                  また、郵便物については、東京オフィスへお願いいたします。
-                </p>
               </div>
             </div>
           </section>
