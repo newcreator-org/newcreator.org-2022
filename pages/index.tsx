@@ -15,6 +15,133 @@ export default function Home({ news, archives }) {
         <Header />
         <Hero />
         <main className="mx-auto">
+          {/* 実績セクション - 数字で見せる */}
+          <section className="text-gray-600 body-font bg-gradient-to-r from-orange-50 to-blue-50">
+            <div className="container px-5 py-16 mx-auto">
+              <div className="flex flex-col text-center w-full mb-12">
+                <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
+                  Our Impact
+                </h2>
+                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+                  数字で見る私たちの活動
+                </h1>
+                <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-600">
+                  2017年から全国の子どもたちにSTEAM教育を届けてきた実績
+                </p>
+              </div>
+              <div className="flex flex-wrap -m-4 text-center">
+                <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
+                  <div className="border-2 border-gray-200 px-4 py-8 rounded-lg bg-white hover:shadow-lg transition-shadow">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      className="text-orange-500 w-12 h-12 mb-3 inline-block"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+                    </svg>
+                    <h2 className="title-font font-bold text-5xl text-gray-900 mb-2">
+                      1,000<span className="text-2xl">+</span>
+                    </h2>
+                    <p className="leading-relaxed font-medium text-gray-600">累計参加生徒数</p>
+                    <p className="text-xs text-gray-500 mt-1">Students Reached</p>
+                  </div>
+                </div>
+                <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
+                  <div className="border-2 border-gray-200 px-4 py-8 rounded-lg bg-white hover:shadow-lg transition-shadow">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      className="text-blue-500 w-12 h-12 mb-3 inline-block"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M3 18v-6a9 9 0 0118 0v6"></path>
+                      <path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"></path>
+                    </svg>
+                    <h2 className="title-font font-bold text-5xl text-gray-900 mb-2">
+                      50<span className="text-2xl">+</span>
+                    </h2>
+                    <p className="leading-relaxed font-medium text-gray-600">ワークショップ・授業実施回数</p>
+                    <p className="text-xs text-gray-500 mt-1">Workshops Held</p>
+                  </div>
+                </div>
+                <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
+                  <div className="border-2 border-gray-200 px-4 py-8 rounded-lg bg-white hover:shadow-lg transition-shadow">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      className="text-orange-500 w-12 h-12 mb-3 inline-block"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    <h2 className="title-font font-bold text-5xl text-gray-900 mb-2">
+                      10<span className="text-2xl">+</span>
+                    </h2>
+                    <p className="leading-relaxed font-medium text-gray-600">都道府県で活動</p>
+                    <p className="text-xs text-gray-500 mt-1">Prefectures Covered</p>
+                  </div>
+                </div>
+                <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
+                  <div className="border-2 border-gray-200 px-4 py-8 rounded-lg bg-white hover:shadow-lg transition-shadow">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      className="text-blue-500 w-12 h-12 mb-3 inline-block"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                    <h2 className="title-font font-bold text-5xl text-gray-900 mb-2">
+                      8<span className="text-2xl">年</span>
+                    </h2>
+                    <p className="leading-relaxed font-medium text-gray-600">活動実績</p>
+                    <p className="text-xs text-gray-500 mt-1">Years of Experience</p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-wrap mt-8 text-center">
+                <div className="p-4 md:w-1/3 sm:w-1/2 w-full">
+                  <div className="px-4 py-6">
+                    <h3 className="title-font font-bold text-3xl text-gray-900 mb-2">
+                      10<span className="text-xl">+</span>
+                    </h3>
+                    <p className="leading-relaxed text-gray-600">パートナー企業</p>
+                  </div>
+                </div>
+                <div className="p-4 md:w-1/3 sm:w-1/2 w-full">
+                  <div className="px-4 py-6">
+                    <h3 className="title-font font-bold text-3xl text-gray-900 mb-2">
+                      22<span className="text-xl">件</span>
+                    </h3>
+                    <p className="leading-relaxed text-gray-600">プレスリリース配信</p>
+                  </div>
+                </div>
+                <div className="p-4 md:w-1/3 sm:w-1/2 w-full">
+                  <div className="px-4 py-6">
+                    <h3 className="title-font font-bold text-3xl text-gray-900 mb-2">
+                      生成AI教育
+                    </h3>
+                    <p className="leading-relaxed text-gray-600">のパイオニア（2023年〜）</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
           <section className="text-gray-600 body-font">
             <div className="container px-5 py-24 mx-auto flex flex-wrap">
               <div className="mb-2 md:w-1/3">
@@ -590,11 +717,40 @@ export default function Home({ news, archives }) {
                 <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
                   私たちの活動を支援して頂けませんか？
                 </h1>
-                <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto">
+                <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto mb-8">
                   私たちの活動は、300円より応援していただくことができます。
                   <br />
-                  寄付いただいた資金は当法人の活動資金としてさまざまな活動に使われます。
+                  皆様の寄付が、子どもたちの未来を切り開く力になります。
                 </p>
+                <div className="lg:w-3/4 mx-auto mb-12">
+                  <h3 className="text-xl font-medium text-gray-900 mb-6 text-center">あなたの寄付でできること</h3>
+                  <div className="flex flex-wrap -m-4">
+                    <div className="p-4 md:w-1/3 w-full">
+                      <div className="bg-orange-50 border-2 border-orange-200 p-6 rounded-lg h-full">
+                        <div className="text-orange-500 text-3xl font-bold mb-2">¥3,000</div>
+                        <p className="text-gray-700 leading-relaxed">
+                          1人の子どもが1ヶ月間プログラミング教室に参加できます
+                        </p>
+                      </div>
+                    </div>
+                    <div className="p-4 md:w-1/3 w-full">
+                      <div className="bg-blue-50 border-2 border-blue-200 p-6 rounded-lg h-full">
+                        <div className="text-blue-500 text-3xl font-bold mb-2">¥10,000</div>
+                        <p className="text-gray-700 leading-relaxed">
+                          地方での出張授業1回分の交通費になります
+                        </p>
+                      </div>
+                    </div>
+                    <div className="p-4 md:w-1/3 w-full">
+                      <div className="bg-orange-50 border-2 border-orange-200 p-6 rounded-lg h-full">
+                        <div className="text-orange-500 text-3xl font-bold mb-2">¥30,000</div>
+                        <p className="text-gray-700 leading-relaxed">
+                          新しい教材の開発費に充てられます
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <p className="w-full mx-auto text-center">
                 <small>
@@ -610,7 +766,7 @@ export default function Home({ news, archives }) {
                 href="https://syncable.biz/associate/newcreator-org"
                 target="_blank"
               >
-                <button className="flex mx-auto mt-4 text-white bg-indigo-500 border-0 py-3 px-16 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                <button className="flex mx-auto mt-4 text-white bg-orange-500 border-0 py-3 px-16 focus:outline-none hover:bg-orange-600 rounded text-lg shadow-lg hover:shadow-xl transition-all">
                   クレジットカードで寄付
                 </button>
               </a>
@@ -932,6 +1088,67 @@ export default function Home({ news, archives }) {
 }
 
 export const getStaticProps = async () => {
+  // microCMS APIが設定されていない場合はモックデータを使用
+  if (!process.env.API_KEY) {
+    return {
+      props: {
+        news: [
+          {
+            id: "1",
+            title: "生成AI×キャリア教育プログラム「社会問題をAIで解決」を名古屋市立名古屋商業高等学校で実施",
+            create_at: "2024-02-13",
+          },
+          {
+            id: "2",
+            title: "情報セキュリティに対応した教育機関向けプライベートGPTを聖パウロ学園高等学校に提供開始",
+            create_at: "2024-01-29",
+          },
+          {
+            id: "3",
+            title: "兵庫県太子町にて学校関係者向け研修会「生成AIで描く働き方改革のファーストステップ」を実施",
+            create_at: "2024-01-10",
+          },
+          {
+            id: "4",
+            title: "大妻中学高等学校にて「生成AIで先生の業務を効率化！学校教員・教育関係者向け生成AI公開研修」を実施",
+            create_at: "2023-11-25",
+          },
+          {
+            id: "5",
+            title: "AI×キャリア教育プログラム『中・高校生のAIハローワーク』を開発",
+            create_at: "2023-07-06",
+          },
+        ],
+        archives: [
+          {
+            id: "1",
+            title: "名古屋市立名古屋商業高等学校で生成AI授業を実施",
+            description: "生成AIを活用したキャリア教育プログラムを実施しました。",
+            date: "2024-02-13",
+          },
+          {
+            id: "2",
+            title: "聖パウロ学園高等学校にプライベートGPT提供",
+            description: "情報セキュリティに対応した教育機関向けプライベートGPTの提供を開始しました。",
+            date: "2024-01-29",
+          },
+          {
+            id: "3",
+            title: "兵庫県太子町で教員研修を実施",
+            description: "生成AIを活用した働き方改革についての研修を行いました。",
+            date: "2024-01-10",
+          },
+          {
+            id: "4",
+            title: "大妻中学高等学校で教員向け生成AI研修",
+            description: "学校教員・教育関係者向けの生成AI公開研修を実施しました。",
+            date: "2023-11-25",
+          },
+        ],
+      },
+    };
+  }
+  
   const news = await client.get({
     endpoint: "news",
     queries: { limit: 5, orders: "-create_at" },
