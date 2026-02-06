@@ -3,7 +3,7 @@ import Link from "next/link";
 import dayjs from "dayjs";
 import Heads from "../../components/customHead";
 import Header from "../../components/header";
-import { client } from "../../libs/client";
+import { getAllArchives } from "../../libs/markdown";
 import Footer from "../../components/footer";
 
 type AchieveType = {
@@ -67,12 +67,10 @@ const AchivePage: NextPage<{ archives: AchieveType[] }> = ({ archives }) => {
 export default AchivePage;
 
 export const getStaticProps = async () => {
-  const data = await client.get({
-    endpoint: "archive", queries: { limit: 1000, orders: "-date" },
-  });
+  const archives = getAllArchives();
   return {
     props: {
-      archives: data.contents,
+      archives: archives,
     },
   };
 };

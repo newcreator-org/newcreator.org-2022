@@ -6,7 +6,7 @@ import Heads from "../components/customHead";
 import dayjs, { Dayjs } from "dayjs";
 import Contact from "../components/contact";
 import Link from "next/link";
-import { client } from "../libs/client";
+import { getAllNews, getAllArchives } from "../libs/markdown";
 
 export default function Home({ news, archives }) {
   return (
@@ -1163,79 +1163,13 @@ export default function Home({ news, archives }) {
 }
 
 export const getStaticProps = async () => {
-  // microCMS APIが設定されていない場合はモックデータを使用
-  if (!process.env.API_KEY) {
-    return {
-      props: {
-        news: [
-          {
-            id: "1",
-            title: "生成AI×キャリア教育プログラム「社会問題をAIで解決」を名古屋市立名古屋商業高等学校で実施",
-            create_at: "2024-02-13",
-          },
-          {
-            id: "2",
-            title: "情報セキュリティに対応した教育機関向けプライベートGPTを聖パウロ学園高等学校に提供開始",
-            create_at: "2024-01-29",
-          },
-          {
-            id: "3",
-            title: "兵庫県太子町にて学校関係者向け研修会「生成AIで描く働き方改革のファーストステップ」を実施",
-            create_at: "2024-01-10",
-          },
-          {
-            id: "4",
-            title: "大妻中学高等学校にて「生成AIで先生の業務を効率化！学校教員・教育関係者向け生成AI公開研修」を実施",
-            create_at: "2023-11-25",
-          },
-          {
-            id: "5",
-            title: "AI×キャリア教育プログラム『中・高校生のAIハローワーク』を開発",
-            create_at: "2023-07-06",
-          },
-        ],
-        archives: [
-          {
-            id: "1",
-            title: "名古屋市立名古屋商業高等学校で生成AI授業を実施",
-            description: "生成AIを活用したキャリア教育プログラムを実施しました。",
-            date: "2024-02-13",
-          },
-          {
-            id: "2",
-            title: "聖パウロ学園高等学校にプライベートGPT提供",
-            description: "情報セキュリティに対応した教育機関向けプライベートGPTの提供を開始しました。",
-            date: "2024-01-29",
-          },
-          {
-            id: "3",
-            title: "兵庫県太子町で教員研修を実施",
-            description: "生成AIを活用した働き方改革についての研修を行いました。",
-            date: "2024-01-10",
-          },
-          {
-            id: "4",
-            title: "大妻中学高等学校で教員向け生成AI研修",
-            description: "学校教員・教育関係者向けの生成AI公開研修を実施しました。",
-            date: "2023-11-25",
-          },
-        ],
-      },
-    };
-  }
+  const allNews = getAllNews();
+  const allArchives = getAllArchives();
   
-  const news = await client.get({
-    endpoint: "news",
-    queries: { limit: 5, orders: "-create_at" },
-  });
-  const archive = await client.get({
-    endpoint: "archive",
-    queries: { limit: 4, orders: "-date" },
-  });
   return {
     props: {
-      news: news.contents,
-      archives: archive.contents,
+      news: allNews.slice(0, 5),
+      archives: allArchives.slice(0, 4),
     },
   };
 };

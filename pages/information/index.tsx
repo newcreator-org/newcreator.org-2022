@@ -3,7 +3,7 @@ import Link from "next/link";
 import dayjs from "dayjs";
 import Heads from "../../components/customHead";
 import Header from "../../components/header";
-import { client } from "../../libs/client";
+import { getAllNews } from "../../libs/markdown";
 import Footer from "../../components/footer";
 
 interface News {
@@ -67,12 +67,10 @@ const InformationPage: NextPage<InformationPageProps> = ({ news }) => {
 export default InformationPage;
 
 export const getStaticProps = async () => {
-  const data = await client.get({
-    endpoint: "news", queries: { limit: 1000, orders: "-create_at" },
-  });
+  const news = getAllNews();
   return {
     props: {
-      news: data.contents,
+      news: news,
     },
   };
 };

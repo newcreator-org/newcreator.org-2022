@@ -11,7 +11,7 @@ import {
   TwitterShareButton,
   TwitterIcon,
 } from "react-share";
-import { client } from "../../libs/client";
+import { getAllNews, getNewsById } from "../../libs/markdown";
 
 export default function BlogId({ blog }) {
   return (
@@ -73,18 +73,33 @@ export default function BlogId({ blog }) {
 }
 
 export const getStaticPaths = async () => {
-  const data = await client.get({ endpoint: "news" });
-  const paths = data.contents.map((content) => `/information/${content.id}`);
+  const allNews = getAllNews();
+  const paths = allNews.map((news) => `/information/${news.id}`);
   return { paths, fallback: false };
 };
 
 export const getStaticProps = async (context) => {
   const id = context.params.id;
-  const data = await client.get({ endpoint: "news", contentId: id });
+  const newsPost = getNewsById(id);
+
+  if (!newsPost) {
+    return {
+      notFound: true,
+    };
+  }
+
+  // MarkdownをシンプルなHTMLに変換
+  const htmlContent = newsPost.content
+    .split('\n\n')
+    .map(para => `<p>${para.replace(/\n/g, '<br>')}</p>`)
+    .join('');
 
   return {
     props: {
-      blog: data,
+      blog: {
+        ...newsPost,
+        content: htmlContent,
+      },
     },
   };
 };

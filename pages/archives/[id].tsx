@@ -11,7 +11,7 @@ import {
   TwitterShareButton,
   TwitterIcon,
 } from "react-share";
-import { client } from "../../libs/client";
+import { getAllArchives, getArchiveById } from "../../libs/markdown";
 
 export default function AchieveId({ archives }) {
   return (
@@ -73,18 +73,34 @@ export default function AchieveId({ archives }) {
 }
 
 export const getStaticPaths = async () => {
-  const data = await client.get({ endpoint: "archive" });
-  const paths = data.contents.map((content) => `/archives/${content.id}`);
+  const allArchives = getAllArchives();
+  const paths = allArchives.map((archive) => `/archives/${archive.id}`);
   return { paths, fallback: false };
 };
 
 export const getStaticProps = async (context) => {
   const id = context.params.id;
-  const data = await client.get({ endpoint: "archive", contentId: id });
+  const archivePost = getArchiveById(id);
+
+  if (!archivePost) {
+    return {
+      notFound: true,
+    };
+  }
+
+  // MarkdownをシンプルなHTMLに変換
+  const htmlContent = archivePost.content
+    .split('\n\n')
+    .map(para => `<p>${para.replace(/\n/g, '<br>')}</p>`)
+    .join('');
 
   return {
     props: {
-      archives: data,
+      archives: {
+        ...archivePost,
+        content: htmlContent,
+        publishedAt: archivePost.date,
+      },
     },
   };
 };
