@@ -28,19 +28,19 @@
 |---------|-----|
 | **Framework preset** | `Next.js (Static HTML Export)` |
 | **Production branch** | `master` |
-| **Build command** | `npm run build` |
+| **Build command** | `npm install --legacy-peer-deps && npm run build` |
 | **Build output directory** | `out` |
 | **Root directory** | `/` |
 
-#### 4. 環境変数の設定（オプション）
+#### 4. 環境変数の設定
 
-microCMS APIを使用する場合は、以下の環境変数を設定してください:
+以下の環境変数を設定してください：
 
-| 変数名 | 説明 |
-|--------|------|
-| `API_KEY` | microCMS APIキー |
+| 変数名 | 値 | 説明 |
+|--------|-----|------|
+| `NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID` | `GTM-N8C929R` | Google Tag Manager ID |
 
-**注意:** 環境変数が設定されていない場合は、モックデータが使用されます。
+**重要**: `.npmrc`ファイルがリポジトリに含まれているため、`legacy-peer-deps=true`が自動的に適用されます。
 
 #### 5. デプロイ
 
