@@ -1,18 +1,11 @@
 .hero {
   &__cover {
-    background: url(../public/img/digital-connections-bg.png);
-    // https://www.freepik.com/free-vector/white-background-with-low-poly-digital-lines-connection_8562954.htm
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: left;
-    background-position-y: top;
+    background: #fff;
   }
 
   &__title {
     color: hsl(192, 17%, 99%) !important;
     font-size: 3.5rem;
-    // font-family: 'Seaweed Script', cursive;
-    // transform: rotate(-2.5deg);
     line-height: 110%;
     font-family: 'Source Code Pro', monospace;
 
@@ -37,7 +30,6 @@
     background-position: center;
     background-size: cover;
     z-index: 0;
-
 
     &_container {
       width: 90%;
@@ -82,12 +74,10 @@
   }
 }
 
-
-
 @media screen and (max-width: 980px) {
   .hero {
     &__cover {
-      background: url(../public/img/digital-connections-bg-sp.png);
+      background: #fff;
     }
     &__title {
       font-size: 2.5rem;
