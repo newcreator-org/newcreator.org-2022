@@ -1,11 +1,32 @@
 import Image from "next/image";
+import { useState, useEffect, useCallback } from "react";
 import style from "./header.module.scss";
 
 export default function Header() {
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+      const onScroll = () => setScrolled(window.scrollY > 10);
+      window.addEventListener("scroll", onScroll, { passive: true });
+      return () => window.removeEventListener("scroll", onScroll);
+    }, []);
+
+    useEffect(() => {
+      if (menuOpen) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "";
+      }
+      return () => { document.body.style.overflow = ""; };
+    }, [menuOpen]);
+
+    const closeMenu = useCallback(() => setMenuOpen(false), []);
+
     return (
       <>
-        <header className={style.header}>
-          <nav className={`${style.nav}`}>
+        <header className={`${style.header} ${scrolled ? style.scrolled : ""}`}>
+          <nav className={style.nav}>
             <a href="/">
               <Image
                 src="/img/logo.svg"
@@ -13,11 +34,8 @@ export default function Header() {
                 width={160}
                 height={50}
               />
-              {/* <div className={`${style.logo}`}>
-                特定非営利活動法人ニュークリエイター・オルグ
-              </div> */}
             </a>
-            <ul className="font-bold flex gap-8 text-gray-800 items-center text-sm ml-8">
+            <ul className={style.navLinks}>
               <li>
                 <a href="/about">私たちについて</a>
               </li>
@@ -25,12 +43,11 @@ export default function Header() {
                 <a href="/activities">活動実績</a>
               </li>
               <li>
+                <a href="/media">メディア</a>
+              </li>
+              <li>
                 <a href="/information">お知らせ</a>
               </li>
-              {/* TODO: 情報公開ページ準備でき次第復活 */}
-              {/* <li>
-                <a href="/about/transparency">情報公開</a>
-              </li> */}
               <li>
                 <a href="/#contact">お問い合わせ</a>
               </li>
@@ -40,27 +57,66 @@ export default function Header() {
                 className={style.cta_button_blue}
                 href="mailto:contact@newcreator.org"
               >
-                <div className={style.cta_buton_contents}>
-                  ボランティアに
-                  <br />
-                  参加する
-                  <span className="italic mt-1 font-bold">VOLUNTEER</span>
-                </div>
+                ボランティアに参加
+                <span>VOLUNTEER</span>
               </a>
               <a
                 className={style.cta_button_yello}
                 href="https://syncable.biz/associate/newcreator-org"
               >
-                <div className={`${style.cta_buton_contents}`}>
-                  寄付で活動を
-                  <br />
-                  支援する
-                  <span className="italic mt-1 font-bold">DONATION</span>
-                </div>
+                寄付で支援する
+                <span>DONATION</span>
+              </a>
+            </div>
+
+            {/* Hamburger button - mobile only */}
+            <button
+              className={`${style.hamburger} ${menuOpen ? style.hamburgerOpen : ""}`}
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="メニュー"
+              aria-expanded={menuOpen}
+            >
+              <span />
+              <span />
+              <span />
+            </button>
+          </nav>
+        </header>
+
+        {/* Mobile drawer overlay */}
+        <div
+          className={`${style.overlay} ${menuOpen ? style.overlayVisible : ""}`}
+          onClick={closeMenu}
+        />
+
+        {/* Mobile drawer */}
+        <div className={`${style.drawer} ${menuOpen ? style.drawerOpen : ""}`}>
+          <nav className={style.drawerNav}>
+            <ul>
+              <li><a href="/about" onClick={closeMenu}>私たちについて</a></li>
+              <li><a href="/activities" onClick={closeMenu}>活動実績</a></li>
+              <li><a href="/media" onClick={closeMenu}>メディア</a></li>
+              <li><a href="/information" onClick={closeMenu}>お知らせ</a></li>
+              <li><a href="/#contact" onClick={closeMenu}>お問い合わせ</a></li>
+            </ul>
+            <div className={style.drawerCta}>
+              <a
+                className={style.drawerCtaBlue}
+                href="mailto:contact@newcreator.org"
+                onClick={closeMenu}
+              >
+                ボランティアに参加する
+              </a>
+              <a
+                className={style.drawerCtaYellow}
+                href="https://syncable.biz/associate/newcreator-org"
+                onClick={closeMenu}
+              >
+                寄付で活動を支援する
               </a>
             </div>
           </nav>
-        </header>
+        </div>
       </>
     );
 }

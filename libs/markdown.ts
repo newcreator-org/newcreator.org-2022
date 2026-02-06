@@ -93,3 +93,48 @@ export function getArchiveById(id: string): ArchivePost | null {
   const allArchives = getAllArchives();
   return allArchives.find(post => post.id === id) || null;
 }
+
+export interface MediaPost {
+  id: string;
+  title: string;
+  date: string;
+  category: string;
+  description: string;
+  content: string;
+}
+
+export function getAllMedia(): MediaPost[] {
+  const mediaDir = path.join(contentDirectory, 'media');
+
+  if (!fs.existsSync(mediaDir)) {
+    return [];
+  }
+
+  const fileNames = fs.readdirSync(mediaDir);
+  const allMedia = fileNames
+    .filter(fileName => fileName.endsWith('.md'))
+    .map(fileName => {
+      const fullPath = path.join(mediaDir, fileName);
+      const fileContents = fs.readFileSync(fullPath, 'utf8');
+      const { data, content } = matter(fileContents);
+
+      return {
+        id: data.id,
+        title: data.title,
+        date: data.date,
+        category: data.category || '',
+        description: data.description || '',
+        content: content,
+      };
+    });
+
+  // 日付順にソート（新しい順）
+  return allMedia.sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
+}
+
+export function getMediaById(id: string): MediaPost | null {
+  const allMedia = getAllMedia();
+  return allMedia.find(post => post.id === id) || null;
+}

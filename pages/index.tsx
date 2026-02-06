@@ -6,10 +6,23 @@ import Heads from "../components/customHead";
 import dayjs, { Dayjs } from "dayjs";
 import Contact from "../components/contact";
 import Link from "next/link";
-import { getAllNews, getAllArchives } from "../libs/markdown";
+import { getAllNews, getAllArchives, getAllMedia } from "../libs/markdown";
 import ScrollFadeIn from "../components/ScrollFadeIn";
 
-export default function Home({ news, archives }) {
+const categoryColor = (category: string) => {
+  switch (category) {
+    case "AI教育":
+      return "bg-blue-100 text-blue-700";
+    case "IT教育":
+      return "bg-green-100 text-green-700";
+    case "キャリア教育":
+      return "bg-purple-100 text-purple-700";
+    default:
+      return "bg-gray-100 text-gray-700";
+  }
+};
+
+export default function Home({ news, archives, media }) {
   return (
     <>
       <Heads child={null} />
@@ -312,6 +325,53 @@ export default function Home({ news, archives }) {
           </ScrollFadeIn>
 
           <ScrollFadeIn>
+            <section className="text-gray-700 body-font" id="media">
+              <div className="container px-5 py-20 mx-auto">
+                <h1 className="sm:text-3xl text-2xl font-bold title-font text-gray-900 mb-12">
+                  メディア
+                </h1>
+                <div className="flex flex-wrap -m-4">
+                  {media &&
+                    media.map((post) => (
+                      <div className="w-full xl:w-1/3 md:w-1/2 p-4" key={post.id}>
+                        <a href={`/media/${post.id}`}>
+                          <div className="bg-white rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-gray-100 overflow-hidden group h-full">
+                            <div className="p-6">
+                              <span
+                                className={`inline-block text-xs font-medium px-3 py-1 rounded-full mb-3 ${categoryColor(
+                                  post.category
+                                )}`}
+                              >
+                                {post.category}
+                              </span>
+                              <h2 className="text-base text-gray-900 font-bold title-font mb-2 group-hover:text-orange-500 transition-colors">
+                                {post.title}
+                              </h2>
+                              <p className="text-sm text-gray-500 mb-2">
+                                {dayjs(post.date).format("YYYY.MM.DD")}
+                              </p>
+                              <p className="leading-relaxed text-sm text-gray-600">
+                                {post.description}
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    ))}
+                </div>
+                <Link href="/media">
+                  <a className="flex justify-center items-center text-orange-500 mt-12 hover:text-orange-600 font-medium transition-colors">
+                    <span>すべての記事を見る</span>
+                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </Link>
+              </div>
+            </section>
+          </ScrollFadeIn>
+
+          <ScrollFadeIn>
             <section
               className="text-gray-700 body-font"
               id="information"
@@ -515,11 +575,13 @@ export default function Home({ news, archives }) {
 export const getStaticProps = async () => {
   const allNews = getAllNews();
   const allArchives = getAllArchives();
+  const allMedia = getAllMedia();
 
   return {
     props: {
       news: allNews.slice(0, 5),
       archives: allArchives.slice(0, 4),
+      media: allMedia.slice(0, 3),
     },
   };
 };
