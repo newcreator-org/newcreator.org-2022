@@ -1,6 +1,7 @@
 import Header from "../components/header";
 import Hero from "../components/hero";
 import Footer from "../components/footer";
+import FooterCta from "../components/footerCta";
 import Heads from "../components/customHead";
 import dayjs, { Dayjs } from "dayjs";
 import Contact from "../components/contact";
@@ -322,17 +323,90 @@ export default function Home({ news, archives }) {
               </div>
             </div>
           </section>
+          {/* 課題提起セクション */}
+          <section className="text-gray-600 body-font bg-gray-50">
+            <div className="container px-5 py-24 mx-auto">
+              <div className="flex flex-col text-center w-full mb-12">
+                <h2 className="text-xs text-orange-500 tracking-widest font-medium title-font mb-1">
+                  Challenge
+                </h2>
+                <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+                  日本の教育が直面する課題
+                </h1>
+              </div>
+              <div className="flex flex-wrap -m-4">
+                <div className="p-4 md:w-1/3">
+                  <div className="h-full bg-white rounded-lg p-8 border-2 border-gray-200">
+                    <div className="flex items-center mb-3">
+                      <div className="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-6 h-6" viewBox="0 0 24 24">
+                          <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                        </svg>
+                      </div>
+                      <h2 className="text-gray-900 text-lg font-medium">地域格差</h2>
+                    </div>
+                    <p className="leading-relaxed text-base text-gray-600">
+                      都市部と地方では、STEAM教育を受ける機会に大きな格差があります。すべての子どもたちに平等な学びの機会を届けることが必要です。
+                    </p>
+                  </div>
+                </div>
+                <div className="p-4 md:w-1/3">
+                  <div className="h-full bg-white rounded-lg p-8 border-2 border-gray-200">
+                    <div className="flex items-center mb-3">
+                      <div className="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-6 h-6" viewBox="0 0 24 24">
+                          <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                      </div>
+                      <h2 className="text-gray-900 text-lg font-medium">変化の速さ</h2>
+                    </div>
+                    <p className="leading-relaxed text-base text-gray-600">
+                      AIやテクノロジーの進化は加速していますが、教育現場での対応は追いついていません。最新の技術を学ぶ機会が求められています。
+                    </p>
+                  </div>
+                </div>
+                <div className="p-4 md:w-1/3">
+                  <div className="h-full bg-white rounded-lg p-8 border-2 border-gray-200">
+                    <div className="flex items-center mb-3">
+                      <div className="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-6 h-6" viewBox="0 0 24 24">
+                          <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                      </div>
+                      <h2 className="text-gray-900 text-lg font-medium">経済的負担</h2>
+                    </div>
+                    <p className="leading-relaxed text-base text-gray-600">
+                      プログラミング教室やSTEAM教育は費用が高く、経済的な理由で参加できない子どもたちがいます。低コストで質の高い教育が必要です。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* ビジョンセクション（拡充版） */}
           <section className="text-gray-600 body-font">
             <div className="container px-5 py-24 mx-auto">
+              <div className="flex flex-col text-center w-full mb-12">
+                <h2 className="text-xs text-blue-500 tracking-widest font-medium title-font mb-1">
+                  Vision
+                </h2>
+                <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+                  私たちのビジョン
+                </h1>
+                <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-600">
+                  すべての子どもたちに、創造的な学びの機会を届けます。地域や経済状況に関わらず、誰もがSTEAM教育にアクセスできる社会を目指します。
+                </p>
+              </div>
               <div className="flex flex-wrap w-full mb-20">
                 <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
                   <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-                    活動アーカイブ
+                    私たちの取り組み
                   </h1>
                   <div className="h-1 w-20 bg-indigo-500 rounded" />
                 </div>
                 <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-                  私たちのこれまでの活動の一部をご紹介します。
+                  具体的な活動を通じて、ビジョンを実現しています。
                 </p>
               </div>
               <div className="flex flex-wrap -m-4">
@@ -1081,6 +1155,7 @@ export default function Home({ news, archives }) {
               </div>
             </section> */}
         </main>
+        <FooterCta />
         <Footer />
       </>
     </>

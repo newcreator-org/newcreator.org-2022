@@ -19,10 +19,16 @@ export default function Header() {
             </a>
             <ul className="font-bold flex gap-8 text-gray-800 items-center text-sm ml-8">
               <li>
-                <a href="/#activities">活動内容</a>
+                <a href="/about">私たちについて</a>
+              </li>
+              <li>
+                <a href="/activities">活動実績</a>
               </li>
               <li>
                 <a href="/information">お知らせ</a>
+              </li>
+              <li>
+                <a href="/about/transparency">情報公開</a>
               </li>
               <li>
                 <a href="/#contact">お問い合わせ</a>
