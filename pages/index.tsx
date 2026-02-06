@@ -92,101 +92,128 @@ export default function Home({ news, archives }) {
                 <div className="flex flex-wrap w-full mb-12">
                   <div className="lg:w-1/3 w-full mb-6 lg:mb-0">
                     <h1 className="sm:text-3xl text-2xl font-bold title-font text-gray-900">
-                      主な活動内容
+                      サービス
                     </h1>
                   </div>
                   <p className="lg:w-2/3 w-full leading-7 text-gray-500">
-                    子どもたちに高い品質の教育・体験を届けるために、さまざまな形での活動を行っています。
-                    NPO法人という立場を活かし、民間企業と行政、そして参加者をつなぐプログラムを提供しています。
+                    教育機関・自治体向けに、生成AIの研修から導入支援、プログラミング教育まで一貫して提供しています。
                   </p>
                 </div>
-                <div className="flex flex-wrap -m-4">
+
+                {/* メインサービス */}
+                <div className="flex flex-wrap -m-4 mb-8">
                   <div className="w-full p-4">
-                    <div className="bg-white rounded-lg overflow-hidden">
+                    <div className="bg-white rounded-lg overflow-hidden md:flex">
                       <img
-                        className="h-64 w-full object-cover object-center"
+                        className="h-64 md:h-auto md:w-1/2 w-full object-cover object-center"
                         src="/img/works/otsumajyoshi.jpg"
-                        alt="生成AI教育事業"
+                        alt="学校向け出張授業・登壇"
                       />
-                      <div className="p-6">
-                        <h2 className="text-lg text-gray-900 font-bold title-font mb-3">
-                          生成AI教育事業
+                      <div className="p-6 md:p-8 flex flex-col justify-center">
+                        <p className="text-orange-500 text-xs font-bold tracking-wider mb-2">10都道府県 22校で実施</p>
+                        <h2 className="text-xl text-gray-900 font-bold title-font mb-3">
+                          学校向け出張授業・登壇
                         </h2>
-                        <p className="leading-7 text-base">
-                          生成AIを使うことにとどまらず、どう使いこなしていくかを学ぶことができる生徒向けプログラムの提供、校務効率化や生徒への指導を支援する教員向けプログラムの提供を行っています。
+                        <p className="leading-7 text-base text-gray-600 mb-4">
+                          全国の学校・教育機関へ講師を派遣し、生徒向け・教員向けの生成AI活用研修を実施します。学校のカリキュラムや目的に応じたプログラムを設計し、実践的な内容をお届けします。
                         </p>
+                        <a href="/#contact" className="text-orange-500 font-medium text-sm hover:text-orange-600 transition-colors">
+                          研修のご依頼はこちら →
+                        </a>
                       </div>
                     </div>
                   </div>
+                </div>
+
+                <div className="flex flex-wrap -m-4 mb-8">
                   <div className="xl:w-1/2 md:w-1/2 p-4">
-                    <div className="bg-white rounded-lg overflow-hidden">
+                    <div className="bg-white rounded-lg overflow-hidden h-full">
                       <img
-                        className="h-52 w-full object-cover object-center"
-                        src="/img/works/gpt.jpg"
-                        alt="プライベートGPTの提供"
-                      />
-                      <div className="p-6">
-                        <h2 className="text-lg text-gray-900 font-bold title-font mb-3">
-                          プライベートGPTの提供
-                        </h2>
-                        <p className="leading-7 text-base">
-                          生成AIを教育機関で安全に利活用できる環境の提供およびそのサポートを行っています。生徒数単位、契約期間の縛りなし、請求書ベースでの契約が可能です。
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="xl:w-1/2 md:w-1/2 p-4">
-                    <div className="bg-white rounded-lg overflow-hidden">
-                      <img
-                        className="h-52 w-full object-cover object-center"
-                        src="/img/works/workshop.jpg"
-                        alt="プログラミング/IT教育事業"
-                      />
-                      <div className="p-6">
-                        <h2 className="text-lg text-gray-900 font-bold title-font mb-3">
-                          プログラミング/IT教育事業
-                        </h2>
-                        <p className="leading-7 text-base">
-                          これからの子どもたちが必ず必要とされる技術の１つでもあるプログラミング教育を企業や行政とコラボして提供しています。自社主催のワークショップに限らず講師の派遣などにより2017年度より全国各地での教室を随時開講。
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="xl:w-1/2 md:w-1/2 p-4">
-                    <div className="bg-white rounded-lg overflow-hidden">
-                      <img
-                        className="h-52 w-full object-cover object-center"
-                        src="/img/works/school.jpg"
-                        alt="オンラインプログラミングスクール事業"
-                      />
-                      <div className="p-6">
-                        <h2 className="text-lg text-gray-900 font-bold title-font mb-3">
-                          オンラインプログラミングスクール事業
-                        </h2>
-                        <p className="leading-7 text-base">
-                          小学生・中学生向けのプログラミング教室「newCreator
-                          School（ニュークリエイター
-                          スクール）」を、他社のプランよりもリーズナブルな価格で、１対１のオンライン授業という形で提供しております。
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="xl:w-1/2 md:w-1/2 p-4">
-                    <div className="bg-white rounded-lg overflow-hidden">
-                      <img
-                        className="h-52 w-full object-cover object-center"
+                        className="h-48 w-full object-cover object-center"
                         src="/img/works/school-plus.png"
-                        alt="学校支援事業"
+                        alt="AI導入支援サービス"
                       />
                       <div className="p-6">
                         <h2 className="text-lg text-gray-900 font-bold title-font mb-3">
-                          学校支援事業
+                          AI導入支援サービス
                         </h2>
-                        <p className="leading-7 text-base">
-                          「newCreator School
-                          +」という名称でプログラミング教育支援としてカリキュラムや教職員向けのマニュアルなどを提供しています。
-                          <br />
-                          2021年4月より兵庫県たつの市立龍野西中学校の特別支援学級にてオンライン授業とマニュアルの提供を行っています。
+                        <p className="leading-7 text-base text-gray-600 mb-4">
+                          教育現場への生成AI導入を、計画策定から運用定着まで一貫してサポート。活用方針の策定、教員向け研修、ガイドライン整備など学校のニーズに合わせた支援を行います。
+                        </p>
+                        <a href="/#contact" className="text-orange-500 font-medium text-sm hover:text-orange-600 transition-colors">
+                          導入相談はこちら →
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="xl:w-1/2 md:w-1/2 p-4">
+                    <div className="bg-white rounded-lg overflow-hidden h-full">
+                      <img
+                        className="h-48 w-full object-cover object-center"
+                        src="/img/works/gpt.jpg"
+                        alt="プライベートGPT"
+                      />
+                      <div className="p-6">
+                        <h2 className="text-lg text-gray-900 font-bold title-font mb-3">
+                          プライベートGPT
+                        </h2>
+                        <p className="leading-7 text-base text-gray-600">
+                          教育機関向けに、安全な生成AI利用環境を提供。生徒数単位の課金、契約期間の縛りなし、請求書ベースでの契約が可能です。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* その他のサービス */}
+                <div className="flex flex-wrap -m-4">
+                  <div className="xl:w-1/3 md:w-1/3 p-4">
+                    <div className="bg-white rounded-lg overflow-hidden h-full">
+                      <img
+                        className="h-40 w-full object-cover object-center"
+                        src="/img/works/workshop.jpg"
+                        alt="プログラミング教育"
+                      />
+                      <div className="p-5">
+                        <h2 className="text-base text-gray-900 font-bold title-font mb-2">
+                          プログラミング教育
+                        </h2>
+                        <p className="leading-relaxed text-sm text-gray-600">
+                          企業や行政と連携したワークショップの開催、講師派遣による出張授業を2017年度より全国各地で実施。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="xl:w-1/3 md:w-1/3 p-4">
+                    <div className="bg-white rounded-lg overflow-hidden h-full">
+                      <img
+                        className="h-40 w-full object-cover object-center"
+                        src="/img/works/school.jpg"
+                        alt="オンラインスクール"
+                      />
+                      <div className="p-5">
+                        <h2 className="text-base text-gray-900 font-bold title-font mb-2">
+                          オンラインスクール
+                        </h2>
+                        <p className="leading-relaxed text-sm text-gray-600">
+                          小中学生向けプログラミング教室「newCreator School」を1対1のオンライン授業でリーズナブルに提供。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="xl:w-1/3 md:w-1/3 p-4">
+                    <div className="bg-white rounded-lg overflow-hidden h-full">
+                      <img
+                        className="h-40 w-full object-cover object-center"
+                        src="/img/works/logy.jpg"
+                        alt="学校支援"
+                      />
+                      <div className="p-5">
+                        <h2 className="text-base text-gray-900 font-bold title-font mb-2">
+                          学校支援
+                        </h2>
+                        <p className="leading-relaxed text-sm text-gray-600">
+                          「newCreator School +」としてカリキュラムや教職員向けマニュアルを提供。兵庫県たつの市立龍野西中学校等で導入実績あり。
                         </p>
                       </div>
                     </div>
