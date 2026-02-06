@@ -45,27 +45,27 @@ export default function About() {
                             法人名
                           </th>
                           <td className="py-4 px-4 text-gray-700">
-                            特定非営利活動法人 newCreator.org
+                            特定非営利活動法人ニュークリエイター・オルグ
                           </td>
                         </tr>
                         <tr className="border-b border-gray-200">
                           <th className="py-4 px-4 font-medium text-gray-900">
                             設立
                           </th>
-                          <td className="py-4 px-4 text-gray-700">2017年4月</td>
+                          <td className="py-4 px-4 text-gray-700">2019年1月18日</td>
                         </tr>
                         <tr className="border-b border-gray-200">
                           <th className="py-4 px-4 font-medium text-gray-900">
                             代表理事
                           </th>
-                          <td className="py-4 px-4 text-gray-700">吉久 良平</td>
+                          <td className="py-4 px-4 text-gray-700">改野 由尚</td>
                         </tr>
                         <tr className="border-b border-gray-200">
                           <th className="py-4 px-4 font-medium text-gray-900">
                             所在地
                           </th>
                           <td className="py-4 px-4 text-gray-700">
-                            東京都渋谷区
+                            大阪府豊中市桜の町３丁目７番７号
                           </td>
                         </tr>
                         <tr>
@@ -73,7 +73,7 @@ export default function About() {
                             連絡先
                           </th>
                           <td className="py-4 px-4 text-gray-700">
-                            info@newcreator.org
+                            contact@newcreator.org
                           </td>
                         </tr>
                       </tbody>
@@ -196,7 +196,7 @@ export default function About() {
                   <div className="bg-white rounded-lg border-l-4 border-orange-500 p-6 mb-4">
                     <div className="flex items-center mb-2">
                       <span className="text-orange-500 font-bold text-lg mr-4">
-                        2017年4月
+                        2019年1月
                       </span>
                       <h3 className="text-gray-900 font-medium">
                         特定非営利活動法人として設立
@@ -257,127 +257,6 @@ export default function About() {
                     <p className="text-gray-600 text-sm">
                       累計1,000名以上の子どもたちに学びの機会を提供
                     </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* メディア掲載セクション */}
-        <section className="text-gray-600 body-font bg-gray-50">
-          <div className="container px-5 py-24 mx-auto">
-            <div className="flex flex-col text-center w-full mb-12">
-              <h2 className="text-xs text-blue-500 tracking-widest font-medium title-font mb-1">
-                Media
-              </h2>
-              <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
-                メディア掲載
-              </h1>
-            </div>
-            <div className="flex flex-wrap -m-4">
-              <div className="p-4 md:w-1/3">
-                <div className="h-full bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                  <div className="p-6">
-                    <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                      2024年1月15日
-                    </h2>
-                    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                      教育新聞
-                    </h1>
-                    <p className="leading-relaxed mb-3 text-gray-600">
-                      「生成AI教育の最前線 - newCreator.orgの取り組み」
-                    </p>
-                    <div className="flex items-center flex-wrap">
-                      <a
-                        href="#"
-                        className="text-orange-500 inline-flex items-center md:mb-2 lg:mb-0"
-                      >
-                        記事を読む
-                        <svg
-                          className="w-4 h-4 ml-2"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path d="M5 12h14"></path>
-                          <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="p-4 md:w-1/3">
-                <div className="h-full bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                  <div className="p-6">
-                    <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                      2023年11月20日
-                    </h2>
-                    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                      日経新聞
-                    </h1>
-                    <p className="leading-relaxed mb-3 text-gray-600">
-                      「地方の子どもたちにもSTEAM教育を - NPOの挑戦」
-                    </p>
-                    <div className="flex items-center flex-wrap">
-                      <a
-                        href="#"
-                        className="text-orange-500 inline-flex items-center md:mb-2 lg:mb-0"
-                      >
-                        記事を読む
-                        <svg
-                          className="w-4 h-4 ml-2"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path d="M5 12h14"></path>
-                          <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="p-4 md:w-1/3">
-                <div className="h-full bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                  <div className="p-6">
-                    <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                      2023年8月5日
-                    </h2>
-                    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                      TechCrunch Japan
-                    </h1>
-                    <p className="leading-relaxed mb-3 text-gray-600">
-                      「子どもたちとAIの未来を考える - newCreator.orgインタビュー」
-                    </p>
-                    <div className="flex items-center flex-wrap">
-                      <a
-                        href="#"
-                        className="text-orange-500 inline-flex items-center md:mb-2 lg:mb-0"
-                      >
-                        記事を読む
-                        <svg
-                          className="w-4 h-4 ml-2"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path d="M5 12h14"></path>
-                          <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                      </a>
-                    </div>
                   </div>
                 </div>
               </div>

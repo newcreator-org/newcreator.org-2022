@@ -27,9 +27,10 @@ export default function Header() {
               <li>
                 <a href="/information">お知らせ</a>
               </li>
-              <li>
+              {/* TODO: 情報公開ページ準備でき次第復活 */}
+              {/* <li>
                 <a href="/about/transparency">情報公開</a>
-              </li>
+              </li> */}
               <li>
                 <a href="/#contact">お問い合わせ</a>
               </li>
