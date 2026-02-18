@@ -46,6 +46,9 @@ export default function Header() {
                 <a href="/media">メディア</a>
               </li>
               <li>
+                <a href="/for-educators">先生・学校の方へ</a>
+              </li>
+              <li>
                 <a href="/information">お知らせ</a>
               </li>
               <li>
@@ -96,6 +99,7 @@ export default function Header() {
               <li><a href="/about" onClick={closeMenu}>私たちについて</a></li>
               <li><a href="/activities" onClick={closeMenu}>活動実績</a></li>
               <li><a href="/media" onClick={closeMenu}>メディア</a></li>
+              <li><a href="/for-educators" onClick={closeMenu}>先生・学校の方へ</a></li>
               <li><a href="/information" onClick={closeMenu}>お知らせ</a></li>
               <li><a href="/#contact" onClick={closeMenu}>お問い合わせ</a></li>
             </ul>

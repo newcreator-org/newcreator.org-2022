@@ -138,3 +138,95 @@ export function getMediaById(id: string): MediaPost | null {
   const allMedia = getAllMedia();
   return allMedia.find(post => post.id === id) || null;
 }
+
+// Educator Guides
+export interface EducatorGuide {
+  id: string;
+  title: string;
+  date: string;
+  category: string;
+  description: string;
+  content: string;
+}
+
+export function getAllEducatorGuides(): EducatorGuide[] {
+  const guidesDir = path.join(contentDirectory, 'for-educators/guides');
+
+  if (!fs.existsSync(guidesDir)) {
+    return [];
+  }
+
+  const fileNames = fs.readdirSync(guidesDir);
+  const allGuides = fileNames
+    .filter(fileName => fileName.endsWith('.md'))
+    .map(fileName => {
+      const fullPath = path.join(guidesDir, fileName);
+      const fileContents = fs.readFileSync(fullPath, 'utf8');
+      const { data, content } = matter(fileContents);
+
+      return {
+        id: data.id,
+        title: data.title,
+        date: data.date,
+        category: data.category || '',
+        description: data.description || '',
+        content: content,
+      };
+    });
+
+  return allGuides.sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
+}
+
+export function getEducatorGuideById(id: string): EducatorGuide | null {
+  const allGuides = getAllEducatorGuides();
+  return allGuides.find(post => post.id === id) || null;
+}
+
+// Educator Case Studies
+export interface EducatorCaseStudy {
+  id: string;
+  title: string;
+  date: string;
+  school: string;
+  schoolType: string;
+  description: string;
+  content: string;
+}
+
+export function getAllEducatorCaseStudies(): EducatorCaseStudy[] {
+  const caseStudiesDir = path.join(contentDirectory, 'for-educators/case-studies');
+
+  if (!fs.existsSync(caseStudiesDir)) {
+    return [];
+  }
+
+  const fileNames = fs.readdirSync(caseStudiesDir);
+  const allCaseStudies = fileNames
+    .filter(fileName => fileName.endsWith('.md'))
+    .map(fileName => {
+      const fullPath = path.join(caseStudiesDir, fileName);
+      const fileContents = fs.readFileSync(fullPath, 'utf8');
+      const { data, content } = matter(fileContents);
+
+      return {
+        id: data.id,
+        title: data.title,
+        date: data.date,
+        school: data.school || '',
+        schoolType: data.schoolType || '',
+        description: data.description || '',
+        content: content,
+      };
+    });
+
+  return allCaseStudies.sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
+}
+
+export function getEducatorCaseStudyById(id: string): EducatorCaseStudy | null {
+  const allCaseStudies = getAllEducatorCaseStudies();
+  return allCaseStudies.find(post => post.id === id) || null;
+}

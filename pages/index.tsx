@@ -236,6 +236,50 @@ export default function Home({ news, archives, media }) {
             </section>
           </ScrollFadeIn>
 
+          {/* 先生・学校向けCTA */}
+          <ScrollFadeIn>
+            <section className="bg-gradient-to-br from-blue-600 to-blue-700 text-white py-16">
+              <div className="container px-5 mx-auto max-w-5xl">
+                <div className="text-center mb-8">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    先生・学校関係者の方へ
+                  </h2>
+                  <p className="text-lg text-blue-100 max-w-2xl mx-auto">
+                    教育現場でのAI活用を全面的にサポートします。<br />
+                    研修から導入支援まで、貴校の状況に合わせた最適なプランをご提案いたします。
+                  </p>
+                </div>
+                <div className="grid md:grid-cols-3 gap-6 mb-8">
+                  <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 hover:bg-opacity-20 transition-all">
+                    <h3 className="text-xl font-bold mb-2">出張研修</h3>
+                    <p className="text-blue-100 text-sm">
+                      10都道府県22校で実施。生徒向け・教員向けの実践的な研修を提供します。
+                    </p>
+                  </div>
+                  <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 hover:bg-opacity-20 transition-all">
+                    <h3 className="text-xl font-bold mb-2">AI導入支援</h3>
+                    <p className="text-blue-100 text-sm">
+                      計画策定から運用定着まで一貫サポート。ガイドライン整備も支援します。
+                    </p>
+                  </div>
+                  <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 hover:bg-opacity-20 transition-all">
+                    <h3 className="text-xl font-bold mb-2">プライベートGPT</h3>
+                    <p className="text-blue-100 text-sm">
+                      安全な生成AI環境を提供。生徒数単位の課金で柔軟に導入できます。
+                    </p>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <Link href="/for-educators">
+                    <a className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-colors shadow-lg">
+                      詳しく見る
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </section>
+          </ScrollFadeIn>
+
           {/* 課題提起 */}
           <ScrollFadeIn>
             <section className="text-gray-600 body-font">
