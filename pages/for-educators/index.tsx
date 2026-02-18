@@ -24,9 +24,10 @@ export default function ForEducators({ guides, caseStudies }) {
     <>
       <Heads 
         child={{
-          title: "先生・学校関係者の方へ | 特定非営利活動法人ニュークリエイター・オルグ",
-          description: "教育現場でのAI活用を支援します。生成AIの研修から導入支援、実践ガイドまで、学校のニーズに合わせたサポートを提供しています。",
+          title: "先生・学校向けAI活用支援 | 研修・導入・実践ガイド | ニュークリエイター・オルグ",
+          description: "学校でのAI導入を完全サポート。全国22校の実績をもとに、教員研修、授業での活用方法、セキュリティ対策まで、教育現場に寄り添った支援を提供します。ChatGPT、生成AI活用の実践ガイドと導入事例を多数掲載。",
           ogUrl: "https://newcreator.org/for-educators",
+          keywords: "学校AI導入,教員AI研修,生成AI教育,ChatGPT授業活用,学校DX,教育AI,AI導入支援,教員研修,授業改善,業務効率化",
         }} 
       />
       <>
@@ -267,6 +268,61 @@ export default function ForEducators({ guides, caseStudies }) {
               </section>
             </ScrollFadeIn>
           )}
+
+          {/* 資料ダウンロードセクション */}
+          <ScrollFadeIn>
+            <section className="py-20 bg-gradient-to-b from-blue-50 to-white">
+              <div className="container px-5 mx-auto max-w-6xl">
+                <div className="text-center mb-12">
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    無料ダウンロード資料
+                  </h2>
+                  <p className="text-gray-600 max-w-2xl mx-auto">
+                    学校でのAI導入に役立つ資料を無料で提供しています
+                  </p>
+                </div>
+                <div className="grid md:grid-cols-2 gap-8 mb-8">
+                  <div className="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">
+                      学校でのAI導入完全ガイド
+                    </h3>
+                    <p className="text-gray-600 mb-4">
+                      計画から実践まで、ステップバイステップで解説。全８章・約４０ページのPDF資料です。
+                    </p>
+                    <a
+                      href="/downloads/for-educators/ai-implementation-guide.pdf"
+                      download
+                      className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                    >
+                      ダウンロード
+                    </a>
+                  </div>
+                  <div className="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">
+                      学校AI活用チェックリスト
+                    </h3>
+                    <p className="text-gray-600 mb-4">
+                      導入前の準備から定着まで、各段階で確認すべきポイントをまとめたチェックリスト。
+                    </p>
+                    <a
+                      href="/downloads/for-educators/ai-checklist.pdf"
+                      download
+                      className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                    >
+                      ダウンロード
+                    </a>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <Link href="/for-educators/resources">
+                    <a className="text-blue-600 font-semibold hover:text-blue-700">
+                      すべての資料を見る →
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </section>
+          </ScrollFadeIn>
 
           {/* よくある質問セクション */}
           <ScrollFadeIn>
