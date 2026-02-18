@@ -4,6 +4,8 @@ import Heads from "../../../components/customHead";
 import Link from "next/link";
 import { getAllEducatorCaseStudies, getEducatorCaseStudyById } from "../../../libs/markdown";
 import dayjs from "dayjs";
+import { marked } from "marked";
+import markdownStyles from "../../../styles/markdown.module.css";
 
 
 const schoolTypeColor = (schoolType: string) => {
@@ -81,7 +83,7 @@ export default function CaseStudyDetail({ caseStudy }) {
               </div>
 
               <div 
-                className="prose prose-lg max-w-none"
+                className={markdownStyles.markdown}
                 dangerouslySetInnerHTML={{ __html: caseStudy.content }}
               />
 
@@ -140,24 +142,11 @@ export async function getStaticProps({ params }) {
     };
   }
 
-  // MarkdownをシンプルなHTMLに変換
-  const htmlContent = caseStudy.content
-    .split('\n\n')
-    .map(para => {
-      // 見出しの処理
-      if (para.startsWith('## ')) {
-        return `<h2>${para.substring(3)}</h2>`;
-      }
-      if (para.startsWith('# ')) {
-        return `<h1>${para.substring(2)}</h1>`;
-      }
-      // 太字の処理
-      let processed = para.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-      // 改行の処理
-      processed = processed.replace(/\n/g, '<br>');
-      return `<p>${processed}</p>`;
-    })
-    .join('');
+  // MarkdownをHTMLに変換
+  const htmlContent = marked(caseStudy.content, {
+    breaks: true,
+    gfm: true,
+  });
 
   return {
     props: {
