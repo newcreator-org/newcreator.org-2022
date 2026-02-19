@@ -5,17 +5,24 @@ import Heads from "../../components/customHead";
 import Link from "next/link";
 import { getAllEducatorGuides, getAllEducatorCaseStudies } from "../../libs/markdown";
 import ScrollFadeIn from "../../components/ScrollFadeIn";
+import Card from "../../components/Card";
 
 const categoryColor = (category: string) => {
   switch (category) {
     case "授業実践":
-      return "bg-blue-100 text-blue-700";
+    case "基礎・導入編":
+    case "教科別":
+      return "orange";
     case "校務効率化":
-      return "bg-green-100 text-green-700";
+    case "組織・運営編":
+    case "学校種別":
+      return "green";
     case "導入事例":
-      return "bg-purple-100 text-purple-700";
+      return "blue";
+    case "管理職・ICT担当者向け":
+      return "gray";
     default:
-      return "bg-gray-100 text-gray-700";
+      return "blue";
   }
 };
 
@@ -35,23 +42,23 @@ export default function ForEducators({ guides, caseStudies }) {
         <main className="mx-auto">
           {/* ヒーローセクション */}
           <ScrollFadeIn>
-            <section className="bg-gradient-to-b from-blue-50 to-white py-20 md:py-28">
+            <section className="bg-gradient-to-b from-orange-50 to-white py-20 md:py-28">
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="text-center">
                   <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                     教育現場でのAI活用を<br className="md:hidden" />全力でサポートします
                   </h1>
                   <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-                    生成AIの登場により、教育現場は大きな転換期を迎えています。私たちは全国22校での実績をもとに、先生方のAI活用を研修から導入まで一貫して支援します。
+                    生成AIの登場により、教育現場は大きな転換期を迎えています。私たちは全国10都道府県22校での実績をもとに、先生方のAI活用を研修から導入まで一貫して支援します。
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Link href="/for-educators/guides">
-                      <a className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                      <a className="inline-block bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors shadow-md">
                         実践ガイドを見る
                       </a>
                     </Link>
                     <Link href="#contact">
-                      <a className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold border-2 border-blue-600 hover:bg-blue-50 transition-colors">
+                      <a className="inline-block bg-white text-orange-600 px-8 py-4 rounded-lg font-semibold border-2 border-orange-600 hover:bg-orange-50 transition-colors">
                         導入相談をする
                       </a>
                     </Link>
@@ -67,19 +74,19 @@ export default function ForEducators({ guides, caseStudies }) {
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                   <div className="text-center">
-                    <p className="text-4xl md:text-5xl font-bold text-gray-900">22校</p>
+                    <p className="text-4xl md:text-5xl font-bold text-orange-600">22校</p>
                     <p className="mt-2 text-sm text-gray-600">導入実績</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-4xl md:text-5xl font-bold text-gray-900">10</p>
+                    <p className="text-4xl md:text-5xl font-bold text-orange-600">10</p>
                     <p className="mt-2 text-sm text-gray-600">都道府県</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-4xl md:text-5xl font-bold text-gray-900">1,000+</p>
+                    <p className="text-4xl md:text-5xl font-bold text-orange-600">1,000+</p>
                     <p className="mt-2 text-sm text-gray-600">参加生徒数</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-4xl md:text-5xl font-bold text-gray-900">8年</p>
+                    <p className="text-4xl md:text-5xl font-bold text-orange-600">8年</p>
                     <p className="mt-2 text-sm text-gray-600">活動実績</p>
                   </div>
                 </div>
@@ -98,19 +105,19 @@ export default function ForEducators({ guides, caseStudies }) {
                   生成AIの急速な普及により、教育現場では新たな課題が生まれています。私たちはこれらの課題に対して、実践的な解決策を提供します。
                 </p>
                 <div className="grid md:grid-cols-3 gap-8">
-                  <div className="bg-white p-8 rounded-xl shadow-sm">
+                  <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <h3 className="text-xl font-bold text-gray-900 mb-4">情報不足</h3>
                     <p className="text-gray-600 leading-relaxed">
                       生成AIの教育活用について、信頼できる情報や実践事例が不足しています。どこから始めればよいか分からない先生方が多くいらっしゃいます。
                     </p>
                   </div>
-                  <div className="bg-white p-8 rounded-xl shadow-sm">
+                  <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <h3 className="text-xl font-bold text-gray-900 mb-4">時間の制約</h3>
                     <p className="text-gray-600 leading-relaxed">
                       日々の授業準備や校務に追われる中で、新しい技術を学び、授業に取り入れる時間を確保することが困難です。
                     </p>
                   </div>
-                  <div className="bg-white p-8 rounded-xl shadow-sm">
+                  <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                     <h3 className="text-xl font-bold text-gray-900 mb-4">セキュリティ懸念</h3>
                     <p className="text-gray-600 leading-relaxed">
                       個人情報保護やデータセキュリティの観点から、一般的な生成AIサービスを学校で使用することに不安を感じる声が多く聞かれます。
@@ -132,46 +139,66 @@ export default function ForEducators({ guides, caseStudies }) {
                   教育機関のニーズに合わせて、研修から導入支援まで一貫したサポートを提供します。
                 </p>
                 <div className="grid md:grid-cols-2 gap-8">
-                  <div className="border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                  <div className="border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow bg-white">
+                    <div className="mb-4">
+                      <span className="inline-block px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-semibold">
+                        人気No.1
+                      </span>
+                    </div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">学校向け出張研修</h3>
                     <p className="text-gray-600 mb-6 leading-relaxed">
                       生徒向け・教員向けの生成AI活用研修を実施します。学校のカリキュラムや目的に応じたプログラムを設計し、実践的な内容をお届けします。全国10都道府県22校での実績があります。
                     </p>
                     <Link href="/apply">
-                      <a className="text-blue-600 font-semibold hover:text-blue-700">
+                      <a className="inline-block text-orange-600 font-semibold hover:text-orange-700 transition-colors">
                         研修のご依頼はこちら →
                       </a>
                     </Link>
                   </div>
-                  <div className="border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                  <div className="border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow bg-white">
+                    <div className="mb-4">
+                      <span className="inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold">
+                        一貫サポート
+                      </span>
+                    </div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">AI導入支援サービス</h3>
                     <p className="text-gray-600 mb-6 leading-relaxed">
                       教育現場への生成AI導入を、計画策定から運用定着まで一貫してサポート。活用方針の策定、教員向け研修、ガイドライン整備など、学校のニーズに合わせた支援を行います。
                     </p>
                     <Link href="/apply">
-                      <a className="text-blue-600 font-semibold hover:text-blue-700">
+                      <a className="inline-block text-green-600 font-semibold hover:text-green-700 transition-colors">
                         導入相談はこちら →
                       </a>
                     </Link>
                   </div>
-                  <div className="border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                  <div className="border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow bg-white">
+                    <div className="mb-4">
+                      <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold">
+                        セキュア
+                      </span>
+                    </div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">プライベートGPT</h3>
                     <p className="text-gray-600 mb-6 leading-relaxed">
                       教育機関向けに、安全な生成AI利用環境を提供。生徒数単位の課金、契約期間の縛りなし、請求書ベースでの契約が可能です。情報セキュリティに対応した環境で安心してご利用いただけます。
                     </p>
                     <Link href="/apply">
-                      <a className="text-blue-600 font-semibold hover:text-blue-700">
+                      <a className="inline-block text-blue-600 font-semibold hover:text-blue-700 transition-colors">
                         詳細を見る →
                       </a>
                     </Link>
                   </div>
-                  <div className="border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                  <div className="border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow bg-white">
+                    <div className="mb-4">
+                      <span className="inline-block px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">
+                        8年の実績
+                      </span>
+                    </div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">プログラミング教育</h3>
                     <p className="text-gray-600 mb-6 leading-relaxed">
                       企業や行政と連携したワークショップの開催、講師派遣による出張授業を2017年度より全国各地で実施。STEAM教育を通じて、子どもたちの創造性と問題解決能力を育みます。
                     </p>
                     <Link href="/activities">
-                      <a className="text-blue-600 font-semibold hover:text-blue-700">
+                      <a className="inline-block text-purple-600 font-semibold hover:text-purple-700 transition-colors">
                         活動実績を見る →
                       </a>
                     </Link>
@@ -196,30 +223,21 @@ export default function ForEducators({ guides, caseStudies }) {
                       </p>
                     </div>
                     <Link href="/for-educators/guides">
-                      <a className="text-blue-600 font-semibold hover:text-blue-700">
+                      <a className="text-orange-600 font-semibold hover:text-orange-700 transition-colors">
                         すべて見る →
                       </a>
                     </Link>
                   </div>
                   <div className="grid md:grid-cols-3 gap-8">
-                    {guides.slice(0, 3).map((guide) => (
-                      <Link key={guide.id} href={`/for-educators/guides/${guide.id}`}>
-                        <a className="block bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
-                          <div className="p-6">
-                            <div className="mb-3">
-                              <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${categoryColor(guide.category)}`}>
-                                {guide.category}
-                              </span>
-                            </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-2 line-clamp-2">
-                              {guide.title}
-                            </h3>
-                            <p className="text-gray-600 text-sm line-clamp-3">
-                              {guide.description}
-                            </p>
-                          </div>
-                        </a>
-                      </Link>
+                    {guides.slice(0, 6).map((guide) => (
+                      <Card
+                        key={guide.id}
+                        title={guide.title}
+                        description={guide.description}
+                        badge={guide.category}
+                        badgeColor={categoryColor(guide.category)}
+                        href={`/for-educators/guides/${guide.id}`}
+                      />
                     ))}
                   </div>
                 </div>
@@ -242,26 +260,22 @@ export default function ForEducators({ guides, caseStudies }) {
                       </p>
                     </div>
                     <Link href="/for-educators/case-studies">
-                      <a className="text-blue-600 font-semibold hover:text-blue-700">
+                      <a className="text-orange-600 font-semibold hover:text-orange-700 transition-colors">
                         すべて見る →
                       </a>
                     </Link>
                   </div>
                   <div className="grid md:grid-cols-2 gap-8">
                     {caseStudies.slice(0, 4).map((caseStudy) => (
-                      <Link key={caseStudy.id} href={`/for-educators/case-studies/${caseStudy.id}`}>
-                        <a className="block border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
-                          <div className="mb-3">
-                            <span className="text-sm text-gray-500">{caseStudy.school}</span>
-                          </div>
-                          <h3 className="text-xl font-bold text-gray-900 mb-2">
-                            {caseStudy.title}
-                          </h3>
-                          <p className="text-gray-600 text-sm line-clamp-3">
-                            {caseStudy.description}
-                          </p>
-                        </a>
-                      </Link>
+                      <Card
+                        key={caseStudy.id}
+                        title={caseStudy.title}
+                        description={caseStudy.description}
+                        badge="導入事例"
+                        badgeColor="blue"
+                        category={caseStudy.category}
+                        href={`/for-educators/case-studies/${caseStudy.id}`}
+                      />
                     ))}
                   </div>
                 </div>
@@ -271,60 +285,45 @@ export default function ForEducators({ guides, caseStudies }) {
 
           {/* 資料ダウンロードセクション */}
           <ScrollFadeIn>
-            <section className="py-20 bg-gradient-to-b from-blue-50 to-white">
+            <section className="py-20 bg-gradient-to-b from-orange-50 to-white">
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                     無料ダウンロード資料
                   </h2>
                   <p className="text-gray-600 max-w-2xl mx-auto">
-                    学校でのAI導入に役立つ資料を無料で提供しています
+                    学校でのAI導入に役立つ資料を無料で提供しています。会議や研修でご活用ください。
                   </p>
                 </div>
-                <div className="grid md:grid-cols-2 gap-8 mb-8">
+                <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                   <div className="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">
-                      学校でのAI導入完全ガイド
-                    </h3>
-                    <p className="text-gray-600 mb-4">
-                      計画から実践まで、ステップバイステップで解説。全８章・約４０ページのPDF資料です。
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">学校でのAI導入完全ガイド</h3>
+                    <p className="text-gray-600 mb-6 text-sm leading-relaxed">
+                      計画策定から運用まで、学校でのAI導入の全プロセスを詳しく解説したガイドブックです。
                     </p>
-                    <a
-                      href="/downloads/for-educators/ai-implementation-guide.pdf"
-                      download
-                      className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-                    >
-                      ダウンロード
-                    </a>
+                    <Link href="/for-educators/resources">
+                      <a className="inline-block bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors text-sm">
+                        ダウンロード
+                      </a>
+                    </Link>
                   </div>
                   <div className="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">
-                      学校AI活用チェックリスト
-                    </h3>
-                    <p className="text-gray-600 mb-4">
-                      導入前の準備から定着まで、各段階で確認すべきポイントをまとめたチェックリスト。
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">学校AI活用チェックリスト</h3>
+                    <p className="text-gray-600 mb-6 text-sm leading-relaxed">
+                      AI導入前に確認すべき項目をまとめたチェックリスト。導入計画の策定に役立ちます。
                     </p>
-                    <a
-                      href="/downloads/for-educators/ai-checklist.pdf"
-                      download
-                      className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-                    >
-                      ダウンロード
-                    </a>
+                    <Link href="/for-educators/resources">
+                      <a className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors text-sm">
+                        ダウンロード
+                      </a>
+                    </Link>
                   </div>
-                </div>
-                <div className="text-center">
-                  <Link href="/for-educators/resources">
-                    <a className="text-blue-600 font-semibold hover:text-blue-700">
-                      すべての資料を見る →
-                    </a>
-                  </Link>
                 </div>
               </div>
             </section>
           </ScrollFadeIn>
 
-          {/* よくある質問セクション */}
+          {/* FAQセクション */}
           <ScrollFadeIn>
             <section className="py-20 bg-gray-50">
               <div className="container px-5 mx-auto max-w-4xl">
@@ -332,43 +331,43 @@ export default function ForEducators({ guides, caseStudies }) {
                   よくある質問
                 </h2>
                 <div className="space-y-6">
-                  <div className="bg-white rounded-xl p-6 shadow-sm">
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">
-                      生成AIを授業で使うことに不安があります。どこから始めればよいですか。
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      まずは先生ご自身が生成AIを体験することをお勧めします。授業準備や校務での活用から始めることで、生成AIの特性や限界を理解できます。私たちの研修では、基礎から実践まで段階的に学べるプログラムを提供しています。
+                  <details className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                    <summary className="font-bold text-gray-900 cursor-pointer">
+                      研修の費用はどのくらいですか？
+                    </summary>
+                    <p className="mt-4 text-gray-600 leading-relaxed">
+                      学校の規模や研修内容によって異なります。まずはお気軽にお問い合わせください。貴校の状況に合わせた最適なプランをご提案いたします。
                     </p>
-                  </div>
-                  <div className="bg-white rounded-xl p-6 shadow-sm">
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">
-                      費用はどのくらいかかりますか。
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      学校の規模やご要望に応じて柔軟に対応いたします。出張研修は交通費込みで10万円から、プライベートGPTは生徒数単位の課金で月額3万円からご利用いただけます。詳細はお問い合わせください。
+                  </details>
+                  <details className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                    <summary className="font-bold text-gray-900 cursor-pointer">
+                      オンラインでの研修も可能ですか？
+                    </summary>
+                    <p className="mt-4 text-gray-600 leading-relaxed">
+                      はい、可能です。対面とオンラインの両方に対応しており、学校の状況に応じて最適な形式をご提案します。
                     </p>
-                  </div>
-                  <div className="bg-white rounded-xl p-6 shadow-sm">
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">
-                      個人情報やデータのセキュリティは大丈夫ですか。
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      プライベートGPTでは、学校専用の環境を提供し、入力されたデータは学習に使用されません。また、アクセス制限やログ管理など、教育機関に必要なセキュリティ機能を備えています。
+                  </details>
+                  <details className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                    <summary className="font-bold text-gray-900 cursor-pointer">
+                      プライベートGPTの料金体系を教えてください
+                    </summary>
+                    <p className="mt-4 text-gray-600 leading-relaxed">
+                      生徒数単位の課金制で、契約期間の縛りはありません。請求書ベースでの契約が可能です。詳細はお問い合わせください。
                     </p>
-                  </div>
-                  <div className="bg-white rounded-xl p-6 shadow-sm">
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">
-                      他の学校ではどのように活用していますか。
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      授業での調べ学習支援、レポート作成のサポート、英語学習での対話練習、プログラミング教育での質問対応など、多様な場面で活用されています。導入事例ページで詳しくご紹介しています。
+                  </details>
+                  <details className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                    <summary className="font-bold text-gray-900 cursor-pointer">
+                      小規模な学校でも導入できますか？
+                    </summary>
+                    <p className="mt-4 text-gray-600 leading-relaxed">
+                      はい、学校の規模に関わらず導入可能です。小規模校向けのプランもご用意しておりますので、お気軽にご相談ください。
                     </p>
-                  </div>
+                  </details>
                 </div>
-                <div className="text-center mt-8">
+                <div className="text-center mt-12">
                   <Link href="/for-educators/faq">
-                    <a className="text-blue-600 font-semibold hover:text-blue-700">
-                      さらに質問を見る →
+                    <a className="text-orange-600 font-semibold hover:text-orange-700 transition-colors">
+                      すべてのFAQを見る →
                     </a>
                   </Link>
                 </div>
@@ -378,32 +377,33 @@ export default function ForEducators({ guides, caseStudies }) {
 
           {/* CTAセクション */}
           <ScrollFadeIn>
-            <section className="py-20 bg-blue-600" id="contact">
-              <div className="container px-5 mx-auto max-w-4xl text-center">
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                  まずはお気軽にご相談ください
-                </h2>
-                <p className="text-blue-100 text-lg mb-8 leading-relaxed">
-                  研修のご依頼、導入相談、その他のお問い合わせはこちらから承ります。<br />
-                  貴校の状況に合わせた最適なプランをご提案いたします。
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link href="/apply">
-                    <a className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
-                      お問い合わせフォームへ
-                    </a>
-                  </Link>
-                  <a 
-                    href="mailto:contact@newcreator.org" 
-                    className="inline-block bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-800 transition-colors"
-                  >
-                    メールで相談する
-                  </a>
+            <section id="contact" className="py-20">
+              <div className="container px-5 mx-auto max-w-4xl">
+                <div className="bg-gradient-to-r from-orange-600 to-orange-500 rounded-2xl p-12 text-center text-white">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    まずはお気軽にご相談ください
+                  </h2>
+                  <p className="text-lg mb-8 opacity-90">
+                    貴校の状況に合わせた最適なプランをご提案いたします
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <Link href="/apply">
+                      <a className="inline-block bg-white text-orange-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-md">
+                        お問い合わせ
+                      </a>
+                    </Link>
+                    <Link href="/for-educators/resources">
+                      <a className="inline-block bg-orange-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-800 transition-colors border-2 border-white">
+                        資料をダウンロード
+                      </a>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </section>
           </ScrollFadeIn>
         </main>
+        <FooterCta />
         <Footer />
       </>
     </>
@@ -411,22 +411,13 @@ export default function ForEducators({ guides, caseStudies }) {
 }
 
 export async function getStaticProps() {
-  try {
-    const guides = await getAllEducatorGuides();
-    const caseStudies = await getAllEducatorCaseStudies();
-    
-    return {
-      props: {
-        guides: guides || [],
-        caseStudies: caseStudies || [],
-      },
-    };
-  } catch (error) {
-    return {
-      props: {
-        guides: [],
-        caseStudies: [],
-      },
-    };
-  }
+  const guides = getAllEducatorGuides();
+  const caseStudies = getAllEducatorCaseStudies();
+
+  return {
+    props: {
+      guides: guides || [],
+      caseStudies: caseStudies || [],
+    },
+  };
 }

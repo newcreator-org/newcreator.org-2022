@@ -1,6 +1,8 @@
 import Header from "../../../components/header";
 import Footer from "../../../components/footer";
+import FooterCta from "../../../components/footerCta";
 import Heads from "../../../components/customHead";
+import Breadcrumb from "../../../components/Breadcrumb";
 import Link from "next/link";
 import { getAllEducatorGuides, getEducatorGuideById } from "../../../libs/markdown";
 import dayjs from "dayjs";
@@ -10,14 +12,18 @@ import markdownStyles from "../../../styles/markdown.module.css";
 
 const categoryColor = (category: string) => {
   switch (category) {
-    case "授業実践":
-      return "bg-blue-100 text-blue-700";
-    case "校務効率化":
+    case "基礎・導入編":
+    case "教科別":
+      return "bg-orange-100 text-orange-700";
+    case "組織・運営編":
+    case "学校種別":
       return "bg-green-100 text-green-700";
-    case "導入計画":
-      return "bg-purple-100 text-purple-700";
-    default:
+    case "トレンド・展望編":
+      return "bg-blue-100 text-blue-700";
+    case "管理職・ICT担当者向け":
       return "bg-gray-100 text-gray-700";
+    default:
+      return "bg-blue-100 text-blue-700";
   }
 };
 
@@ -48,16 +54,18 @@ export default function GuideDetail({ guide }) {
       />
       <>
         <Header />
+        <Breadcrumb 
+          items={[
+            { label: "ホーム", href: "/" },
+            { label: "先生・学校の方へ", href: "/for-educators" },
+            { label: "実践ガイド", href: "/for-educators/guides" },
+            { label: guide.title },
+          ]}
+        />
         <main className="mx-auto">
           <article className="py-16">
             <div className="container px-5 mx-auto max-w-4xl">
-              <div className="mb-8">
-                <Link href="/for-educators/guides">
-                  <a className="text-blue-600 hover:text-blue-700 text-sm">
-                    ← ガイド一覧に戻る
-                  </a>
-                </Link>
-              </div>
+
 
               <div className="mb-8">
                 <div className="flex items-center gap-3 mb-4">
@@ -107,6 +115,7 @@ export default function GuideDetail({ guide }) {
             </div>
           </article>
         </main>
+        <FooterCta />
         <Footer />
       </>
     </>

@@ -1,6 +1,8 @@
 import Header from "../../../components/header";
 import Footer from "../../../components/footer";
+import FooterCta from "../../../components/footerCta";
 import Heads from "../../../components/customHead";
+import Breadcrumb from "../../../components/Breadcrumb";
 import Link from "next/link";
 import { getAllEducatorCaseStudies, getEducatorCaseStudyById } from "../../../libs/markdown";
 import dayjs from "dayjs";
@@ -51,16 +53,18 @@ export default function CaseStudyDetail({ caseStudy }) {
       />
       <>
         <Header />
+        <Breadcrumb 
+          items={[
+            { label: "ホーム", href: "/" },
+            { label: "先生・学校の方へ", href: "/for-educators" },
+            { label: "導入事例", href: "/for-educators/case-studies" },
+            { label: caseStudy.school },
+          ]}
+        />
         <main className="mx-auto">
           <article className="py-16">
             <div className="container px-5 mx-auto max-w-4xl">
-              <div className="mb-8">
-                <Link href="/for-educators/case-studies">
-                  <a className="text-blue-600 hover:text-blue-700 text-sm">
-                    ← 事例一覧に戻る
-                  </a>
-                </Link>
-              </div>
+
 
               <div className="mb-8">
                 <div className="flex items-center gap-3 mb-4">
@@ -96,23 +100,18 @@ export default function CaseStudyDetail({ caseStudy }) {
                     学校の規模や状況に合わせて、最適なプランをご提案いたします。まずはお気軽にご相談ください。
                   </p>
                   <Link href="/apply">
-                    <a className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    <a className="inline-block bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors shadow-md">
                       お問い合わせフォームへ
                     </a>
                   </Link>
                 </div>
               </div>
 
-              <div className="mt-8">
-                <Link href="/for-educators/case-studies">
-                  <a className="text-blue-600 hover:text-blue-700">
-                    ← 事例一覧に戻る
-                  </a>
-                </Link>
-              </div>
+
             </div>
           </article>
         </main>
+        <FooterCta />
         <Footer />
       </>
     </>
