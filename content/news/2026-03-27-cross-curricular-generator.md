@@ -8,6 +8,8 @@ id: "cross-curricular-generator"
 
 AIが領域横断的な問題セットを自動生成し、さらに学習指導要領に基づく学年別の語彙・漢字制限にまで対応したサービスは日本初※となります。
 
+<img src="/img/cross-curricular/home.png" alt="ホーム画面：テーマ入力と条件設定" style="max-width:100%;margin:1.5em 0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+
 
 ■ 開発の背景 ── 「知識のタコツボ化」を解消したい
 
@@ -24,6 +26,8 @@ AIが領域横断的な問題セットを自動生成し、さらに学習指導
 
 テーマを入力し、対象レベル（小学校低学年〜高校生）と難易度（基礎／標準／応用）を選ぶだけで、AIがまず全領域共通の読み物教材を作成。その内容に基づいて、国語・数学・理科・英語・社会・情報・道徳の7領域それぞれに最適化された問題を自動で生成します。生成にかかる時間はわずか約1分です。
 
+<img src="/img/cross-curricular/generating.png" alt="生成中画面：リアルタイムで進捗を表示" style="max-width:100%;margin:1.5em 0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+
 主な特長は以下のとおりです。
 
 ・テーマ1つで7領域の問題を一括生成
@@ -33,6 +37,10 @@ AIが領域横断的な問題セットを自動生成し、さらに学習指導
 ・Markdown・JSON形式でのエクスポート機能
 
 教育現場での「教科横断的な学び」の教材作成はもちろん、企業研修や自治体の生涯学習プログラム、家庭学習など、幅広い場面でご活用いただけます。
+
+<img src="/img/cross-curricular/result.png" alt="共通素材と領域別タブ画面" style="max-width:100%;margin:1.5em 0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+
+<img src="/img/cross-curricular/problems.png" alt="問題表示・回答画面" style="max-width:100%;margin:1.5em 0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
 
 
 ■ ご利用・詳細について
