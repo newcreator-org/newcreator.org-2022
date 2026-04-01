@@ -31,7 +31,7 @@ const categoryColor = (category: string) => {
 export default function Guides({ guides }) {
   const [selectedCategory, setSelectedCategory] = useState<string>("すべて");
 
-  const categories = ["すべて", ...Array.from(new Set(guides.map(g => g.category)))];
+  const categories: string[] = ["すべて", ...Array.from(new Set<string>(guides.map((g: any) => g.category)))];
 
   const filteredGuides = selectedCategory === "すべて" 
     ? guides 

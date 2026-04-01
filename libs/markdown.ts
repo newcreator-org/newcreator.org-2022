@@ -165,7 +165,7 @@ export function getAllEducatorGuides(): EducatorGuide[] {
       const { data, content } = matter(fileContents);
 
       return {
-        id: data.id,
+        id: data.id || fileName.replace(/\.md$/, ''),
         title: data.title,
         date: data.date,
         category: data.category || '',
