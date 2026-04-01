@@ -22,8 +22,8 @@ export default function BlogId({ blog }) {
         <main>
           <section className={blogStyle.header}>
             <div>
-              <time dateTime={dayjs(blog.publishedAt).format("YYYY-MM-DD")}>
-                {dayjs(blog.publishedAt).format("YYYY.MM.DD")}
+              <time dateTime={dayjs(blog.date).format("YYYY-MM-DD")}>
+                {dayjs(blog.date).format("YYYY.MM.DD")}
               </time>
               <h1>{blog.title}</h1>
             </div>
