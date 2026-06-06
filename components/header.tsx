@@ -38,7 +38,7 @@ export default function Header() {
     <>
       {/* ---- Header bar ---- */}
       <header
-        className="sticky top-0 z-50 w-full bg-white transition-all duration-300"
+        className="sticky top-0 z-50 w-full bg-white transition-colors duration-200"
         style={{
           height: headerHeight,
           borderBottom: "1px solid rgba(20,118,166,0.08)",

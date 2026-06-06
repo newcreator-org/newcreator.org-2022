@@ -63,7 +63,7 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
                   media.map((post) => (
                     <div className="w-full xl:w-1/3 md:w-1/2 p-4" key={post.id}>
                       <a href={`/media/${post.id}`}>
-                        <div className="bg-white rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-gray-100 overflow-hidden group h-full">
+                        <div className="bg-white overflow-hidden group h-full" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                           <div className="p-6">
                             <span
                               className={`inline-block text-xs font-medium px-3 py-1 rounded-full mb-3 ${categoryColor(
@@ -92,7 +92,7 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
         </ScrollFadeIn>
 
         {/* CTAセクション */}
-        <section className="text-white body-font" style={{ background: 'linear-gradient(135deg, #1476A6 0%, #2789B9 100%)' }}>
+        <section className="text-white body-font" style={{ background: '#1476A6' }}>
           <div className="container px-5 py-16 mx-auto">
             <div className="flex flex-col text-center w-full">
               <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-white">
@@ -106,13 +106,13 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
                   href="https://syncable.biz/associate/newcreator-org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex bg-white border-0 py-3 px-8 focus:outline-none hover:bg-gray-100 hover:-translate-y-0.5 active:translate-y-0 rounded-full text-lg font-bold shadow-lg transition-all duration-200" style={{ color: '#1476A6' }}
+                  className="inline-flex bg-white border-0 py-3 px-8 focus:outline-none hover:bg-gray-100 rounded text-lg font-bold transition-colors duration-200" style={{ color: '#1476A6' }}
                 >
                   寄付で支援
                 </a>
                 <a
                   href="/#contact"
-                  className="inline-flex border-0 py-3 px-8 focus:outline-none hover:-translate-y-0.5 active:translate-y-0 rounded-full text-lg font-bold transition-all duration-200"
+                  className="inline-flex border-0 py-3 px-8 focus:outline-none rounded text-lg font-bold transition-colors duration-200"
                   style={{ background: 'rgba(255,255,255,0.15)', color: '#fff', border: '2px solid rgba(255,255,255,0.6)' }}
                 >
                   お問い合わせ

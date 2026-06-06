@@ -3,7 +3,7 @@ export default function Hero() {
     <>
       <section
         className="pb-6 sm:pb-8 lg:pb-12 pt-10"
-        style={{ background: "linear-gradient(160deg, #EDF6FB 0%, #ffffff 65%)" }}
+        style={{ background: "#F8FCFF" }}
       >
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="mb-8 flex flex-wrap justify-between md:mb-16">
@@ -15,7 +15,7 @@ export default function Hero() {
                 className="text-xs font-bold tracking-widest mb-6 animate-fade-in-up"
                 style={{ color: "#1476A6" }}
               >
-                NPO法人ニュークリエイター・オルグ
+                特定非営利活動法人ニュークリエイター・オルグ
               </p>
 
               {/* メインコピー: 短く、余白を持たせる */}
@@ -49,7 +49,7 @@ export default function Hero() {
               <div className="flex flex-wrap gap-3 animate-fade-in-delay">
                 <a
                   href="#social-issues"
-                  className="inline-flex items-center rounded-lg px-6 py-3 text-white font-bold text-sm transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
+                  className="inline-flex items-center rounded-lg px-6 py-3 text-white font-bold text-sm transition-colors duration-200 "
                   style={{
                     background: "#1476A6",
                     boxShadow: "0 4px 12px rgba(20,118,166,0.25)",
@@ -63,7 +63,7 @@ export default function Hero() {
                   href="https://syncable.biz/associate/newcreator-org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center rounded-lg px-6 py-3 font-bold text-sm transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
+                  className="inline-flex items-center rounded-lg px-6 py-3 font-bold text-sm transition-colors duration-200 "
                   style={{
                     background: "#FDCA60",
                     color: "#1A202C",

@@ -379,7 +379,7 @@ export default function ForEducators({ guides, caseStudies }) {
           <ScrollFadeIn>
             <section id="contact" className="py-20">
               <div className="container px-5 mx-auto max-w-4xl">
-                <div className="rounded-2xl p-12 text-center text-white" style={{ background: "linear-gradient(135deg, #1476A6 0%, #2789B9 100%)" }}>
+                <div className="p-12 text-center text-white" style={{ background: "#1476A6" }}>
                   <h2 className="text-3xl md:text-4xl font-bold mb-4">
                     まずはお気軽にご相談ください
                   </h2>

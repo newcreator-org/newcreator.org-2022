@@ -4,7 +4,7 @@ export default function FooterCta() {
   return (
     <section
       className="body-font"
-      style={{ background: 'linear-gradient(135deg, #1476A6 0%, #2789B9 100%)' }}
+      style={{ background: '#1476A6' }}
     >
       <div className="container px-5 py-16 mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
@@ -29,7 +29,7 @@ export default function FooterCta() {
               href="https://syncable.biz/associate/newcreator-org"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center font-bold py-3 px-8 rounded-lg text-base transition-all duration-200 hover:-translate-y-0.5"
+              className="inline-flex items-center font-bold py-3 px-8 rounded-lg text-base transition-colors duration-200 "
               style={{
                 background: '#FDCA60',
                 color: '#1A202C',
@@ -64,7 +64,7 @@ export default function FooterCta() {
             </p>
             <Link href="/#contact">
               <a
-                className="inline-flex items-center font-bold py-3 px-8 rounded-lg text-base transition-all duration-200 hover:-translate-y-0.5"
+                className="inline-flex items-center font-bold py-3 px-8 rounded-lg text-base transition-colors duration-200 "
                 style={{
                   background: 'transparent',
                   color: '#ffffff',

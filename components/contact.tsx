@@ -9,7 +9,7 @@ const Contact = () => {
           minHeight: "400px",
           borderRadius: "16px",
           background:
-            "linear-gradient(135deg, rgba(20,118,166,0.80), rgba(39,137,185,0.65)), url(/img/cover2.jpg) center/cover no-repeat",
+            "linear-gradient(rgba(20,118,166,0.75), rgba(20,118,166,0.75)), url(/img/cover2.jpg) center/cover no-repeat",
           padding: "80px",
         }}
       >
@@ -18,7 +18,7 @@ const Contact = () => {
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "linear-gradient(135deg, rgba(20,118,166,0.10) 0%, rgba(149,212,232,0.08) 100%)",
+              "rgba(20,118,166,0.05)",
           }}
         />
 

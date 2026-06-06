@@ -11,7 +11,7 @@ export default function Apply() {
             <main>
                 <section
                   style={{
-                    background: 'linear-gradient(135deg, #1476A6 0%, #2789B9 100%)',
+                    background: '#1476A6',
                     padding: '80px 24px',
                     display: 'flex',
                     alignItems: 'center',
@@ -798,7 +798,7 @@ export default function Apply() {
                                 </h1>
                                 <div className="leading-relaxed">
                                     <p className="leading-relaxed">
-                                        2019年1月に発足した次世代の学びをオープンに制作・提供するNPO法人です。
+                                        2019年1月に発足した次世代の学びをオープンに制作・提供する特定非営利活動法人です。
                                         <br />
                                         誰でも自由に使用や改変を行うことができ、無料で使える「オープンソース」という形で提供される教材の開発およびそれらを利用したイベントの開催を行っています。
                                         <br />

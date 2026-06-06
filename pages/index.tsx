@@ -82,7 +82,7 @@ export default function Home({ news, archives, media }) {
                 </div>
               </div>
               <div className="container px-5 mx-auto pb-16">
-                <div className="px-8 py-10 rounded-lg" style={{ borderLeft: '4px solid #1476A6', background: '#F8FCFF' }}>
+                <div className="py-8" style={{ borderTop: '1px solid rgba(20,118,166,0.12)' }}>
                   <p className="sm:text-xl text-lg font-bold text-gray-900 leading-relaxed">
                     「STEAM教育を、全国の子どもたちに格差なく」
                   </p>
@@ -111,7 +111,7 @@ export default function Home({ news, archives, media }) {
                 {/* メインサービス */}
                 <div className="flex flex-wrap -m-4 mb-8">
                   <div className="w-full p-4">
-                    <div className="bg-white rounded-lg overflow-hidden md:flex">
+                    <div className="bg-white md:flex overflow-hidden" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                       <img
                         className="h-64 md:h-auto md:w-1/2 w-full object-cover object-center"
                         src="/img/works/otsumajyoshi.jpg"
@@ -135,7 +135,7 @@ export default function Home({ news, archives, media }) {
 
                 <div className="flex flex-wrap -m-4 mb-8">
                   <div className="xl:w-1/2 md:w-1/2 p-4">
-                    <div className="bg-white rounded-lg overflow-hidden h-full">
+                    <div className="bg-white overflow-hidden h-full" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                       <img
                         className="h-48 w-full object-cover object-center"
                         src="/img/works/school-plus.png"
@@ -155,7 +155,7 @@ export default function Home({ news, archives, media }) {
                     </div>
                   </div>
                   <div className="xl:w-1/2 md:w-1/2 p-4">
-                    <div className="bg-white rounded-lg overflow-hidden h-full">
+                    <div className="bg-white overflow-hidden h-full" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                       <img
                         className="h-48 w-full object-cover object-center"
                         src="/img/works/gpt.jpg"
@@ -176,7 +176,7 @@ export default function Home({ news, archives, media }) {
                 {/* その他のサービス */}
                 <div className="flex flex-wrap -m-4">
                   <div className="xl:w-1/3 md:w-1/3 p-4">
-                    <div className="bg-white rounded-lg overflow-hidden h-full">
+                    <div className="bg-white overflow-hidden h-full" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                       <img
                         className="h-40 w-full object-cover object-center"
                         src="/img/works/workshop.jpg"
@@ -193,7 +193,7 @@ export default function Home({ news, archives, media }) {
                     </div>
                   </div>
                   <div className="xl:w-1/3 md:w-1/3 p-4">
-                    <div className="bg-white rounded-lg overflow-hidden h-full">
+                    <div className="bg-white overflow-hidden h-full" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                       <img
                         className="h-40 w-full object-cover object-center"
                         src="/img/works/school.jpg"
@@ -210,7 +210,7 @@ export default function Home({ news, archives, media }) {
                     </div>
                   </div>
                   <div className="xl:w-1/3 md:w-1/3 p-4">
-                    <div className="bg-white rounded-lg overflow-hidden h-full">
+                    <div className="bg-white overflow-hidden h-full" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                       <img
                         className="h-40 w-full object-cover object-center"
                         src="/img/works/logy.jpg"
@@ -233,7 +233,7 @@ export default function Home({ news, archives, media }) {
 
           {/* 先生・学校向けCTA */}
           <ScrollFadeIn>
-            <section className="text-white py-16" style={{ background: 'linear-gradient(135deg, #1476A6 0%, #2789B9 100%)' }}>
+            <section className="text-white py-16" style={{ background: '#1476A6' }}>
               <div className="container px-5 mx-auto max-w-5xl">
                 <div className="text-center mb-8">
                   <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -286,57 +286,35 @@ export default function Home({ news, archives, media }) {
                   </p>
                 </div>
 
-                <div className="flex flex-wrap mt-12 -m-4">
+                <div className="mt-12 max-w-3xl mx-auto">
                   {/* 不登校 */}
-                  <div className="p-4 md:w-1/3">
-                    <div className="issue-card">
-                      <div className="issue-icon">
-                        <svg className="w-6 h-6" style={{ color: '#1476A6' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                        </svg>
-                      </div>
-                      <p className="text-xs font-bold tracking-wider mb-2" style={{ color: '#1476A6' }}>不登校</p>
-                      <h3 className="text-gray-900 text-xl font-bold mb-4 leading-snug">35万人を超える子どもが<br />居場所を失っている</h3>
-                      <p className="leading-7 text-sm text-gray-600 mb-4">
-                        学校に行けなくなった子の中には、「学びたくない」のではなく、「学びたいのに場所がない」子がたくさんいます。オンラインで、自分のペースで、安心できる場所で学べる環境をつくることが、私たちの役割だと思っています。
-                      </p>
-                      <p className="text-xs" style={{ color: '#A0AEC0' }}>文部科学省「令和6年度 児童生徒の問題行動・不登校等調査」より</p>
-                    </div>
+                  <div className="issue-card">
+                    <p className="text-xs font-bold mb-3" style={{ color: '#1476A6' }}>不登校</p>
+                    <h3 className="text-gray-900 text-xl font-bold mb-4 leading-snug">35万人を超える子どもが、居場所を失っている</h3>
+                    <p className="leading-8 text-base text-gray-600 mb-3">
+                      学校に行けなくなった子の中には、「学びたくない」のではなく、「学びたいのに場所がない」子がたくさんいます。オンラインで、自分のペースで、安心できる場所で学べる環境をつくることが、私たちの役割だと思っています。
+                    </p>
+                    <p className="text-xs" style={{ color: '#A0AEC0' }}>文部科学省「令和6年度 児童生徒の問題行動・不登校等調査」より</p>
                   </div>
 
                   {/* ジェンダーギャップ */}
-                  <div className="p-4 md:w-1/3">
-                    <div className="issue-card">
-                      <div className="issue-icon">
-                        <svg className="w-6 h-6" style={{ color: '#1476A6' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                      </div>
-                      <p className="text-xs font-bold tracking-wider mb-2" style={{ color: '#1476A6' }}>ジェンダーギャップ</p>
-                      <h3 className="text-gray-900 text-xl font-bold mb-4 leading-snug">「理系は男の子のもの」<br />と思っている女の子がいる</h3>
-                      <p className="leading-7 text-sm text-gray-600 mb-4">
-                        「女の子にプログラミングは難しい」という先入観は、子どもの頃から形成されます。小学生のうちに「自分にもできる」と感じる体験を積み重ねることが、その先入観を少しずつ変えていくと信じています。
-                      </p>
-                      <p className="text-xs" style={{ color: '#A0AEC0' }}>日本のIT分野の女性比率は絀20%（OECD最低水準）：科学教育研究 2024より</p>
-                    </div>
+                  <div className="issue-card">
+                    <p className="text-xs font-bold mb-3" style={{ color: '#1476A6' }}>ジェンダーギャップ</p>
+                    <h3 className="text-gray-900 text-xl font-bold mb-4 leading-snug">「理系は男の子のもの」と思っている女の子がいる</h3>
+                    <p className="leading-8 text-base text-gray-600 mb-3">
+                      「女の子にプログラミングは難しい」という先入観は、子どもの頃から形成されます。小学生のうちに「自分にもできる」と感じる体験を積み重ねることが、その先入観を少しずつ変えていくと信じています。
+                    </p>
+                    <p className="text-xs" style={{ color: '#A0AEC0' }}>日本のIT分野の女性比率は約20%（OECD最低水準）：科学教育研究 2024より</p>
                   </div>
 
                   {/* 地域格差 */}
-                  <div className="p-4 md:w-1/3">
-                    <div className="issue-card">
-                      <div className="issue-icon">
-                        <svg className="w-6 h-6" style={{ color: '#1476A6' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                      </div>
-                      <p className="text-xs font-bold tracking-wider mb-2" style={{ color: '#1476A6' }}>地域格差</p>
-                      <h3 className="text-gray-900 text-xl font-bold mb-4 leading-snug">地方に生まれただけで<br />選択肢が少なくなる</h3>
-                      <p className="leading-7 text-sm text-gray-600 mb-4">
-                        東京にいれば当たり前の環境が、地方では整っていないことが多い。近くに教室がない、身近にロールモデルがいない——そんな子どもたちにこそ、私たちは山を越えてでも届けに行きたい。
-                      </p>
-                      <p className="text-xs" style={{ color: '#A0AEC0' }}>文部科学省「プログラミング教育に関する調査」より</p>
-                    </div>
+                  <div className="issue-card">
+                    <p className="text-xs font-bold mb-3" style={{ color: '#1476A6' }}>地域格差</p>
+                    <h3 className="text-gray-900 text-xl font-bold mb-4 leading-snug">地方に生まれただけで、選択肢が少なくなる</h3>
+                    <p className="leading-8 text-base text-gray-600 mb-3">
+                      東京にいれば当たり前の環境が、地方では整っていないことが多い。近くに教室がない、身近にロールモデルがいない——そんな子どもたちにこそ、私たちは山を越えてでも届けに行きたい。
+                    </p>
+                    <p className="text-xs" style={{ color: '#A0AEC0' }}>文部科学省「プログラミング教育に関する調査」より</p>
                   </div>
                 </div>
 
@@ -374,7 +352,7 @@ export default function Home({ news, archives, media }) {
                   {archives &&
                     archives.map((archive) => (
                       <div className="w-full xl:w-1/4 md:w-1/2 p-4" key={archive.title}>
-                        <div className="bg-white rounded-lg overflow-hidden">
+                        <div className="bg-white overflow-hidden" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                           <img
                             className="h-40 w-full object-cover object-center"
                             src="/ogp.png"
@@ -418,7 +396,7 @@ export default function Home({ news, archives, media }) {
                     media.map((post) => (
                       <div className="w-full xl:w-1/3 md:w-1/2 p-4" key={post.id}>
                         <a href={`/media/${post.id}`}>
-                          <div className="bg-white rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-gray-100 overflow-hidden group h-full">
+                          <div className="bg-white overflow-hidden h-full" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                             <div className="p-6">
                               <span
                                 className={`inline-block text-xs font-medium px-3 py-1 rounded-full mb-3 ${categoryColor(
@@ -546,7 +524,7 @@ export default function Home({ news, archives, media }) {
                   法人情報
                 </h1>
                 <div className="lg:w-2/3 mx-auto">
-                  <div className="bg-white rounded-lg overflow-hidden">
+                  <div className="bg-white overflow-hidden" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                     <table className="w-full text-left">
                       <tbody>
                         <tr className="border-b border-gray-100">
@@ -571,9 +549,7 @@ export default function Home({ news, archives, media }) {
                         <tr>
                           <th className="py-4 px-6 font-medium text-gray-500 bg-gray-50">所在地</th>
                           <td className="py-4 px-6 text-gray-900">
-                            〒101-0054<br />
-                            東京都千代田区神田錦町三丁目７番地２<br />
-                            東京堂錦町ビル９階
+                            大阪府豊中市桜の町３丁目７番７号
                           </td>
                         </tr>
                       </tbody>
