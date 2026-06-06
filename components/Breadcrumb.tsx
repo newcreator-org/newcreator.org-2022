@@ -31,10 +31,7 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
               <>
                 <Link href={item.href}>
                   <a
-                    className="transition-all duration-200 hover:underline"
-                    style={{ color: '#1476A6', textDecoration: 'none' }}
-                    onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.opacity = '0.7'; }}
-                    onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.opacity = '1'; }}
+                    className="link-brand hover:opacity-70 transition-opacity duration-200"
                   >
                     {item.label}
                   </a>

@@ -1,8 +1,3 @@
-// ============================================================
-// Card — newCreator.org Design System v2
-// CSS Modules / SCSS 廃止 → Tailwind + CSS Custom Properties
-// ============================================================
-
 import React from 'react';
 import Link from 'next/link';
 
@@ -40,22 +35,8 @@ export const Card: React.FC<CardProps> = ({
 
   const cardContent = (
     <div
-      className="bg-white overflow-hidden h-full flex flex-col"
-      style={{
-        borderRadius: '12px',
-        border: '1px solid rgba(20,118,166,0.10)',
-        transition: 'box-shadow 0.25s ease, transform 0.25s ease',
-      }}
-      onMouseEnter={e => {
-        const el = e.currentTarget as HTMLDivElement;
-        el.style.boxShadow = '0 6px 20px rgba(20,118,166,0.14)';
-        el.style.transform = 'translateY(-4px)';
-      }}
-      onMouseLeave={e => {
-        const el = e.currentTarget as HTMLDivElement;
-        el.style.boxShadow = '0 1px 3px rgba(20,118,166,0.08)';
-        el.style.transform = 'translateY(0)';
-      }}
+      className="card-base h-full flex flex-col"
+      style={{ transition: 'background-color 0.15s' }}
     >
       {image && (
         <div
@@ -66,39 +47,35 @@ export const Card: React.FC<CardProps> = ({
             src={image}
             alt={title}
             className="w-full h-full object-cover"
-            style={{ transition: 'transform 0.3s ease' }}
           />
         </div>
       )}
-      <div className="flex-1 flex flex-col" style={{ padding: '24px' }}>
+      <div className="flex-1 flex flex-col p-6">
         <div className="flex items-center flex-wrap mb-3" style={{ gap: '8px' }}>
           {badge && (
             <span
-              className="inline-block text-xs font-bold px-3 py-1 rounded-sm"
+              className="inline-block label-text px-2 py-0.5 rounded-sm"
               style={{ background: badgeStyle.bg, color: badgeStyle.color }}
             >
               {badge}
             </span>
           )}
           {category && (
-            <span style={{ fontSize: '14px', color: '#718096', fontWeight: 500 }}>
+            <span className="label-text" style={{ color: '#718096' }}>
               {category}
             </span>
           )}
           {date && (
-            <span style={{ fontSize: '14px', color: '#A0AEC0' }}>{date}</span>
+            <span className="label-text" style={{ color: '#718096' }}>{date}</span>
           )}
         </div>
-        <h3
-          className="card-title mb-3"
-          style={{ fontSize: '18px', lineHeight: 1.5, color: '#1A202C' }}
-        >
+        <h3 className="card-title mb-3">
           {title}
         </h3>
         {description && (
           <p
-            className="flex-1"
-            style={{ fontSize: '14px', lineHeight: 1.75, color: '#718096', margin: 0 }}
+            className="body-text flex-1"
+            style={{ color: '#718096', margin: 0 }}
           >
             {description}
           </p>
@@ -110,7 +87,7 @@ export const Card: React.FC<CardProps> = ({
   if (href) {
     return (
       <Link href={href}>
-        <a style={{ display: 'block', textDecoration: 'none', color: 'inherit', width: '100%' }}>
+        <a className="block w-full" style={{ textDecoration: 'none', color: 'inherit' }}>
           {cardContent}
         </a>
       </Link>
@@ -121,15 +98,8 @@ export const Card: React.FC<CardProps> = ({
     return (
       <button
         onClick={onClick}
-        style={{
-          display: 'block',
-          background: 'none',
-          border: 'none',
-          padding: 0,
-          width: '100%',
-          textAlign: 'left',
-          cursor: 'pointer',
-        }}
+        className="block w-full text-left"
+        style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
       >
         {cardContent}
       </button>

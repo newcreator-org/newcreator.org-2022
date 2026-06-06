@@ -321,17 +321,7 @@ export default function Transparency() {
             </p>
             <a
               href="/#contact"
-              className="inline-flex items-center font-bold py-3 px-8 rounded-sm text-base transition-all duration-200"
-              style={{
-                background: "#fff",
-                color: "#1476A6",
-              }}
-              onMouseEnter={e => {
-                (e.currentTarget as HTMLAnchorElement).style.background = "#EDF6FB";
-              }}
-              onMouseLeave={e => {
-                (e.currentTarget as HTMLAnchorElement).style.background = "#fff";
-              }}
+              className="btn-white"
             >
               お問い合わせ
             </a>

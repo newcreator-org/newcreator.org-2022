@@ -83,9 +83,7 @@ export default function Header() {
           >
             <CtaLink
               href="mailto:contact@newcreator.org"
-              bg="#1476A6"
-              hoverBg="#0F5A80"
-              textColor="#fff"
+              variant="primary"
               height={headerHeight}
             >
               ボランティアに参加
@@ -98,9 +96,7 @@ export default function Header() {
             </CtaLink>
             <CtaLink
               href="https://syncable.biz/associate/newcreator-org"
-              bg="#FDCA60"
-              hoverBg="#F5B730"
-              textColor="#1A202C"
+              variant="accent"
               height={headerHeight}
               external
             >
@@ -136,6 +132,22 @@ export default function Header() {
           #desktop-cta { display: flex !important; }
           header button.hamburger-btn { display: none !important; }
         }
+        .nav-link-underline::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 2px;
+          width: 0;
+          background: #1476A6;
+          transition: width 0.25s cubic-bezier(0.4,0,0.2,1);
+        }
+        .nav-link-underline:hover::after { width: 100%; }
+        .nav-link-underline:hover { color: #1476A6; }
+        .cta-link-primary:hover { background-color: #0F5A80 !important; }
+        .cta-link-accent:hover { background-color: #F5B730 !important; }
+        .drawer-cta-primary:hover { background-color: #0F5A80 !important; }
+        .drawer-cta-accent:hover { background-color: #F5B730 !important; }
       `}</style>
 
       {/* ---- Mobile overlay ---- */}
@@ -179,17 +191,7 @@ export default function Header() {
                 <a
                   href={href}
                   onClick={closeMenu}
-                  style={{
-                    display: "block",
-                    padding: "0.875rem 0",
-                    fontSize: "0.9375rem",
-                    fontWeight: 600,
-                    color: "#2D3748",
-                    transition: "color 0.2s ease",
-                    textDecoration: "none",
-                  }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.color = "#1476A6"; }}
-                  onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.color = "#2D3748"; }}
+                  className="block py-3.5 text-[0.9375rem] font-semibold text-heading hover:text-brand-blue transition-colors duration-200 no-underline"
                 >
                   {label}
                 </a>
@@ -198,10 +200,10 @@ export default function Header() {
           </ul>
 
           <div style={{ marginTop: "1.75rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-            <DrawerCtaLink href="mailto:contact@newcreator.org" bg="#1476A6" hoverBg="#0F5A80" textColor="#fff" onClick={closeMenu}>
+            <DrawerCtaLink href="mailto:contact@newcreator.org" variant="primary" onClick={closeMenu}>
               ボランティアに参加する
             </DrawerCtaLink>
-            <DrawerCtaLink href="https://syncable.biz/associate/newcreator-org" bg="#FDCA60" hoverBg="#F5B730" textColor="#1A202C" onClick={closeMenu} external>
+            <DrawerCtaLink href="https://syncable.biz/associate/newcreator-org" variant="accent" onClick={closeMenu} external>
               寄付で活動を支援する
             </DrawerCtaLink>
           </div>
@@ -217,78 +219,35 @@ function NavLink({ href, children }: { href: string; children: React.ReactNode }
   return (
     <a
       href={href}
-      style={{
-        position: "relative",
-        paddingBottom: "4px",
-        fontSize: "0.875rem",
-        fontWeight: 600,
-        color: "#2D3748",
-        textDecoration: "none",
-        transition: "color 0.2s ease",
-        whiteSpace: "nowrap",
-      }}
-      onMouseEnter={e => {
-        const el = e.currentTarget as HTMLAnchorElement;
-        el.style.color = "#1476A6";
-        const bar = el.querySelector("span") as HTMLElement;
-        if (bar) bar.style.width = "100%";
-      }}
-      onMouseLeave={e => {
-        const el = e.currentTarget as HTMLAnchorElement;
-        el.style.color = "#2D3748";
-        const bar = el.querySelector("span") as HTMLElement;
-        if (bar) bar.style.width = "0";
-      }}
+      className="nav-link-underline relative text-heading hover:text-brand-blue font-semibold text-sm no-underline whitespace-nowrap transition-colors duration-200"
+      style={{ paddingBottom: "4px" }}
     >
       {children}
-      <span
-        aria-hidden="true"
-        style={{
-          position: "absolute",
-          left: 0,
-          bottom: 0,
-          height: "2px",
-          width: 0,
-          borderRadius: "9999px",
-          background: "linear-gradient(90deg, #1476A6, #2789B9)",
-          transition: "width 0.25s cubic-bezier(0.4,0,0.2,1)",
-        }}
-      />
     </a>
   );
 }
 
 function CtaLink({
-  href, bg, hoverBg, textColor, height, external, children,
+  href, variant, height, external, children,
 }: {
-  href: string; bg: string; hoverBg: string; textColor: string;
-  height: string; external?: boolean; children: React.ReactNode;
+  href: string; variant: "primary" | "accent"; height: string;
+  external?: boolean; children: React.ReactNode;
 }) {
-  const props = external
-    ? { target: "_blank", rel: "noopener noreferrer" }
-    : {};
+  const props = external ? { target: "_blank", rel: "noopener noreferrer" } : {};
+  const bg = variant === "primary" ? "#1476A6" : "#FDCA60";
+  const textColor = variant === "primary" ? "#fff" : "#1A202C";
+  const cls = variant === "primary" ? "cta-link-primary" : "cta-link-accent";
   return (
     <a
       href={href}
       {...props}
+      className={`${cls} flex flex-col items-center justify-center font-bold text-[13px] text-center no-underline flex-shrink-0 transition-colors duration-200`}
       style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
         height,
         padding: "0 1.5rem",
-        fontWeight: 700,
-        fontSize: "13px",
-        textAlign: "center",
         color: textColor,
         background: bg,
-        textDecoration: "none",
-        transition: "background-color 0.2s ease",
-        flexShrink: 0,
       }}
-      onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.background = hoverBg; }}
-      onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.background = bg; }}
     >
       {children}
     </a>
@@ -296,31 +255,27 @@ function CtaLink({
 }
 
 function DrawerCtaLink({
-  href, bg, hoverBg, textColor, onClick, external, children,
+  href, variant, onClick, external, children,
 }: {
-  href: string; bg: string; hoverBg: string; textColor: string;
+  href: string; variant: "primary" | "accent";
   onClick: () => void; external?: boolean; children: React.ReactNode;
 }) {
   const props = external ? { target: "_blank", rel: "noopener noreferrer" } : {};
+  const bg = variant === "primary" ? "#1476A6" : "#FDCA60";
+  const textColor = variant === "primary" ? "#fff" : "#1A202C";
+  const cls = variant === "primary" ? "drawer-cta-primary" : "drawer-cta-accent";
   return (
     <a
       href={href}
       {...props}
       onClick={onClick}
+      className={`${cls} block text-center font-bold text-sm no-underline transition-colors duration-200`}
       style={{
-        display: "block",
-        textAlign: "center",
         padding: "0.875rem 1.5rem",
-        borderRadius: "0.5rem",
-        fontWeight: 700,
-        fontSize: "0.875rem",
+        borderRadius: "2px",
         color: textColor,
         background: bg,
-        textDecoration: "none",
-        transition: "background-color 0.2s ease",
       }}
-      onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.background = hoverBg; }}
-      onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.background = bg; }}
     >
       {children}
     </a>
@@ -340,10 +295,11 @@ function HamburgerBar({ open, index }: { open: boolean; index: number }) {
         width: "24px",
         height: "2px",
         background: "#1476A6",
-        borderRadius: "9999px",
-        transition: "all 0.25s cubic-bezier(0.4,0,0.2,1)",
+        borderRadius: "2px",
         transform: transforms[index],
-        opacity: index === 1 && open ? 0 : 1,
+        opacity: open && index === 1 ? 0 : 1,
+        transition: "transform 0.25s ease, opacity 0.2s ease",
+        transformOrigin: "center",
       }}
     />
   );

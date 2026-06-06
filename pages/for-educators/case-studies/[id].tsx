@@ -101,10 +101,7 @@ export default function CaseStudyDetail({ caseStudy }) {
                   </p>
                   <Link href="/apply">
                     <a
-                      className="inline-block px-8 py-3 rounded-sm font-bold transition-colors"
-                      style={{ background: '#1476A6', color: '#fff' }}
-                      onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.background = '#0F5A80'; }}
-                      onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.background = '#1476A6'; }}
+                      className="btn-primary"
                     >
                       お問い合わせフォームへ
                     </a>

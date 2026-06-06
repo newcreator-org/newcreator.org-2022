@@ -42,10 +42,7 @@ export default function Footer() {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline transition-colors duration-200"
-                style={{ color: "#718096" }}
-                onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.color = "#1476A6"; }}
-                onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.color = "#718096"; }}
+                className="text-muted hover:text-brand-blue hover:underline transition-colors duration-200"
               >
                 {label}
               </a>

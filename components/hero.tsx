@@ -49,12 +49,7 @@ export default function Hero() {
               <div className="flex flex-wrap gap-3 animate-fade-in-delay">
                 <a
                   href="#social-issues"
-                  className="btn-primary "
-                  style={{
-                    background: "#1476A6",
-                  }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.background = "#0F5A80"; }}
-                  onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.background = "#1476A6"; }}
+                  className="btn-primary"
                 >
                   私たちが向き合う現実
                 </a>
@@ -62,13 +57,7 @@ export default function Hero() {
                   href="https://syncable.biz/associate/newcreator-org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-outline "
-                  style={{
-                    background: "#FDCA60",
-                    color: "#1A202C",
-                  }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.background = "#F5B730"; }}
-                  onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.background = "#FDCA60"; }}
+                  className="btn-accent"
                 >
                   活動を支援する
                 </a>

@@ -171,19 +171,7 @@ export default function Company() {
                   ].map(({ href, title, desc }) => (
                     <Link key={href} href={href}>
                       <a
-                        className="block p-6 rounded-sm border transition-all"
-                        style={{
-                          borderColor: "rgba(20,118,166,0.15)",
-                          background: "#fff",
-                        }}
-                        onMouseEnter={e => {
-                          (e.currentTarget as HTMLAnchorElement).style.borderColor = "#1476A6";
-                          (e.currentTarget as HTMLAnchorElement).style.background = "#F8FCFF";
-                        }}
-                        onMouseLeave={e => {
-                          (e.currentTarget as HTMLAnchorElement).style.borderColor = "rgba(20,118,166,0.15)";
-                          (e.currentTarget as HTMLAnchorElement).style.background = "#fff";
-                        }}
+                        className="card-base block hover:border-brand-blue hover:bg-brand-light transition-colors"
                       >
                         <p className="font-bold mb-1" style={{ color: "#1476A6" }}>{title}</p>
                         <p className="text-sm" style={{ color: "#718096" }}>{desc}</p>
