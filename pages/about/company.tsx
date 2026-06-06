@@ -43,9 +43,9 @@ export default function Company() {
         {/* パンくず */}
         <div className="container mx-auto px-5 py-4">
           <nav className="flex items-center gap-2 text-sm" style={{ color: "#718096" }}>
-            <Link href="/"><a className="hover:underline" style={{ color: "#1476A6" }}>ホーム</a></Link>
+            <Link href="/"><a className="link-brand">ホーム</a></Link>
             <span>/</span>
-            <Link href="/about"><a className="hover:underline" style={{ color: "#1476A6" }}>私たちについて</a></Link>
+            <Link href="/about"><a className="link-brand">私たちについて</a></Link>
             <span>/</span>
             <span>法人概要</span>
           </nav>
@@ -88,9 +88,9 @@ export default function Company() {
                           </th>
                           <td className="py-4 px-6 text-sm leading-7" style={{ color: "#4A5568" }}>
                             {label === "連絡先" ? (
-                              <a href={`mailto:${value}`} className="underline" style={{ color: "#1476A6" }}>{value}</a>
+                              <a href={`mailto:${value}`} className="link-brand underline">{value}</a>
                             ) : label === "Webサイト" ? (
-                              <a href={value} target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "#1476A6" }}>{value}</a>
+                              <a href={value} target="_blank" rel="noopener noreferrer" className="link-brand underline">{value}</a>
                             ) : value}
                           </td>
                         </tr>

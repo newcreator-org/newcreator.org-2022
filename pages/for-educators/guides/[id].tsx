@@ -35,7 +35,7 @@ export default function GuideDetail({ guide }) {
         <main className="container px-5 py-20 mx-auto max-w-4xl text-center">
           <h1 className="page-title text-[#1A202C] mb-4">ガイドが見つかりません</h1>
           <Link href="/for-educators/guides">
-            <a className="text-[#1476A6] hover:text-[#1476A6]">ガイド一覧に戻る</a>
+            <a className="link-brand">ガイド一覧に戻る</a>
           </Link>
         </main>
         <Footer />
@@ -112,7 +112,7 @@ export default function GuideDetail({ guide }) {
 
               <div className="mt-8">
                 <Link href="/for-educators/guides">
-                  <a className="text-[#1476A6] hover:text-[#1476A6]">
+                  <a className="link-brand">
                     ← ガイド一覧に戻る
                   </a>
                 </Link>

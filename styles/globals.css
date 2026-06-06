@@ -103,63 +103,68 @@ img {
    ============================================================ */
 @layer components {
 
-  /* --- Buttons --- */
-  /* ボタンはtranslateY廃止。色変化のみ */
+  /* --- Buttons ---
+   * 3種類に絞る。サイズ調整はラッパー側で行う
+   * btn-primary : ブランドブルー塗り（主要CTA）
+   * btn-outline : ブランドブルー枠（セカンダリCTA）
+   * btn-accent  : アクセントイエロー（寄付・申込など強調CTA）
+   * link-brand  : テキストリンク（インラインCTA）
+   * ---------------------------------------- */
   .btn {
     @apply inline-flex items-center justify-center font-bold
-           transition-colors duration-200 focus:outline-none;
-    border-radius: 4px;
+           text-sm px-5 py-2
+           transition-colors duration-150 focus:outline-none;
+    border-radius: 2px;
+    letter-spacing: 0.01em;
   }
 
   .btn-primary {
-    @apply btn px-5 py-2 text-white text-sm;
+    @apply btn text-white;
     background-color: var(--color-primary);
   }
   .btn-primary:hover { background-color: #0F5A80; }
 
-  .btn-primary-lg {
-    @apply btn-primary px-6 py-2.5 text-base;
-  }
-
-  .btn-accent {
-    @apply btn px-5 py-2 text-sm;
-    background-color: var(--color-accent);
-    color: #1A202C;
-  }
-  .btn-accent:hover { background-color: #F5B730; }
-
   .btn-outline {
-    @apply btn px-5 py-2 text-sm bg-transparent;
+    @apply btn bg-transparent;
     color: var(--color-primary);
     border: 1.5px solid var(--color-primary);
   }
   .btn-outline:hover { background-color: var(--color-primary-light); }
 
-  .btn-white {
-    @apply btn px-5 py-2 text-sm bg-white;
-    color: var(--color-primary);
-    border: 1px solid rgba(20,118,166,0.20);
+  .btn-accent {
+    @apply btn;
+    background-color: var(--color-accent);
+    color: #1A202C;
   }
-  .btn-white:hover { background-color: #EDF6FB; }
+  .btn-accent:hover { background-color: #F5B730; }
 
+  /* 濃色背景上のアウトラインボタン（白枠） */
   .btn-ghost-white {
-    @apply btn px-5 py-2 text-sm text-white;
+    @apply btn text-white;
     border: 1.5px solid rgba(255,255,255,0.7);
     background: transparent;
   }
   .btn-ghost-white:hover { background: rgba(255,255,255,0.12); border-color: #fff; }
 
-  .btn-outline-lg {
-    @apply btn-outline px-6 py-2.5 text-base;
+  /* テキストリンク型CTA */
+  .link-brand {
+    @apply inline-flex items-center text-sm font-bold;
+    color: var(--color-primary);
+    text-decoration: none;
   }
+  .link-brand:hover { text-decoration: underline; }
 
-  .btn-accent-lg {
-    @apply btn-accent px-6 py-2.5 text-base;
+  /* 後方互換エイリアス（既存コードが壊れないよう残す） */
+  .btn-primary-lg   { @apply btn-primary; }
+  .btn-outline-lg   { @apply btn-outline; }
+  .btn-accent-lg    { @apply btn-accent; }
+  .btn-ghost-white-lg { @apply btn-ghost-white; }
+  .btn-white {
+    @apply btn bg-white;
+    color: var(--color-primary);
+    border: 1px solid rgba(20,118,166,0.20);
   }
-
-  .btn-ghost-white-lg {
-    @apply btn-ghost-white px-6 py-2.5 text-base;
-  }
+  .btn-white:hover { background-color: #EDF6FB; }
 
   /* --- Cards --- */
   /* カードは浮かせない。ホバーは背景色変化のみ */

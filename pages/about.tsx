@@ -159,7 +159,7 @@ export default function About() {
                 </div>
                 <div className="mt-6">
                   <Link href="/about/company">
-                    <a className="text-sm font-medium" style={{ color: '#1476A6' }}>
+                    <a className="link-brand">
                       詳細な法人概要を見る →
                     </a>
                   </Link>

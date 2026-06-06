@@ -64,9 +64,9 @@ export default function Transparency() {
         {/* パンくず */}
         <div className="container mx-auto px-5 py-4">
           <nav className="flex items-center gap-2 text-sm" style={{ color: "#718096" }}>
-            <Link href="/"><a className="hover:underline" style={{ color: "#1476A6" }}>ホーム</a></Link>
+            <Link href="/"><a className="link-brand">ホーム</a></Link>
             <span>/</span>
-            <Link href="/about"><a className="hover:underline" style={{ color: "#1476A6" }}>私たちについて</a></Link>
+            <Link href="/about"><a className="link-brand">私たちについて</a></Link>
             <span>/</span>
             <span>情報公開・透明性</span>
           </nav>
@@ -115,8 +115,7 @@ export default function Transparency() {
                       <p className="text-sm leading-7 mb-3" style={{ color: "#4A5568" }}>{desc}</p>
                       <p className="text-xs mb-4" style={{ color: "#A0AEC0" }}>{note}</p>
                       <button
-                        className="inline-flex items-center text-sm font-bold"
-                        style={{ color: "#1476A6" }}
+                        className="link-brand"
                       >
                         PDFをダウンロード
                         <DownloadIcon />
@@ -156,7 +155,7 @@ export default function Transparency() {
                       </thead>
                       <tbody>
                         <tr>
-                          <td className="py-3 px-4 text-sm font-bold" style={{ color: "#1476A6" }}>【収入の部】</td>
+                          <td className="py-3 px-4 text-sm font-bold text-[#1476A6]">【収入の部】</td>
                           <td />
                         </tr>
                         {[
@@ -174,7 +173,7 @@ export default function Transparency() {
                           <td className="py-3 px-4 text-sm font-bold text-right" style={{ color: "#1A202C" }}>7,000,000</td>
                         </tr>
                         <tr>
-                          <td className="py-3 px-4 text-sm font-bold pt-5" style={{ color: "#1476A6" }}>【支出の部】</td>
+                          <td className="py-3 px-4 text-sm font-bold pt-5 text-[#1476A6]">【支出の部】</td>
                           <td />
                         </tr>
                         {[
@@ -191,14 +190,14 @@ export default function Transparency() {
                           <td className="py-3 px-4 text-sm font-bold text-right" style={{ color: "#1A202C" }}>6,500,000</td>
                         </tr>
                         <tr style={{ background: "#DBEAFE" }}>
-                          <td className="py-3 px-4 text-sm font-bold" style={{ color: "#1476A6" }}>当期収支差額</td>
-                          <td className="py-3 px-4 text-sm font-bold text-right" style={{ color: "#1476A6" }}>500,000</td>
+                          <td className="py-3 px-4 text-sm font-bold text-[#1476A6]">当期収支差額</td>
+                          <td className="py-3 px-4 text-sm font-bold text-right text-[#1476A6]">500,000</td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
                   <div className="mt-6">
-                    <button className="inline-flex items-center text-sm font-bold" style={{ color: "#1476A6" }}>
+                    <button className="link-brand">
                       詳細な財務諸表をダウンロード
                       <DownloadIcon />
                     </button>
@@ -245,7 +244,7 @@ export default function Transparency() {
                           <p className="font-bold text-sm" style={{ color: "#1A202C" }}>{year} 年次報告書</p>
                           <p className="text-xs mt-0.5" style={{ color: "#718096" }}>活動実績、財務報告、今後の展望</p>
                         </div>
-                        <button className="inline-flex items-center text-sm font-bold" style={{ color: "#1476A6" }}>
+                        <button className="link-brand">
                           ダウンロード
                           <DownloadIcon />
                         </button>
@@ -273,9 +272,9 @@ export default function Transparency() {
                   <table className="w-full text-left">
                     <thead>
                       <tr style={{ background: "#EDF6FB", borderBottom: "2px solid rgba(20,118,166,0.15)" }}>
-                        <th className="py-3 px-5 text-sm font-bold" style={{ color: "#1476A6" }}>役職</th>
-                        <th className="py-3 px-5 text-sm font-bold" style={{ color: "#1476A6" }}>氏名</th>
-                        <th className="py-3 px-5 text-sm font-bold" style={{ color: "#1476A6" }}>任期</th>
+                        <th className="py-3 px-5 text-sm font-bold text-[#1476A6]">役職</th>
+                        <th className="py-3 px-5 text-sm font-bold text-[#1476A6]">氏名</th>
+                        <th className="py-3 px-5 text-sm font-bold text-[#1476A6]">任期</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -292,7 +291,7 @@ export default function Transparency() {
                             background: i % 2 !== 0 ? "#F8FCFF" : "#fff",
                           }}
                         >
-                          <td className="py-3 px-5 text-sm font-bold" style={{ color: "#1476A6" }}>{role}</td>
+                          <td className="py-3 px-5 text-sm font-bold text-[#1476A6]">{role}</td>
                           <td className="py-3 px-5 text-sm" style={{ color: "#4A5568" }}>{name}</td>
                           <td className="py-3 px-5 text-sm" style={{ color: "#718096" }}>{term}</td>
                         </tr>

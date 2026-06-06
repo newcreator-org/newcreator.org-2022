@@ -34,7 +34,7 @@ export default function CaseStudyDetail({ caseStudy }) {
         <main className="container px-5 py-20 mx-auto max-w-4xl text-center">
           <h1 className="page-title text-[#1A202C] mb-4">事例が見つかりません</h1>
           <Link href="/for-educators/case-studies">
-            <a className="text-[#1476A6] hover:text-[#1476A6]">事例一覧に戻る</a>
+            <a className="link-brand">事例一覧に戻る</a>
           </Link>
         </main>
         <Footer />
