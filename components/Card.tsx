@@ -44,7 +44,6 @@ export const Card: React.FC<CardProps> = ({
       style={{
         borderRadius: '12px',
         border: '1px solid rgba(20,118,166,0.10)',
-        boxShadow: '0 1px 3px rgba(20,118,166,0.08)',
         transition: 'box-shadow 0.25s ease, transform 0.25s ease',
       }}
       onMouseEnter={e => {

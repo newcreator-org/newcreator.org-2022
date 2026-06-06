@@ -12,7 +12,7 @@ export default function About() {
       <main className="mx-auto">
 
         {/* ヒーロー — シンプルに。英語ラベル廃止 */}
-        <section className="body-font bg-white border-b border-gray-100">
+        <section className="body-font bg-white border-b border-[rgba(20,118,166,0.10)]">
           <div className="container mx-auto px-5 py-20">
             <div className="max-w-2xl">
               <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 animate-fade-in-up" style={{ color: '#1A202C' }}>
@@ -216,8 +216,8 @@ export default function About() {
                     { name: '（メンバー名）', role: '理事', bio: '企業・行政との連携を担当。社会課題解決に向けたパートナーシップを構築。' },
                   ].map(({ name, role, bio }) => (
                     <div key={name}>
-                      <div className="w-16 h-16 rounded-full mb-4 bg-gray-100 flex items-center justify-center">
-                        <svg className="w-8 h-8 text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+                      <div className="w-16 h-16 rounded-full mb-4 bg-[#EDF6FB] flex items-center justify-center">
+                        <svg className="w-8 h-8 text-[#CBD5E0]" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
                         </svg>
                       </div>

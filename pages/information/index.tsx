@@ -23,15 +23,15 @@ const InformationPage: NextPage<InformationPageProps> = ({ news }) => {
       <Header />
       <main>
         <section
-          className="text-gray-700 body-font overflow-hidden"
+          className="text-[#2D3748] body-font overflow-hidden"
           id="information"
         >
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col text-center w-full mb-20">
-              <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
+              <h2 className="text-xs text-[#1476A6] tracking-widest font-medium title-font mb-1">
                 Information
               </h2>
-              <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
+              <h1 className="sm:text-3xl text-2xl font-medium title-font text-[#1A202C]">
                 お知らせ
               </h1>
             </div>
@@ -44,12 +44,12 @@ const InformationPage: NextPage<InformationPageProps> = ({ news }) => {
                     href={"/information/" + news.id}
                   >
                     <div className="md:w-64">
-                      <span className="mt-1 text-gray-500 text-sm">
+                      <span className="mt-1 text-[#718096] text-sm">
                         {dayjs(news.create_at).format("YYYY.MM.DD")}
                       </span>
                     </div>
                     <div className="mt-1">
-                      <h2 className="text-md text-gray-900 title-font mb-2 leading-relaxed font-medium">
+                      <h2 className="text-md text-[#1A202C] title-font mb-2 leading-relaxed font-medium">
                         {news.title}
                       </h2>
                     </div>

@@ -68,7 +68,6 @@ const Contact = () => {
                 background: "#fff",
                 color: "#1476A6",
                 border: "2px solid rgba(255,255,255,0.9)",
-                boxShadow: "0 4px 12px rgba(20,118,166,0.25)",
                 transition: "all 0.2s cubic-bezier(0.4,0,0.2,1)",
               }}
               onMouseEnter={e => {

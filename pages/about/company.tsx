@@ -62,7 +62,7 @@ export default function Company() {
                 >
                   基本情報
                 </h2>
-                <div className="overflow-hidden rounded-xl border" style={{ borderColor: "rgba(20,118,166,0.15)" }}>
+                <div className="overflow-hidden rounded-sm border" style={{ borderColor: "rgba(20,118,166,0.15)" }}>
                   <table className="w-full text-left">
                     <tbody>
                       {[
@@ -171,7 +171,7 @@ export default function Company() {
                   ].map(({ href, title, desc }) => (
                     <Link key={href} href={href}>
                       <a
-                        className="block p-6 rounded-xl border transition-all"
+                        className="block p-6 rounded-sm border transition-all"
                         style={{
                           borderColor: "rgba(20,118,166,0.15)",
                           background: "#fff",

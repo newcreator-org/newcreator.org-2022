@@ -17,13 +17,13 @@ const categoryColor = (category: string) => {
       return "bg-[#EDF6FB] text-[#1476A6]";
     case "組織・運営編":
     case "学校種別":
-      return "bg-green-100 text-green-700";
+      return "bg-[#EDF6FB] text-[#1476A6]";
     case "トレンド・展望編":
-      return "bg-blue-100 text-blue-700";
+      return "bg-[#EDF6FB] text-[#1476A6]";
     case "管理職・ICT担当者向け":
-      return "bg-gray-100 text-gray-700";
+      return "bg-[#EDF6FB] text-[#2D3748]";
     default:
-      return "bg-blue-100 text-blue-700";
+      return "bg-[#EDF6FB] text-[#1476A6]";
   }
 };
 
@@ -33,9 +33,9 @@ export default function GuideDetail({ guide }) {
       <>
         <Header />
         <main className="container px-5 py-20 mx-auto max-w-4xl text-center">
-          <h1 className="text-2xl font-bold text-gray-900 mb-4">ガイドが見つかりません</h1>
+          <h1 className="text-2xl font-bold text-[#1A202C] mb-4">ガイドが見つかりません</h1>
           <Link href="/for-educators/guides">
-            <a className="text-blue-600 hover:text-blue-700">ガイド一覧に戻る</a>
+            <a className="text-[#1476A6] hover:text-[#1476A6]">ガイド一覧に戻る</a>
           </Link>
         </main>
         <Footer />
@@ -72,35 +72,35 @@ export default function GuideDetail({ guide }) {
                   <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${categoryColor(guide.category)}`}>
                     {guide.category}
                   </span>
-                  <span className="text-sm text-gray-500">
+                  <span className="text-sm text-[#718096]">
                     {dayjs(guide.date).format("YYYY年MM月DD日")}
                   </span>
                 </div>
-                <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                <h1 className="text-3xl md:text-4xl font-bold text-[#1A202C] mb-4">
                   {guide.title}
                 </h1>
-                <p className="text-lg text-gray-600">
+                <p className="text-lg text-[#4A5568]">
                   {guide.description}
                 </p>
               </div>
 
               <div 
-                className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-a:text-blue-600"
+                className="prose prose-lg max-w-none prose-headings:text-[#1A202C] prose-a:text-[#1476A6]"
                 dangerouslySetInnerHTML={{ __html: guide.content }}
               />
 
-              <div className="mt-12 pt-8 border-t border-gray-200">
-                <div className="rounded-xl p-8" style={{ background: '#EDF6FB' }}>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              <div className="mt-12 pt-8 border-t border-[#E2E8F0]">
+                <div className="rounded-sm p-8" style={{ background: '#EDF6FB' }}>
+                  <h2 className="text-2xl font-bold text-[#1A202C] mb-4">
                     導入のご相談はこちら
                   </h2>
-                  <p className="text-gray-700 mb-6">
+                  <p className="text-[#2D3748] mb-6">
                     研修のご依頼や導入相談など、お気軽にお問い合わせください。貴校の状況に合わせた最適なプランをご提案いたします。
                   </p>
                   <Link href="/apply">
                     <a
-                      className="inline-block px-8 py-3 rounded-lg font-semibold transition-colors"
-                      style={{ background: '#1476A6', color: '#fff', boxShadow: '0 4px 12px rgba(20,118,166,0.25)' }}
+                      className="inline-block px-8 py-3 rounded-sm font-semibold transition-colors"
+                      style={{ background: '#1476A6', color: '#fff' }}
                       onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.background = '#0F5A80'; }}
                       onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.background = '#1476A6'; }}
                     >
@@ -112,7 +112,7 @@ export default function GuideDetail({ guide }) {
 
               <div className="mt-8">
                 <Link href="/for-educators/guides">
-                  <a className="text-blue-600 hover:text-blue-700">
+                  <a className="text-[#1476A6] hover:text-[#1476A6]">
                     ← ガイド一覧に戻る
                   </a>
                 </Link>

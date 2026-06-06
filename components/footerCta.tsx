@@ -29,11 +29,10 @@ export default function FooterCta() {
               href="https://syncable.biz/associate/newcreator-org"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center font-bold py-3 px-8 rounded-lg text-base transition-colors duration-200 "
+              className="btn-primary-lg "
               style={{
                 background: '#FDCA60',
                 color: '#1A202C',
-                boxShadow: '0 4px 12px rgba(253,202,96,0.40)',
               }}
             >
               今すぐ寄付する
@@ -64,7 +63,7 @@ export default function FooterCta() {
             </p>
             <Link href="/#contact">
               <a
-                className="inline-flex items-center font-bold py-3 px-8 rounded-lg text-base transition-colors duration-200 "
+                className="btn-primary-lg "
                 style={{
                   background: 'transparent',
                   color: '#ffffff',

@@ -177,10 +177,10 @@ export default function Activities() {
         <section className="text-gray-600 body-font">
           <div className="container mx-auto flex px-5 py-20 items-center justify-center flex-col">
             <div className="text-center lg:w-2/3 w-full">
-              <h1 className="title-font sm:text-5xl text-4xl mb-4 font-bold text-gray-900 animate-fade-in-up">
+              <h1 className="title-font sm:text-5xl text-4xl mb-4 font-bold text-[#1A202C] animate-fade-in-up">
                 活動実績
               </h1>
-              <p className="mb-8 leading-7 text-lg text-gray-500 animate-fade-in-up-delay">
+              <p className="mb-8 leading-7 text-lg text-[#718096] animate-fade-in-up-delay">
                 これまでの活動とイベントの記録
               </p>
             </div>
@@ -188,32 +188,32 @@ export default function Activities() {
         </section>
 
         <ScrollFadeIn>
-          <section className="text-gray-600 body-font border-b border-gray-100">
+          <section className="text-gray-600 body-font border-b border-[rgba(20,118,166,0.10)]">
             <div className="container px-5 py-16 mx-auto">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
                 <div className="text-center">
-                  <p className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
-                    22<span className="text-lg font-normal text-gray-400">件</span>
+                  <p className="text-4xl md:text-5xl font-bold text-[#1A202C] tracking-tight">
+                    22<span className="text-lg font-normal text-[#A0AEC0]">件</span>
                   </p>
-                  <p className="mt-2 text-sm text-gray-500">生成AI研修実施数</p>
+                  <p className="mt-2 text-sm text-[#718096]">生成AI研修実施数</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
-                    10<span className="text-lg font-normal text-gray-400">+</span>
+                  <p className="text-4xl md:text-5xl font-bold text-[#1A202C] tracking-tight">
+                    10<span className="text-lg font-normal text-[#A0AEC0]">+</span>
                   </p>
-                  <p className="mt-2 text-sm text-gray-500">都道府県</p>
+                  <p className="mt-2 text-sm text-[#718096]">都道府県</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
-                    12<span className="text-lg font-normal text-gray-400">件</span>
+                  <p className="text-4xl md:text-5xl font-bold text-[#1A202C] tracking-tight">
+                    12<span className="text-lg font-normal text-[#A0AEC0]">件</span>
                   </p>
-                  <p className="mt-2 text-sm text-gray-500">生徒向け研修</p>
+                  <p className="mt-2 text-sm text-[#718096]">生徒向け研修</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
-                    7<span className="text-lg font-normal text-gray-400">件</span>
+                  <p className="text-4xl md:text-5xl font-bold text-[#1A202C] tracking-tight">
+                    7<span className="text-lg font-normal text-[#A0AEC0]">件</span>
                   </p>
-                  <p className="mt-2 text-sm text-gray-500">教員向け研修</p>
+                  <p className="mt-2 text-sm text-[#718096]">教員向け研修</p>
                 </div>
               </div>
             </div>
@@ -221,9 +221,9 @@ export default function Activities() {
         </ScrollFadeIn>
 
         <ScrollFadeIn>
-          <section className="text-gray-600 body-font bg-gray-50">
+          <section className="text-gray-600 body-font bg-[#F8FCFF]">
             <div className="container px-5 py-20 mx-auto">
-              <h1 className="sm:text-3xl text-2xl font-bold title-font text-gray-900 mb-12 text-center">
+              <h1 className="sm:text-3xl text-2xl font-bold title-font text-[#1A202C] mb-12 text-center">
                 生成AI活用研修 実施一覧
               </h1>
 
@@ -237,10 +237,10 @@ export default function Activities() {
                   <button
                     key={btn.key}
                     onClick={() => setFilter(btn.key)}
-                    className={`px-5 py-2 rounded-lg text-sm font-medium transition-colors ${
+                    className={`px-5 py-2 rounded-sm text-sm font-medium transition-colors ${
                       filter === btn.key
-                        ? "bg-gray-900 text-white"
-                        : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
+                        ? "bg-[#1476A6] text-white"
+                        : "bg-white text-[#4A5568] hover:bg-[#EDF6FB] border border-[#E2E8F0]"
                     }`}
                   >
                     {btn.label}
@@ -251,15 +251,15 @@ export default function Activities() {
               <div className="flex flex-wrap -m-4">
                 {filteredActivities.map((activity) => (
                   <div key={activity.id} className="p-4 md:w-1/2 lg:w-1/3">
-                    <div className="h-full bg-white rounded-lg overflow-hidden">
+                    <div className="h-full bg-white rounded-sm overflow-hidden">
                       <div className="p-6">
                         <p className="text-xs font-medium mb-2" style={{ color: '#1476A6' }}>
                           {activity.date}
                         </p>
-                        <h2 className="title-font text-base font-bold text-gray-900 mb-2">
+                        <h2 className="title-font text-base font-bold text-[#1A202C] mb-2">
                           {activity.title}
                         </h2>
-                        <p className="text-gray-600 text-sm">
+                        <p className="text-[#4A5568] text-sm">
                           {activity.school}
                         </p>
                       </div>
@@ -284,7 +284,7 @@ export default function Activities() {
               <div className="flex justify-center gap-4 flex-wrap">
                 <a
                   href="/#contact"
-                  className="inline-flex border-0 py-3 px-8 focus:outline-none rounded-lg text-base font-bold transition-colors"
+                  className="btn-primary"
                   style={{ background: '#FDCA60', color: '#1A202C' }}
                 >
                   お問い合わせ

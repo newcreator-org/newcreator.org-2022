@@ -151,6 +151,18 @@ img {
   }
   .btn-ghost-white:hover { background: rgba(255,255,255,0.12); border-color: #fff; }
 
+  .btn-outline-lg {
+    @apply btn-outline px-8 py-4 text-base;
+  }
+
+  .btn-accent-lg {
+    @apply btn-accent px-8 py-4 text-base;
+  }
+
+  .btn-ghost-white-lg {
+    @apply btn-ghost-white px-8 py-4 text-base;
+  }
+
   /* --- Cards --- */
   /* カードは浮かせない。ホバーは背景色変化のみ */
   .card-base {

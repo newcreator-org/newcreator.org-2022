@@ -43,10 +43,10 @@ export default function Resources() {
             <section className="bg-gradient-to-b from-blue-50 to-white py-20 md:py-28">
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="text-center">
-                  <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                  <h1 className="text-3xl md:text-5xl font-bold text-[#1A202C] mb-6 leading-tight">
                     ダウンロード資料
                   </h1>
-                  <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+                  <p className="text-lg md:text-xl text-[#4A5568] mb-8 max-w-3xl mx-auto leading-relaxed">
                     学校でのAI導入に役立つ資料を無料でダウンロードできます。導入計画の策定、教員研修、保護者説明など、様々な場面でご活用ください。
                   </p>
                 </div>
@@ -60,24 +60,24 @@ export default function Resources() {
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="grid gap-8 md:gap-10">
                   {resources.map((resource, index) => (
-                    <div key={index} className="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div key={index} className="bg-white border border-[#E2E8F0] rounded-sm p-8">
                       <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
                         <div className="flex-1">
                           <div className="flex items-center gap-3 mb-4">
-                            <span className="inline-block px-3 py-1 text-sm font-medium bg-blue-100 text-blue-700 rounded-full">
+                            <span className="inline-block px-3 py-1 text-sm font-medium bg-[#EDF6FB] text-[#1476A6] rounded-full">
                               {resource.category}
                             </span>
-                            <span className="text-sm text-gray-500">
+                            <span className="text-sm text-[#718096]">
                               {resource.format}
                             </span>
                           </div>
-                          <h2 className="text-2xl font-bold text-gray-900 mb-3">
+                          <h2 className="text-2xl font-bold text-[#1A202C] mb-3">
                             {resource.title}
                           </h2>
-                          <p className="text-gray-600 mb-4 leading-relaxed">
+                          <p className="text-[#4A5568] mb-4 leading-relaxed">
                             {resource.description}
                           </p>
-                          <p className="text-sm text-gray-500">
+                          <p className="text-sm text-[#718096]">
                             {resource.pages}
                           </p>
                         </div>
@@ -85,7 +85,7 @@ export default function Resources() {
                           <a
                             href={resource.downloadUrl}
                             download
-                            className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-center"
+                            className="btn-primary-lg"
                           >
                             ダウンロード
                           </a>
@@ -100,47 +100,47 @@ export default function Resources() {
 
           {/* 関連リンク */}
           <ScrollFadeIn>
-            <section className="py-16 md:py-20 bg-gray-50">
+            <section className="py-16 md:py-20 bg-[#F8FCFF]">
               <div className="container px-5 mx-auto max-w-6xl">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
+                <h2 className="text-2xl md:text-3xl font-bold text-[#1A202C] mb-8 text-center">
                   その他のリソース
                 </h2>
                 <div className="grid md:grid-cols-3 gap-6">
                   <Link href="/for-educators/guides">
-                    <a className="block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
-                      <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    <a className="block bg-white border border-[#E2E8F0] rounded-sm p-6">
+                      <h3 className="text-xl font-bold text-[#1A202C] mb-3">
                         実践ガイド
                       </h3>
-                      <p className="text-gray-600 mb-4">
+                      <p className="text-[#4A5568] mb-4">
                         授業での活用方法、導入計画、セキュリティ対策など、実践的なガイドを多数掲載しています。
                       </p>
-                      <span className="text-blue-600 font-semibold">
+                      <span className="text-[#1476A6] font-semibold">
                         ガイドを見る →
                       </span>
                     </a>
                   </Link>
                   <Link href="/for-educators/case-studies">
-                    <a className="block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
-                      <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    <a className="block bg-white border border-[#E2E8F0] rounded-sm p-6">
+                      <h3 className="text-xl font-bold text-[#1A202C] mb-3">
                         導入事例
                       </h3>
-                      <p className="text-gray-600 mb-4">
+                      <p className="text-[#4A5568] mb-4">
                         実際に学校でAIを導入した事例を詳しく紹介しています。成功のポイントや課題への対応を学べます。
                       </p>
-                      <span className="text-blue-600 font-semibold">
+                      <span className="text-[#1476A6] font-semibold">
                         事例を見る →
                       </span>
                     </a>
                   </Link>
                   <Link href="/for-educators/faq">
-                    <a className="block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
-                      <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    <a className="block bg-white border border-[#E2E8F0] rounded-sm p-6">
+                      <h3 className="text-xl font-bold text-[#1A202C] mb-3">
                         よくある質問
                       </h3>
-                      <p className="text-gray-600 mb-4">
+                      <p className="text-[#4A5568] mb-4">
                         学校でのAI活用に関するよくある質問と回答をまとめています。
                       </p>
-                      <span className="text-blue-600 font-semibold">
+                      <span className="text-[#1476A6] font-semibold">
                         FAQを見る →
                       </span>
                     </a>
@@ -154,7 +154,7 @@ export default function Resources() {
           <ScrollFadeIn>
             <section className="py-16 md:py-20">
               <div className="container px-5 mx-auto max-w-4xl">
-                <div className="bg-blue-600 rounded-2xl p-8 md:p-12 text-center text-white">
+                <div className="bg-[#1476A6] rounded-sm p-8 md:p-12 text-center text-white">
                   <h2 className="text-2xl md:text-3xl font-bold mb-4">
                     導入支援のご相談はこちら
                   </h2>
@@ -162,7 +162,7 @@ export default function Resources() {
                     貴校の状況に合わせた導入計画の策定から、教員研修、実践サポートまで、一貫して支援いたします。
                   </p>
                   <Link href="/contact">
-                    <a className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                    <a className="btn-white">
                       お問い合わせ
                     </a>
                   </Link>

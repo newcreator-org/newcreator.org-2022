@@ -49,10 +49,9 @@ export default function Hero() {
               <div className="flex flex-wrap gap-3 animate-fade-in-delay">
                 <a
                   href="#social-issues"
-                  className="inline-flex items-center rounded-lg px-6 py-3 text-white font-bold text-sm transition-colors duration-200 "
+                  className="btn-primary "
                   style={{
                     background: "#1476A6",
-                    boxShadow: "0 4px 12px rgba(20,118,166,0.25)",
                   }}
                   onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.background = "#0F5A80"; }}
                   onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.background = "#1476A6"; }}
@@ -63,11 +62,10 @@ export default function Hero() {
                   href="https://syncable.biz/associate/newcreator-org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center rounded-lg px-6 py-3 font-bold text-sm transition-colors duration-200 "
+                  className="btn-outline "
                   style={{
                     background: "#FDCA60",
                     color: "#1A202C",
-                    boxShadow: "0 4px 12px rgba(253,202,96,0.30)",
                   }}
                   onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.background = "#F5B730"; }}
                   onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.background = "#FDCA60"; }}
@@ -88,8 +86,8 @@ export default function Hero() {
             {/* 画像 */}
             <div className="mb-12 flex w-full md:mb-16 lg:w-2/3">
               <div
-                className="relative top-12 left-12 z-10 -ml-12 overflow-hidden rounded-2xl md:top-16 md:left-16 lg:ml-0"
-                style={{ boxShadow: "0 12px 32px rgba(20,118,166,0.12)" }}
+                className="relative top-12 left-12 z-10 -ml-12 overflow-hidden rounded-sm md:top-16 md:left-16 lg:ml-0"
+                style={{ }}
               >
                 <img
                   src="/img/hero3.webp"
@@ -99,8 +97,8 @@ export default function Hero() {
                 />
               </div>
               <div
-                className="overflow-hidden rounded-2xl"
-                style={{ boxShadow: "0 12px 32px rgba(20,118,166,0.12)" }}
+                className="overflow-hidden rounded-sm"
+                style={{ }}
               >
                 <img
                   src="/img/hero2.webp"

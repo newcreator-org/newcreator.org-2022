@@ -103,7 +103,7 @@ export default function Transparency() {
                   ].map(({ title, desc, note }) => (
                     <div
                       key={title}
-                      className="p-6 rounded-xl border"
+                      className="p-6 rounded-sm border"
                       style={{ borderColor: "rgba(20,118,166,0.15)" }}
                     >
                       <div className="flex items-center gap-3 mb-3">
@@ -142,7 +142,7 @@ export default function Transparency() {
                 </p>
 
                 {/* 収支報告テーブル */}
-                <div className="bg-white rounded-xl p-8 mb-6 border" style={{ borderColor: "rgba(20,118,166,0.12)" }}>
+                <div className="bg-white rounded-sm p-8 mb-6 border" style={{ borderColor: "rgba(20,118,166,0.12)" }}>
                   <h3 className="text-lg font-bold mb-6" style={{ color: "#1A202C" }}>
                     2023年度 収支報告
                   </h3>
@@ -206,7 +206,7 @@ export default function Transparency() {
                 </div>
 
                 {/* 寄付金の使途 */}
-                <div className="bg-white rounded-xl p-8 mb-6 border" style={{ borderColor: "rgba(20,118,166,0.12)" }}>
+                <div className="bg-white rounded-sm p-8 mb-6 border" style={{ borderColor: "rgba(20,118,166,0.12)" }}>
                   <h3 className="text-lg font-bold mb-6" style={{ color: "#1A202C" }}>
                     寄付金の使途内訳（2023年度）
                   </h3>
@@ -219,7 +219,7 @@ export default function Transparency() {
                     ].map(({ pct, label }) => (
                       <div
                         key={pct + label}
-                        className="rounded-xl p-5 text-center"
+                        className="rounded-sm p-5 text-center"
                         style={{ background: "#EDF6FB" }}
                       >
                         <p className="text-3xl font-bold mb-2" style={{ color: "#1476A6" }}>{pct}</p>
@@ -230,7 +230,7 @@ export default function Transparency() {
                 </div>
 
                 {/* 年次報告書 */}
-                <div className="bg-white rounded-xl p-8 border" style={{ borderColor: "rgba(20,118,166,0.12)" }}>
+                <div className="bg-white rounded-sm p-8 border" style={{ borderColor: "rgba(20,118,166,0.12)" }}>
                   <h3 className="text-lg font-bold mb-6" style={{ color: "#1A202C" }}>
                     年次報告書
                   </h3>
@@ -238,7 +238,7 @@ export default function Transparency() {
                     {["2023年度", "2022年度", "2021年度"].map((year) => (
                       <div
                         key={year}
-                        className="flex items-center justify-between p-4 rounded-lg"
+                        className="flex items-center justify-between p-4 rounded-sm"
                         style={{ background: "#F8FCFF" }}
                       >
                         <div>
@@ -269,7 +269,7 @@ export default function Transparency() {
                 <p className="text-sm mb-8" style={{ color: "#718096" }}>
                   特定非営利活動促進法の規定に基づき公開しています。
                 </p>
-                <div className="overflow-hidden rounded-xl border" style={{ borderColor: "rgba(20,118,166,0.15)" }}>
+                <div className="overflow-hidden rounded-sm border" style={{ borderColor: "rgba(20,118,166,0.15)" }}>
                   <table className="w-full text-left">
                     <thead>
                       <tr style={{ background: "#EDF6FB", borderBottom: "2px solid rgba(20,118,166,0.15)" }}>
@@ -322,11 +322,10 @@ export default function Transparency() {
             </p>
             <a
               href="/#contact"
-              className="inline-flex items-center font-bold py-3 px-8 rounded-lg text-base transition-all duration-200"
+              className="inline-flex items-center font-bold py-3 px-8 rounded-sm text-base transition-all duration-200"
               style={{
                 background: "#fff",
                 color: "#1476A6",
-                boxShadow: "0 4px 12px rgba(20,118,166,0.25)",
               }}
               onMouseEnter={e => {
                 (e.currentTarget as HTMLAnchorElement).style.background = "#EDF6FB";

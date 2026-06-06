@@ -13,16 +13,16 @@ import { marked } from "marked";
 const schoolTypeColor = (schoolType: string) => {
   switch (schoolType) {
     case "私立高等学校":
-      return "bg-purple-100 text-purple-700";
+      return "bg-[#EDF6FB] text-[#1476A6]";
     case "公立高等学校":
     case "公立商業高等学校":
-      return "bg-blue-100 text-blue-700";
+      return "bg-[#EDF6FB] text-[#1476A6]";
     case "私立中学校":
-      return "bg-green-100 text-green-700";
+      return "bg-[#EDF6FB] text-[#1476A6]";
     case "公立中学校":
       return "bg-teal-100 text-teal-700";
     default:
-      return "bg-gray-100 text-gray-700";
+      return "bg-[#EDF6FB] text-[#2D3748]";
   }
 };
 
@@ -32,9 +32,9 @@ export default function CaseStudyDetail({ caseStudy }) {
       <>
         <Header />
         <main className="container px-5 py-20 mx-auto max-w-4xl text-center">
-          <h1 className="text-2xl font-bold text-gray-900 mb-4">事例が見つかりません</h1>
+          <h1 className="text-2xl font-bold text-[#1A202C] mb-4">事例が見つかりません</h1>
           <Link href="/for-educators/case-studies">
-            <a className="text-blue-600 hover:text-blue-700">事例一覧に戻る</a>
+            <a className="text-[#1476A6] hover:text-[#1476A6]">事例一覧に戻る</a>
           </Link>
         </main>
         <Footer />
@@ -71,38 +71,38 @@ export default function CaseStudyDetail({ caseStudy }) {
                   <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${schoolTypeColor(caseStudy.schoolType)}`}>
                     {caseStudy.schoolType}
                   </span>
-                  <span className="text-sm text-gray-500">
+                  <span className="text-sm text-[#718096]">
                     {dayjs(caseStudy.date).format("YYYY年MM月")}
                   </span>
                 </div>
-                <h2 className="text-lg text-gray-600 mb-2">
+                <h2 className="text-lg text-[#4A5568] mb-2">
                   {caseStudy.school}
                 </h2>
-                <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                <h1 className="text-3xl md:text-4xl font-bold text-[#1A202C] mb-4">
                   {caseStudy.title}
                 </h1>
-                <p className="text-lg text-gray-600">
+                <p className="text-lg text-[#4A5568]">
                   {caseStudy.description}
                 </p>
               </div>
 
               <div 
-                className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-a:text-blue-600 prose-blockquote:border-l-brand-blue-400"
+                className="prose prose-lg max-w-none prose-headings:text-[#1A202C] prose-a:text-[#1476A6] prose-blockquote:border-l-brand-blue-400"
                 dangerouslySetInnerHTML={{ __html: caseStudy.content }}
               />
 
-              <div className="mt-12 pt-8 border-t border-gray-200">
-                <div className="rounded-xl p-8" style={{ background: '#EDF6FB' }}>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              <div className="mt-12 pt-8 border-t border-[#E2E8F0]">
+                <div className="rounded-sm p-8" style={{ background: '#EDF6FB' }}>
+                  <h2 className="text-2xl font-bold text-[#1A202C] mb-4">
                     貴校でも導入してみませんか
                   </h2>
-                  <p className="text-gray-700 mb-6">
+                  <p className="text-[#2D3748] mb-6">
                     学校の規模や状況に合わせて、最適なプランをご提案いたします。まずはお気軽にご相談ください。
                   </p>
                   <Link href="/apply">
                     <a
-                      className="inline-block px-8 py-3 rounded-lg font-semibold transition-colors"
-                      style={{ background: '#1476A6', color: '#fff', boxShadow: '0 4px 12px rgba(20,118,166,0.25)' }}
+                      className="inline-block px-8 py-3 rounded-sm font-semibold transition-colors"
+                      style={{ background: '#1476A6', color: '#fff' }}
                       onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.background = '#0F5A80'; }}
                       onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.background = '#1476A6'; }}
                     >

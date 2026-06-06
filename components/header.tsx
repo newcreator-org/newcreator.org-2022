@@ -167,7 +167,6 @@ export default function Header() {
           overflowY: "auto",
           transform: menuOpen ? "translateX(0)" : "translateX(100%)",
           transition: "transform 0.3s cubic-bezier(0.4,0,0.2,1)",
-          boxShadow: "-4px 0 24px rgba(20,118,166,0.12)",
         }}
       >
         <nav style={{ padding: "96px 1.75rem 2rem" }}>
