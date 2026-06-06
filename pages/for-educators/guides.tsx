@@ -79,8 +79,8 @@ export default function Guides({ guides }) {
                       onClick={() => setSelectedCategory(category)}
                       className={`px-6 py-2 rounded-full font-semibold transition-all ${
                         selectedCategory === category
-                          ? 'text-white shadow-md'
-                          : 'bg-white text-gray-700 border border-gray-300  '
+                          ? 'text-white shadow-md bg-[#1476A6]'
+                          : 'bg-white text-gray-700 border border-gray-300'
                       }`}
                     >
                       {category}

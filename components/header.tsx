@@ -116,7 +116,7 @@ export default function Header() {
 
           {/* Hamburger (mobile) */}
           <button
-            className="ml-auto flex flex-col justify-center items-center bg-transparent border-0 cursor-pointer flex-shrink-0"
+            className="hamburger-btn ml-auto flex flex-col justify-center items-center bg-transparent border-0 cursor-pointer flex-shrink-0"
             style={{ width: "44px", height: "44px", padding: "8px", zIndex: 60 }}
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="メニュー"

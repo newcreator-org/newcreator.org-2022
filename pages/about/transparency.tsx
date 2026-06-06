@@ -26,7 +26,7 @@ export default function Transparency() {
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col text-center w-full mb-12">
-              <h2 className="text-xstracking-widest font-medium title-font mb-1" style={{ color: '#1476A6' }}>
+              <h2 className="text-xs tracking-widest font-medium title-font mb-1" style={{ color: '#1476A6' }}>
                 Articles & Regulations
               </h2>
               <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
@@ -314,7 +314,7 @@ export default function Transparency() {
                     <div className="flex flex-wrap -m-2">
                       <div className="p-2 md:w-1/4 w-1/2">
                         <div className="rounded-lg p-4 text-center" style={{ background: '#EDF6FB' }}>
-                          <p className="text-3xl font-boldmb-2" style={{ color: '#1476A6' }}>
+                          <p className="text-3xl font-bold mb-2" style={{ color: '#1476A6' }}>
                             60%
                           </p>
                           <p className="text-gray-600 text-sm">
@@ -334,7 +334,7 @@ export default function Transparency() {
                       </div>
                       <div className="p-2 md:w-1/4 w-1/2">
                         <div className="rounded-lg p-4 text-center" style={{ background: '#EDF6FB' }}>
-                          <p className="text-3xl font-boldmb-2" style={{ color: '#1476A6' }}>
+                          <p className="text-3xl font-bold mb-2" style={{ color: '#1476A6' }}>
                             15%
                           </p>
                           <p className="text-gray-600 text-sm">
@@ -416,7 +416,7 @@ export default function Transparency() {
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col text-center w-full mb-12">
-              <h2 className="text-xstracking-widest font-medium title-font mb-1" style={{ color: '#1476A6' }}>
+              <h2 className="text-xs tracking-widest font-medium title-font mb-1" style={{ color: '#1476A6' }}>
                 Board Members
               </h2>
               <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">

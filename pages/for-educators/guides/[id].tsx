@@ -14,7 +14,7 @@ const categoryColor = (category: string) => {
   switch (category) {
     case "基礎・導入編":
     case "教科別":
-      return "text-[#1476A6]"; // bg handled by inline style
+      return "bg-[#EDF6FB] text-[#1476A6]";
     case "組織・運営編":
     case "学校種別":
       return "bg-green-100 text-green-700";
