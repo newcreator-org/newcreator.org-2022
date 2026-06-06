@@ -47,7 +47,7 @@ export default function CaseStudies({ caseStudies }) {
         />
         <main className="mx-auto">
           <ScrollFadeIn>
-            <section className="py-16 bg-gradient-to-b from-blue-50 to-white">
+            <section className="py-16 bg-[#F8FCFF]">
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="text-center">
                   <h1 className="text-3xl md:text-5xl font-bold text-[#1A202C] mb-4">
@@ -97,7 +97,7 @@ export default function CaseStudies({ caseStudies }) {
                   学校の規模や状況に合わせて、最適なプランをご提案いたします。まずはお気軽にご相談ください。
                 </p>
                 <Link href="/apply">
-                  <a className="btn-primary-lg" style={{ background: '#1476A6' }}>
+                  <a className="btn-primary-lg">
                     お問い合わせフォームへ
                   </a>
                 </Link>

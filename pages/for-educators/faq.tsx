@@ -114,7 +114,7 @@ export default function FAQ() {
         <Header />
         <main className="mx-auto">
           <ScrollFadeIn>
-            <section className="bg-gradient-to-b from-blue-50 to-white py-16 md:py-20">
+            <section className="bg-[#F8FCFF] py-16 md:py-20">
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="text-center">
                   <h1 className="text-3xl md:text-5xl font-bold text-[#1A202C] mb-4">
@@ -141,13 +141,13 @@ export default function FAQ() {
                       {category.questions.map((item, itemIndex) => (
                         <div key={itemIndex} className="bg-white rounded-sm p-6 border border-[rgba(20,118,166,0.10)]">
                           <h3 className="text-lg font-bold text-[#1A202C] mb-3 flex items-start">
-                            <span className="inline-block bg-[#1476A6] text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">
+                            <span className="inline-block text-[#1476A6] font-bold mr-3 mt-0.5 flex-shrink-0 text-base">
                               Q
                             </span>
                             <span>{item.q}</span>
                           </h3>
                           <div className="flex items-start">
-                            <span className="inline-block bg-[#1476A6] text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">
+                            <span className="inline-block text-[#1476A6] font-bold mr-3 mt-0.5 flex-shrink-0 text-base">
                               A
                             </span>
                             <p className="text-[#2D3748] leading-relaxed">{item.a}</p>

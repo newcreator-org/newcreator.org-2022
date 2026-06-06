@@ -40,7 +40,7 @@ export default function Resources() {
         <main className="mx-auto">
           {/* ヒーローセクション */}
           <ScrollFadeIn>
-            <section className="bg-gradient-to-b from-blue-50 to-white py-20 md:py-28">
+            <section className="bg-[#F8FCFF] py-20 md:py-28">
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="text-center">
                   <h1 className="text-3xl md:text-5xl font-bold text-[#1A202C] mb-6 leading-tight">
@@ -64,7 +64,7 @@ export default function Resources() {
                       <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
                         <div className="flex-1">
                           <div className="flex items-center gap-3 mb-4">
-                            <span className="inline-block px-3 py-1 text-sm font-medium bg-[#EDF6FB] text-[#1476A6] rounded-full">
+                            <span className="inline-block px-3 py-1 text-sm font-medium bg-[#EDF6FB] text-[#1476A6] rounded-sm">
                               {resource.category}
                             </span>
                             <span className="text-sm text-[#718096]">

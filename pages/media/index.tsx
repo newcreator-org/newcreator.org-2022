@@ -34,7 +34,7 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
       <Header />
       <main className="mx-auto">
         {/* ヒーローセクション */}
-        <section className="text-gray-600 body-font bg-gradient-to-r from-blue-50 to-blue-50">
+        <section className="text-gray-600 body-font bg-[#F8FCFF]">
           <div className="container mx-auto flex px-5 py-20 items-center justify-center flex-col">
             <div className="text-center lg:w-2/3 w-full">
               <h1 className="title-font sm:text-5xl text-4xl mb-4 font-bold text-[#1A202C] animate-fade-in-up">
@@ -66,7 +66,7 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
                         <div className="bg-white overflow-hidden group h-full" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                           <div className="p-6">
                             <span
-                              className={`inline-block text-xs font-medium px-3 py-1 rounded-full mb-3 ${categoryColor(
+                              className={`inline-block text-xs font-medium px-3 py-1 rounded-sm mb-3 ${categoryColor(
                                 post.category
                               )}`}
                             >
@@ -106,7 +106,7 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
                   href="https://syncable.biz/associate/newcreator-org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-white text-base" style={{ color: '#1476A6' }}
+                  className="btn-white text-base"
                 >
                   寄付で支援
                 </a>

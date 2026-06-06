@@ -131,77 +131,69 @@ export default function ForEducators({ guides, caseStudies }) {
           {/* サービスセクション */}
           <ScrollFadeIn>
             <section className="py-20">
-              <div className="container px-5 mx-auto max-w-6xl">
-                <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1A202C] mb-4">
+              <div className="container px-5 mx-auto max-w-4xl">
+                <h2 className="text-2xl font-bold text-[#1A202C] mb-2">
                   私たちのサービス
                 </h2>
-                <p className="text-center text-[#4A5568] mb-12 max-w-2xl mx-auto">
-                  教育機関のニーズに合わせて、研修から導入支援まで一貫したサポートを提供します。
+                <p className="text-[#718096] mb-12 text-sm">
+                  研修から導入支援まで、学校のニーズに合わせて対応します。
                 </p>
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div className="border border-[#E2E8F0] rounded-sm p-8 bg-white">
-                    <div className="mb-4">
-                      <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold" style={{ background: '#EDF6FB', color: '#1476A6' }}>
-                        人気No.1
-                      </span>
+                <div className="divide-y divide-[#E2E8F0]">
+                  <div className="py-8">
+                    <div className="flex flex-col md:flex-row md:items-start md:gap-12">
+                      <div className="md:w-1/3 mb-3 md:mb-0">
+                        <h3 className="text-lg font-bold text-[#1A202C]">学校向け出張研修</h3>
+                        <p className="text-xs text-[#1476A6] mt-1">全国10都道府県22校の実績</p>
+                      </div>
+                      <div className="md:w-2/3">
+                        <p className="text-[#4A5568] text-sm leading-relaxed mb-4">
+                          生徒向け・教員向けの生成AI活用研修を実施します。学校のカリキュラムや目的に応じたプログラムを設計し、実践的な内容をお届けします。
+                        </p>
+                        <Link href="/apply"><a className="text-sm text-[#1476A6] hover:underline">研修のご依頼はこちら →</a></Link>
+                      </div>
                     </div>
-                    <h3 className="text-2xl font-bold text-[#1A202C] mb-4">学校向け出張研修</h3>
-                    <p className="text-[#4A5568] mb-6 leading-relaxed">
-                      生徒向け・教員向けの生成AI活用研修を実施します。学校のカリキュラムや目的に応じたプログラムを設計し、実践的な内容をお届けします。全国10都道府県22校での実績があります。
-                    </p>
-                    <Link href="/apply">
-                      <a className="inline-block font-semibold transition-colors" style={{ color: '#1476A6' }}>
-                        研修のご依頼はこちら →
-                      </a>
-                    </Link>
                   </div>
-                  <div className="border border-[#E2E8F0] rounded-sm p-8 bg-white">
-                    <div className="mb-4">
-                      <span className="inline-block px-3 py-1 bg-[#EDF6FB] text-[#1476A6] rounded-full text-xs font-semibold">
-                        一貫サポート
-                      </span>
+                  <div className="py-8">
+                    <div className="flex flex-col md:flex-row md:items-start md:gap-12">
+                      <div className="md:w-1/3 mb-3 md:mb-0">
+                        <h3 className="text-lg font-bold text-[#1A202C]">AI導入支援</h3>
+                        <p className="text-xs text-[#1476A6] mt-1">計画策定から運用定着まで</p>
+                      </div>
+                      <div className="md:w-2/3">
+                        <p className="text-[#4A5568] text-sm leading-relaxed mb-4">
+                          活用方針の策定、教員向け研修、ガイドライン整備など、学校のニーズに合わせた支援を行います。
+                        </p>
+                        <Link href="/apply"><a className="text-sm text-[#1476A6] hover:underline">導入相談はこちら →</a></Link>
+                      </div>
                     </div>
-                    <h3 className="text-2xl font-bold text-[#1A202C] mb-4">AI導入支援サービス</h3>
-                    <p className="text-[#4A5568] mb-6 leading-relaxed">
-                      教育現場への生成AI導入を、計画策定から運用定着まで一貫してサポート。活用方針の策定、教員向け研修、ガイドライン整備など、学校のニーズに合わせた支援を行います。
-                    </p>
-                    <Link href="/apply">
-                      <a className="text-sm font-semibold" style={{ color: '#1476A6' }}>
-                        導入相談はこちら →
-                      </a>
-                    </Link>
                   </div>
-                  <div className="border border-[#E2E8F0] rounded-sm p-8 bg-white">
-                    <div className="mb-4">
-                      <span className="badge-primary">
-                        セキュア
-                      </span>
+                  <div className="py-8">
+                    <div className="flex flex-col md:flex-row md:items-start md:gap-12">
+                      <div className="md:w-1/3 mb-3 md:mb-0">
+                        <h3 className="text-lg font-bold text-[#1A202C]">プライベートGPT</h3>
+                        <p className="text-xs text-[#1476A6] mt-1">セキュアな学校専用AI環境</p>
+                      </div>
+                      <div className="md:w-2/3">
+                        <p className="text-[#4A5568] text-sm leading-relaxed mb-4">
+                          生徒数単位の課金・契約期間の縛りなし・請求書払い対応。情報セキュリティに対応した環境で安心してご利用いただけます。
+                        </p>
+                        <Link href="/apply"><a className="text-sm text-[#1476A6] hover:underline">詳細・お問い合わせ →</a></Link>
+                      </div>
                     </div>
-                    <h3 className="text-2xl font-bold text-[#1A202C] mb-4">プライベートGPT</h3>
-                    <p className="text-[#4A5568] mb-6 leading-relaxed">
-                      教育機関向けに、安全な生成AI利用環境を提供。生徒数単位の課金、契約期間の縛りなし、請求書ベースでの契約が可能です。情報セキュリティに対応した環境で安心してご利用いただけます。
-                    </p>
-                    <Link href="/apply">
-                      <a className="text-sm font-semibold" style={{ color: '#1476A6' }}>
-                        詳細を見る →
-                      </a>
-                    </Link>
                   </div>
-                  <div className="border border-[#E2E8F0] rounded-sm p-8 bg-white">
-                    <div className="mb-4">
-                      <span className="badge-primary">
-                        8年の実績
-                      </span>
+                  <div className="py-8">
+                    <div className="flex flex-col md:flex-row md:items-start md:gap-12">
+                      <div className="md:w-1/3 mb-3 md:mb-0">
+                        <h3 className="text-lg font-bold text-[#1A202C]">プログラミング教育</h3>
+                        <p className="text-xs text-[#1476A6] mt-1">2017年から続く実績</p>
+                      </div>
+                      <div className="md:w-2/3">
+                        <p className="text-[#4A5568] text-sm leading-relaxed mb-4">
+                          企業・行政と連携したワークショップ、講師派遣による出張授業を全国各地で実施。STEAM教育を通じて子どもたちの創造性を育みます。
+                        </p>
+                        <Link href="/activities"><a className="text-sm text-[#1476A6] hover:underline">活動実績を見る →</a></Link>
+                      </div>
                     </div>
-                    <h3 className="text-2xl font-bold text-[#1A202C] mb-4">プログラミング教育</h3>
-                    <p className="text-[#4A5568] mb-6 leading-relaxed">
-                      企業や行政と連携したワークショップの開催、講師派遣による出張授業を2017年度より全国各地で実施。STEAM教育を通じて、子どもたちの創造性と問題解決能力を育みます。
-                    </p>
-                    <Link href="/activities">
-                      <a className="text-sm font-semibold" style={{ color: '#1476A6' }}>
-                        活動実績を見る →
-                      </a>
-                    </Link>
                   </div>
                 </div>
               </div>

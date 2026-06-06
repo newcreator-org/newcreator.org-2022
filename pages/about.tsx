@@ -216,7 +216,7 @@ export default function About() {
                     { name: '（メンバー名）', role: '理事', bio: '企業・行政との連携を担当。社会課題解決に向けたパートナーシップを構築。' },
                   ].map(({ name, role, bio }) => (
                     <div key={name}>
-                      <div className="w-16 h-16 rounded-full mb-4 bg-[#EDF6FB] flex items-center justify-center">
+                      <div className="w-16 h-16 mb-4 bg-[#EDF6FB] flex items-center justify-center">
                         <svg className="w-8 h-8 text-[#CBD5E0]" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
                         </svg>

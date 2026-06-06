@@ -68,7 +68,7 @@ export default function CaseStudyDetail({ caseStudy }) {
 
               <div className="mb-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${schoolTypeColor(caseStudy.schoolType)}`}>
+                  <span className={`inline-block px-3 py-1 rounded-sm text-xs font-semibold ${schoolTypeColor(caseStudy.schoolType)}`}>
                     {caseStudy.schoolType}
                   </span>
                   <span className="text-sm text-[#718096]">

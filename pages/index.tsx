@@ -399,7 +399,7 @@ export default function Home({ news, archives, media }) {
                           <div className="bg-white overflow-hidden h-full" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                             <div className="p-6">
                               <span
-                                className={`inline-block text-xs font-medium px-3 py-1 rounded-full mb-3 ${categoryColor(
+                                className={`inline-block text-xs font-medium px-3 py-1 rounded-sm mb-3 ${categoryColor(
                                   post.category
                                 )}`}
                               >

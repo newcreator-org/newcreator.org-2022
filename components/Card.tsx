@@ -74,7 +74,7 @@ export const Card: React.FC<CardProps> = ({
         <div className="flex items-center flex-wrap mb-3" style={{ gap: '8px' }}>
           {badge && (
             <span
-              className="inline-block text-xs font-bold px-3 py-1 rounded-full"
+              className="inline-block text-xs font-bold px-3 py-1 rounded-sm"
               style={{ background: badgeStyle.bg, color: badgeStyle.color }}
             >
               {badge}

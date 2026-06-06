@@ -69,7 +69,7 @@ export default function GuideDetail({ guide }) {
 
               <div className="mb-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${categoryColor(guide.category)}`}>
+                  <span className={`inline-block px-3 py-1 rounded-sm text-xs font-semibold ${categoryColor(guide.category)}`}>
                     {guide.category}
                   </span>
                   <span className="text-sm text-[#718096]">

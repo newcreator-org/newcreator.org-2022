@@ -248,22 +248,18 @@ export default function Activities() {
                 ))}
               </div>
 
-              <div className="flex flex-wrap -m-4">
+              <div className="divide-y divide-[#E2E8F0]">
                 {filteredActivities.map((activity) => (
-                  <div key={activity.id} className="p-4 md:w-1/2 lg:w-1/3">
-                    <div className="h-full bg-white rounded-sm overflow-hidden">
-                      <div className="p-6">
-                        <p className="text-xs font-medium mb-2" style={{ color: '#1476A6' }}>
-                          {activity.date}
-                        </p>
-                        <h2 className="title-font text-base font-bold text-[#1A202C] mb-2">
-                          {activity.title}
-                        </h2>
-                        <p className="text-[#4A5568] text-sm">
-                          {activity.school}
-                        </p>
-                      </div>
-                    </div>
+                  <div key={activity.id} className="py-4 flex flex-col sm:flex-row sm:items-center sm:gap-6">
+                    <p className="text-xs text-[#1476A6] font-medium w-28 shrink-0 mb-1 sm:mb-0">
+                      {activity.date}
+                    </p>
+                    <p className="text-sm font-medium text-[#1A202C] flex-1">
+                      {activity.title}
+                    </p>
+                    <p className="text-sm text-[#718096] w-48 shrink-0 mt-1 sm:mt-0 text-right">
+                      {activity.school}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -282,11 +278,7 @@ export default function Activities() {
                 学校・教育委員会向けの生成AI活用研修を全国で実施しています
               </p>
               <div className="flex justify-center gap-4 flex-wrap">
-                <a
-                  href="/#contact"
-                  className="btn-primary"
-                  style={{ background: '#FDCA60', color: '#1A202C' }}
-                >
+                <a href="/#contact" className="btn-accent">
                   お問い合わせ
                 </a>
               </div>

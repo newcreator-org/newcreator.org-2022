@@ -95,7 +95,7 @@ export default function Apply() {
                             <p className="leading-relaxed text-base mt-4">
                                 <a
                                     className="text-[#1476A6] inline-flex items-center md:mb-2 lg:mb-0"
-                                    href="https://legal.new.or.jp/rule"
+                                    href="/legal/rule"
                                 >
                                     ルールを確認する
                                     <svg
@@ -336,11 +336,11 @@ export default function Apply() {
                             <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
                                 <div className="h-full w-1 bg-[#E2E8F0] pointer-events-none"></div>
                             </div>
-                            <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-[#1476A6] text-white relative z-10 title-font font-medium text-sm">
+                            <div className="flex-shrink-0 w-6 h-6 mt-10 sm:mt-0 inline-flex items-center justify-center text-[#1476A6] relative z-10 title-font font-bold text-base">
                                 1
                             </div>
                             <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                                <div className="flex-shrink-0 w-24 h-24 bg-[#EDF6FB] text-[#1476A6] rounded-full inline-flex items-center justify-center">
+                                <div className="flex-shrink-0 w-20 h-20 bg-[#EDF6FB] text-[#1476A6] inline-flex items-center justify-center">
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
@@ -363,7 +363,7 @@ export default function Apply() {
                                     <p className="leading-relaxed">
                                         <a
                                             className="text-[#1476A6] inline-flex items-center md:mb-2 lg:mb-0"
-                                            href="https://legal.new.or.jp/rule"
+                                            href="/legal/rule"
                                         >
                                             ルール
                                             <svg
@@ -383,7 +383,7 @@ export default function Apply() {
                                     <p className="leading-relaxed">
                                         <a
                                             className="text-[#1476A6] inline-flex items-center md:mb-2 lg:mb-0"
-                                            href="https://legal.new.or.jp/tos/"
+                                            href="/legal/terms"
                                         >
                                             利用規約
                                             <svg
@@ -407,11 +407,11 @@ export default function Apply() {
                             <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
                                 <div className="h-full w-1 bg-[#E2E8F0] pointer-events-none"></div>
                             </div>
-                            <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-[#1476A6] text-white relative z-10 title-font font-medium text-sm">
+                            <div className="flex-shrink-0 w-6 h-6 mt-10 sm:mt-0 inline-flex items-center justify-center text-[#1476A6] relative z-10 title-font font-bold text-base">
                                 2
                             </div>
                             <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                                <div className="flex-shrink-0 w-24 h-24 bg-[#EDF6FB] text-[#1476A6] rounded-full inline-flex items-center justify-center">
+                                <div className="flex-shrink-0 w-20 h-20 bg-[#EDF6FB] text-[#1476A6] inline-flex items-center justify-center">
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
@@ -438,11 +438,11 @@ export default function Apply() {
                             <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
                                 <div className="h-full w-1 bg-[#E2E8F0] pointer-events-none"></div>
                             </div>
-                            <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-[#1476A6] text-white relative z-10 title-font font-medium text-sm">
+                            <div className="flex-shrink-0 w-6 h-6 mt-10 sm:mt-0 inline-flex items-center justify-center text-[#1476A6] relative z-10 title-font font-bold text-base">
                                 3
                             </div>
                             <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                                <div className="flex-shrink-0 w-24 h-24 bg-[#EDF6FB] text-[#1476A6] rounded-full inline-flex items-center justify-center">
+                                <div className="flex-shrink-0 w-20 h-20 bg-[#EDF6FB] text-[#1476A6] inline-flex items-center justify-center">
                                     <svg
                                         fill="none"
                                         stroke="currentColor"

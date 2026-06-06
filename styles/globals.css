@@ -112,55 +112,53 @@ img {
   }
 
   .btn-primary {
-    @apply btn px-6 py-3 text-white text-sm;
+    @apply btn px-5 py-2 text-white text-sm;
     background-color: var(--color-primary);
-    box-shadow: var(--shadow-card-md);
   }
   .btn-primary:hover { background-color: #0F5A80; }
 
   .btn-primary-lg {
-    @apply btn-primary px-8 py-4 text-base;
+    @apply btn-primary px-6 py-2.5 text-base;
   }
 
   .btn-accent {
-    @apply btn px-6 py-3 text-sm;
+    @apply btn px-5 py-2 text-sm;
     background-color: var(--color-accent);
     color: #1A202C;
-    box-shadow: 0 2px 8px rgba(253,202,96,0.40);
   }
   .btn-accent:hover { background-color: #F5B730; }
 
   .btn-outline {
-    @apply btn px-6 py-3 text-sm bg-transparent;
+    @apply btn px-5 py-2 text-sm bg-transparent;
     color: var(--color-primary);
-    border: 2px solid var(--color-primary);
+    border: 1.5px solid var(--color-primary);
   }
   .btn-outline:hover { background-color: var(--color-primary-light); }
 
   .btn-white {
-    @apply btn px-6 py-3 text-sm bg-white;
+    @apply btn px-5 py-2 text-sm bg-white;
     color: var(--color-primary);
-    box-shadow: var(--shadow-card-md);
+    border: 1px solid rgba(20,118,166,0.20);
   }
   .btn-white:hover { background-color: #EDF6FB; }
 
   .btn-ghost-white {
-    @apply btn px-6 py-3 text-sm text-white;
-    border: 2px solid rgba(255,255,255,0.7);
+    @apply btn px-5 py-2 text-sm text-white;
+    border: 1.5px solid rgba(255,255,255,0.7);
     background: transparent;
   }
   .btn-ghost-white:hover { background: rgba(255,255,255,0.12); border-color: #fff; }
 
   .btn-outline-lg {
-    @apply btn-outline px-8 py-4 text-base;
+    @apply btn-outline px-6 py-2.5 text-base;
   }
 
   .btn-accent-lg {
-    @apply btn-accent px-8 py-4 text-base;
+    @apply btn-accent px-6 py-2.5 text-base;
   }
 
   .btn-ghost-white-lg {
-    @apply btn-ghost-white px-8 py-4 text-base;
+    @apply btn-ghost-white px-6 py-2.5 text-base;
   }
 
   /* --- Cards --- */
@@ -399,32 +397,7 @@ img {
   line-height: 1.7;
 }
 
-.btn-normal {
-  display: inline-block;
-  min-width: 92px;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  border-radius: var(--radius-lg);
-  transition: all var(--transition-slow);
-  font-size: 15px;
-  height: 50px;
-  line-height: 48px;
-  padding: 0 32px;
-}
 
-.btn-white.btn-normal {
-  background-color: #fff;
-  color: var(--color-primary);
-  border: 2px solid rgba(255,255,255,0.9);
-  box-shadow: 0 4px 12px rgba(20,118,166,0.25);
-}
-
-.btn-white.btn-normal:hover {
-  background-color: #EDF6FB;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(20,118,166,0.30);
-}
 
 /* ============================================================
    Legal pages
