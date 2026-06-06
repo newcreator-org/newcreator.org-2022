@@ -50,7 +50,7 @@ export default function CaseStudies({ caseStudies }) {
             <section className="py-16 bg-[#F8FCFF]">
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="text-center">
-                  <h1 className="text-3xl md:text-5xl font-bold text-[#1A202C] mb-4">
+                  <h1 className="page-title font-bold text-[#1A202C] mb-4">
                     導入事例
                   </h1>
                   <p className="text-lg text-[#4A5568] max-w-2xl mx-auto">
@@ -90,7 +90,7 @@ export default function CaseStudies({ caseStudies }) {
           <ScrollFadeIn>
             <section className="py-16 bg-[#F8FCFF]">
               <div className="container px-5 mx-auto max-w-4xl text-center">
-                <h2 className="text-2xl md:text-3xl font-bold text-[#1A202C] mb-4">
+                <h2 className="section-title text-[#1A202C] mb-4">
                   貴校でも導入してみませんか
                 </h2>
                 <p className="text-[#4A5568] mb-8">

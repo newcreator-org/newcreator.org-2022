@@ -13,7 +13,7 @@ export default function Tokushoho() {
           <div className="container mx-auto px-5 py-16">
             <div className="max-w-2xl">
               <h1
-                className="text-3xl sm:text-4xl font-bold"
+                className="page-title"
                 style={{ color: "#1A202C" }}
               >
                 特定商取引法に基づく表記
@@ -62,7 +62,7 @@ export default function Tokushoho() {
               ].map(({ label, value }) => (
                 <tr key={label} style={{ borderBottom: "1px solid #E2E8F0" }}>
                   <th
-                    className="py-4 pr-6 text-left align-top font-semibold whitespace-nowrap"
+                    className="py-4 pr-6 text-left align-top font-bold whitespace-nowrap"
                     style={{ color: "#2D3748", width: "40%" }}
                   >
                     {label}
@@ -76,25 +76,25 @@ export default function Tokushoho() {
           </table>
 
           <section className="mt-12 mb-10">
-            <h2 className="legal-h2">キャンセル等（クーリングオフ）</h2>
+            <h2 className="section-title legal-h2">キャンセル等（クーリングオフ）</h2>
             <p className="legal-p">
               サービスの性質上、原則として返品・返金はお受けしておりません。ただし、当法人サービスは特定商取引法の対象であるため、『契約書を受け取った日』から数えて8日以内であれば、クーリングオフが可能となり、以下の金額が返金されます。
             </p>
 
             <div className="mt-6 space-y-6">
               <div className="p-5" style={{ background: "#F8FCFF", border: "1px solid #E2E8F0" }}>
-                <p className="font-semibold mb-2" style={{ color: "#2D3748" }}>契約解除がサービス開始前（クーリングオフ期間は経過したが、まだ授業を受けていない）</p>
+                <p className="font-bold mb-2" style={{ color: "#2D3748" }}>契約解除がサービス開始前（クーリングオフ期間は経過したが、まだ授業を受けていない）</p>
                 <p className="text-sm leading-6" style={{ color: "#4A5568" }}>
                   通常必要とする費用の額（初期費用）3,500円＋税
                 </p>
               </div>
               <div className="p-5" style={{ background: "#F8FCFF", border: "1px solid #E2E8F0" }}>
-                <p className="font-semibold mb-2" style={{ color: "#2D3748" }}>契約解除がサービス開始後（すでに何回か授業を受けている場合）</p>
+                <p className="font-bold mb-2" style={{ color: "#2D3748" }}>契約解除がサービス開始後（すでに何回か授業を受けている場合）</p>
                 <p className="text-sm leading-6" style={{ color: "#4A5568" }}>
                   ① 初期費用の具体的な内容が明示されていたら初期費用<br />
                   ② 既に授業を受けた分の費用<br />
                   ③ １ヶ月分の授業料<br />
-                  <span className="font-semibold">①＋②＋③の金額</span>
+                  <span className="font-bold">①＋②＋③の金額</span>
                 </p>
               </div>
             </div>

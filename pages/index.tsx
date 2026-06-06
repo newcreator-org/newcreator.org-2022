@@ -18,7 +18,7 @@ const categoryColor = (category: string) => {
     case "キャリア教育":
       return "bg-[#EDF6FB] text-[#1476A6]";
     default:
-      return "bg-[#EDF6FB] text-[#2D3748]";
+      return "bg-[#EDF6FB] text-[#1A202C]";
   }
 };
 
@@ -36,26 +36,26 @@ export default function Home({ news, archives, media }) {
               <div className="container px-5 py-16 mx-auto">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
                   <div className="text-center">
-                    <p className="text-4xl md:text-5xl font-bold text-[#1A202C] tracking-tight">
-                      1,000<span className="text-lg font-normal text-[#A0AEC0]">+</span>
+                    <p className="page-title font-bold text-[#1A202C] tracking-tight">
+                      1,000<span className="text-lg font-normal text-[#718096]">+</span>
                     </p>
                     <p className="mt-2 text-sm text-[#718096]">累計参加生徒数</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-4xl md:text-5xl font-bold text-[#1A202C] tracking-tight">
-                      50<span className="text-lg font-normal text-[#A0AEC0]">+</span>
+                    <p className="page-title font-bold text-[#1A202C] tracking-tight">
+                      50<span className="text-lg font-normal text-[#718096]">+</span>
                     </p>
                     <p className="mt-2 text-sm text-[#718096]">ワークショップ実施回数</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-4xl md:text-5xl font-bold text-[#1A202C] tracking-tight">
-                      10<span className="text-lg font-normal text-[#A0AEC0]">+</span>
+                    <p className="page-title font-bold text-[#1A202C] tracking-tight">
+                      10<span className="text-lg font-normal text-[#718096]">+</span>
                     </p>
                     <p className="mt-2 text-sm text-[#718096]">都道府県で活動</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-4xl md:text-5xl font-bold text-[#1A202C] tracking-tight">
-                      8<span className="text-lg font-normal text-[#A0AEC0]">年</span>
+                    <p className="page-title font-bold text-[#1A202C] tracking-tight">
+                      8<span className="text-lg font-normal text-[#718096]">年</span>
                     </p>
                     <p className="mt-2 text-sm text-[#718096]">活動実績</p>
                   </div>
@@ -68,7 +68,7 @@ export default function Home({ news, archives, media }) {
             <section className="text-gray-600 body-font">
               <div className="container px-5 py-20 mx-auto flex flex-wrap">
                 <div className="mb-6 md:w-1/3">
-                  <h1 className="sm:text-3xl text-2xl font-bold title-font text-[#1A202C]">
+                  <h1 className="page-title font-bold title-font text-[#1A202C]">
                     なぜ、私たちはこれをやっているのか
                   </h1>
                 </div>
@@ -99,7 +99,7 @@ export default function Home({ news, archives, media }) {
               <div className="container px-5 py-20 mx-auto">
                 <div className="flex flex-wrap w-full mb-12">
                   <div className="lg:w-1/3 w-full mb-6 lg:mb-0">
-                    <h1 className="sm:text-3xl text-2xl font-bold title-font text-[#1A202C]">
+                    <h1 className="page-title font-bold title-font text-[#1A202C]">
                       サービス
                     </h1>
                   </div>
@@ -119,7 +119,7 @@ export default function Home({ news, archives, media }) {
                       />
                       <div className="p-6 md:p-8 flex flex-col justify-center">
                         <p className="text-xs font-bold tracking-wider mb-2" style={{ color: '#1476A6' }}>10都道府県 22校で実施</p>
-                        <h2 className="text-xl text-[#1A202C] font-bold title-font mb-3">
+                        <h2 className="section-title text-[#1A202C] title-font mb-3">
                           学校向け出張授業・登壇
                         </h2>
                         <p className="leading-7 text-base text-[#4A5568] mb-4">
@@ -142,7 +142,7 @@ export default function Home({ news, archives, media }) {
                         alt="AI導入支援サービス"
                       />
                       <div className="p-6">
-                        <h2 className="text-lg text-[#1A202C] font-bold title-font mb-3">
+                        <h2 className="section-title text-[#1A202C] title-font mb-3">
                           AI導入支援サービス
                         </h2>
                         <p className="leading-7 text-base text-[#4A5568] mb-4">
@@ -162,7 +162,7 @@ export default function Home({ news, archives, media }) {
                         alt="プライベートGPT"
                       />
                       <div className="p-6">
-                        <h2 className="text-lg text-[#1A202C] font-bold title-font mb-3">
+                        <h2 className="section-title text-[#1A202C] title-font mb-3">
                           プライベートGPT
                         </h2>
                         <p className="leading-7 text-base text-[#4A5568]">
@@ -183,7 +183,7 @@ export default function Home({ news, archives, media }) {
                         alt="プログラミング教育"
                       />
                       <div className="p-5">
-                        <h2 className="text-base text-[#1A202C] font-bold title-font mb-2">
+                        <h2 className="section-title text-[#1A202C] title-font mb-2">
                           プログラミング教育
                         </h2>
                         <p className="leading-relaxed text-sm text-[#4A5568]">
@@ -200,7 +200,7 @@ export default function Home({ news, archives, media }) {
                         alt="オンラインスクール"
                       />
                       <div className="p-5">
-                        <h2 className="text-base text-[#1A202C] font-bold title-font mb-2">
+                        <h2 className="section-title text-[#1A202C] title-font mb-2">
                           オンラインスクール
                         </h2>
                         <p className="leading-relaxed text-sm text-[#4A5568]">
@@ -217,7 +217,7 @@ export default function Home({ news, archives, media }) {
                         alt="学校支援"
                       />
                       <div className="p-5">
-                        <h2 className="text-base text-[#1A202C] font-bold title-font mb-2">
+                        <h2 className="section-title text-[#1A202C] title-font mb-2">
                           学校支援
                         </h2>
                         <p className="leading-relaxed text-sm text-[#4A5568]">
@@ -236,7 +236,7 @@ export default function Home({ news, archives, media }) {
             <section className="text-white py-16" style={{ background: '#1476A6' }}>
               <div className="container px-5 mx-auto max-w-5xl">
                 <div className="text-center mb-8">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  <h2 className="page-title font-bold mb-4">
                     先生・学校関係者の方へ
                   </h2>
                   <p className="text-lg max-w-2xl mx-auto" style={{ color: 'rgba(255,255,255,0.85)' }}>
@@ -278,7 +278,7 @@ export default function Home({ news, archives, media }) {
             <section className="text-gray-600 body-font" id="social-issues">
               <div className="container px-5 py-20 mx-auto">
                 <div className="text-center mb-4">
-                  <h2 className="sm:text-3xl text-2xl font-bold title-font text-[#1A202C] mb-6">
+                  <h2 className="page-title font-bold title-font text-[#1A202C] mb-6">
                     いま、日本の子どもたちに起きていること
                   </h2>
                   <p className="text-base text-[#718096] max-w-2xl mx-auto leading-8">
@@ -290,7 +290,7 @@ export default function Home({ news, archives, media }) {
                   {/* 不登校 */}
                   <div className="issue-card">
                     <p className="text-xs font-bold mb-3" style={{ color: '#1476A6' }}>不登校</p>
-                    <h3 className="text-[#1A202C] text-xl font-bold mb-4 leading-snug">35万人を超える子どもが、居場所を失っている</h3>
+                    <h3 className="card-title text-[#1A202C] mb-4">35万人を超える子どもが、居場所を失っている</h3>
                     <p className="leading-8 text-base text-[#4A5568] mb-3">
                       学校に行けなくなった子の中には、「学びたくない」のではなく、「学びたいのに場所がない」子がたくさんいます。オンラインで、自分のペースで、安心できる場所で学べる環境をつくることが、私たちの役割だと思っています。
                     </p>
@@ -300,7 +300,7 @@ export default function Home({ news, archives, media }) {
                   {/* ジェンダーギャップ */}
                   <div className="issue-card">
                     <p className="text-xs font-bold mb-3" style={{ color: '#1476A6' }}>ジェンダーギャップ</p>
-                    <h3 className="text-[#1A202C] text-xl font-bold mb-4 leading-snug">「理系は男の子のもの」と思っている女の子がいる</h3>
+                    <h3 className="card-title text-[#1A202C] mb-4">「理系は男の子のもの」と思っている女の子がいる</h3>
                     <p className="leading-8 text-base text-[#4A5568] mb-3">
                       「女の子にプログラミングは難しい」という先入観は、子どもの頃から形成されます。小学生のうちに「自分にもできる」と感じる体験を積み重ねることが、その先入観を少しずつ変えていくと信じています。
                     </p>
@@ -310,7 +310,7 @@ export default function Home({ news, archives, media }) {
                   {/* 地域格差 */}
                   <div className="issue-card">
                     <p className="text-xs font-bold mb-3" style={{ color: '#1476A6' }}>地域格差</p>
-                    <h3 className="text-[#1A202C] text-xl font-bold mb-4 leading-snug">地方に生まれただけで、選択肢が少なくなる</h3>
+                    <h3 className="card-title text-[#1A202C] mb-4">地方に生まれただけで、選択肢が少なくなる</h3>
                     <p className="leading-8 text-base text-[#4A5568] mb-3">
                       東京にいれば当たり前の環境が、地方では整っていないことが多い。近くに教室がない、身近にロールモデルがいない——そんな子どもたちにこそ、私たちは山を越えてでも届けに行きたい。
                     </p>
@@ -340,7 +340,7 @@ export default function Home({ news, archives, media }) {
               <div className="container px-5 py-20 mx-auto">
                 <div className="flex flex-wrap w-full mb-12">
                   <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-                    <h1 className="sm:text-3xl text-2xl font-bold title-font text-[#1A202C]">
+                    <h1 className="page-title font-bold title-font text-[#1A202C]">
                       私たちの取り組み
                     </h1>
                   </div>
@@ -362,7 +362,7 @@ export default function Home({ news, archives, media }) {
                             <p className="text-xs font-medium mb-1" style={{ color: '#1476A6' }}>
                               {dayjs(archive.date).format("YYYY.MM.DD")}
                             </p>
-                            <h2 className="text-base text-[#1A202C] font-bold title-font mb-2">
+                            <h2 className="section-title text-[#1A202C] title-font mb-2">
                               {archive.title}
                             </h2>
                             <p className="leading-relaxed text-sm text-[#4A5568]">
@@ -386,9 +386,9 @@ export default function Home({ news, archives, media }) {
           </ScrollFadeIn>
 
           <ScrollFadeIn>
-            <section className="text-[#2D3748] body-font" id="media">
+            <section className="text-[#1A202C] body-font" id="media">
               <div className="container px-5 py-20 mx-auto">
-                <h1 className="sm:text-3xl text-2xl font-bold title-font text-[#1A202C] mb-12">
+                <h1 className="page-title font-bold title-font text-[#1A202C] mb-12">
                   メディア
                 </h1>
                 <div className="flex flex-wrap -m-4">
@@ -405,7 +405,7 @@ export default function Home({ news, archives, media }) {
                               >
                                 {post.category}
                               </span>
-                              <h2 className="text-base text-[#1A202C] font-bold title-font mb-2 group-hover:transition-colors" style={{ color: '#1476A6' }}>
+                              <h2 className="section-title text-[#1A202C] title-font mb-2 group-hover:transition-colors" style={{ color: '#1476A6' }}>
                                 {post.title}
                               </h2>
                               <p className="text-sm text-[#718096] mb-2">
@@ -434,11 +434,11 @@ export default function Home({ news, archives, media }) {
 
           <ScrollFadeIn>
             <section
-              className="text-[#2D3748] body-font"
+              className="text-[#1A202C] body-font"
               id="information"
             >
               <div className="container px-5 py-20 mx-auto">
-                <h1 className="sm:text-3xl text-2xl font-bold title-font text-[#1A202C] mb-12">
+                <h1 className="page-title font-bold title-font text-[#1A202C] mb-12">
                   お知らせ
                 </h1>
                 <div className="mx-auto">
@@ -455,7 +455,7 @@ export default function Home({ news, archives, media }) {
                           </span>
                         </div>
                         <div className="mt-1">
-                          <h2 className="text-md text-[#1A202C] title-font mb-2 leading-relaxed font-medium">
+                          <h2 className="section-title text-md text-[#1A202C] title-font mb-2">
                             {news.title}
                           </h2>
                         </div>
@@ -475,9 +475,9 @@ export default function Home({ news, archives, media }) {
           </ScrollFadeIn>
 
           <ScrollFadeIn>
-            <section className="text-[#2D3748] body-font bg-[#F8FCFF]">
+            <section className="text-[#1A202C] body-font bg-[#F8FCFF]">
               <div className="container px-5 py-16 mx-auto">
-                <h1 className="sm:text-3xl text-2xl font-bold title-font text-[#1A202C] mb-8 text-center">
+                <h1 className="page-title font-bold title-font text-[#1A202C] mb-8 text-center">
                   メディア掲載
                 </h1>
                 <div className="container mx-auto w-full">
@@ -490,11 +490,11 @@ export default function Home({ news, archives, media }) {
           <ScrollFadeIn>
             <section className="text-gray-600 body-font">
               <div className="container px-5 py-20 mx-auto">
-                <h1 className="sm:text-3xl text-2xl font-bold title-font text-[#1A202C] mb-10">
+                <h1 className="page-title font-bold title-font text-[#1A202C] mb-10">
                   想い
                 </h1>
                 <div className="max-w-3xl">
-                  <p className="text-lg leading-8 mb-10 text-[#2D3748]">
+                  <p className="text-lg leading-8 mb-10 text-[#1A202C]">
                     不登校の子どもも、地方に住む子どもも、「ITは自分には関係ない」と思っている女の子も——どんな子どもにも、学ぶ機会は平等にあるべきだと思っています。
                     <br />
                     教育の「届かない」をなくすために、地域・行政・企業の皮さまと協力し、子どもたちの可能性を広げる学びの場をつくり続けます。
@@ -520,7 +520,7 @@ export default function Home({ news, archives, media }) {
           <ScrollFadeIn>
             <section className="text-gray-600 body-font bg-[#F8FCFF]">
               <div className="container px-5 py-20 mx-auto">
-                <h1 className="sm:text-3xl text-2xl font-bold title-font text-[#1A202C] mb-12 text-center">
+                <h1 className="page-title font-bold title-font text-[#1A202C] mb-12 text-center">
                   法人情報
                 </h1>
                 <div className="lg:w-2/3 mx-auto">
@@ -564,7 +564,7 @@ export default function Home({ news, archives, media }) {
             <section className="text-gray-600 body-font">
               <div className="container px-5 py-20 mx-auto">
                 <div className="text-center mb-12">
-                  <h1 className="sm:text-3xl text-2xl font-bold title-font text-[#1A202C] mb-4">
+                  <h1 className="page-title font-bold title-font text-[#1A202C] mb-4">
                     活動を応援してください
                   </h1>
                   <p className="text-base leading-7 xl:w-3/4 lg:w-3/4 mx-auto text-[#718096]">
@@ -613,11 +613,11 @@ export default function Home({ news, archives, media }) {
                       クレジットカードで寄付
                     </button>
                   </a>
-                  <p className="mt-6 text-sm text-[#A0AEC0]">
+                  <p className="mt-6 text-sm text-[#718096]">
                     GMOあおぞらネット銀行 法人営業部(101) 1193846
                     トクヒ）ニュークリエイターオルグ 宛
                   </p>
-                  <p className="mt-1 text-sm text-[#A0AEC0]">
+                  <p className="mt-1 text-sm text-[#718096]">
                     上記への振り込みでもご支援いただけます
                   </p>
                 </div>

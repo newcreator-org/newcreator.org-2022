@@ -25,7 +25,7 @@ export default function Company() {
                 ORGANIZATION
               </p>
               <h1
-                className="title-font sm:text-4xl text-3xl mb-5 font-bold animate-fade-in-up"
+                className="title-font page-title mb-5 font-bold animate-fade-in-up"
                 style={{ color: "#1A202C" }}
               >
                 法人概要
@@ -57,7 +57,7 @@ export default function Company() {
             <div className="container px-5 py-16 mx-auto">
               <div className="max-w-3xl mx-auto">
                 <h2
-                  className="text-2xl font-bold mb-8"
+                  className="section-title mb-8"
                   style={{ color: "#1A202C" }}
                 >
                   基本情報
@@ -108,7 +108,7 @@ export default function Company() {
           <section className="body-font" style={{ background: "#F8FCFF" }}>
             <div className="container px-5 py-16 mx-auto">
               <div className="max-w-3xl mx-auto">
-                <h2 className="text-2xl font-bold mb-6" style={{ color: "#1A202C" }}>
+                <h2 className="section-title mb-6" style={{ color: "#1A202C" }}>
                   設立の経緯
                 </h2>
                 <div
@@ -143,7 +143,7 @@ export default function Company() {
           <section className="body-font bg-white">
             <div className="container px-5 py-16 mx-auto">
               <div className="max-w-3xl mx-auto">
-                <h2 className="text-2xl font-bold mb-8" style={{ color: "#1A202C" }}>
+                <h2 className="section-title mb-8" style={{ color: "#1A202C" }}>
                   関連情報
                 </h2>
                 <div className="grid md:grid-cols-2 gap-4">

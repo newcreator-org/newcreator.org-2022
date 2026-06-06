@@ -43,7 +43,7 @@ export default function Resources() {
             <section className="bg-[#F8FCFF] py-20 md:py-28">
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="text-center">
-                  <h1 className="text-3xl md:text-5xl font-bold text-[#1A202C] mb-6 leading-tight">
+                  <h1 className="page-title font-bold text-[#1A202C] mb-6 leading-tight">
                     ダウンロード資料
                   </h1>
                   <p className="text-lg md:text-xl text-[#4A5568] mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -71,7 +71,7 @@ export default function Resources() {
                               {resource.format}
                             </span>
                           </div>
-                          <h2 className="text-2xl font-bold text-[#1A202C] mb-3">
+                          <h2 className="section-title text-[#1A202C] mb-3">
                             {resource.title}
                           </h2>
                           <p className="text-[#4A5568] mb-4 leading-relaxed">
@@ -102,45 +102,45 @@ export default function Resources() {
           <ScrollFadeIn>
             <section className="py-16 md:py-20 bg-[#F8FCFF]">
               <div className="container px-5 mx-auto max-w-6xl">
-                <h2 className="text-2xl md:text-3xl font-bold text-[#1A202C] mb-8 text-center">
+                <h2 className="section-title text-[#1A202C] mb-8 text-center">
                   その他のリソース
                 </h2>
                 <div className="grid md:grid-cols-3 gap-6">
                   <Link href="/for-educators/guides">
                     <a className="block bg-white border border-[#E2E8F0] rounded-sm p-6">
-                      <h3 className="text-xl font-bold text-[#1A202C] mb-3">
+                      <h3 className="card-title text-[#1A202C] mb-3">
                         実践ガイド
                       </h3>
                       <p className="text-[#4A5568] mb-4">
                         授業での活用方法、導入計画、セキュリティ対策など、実践的なガイドを多数掲載しています。
                       </p>
-                      <span className="text-[#1476A6] font-semibold">
+                      <span className="text-[#1476A6] font-bold">
                         ガイドを見る →
                       </span>
                     </a>
                   </Link>
                   <Link href="/for-educators/case-studies">
                     <a className="block bg-white border border-[#E2E8F0] rounded-sm p-6">
-                      <h3 className="text-xl font-bold text-[#1A202C] mb-3">
+                      <h3 className="card-title text-[#1A202C] mb-3">
                         導入事例
                       </h3>
                       <p className="text-[#4A5568] mb-4">
                         実際に学校でAIを導入した事例を詳しく紹介しています。成功のポイントや課題への対応を学べます。
                       </p>
-                      <span className="text-[#1476A6] font-semibold">
+                      <span className="text-[#1476A6] font-bold">
                         事例を見る →
                       </span>
                     </a>
                   </Link>
                   <Link href="/for-educators/faq">
                     <a className="block bg-white border border-[#E2E8F0] rounded-sm p-6">
-                      <h3 className="text-xl font-bold text-[#1A202C] mb-3">
+                      <h3 className="card-title text-[#1A202C] mb-3">
                         よくある質問
                       </h3>
                       <p className="text-[#4A5568] mb-4">
                         学校でのAI活用に関するよくある質問と回答をまとめています。
                       </p>
-                      <span className="text-[#1476A6] font-semibold">
+                      <span className="text-[#1476A6] font-bold">
                         FAQを見る →
                       </span>
                     </a>
@@ -155,7 +155,7 @@ export default function Resources() {
             <section className="py-16 md:py-20">
               <div className="container px-5 mx-auto max-w-4xl">
                 <div className="bg-[#1476A6] rounded-sm p-8 md:p-12 text-center text-white">
-                  <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                  <h2 className="section-title mb-4">
                     導入支援のご相談はこちら
                   </h2>
                   <p className="text-lg mb-8 opacity-90">

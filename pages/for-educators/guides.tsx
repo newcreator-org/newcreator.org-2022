@@ -59,7 +59,7 @@ export default function Guides({ guides }) {
           <ScrollFadeIn>
             <section className="py-16 bg-[#F8FCFF]">
               <div className="container px-5 mx-auto max-w-6xl">
-                <h1 className="text-3xl md:text-5xl font-bold text-[#1A202C] mb-4 text-center">
+                <h1 className="page-title font-bold text-[#1A202C] mb-4 text-center">
                   実践ガイド
                 </h1>
                 <p className="text-lg text-[#4A5568] text-center max-w-3xl mx-auto">
@@ -80,7 +80,7 @@ export default function Guides({ guides }) {
                       className={`px-5 py-2 rounded-sm font-medium transition-all ${
                         selectedCategory === category
                           ? 'text-white bg-[#1476A6]'
-                          : 'bg-white text-[#2D3748] border border-[#CBD5E0]'
+                          : 'bg-white text-[#1A202C] border border-[#CBD5E0]'
                       }`}
                     >
                       {category}
@@ -121,7 +121,7 @@ export default function Guides({ guides }) {
           <ScrollFadeIn>
             <section className="py-16 bg-[#F8FCFF]">
               <div className="container px-5 mx-auto max-w-4xl text-center">
-                <h2 className="text-2xl md:text-3xl font-bold text-[#1A202C] mb-4">
+                <h2 className="section-title text-[#1A202C] mb-4">
                   導入のご相談はこちら
                 </h2>
                 <p className="text-[#4A5568] mb-8">

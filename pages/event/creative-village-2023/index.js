@@ -60,10 +60,10 @@ export default function Apply() {
                     </p>
                 </footer>
                 */}
-                <section className="text-[#2D3748] body-font">
+                <section className="text-[#1A202C] body-font">
                     <div className="container px-5 py-12 mx-auto flex flex-wrap max-w-6xl">
                         <div className="flex flex-col text-left w-full mb-10">
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font text-[#1A202C]">
+                            <h1 className="page-title font-medium title-font text-[#1A202C]">
                                 身近な課題を解決するアイデアを考えよう！
                             </h1>
                         </div>
@@ -81,10 +81,10 @@ export default function Apply() {
                     </div>
                 </section>
 
-                <section className="text-[#2D3748] body-font">
+                <section className="text-[#1A202C] body-font">
                     <div className="container px-5 py-12 mx-auto flex flex-wrap max-w-6xl">
                         <div className="flex flex-col text-left w-full mb-7">
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font text-[#1A202C]">
+                            <h1 className="page-title font-medium title-font text-[#1A202C]">
                                 タイムテーブル
                             </h1>
                         </div>
@@ -160,10 +160,10 @@ export default function Apply() {
                 </section>
 
 
-                <section className="text-[#2D3748] body-font">
+                <section className="text-[#1A202C] body-font">
                     <div className="container px-5 py-12 mx-auto flex flex-wrap max-w-6xl">
                         <div className="flex flex-col text-left w-full mb-5">
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font text-[#1A202C]">
+                            <h1 className="page-title font-medium title-font text-[#1A202C]">
                                 参加申込
                             </h1>
                         </div>
@@ -232,10 +232,10 @@ export default function Apply() {
                     </div>
                 </section>
 
-                <section className="text-[#2D3748] body-font">
+                <section className="text-[#1A202C] body-font">
                     <div className="container px-5 py-10 mx-auto flex flex-wrap max-w-6xl">
                         <div className="flex flex-col text-left w-full mb-5 leading-relaxed text-base">
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-[#1A202C]">
+                            <h1 className="page-title font-medium title-font mb-4 text-[#1A202C]">
                                 企画・運営
                             </h1>
                             <p>

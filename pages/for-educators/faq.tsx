@@ -117,7 +117,7 @@ export default function FAQ() {
             <section className="bg-[#F8FCFF] py-16 md:py-20">
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="text-center">
-                  <h1 className="text-3xl md:text-5xl font-bold text-[#1A202C] mb-4">
+                  <h1 className="page-title font-bold text-[#1A202C] mb-4">
                     よくある質問
                   </h1>
                   <p className="text-lg text-[#4A5568] max-w-2xl mx-auto">
@@ -134,13 +134,13 @@ export default function FAQ() {
               <div className="container px-5 mx-auto max-w-4xl">
                 {faqData.map((category, categoryIndex) => (
                   <div key={categoryIndex} className="mb-12">
-                    <h2 className="text-2xl font-bold text-[#1A202C] mb-6 pb-3 border-b-2 border-[#1476A6]">
+                    <h2 className="section-title text-[#1A202C] mb-6 pb-3 border-b-2 border-[#1476A6]">
                       {category.category}
                     </h2>
                     <div className="space-y-6">
                       {category.questions.map((item, itemIndex) => (
                         <div key={itemIndex} className="bg-white rounded-sm p-6 border border-[rgba(20,118,166,0.10)]">
-                          <h3 className="text-lg font-bold text-[#1A202C] mb-3 flex items-start">
+                          <h3 className="card-title text-[#1A202C] mb-3 flex items-start">
                             <span className="inline-block text-[#1476A6] font-bold mr-3 mt-0.5 flex-shrink-0 text-base">
                               Q
                             </span>
@@ -150,7 +150,7 @@ export default function FAQ() {
                             <span className="inline-block text-[#1476A6] font-bold mr-3 mt-0.5 flex-shrink-0 text-base">
                               A
                             </span>
-                            <p className="text-[#2D3748] leading-relaxed">{item.a}</p>
+                            <p className="text-[#1A202C] leading-relaxed">{item.a}</p>
                           </div>
                         </div>
                       ))}
@@ -164,7 +164,7 @@ export default function FAQ() {
           <ScrollFadeIn>
             <section className="py-16 bg-[#F8FCFF]">
               <div className="container px-5 mx-auto max-w-4xl text-center">
-                <h2 className="text-2xl md:text-3xl font-bold text-[#1A202C] mb-4">
+                <h2 className="section-title text-[#1A202C] mb-4">
                   その他のご質問はこちら
                 </h2>
                 <p className="text-[#4A5568] mb-8">
@@ -179,7 +179,7 @@ export default function FAQ() {
                   </Link>
                   <a 
                     href="mailto:contact@newcreator.org" 
-                    className="inline-block bg-white text-[#1476A6] px-8 py-4 rounded-sm font-semibold border-2 border-[#1476A6] hover:bg-[#F8FCFF] transition-colors"
+                    className="inline-block bg-white text-[#1476A6] px-8 py-4 rounded-sm font-bold border-2 border-[#1476A6] hover:bg-[#F8FCFF] transition-colors"
                   >
                     メールで相談する
                   </a>
@@ -191,13 +191,13 @@ export default function FAQ() {
           <ScrollFadeIn>
             <section className="py-16">
               <div className="container px-5 mx-auto max-w-6xl">
-                <h2 className="text-2xl md:text-3xl font-bold text-[#1A202C] mb-8 text-center">
+                <h2 className="section-title text-[#1A202C] mb-8 text-center">
                   関連情報
                 </h2>
                 <div className="grid md:grid-cols-3 gap-6">
                   <Link href="/for-educators/guides">
                     <a className="block bg-white rounded-sm p-6 border border-[rgba(20,118,166,0.10)]">
-                      <h3 className="text-lg font-bold text-[#1A202C] mb-2">実践ガイド</h3>
+                      <h3 className="card-title text-[#1A202C] mb-2">実践ガイド</h3>
                       <p className="text-[#4A5568] text-sm">
                         授業での活用方法や校務効率化のテクニックをご紹介
                       </p>
@@ -205,7 +205,7 @@ export default function FAQ() {
                   </Link>
                   <Link href="/for-educators/case-studies">
                     <a className="block bg-white rounded-sm p-6 border border-[rgba(20,118,166,0.10)]">
-                      <h3 className="text-lg font-bold text-[#1A202C] mb-2">導入事例</h3>
+                      <h3 className="card-title text-[#1A202C] mb-2">導入事例</h3>
                       <p className="text-[#4A5568] text-sm">
                         全国の学校での具体的な活用事例をご紹介
                       </p>
@@ -213,7 +213,7 @@ export default function FAQ() {
                   </Link>
                   <Link href="/for-educators">
                     <a className="block bg-white rounded-sm p-6 border border-[rgba(20,118,166,0.10)]">
-                      <h3 className="text-lg font-bold text-[#1A202C] mb-2">サービス一覧</h3>
+                      <h3 className="card-title text-[#1A202C] mb-2">サービス一覧</h3>
                       <p className="text-[#4A5568] text-sm">
                         研修、導入支援、プライベートGPTなどのサービス
                       </p>

@@ -16,7 +16,7 @@ export default function Terms() {
                 2020年6月9日 制定・2020年10月18日 更新
               </p>
               <h1
-                className="text-3xl sm:text-4xl font-bold"
+                className="page-title"
                 style={{ color: "#1A202C" }}
               >
                 利用規約
@@ -31,7 +31,7 @@ export default function Terms() {
           </p>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第一条（定義）</h2>
+            <h2 className="section-title legal-h2">第一条（定義）</h2>
             <p className="legal-p">本規約上で使用する用語の定義は、次に掲げるとおりとします。</p>
             <dl className="legal-dl">
               <div><dt>A.</dt><dd>「本コンテンツ」とは、本サービス上で提供される、あらゆる文字、音、静止画、動画、ソフトウェアプログラム、コード等の総称です。</dd></div>
@@ -47,13 +47,13 @@ export default function Terms() {
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第二条（適用範囲）</h2>
+            <h2 className="section-title legal-h2">第二条（適用範囲）</h2>
             <p className="legal-p">１　本規約は、本サービスの利用に関し、当法人および利用者に対して適用されます。</p>
             <p className="legal-p">２　当法人が本サービスに関する個別規約や追加規約を本サービスに掲載する場合（以下「個別規約等」といいます）、個別規約等は本規約の一部を構成するものとし、個別規約等が本規約と抵触する場合には、個別規約等が優先するものとします。</p>
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第三条（本規約への同意）</h2>
+            <h2 className="section-title legal-h2">第三条（本規約への同意）</h2>
             <p className="legal-p">１　利用者は、本規約に同意頂いた上で、本サービスを利用できるものとします。</p>
             <p className="legal-p">２　利用者が、本サービスのウェブサイト等より本規約への同意手続を行った時点で、本規約は、利用者と当法人との間の契約内容として適用されます。</p>
             <p className="legal-p">３　利用者が未成年者である場合には、親権者その他の法定代理人の同意を得たうえで、親権者が登録を行い、本サービスをご利用ください。</p>
@@ -62,13 +62,13 @@ export default function Terms() {
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第四条（規約の変更）</h2>
+            <h2 className="section-title legal-h2">第四条（規約の変更）</h2>
             <p className="legal-p">１　当法人は、利用者の承諾を得ることなく、いつでも、本規約の内容を変更することができるものとします。</p>
             <p className="legal-p">２　前項に基づき変更された本規約は、所定の予告期間をおいて、変更後の新利用規約の内容を利用者に通知または本サービス上に表示するものとし、当該通知または当該表示後に利用者が本サービスを使用した場合または所定の期間内に本サービスの利用を停止しなかった場合、利用者は新利用規約に同意したものとみなします。ただし、変更の内容が利用者の一般の利益に適合すると判断した場合は、通知しないものとします。</p>
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第五条（会員の入会手続）</h2>
+            <h2 className="section-title legal-h2">第五条（会員の入会手続）</h2>
             <p className="legal-p">１　本サービスへの入会を希望する方（以下「登録希望者」といいます）は、本規約に同意した上で、所定の方法で入会の申込を行ってください。</p>
             <p className="legal-p">２　当法人は、入会の申込があった場合、審査し、入会の申込を承諾する場合には、その旨の通知を行います。</p>
             <p className="legal-p">３　当法人は、登録希望者が次の各号のいずれか一つに該当する場合は、当法人の判断により入会申込を拒否することがあります。</p>
@@ -82,7 +82,7 @@ export default function Terms() {
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第六条（アカウントの管理）</h2>
+            <h2 className="section-title legal-h2">第六条（アカウントの管理）</h2>
             <p className="legal-p">１　利用者は、利用に際して登録した情報（以下「登録情報」といいます。メールアドレスやID・パスワード等を含みます）について、自己の責任の下、任意に登録、管理するものとします。利用者は、これを第三者に利用させ、または貸与、譲渡、名義変更、売買などをしてはならないものとします。</p>
             <p className="legal-p">２　当法人は、登録情報によって本サービスの利用があった場合、利用登録をおこなった本人が利用したものと扱うことができ、当該利用によって生じた結果ならびにそれに伴う一切の責任については、利用登録を行った本人に帰属するものとします。</p>
             <p className="legal-p">３　利用者は、登録情報の不正使用によって当法人または第三者に損害が生じた場合、当法人および第三者に対して、当該損害を賠償するものとします。</p>
@@ -91,12 +91,12 @@ export default function Terms() {
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第七条（個人情報等の取り扱い）</h2>
+            <h2 className="section-title legal-h2">第七条（個人情報等の取り扱い）</h2>
             <p className="legal-p">個人情報及び利用者情報については、当法人が別途定める「プライバシーポリシー」に則り、適正に取り扱うこととします。</p>
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第八条（禁止行為）</h2>
+            <h2 className="section-title legal-h2">第八条（禁止行為）</h2>
             <p className="legal-p">本サービスの利用に際し、当法人は、利用者に対し、次に掲げる行為を禁止します。当法人において、利用者が禁止事項に違反したと認めた場合、利用者用の一時停止、退会処分その他当法人が必要と判断した措置を取ることができます。</p>
             <dl className="legal-dl">
               <div><dt>A.</dt><dd>当法人または第三者の知的財産権を侵害する行為</dd></div>
@@ -123,14 +123,14 @@ export default function Terms() {
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第九条（知的財産権等）</h2>
+            <h2 className="section-title legal-h2">第九条（知的財産権等）</h2>
             <p className="legal-p">１　本サービスにおけるプログラム、本サービスにおいて表示される一切の知的財産についての知的財産権及び本サービスに関する情報、ノウハウその他の権利利益は、当法人その他の権利者に帰属し、利用者はこれらを本サービスの利用のためだけに、かつ正当な使用方法に従ってのみ利用することができ、これ以外に利用できないものとします。</p>
             <p className="legal-p">２　利用者が本サービスに関する知的財産権を侵害したことにより生じた損害について、当法人は利用者に弁護士費用その他の費用を含む一切の損害賠償を請求できるものとします。</p>
             <p className="legal-p">３　本サービス上には当法人の商標、ロゴおよびサービスマーク等（以下、総称して「商標等」といいます）が表示される場合がありますが、当法人は利用者その他の第三者に対し何ら商標等を譲渡し、または使用を許諾するものではなく、利用者は本サービス上の未登録商標に対し商標登録の出願を行ってはならないものとします。また、利用者は本サービスに関連する知的財産権について、特許権、実用新案権、意匠権、商標権を出願申請し、登録を申請してはならないものとします。</p>
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第十条（免責）</h2>
+            <h2 className="section-title legal-h2">第十条（免責）</h2>
             <p className="legal-p">１　当法人は、本サービスの内容変更、中断、終了によって生じたいかなる損害についても、一切責任を負いません。</p>
             <p className="legal-p">２　当法人は、利用者の本サービスの利用環境について一切関与せず、また一切の責任を負いません。</p>
             <p className="legal-p">３　当法人は、本サービスの正確性、完全性、有用性、特定目的適合性及び本サービスが全ての情報端末に対応していることを保証するものではなく、本サービスの利用に供する情報端末のＯＳやソフトウェアのバージョンアップ等に伴い、本サービスの動作に不具合が生じる可能性があることにつき、利用者はあらかじめ了承するものとします。当法人は、かかる不具合が生じた場合に当法人が行うプログラムの修正等により、当該不具合が解消されることを保証するものではありません。</p>
@@ -146,12 +146,12 @@ export default function Terms() {
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第十一条（広告の掲載について）</h2>
+            <h2 className="section-title legal-h2">第十一条（広告の掲載について）</h2>
             <p className="legal-p">利用者は、本サービス上にあらゆる広告が含まれる場合があること、当法人またはその提携先があらゆる広告を掲載する場合があることを理解しこれを承諾したものとみなします。本サービス上の広告の形態や範囲は、当法人によって随時変更されます。</p>
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第十二条（本サービスの利用）</h2>
+            <h2 className="section-title legal-h2">第十二条（本サービスの利用）</h2>
             <p className="legal-p">１　本サービスを利用するにあたって、利用者は下記に同意するものします。</p>
             <dl className="legal-dl">
               <div><dt>A.</dt><dd>当法人が本サービスを利用する上で推奨される環境を利用者自身で用意すること</dd></div>
@@ -172,7 +172,7 @@ export default function Terms() {
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第十三条（利用制限）</h2>
+            <h2 className="section-title legal-h2">第十三条（利用制限）</h2>
             <p className="legal-p">１　当法人は、利用者が下記のいずれかに該当した場合、利用者に対して、一時停止若しくは一部機能の制限、またはアカウントの削除の処分を行うことができます。</p>
             <dl className="legal-dl">
               <div><dt>A.</dt><dd>第七条に定める禁止行為を行った場合</dd></div>
@@ -185,12 +185,12 @@ export default function Terms() {
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第十四条（利用料金の支払い）</h2>
+            <h2 className="section-title legal-h2">第十四条（利用料金の支払い）</h2>
             <p className="legal-p">利用料金は、受講契約が成立した際に提示された金額、もしくはその金額に変更があった際に当法人から新たに提示された金額を、当法人が指定する支払い方法で期日までにお支払い下さい。</p>
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第十五条（レッスンの管理）</h2>
+            <h2 className="section-title legal-h2">第十五条（レッスンの管理）</h2>
             <p className="legal-p">１　レッスンの予約リクエストは当法人が指定する方法で行ってください。予約リクエストが正しく受け付けられ、予約が完了した場合にはその旨の通知を行います。通知をもって予約が成立するものとします。</p>
             <p className="legal-p">２　前項についてやむを得ない事由により指定の講師によるレッスンの実施ができない場合、別の講師によるレッスンの実施または当該レッスンのキャンセルを行うことができるものとします。キャンセルされた場合、振り替えたレッスンかに関わらず、利用者はレッスンの振り替えを行うことができます。</p>
             <p className="legal-p">３　利用者の都合によりレッスンのキャンセルを行う場合には、レッスン実施の24時間前までに当法人指定の方法で連絡をしてください。当法人からのキャンセル通知をもってキャンセルが完了したものとします。</p>
@@ -204,24 +204,24 @@ export default function Terms() {
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第十六条（退会）</h2>
+            <h2 className="section-title legal-h2">第十六条（退会）</h2>
             <p className="legal-p">１　退会をする場合は、退会を希望する月の前月の15日までに、利用者本人（利用者が未成年者である場合は親権者等）が当法人指定の方法でお申し出ください。</p>
             <p className="legal-p">２　退会により当法人が保持する学習データ等は一定期間保持されたのち、破棄します。</p>
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第十七条（譲渡の禁止）</h2>
+            <h2 className="section-title legal-h2">第十七条（譲渡の禁止）</h2>
             <p className="legal-p">１　利用者は、予め当法人の書面による承諾がない限り、本規約上の地位および本規約に基づく権利または義務の全部または一部を第三者に譲渡してはならないものとします。</p>
             <p className="legal-p">２　当法人は、本サービスの全部または一部を当法人の裁量により第三者に譲渡することができ、その場合、譲渡された権利の範囲内で利用者のアカウントを含む、本サービスに係る利用者の一切の権利が譲渡先に移転するものとします。</p>
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第十八条（分離可能性）</h2>
+            <h2 className="section-title legal-h2">第十八条（分離可能性）</h2>
             <p className="legal-p">本規約のいずれかの条項又はその一部が、消費者契約法その他の法令等により無効又は執行不能と判断された場合であっても、本規約の残りの規定及び一部が無効又は執行不能と判断された規定の残りの部分は、継続して完全に効力を有するものとします。</p>
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第十九条（連絡方法）</h2>
+            <h2 className="section-title legal-h2">第十九条（連絡方法）</h2>
             <p className="legal-p">１　本サービスに関する当法人からの利用者への連絡は電子メールの送信等、その他当法人が適切と判断した方法により行うものとします。</p>
             <p className="legal-p">２　当法人が電子メールの送信による通知を行った場合、当法人からの通知は、利用者自らが登録したメールアドレスにメールを送信することをもって、当該メールが通常到達すべきときに到達したものとみなします。</p>
             <p className="legal-p">３　当法人は利用者が適切な指定メールアドレスを登録しなかったこと、または利用者が受信設定の変更を怠ったことに起因して当法人からの電子メールが利用者に到達しなかった場合、当該不到達に対して、一切責任を負わないものとします。</p>
@@ -229,7 +229,7 @@ export default function Terms() {
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第二十条（本サービスの停止・廃止）</h2>
+            <h2 className="section-title legal-h2">第二十条（本サービスの停止・廃止）</h2>
             <p className="legal-p">１　当法人は、事前に通知をすることで本サービスを中断または終了できるものとします。</p>
             <p className="legal-p">２　当法人は、以下の事由に起因する場合、予告なしに本サービスの全部または一部を停止することができ、当該事由に起因して利用者または第三者に損害が発生した場合、一切の責任を負わないものとします。</p>
             <dl className="legal-dl">
@@ -240,7 +240,7 @@ export default function Terms() {
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第二十一条（反社会的勢力の排除）</h2>
+            <h2 className="section-title legal-h2">第二十一条（反社会的勢力の排除）</h2>
             <p className="legal-p">１　利用者は、現在、次の各号のいずれにも該当しないことを表明し、かつ将来にわたっても該当しないことを確約します。</p>
             <dl className="legal-dl">
               <div><dt>A.</dt><dd>反社会的勢力（暴力団、暴力団員、暴力団準構成員、暴力団関係企業、総会屋等、社会運動標榜ゴロ、政治活動標榜ゴロ、特殊知能暴力集団、反社会的勢力共生者、又はその他これらに準ずる者をいう。以下同じ。）であること。</dd></div>
@@ -253,12 +253,12 @@ export default function Terms() {
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第二十二条（基準時）</h2>
+            <h2 className="section-title legal-h2">第二十二条（基準時）</h2>
             <p className="legal-p">本サービスにおいて、特にタイムゾーンの記載がない限り、利用者のタイムゾーンに関わらず、日時は全て日本標準時によるものとします。</p>
           </section>
 
           <section className="mb-10">
-            <h2 className="legal-h2">第二十三条（準拠法、管轄裁判所）</h2>
+            <h2 className="section-title legal-h2">第二十三条（準拠法、管轄裁判所）</h2>
             <p className="legal-p">１　本規約の有効性、解釈及び履行については、日本法に準拠し、日本法に従って解釈されるものとします。</p>
             <p className="legal-p">２　当法人と利用者等との間での一切の紛争については、東京簡易裁判所又は東京地方裁判所を第一審の専属的合意管轄裁判所とします。</p>
           </section>

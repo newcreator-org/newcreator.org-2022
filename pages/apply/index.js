@@ -50,10 +50,10 @@ export default function Apply() {
                         みなさまのご応募ありがとうございました！
                     </p>
                 </footer>
-                <section className="text-[#2D3748] body-font">
+                <section className="text-[#1A202C] body-font">
                     <div className="container px-5 py-24 mx-auto flex flex-wrap">
                         <div className="flex flex-col text-center w-full mb-10">
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font text-[#1A202C]">
+                            <h1 className="page-title font-medium title-font text-[#1A202C]">
                                 はじめに
                             </h1>
                         </div>
@@ -79,10 +79,10 @@ export default function Apply() {
                     </div>
                 </section>
 
-                <section className="text-[#2D3748] body-font">
+                <section className="text-[#1A202C] body-font">
                     <div className="container px-5 py-24 mx-auto flex flex-wrap">
                         <div className="flex flex-col text-center w-full mb-10">
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font text-[#1A202C]">
+                            <h1 className="page-title font-medium title-font text-[#1A202C]">
                                 対象
                             </h1>
                         </div>
@@ -116,15 +116,15 @@ export default function Apply() {
                     </div>
                 </section>
 
-                <section className="text-[#2D3748] body-font mt-10">
+                <section className="text-[#1A202C] body-font mt-10">
                     <div className="flex flex-col text-center w-full">
-                        <h1 className="sm:text-3xl text-2xl font-medium title-font text-[#1A202C]">
+                        <h1 className="page-title font-medium title-font text-[#1A202C]">
                             提供内容
                         </h1>
                     </div>
                     <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
                         <div className="lg:flex-grow lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-[#1A202C]">
+                            <h1 className="title-font page-title mb-4 font-medium text-[#1A202C]">
                                 micro:bit スターターキット
                             </h1>
                             <p className="mb-8 leading-relaxed">
@@ -144,7 +144,7 @@ export default function Apply() {
                     </div>
                 </section>
 
-                <section className="text-[#2D3748] body-font">
+                <section className="text-[#1A202C] body-font">
                     <div className="container mx-auto flex px-5 mb-12 md:flex-row flex-col items-center">
                         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
                             <img
@@ -154,7 +154,7 @@ export default function Apply() {
                             />
                         </div>
                         <div className="lg:flex-grow lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-[#1A202C]">
+                            <h1 className="title-font page-title mb-4 font-medium text-[#1A202C]">
                                 オリジナル教材
                             </h1>
                             <p className="mb-8 leading-relaxed">
@@ -172,10 +172,10 @@ export default function Apply() {
                         </small>
                     </p>
                 </section>
-                <section className="text-[#2D3748] body-font mt-10">
+                <section className="text-[#1A202C] body-font mt-10">
                     <div className="container px-5 py-24 mx-auto text-center">
                         <div className="text-center mb-20">
-                            <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-[#1A202C] mb-4">
+                            <h1 className="page-title font-medium text-center title-font text-[#1A202C] mb-4">
                                 micro:bit とは？
                             </h1>
                             <p className="leading-relaxed text-base">
@@ -322,10 +322,10 @@ export default function Apply() {
                         </small>
                     </div>
                 </section>
-                <section className="text-[#2D3748] body-font">
+                <section className="text-[#1A202C] body-font">
                     <div className="container px-5 py-24 mx-auto flex flex-wrap">
                         <div className="flex flex-col text-center w-full mb-12">
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-[#1A202C]">
+                            <h1 className="page-title font-medium title-font mb-4 text-[#1A202C]">
                                 ご応募の流れ
                             </h1>
                             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
@@ -354,7 +354,7 @@ export default function Apply() {
                                     </svg>
                                 </div>
                                 <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                                    <h2 className="font-medium title-font text-[#1A202C] mb-1 text-xl">
+                                    <h2 className="section-title title-font text-[#1A202C] mb-1">
                                         下記項目を確認する
                                     </h2>
                                     <p className="leading-relaxed">
@@ -425,7 +425,7 @@ export default function Apply() {
                                     </svg>
                                 </div>
                                 <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                                    <h2 className="font-medium title-font text-[#1A202C] mb-1 text-xl">
+                                    <h2 className="section-title title-font text-[#1A202C] mb-1">
                                         下にあるフォームを記入
                                     </h2>
                                     <p className="leading-relaxed">
@@ -457,7 +457,7 @@ export default function Apply() {
                                     </svg>
                                 </div>
                                 <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                                    <h2 className="font-medium title-font text-[#1A202C] mb-1 text-xl">
+                                    <h2 className="section-title title-font text-[#1A202C] mb-1">
                                         数日お待ち下さい。
                                     </h2>
                                     <p className="leading-relaxed">
@@ -468,10 +468,10 @@ export default function Apply() {
                         </div>
                     </div>
                 </section>
-                <section className="text-[#2D3748] body-font relative">
+                <section className="text-[#1A202C] body-font relative">
                     <div className="container px-5 py-24 mx-auto">
                         <div className="flex flex-col text-center w-full mb-12">
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-[#1A202C]">
+                            <h1 className="page-title font-medium title-font mb-4 text-[#1A202C]">
                                 ご応募はこちらから
                             </h1>
                             <p
@@ -492,10 +492,10 @@ export default function Apply() {
                         <div className="lg:w-1/2 md:w-2/3 mx-auto"></div>
                     </div>
                 </section>
-                <section className="text-[#2D3748] body-font">
+                <section className="text-[#1A202C] body-font">
                     <div className="container px-5 py-24 mx-auto">
                         <div className="flex flex-col text-center w-full mb-20">
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-[#1A202C]">
+                            <h1 className="page-title font-medium title-font mb-4 text-[#1A202C]">
                                 支援者の方々
                             </h1>
                             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
@@ -517,10 +517,10 @@ export default function Apply() {
                                     />
                                 </a>
                                 <div className="mt-4">
-                                    <h3 className="text-[#718096] text-xs tracking-widest title-font mb-1">
+                                    <h3 className="card-title text-[#718096] tracking-widest title-font mb-1">
                                         プログラミング教室
                                     </h3>
-                                    <h2 className="text-[#1A202C] title-font text-lg font-medium">
+                                    <h2 className="section-title text-[#1A202C] title-font">
                                         LOGYさま
                                     </h2>
                                 </div>
@@ -534,10 +534,10 @@ export default function Apply() {
                                     />
                                 </a>
                                 <div className="mt-4">
-                                    <h3 className="text-[#718096] text-xs tracking-widest title-font mb-1">
+                                    <h3 className="card-title text-[#718096] tracking-widest title-font mb-1">
                                         神山まるごと高専設立委員会
                                     </h3>
-                                    <h2 className="text-[#1A202C] title-font text-lg font-medium">
+                                    <h2 className="section-title text-[#1A202C] title-font">
                                         池田 朋弘さま
                                     </h2>
                                 </div>
@@ -554,10 +554,10 @@ export default function Apply() {
                                     />
                                 </a>
                                 <div className="mt-4">
-                                    <h3 className="text-[#718096] text-xs tracking-widest title-font mb-1">
+                                    <h3 className="card-title text-[#718096] tracking-widest title-font mb-1">
                                         子供向け教室・イベントの検索・予約サービス
                                     </h3>
-                                    <h2 className="text-[#1A202C] title-font text-lg font-medium">
+                                    <h2 className="section-title text-[#1A202C] title-font">
                                         Kids Weekendさま
                                     </h2>
                                 </div>
@@ -571,10 +571,10 @@ export default function Apply() {
                                     />
                                 </a>
                                 <div className="mt-4">
-                                    <h3 className="text-[#718096] text-xs tracking-widest title-font mb-1">
+                                    <h3 className="card-title text-[#718096] tracking-widest title-font mb-1">
                                         micro:bitプログラミング研究室 運営
                                     </h3>
-                                    <h2 className="text-[#1A202C] title-font text-lg font-medium">
+                                    <h2 className="section-title text-[#1A202C] title-font">
                                         森川 治雄さま
                                     </h2>
                                 </div>
@@ -588,10 +588,10 @@ export default function Apply() {
                                     />
                                 </a>
                                 <div className="mt-4">
-                                    <h3 className="text-[#718096] text-xs tracking-widest title-font mb-1">
+                                    <h3 className="card-title text-[#718096] tracking-widest title-font mb-1">
                                         京都産業大学 非常勤講師
                                     </h3>
-                                    <h2 className="text-[#1A202C] title-font text-lg font-medium">
+                                    <h2 className="section-title text-[#1A202C] title-font">
                                         中村 亮太さま
                                     </h2>
                                 </div>
@@ -605,10 +605,10 @@ export default function Apply() {
                                     />
                                 </a>
                                 <div className=" mt-4">
-                                    <h3 className="text-[#718096] text-xs tracking-widest title-font mb-1">
+                                    <h3 className="card-title text-[#718096] tracking-widest title-font mb-1">
                                         プログラミング学習塾
                                     </h3>
-                                    <h2 className="text-[#1A202C] title-font text-lg font-medium">
+                                    <h2 className="section-title text-[#1A202C] title-font">
                                         (e) PROさま
                                     </h2>
                                 </div>
@@ -622,10 +622,10 @@ export default function Apply() {
                                     />
                                 </a>
                                 <div className="mt-4">
-                                    <h3 className="text-[#718096] text-xs tracking-widest title-font mb-1">
+                                    <h3 className="card-title text-[#718096] tracking-widest title-font mb-1">
                                         株式会社Yoki 代表取締役社長
                                     </h3>
-                                    <h2 className="text-[#1A202C] title-font text-lg font-medium">
+                                    <h2 className="section-title text-[#1A202C] title-font">
                                         東出 風馬さま
                                     </h2>
                                 </div>
@@ -639,10 +639,10 @@ export default function Apply() {
                                     />
                                 </a>
                                 <div className="mt-4">
-                                    <h3 className="text-[#718096] text-xs tracking-widest title-font mb-1">
+                                    <h3 className="card-title text-[#718096] tracking-widest title-font mb-1">
                                         子どもプログラミング教室
                                     </h3>
-                                    <h2 className="text-[#1A202C] title-font text-lg font-medium">
+                                    <h2 className="section-title text-[#1A202C] title-font">
                                         ITeens Labさま
                                     </h2>
                                 </div>
@@ -656,10 +656,10 @@ export default function Apply() {
                                     />
                                 </a>
                                 <div className="mt-4">
-                                    <h3 className="text-[#718096] text-xs tracking-widest title-font mb-1">
+                                    <h3 className="card-title text-[#718096] tracking-widest title-font mb-1">
                                         ITeens Lab 代表
                                     </h3>
-                                    <h2 className="text-[#1A202C] title-font text-lg font-medium">
+                                    <h2 className="section-title text-[#1A202C] title-font">
                                         近藤 悟さま
                                     </h2>
                                 </div>
@@ -673,10 +673,10 @@ export default function Apply() {
                                     />
                                 </a>
                                 <div className="mt-4">
-                                    <h3 className="text-[#718096] text-xs tracking-widest title-font mb-1">
+                                    <h3 className="card-title text-[#718096] tracking-widest title-font mb-1">
                                         一般社団法人CRoots 理事
                                     </h3>
-                                    <h2 className="text-[#1A202C] title-font text-lg font-medium">
+                                    <h2 className="section-title text-[#1A202C] title-font">
                                         白髭 直樹さま
                                     </h2>
                                 </div>
@@ -690,10 +690,10 @@ export default function Apply() {
                                     />
                                 </a>
                                 <div className="mt-4">
-                                    <h3 className="text-[#718096] text-xs tracking-widest title-font mb-1">
+                                    <h3 className="card-title text-[#718096] tracking-widest title-font mb-1">
                                         NPO法人ハックジャパン 代表理事
                                     </h3>
-                                    <h2 className="text-[#1A202C] title-font text-lg font-medium">
+                                    <h2 className="section-title text-[#1A202C] title-font">
                                         小山 優輝さま
                                     </h2>
                                 </div>
@@ -710,10 +710,10 @@ export default function Apply() {
                                     />
                                 </a>
                                 <div className="mt-4">
-                                    <h3 className="text-[#718096] text-xs tracking-widest title-font mb-1">
+                                    <h3 className="card-title text-[#718096] tracking-widest title-font mb-1">
                                         crossroads代表
                                     </h3>
-                                    <h2 className="text-[#1A202C] title-font text-lg font-medium">
+                                    <h2 className="section-title text-[#1A202C] title-font">
                                         若林 健一さま
                                     </h2>
                                 </div>
@@ -730,10 +730,10 @@ export default function Apply() {
                                     />
                                 </a>
                                 <div className="mt-4">
-                                    <h3 className="text-[#718096] text-xs tracking-widest title-font mb-1">
+                                    <h3 className="card-title text-[#718096] tracking-widest title-font mb-1">
                                         地図サービス
                                     </h3>
-                                    <h2 className="text-[#1A202C] title-font text-lg font-medium">
+                                    <h2 className="section-title text-[#1A202C] title-font">
                                         株式会社Geoloniaさま
                                     </h2>
                                 </div>
@@ -747,17 +747,17 @@ export default function Apply() {
                                     />
                                 </a>
                                 <div className="mt-4">
-                                    <h3 className="text-[#718096] text-xs tracking-widest title-font mb-1"></h3>
-                                    <h2 className="text-[#1A202C] title-font text-lg font-medium"></h2>
+                                    <h3 className="card-title text-[#718096] tracking-widest title-font mb-1"></h3>
+                                    <h2 className="section-title text-[#1A202C] title-font"></h2>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section className="text-[#2D3748] body-font relative">
+                <section className="text-[#1A202C] body-font relative">
                     <div className="container px-5 py-24 mx-auto">
                         <div className="flex flex-col text-center w-full mb-12">
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-[#1A202C]">
+                            <h1 className="page-title font-medium title-font mb-4 text-[#1A202C]">
                                 お知らせ
                             </h1>
                             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
@@ -784,16 +784,16 @@ export default function Apply() {
                         </div>
                     </div>
                 </section>
-                <section className="text-[#2D3748] body-font">
+                <section className="text-[#1A202C] body-font">
                     <div className="container px-5 py-24 mx-auto flex flex-wrap">
                         <div className="flex flex-col text-center w-full mb-12">
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-[#1A202C]">
+                            <h1 className="page-title font-medium title-font mb-4 text-[#1A202C]">
                                 企画・運営
                             </h1>
                         </div>
                         <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
                             <div className="w-full sm:p-4 px-4 mb-6">
-                                <h1 className="title-font font-medium text-xl mb-2 text-[#1A202C]">
+                                <h1 className="page-title title-font mb-2 text-[#1A202C]">
                                     特定非営利活動法人ニュークリエイター・オルグ
                                 </h1>
                                 <div className="leading-relaxed">

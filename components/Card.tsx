@@ -90,7 +90,7 @@ export const Card: React.FC<CardProps> = ({
           )}
         </div>
         <h3
-          className="font-bold mb-3"
+          className="card-title mb-3"
           style={{ fontSize: '18px', lineHeight: 1.5, color: '#1A202C' }}
         >
           {title}

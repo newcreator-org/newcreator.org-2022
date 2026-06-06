@@ -1,12 +1,12 @@
 export default function Withus() {
     return (
-        <section className="text-[#2D3748] body-font">
+        <section className="text-[#1A202C] body-font">
             <div className="container px-5 py-24 mx-auto flex flex-wrap">
                 <div className="flex flex-col text-center w-full mb-20">
-                    <h2 className="text-xs text-[#1476A6] tracking-widest font-medium title-font mb-1">
+                    <h2 className="section-title text-[#1476A6] tracking-widest title-font mb-1">
                         WITH US
                     </h2>
-                    <h1 className="sm:text-3xl text-2xl font-medium title-font text-[#1A202C]">
+                    <h1 className="page-title font-medium title-font text-[#1A202C]">
                         一緒に新しい教育を作りませんか？
                     </h1>
                 </div>
@@ -21,7 +21,7 @@ export default function Withus() {
                             </svg>
                           </div> --> */}
                             <div className="flex-grow">
-                                <h2 className="text-[#1A202C] text-lg title-font font-medium mb-3">
+                                <h2 className="section-title text-[#1A202C] title-font mb-3">
                                     プロジェクトスタッフ
                                 </h2>
                                 <p className="leading-relaxed text-base">
@@ -58,7 +58,7 @@ export default function Withus() {
                             </svg>
                           </div> --> */}
                             <div className="flex-grow">
-                                <h2 className="text-[#1A202C] text-lg title-font font-medium mb-3">
+                                <h2 className="section-title text-[#1A202C] title-font mb-3">
                                     コラボレーター
                                 </h2>
                                 <p className="leading-relaxed text-base">
@@ -95,7 +95,7 @@ export default function Withus() {
                                         </svg>
                                       </div> --> */}
                             <div className="flex-grow">
-                                <h2 className="text-[#1A202C] text-lg title-font font-medium mb-3">
+                                <h2 className="section-title text-[#1A202C] title-font mb-3">
                                     企業スポンサー
                                 </h2>
                                 <p className="leading-relaxed text-base">
@@ -132,7 +132,7 @@ export default function Withus() {
                                         </svg>
                                       </div> --> */}
                             <div className="flex-grow">
-                                <h2 className="text-[#1A202C] text-lg title-font font-medium mb-3">
+                                <h2 className="section-title text-[#1A202C] title-font mb-3">
                                     協力コミュニティー
                                 </h2>
                                 <p className="leading-relaxed text-base">
@@ -159,7 +159,7 @@ export default function Withus() {
                         </div>
                     </div>
                 </div>
-                {/* <!-- <h2 className="sm:text-3xl text-2xl text-[#1A202C] font-medium title-font mb-2 md:w-2/5">お問い合わせ</h2> --> */}
+                {/* <!-- <h2 className="page-title text-[#1A202C] font-medium title-font mb-2 md:w-2/5">お問い合わせ</h2> --> */}
                 <div className=" text-center w-full mt-10">
                     <p className="leading-relaxed text-base">
                         各種応募、コラボレーションのご提案などを積極的に募集しております。

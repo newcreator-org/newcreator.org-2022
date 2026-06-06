@@ -14,7 +14,7 @@ export default function FooterCta() {
             <p className="text-xs font-bold tracking-widest mb-3" style={{ color: '#95D4E8' }}>
               DONATION
             </p>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 leading-snug">
+            <h2 className="page-title font-bold text-white mb-4 leading-snug">
               あなたの支援が、
               <br />子どもの「作れた！」になる
             </h2>
@@ -50,7 +50,7 @@ export default function FooterCta() {
             <p className="text-xs font-bold tracking-widest mb-3" style={{ color: '#95D4E8' }}>
               VOLUNTEER &amp; PARTNER
             </p>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 leading-snug">
+            <h2 className="page-title font-bold text-white mb-4 leading-snug">
               スキルより、
               <br />気持ちを持ってきてほしい
             </h2>

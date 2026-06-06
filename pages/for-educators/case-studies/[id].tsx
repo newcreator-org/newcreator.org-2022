@@ -22,7 +22,7 @@ const schoolTypeColor = (schoolType: string) => {
     case "公立中学校":
       return "bg-teal-100 text-teal-700";
     default:
-      return "bg-[#EDF6FB] text-[#2D3748]";
+      return "bg-[#EDF6FB] text-[#1A202C]";
   }
 };
 
@@ -32,7 +32,7 @@ export default function CaseStudyDetail({ caseStudy }) {
       <>
         <Header />
         <main className="container px-5 py-20 mx-auto max-w-4xl text-center">
-          <h1 className="text-2xl font-bold text-[#1A202C] mb-4">事例が見つかりません</h1>
+          <h1 className="page-title text-[#1A202C] mb-4">事例が見つかりません</h1>
           <Link href="/for-educators/case-studies">
             <a className="text-[#1476A6] hover:text-[#1476A6]">事例一覧に戻る</a>
           </Link>
@@ -68,17 +68,17 @@ export default function CaseStudyDetail({ caseStudy }) {
 
               <div className="mb-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className={`inline-block px-3 py-1 rounded-sm text-xs font-semibold ${schoolTypeColor(caseStudy.schoolType)}`}>
+                  <span className={`inline-block px-3 py-1 rounded-sm text-xs font-bold ${schoolTypeColor(caseStudy.schoolType)}`}>
                     {caseStudy.schoolType}
                   </span>
                   <span className="text-sm text-[#718096]">
                     {dayjs(caseStudy.date).format("YYYY年MM月")}
                   </span>
                 </div>
-                <h2 className="text-lg text-[#4A5568] mb-2">
+                <h2 className="section-title text-[#4A5568] mb-2">
                   {caseStudy.school}
                 </h2>
-                <h1 className="text-3xl md:text-4xl font-bold text-[#1A202C] mb-4">
+                <h1 className="page-title font-bold text-[#1A202C] mb-4">
                   {caseStudy.title}
                 </h1>
                 <p className="text-lg text-[#4A5568]">
@@ -93,15 +93,15 @@ export default function CaseStudyDetail({ caseStudy }) {
 
               <div className="mt-12 pt-8 border-t border-[#E2E8F0]">
                 <div className="rounded-sm p-8" style={{ background: '#EDF6FB' }}>
-                  <h2 className="text-2xl font-bold text-[#1A202C] mb-4">
+                  <h2 className="section-title text-[#1A202C] mb-4">
                     貴校でも導入してみませんか
                   </h2>
-                  <p className="text-[#2D3748] mb-6">
+                  <p className="text-[#1A202C] mb-6">
                     学校の規模や状況に合わせて、最適なプランをご提案いたします。まずはお気軽にご相談ください。
                   </p>
                   <Link href="/apply">
                     <a
-                      className="inline-block px-8 py-3 rounded-sm font-semibold transition-colors"
+                      className="inline-block px-8 py-3 rounded-sm font-bold transition-colors"
                       style={{ background: '#1476A6', color: '#fff' }}
                       onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.background = '#0F5A80'; }}
                       onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.background = '#1476A6'; }}

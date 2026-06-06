@@ -23,15 +23,15 @@ const InformationPage: NextPage<InformationPageProps> = ({ news }) => {
       <Header />
       <main>
         <section
-          className="text-[#2D3748] body-font overflow-hidden"
+          className="text-[#1A202C] body-font overflow-hidden"
           id="information"
         >
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col text-center w-full mb-20">
-              <h2 className="text-xs text-[#1476A6] tracking-widest font-medium title-font mb-1">
+              <h2 className="section-title text-[#1476A6] tracking-widest title-font mb-1">
                 Information
               </h2>
-              <h1 className="sm:text-3xl text-2xl font-medium title-font text-[#1A202C]">
+              <h1 className="page-title font-medium title-font text-[#1A202C]">
                 お知らせ
               </h1>
             </div>
@@ -49,7 +49,7 @@ const InformationPage: NextPage<InformationPageProps> = ({ news }) => {
                       </span>
                     </div>
                     <div className="mt-1">
-                      <h2 className="text-md text-[#1A202C] title-font mb-2 leading-relaxed font-medium">
+                      <h2 className="section-title text-md text-[#1A202C] title-font mb-2">
                         {news.title}
                       </h2>
                     </div>

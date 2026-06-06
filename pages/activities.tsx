@@ -177,7 +177,7 @@ export default function Activities() {
         <section className="text-gray-600 body-font">
           <div className="container mx-auto flex px-5 py-20 items-center justify-center flex-col">
             <div className="text-center lg:w-2/3 w-full">
-              <h1 className="title-font sm:text-5xl text-4xl mb-4 font-bold text-[#1A202C] animate-fade-in-up">
+              <h1 className="title-font page-title mb-4 font-bold text-[#1A202C] animate-fade-in-up">
                 活動実績
               </h1>
               <p className="mb-8 leading-7 text-lg text-[#718096] animate-fade-in-up-delay">
@@ -192,26 +192,26 @@ export default function Activities() {
             <div className="container px-5 py-16 mx-auto">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
                 <div className="text-center">
-                  <p className="text-4xl md:text-5xl font-bold text-[#1A202C] tracking-tight">
-                    22<span className="text-lg font-normal text-[#A0AEC0]">件</span>
+                  <p className="page-title font-bold text-[#1A202C] tracking-tight">
+                    22<span className="text-lg font-normal text-[#718096]">件</span>
                   </p>
                   <p className="mt-2 text-sm text-[#718096]">生成AI研修実施数</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-4xl md:text-5xl font-bold text-[#1A202C] tracking-tight">
-                    10<span className="text-lg font-normal text-[#A0AEC0]">+</span>
+                  <p className="page-title font-bold text-[#1A202C] tracking-tight">
+                    10<span className="text-lg font-normal text-[#718096]">+</span>
                   </p>
                   <p className="mt-2 text-sm text-[#718096]">都道府県</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-4xl md:text-5xl font-bold text-[#1A202C] tracking-tight">
-                    12<span className="text-lg font-normal text-[#A0AEC0]">件</span>
+                  <p className="page-title font-bold text-[#1A202C] tracking-tight">
+                    12<span className="text-lg font-normal text-[#718096]">件</span>
                   </p>
                   <p className="mt-2 text-sm text-[#718096]">生徒向け研修</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-4xl md:text-5xl font-bold text-[#1A202C] tracking-tight">
-                    7<span className="text-lg font-normal text-[#A0AEC0]">件</span>
+                  <p className="page-title font-bold text-[#1A202C] tracking-tight">
+                    7<span className="text-lg font-normal text-[#718096]">件</span>
                   </p>
                   <p className="mt-2 text-sm text-[#718096]">教員向け研修</p>
                 </div>
@@ -223,7 +223,7 @@ export default function Activities() {
         <ScrollFadeIn>
           <section className="text-gray-600 body-font bg-[#F8FCFF]">
             <div className="container px-5 py-20 mx-auto">
-              <h1 className="sm:text-3xl text-2xl font-bold title-font text-[#1A202C] mb-12 text-center">
+              <h1 className="page-title font-bold title-font text-[#1A202C] mb-12 text-center">
                 生成AI活用研修 実施一覧
               </h1>
 
@@ -271,7 +271,7 @@ export default function Activities() {
         <section className="text-gray-600 body-font" style={{ background: '#1476A6' }}>
           <div className="container px-5 py-16 mx-auto">
             <div className="flex flex-col text-center w-full">
-              <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-white">
+              <h1 className="page-title font-bold title-font mb-4 text-white">
                 研修・ワークショップのご依頼
               </h1>
               <p className="lg:w-2/3 mx-auto leading-7 text-base text-white opacity-80 mb-8">

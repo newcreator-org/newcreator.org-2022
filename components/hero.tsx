@@ -20,8 +20,8 @@ export default function Hero() {
 
               {/* メインコピー: 短く、余白を持たせる */}
               <h1
-                className="text-5xl font-bold leading-[1.2] mb-6 animate-fade-in-up"
-                style={{ color: "#1A202C", letterSpacing: "-0.02em" }}
+                className="hero-title mb-6 animate-fade-in-up"
+                style={{ letterSpacing: "-0.02em" }}
               >
                 学びは、
                 <br />

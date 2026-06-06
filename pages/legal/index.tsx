@@ -46,7 +46,7 @@ export default function LegalIndex() {
                 LEGAL
               </p>
               <h1
-                className="text-3xl sm:text-4xl font-bold mb-4"
+                className="page-title mb-4"
                 style={{ color: "#1A202C" }}
               >
                 法的情報
@@ -71,7 +71,7 @@ export default function LegalIndex() {
                       {page.updated}
                     </p>
                     <h2
-                      className="text-xl font-semibold mb-2 group-hover:underline"
+                      className="section-title mb-2 group-hover:underline"
                       style={{ color: "#1476A6" }}
                     >
                       {page.title}

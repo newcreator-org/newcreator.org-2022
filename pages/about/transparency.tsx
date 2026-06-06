@@ -44,7 +44,7 @@ export default function Transparency() {
                 TRANSPARENCY
               </p>
               <h1
-                className="title-font sm:text-4xl text-3xl mb-5 font-bold animate-fade-in-up"
+                className="title-font page-title mb-5 font-bold animate-fade-in-up"
                 style={{ color: "#1A202C" }}
               >
                 情報公開・透明性
@@ -77,7 +77,7 @@ export default function Transparency() {
           <section className="body-font bg-white">
             <div className="container px-5 py-16 mx-auto">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-2xl font-bold mb-2" style={{ color: "#1A202C" }}>
+                <h2 className="section-title mb-2" style={{ color: "#1A202C" }}>
                   定款・規約
                 </h2>
                 <p className="text-sm mb-8" style={{ color: "#718096" }}>
@@ -110,7 +110,7 @@ export default function Transparency() {
                         <div className="w-8 h-8 flex items-center justify-center" style={{ color: "#1476A6" }}>
                           <DocIcon />
                         </div>
-                        <h3 className="font-bold text-base" style={{ color: "#1A202C" }}>{title}</h3>
+                        <h3 className="card-title" style={{ color: "#1A202C" }}>{title}</h3>
                       </div>
                       <p className="text-sm leading-7 mb-3" style={{ color: "#4A5568" }}>{desc}</p>
                       <p className="text-xs mb-4" style={{ color: "#A0AEC0" }}>{note}</p>
@@ -134,7 +134,7 @@ export default function Transparency() {
           <section className="body-font" style={{ background: "#F8FCFF" }}>
             <div className="container px-5 py-16 mx-auto">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-2xl font-bold mb-2" style={{ color: "#1A202C" }}>
+                <h2 className="section-title mb-2" style={{ color: "#1A202C" }}>
                   財務情報
                 </h2>
                 <p className="text-sm mb-8" style={{ color: "#718096" }}>
@@ -143,7 +143,7 @@ export default function Transparency() {
 
                 {/* 収支報告テーブル */}
                 <div className="bg-white rounded-sm p-8 mb-6 border" style={{ borderColor: "rgba(20,118,166,0.12)" }}>
-                  <h3 className="text-lg font-bold mb-6" style={{ color: "#1A202C" }}>
+                  <h3 className="card-title mb-6" style={{ color: "#1A202C" }}>
                     2023年度 収支報告
                   </h3>
                   <div className="overflow-x-auto">
@@ -207,7 +207,7 @@ export default function Transparency() {
 
                 {/* 寄付金の使途 */}
                 <div className="bg-white rounded-sm p-8 mb-6 border" style={{ borderColor: "rgba(20,118,166,0.12)" }}>
-                  <h3 className="text-lg font-bold mb-6" style={{ color: "#1A202C" }}>
+                  <h3 className="card-title mb-6" style={{ color: "#1A202C" }}>
                     寄付金の使途内訳（2023年度）
                   </h3>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -231,7 +231,7 @@ export default function Transparency() {
 
                 {/* 年次報告書 */}
                 <div className="bg-white rounded-sm p-8 border" style={{ borderColor: "rgba(20,118,166,0.12)" }}>
-                  <h3 className="text-lg font-bold mb-6" style={{ color: "#1A202C" }}>
+                  <h3 className="card-title mb-6" style={{ color: "#1A202C" }}>
                     年次報告書
                   </h3>
                   <div className="space-y-3">
@@ -263,7 +263,7 @@ export default function Transparency() {
           <section className="body-font bg-white">
             <div className="container px-5 py-16 mx-auto">
               <div className="max-w-3xl mx-auto">
-                <h2 className="text-2xl font-bold mb-2" style={{ color: "#1A202C" }}>
+                <h2 className="section-title mb-2" style={{ color: "#1A202C" }}>
                   役員名簿
                 </h2>
                 <p className="text-sm mb-8" style={{ color: "#718096" }}>
@@ -314,7 +314,7 @@ export default function Transparency() {
           style={{ background: "#1476A6" }}
         >
           <div className="container px-5 py-16 mx-auto text-center">
-            <h2 className="sm:text-2xl text-xl font-bold text-white mb-4">
+            <h2 className="section-title text-white mb-4">
               公開情報についてご不明な点は、お気軽に
             </h2>
             <p className="text-base mb-8" style={{ color: "rgba(255,255,255,0.80)" }}>

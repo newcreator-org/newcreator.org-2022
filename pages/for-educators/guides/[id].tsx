@@ -21,7 +21,7 @@ const categoryColor = (category: string) => {
     case "トレンド・展望編":
       return "bg-[#EDF6FB] text-[#1476A6]";
     case "管理職・ICT担当者向け":
-      return "bg-[#EDF6FB] text-[#2D3748]";
+      return "bg-[#EDF6FB] text-[#1A202C]";
     default:
       return "bg-[#EDF6FB] text-[#1476A6]";
   }
@@ -33,7 +33,7 @@ export default function GuideDetail({ guide }) {
       <>
         <Header />
         <main className="container px-5 py-20 mx-auto max-w-4xl text-center">
-          <h1 className="text-2xl font-bold text-[#1A202C] mb-4">ガイドが見つかりません</h1>
+          <h1 className="page-title text-[#1A202C] mb-4">ガイドが見つかりません</h1>
           <Link href="/for-educators/guides">
             <a className="text-[#1476A6] hover:text-[#1476A6]">ガイド一覧に戻る</a>
           </Link>
@@ -69,14 +69,14 @@ export default function GuideDetail({ guide }) {
 
               <div className="mb-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className={`inline-block px-3 py-1 rounded-sm text-xs font-semibold ${categoryColor(guide.category)}`}>
+                  <span className={`inline-block px-3 py-1 rounded-sm text-xs font-bold ${categoryColor(guide.category)}`}>
                     {guide.category}
                   </span>
                   <span className="text-sm text-[#718096]">
                     {dayjs(guide.date).format("YYYY年MM月DD日")}
                   </span>
                 </div>
-                <h1 className="text-3xl md:text-4xl font-bold text-[#1A202C] mb-4">
+                <h1 className="page-title font-bold text-[#1A202C] mb-4">
                   {guide.title}
                 </h1>
                 <p className="text-lg text-[#4A5568]">
@@ -91,15 +91,15 @@ export default function GuideDetail({ guide }) {
 
               <div className="mt-12 pt-8 border-t border-[#E2E8F0]">
                 <div className="rounded-sm p-8" style={{ background: '#EDF6FB' }}>
-                  <h2 className="text-2xl font-bold text-[#1A202C] mb-4">
+                  <h2 className="section-title text-[#1A202C] mb-4">
                     導入のご相談はこちら
                   </h2>
-                  <p className="text-[#2D3748] mb-6">
+                  <p className="text-[#1A202C] mb-6">
                     研修のご依頼や導入相談など、お気軽にお問い合わせください。貴校の状況に合わせた最適なプランをご提案いたします。
                   </p>
                   <Link href="/apply">
                     <a
-                      className="inline-block px-8 py-3 rounded-sm font-semibold transition-colors"
+                      className="inline-block px-8 py-3 rounded-sm font-bold transition-colors"
                       style={{ background: '#1476A6', color: '#fff' }}
                       onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.background = '#0F5A80'; }}
                       onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.background = '#1476A6'; }}

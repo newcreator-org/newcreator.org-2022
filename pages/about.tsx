@@ -15,7 +15,7 @@ export default function About() {
         <section className="body-font bg-white border-b border-[rgba(20,118,166,0.10)]">
           <div className="container mx-auto px-5 py-20">
             <div className="max-w-2xl">
-              <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 animate-fade-in-up" style={{ color: '#1A202C' }}>
+              <h1 className="page-title font-bold leading-tight mb-6 animate-fade-in-up" style={{ color: '#1A202C' }}>
                 私たちについて
               </h1>
               <p className="text-lg leading-8 animate-fade-in-up-delay" style={{ color: '#4A5568' }}>
@@ -32,7 +32,7 @@ export default function About() {
           <section className="body-font bg-white">
             <div className="container px-5 py-20 mx-auto">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-2xl font-bold mb-12" style={{ color: '#1A202C' }}>
+                <h2 className="section-title mb-12" style={{ color: '#1A202C' }}>
                   ミッション・ビジョン
                 </h2>
                 <div className="space-y-12">
@@ -81,7 +81,7 @@ export default function About() {
           <section className="body-font" style={{ background: '#F8FCFF' }}>
             <div className="container px-5 py-20 mx-auto">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-2xl font-bold mb-4" style={{ color: '#1A202C' }}>
+                <h2 className="section-title mb-4" style={{ color: '#1A202C' }}>
                   私たちが向き合う3つの教育格差
                 </h2>
                 <p className="text-base leading-7 mb-12" style={{ color: '#718096' }}>
@@ -113,7 +113,7 @@ export default function About() {
                       className="issue-card"
                     >
                       <p className="text-xs font-bold mb-3" style={{ color: '#1476A6' }}>{tag}</p>
-                      <h3 className="text-xl font-bold mb-4 leading-snug" style={{ color: '#1A202C' }}>{heading}</h3>
+                      <h3 className="card-title mb-4" style={{ color: '#1A202C' }}>{heading}</h3>
                       <p className="leading-8 text-base mb-3" style={{ color: '#4A5568' }}>{body}</p>
                       <p className="text-xs" style={{ color: '#A0AEC0' }}>出典: {source}</p>
                     </div>
@@ -129,7 +129,7 @@ export default function About() {
           <section className="body-font bg-white">
             <div className="container px-5 py-20 mx-auto">
               <div className="max-w-3xl mx-auto">
-                <h2 className="text-2xl font-bold mb-8" style={{ color: '#1A202C' }}>法人概要</h2>
+                <h2 className="section-title mb-8" style={{ color: '#1A202C' }}>法人概要</h2>
                 <div className="overflow-hidden" style={{ border: '1px solid rgba(20,118,166,0.12)', borderRadius: '4px' }}>
                   <table className="w-full text-left">
                     <tbody>
@@ -174,7 +174,7 @@ export default function About() {
           <section className="body-font" style={{ background: '#F8FCFF' }}>
             <div className="container px-5 py-20 mx-auto">
               <div className="max-w-3xl mx-auto">
-                <h2 className="text-2xl font-bold mb-12" style={{ color: '#1A202C' }}>沿革</h2>
+                <h2 className="section-title mb-12" style={{ color: '#1A202C' }}>沿革</h2>
                 <div className="space-y-0">
                   {[
                     { year: '2018年6月', title: '初のワークショップ開催', desc: '東京都内で初のプログラミングワークショップを開催、30名が参加' },
@@ -208,7 +208,7 @@ export default function About() {
           <section className="body-font bg-white">
             <div className="container px-5 py-20 mx-auto">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-2xl font-bold mb-12" style={{ color: '#1A202C' }}>チーム</h2>
+                <h2 className="section-title mb-12" style={{ color: '#1A202C' }}>チーム</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                   {[
                     { name: '改野 由尚', role: '代表理事', bio: 'プログラミング教育の普及に取り組む。全国の学校・自治体と連携し、子どもたちに「作れた！」の体験を届けている。' },
@@ -237,7 +237,7 @@ export default function About() {
           <section className="body-font" style={{ background: '#F8FCFF' }}>
             <div className="container px-5 py-16 mx-auto">
               <div className="max-w-3xl mx-auto">
-                <h2 className="text-xl font-bold mb-8" style={{ color: '#1A202C' }}>関連情報</h2>
+                <h2 className="section-title mb-8" style={{ color: '#1A202C' }}>関連情報</h2>
                 <div className="grid md:grid-cols-2 gap-4">
                   {[
                     { href: '/about/company', label: '法人概要の詳細' },

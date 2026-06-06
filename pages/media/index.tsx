@@ -23,7 +23,7 @@ const categoryColor = (category: string) => {
     case "キャリア教育":
       return "bg-[#EDF6FB] text-[#1476A6]";
     default:
-      return "bg-[#EDF6FB] text-[#2D3748]";
+      return "bg-[#EDF6FB] text-[#1A202C]";
   }
 };
 
@@ -37,10 +37,10 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
         <section className="text-gray-600 body-font bg-[#F8FCFF]">
           <div className="container mx-auto flex px-5 py-20 items-center justify-center flex-col">
             <div className="text-center lg:w-2/3 w-full">
-              <h1 className="title-font sm:text-5xl text-4xl mb-4 font-bold text-[#1A202C] animate-fade-in-up">
+              <h1 className="title-font page-title mb-4 font-bold text-[#1A202C] animate-fade-in-up">
                 メディア
               </h1>
-              <p className="mb-8 leading-7 text-lg text-[#2D3748] animate-fade-in-up-delay">
+              <p className="mb-8 leading-7 text-lg text-[#1A202C] animate-fade-in-up-delay">
                 AI教育・IT教育・キャリア教育に関するコラムをお届けします
               </p>
             </div>
@@ -48,13 +48,13 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
         </section>
 
         <ScrollFadeIn>
-          <section className="text-[#2D3748] body-font overflow-hidden">
+          <section className="text-[#1A202C] body-font overflow-hidden">
             <div className="container px-5 py-20 mx-auto">
               <div className="flex flex-col text-center w-full mb-12">
-                <h2 className="text-xs tracking-[0.2em] font-medium title-font mb-1" style={{ color: '#1476A6' }}>
+                <h2 className="section-title tracking-[0.2em] title-font mb-1" style={{ color: '#1476A6' }}>
                   MEDIA
                 </h2>
-                <h1 className="sm:text-3xl text-2xl font-bold title-font text-[#1A202C]">
+                <h1 className="page-title font-bold title-font text-[#1A202C]">
                   記事一覧
                 </h1>
               </div>
@@ -72,7 +72,7 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
                             >
                               {post.category}
                             </span>
-                            <h2 className="text-lg text-[#1A202C] font-bold title-font mb-2 group-hover:transition-colors" style={{ color: '#1476A6' }}>
+                            <h2 className="section-title text-[#1A202C] title-font mb-2 group-hover:transition-colors" style={{ color: '#1476A6' }}>
                               {post.title}
                             </h2>
                             <p className="text-sm text-[#718096] mb-3">
@@ -95,7 +95,7 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
         <section className="text-white body-font" style={{ background: '#1476A6' }}>
           <div className="container px-5 py-16 mx-auto">
             <div className="flex flex-col text-center w-full">
-              <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-white">
+              <h1 className="page-title font-bold title-font mb-4 text-white">
                 一緒に子どもたちの未来を創りませんか?
               </h1>
               <p className="lg:w-2/3 mx-auto leading-7 text-base text-white mb-8">

@@ -21,15 +21,15 @@ const AchivePage: NextPage<{ archives: AchieveType[] }> = ({ archives }) => {
       <Header />
       <main>
         <section
-          className="text-[#2D3748] body-font overflow-hidden"
+          className="text-[#1A202C] body-font overflow-hidden"
           id="information"
         >
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col text-center w-full mb-20">
-              <h2 className="text-xs text-[#1476A6] tracking-widest font-medium title-font mb-1">
+              <h2 className="section-title text-[#1476A6] tracking-widest title-font mb-1">
                 Archives
               </h2>
-              <h1 className="sm:text-3xl text-2xl font-medium title-font text-[#1A202C]">
+              <h1 className="page-title font-medium title-font text-[#1A202C]">
                 活動アーカイブ
               </h1>
             </div>
@@ -43,10 +43,10 @@ const AchivePage: NextPage<{ archives: AchieveType[] }> = ({ archives }) => {
                         src="/ogp.png"
                         alt="content"
                       />
-                      <h2 className="text-lg text-[#1A202C] font-medium title-fon mb-2">
+                      <h2 className="section-title text-[#1A202C] title-fon mb-2">
                         {archive.title}
                       </h2>
-                      <h3 className="tracking-widest text-[#1476A6] text-xs font-medium title-font">
+                      <h3 className="card-title tracking-widest text-[#1476A6] title-font">
                         {dayjs(archive.date).format("YYYY.MM.DD")}
                       </h3>
                       <p className="leading-relaxed text-base">
