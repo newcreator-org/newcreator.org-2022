@@ -1,8 +1,3 @@
-// ============================================================
-// Hero — newCreator.org Design System v2
-// CSS Modules / SCSS 廃止 → Tailwind + CSS Custom Properties
-// ============================================================
-
 export default function Hero() {
   return (
     <>
@@ -17,70 +12,52 @@ export default function Hero() {
             <div className="mb-6 flex w-full flex-col justify-center sm:mb-12 lg:mb-0 lg:w-1/3 lg:pt-48 lg:pb-24 mt-10 lg:mt-0">
 
               <p
-                className="text-xs font-bold tracking-widest mb-4 animate-fade-in-up"
+                className="text-xs font-bold tracking-widest mb-6 animate-fade-in-up"
                 style={{ color: "#1476A6" }}
               >
                 NPO法人ニュークリエイター・オルグ
               </p>
 
+              {/* メインコピー: 短く、余白を持たせる */}
               <h1
-                className="text-4xl font-bold sm:text-5xl md:mb-2 md:text-5xl leading-tight mt-2 animate-fade-in-up"
-                style={{ color: "#1A202C" }}
+                className="text-5xl font-bold leading-[1.2] mb-6 animate-fade-in-up"
+                style={{ color: "#1A202C", letterSpacing: "-0.02em" }}
               >
-                すべての子どもに、
-              </h1>
-              <h1
-                className="mb-4 text-4xl font-bold sm:text-5xl md:mb-6 md:text-5xl leading-tight animate-fade-in-up-delay"
-                style={{ color: "#1476A6" }}
-              >
-                学ぶ権利を。
+                学びは、
+                <br />
+                <span style={{ color: "#1476A6" }}>どこにいても</span>
+                <br />
+                届くべきだ。
               </h1>
 
+              {/* サブコピー: 体験ベースの言葉 */}
               <p
-                className="max-w-md leading-7 xl:text-lg animate-fade-in-delay"
+                className="max-w-sm leading-8 text-base mb-8 animate-fade-in-delay"
                 style={{ color: "#4A5568" }}
               >
-                地域格差・不登校・ジェンダーギャップ——
+                学校に行けない子がいる。
                 <br />
-                教育の「届かない」をなくすために、
+                地方に生まれただけで選択肢が狭まる子がいる。
                 <br />
-                私たちはSTEAM教育で動き続けます。
+                「理系は男の子のもの」と思い込んでいる女の子がいる。
+                <br />
+                <br />
+                そういう現実を変えたくて、私たちは動いています。
               </p>
 
-              {/* KPI バッジ */}
-              <div className="flex flex-wrap gap-4 mt-6 animate-fade-in-delay">
-                {[
-                  { value: "1,000+", label: "受講者数" },
-                  { value: "10+",    label: "都道府県" },
-                  { value: "2016",   label: "活動開始" },
-                ].map(({ value, label }) => (
-                  <div
-                    key={label}
-                    className="rounded-lg px-4 py-2 text-center"
-                    style={{
-                      background: "rgba(20,118,166,0.07)",
-                      border: "1px solid rgba(20,118,166,0.15)",
-                    }}
-                  >
-                    <p className="text-xl font-bold" style={{ color: "#1476A6" }}>{value}</p>
-                    <p className="text-xs" style={{ color: "#718096" }}>{label}</p>
-                  </div>
-                ))}
-              </div>
-
               {/* CTAボタン */}
-              <div className="flex flex-wrap gap-3 mt-8 animate-fade-in-delay">
+              <div className="flex flex-wrap gap-3 animate-fade-in-delay">
                 <a
                   href="#social-issues"
                   className="inline-flex items-center rounded-lg px-6 py-3 text-white font-bold text-sm transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
                   style={{
                     background: "#1476A6",
-                    boxShadow: "0 4px 12px rgba(20,118,166,0.30)",
+                    boxShadow: "0 4px 12px rgba(20,118,166,0.25)",
                   }}
                   onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.background = "#0F5A80"; }}
                   onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.background = "#1476A6"; }}
                 >
-                  私たちが向き合う課題
+                  私たちが向き合う現実
                 </a>
                 <a
                   href="https://syncable.biz/associate/newcreator-org"
@@ -90,7 +67,7 @@ export default function Hero() {
                   style={{
                     background: "#FDCA60",
                     color: "#1A202C",
-                    boxShadow: "0 4px 12px rgba(253,202,96,0.35)",
+                    boxShadow: "0 4px 12px rgba(253,202,96,0.30)",
                   }}
                   onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.background = "#F5B730"; }}
                   onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.background = "#FDCA60"; }}
@@ -98,13 +75,21 @@ export default function Hero() {
                   活動を支援する
                 </a>
               </div>
+
+              {/* 実績: 数字より文脈を先に */}
+              <p
+                className="mt-10 text-xs leading-6 animate-fade-in-delay"
+                style={{ color: "#A0AEC0" }}
+              >
+                2016年から活動 ／ 全国10都道府県以上 ／ 累計1,000人以上の子どもたちと
+              </p>
             </div>
 
             {/* 画像 */}
             <div className="mb-12 flex w-full md:mb-16 lg:w-2/3">
               <div
                 className="relative top-12 left-12 z-10 -ml-12 overflow-hidden rounded-2xl md:top-16 md:left-16 lg:ml-0"
-                style={{ boxShadow: "0 8px 24px rgba(20,118,166,0.15)" }}
+                style={{ boxShadow: "0 12px 32px rgba(20,118,166,0.12)" }}
               >
                 <img
                   src="/img/hero3.webp"
@@ -115,7 +100,7 @@ export default function Hero() {
               </div>
               <div
                 className="overflow-hidden rounded-2xl"
-                style={{ boxShadow: "0 8px 24px rgba(20,118,166,0.15)" }}
+                style={{ boxShadow: "0 12px 32px rgba(20,118,166,0.12)" }}
               >
                 <img
                   src="/img/hero2.webp"

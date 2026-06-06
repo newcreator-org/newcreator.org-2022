@@ -69,30 +69,25 @@ export default function Home({ news, archives, media }) {
               <div className="container px-5 py-20 mx-auto flex flex-wrap">
                 <div className="mb-6 md:w-1/3">
                   <h1 className="sm:text-3xl text-2xl font-bold title-font text-gray-900">
-                    newCreator.org とは？
+                    なぜ、私たちはこれをやっているのか
                   </h1>
                 </div>
                 <div className="md:w-2/3 md:pl-6">
-                  <p className="leading-7 text-base">
-                    特定非営利活動法人ニュークリエイター・オルグは、「全国の子どもたちにSTEAM教育を格差なく届ける」というビジョンのもと活動を行っております。
-                    <br />
-                    とりわけSTEAM教育は、都市部と地方部で大きな環境の差があります。
-                    <br />
-                    文部科学省の調査でもプログラミング教育の趣旨、目的、基本的な考え方などの情報が不足していることから都市部と比較して地方部でのプログラミング・STEAMに関する教育が遅れていることがわかっていることのほか、子どもが進路や将来を考えるときに参考となるロールモデルが身近にいないことなど、地方が抱える課題は大きい
-                    と考えます。
-                    <br />
-                    そのような課題の解決に向け、全国の子どもたちが隔てなくSTEAMに親しみ、利活用できるようにするために、オンライン及び全国各地でのイベントを実施しています。
+                  <p className="leading-8 text-base text-gray-600">
+                    初めてプログラミングに触れたときのことを覚えている子どもは、いまもたくさんいます。「作れた！」と目が輝く子どもたちの顔は、何年たっても忘れられません。
+                  </p>
+                  <p className="leading-8 text-base text-gray-600 mt-4">
+                    でも、その機会は平等に届いていない。学校に行けない子、地方に住む子、「私には無理」と思い込んでいる女の子……そういった子たちにこそ、「作れた！」の体験を届けたい。それが、私たちの出発点です。
                   </p>
                 </div>
               </div>
               <div className="container px-5 mx-auto pb-16">
-                <div className="bg-gray-50 px-8 py-12 rounded-lg text-center">
-                  <p className="text-xs font-bold tracking-widest mb-3" style={{ color: '#1476A6' }}>VISION</p>
-                  <h2 className="sm:text-2xl text-xl font-bold text-gray-900 mb-2">
-                    STEAM教育を全国の子どもたちに格差なく届ける
-                  </h2>
-                  <p className="text-gray-400 text-sm italic">
-                    Delivering STEAM education to all children without disparity
+                <div className="px-8 py-10 rounded-lg" style={{ borderLeft: '4px solid #1476A6', background: '#F8FCFF' }}>
+                  <p className="sm:text-xl text-lg font-bold text-gray-900 leading-relaxed">
+                    「STEAM教育を、全国の子どもたちに格差なく」
+                  </p>
+                  <p className="text-sm mt-2" style={{ color: '#718096' }}>
+                    —— newCreator.org のビジョン
                   </p>
                 </div>
               </div>
@@ -245,29 +240,24 @@ export default function Home({ news, archives, media }) {
                     先生・学校関係者の方へ
                   </h2>
                   <p className="text-lg max-w-2xl mx-auto" style={{ color: 'rgba(255,255,255,0.85)' }}>
-                    教育現場でのAI活用を全面的にサポートします。<br />
-                    研修から導入支援まで、貴校の状況に合わせた最適なプランをご提案いたします。
+                    「導入したいけど、何から始めればいいかわからない」<br />
+                    そんな先生の相談相手になれるよう、私たちはいます。
                   </p>
                 </div>
-                <div className="grid md:grid-cols-3 gap-6 mb-8">
-                  <div className="rounded-xl p-6 transition-all" style={{ background: 'rgba(255,255,255,0.12)' }}>
-                    <h3 className="text-xl font-bold mb-2">出張研修</h3>
-                    <p className="text-sm" style={{ color: 'rgba(255,255,255,0.80)' }}>
-                      10都道府県22校で実施。生徒向け・教員向けの実践的な研修を提供します。
-                    </p>
-                  </div>
-                  <div className="rounded-xl p-6 transition-all" style={{ background: 'rgba(255,255,255,0.12)' }}>
-                    <h3 className="text-xl font-bold mb-2">AI導入支援</h3>
-                    <p className="text-sm" style={{ color: 'rgba(255,255,255,0.80)' }}>
-                      計画策定から運用定着まで一貫サポート。ガイドライン整備も支援します。
-                    </p>
-                  </div>
-                  <div className="rounded-xl p-6 transition-all" style={{ background: 'rgba(255,255,255,0.12)' }}>
-                    <h3 className="text-xl font-bold mb-2">プライベートGPT</h3>
-                    <p className="text-sm" style={{ color: 'rgba(255,255,255,0.80)' }}>
-                      安全な生成AI環境を提供。生徒数単位の課金で柔軟に導入できます。
-                    </p>
-                  </div>
+                <div className="flex flex-col gap-4 mb-8 max-w-2xl mx-auto">
+                  {[
+                    { title: '出張研修', desc: '10都道府県22校で実施。生徒向け・教員向け、実践ベースの研修。' },
+                    { title: 'AI導入支援', desc: '「何から手をつければいいか」の相談から、運用定着まで一緒に考えます。' },
+                    { title: 'プライベートGPT', desc: '安心して使える生成AI環境。生徒数単位の課金で柔軟に導入。' },
+                  ].map(({ title, desc }) => (
+                    <div key={title} className="flex items-start gap-4">
+                      <div className="mt-1 w-2 h-2 rounded-full flex-shrink-0" style={{ background: '#FDCA60' }} />
+                      <div>
+                        <p className="font-bold text-white">{title}</p>
+                        <p className="text-sm mt-1" style={{ color: 'rgba(255,255,255,0.75)' }}>{desc}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
                 <div className="text-center">
                   <Link href="/for-educators">
@@ -288,66 +278,64 @@ export default function Home({ news, archives, media }) {
             <section className="text-gray-600 body-font" id="social-issues">
               <div className="container px-5 py-20 mx-auto">
                 <div className="text-center mb-4">
-                  <p className="text-xs font-bold tracking-widest mb-3" style={{ color: '#1476A6' }}>SOCIAL ISSUES</p>
-                  <h2 className="sm:text-3xl text-2xl font-bold title-font text-gray-900 mb-4">
-                    私たちが向き合う3つの教育格差
+                  <h2 className="sm:text-3xl text-2xl font-bold title-font text-gray-900 mb-6">
+                    いま、日本の子どもたちに起きていること
                   </h2>
-                  <p className="text-base text-gray-500 max-w-2xl mx-auto leading-7">
-                    日本の教育には、まだ解決されていない深刻な格差が存在します。
-                    newCreator.orgは、STEAM教育を通じてこれらの格差に正面から取り組みます。
+                  <p className="text-base text-gray-500 max-w-2xl mx-auto leading-8">
+                    数字ではなく、一人ひとりの子どもの話として考えてほしい。
                   </p>
                 </div>
 
                 <div className="flex flex-wrap mt-12 -m-4">
                   {/* 不登校 */}
                   <div className="p-4 md:w-1/3">
-                    <div className="h-full bg-white rounded-xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                      <div className="w-12 h-12 rounded-full flex items-center justify-center mb-5" style={{ background: '#EDF6FB' }}>
+                    <div className="issue-card">
+                      <div className="issue-icon">
                         <svg className="w-6 h-6" style={{ color: '#1476A6' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                         </svg>
                       </div>
-                      <p className="text-xs font-bold tracking-wider mb-2" style={{ color: '#1476A6' }}>不登校・学びの多様化</p>
-                      <h3 className="text-gray-900 text-xl font-bold mb-3">35万人の子どもが<br />学校に行けていない</h3>
+                      <p className="text-xs font-bold tracking-wider mb-2" style={{ color: '#1476A6' }}>不登校</p>
+                      <h3 className="text-gray-900 text-xl font-bold mb-4 leading-snug">35万人を超える子どもが<br />居場所を失っている</h3>
                       <p className="leading-7 text-sm text-gray-600 mb-4">
-                        2024年度の文科省調査では、小中学生の不登校が過去最多の35万3,970人に達しました（12年連続増加）。学校という場所に縛られない、一人ひとりに合った学びの選択肢が必要です。
+                        学校に行けなくなった子の中には、「学びたくない」のではなく、「学びたいのに場所がない」子がたくさんいます。オンラインで、自分のペースで、安心できる場所で学べる環境をつくることが、私たちの役割だと思っています。
                       </p>
-                      <p className="text-xs text-gray-400">出典: 文部科学省「令和6年度 児童生徒の問題行動・不登校等調査」</p>
+                      <p className="text-xs" style={{ color: '#A0AEC0' }}>文部科学省「令和6年度 児童生徒の問題行動・不登校等調査」より</p>
                     </div>
                   </div>
 
                   {/* ジェンダーギャップ */}
                   <div className="p-4 md:w-1/3">
-                    <div className="h-full bg-white rounded-xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                      <div className="w-12 h-12 rounded-full flex items-center justify-center mb-5" style={{ background: '#EDF6FB' }}>
+                    <div className="issue-card">
+                      <div className="issue-icon">
                         <svg className="w-6 h-6" style={{ color: '#1476A6' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
                       </div>
                       <p className="text-xs font-bold tracking-wider mb-2" style={{ color: '#1476A6' }}>ジェンダーギャップ</p>
-                      <h3 className="text-gray-900 text-xl font-bold mb-3">IT・STEM分野の<br />女性比率は依然低い</h3>
+                      <h3 className="text-gray-900 text-xl font-bold mb-4 leading-snug">「理系は男の子のもの」<br />と思っている女の子がいる</h3>
                       <p className="leading-7 text-sm text-gray-600 mb-4">
-                        日本のIT・情報処理分野で働く女性の割合は約20%にとどまり、OECD諸国の中でも最低水準です。幼少期からのSTEAM教育で「自分にもできる」という自己効力感を育てることが、格差解消への第一歩です。
+                        「女の子にプログラミングは難しい」という先入観は、子どもの頃から形成されます。小学生のうちに「自分にもできる」と感じる体験を積み重ねることが、その先入観を少しずつ変えていくと信じています。
                       </p>
-                      <p className="text-xs text-gray-400">出典: 田中・大谷「日本のSTEM人材におけるジェンダーギャップ」科学教育研究 2024</p>
+                      <p className="text-xs" style={{ color: '#A0AEC0' }}>日本のIT分野の女性比率は絀20%（OECD最低水準）：科学教育研究 2024より</p>
                     </div>
                   </div>
 
                   {/* 地域格差 */}
                   <div className="p-4 md:w-1/3">
-                    <div className="h-full bg-white rounded-xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                      <div className="w-12 h-12 rounded-full flex items-center justify-center mb-5" style={{ background: '#EDF6FB' }}>
+                    <div className="issue-card">
+                      <div className="issue-icon">
                         <svg className="w-6 h-6" style={{ color: '#1476A6' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
                       </div>
                       <p className="text-xs font-bold tracking-wider mb-2" style={{ color: '#1476A6' }}>地域格差</p>
-                      <h3 className="text-gray-900 text-xl font-bold mb-3">生まれた場所で<br />学びの機会が変わる</h3>
+                      <h3 className="text-gray-900 text-xl font-bold mb-4 leading-snug">地方に生まれただけで<br />選択肢が少なくなる</h3>
                       <p className="leading-7 text-sm text-gray-600 mb-4">
-                        STEAM教育の環境は都市部と地方で大きく異なります。身近にロールモデルがいない、質の高い教室が近くにない——そんな地方の子どもたちにも、最先端の学びを届けます。
+                        東京にいれば当たり前の環境が、地方では整っていないことが多い。近くに教室がない、身近にロールモデルがいない——そんな子どもたちにこそ、私たちは山を越えてでも届けに行きたい。
                       </p>
-                      <p className="text-xs text-gray-400">出典: 文部科学省「プログラミング教育に関する調査」</p>
+                      <p className="text-xs" style={{ color: '#A0AEC0' }}>文部科学省「プログラミング教育に関する調査」より</p>
                     </div>
                   </div>
                 </div>
@@ -358,7 +346,7 @@ export default function Home({ news, archives, media }) {
                     className="inline-flex items-center font-medium transition-colors"
                     style={{ color: '#1476A6' }}
                   >
-                    <span>私たちのアプローチを見る</span>
+                    <span>私たちがやっていることを見る</span>
                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                       <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
@@ -379,7 +367,7 @@ export default function Home({ news, archives, media }) {
                     </h1>
                   </div>
                   <p className="lg:w-1/2 w-full leading-7 text-gray-500">
-                    具体的な活動を通じて、ビジョンを実現しています。
+                    最近の活動を紹介します。
                   </p>
                 </div>
                 <div className="flex flex-wrap -m-4">

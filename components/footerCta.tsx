@@ -15,12 +15,12 @@ export default function FooterCta() {
               DONATION
             </p>
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 leading-snug">
-              寄付で、届かない教育をなくす
+              あなたの支援が、
+              <br />子どもの「作れた！」になる
             </h2>
             <p className="text-base mb-2 leading-relaxed" style={{ color: 'rgba(255,255,255,0.85)' }}>
-              不登校の子どもも、地方の子どもも、女の子も——
-              <br />
-              すべての子どもに学ぶ機会を届けるために。
+              学校に行けない子も、地方に住む子も、
+              <br />「私には無理」と思っている女の子も。
             </p>
             <p className="text-sm mb-6" style={{ color: 'rgba(255,255,255,0.65)' }}>
               300円から支援できます。
@@ -52,15 +52,15 @@ export default function FooterCta() {
               VOLUNTEER &amp; PARTNER
             </p>
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 leading-snug">
-              一緒に動く仲間を募集中
+              スキルより、
+              <br />気持ちを持ってきてほしい
             </h2>
             <p className="text-base mb-2 leading-relaxed" style={{ color: 'rgba(255,255,255,0.85)' }}>
-              講師・運営スタッフ・広報・エンジニアなど、
-              <br />
-              あなたのスキルで子どもたちの未来を変えませんか。
+              講師でも、エンジニアでも、広報でも。
+              <br />「子どもの将来を少しでもよくしたい」と思ったら、それで十分です。
             </p>
             <p className="text-sm mb-6" style={{ color: 'rgba(255,255,255,0.65)' }}>
-              学校・自治体・企業との連携もお待ちしています。
+              学校・自治体・企業との連携も大歓迎。
             </p>
             <Link href="/#contact">
               <a
@@ -79,7 +79,7 @@ export default function FooterCta() {
                   (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(255,255,255,0.7)';
                 }}
               >
-                お問い合わせ
+                話を聞いてみる
               </a>
             </Link>
           </div>

@@ -1,8 +1,3 @@
-// ============================================================
-// Contact Section — newCreator.org Design System v2
-// CSS Modules / SCSS 廃止 → Tailwind + CSS Custom Properties
-// ============================================================
-
 const Contact = () => {
   return (
     <section id="contact" className="py-10 pb-20 w-full">
@@ -33,26 +28,28 @@ const Contact = () => {
         >
           <h2
             style={{
-              fontSize: "45px",
+              fontSize: "36px",
               fontWeight: "bold",
               color: "#fff",
-              textShadow: "0 2px 8px rgba(20,118,166,0.4)",
+              lineHeight: 1.3,
+              marginBottom: "16px",
             }}
           >
-            Contact
+            まずは、話しかけてください。
           </h2>
           <p
             style={{
               fontSize: "15px",
-              fontWeight: 600,
-              color: "rgba(255,255,255,0.92)",
-              margin: "16px 0",
-              lineHeight: 1.7,
+              fontWeight: 400,
+              color: "rgba(255,255,255,0.88)",
+              margin: "0 0 24px",
+              lineHeight: 1.9,
+              maxWidth: "480px",
             }}
           >
-            学校・自治体・企業・メディアの方、寄付・ボランティアのご相談など、
+            「うちの学校でも使えますか？」「寄付したいのですが」「ボランティアに興味があります」——
             <br />
-            どんな小さなことでもお気軽にご連絡ください。
+            どんな入口でも構いません。気軽にご連絡ください。
           </p>
           <p>
             <a
@@ -87,7 +84,7 @@ const Contact = () => {
                 el.style.boxShadow = "0 4px 12px rgba(20,118,166,0.25)";
               }}
             >
-              <span>お問い合わせ</span>
+              <span>メールで連絡する</span>
             </a>
           </p>
         </div>

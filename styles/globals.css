@@ -204,19 +204,21 @@ img {
   }
 
   /* --- Issue cards (社会課題) --- */
+  /* 左ボーダーアクセントのシンプルなカード。ホバーエフェクトは最小限に抑える */
   .issue-card {
-    @apply bg-white rounded-xl p-8 h-full;
-    box-shadow: var(--shadow-card-md);
-    transition: transform var(--transition-slow), box-shadow var(--transition-slow);
+    @apply bg-white p-8 h-full;
+    border-left: 4px solid var(--color-brand-sky);
+    border-radius: 0 12px 12px 0;
+    box-shadow: none;
+    transition: border-color var(--transition-slow);
   }
   .issue-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-card-lg);
+    border-left-color: var(--color-primary);
   }
 
   .issue-icon {
-    @apply w-12 h-12 rounded-full flex items-center justify-center mb-5;
-    background-color: var(--color-primary-light);
+    @apply w-10 h-10 flex items-center justify-center mb-4;
+    color: var(--color-primary);
   }
 }
 
@@ -233,18 +235,19 @@ img {
   to   { opacity: 1; }
 }
 
+/* アニメーションは控えめに。微妙なフェードのみ */
 .animate-fade-in-up {
-  animation: fadeInUp 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: fadeInUp 0.5s ease-out forwards;
 }
 
 .animate-fade-in-up-delay {
   opacity: 0;
-  animation: fadeInUp 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.25s forwards;
+  animation: fadeInUp 0.5s ease-out 0.15s forwards;
 }
 
 .animate-fade-in-delay {
   opacity: 0;
-  animation: fadeIn 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.45s forwards;
+  animation: fadeIn 0.5s ease-out 0.3s forwards;
 }
 
 /* ============================================================
