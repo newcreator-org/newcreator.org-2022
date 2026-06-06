@@ -345,11 +345,30 @@ img {
 }
 
 @media (max-width: 768px) {
-  .blog-content { width: 100%; }
-  .blog-content h1 { font-size: 25px; }
-  .blog-content h2 { font-size: 20px; }
-  .blog-content h3 { font-size: 18px; }
-  .blog-content p  { font-size: 14px; }
+  .blog-content {
+    width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .blog-header {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .blog-header-inner {
+    width: 100%;
+    padding-top: 24px;
+  }
+  .blog-header-inner h1 {
+    font-size: 20px;
+  }
+  .blog-sns {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .blog-content h1 { font-size: 22px; }
+  .blog-content h2 { font-size: 18px; }
+  .blog-content h3 { font-size: 16px; }
+  .blog-content p  { font-size: 15px; }
 }
 
 /* Contact section legacy */
@@ -394,3 +413,57 @@ img {
   transform: translateY(-1px);
   box-shadow: 0 6px 16px rgba(20,118,166,0.30);
 }
+
+/* ============================================================
+   Legal pages
+   ============================================================ */
+.legal-body {
+  color: #4A5568;
+}
+
+.legal-h2 {
+  @apply text-lg font-bold mb-4 mt-10;
+  color: #2D3748;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.legal-p {
+  @apply text-sm leading-8 mb-4;
+  color: #4A5568;
+}
+
+.legal-list {
+  @apply text-sm leading-8 pl-5 mb-4;
+  list-style-type: disc;
+  color: #4A5568;
+}
+
+.legal-dl {
+  @apply text-sm leading-7 mb-4 pl-4 space-y-2;
+  color: #4A5568;
+}
+
+.legal-dl > div {
+  @apply flex gap-3;
+}
+
+.legal-dl dt {
+  @apply font-semibold shrink-0;
+  color: #2D3748;
+  min-width: 1.5rem;
+}
+
+.legal-dl dd {
+  @apply leading-7;
+}
+
+.legal-link {
+  color: #1476A6;
+  text-decoration: underline;
+}
+
+.legal-link:hover {
+  color: #2789B9;
+}
+
