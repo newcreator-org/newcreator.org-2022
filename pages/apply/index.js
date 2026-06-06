@@ -1,7 +1,7 @@
 import Footer from "../../components/footer";
 import Header from "../../components/header";
 import Heads from "./_head";
-import component from "../../components/hero.module.scss";
+
 
 export default function Apply() {
     return (
@@ -9,14 +9,23 @@ export default function Apply() {
             <Heads />
             <Header />
             <main>
-                <section className={component.hero__cover}>
-                    <div>
-                        <h1 className={component.hero__title__apply}>
+                <section
+                  style={{
+                    background: 'linear-gradient(135deg, #1476A6 0%, #2789B9 100%)',
+                    padding: '80px 24px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    textAlign: 'center',
+                  }}
+                >
+                    <div style={{ maxWidth: '800px', color: '#fff' }}>
+                        <h1 style={{ fontSize: '2rem', fontWeight: 'bold', lineHeight: 1.4, marginBottom: '1rem' }}>
                             おうちでプログラミングをはじめよう。
                             <br />
                             全国の小学生に micro:bit プレゼント！
                         </h1>
-                        <h2 className={component.hero__subtitle}>
+                        <h2 style={{ fontSize: '1.1rem', fontWeight: 500, lineHeight: 1.7, opacity: 0.9 }}>
                             クラウドファンディングで集めた資金で、小学生のまなびをサポートします。
                             <br />
                             micro:bit でプログラミングをはじめてみませんか？

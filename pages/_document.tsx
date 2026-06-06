@@ -10,14 +10,11 @@ export default function Document() {
         </title>
         <meta
           name="description"
-          content={`
-        特定非営利活動法人ニュークリエイター・オルグは、新しいクリエイターを育成し、
-        世界に発信するためのプロジェクトを展開しています。`}
+          content="地域格差・不登校・ジェンダーギャップ——教育の届かないをなくすために。NPO法人ニュークリエイター・オルグは、全国の子どもたちにSTEAM教育を格差なく届けるため、学校向け出張授業・AI導入支援・オンラインスクールを展開しています。"
         />
         <meta
           name="keywords"
-          content={`
-        特定非営利活動法人,ニュークリエイター・オルグ,クリエイター,育成,世界,発信,プロジェクト`}
+          content="特定非営利活動法人,ニュークリエイター・オルグ,STEAM教育,不登校支援,ジェンダーギャップ,AI教育,プログラミング教育,教育格差,NPO,子ども"
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/ogp.png" />

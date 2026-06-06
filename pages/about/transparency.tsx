@@ -9,7 +9,7 @@ export default function Transparency() {
       <Header />
       <main className="mx-auto">
         {/* ヒーローセクション */}
-        <section className="text-gray-600 body-font bg-gradient-to-r from-blue-50 to-orange-50">
+        <section className="text-gray-600 body-font bg-gradient-to-r from-blue-50 to-white">
           <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
             <div className="text-center lg:w-2/3 w-full">
               <h1 className="title-font sm:text-5xl text-4xl mb-4 font-bold text-gray-900">
@@ -26,7 +26,7 @@ export default function Transparency() {
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col text-center w-full mb-12">
-              <h2 className="text-xs text-orange-500 tracking-widest font-medium title-font mb-1">
+              <h2 className="text-xstracking-widest font-medium title-font mb-1" style={{ color: '#1476A6' }}>
                 Articles & Regulations
               </h2>
               <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
@@ -38,7 +38,7 @@ export default function Transparency() {
                 <div className="h-full bg-white border-2 border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
                   <div className="p-6">
                     <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-orange-100 text-orange-500 mb-4">
+                      <div className="w-12 h-12 inline-flex items-center justify-center rounded-full mb-4" style={{ color: '#1476A6' }}>
                         <svg
                           fill="none"
                           stroke="currentColor"
@@ -62,7 +62,7 @@ export default function Transparency() {
                     <p className="leading-relaxed text-base text-gray-600 mb-4">
                       特定非営利活動法人newCreator.orgの定款です。法人の目的、事業内容、組織体制などを定めています。
                     </p>
-                    <button className="inline-flex items-center text-orange-500 hover:text-orange-600 font-medium">
+                    <button className="inline-flex items-center font-medium" style={{ color: '#1476A6' }}>
                       PDFをダウンロード
                       <svg
                         className="w-4 h-4 ml-2"
@@ -106,7 +106,7 @@ export default function Transparency() {
                     <p className="leading-relaxed text-base text-gray-600 mb-4">
                       ワークショップやイベントにおける参加規約、行動規範などを定めています。
                     </p>
-                    <button className="inline-flex items-center text-orange-500 hover:text-orange-600 font-medium">
+                    <button className="inline-flex items-center font-medium" style={{ color: '#1476A6' }}>
                       PDFをダウンロード
                       <svg
                         className="w-4 h-4 ml-2"
@@ -129,7 +129,7 @@ export default function Transparency() {
                 <div className="h-full bg-white border-2 border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
                   <div className="p-6">
                     <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-orange-100 text-orange-500 mb-4">
+                      <div className="w-12 h-12 inline-flex items-center justify-center rounded-full mb-4" style={{ color: '#1476A6' }}>
                         <svg
                           fill="none"
                           stroke="currentColor"
@@ -149,7 +149,7 @@ export default function Transparency() {
                     <p className="leading-relaxed text-base text-gray-600 mb-4">
                       個人情報の取り扱いについて定めたプライバシーポリシーです。
                     </p>
-                    <button className="inline-flex items-center text-orange-500 hover:text-orange-600 font-medium">
+                    <button className="inline-flex items-center font-medium" style={{ color: '#1476A6' }}>
                       PDFをダウンロード
                       <svg
                         className="w-4 h-4 ml-2"
@@ -263,7 +263,7 @@ export default function Transparency() {
                               1,500,000
                             </td>
                           </tr>
-                          <tr className="border-b border-gray-200 bg-orange-50">
+                          <tr className="border-b border-gray-200" style={{ background: '#EDF6FB' }}>
                             <td className="py-3 px-4 text-gray-900 font-medium">
                               支出合計
                             </td>
@@ -283,7 +283,7 @@ export default function Transparency() {
                       </table>
                     </div>
                     <div className="mt-6">
-                      <button className="inline-flex items-center text-orange-500 hover:text-orange-600 font-medium">
+                      <button className="inline-flex items-center font-medium" style={{ color: '#1476A6' }}>
                         詳細な財務諸表をダウンロード
                         <svg
                           className="w-4 h-4 ml-2"
@@ -313,8 +313,8 @@ export default function Transparency() {
                     </h3>
                     <div className="flex flex-wrap -m-2">
                       <div className="p-2 md:w-1/4 w-1/2">
-                        <div className="bg-orange-50 rounded-lg p-4 text-center">
-                          <p className="text-3xl font-bold text-orange-500 mb-2">
+                        <div className="rounded-lg p-4 text-center" style={{ background: '#EDF6FB' }}>
+                          <p className="text-3xl font-boldmb-2" style={{ color: '#1476A6' }}>
                             60%
                           </p>
                           <p className="text-gray-600 text-sm">
@@ -333,8 +333,8 @@ export default function Transparency() {
                         </div>
                       </div>
                       <div className="p-2 md:w-1/4 w-1/2">
-                        <div className="bg-orange-50 rounded-lg p-4 text-center">
-                          <p className="text-3xl font-bold text-orange-500 mb-2">
+                        <div className="rounded-lg p-4 text-center" style={{ background: '#EDF6FB' }}>
+                          <p className="text-3xl font-boldmb-2" style={{ color: '#1476A6' }}>
                             15%
                           </p>
                           <p className="text-gray-600 text-sm">
@@ -374,7 +374,7 @@ export default function Transparency() {
                             活動実績、財務報告、今後の展望
                           </p>
                         </div>
-                        <button className="text-orange-500 hover:text-orange-600 font-medium">
+                        <button className="font-medium" style={{ color: '#1476A6' }}>
                           ダウンロード
                         </button>
                       </div>
@@ -387,7 +387,7 @@ export default function Transparency() {
                             活動実績、財務報告、今後の展望
                           </p>
                         </div>
-                        <button className="text-orange-500 hover:text-orange-600 font-medium">
+                        <button className="font-medium" style={{ color: '#1476A6' }}>
                           ダウンロード
                         </button>
                       </div>
@@ -400,7 +400,7 @@ export default function Transparency() {
                             活動実績、財務報告、今後の展望
                           </p>
                         </div>
-                        <button className="text-orange-500 hover:text-orange-600 font-medium">
+                        <button className="font-medium" style={{ color: '#1476A6' }}>
                           ダウンロード
                         </button>
                       </div>
@@ -416,7 +416,7 @@ export default function Transparency() {
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col text-center w-full mb-12">
-              <h2 className="text-xs text-orange-500 tracking-widest font-medium title-font mb-1">
+              <h2 className="text-xstracking-widest font-medium title-font mb-1" style={{ color: '#1476A6' }}>
                 Board Members
               </h2>
               <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">

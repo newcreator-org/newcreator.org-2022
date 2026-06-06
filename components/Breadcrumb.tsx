@@ -1,6 +1,9 @@
+// ============================================================
+// Breadcrumb — newCreator.org Design System v2
+// CSS Modules / SCSS 廃止 → Tailwind + CSS Custom Properties
+// ============================================================
 import React from 'react';
 import Link from 'next/link';
-import styles from './Breadcrumb.module.scss';
 
 interface BreadcrumbItem {
   label: string;
@@ -13,21 +16,35 @@ interface BreadcrumbProps {
 
 export const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
   return (
-    <nav className={styles.breadcrumb} aria-label="パンくずリスト">
-      <ol className={styles.list}>
+    <nav aria-label="パンくずリスト" className="py-3">
+      <ol
+        className="flex items-center flex-wrap mx-auto px-6"
+        style={{ maxWidth: '1200px', gap: '8px' }}
+      >
         {items.map((item, index) => (
-          <li key={index} className={styles.item}>
+          <li
+            key={index}
+            className="flex items-center"
+            style={{ gap: '8px', fontSize: '14px' }}
+          >
             {item.href ? (
               <>
                 <Link href={item.href}>
-                  <a className={styles.link}>{item.label}</a>
+                  <a
+                    className="transition-all duration-200 hover:underline"
+                    style={{ color: '#1476A6', textDecoration: 'none' }}
+                    onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.opacity = '0.7'; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.opacity = '1'; }}
+                  >
+                    {item.label}
+                  </a>
                 </Link>
                 {index < items.length - 1 && (
-                  <span className={styles.separator}>/</span>
+                  <span style={{ color: '#A0AEC0', margin: '0 4px' }}>/</span>
                 )}
               </>
             ) : (
-              <span className={styles.current}>{item.label}</span>
+              <span style={{ color: '#718096' }}>{item.label}</span>
             )}
           </li>
         ))}

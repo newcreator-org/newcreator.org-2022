@@ -1,7 +1,7 @@
 import Footer from "../../../components/footer";
 import Header from "../../../components/header";
 import Heads from "./_head";
-import component from "../../../components/hero.module.scss";
+
 
 export default function Apply() {
     return (
@@ -10,19 +10,30 @@ export default function Apply() {
             <Header />
             <main>
                 <section
-                    className={component.hero__subpage_cover}
                     style={{
-                        backgroundImage: `url(/img/event/at-google/CV201906-90-black.jpg)`,
+                        backgroundImage: 'url(/img/event/at-google/CV201906-90-black.jpg)',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        minHeight: '400px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        position: 'relative',
                     }}
                 >
-                    <div className={`${component.hero__subpage_cover_container} container max-w-6xl`}>
-                        <h1 className={component.hero__subpage_cover_title}>
-                            【中高校生向け/参加費無料】<br/>Creative Village 2023
+                    <div
+                      style={{
+                        position: 'absolute', inset: 0,
+                        background: 'rgba(20,118,166,0.55)',
+                      }}
+                    />
+                    <div className="container max-w-6xl" style={{ position: 'relative', zIndex: 1, padding: '60px 24px', color: '#fff' }}>
+                        <h1 style={{ fontSize: '2rem', fontWeight: 'bold', lineHeight: 1.4, marginBottom: '1rem' }}>
+                            【中高校生向け/参加費無料】<br/>クリエイティブ Village 2023
                         </h1>
-                        <h2 className={component.hero__subpage_cover_subtitle}>
-                        身近な課題をテクノロジーを使って解決するアイデアを考えよう
+                        <h2 style={{ fontSize: '1.2rem', fontWeight: 500, lineHeight: 1.7, opacity: 0.9, marginBottom: '1rem' }}>
+                            身近な課題をテクノロジーを使って解決するアイデアを考えよう
                         </h2>
-                        <div className={component.hero__subpage_cover_text}>
+                        <div style={{ fontSize: '1rem', opacity: 0.85 }}>
                             日時：2023年7月30日（東京）
                             <br />
                             会場：Google 渋谷オフィス

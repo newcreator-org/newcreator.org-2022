@@ -57,7 +57,7 @@ export default function Guides({ guides }) {
         />
         <main className="mx-auto">
           <ScrollFadeIn>
-            <section className="py-16 bg-gradient-to-b from-orange-50 to-white">
+            <section className="py-16 bg-gradient-to-b from-blue-50 to-white">
               <div className="container px-5 mx-auto max-w-6xl">
                 <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 text-center">
                   実践ガイド
@@ -79,8 +79,8 @@ export default function Guides({ guides }) {
                       onClick={() => setSelectedCategory(category)}
                       className={`px-6 py-2 rounded-full font-semibold transition-all ${
                         selectedCategory === category
-                          ? 'bg-orange-600 text-white shadow-md'
-                          : 'bg-white text-gray-700 border border-gray-300 hover:border-orange-600 hover:text-orange-600'
+                          ? 'text-white shadow-md'
+                          : 'bg-white text-gray-700 border border-gray-300  '
                       }`}
                     >
                       {category}
@@ -128,7 +128,7 @@ export default function Guides({ guides }) {
                   研修のご依頼や導入相談など、お気軽にお問い合わせください。
                 </p>
                 <Link href="/apply">
-                  <a className="inline-block bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors shadow-md">
+                  <a className="inline-block text-white px-8 py-4 rounded-lg font-semibold transition-colors shadow-md" style={{ background: '#1476A6' }}>
                     お問い合わせフォームへ
                   </a>
                 </Link>

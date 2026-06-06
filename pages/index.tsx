@@ -87,7 +87,7 @@ export default function Home({ news, archives, media }) {
               </div>
               <div className="container px-5 mx-auto pb-16">
                 <div className="bg-gray-50 px-8 py-12 rounded-lg text-center">
-                  <p className="text-xs text-orange-500 font-bold tracking-widest mb-3">VISION</p>
+                  <p className="text-xs font-bold tracking-widest mb-3" style={{ color: '#1476A6' }}>VISION</p>
                   <h2 className="sm:text-2xl text-xl font-bold text-gray-900 mb-2">
                     STEAM教育を全国の子どもたちに格差なく届ける
                   </h2>
@@ -123,14 +123,14 @@ export default function Home({ news, archives, media }) {
                         alt="学校向け出張授業・登壇"
                       />
                       <div className="p-6 md:p-8 flex flex-col justify-center">
-                        <p className="text-orange-500 text-xs font-bold tracking-wider mb-2">10都道府県 22校で実施</p>
+                        <p className="text-xs font-bold tracking-wider mb-2" style={{ color: '#1476A6' }}>10都道府県 22校で実施</p>
                         <h2 className="text-xl text-gray-900 font-bold title-font mb-3">
                           学校向け出張授業・登壇
                         </h2>
                         <p className="leading-7 text-base text-gray-600 mb-4">
                           全国の学校・教育機関へ講師を派遣し、生徒向け・教員向けの生成AI活用研修を実施します。学校のカリキュラムや目的に応じたプログラムを設計し、実践的な内容をお届けします。
                         </p>
-                        <a href="/#contact" className="text-orange-500 font-medium text-sm hover:text-orange-600 transition-colors">
+                        <a href="/#contact" className="font-medium text-sm transition-colors" style={{ color: '#1476A6' }}>
                           研修のご依頼はこちら →
                         </a>
                       </div>
@@ -153,7 +153,7 @@ export default function Home({ news, archives, media }) {
                         <p className="leading-7 text-base text-gray-600 mb-4">
                           教育現場への生成AI導入を、計画策定から運用定着まで一貫してサポート。活用方針の策定、教員向け研修、ガイドライン整備など学校のニーズに合わせた支援を行います。
                         </p>
-                        <a href="/#contact" className="text-orange-500 font-medium text-sm hover:text-orange-600 transition-colors">
+                        <a href="/#contact" className="font-medium text-sm transition-colors" style={{ color: '#1476A6' }}>
                           導入相談はこちら →
                         </a>
                       </div>
@@ -238,40 +238,43 @@ export default function Home({ news, archives, media }) {
 
           {/* 先生・学校向けCTA */}
           <ScrollFadeIn>
-            <section className="bg-gradient-to-br from-blue-600 to-blue-700 text-white py-16">
+            <section className="text-white py-16" style={{ background: 'linear-gradient(135deg, #1476A6 0%, #2789B9 100%)' }}>
               <div className="container px-5 mx-auto max-w-5xl">
                 <div className="text-center mb-8">
                   <h2 className="text-3xl md:text-4xl font-bold mb-4">
                     先生・学校関係者の方へ
                   </h2>
-                  <p className="text-lg text-blue-100 max-w-2xl mx-auto">
+                  <p className="text-lg max-w-2xl mx-auto" style={{ color: 'rgba(255,255,255,0.85)' }}>
                     教育現場でのAI活用を全面的にサポートします。<br />
                     研修から導入支援まで、貴校の状況に合わせた最適なプランをご提案いたします。
                   </p>
                 </div>
                 <div className="grid md:grid-cols-3 gap-6 mb-8">
-                  <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 hover:bg-opacity-20 transition-all">
+                  <div className="rounded-xl p-6 transition-all" style={{ background: 'rgba(255,255,255,0.12)' }}>
                     <h3 className="text-xl font-bold mb-2">出張研修</h3>
-                    <p className="text-blue-100 text-sm">
+                    <p className="text-sm" style={{ color: 'rgba(255,255,255,0.80)' }}>
                       10都道府県22校で実施。生徒向け・教員向けの実践的な研修を提供します。
                     </p>
                   </div>
-                  <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 hover:bg-opacity-20 transition-all">
+                  <div className="rounded-xl p-6 transition-all" style={{ background: 'rgba(255,255,255,0.12)' }}>
                     <h3 className="text-xl font-bold mb-2">AI導入支援</h3>
-                    <p className="text-blue-100 text-sm">
+                    <p className="text-sm" style={{ color: 'rgba(255,255,255,0.80)' }}>
                       計画策定から運用定着まで一貫サポート。ガイドライン整備も支援します。
                     </p>
                   </div>
-                  <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 hover:bg-opacity-20 transition-all">
+                  <div className="rounded-xl p-6 transition-all" style={{ background: 'rgba(255,255,255,0.12)' }}>
                     <h3 className="text-xl font-bold mb-2">プライベートGPT</h3>
-                    <p className="text-blue-100 text-sm">
+                    <p className="text-sm" style={{ color: 'rgba(255,255,255,0.80)' }}>
                       安全な生成AI環境を提供。生徒数単位の課金で柔軟に導入できます。
                     </p>
                   </div>
                 </div>
                 <div className="text-center">
                   <Link href="/for-educators">
-                    <a className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-colors shadow-lg">
+                    <a
+                      className="inline-block px-8 py-4 rounded-lg font-bold transition-colors"
+                      style={{ background: '#FDCA60', color: '#1A202C', boxShadow: '0 4px 12px rgba(253,202,96,0.40)' }}
+                    >
                       詳しく見る
                     </a>
                   </Link>
@@ -280,38 +283,86 @@ export default function Home({ news, archives, media }) {
             </section>
           </ScrollFadeIn>
 
-          {/* 課題提起 */}
+          {/* 社会課題セクション */}
           <ScrollFadeIn>
-            <section className="text-gray-600 body-font">
+            <section className="text-gray-600 body-font" id="social-issues">
               <div className="container px-5 py-20 mx-auto">
-                <h1 className="sm:text-3xl text-2xl font-bold title-font text-gray-900 mb-12">
-                  日本の教育が直面する課題
-                </h1>
-                <div className="flex flex-wrap -m-4">
+                <div className="text-center mb-4">
+                  <p className="text-xs font-bold tracking-widest mb-3" style={{ color: '#1476A6' }}>SOCIAL ISSUES</p>
+                  <h2 className="sm:text-3xl text-2xl font-bold title-font text-gray-900 mb-4">
+                    私たちが向き合う3つの教育格差
+                  </h2>
+                  <p className="text-base text-gray-500 max-w-2xl mx-auto leading-7">
+                    日本の教育には、まだ解決されていない深刻な格差が存在します。
+                    newCreator.orgは、STEAM教育を通じてこれらの格差に正面から取り組みます。
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap mt-12 -m-4">
+                  {/* 不登校 */}
                   <div className="p-4 md:w-1/3">
-                    <div className="h-full pl-6 border-l-2 border-orange-400">
-                      <h2 className="text-gray-900 text-lg font-bold mb-3">地域格差</h2>
-                      <p className="leading-7 text-base text-gray-600">
-                        都市部と地方では、STEAM教育を受ける機会に大きな格差があります。すべての子どもたちに平等な学びの機会を届けることが必要です。
+                    <div className="h-full bg-white rounded-xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="w-12 h-12 rounded-full flex items-center justify-center mb-5" style={{ background: '#EDF6FB' }}>
+                        <svg className="w-6 h-6" style={{ color: '#1476A6' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                      </div>
+                      <p className="text-xs font-bold tracking-wider mb-2" style={{ color: '#1476A6' }}>不登校・学びの多様化</p>
+                      <h3 className="text-gray-900 text-xl font-bold mb-3">35万人の子どもが<br />学校に行けていない</h3>
+                      <p className="leading-7 text-sm text-gray-600 mb-4">
+                        2024年度の文科省調査では、小中学生の不登校が過去最多の35万3,970人に達しました（12年連続増加）。学校という場所に縛られない、一人ひとりに合った学びの選択肢が必要です。
                       </p>
+                      <p className="text-xs text-gray-400">出典: 文部科学省「令和6年度 児童生徒の問題行動・不登校等調査」</p>
                     </div>
                   </div>
+
+                  {/* ジェンダーギャップ */}
                   <div className="p-4 md:w-1/3">
-                    <div className="h-full pl-6 border-l-2 border-orange-400">
-                      <h2 className="text-gray-900 text-lg font-bold mb-3">変化の速さ</h2>
-                      <p className="leading-7 text-base text-gray-600">
-                        AIやテクノロジーの進化は加速していますが、教育現場での対応は追いついていません。最新の技術を学ぶ機会が求められています。
+                    <div className="h-full bg-white rounded-xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="w-12 h-12 rounded-full flex items-center justify-center mb-5" style={{ background: '#EDF6FB' }}>
+                        <svg className="w-6 h-6" style={{ color: '#1476A6' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                      </div>
+                      <p className="text-xs font-bold tracking-wider mb-2" style={{ color: '#1476A6' }}>ジェンダーギャップ</p>
+                      <h3 className="text-gray-900 text-xl font-bold mb-3">IT・STEM分野の<br />女性比率は依然低い</h3>
+                      <p className="leading-7 text-sm text-gray-600 mb-4">
+                        日本のIT・情報処理分野で働く女性の割合は約20%にとどまり、OECD諸国の中でも最低水準です。幼少期からのSTEAM教育で「自分にもできる」という自己効力感を育てることが、格差解消への第一歩です。
                       </p>
+                      <p className="text-xs text-gray-400">出典: 田中・大谷「日本のSTEM人材におけるジェンダーギャップ」科学教育研究 2024</p>
                     </div>
                   </div>
+
+                  {/* 地域格差 */}
                   <div className="p-4 md:w-1/3">
-                    <div className="h-full pl-6 border-l-2 border-orange-400">
-                      <h2 className="text-gray-900 text-lg font-bold mb-3">経済的負担</h2>
-                      <p className="leading-7 text-base text-gray-600">
-                        プログラミング教室やSTEAM教育は費用が高く、経済的な理由で参加できない子どもたちがいます。低コストで質の高い教育が必要です。
+                    <div className="h-full bg-white rounded-xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="w-12 h-12 rounded-full flex items-center justify-center mb-5" style={{ background: '#EDF6FB' }}>
+                        <svg className="w-6 h-6" style={{ color: '#1476A6' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                      </div>
+                      <p className="text-xs font-bold tracking-wider mb-2" style={{ color: '#1476A6' }}>地域格差</p>
+                      <h3 className="text-gray-900 text-xl font-bold mb-3">生まれた場所で<br />学びの機会が変わる</h3>
+                      <p className="leading-7 text-sm text-gray-600 mb-4">
+                        STEAM教育の環境は都市部と地方で大きく異なります。身近にロールモデルがいない、質の高い教室が近くにない——そんな地方の子どもたちにも、最先端の学びを届けます。
                       </p>
+                      <p className="text-xs text-gray-400">出典: 文部科学省「プログラミング教育に関する調査」</p>
                     </div>
                   </div>
+                </div>
+
+                <div className="mt-12 text-center">
+                  <a
+                    href="/about"
+                    className="inline-flex items-center font-medium transition-colors"
+                    style={{ color: '#1476A6' }}
+                  >
+                    <span>私たちのアプローチを見る</span>
+                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </section>
@@ -342,7 +393,7 @@ export default function Home({ news, archives, media }) {
                             alt="content"
                           />
                           <div className="p-5">
-                            <p className="text-orange-500 text-xs font-medium mb-1">
+                            <p className="text-xs font-medium mb-1" style={{ color: '#1476A6' }}>
                               {dayjs(archive.date).format("YYYY.MM.DD")}
                             </p>
                             <h2 className="text-base text-gray-900 font-bold title-font mb-2">
@@ -357,7 +408,7 @@ export default function Home({ news, archives, media }) {
                     ))}
                 </div>
                 <Link href="/archives">
-                  <a className="flex justify-center items-center text-orange-500 mt-12 hover:text-orange-600 font-medium transition-colors">
+                  <a className="flex justify-center items-center mt-12 font-medium transition-colors" style={{ color: '#1476A6' }}>
                     <span>すべての活動を見る（更新中）</span>
                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                       <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -388,7 +439,7 @@ export default function Home({ news, archives, media }) {
                               >
                                 {post.category}
                               </span>
-                              <h2 className="text-base text-gray-900 font-bold title-font mb-2 group-hover:text-orange-500 transition-colors">
+                              <h2 className="text-base text-gray-900 font-bold title-font mb-2 group-hover:transition-colors" style={{ color: '#1476A6' }}>
                                 {post.title}
                               </h2>
                               <p className="text-sm text-gray-500 mb-2">
@@ -404,7 +455,7 @@ export default function Home({ news, archives, media }) {
                     ))}
                 </div>
                 <Link href="/media">
-                  <a className="flex justify-center items-center text-orange-500 mt-12 hover:text-orange-600 font-medium transition-colors">
+                  <a className="flex justify-center items-center mt-12 font-medium transition-colors" style={{ color: '#1476A6' }}>
                     <span>すべての記事を見る</span>
                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                       <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -446,7 +497,7 @@ export default function Home({ news, archives, media }) {
                     ))}
                 </div>
                 <Link href="/information">
-                  <a className="flex justify-center items-center text-orange-500 mt-12 hover:text-orange-600 font-medium transition-colors">
+                  <a className="flex justify-center items-center mt-12 font-medium transition-colors" style={{ color: '#1476A6' }}>
                     <span>すべてのお知らせを見る</span>
                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                       <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -478,11 +529,11 @@ export default function Home({ news, archives, media }) {
                 </h1>
                 <div className="max-w-3xl">
                   <p className="text-lg leading-8 mb-10 text-gray-700">
-                    近年インターネットなどの情報通信技術により、社会はこれまでにない速度で変化し続けていますが、教育の内容はそう大きくは変わっていないのが現状です。
+                    不登校の子どもも、地方に住む子どもも、「ITは自分には関係ない」と思っている女の子も——どんな子どもにも、学ぶ機会は平等にあるべきだと思っています。
                     <br />
-                    そのため、最新の情報にあわせた、最新の教育を提供していくことが我々の使命ではないかと考えています。
+                    教育の「届かない」をなくすために、地域・行政・企業の皮さまと協力し、子どもたちの可能性を広げる学びの場をつくり続けます。
                     <br />
-                    地域の方々、行政・企業の皆さまと協力し、よりよい「まなび」をつくっていくことはもちろん、すべての子どもたちに楽しく学習に取り組んでもらえる社会をめざします。
+                    AI時代だからこそ、「誰でも、どこでも、自分らしく」学べる社会を、一緒につくりませんか。
                   </p>
                   <div className="flex items-center">
                     <img
@@ -561,7 +612,7 @@ export default function Home({ news, archives, media }) {
                   <div className="flex flex-wrap -m-4">
                     <div className="p-4 md:w-1/3 w-full">
                       <div className="border border-gray-200 rounded-lg p-6 h-full">
-                        <p className="text-orange-500 text-2xl font-bold mb-2">¥3,000</p>
+                        <p className="text-2xl font-bold mb-2" style={{ color: '#1476A6' }}>¥3,000</p>
                         <p className="text-gray-600 text-sm leading-relaxed">
                           1人の子どもが1ヶ月間プログラミング教室に参加できます
                         </p>
@@ -569,7 +620,7 @@ export default function Home({ news, archives, media }) {
                     </div>
                     <div className="p-4 md:w-1/3 w-full">
                       <div className="border border-gray-200 rounded-lg p-6 h-full">
-                        <p className="text-orange-500 text-2xl font-bold mb-2">¥10,000</p>
+                        <p className="text-2xl font-bold mb-2" style={{ color: '#1476A6' }}>¥10,000</p>
                         <p className="text-gray-600 text-sm leading-relaxed">
                           地方での出張授業1回分の交通費になります
                         </p>
@@ -577,7 +628,7 @@ export default function Home({ news, archives, media }) {
                     </div>
                     <div className="p-4 md:w-1/3 w-full">
                       <div className="border border-gray-200 rounded-lg p-6 h-full">
-                        <p className="text-orange-500 text-2xl font-bold mb-2">¥30,000</p>
+                        <p className="text-2xl font-bold mb-2" style={{ color: '#1476A6' }}>¥30,000</p>
                         <p className="text-gray-600 text-sm leading-relaxed">
                           新しい教材の開発費に充てられます
                         </p>
@@ -591,7 +642,10 @@ export default function Home({ news, archives, media }) {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="text-white bg-orange-500 border-0 py-3 px-12 focus:outline-none hover:bg-orange-600 rounded-lg text-base font-medium transition-colors">
+                    <button
+                      className="text-white border-0 py-3 px-12 focus:outline-none rounded-lg text-base font-medium transition-colors"
+                      style={{ background: '#FDCA60', color: '#1A202C', boxShadow: '0 4px 12px rgba(253,202,96,0.40)' }}
+                    >
                       クレジットカードで寄付
                     </button>
                   </a>

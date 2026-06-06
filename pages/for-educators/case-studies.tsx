@@ -97,7 +97,7 @@ export default function CaseStudies({ caseStudies }) {
                   学校の規模や状況に合わせて、最適なプランをご提案いたします。まずはお気軽にご相談ください。
                 </p>
                 <Link href="/apply">
-                  <a className="inline-block bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors shadow-md">
+                  <a className="inline-block text-white px-8 py-4 rounded-lg font-semibold transition-colors shadow-md" style={{ background: '#1476A6' }}>
                     お問い合わせフォームへ
                   </a>
                 </Link>

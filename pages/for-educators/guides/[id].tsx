@@ -7,14 +7,14 @@ import Link from "next/link";
 import { getAllEducatorGuides, getEducatorGuideById } from "../../../libs/markdown";
 import dayjs from "dayjs";
 import { marked } from "marked";
-import markdownStyles from "../../../styles/markdown.module.css";
+
 
 
 const categoryColor = (category: string) => {
   switch (category) {
     case "基礎・導入編":
     case "教科別":
-      return "bg-orange-100 text-orange-700";
+      return "text-[#1476A6]"; // bg handled by inline style
     case "組織・運営編":
     case "学校種別":
       return "bg-green-100 text-green-700";
@@ -85,12 +85,12 @@ export default function GuideDetail({ guide }) {
               </div>
 
               <div 
-                className={markdownStyles.markdown}
+                className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-a:text-blue-600"
                 dangerouslySetInnerHTML={{ __html: guide.content }}
               />
 
               <div className="mt-12 pt-8 border-t border-gray-200">
-                <div className="bg-blue-50 rounded-xl p-8">
+                <div className="rounded-xl p-8" style={{ background: '#EDF6FB' }}>
                   <h2 className="text-2xl font-bold text-gray-900 mb-4">
                     導入のご相談はこちら
                   </h2>
@@ -98,7 +98,12 @@ export default function GuideDetail({ guide }) {
                     研修のご依頼や導入相談など、お気軽にお問い合わせください。貴校の状況に合わせた最適なプランをご提案いたします。
                   </p>
                   <Link href="/apply">
-                    <a className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    <a
+                      className="inline-block px-8 py-3 rounded-lg font-semibold transition-colors"
+                      style={{ background: '#1476A6', color: '#fff', boxShadow: '0 4px 12px rgba(20,118,166,0.25)' }}
+                      onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.background = '#0F5A80'; }}
+                      onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.background = '#1476A6'; }}
+                    >
                       お問い合わせフォームへ
                     </a>
                   </Link>

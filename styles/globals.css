@@ -1,0 +1,395 @@
+/* ============================================================
+   newCreator.org — Global Styles
+   Design System v2 | Tailwind v3 + CSS Custom Properties
+   SCSS廃止・CSS Custom Propertiesでデザイントークン管理
+   ============================================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Design Tokens (CSS Custom Properties)
+   ============================================================ */
+:root {
+  /* Brand Colors (ロゴ由来) */
+  --color-brand-blue:      #1476A6;
+  --color-brand-blue-mid:  #2789B9;
+  --color-brand-sky:       #95D4E8;
+  --color-brand-yellow:    #FDCA60;
+
+  /* Semantic */
+  --color-primary:         #1476A6;
+  --color-primary-mid:     #2789B9;
+  --color-primary-light:   #EDF6FB;
+  --color-accent:          #FDCA60;
+  --color-accent-dark:     #D99A10;
+
+  /* Surface */
+  --color-surface:         #FFFFFF;
+  --color-surface-muted:   #F8FCFF;
+  --color-surface-subtle:  #F1F5F9;
+  --color-border:          rgba(20, 118, 166, 0.12);
+
+  /* Text */
+  --color-text-primary:    #1A202C;
+  --color-text-secondary:  #4A5568;
+  --color-text-muted:      #718096;
+  --color-text-inverse:    #FFFFFF;
+
+  /* Shadows (ブランドブルーベース) */
+  --shadow-card:    0 1px 3px 0 rgba(20,118,166,0.08), 0 1px 2px -1px rgba(20,118,166,0.06);
+  --shadow-card-md: 0 4px 12px 0 rgba(20,118,166,0.10), 0 2px 4px -2px rgba(20,118,166,0.08);
+  --shadow-card-lg: 0 8px 24px 0 rgba(20,118,166,0.12), 0 4px 8px -4px rgba(20,118,166,0.10);
+
+  /* Gradients */
+  --gradient-brand:       linear-gradient(135deg, #1476A6 0%, #2789B9 100%);
+  --gradient-brand-light: linear-gradient(160deg, #EDF6FB 0%, #ffffff 65%);
+  --gradient-accent:      linear-gradient(135deg, #FDCA60 0%, #F5B730 100%);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Border radius */
+  --radius-sm:   0.25rem;
+  --radius-md:   0.5rem;
+  --radius-lg:   0.75rem;
+  --radius-xl:   1rem;
+  --radius-2xl:  1.5rem;
+  --radius-full: 9999px;
+}
+
+/* ============================================================
+   Base Reset
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-surface);
+  font-family: "Noto Sans JP", HelveticaNeue, YuGothic, "Yu Gothic Medium",
+               "Yu Gothic", -apple-system, BlinkMacSystemFont, Roboto,
+               "Segoe UI", "Helvetica Neue", Verdana, Meiryo, sans-serif;
+  color: var(--color-text-primary);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  opacity: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============================================================
+   Component Layer — Tailwind @layer components
+   ============================================================ */
+@layer components {
+
+  /* --- Buttons --- */
+  .btn {
+    @apply inline-flex items-center justify-center font-bold rounded-lg
+           transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  .btn:hover  { transform: translateY(-1px); }
+  .btn:active { transform: translateY(0); }
+
+  .btn-primary {
+    @apply btn px-6 py-3 text-white text-sm;
+    background-color: var(--color-primary);
+    box-shadow: var(--shadow-card-md);
+  }
+  .btn-primary:hover { background-color: #0F5A80; }
+
+  .btn-primary-lg {
+    @apply btn-primary px-8 py-4 text-base;
+  }
+
+  .btn-accent {
+    @apply btn px-6 py-3 text-sm;
+    background-color: var(--color-accent);
+    color: #1A202C;
+    box-shadow: 0 2px 8px rgba(253,202,96,0.40);
+  }
+  .btn-accent:hover { background-color: #F5B730; }
+
+  .btn-outline {
+    @apply btn px-6 py-3 text-sm bg-transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+  }
+  .btn-outline:hover { background-color: var(--color-primary-light); }
+
+  .btn-white {
+    @apply btn px-6 py-3 text-sm bg-white;
+    color: var(--color-primary);
+    box-shadow: var(--shadow-card-md);
+  }
+  .btn-white:hover { background-color: #EDF6FB; }
+
+  .btn-ghost-white {
+    @apply btn px-6 py-3 text-sm text-white;
+    border: 2px solid rgba(255,255,255,0.7);
+    background: transparent;
+  }
+  .btn-ghost-white:hover { background: rgba(255,255,255,0.12); border-color: #fff; }
+
+  /* --- Cards --- */
+  .card-base {
+    @apply bg-white rounded-xl overflow-hidden;
+    box-shadow: var(--shadow-card);
+    transition: box-shadow var(--transition-slow), transform var(--transition-slow);
+  }
+  .card-base:hover {
+    box-shadow: var(--shadow-card-md);
+    transform: translateY(-2px);
+  }
+
+  .card-bordered {
+    @apply card-base;
+    border: 1px solid var(--color-border);
+    box-shadow: none;
+  }
+  .card-bordered:hover { box-shadow: var(--shadow-card); }
+
+  /* --- Section helpers --- */
+  .section-label {
+    @apply block text-xs font-bold tracking-widest uppercase mb-3;
+    color: var(--color-primary);
+  }
+
+  .section-divider {
+    @apply mx-auto mt-3;
+    height: 3px;
+    width: 3rem;
+    border-radius: var(--radius-full);
+    background: linear-gradient(90deg, #1476A6 0%, #95D4E8 100%);
+  }
+
+  /* --- Badges --- */
+  .badge {
+    @apply inline-block text-xs font-bold px-3 py-1 rounded-full;
+  }
+  .badge-primary {
+    @apply badge;
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+  }
+  .badge-accent {
+    @apply badge;
+    background-color: #FEF4D3;
+    color: #A87708;
+  }
+  .badge-sky {
+    @apply badge;
+    background-color: #DCF2FA;
+    color: #22728A;
+  }
+
+  /* --- Issue cards (社会課題) --- */
+  .issue-card {
+    @apply bg-white rounded-xl p-8 h-full;
+    box-shadow: var(--shadow-card-md);
+    transition: transform var(--transition-slow), box-shadow var(--transition-slow);
+  }
+  .issue-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card-lg);
+  }
+
+  .issue-icon {
+    @apply w-12 h-12 rounded-full flex items-center justify-center mb-5;
+    background-color: var(--color-primary-light);
+  }
+}
+
+/* ============================================================
+   Animations
+   ============================================================ */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-fade-in-up-delay {
+  opacity: 0;
+  animation: fadeInUp 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.25s forwards;
+}
+
+.animate-fade-in-delay {
+  opacity: 0;
+  animation: fadeIn 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.45s forwards;
+}
+
+/* ============================================================
+   Partner Slider
+   ============================================================ */
+.slider {
+  animation: logoAnimation 240s linear infinite;
+  background-image: url(/img/partner.png);
+  background-repeat: repeat-x;
+  background-size: auto 80px;
+  width: 100%;
+  height: 80px;
+}
+
+@keyframes logoAnimation {
+  0%   { background-position: 0 0; }
+  100% { background-position: -13230px 0; }
+}
+
+/* ============================================================
+   Legacy — 後方互換 (blog header など)
+   ============================================================ */
+.blog-header {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--gradient-brand);
+  padding: 3rem 1rem;
+}
+
+.blog-header-inner {
+  max-width: 1120px;
+  width: 92%;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  padding-top: 48px;
+}
+
+.blog-header-inner time {
+  font-size: 16px;
+  margin: 24px 0 0 0;
+  display: block;
+  opacity: 0.8;
+}
+
+.blog-header-inner h1 {
+  margin: 20px 0 0 0;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.blog-content {
+  max-width: 1120px;
+  width: 92%;
+  margin: 40px auto;
+  min-height: 45vh;
+}
+
+.blog-content * {
+  line-height: 1.9;
+  letter-spacing: 0.2px;
+}
+
+.blog-content h1, .blog-content h2, .blog-content h3 { font-weight: bold; }
+.blog-content h1 { font-size: 28px; margin-bottom: 12px; }
+.blog-content h2 { font-size: 24px; margin-bottom: 12px; }
+.blog-content h3 { font-size: 20px; margin-bottom: 6px; }
+.blog-content p  { font-size: 18px; margin-bottom: 20px; }
+.blog-content *, .blog-content img { max-width: 100%; }
+.blog-content a  { text-decoration: underline; }
+
+.blog-sns {
+  display: flex;
+  margin: 60px auto 0;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.blog-link {
+  width: 100%;
+  max-width: 100%;
+  margin: 12px 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.blog-top {
+  text-align: center;
+  margin: 8px auto 0;
+}
+
+@media (max-width: 768px) {
+  .blog-content { width: 100%; }
+  .blog-content h1 { font-size: 25px; }
+  .blog-content h2 { font-size: 20px; }
+  .blog-content h3 { font-size: 18px; }
+  .blog-content p  { font-size: 14px; }
+}
+
+/* Contact section legacy */
+.h2-footer-contact {
+  font-size: 45px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(20,118,166,0.4);
+}
+
+.title-footer-contact {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.92);
+  margin: 16px 0;
+  line-height: 1.7;
+}
+
+.btn-normal {
+  display: inline-block;
+  min-width: 92px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-slow);
+  font-size: 15px;
+  height: 50px;
+  line-height: 48px;
+  padding: 0 32px;
+}
+
+.btn-white.btn-normal {
+  background-color: #fff;
+  color: var(--color-primary);
+  border: 2px solid rgba(255,255,255,0.9);
+  box-shadow: 0 4px 12px rgba(20,118,166,0.25);
+}
+
+.btn-white.btn-normal:hover {
+  background-color: #EDF6FB;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(20,118,166,0.30);
+}

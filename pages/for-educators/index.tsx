@@ -42,7 +42,7 @@ export default function ForEducators({ guides, caseStudies }) {
         <main className="mx-auto">
           {/* ヒーローセクション */}
           <ScrollFadeIn>
-            <section className="bg-gradient-to-b from-orange-50 to-white py-20 md:py-28">
+            <section className="py-20 md:py-28" style={{ background: "linear-gradient(180deg, #EDF6FB 0%, #ffffff 100%)" }}>
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="text-center">
                   <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
@@ -53,12 +53,12 @@ export default function ForEducators({ guides, caseStudies }) {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Link href="/for-educators/guides">
-                      <a className="inline-block bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors shadow-md">
+                      <a className="inline-block px-8 py-4 rounded-lg font-semibold transition-colors" style={{ background: '#1476A6', color: '#fff', boxShadow: '0 4px 12px rgba(20,118,166,0.25)' }}>
                         実践ガイドを見る
                       </a>
                     </Link>
                     <Link href="#contact">
-                      <a className="inline-block bg-white text-orange-600 px-8 py-4 rounded-lg font-semibold border-2 border-orange-600 hover:bg-orange-50 transition-colors">
+                      <a className="inline-block px-8 py-4 rounded-lg font-semibold transition-colors" style={{ background: 'transparent', color: '#1476A6', border: '2px solid #1476A6' }}>
                         導入相談をする
                       </a>
                     </Link>
@@ -74,19 +74,19 @@ export default function ForEducators({ guides, caseStudies }) {
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                   <div className="text-center">
-                    <p className="text-4xl md:text-5xl font-bold text-orange-600">22校</p>
+                    <p className="text-4xl md:text-5xl font-bold" style={{ color: '#1476A6' }}>22校</p>
                     <p className="mt-2 text-sm text-gray-600">導入実績</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-4xl md:text-5xl font-bold text-orange-600">10</p>
+                    <p className="text-4xl md:text-5xl font-bold" style={{ color: '#1476A6' }}>10</p>
                     <p className="mt-2 text-sm text-gray-600">都道府県</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-4xl md:text-5xl font-bold text-orange-600">1,000+</p>
+                    <p className="text-4xl md:text-5xl font-bold" style={{ color: '#1476A6' }}>1,000+</p>
                     <p className="mt-2 text-sm text-gray-600">参加生徒数</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-4xl md:text-5xl font-bold text-orange-600">8年</p>
+                    <p className="text-4xl md:text-5xl font-bold" style={{ color: '#1476A6' }}>8年</p>
                     <p className="mt-2 text-sm text-gray-600">活動実績</p>
                   </div>
                 </div>
@@ -141,7 +141,7 @@ export default function ForEducators({ guides, caseStudies }) {
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow bg-white">
                     <div className="mb-4">
-                      <span className="inline-block px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-semibold">
+                      <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold" style={{ background: '#EDF6FB', color: '#1476A6' }}>
                         人気No.1
                       </span>
                     </div>
@@ -150,7 +150,7 @@ export default function ForEducators({ guides, caseStudies }) {
                       生徒向け・教員向けの生成AI活用研修を実施します。学校のカリキュラムや目的に応じたプログラムを設計し、実践的な内容をお届けします。全国10都道府県22校での実績があります。
                     </p>
                     <Link href="/apply">
-                      <a className="inline-block text-orange-600 font-semibold hover:text-orange-700 transition-colors">
+                      <a className="inline-block font-semibold transition-colors" style={{ color: '#1476A6' }}>
                         研修のご依頼はこちら →
                       </a>
                     </Link>
@@ -223,7 +223,7 @@ export default function ForEducators({ guides, caseStudies }) {
                       </p>
                     </div>
                     <Link href="/for-educators/guides">
-                      <a className="text-orange-600 font-semibold hover:text-orange-700 transition-colors">
+                      <a className="font-semibold transition-colors" style={{ color: '#1476A6' }}>
                         すべて見る →
                       </a>
                     </Link>
@@ -260,7 +260,7 @@ export default function ForEducators({ guides, caseStudies }) {
                       </p>
                     </div>
                     <Link href="/for-educators/case-studies">
-                      <a className="text-orange-600 font-semibold hover:text-orange-700 transition-colors">
+                      <a className="font-semibold transition-colors" style={{ color: '#1476A6' }}>
                         すべて見る →
                       </a>
                     </Link>
@@ -285,7 +285,7 @@ export default function ForEducators({ guides, caseStudies }) {
 
           {/* 資料ダウンロードセクション */}
           <ScrollFadeIn>
-            <section className="py-20 bg-gradient-to-b from-orange-50 to-white">
+            <section className="py-20" style={{ background: "linear-gradient(180deg, #EDF6FB 0%, #ffffff 100%)" }}>
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -302,7 +302,7 @@ export default function ForEducators({ guides, caseStudies }) {
                       計画策定から運用まで、学校でのAI導入の全プロセスを詳しく解説したガイドブックです。
                     </p>
                     <Link href="/for-educators/resources">
-                      <a className="inline-block bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors text-sm">
+                      <a className="inline-block px-6 py-3 rounded-lg font-semibold transition-colors text-sm" style={{ background: '#1476A6', color: '#fff' }}>
                         ダウンロード
                       </a>
                     </Link>
@@ -366,7 +366,7 @@ export default function ForEducators({ guides, caseStudies }) {
                 </div>
                 <div className="text-center mt-12">
                   <Link href="/for-educators/faq">
-                    <a className="text-orange-600 font-semibold hover:text-orange-700 transition-colors">
+                    <a className="font-semibold transition-colors" style={{ color: '#1476A6' }}>
                       すべてのFAQを見る →
                     </a>
                   </Link>
@@ -379,7 +379,7 @@ export default function ForEducators({ guides, caseStudies }) {
           <ScrollFadeIn>
             <section id="contact" className="py-20">
               <div className="container px-5 mx-auto max-w-4xl">
-                <div className="bg-gradient-to-r from-orange-600 to-orange-500 rounded-2xl p-12 text-center text-white">
+                <div className="rounded-2xl p-12 text-center text-white" style={{ background: "linear-gradient(135deg, #1476A6 0%, #2789B9 100%)" }}>
                   <h2 className="text-3xl md:text-4xl font-bold mb-4">
                     まずはお気軽にご相談ください
                   </h2>
@@ -388,12 +388,12 @@ export default function ForEducators({ guides, caseStudies }) {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Link href="/apply">
-                      <a className="inline-block bg-white text-orange-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-md">
+                      <a className="inline-block px-8 py-4 rounded-lg font-semibold transition-colors" style={{ background: '#FDCA60', color: '#1A202C', boxShadow: '0 4px 12px rgba(253,202,96,0.40)' }}>
                         お問い合わせ
                       </a>
                     </Link>
                     <Link href="/for-educators/resources">
-                      <a className="inline-block bg-orange-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-800 transition-colors border-2 border-white">
+                      <a className="inline-block px-8 py-4 rounded-lg font-semibold transition-colors" style={{ background: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.7)' }}>
                         資料をダウンロード
                       </a>
                     </Link>

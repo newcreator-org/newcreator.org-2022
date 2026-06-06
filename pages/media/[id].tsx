@@ -3,7 +3,7 @@ import Header from "../../components/header";
 import Footer from "../../components/footer";
 import FooterCta from "../../components/footerCta";
 import dayjs from "dayjs";
-import blogStyle from "../../styles/pages/blog.module.scss";
+
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -19,22 +19,22 @@ export default function MediaId({ media }) {
       <>
         <Header />
         <main>
-          <section className={blogStyle.header}>
-            <div>
+          <section className="blog-header">
+            <div className="blog-header-inner">
               <time dateTime={dayjs(media.publishedAt).format("YYYY-MM-DD")}>
                 {dayjs(media.publishedAt).format("YYYY.MM.DD")}
               </time>
               <h1>{media.title}</h1>
             </div>
           </section>
-          <section className={blogStyle.content}>
+          <section className="blog-content">
             <div
               dangerouslySetInnerHTML={{
                 __html: media.content ? `${media.content}` : "本文はありません",
               }}
             />
 
-            <div className={blogStyle.sns}>
+            <div className="blog-sns">
               <p>Share: </p>
               <FacebookShareButton
                 url={`https://newcreator.org/media/${media.id}`}
@@ -51,7 +51,7 @@ export default function MediaId({ media }) {
               </TwitterShareButton>
             </div>
             <a href="/media">
-              <p className={blogStyle.top}>メディア一覧に戻る</p>
+              <p className="blog-top">メディア一覧に戻る</p>
             </a>
           </section>
         </main>

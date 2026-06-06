@@ -7,7 +7,7 @@ import Link from "next/link";
 import { getAllEducatorCaseStudies, getEducatorCaseStudyById } from "../../../libs/markdown";
 import dayjs from "dayjs";
 import { marked } from "marked";
-import markdownStyles from "../../../styles/markdown.module.css";
+
 
 
 const schoolTypeColor = (schoolType: string) => {
@@ -87,12 +87,12 @@ export default function CaseStudyDetail({ caseStudy }) {
               </div>
 
               <div 
-                className={markdownStyles.markdown}
+                className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-a:text-blue-600 prose-blockquote:border-l-brand-blue-400"
                 dangerouslySetInnerHTML={{ __html: caseStudy.content }}
               />
 
               <div className="mt-12 pt-8 border-t border-gray-200">
-                <div className="bg-blue-50 rounded-xl p-8">
+                <div className="rounded-xl p-8" style={{ background: '#EDF6FB' }}>
                   <h2 className="text-2xl font-bold text-gray-900 mb-4">
                     貴校でも導入してみませんか
                   </h2>
@@ -100,7 +100,12 @@ export default function CaseStudyDetail({ caseStudy }) {
                     学校の規模や状況に合わせて、最適なプランをご提案いたします。まずはお気軽にご相談ください。
                   </p>
                   <Link href="/apply">
-                    <a className="inline-block bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors shadow-md">
+                    <a
+                      className="inline-block px-8 py-3 rounded-lg font-semibold transition-colors"
+                      style={{ background: '#1476A6', color: '#fff', boxShadow: '0 4px 12px rgba(20,118,166,0.25)' }}
+                      onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.background = '#0F5A80'; }}
+                      onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.background = '#1476A6'; }}
+                    >
                       お問い合わせフォームへ
                     </a>
                   </Link>

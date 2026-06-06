@@ -34,7 +34,7 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
       <Header />
       <main className="mx-auto">
         {/* ヒーローセクション */}
-        <section className="text-gray-600 body-font bg-gradient-to-r from-orange-50 to-blue-50">
+        <section className="text-gray-600 body-font bg-gradient-to-r from-blue-50 to-blue-50">
           <div className="container mx-auto flex px-5 py-20 items-center justify-center flex-col">
             <div className="text-center lg:w-2/3 w-full">
               <h1 className="title-font sm:text-5xl text-4xl mb-4 font-bold text-gray-900 animate-fade-in-up">
@@ -51,7 +51,7 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
           <section className="text-gray-700 body-font overflow-hidden">
             <div className="container px-5 py-20 mx-auto">
               <div className="flex flex-col text-center w-full mb-12">
-                <h2 className="text-xs text-orange-500 tracking-[0.2em] font-medium title-font mb-1">
+                <h2 className="text-xstracking-[0.2em] font-medium title-font mb-1" style={{ color: '#1476A6' }}>
                   MEDIA
                 </h2>
                 <h1 className="sm:text-3xl text-2xl font-bold title-font text-gray-900">
@@ -72,7 +72,7 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
                             >
                               {post.category}
                             </span>
-                            <h2 className="text-lg text-gray-900 font-bold title-font mb-2 group-hover:text-orange-500 transition-colors">
+                            <h2 className="text-lg text-gray-900 font-bold title-font mb-2 group-hover:transition-colors" style={{ color: '#1476A6' }}>
                               {post.title}
                             </h2>
                             <p className="text-sm text-gray-500 mb-3">
@@ -92,7 +92,7 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
         </ScrollFadeIn>
 
         {/* CTAセクション */}
-        <section className="text-gray-600 body-font bg-gradient-to-r from-orange-500 to-orange-400">
+        <section className="text-gray-600 body-font bg-gradient-to-r from-blue-50 to-white">
           <div className="container px-5 py-16 mx-auto">
             <div className="flex flex-col text-center w-full">
               <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-white">
@@ -106,13 +106,13 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
                   href="https://syncable.biz/associate/newcreator-org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex text-orange-500 bg-white border-0 py-3 px-8 focus:outline-none hover:bg-gray-100 hover:-translate-y-0.5 active:translate-y-0 rounded-full text-lg font-bold shadow-lg transition-all duration-200"
+                  className="inline-flexbg-white border-0 py-3 px-8 focus:outline-none hover:bg-gray-100 hover:-translate-y-0.5 active:translate-y-0 rounded-full text-lg font-bold shadow-lg transition-all duration-200" style={{ color: '#1476A6' }}
                 >
                   寄付で支援
                 </a>
                 <a
                   href="/#contact"
-                  className="inline-flex text-white bg-orange-600 border-0 py-3 px-8 focus:outline-none hover:bg-orange-700 hover:-translate-y-0.5 active:translate-y-0 rounded-full text-lg font-bold shadow-lg transition-all duration-200"
+                  className="inline-flex text-white border-0 py-3 px-8 focus:outline-none hover:-translate-y-0.5 active:translate-y-0 rounded-full text-lg font-bold shadow-lg transition-all duration-200" style={{ background: '#1476A6' }}
                 >
                   お問い合わせ
                 </a>

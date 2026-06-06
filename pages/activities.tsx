@@ -253,7 +253,7 @@ export default function Activities() {
                   <div key={activity.id} className="p-4 md:w-1/2 lg:w-1/3">
                     <div className="h-full bg-white rounded-lg overflow-hidden">
                       <div className="p-6">
-                        <p className="text-orange-500 text-xs font-medium mb-2">
+                        <p className="text-xs font-medium mb-2" style={{ color: '#1476A6' }}>
                           {activity.date}
                         </p>
                         <h2 className="title-font text-base font-bold text-gray-900 mb-2">
@@ -272,19 +272,20 @@ export default function Activities() {
         </ScrollFadeIn>
 
         {/* CTA */}
-        <section className="text-gray-600 body-font bg-orange-500">
+        <section className="text-gray-600 body-font" style={{ background: '#1476A6' }}>
           <div className="container px-5 py-16 mx-auto">
             <div className="flex flex-col text-center w-full">
               <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-white">
                 研修・ワークショップのご依頼
               </h1>
-              <p className="lg:w-2/3 mx-auto leading-7 text-base text-orange-100 mb-8">
+              <p className="lg:w-2/3 mx-auto leading-7 text-base text-white opacity-80 mb-8">
                 学校・教育委員会向けの生成AI活用研修を全国で実施しています
               </p>
               <div className="flex justify-center gap-4 flex-wrap">
                 <a
                   href="/#contact"
-                  className="inline-flex text-orange-600 bg-white border-0 py-3 px-8 focus:outline-none hover:bg-orange-50 rounded-lg text-base font-bold transition-colors"
+                  className="inline-flex border-0 py-3 px-8 focus:outline-none rounded-lg text-base font-bold transition-colors"
+                  style={{ background: '#FDCA60', color: '#1A202C' }}
                 >
                   お問い合わせ
                 </a>
