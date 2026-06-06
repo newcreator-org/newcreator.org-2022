@@ -61,7 +61,7 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
               <div className="flex flex-wrap -m-4">
                 {media &&
                   media.map((post) => (
-                    <div className="w-full xl:w-1/3 md:w-1/2 p-4" key={post.id}>
+                    <div className="w-full xl:w-1/3 md:w-1/2 p-6" key={post.id}>
                       <a href={`/media/${post.id}`}>
                         <div className="bg-white overflow-hidden group h-full" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                           <div className="p-6">
@@ -93,7 +93,7 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
 
         {/* CTAセクション */}
         <section className="text-white body-font" style={{ background: '#1476A6' }}>
-          <div className="container px-5 py-16 mx-auto">
+          <div className="container px-5 py-20 mx-auto">
             <div className="flex flex-col text-center w-full">
               <h1 className="page-title font-bold title-font mb-4 text-white">
                 一緒に子どもたちの未来を創りませんか?
@@ -112,7 +112,7 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
                 </a>
                 <a
                   href="/#contact"
-                  className="inline-flex border-0 py-3 px-8 focus:outline-none rounded text-lg font-bold transition-colors duration-200"
+                  className="inline-flex border-0 py-3 px-8 focus:outline-none rounded-sm text-lg font-bold transition-colors duration-200"
                   style={{ background: 'rgba(255,255,255,0.15)', color: '#fff', border: '2px solid rgba(255,255,255,0.6)' }}
                 >
                   お問い合わせ

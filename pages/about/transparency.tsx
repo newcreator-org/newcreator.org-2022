@@ -75,7 +75,7 @@ export default function Transparency() {
         {/* 定款・規約 */}
         <ScrollFadeIn>
           <section className="body-font bg-white">
-            <div className="container px-5 py-16 mx-auto">
+            <div className="container px-5 py-20 mx-auto">
               <div className="max-w-4xl mx-auto">
                 <h2 className="section-title mb-2" style={{ color: "#1A202C" }}>
                   定款・規約
@@ -131,7 +131,7 @@ export default function Transparency() {
         {/* 財務情報 */}
         <ScrollFadeIn>
           <section className="body-font" style={{ background: "#F8FCFF" }}>
-            <div className="container px-5 py-16 mx-auto">
+            <div className="container px-5 py-20 mx-auto">
               <div className="max-w-4xl mx-auto">
                 <h2 className="section-title mb-2" style={{ color: "#1A202C" }}>
                   財務情報
@@ -141,7 +141,7 @@ export default function Transparency() {
                 </p>
 
                 {/* 収支報告テーブル */}
-                <div className="bg-white rounded-sm p-8 mb-6 border" style={{ borderColor: "rgba(20,118,166,0.12)" }}>
+                <div className="bg-white rounded-sm p-6 mb-6 border" style={{ borderColor: "rgba(20,118,166,0.12)" }}>
                   <h3 className="card-title mb-6" style={{ color: "#1A202C" }}>
                     2023年度 収支報告
                   </h3>
@@ -205,7 +205,7 @@ export default function Transparency() {
                 </div>
 
                 {/* 寄付金の使途 */}
-                <div className="bg-white rounded-sm p-8 mb-6 border" style={{ borderColor: "rgba(20,118,166,0.12)" }}>
+                <div className="bg-white rounded-sm p-6 mb-6 border" style={{ borderColor: "rgba(20,118,166,0.12)" }}>
                   <h3 className="card-title mb-6" style={{ color: "#1A202C" }}>
                     寄付金の使途内訳（2023年度）
                   </h3>
@@ -218,7 +218,7 @@ export default function Transparency() {
                     ].map(({ pct, label }) => (
                       <div
                         key={pct + label}
-                        className="rounded-sm p-5 text-center"
+                        className="rounded-sm p-6 text-center"
                         style={{ background: "#EDF6FB" }}
                       >
                         <p className="text-3xl font-bold mb-2" style={{ color: "#1476A6" }}>{pct}</p>
@@ -229,7 +229,7 @@ export default function Transparency() {
                 </div>
 
                 {/* 年次報告書 */}
-                <div className="bg-white rounded-sm p-8 border" style={{ borderColor: "rgba(20,118,166,0.12)" }}>
+                <div className="bg-white rounded-sm p-6 border" style={{ borderColor: "rgba(20,118,166,0.12)" }}>
                   <h3 className="card-title mb-6" style={{ color: "#1A202C" }}>
                     年次報告書
                   </h3>
@@ -237,7 +237,7 @@ export default function Transparency() {
                     {["2023年度", "2022年度", "2021年度"].map((year) => (
                       <div
                         key={year}
-                        className="flex items-center justify-between p-4 rounded-sm"
+                        className="flex items-center justify-between p-6 rounded-sm"
                         style={{ background: "#F8FCFF" }}
                       >
                         <div>
@@ -260,7 +260,7 @@ export default function Transparency() {
         {/* 役員名簿 */}
         <ScrollFadeIn>
           <section className="body-font bg-white">
-            <div className="container px-5 py-16 mx-auto">
+            <div className="container px-5 py-20 mx-auto">
               <div className="max-w-3xl mx-auto">
                 <h2 className="section-title mb-2" style={{ color: "#1A202C" }}>
                   役員名簿
@@ -312,7 +312,7 @@ export default function Transparency() {
           className="body-font"
           style={{ background: "#1476A6" }}
         >
-          <div className="container px-5 py-16 mx-auto text-center">
+          <div className="container px-5 py-20 mx-auto text-center">
             <h2 className="section-title text-white mb-4">
               公開情報についてご不明な点は、お気軽に
             </h2>

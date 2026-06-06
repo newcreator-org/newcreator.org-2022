@@ -10,7 +10,7 @@ export default function Tokushoho() {
       <Header />
       <main>
         <section style={{ background: "#F8FCFF" }}>
-          <div className="container mx-auto px-5 py-16">
+          <div className="container mx-auto px-5 py-20">
             <div className="max-w-2xl">
               <h1
                 className="page-title"
@@ -22,7 +22,7 @@ export default function Tokushoho() {
           </div>
         </section>
 
-        <article className="container mx-auto px-5 py-16 max-w-2xl legal-body">
+        <article className="container mx-auto px-5 py-20 max-w-2xl legal-body">
           <p className="mb-10 leading-8" style={{ color: "#4A5568" }}>
             特定商取引法（旧称「訪問販売法」）は、訪問販売や通信販売等、消費者トラブルを生じやすい取引類型を対象に、事業者が守るべきルールと、クーリング・オフ等の消費者を守るルールを定めています。当法人においても、コンプライアンスの観点から、関連法規を遵守し、以下に「特定商取引法に基づく表示」を掲載します。
           </p>
@@ -82,13 +82,13 @@ export default function Tokushoho() {
             </p>
 
             <div className="mt-6 space-y-6">
-              <div className="p-5" style={{ background: "#F8FCFF", border: "1px solid #E2E8F0" }}>
+              <div className="p-6" style={{ background: "#F8FCFF", border: "1px solid #E2E8F0" }}>
                 <p className="font-bold mb-2" style={{ color: "#2D3748" }}>契約解除がサービス開始前（クーリングオフ期間は経過したが、まだ授業を受けていない）</p>
                 <p className="text-sm leading-6" style={{ color: "#4A5568" }}>
                   通常必要とする費用の額（初期費用）3,500円＋税
                 </p>
               </div>
-              <div className="p-5" style={{ background: "#F8FCFF", border: "1px solid #E2E8F0" }}>
+              <div className="p-6" style={{ background: "#F8FCFF", border: "1px solid #E2E8F0" }}>
                 <p className="font-bold mb-2" style={{ color: "#2D3748" }}>契約解除がサービス開始後（すでに何回か授業を受けている場合）</p>
                 <p className="text-sm leading-6" style={{ color: "#4A5568" }}>
                   ① 初期費用の具体的な内容が明示されていたら初期費用<br />

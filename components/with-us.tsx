@@ -1,7 +1,7 @@
 export default function Withus() {
     return (
         <section className="text-[#1A202C] body-font">
-            <div className="container px-5 py-24 mx-auto flex flex-wrap">
+            <div className="container px-5 py-20 mx-auto flex flex-wrap">
                 <div className="flex flex-col text-center w-full mb-20">
                     <h2 className="section-title text-[#1476A6] tracking-widest title-font mb-1">
                         WITH US
@@ -11,8 +11,8 @@ export default function Withus() {
                     </h1>
                 </div>
                 <div className="flex flex-wrap -m-4">
-                    <div className="p-4 lg:w-1/2 md:w-full">
-                        <div className="card-base flex p-8 sm:flex-row flex-col">
+                    <div className="p-6 lg:w-1/2 md:w-full">
+                        <div className="card-base flex p-6 sm:flex-row flex-col">
                             {/* <!-- <div
                             className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-[#EDF6FB] text-[#1476A6] flex-shrink-0">
                             <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
@@ -47,8 +47,8 @@ export default function Withus() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-4 lg:w-1/2 md:w-full">
-                        <div className="card-base flex p-8 sm:flex-row flex-col">
+                    <div className="p-6 lg:w-1/2 md:w-full">
+                        <div className="card-base flex p-6 sm:flex-row flex-col">
                             {/* <!--   <div
                             className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-[#EDF6FB] text-[#1476A6] flex-shrink-0">
                             <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
@@ -84,8 +84,8 @@ export default function Withus() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-4 lg:w-1/2 md:w-full">
-                        <div className="card-base flex p-8 sm:flex-row flex-col">
+                    <div className="p-6 lg:w-1/2 md:w-full">
+                        <div className="card-base flex p-6 sm:flex-row flex-col">
                             {/* <!--   <div
                                         className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-[#EDF6FB] text-[#1476A6] flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
@@ -121,8 +121,8 @@ export default function Withus() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-4 lg:w-1/2 md:w-full">
-                        <div className="card-base flex p-8 sm:flex-row flex-col">
+                    <div className="p-6 lg:w-1/2 md:w-full">
+                        <div className="card-base flex p-6 sm:flex-row flex-col">
                             {/* <!--   <div
                                         className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-[#EDF6FB] text-[#1476A6] flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"

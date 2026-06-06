@@ -233,7 +233,7 @@ export default function Apply() {
                 </section>
 
                 <section className="text-[#1A202C] body-font">
-                    <div className="container px-5 py-10 mx-auto flex flex-wrap max-w-6xl">
+                    <div className="container px-5 py-12 mx-auto flex flex-wrap max-w-6xl">
                         <div className="flex flex-col text-left w-full mb-5 leading-relaxed text-base">
                             <h1 className="page-title font-medium title-font mb-4 text-[#1A202C]">
                                 企画・運営

@@ -40,7 +40,7 @@ export default function Resources() {
         <main className="mx-auto">
           {/* ヒーローセクション */}
           <ScrollFadeIn>
-            <section className="bg-[#F8FCFF] py-20 md:py-28">
+            <section className="bg-[#F8FCFF] py-20 md:py-20">
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="text-center">
                   <h1 className="page-title font-bold text-[#1A202C] mb-6 leading-tight">
@@ -56,11 +56,11 @@ export default function Resources() {
 
           {/* 資料一覧 */}
           <ScrollFadeIn>
-            <section className="py-16 md:py-20">
+            <section className="py-20 md:py-20">
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="grid gap-8 md:gap-10">
                   {resources.map((resource, index) => (
-                    <div key={index} className="bg-white border border-[#E2E8F0] rounded-sm p-8">
+                    <div key={index} className="bg-white border border-[#E2E8F0] rounded-sm p-6">
                       <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
                         <div className="flex-1">
                           <div className="flex items-center gap-3 mb-4">
@@ -100,7 +100,7 @@ export default function Resources() {
 
           {/* 関連リンク */}
           <ScrollFadeIn>
-            <section className="py-16 md:py-20 bg-[#F8FCFF]">
+            <section className="py-20 md:py-20 bg-[#F8FCFF]">
               <div className="container px-5 mx-auto max-w-6xl">
                 <h2 className="section-title text-[#1A202C] mb-8 text-center">
                   その他のリソース
@@ -152,9 +152,9 @@ export default function Resources() {
 
           {/* お問い合わせCTA */}
           <ScrollFadeIn>
-            <section className="py-16 md:py-20">
+            <section className="py-20 md:py-20">
               <div className="container px-5 mx-auto max-w-4xl">
-                <div className="bg-[#1476A6] rounded-sm p-8 md:p-12 text-center text-white">
+                <div className="bg-[#1476A6] rounded-sm p-6 md:p-6 text-center text-white">
                   <h2 className="section-title mb-4">
                     導入支援のご相談はこちら
                   </h2>

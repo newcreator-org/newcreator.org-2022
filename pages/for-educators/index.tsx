@@ -42,7 +42,7 @@ export default function ForEducators({ guides, caseStudies }) {
         <main className="mx-auto">
           {/* ヒーローセクション */}
           <ScrollFadeIn>
-            <section className="py-20 md:py-28" style={{ background: '#F8FCFF' }}>
+            <section className="py-20 md:py-20" style={{ background: '#F8FCFF' }}>
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="text-center">
                   <h1 className="page-title font-bold text-[#1A202C] mb-6 leading-tight">
@@ -70,7 +70,7 @@ export default function ForEducators({ guides, caseStudies }) {
 
           {/* 実績セクション */}
           <ScrollFadeIn>
-            <section className="py-16 border-b border-[rgba(20,118,166,0.10)]">
+            <section className="py-20 border-b border-[rgba(20,118,166,0.10)]">
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                   <div className="text-center">
@@ -105,19 +105,19 @@ export default function ForEducators({ guides, caseStudies }) {
                   生成AIの急速な普及により、教育現場では新たな課題が生まれています。私たちはこれらの課題に対して、実践的な解決策を提供します。
                 </p>
                 <div className="grid md:grid-cols-3 gap-8">
-                  <div className="bg-white p-8 rounded-sm border border-[rgba(20,118,166,0.10)]">
+                  <div className="bg-white p-6 rounded-sm border border-[rgba(20,118,166,0.10)]">
                     <h3 className="card-title text-[#1A202C] mb-4">情報不足</h3>
                     <p className="text-[#4A5568] leading-relaxed">
                       生成AIの教育活用について、信頼できる情報や実践事例が不足しています。どこから始めればよいか分からない先生方が多くいらっしゃいます。
                     </p>
                   </div>
-                  <div className="bg-white p-8 rounded-sm border border-[rgba(20,118,166,0.10)]">
+                  <div className="bg-white p-6 rounded-sm border border-[rgba(20,118,166,0.10)]">
                     <h3 className="card-title text-[#1A202C] mb-4">時間の制約</h3>
                     <p className="text-[#4A5568] leading-relaxed">
                       日々の授業準備や校務に追われる中で、新しい技術を学び、授業に取り入れる時間を確保することが困難です。
                     </p>
                   </div>
-                  <div className="bg-white p-8 rounded-sm border border-[rgba(20,118,166,0.10)]">
+                  <div className="bg-white p-6 rounded-sm border border-[rgba(20,118,166,0.10)]">
                     <h3 className="card-title text-[#1A202C] mb-4">セキュリティ懸念</h3>
                     <p className="text-[#4A5568] leading-relaxed">
                       個人情報保護やデータセキュリティの観点から、一般的な生成AIサービスを学校で使用することに不安を感じる声が多く聞かれます。
@@ -139,7 +139,7 @@ export default function ForEducators({ guides, caseStudies }) {
                   研修から導入支援まで、学校のニーズに合わせて対応します。
                 </p>
                 <div className="divide-y divide-[#E2E8F0]">
-                  <div className="py-8">
+                  <div className="py-12">
                     <div className="flex flex-col md:flex-row md:items-start md:gap-12">
                       <div className="md:w-1/3 mb-3 md:mb-0">
                         <h3 className="card-title text-[#1A202C]">学校向け出張研修</h3>
@@ -153,7 +153,7 @@ export default function ForEducators({ guides, caseStudies }) {
                       </div>
                     </div>
                   </div>
-                  <div className="py-8">
+                  <div className="py-12">
                     <div className="flex flex-col md:flex-row md:items-start md:gap-12">
                       <div className="md:w-1/3 mb-3 md:mb-0">
                         <h3 className="card-title text-[#1A202C]">AI導入支援</h3>
@@ -167,7 +167,7 @@ export default function ForEducators({ guides, caseStudies }) {
                       </div>
                     </div>
                   </div>
-                  <div className="py-8">
+                  <div className="py-12">
                     <div className="flex flex-col md:flex-row md:items-start md:gap-12">
                       <div className="md:w-1/3 mb-3 md:mb-0">
                         <h3 className="card-title text-[#1A202C]">プライベートGPT</h3>
@@ -181,7 +181,7 @@ export default function ForEducators({ guides, caseStudies }) {
                       </div>
                     </div>
                   </div>
-                  <div className="py-8">
+                  <div className="py-12">
                     <div className="flex flex-col md:flex-row md:items-start md:gap-12">
                       <div className="md:w-1/3 mb-3 md:mb-0">
                         <h3 className="card-title text-[#1A202C]">プログラミング教育</h3>
@@ -288,7 +288,7 @@ export default function ForEducators({ guides, caseStudies }) {
                   </p>
                 </div>
                 <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                  <div className="bg-white border border-[#E2E8F0] rounded-sm p-8">
+                  <div className="bg-white border border-[#E2E8F0] rounded-sm p-6">
                     <h3 className="card-title text-[#1A202C] mb-3">学校でのAI導入完全ガイド</h3>
                     <p className="text-[#4A5568] mb-6 text-sm leading-relaxed">
                       計画策定から運用まで、学校でのAI導入の全プロセスを詳しく解説したガイドブックです。
@@ -299,7 +299,7 @@ export default function ForEducators({ guides, caseStudies }) {
                     </a>
                     </Link>
                   </div>
-                  <div className="bg-white border border-[#E2E8F0] rounded-sm p-8">
+                  <div className="bg-white border border-[#E2E8F0] rounded-sm p-6">
                     <h3 className="card-title text-[#1A202C] mb-3">学校AI活用チェックリスト</h3>
                     <p className="text-[#4A5568] mb-6 text-sm leading-relaxed">
                       AI導入前に確認すべき項目をまとめたチェックリスト。導入計画の策定に役立ちます。
@@ -371,7 +371,7 @@ export default function ForEducators({ guides, caseStudies }) {
           <ScrollFadeIn>
             <section id="contact" className="py-20">
               <div className="container px-5 mx-auto max-w-4xl">
-                <div className="p-12 text-center text-white" style={{ background: "#1476A6" }}>
+                <div className="p-6 text-center text-white" style={{ background: "#1476A6" }}>
                   <h2 className="page-title font-bold mb-4">
                     まずはお気軽にご相談ください
                   </h2>

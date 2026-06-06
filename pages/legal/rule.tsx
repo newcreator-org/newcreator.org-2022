@@ -10,7 +10,7 @@ export default function Rule() {
       <Header />
       <main>
         <section style={{ background: "#F8FCFF" }}>
-          <div className="container mx-auto px-5 py-16">
+          <div className="container mx-auto px-5 py-20">
             <div className="max-w-2xl">
               <p className="text-xs mb-2" style={{ color: "#718096" }}>
                 2020年6月9日 制定
@@ -28,7 +28,7 @@ export default function Rule() {
           </div>
         </section>
 
-        <article className="container mx-auto px-5 py-16 max-w-2xl legal-body">
+        <article className="container mx-auto px-5 py-20 max-w-2xl legal-body">
           <p className="mb-10 leading-8" style={{ color: "#4A5568" }}>
             本ルールは、特定非営利活動法人ニュークリエイター・オルグ（以下「当法人」といいます）が実施する micro:bit プレゼント企画における提供条件を定めるものです。
           </p>

@@ -235,7 +235,7 @@ export default function About() {
         {/* 関連ページ */}
         <ScrollFadeIn>
           <section className="body-font" style={{ background: '#F8FCFF' }}>
-            <div className="container px-5 py-16 mx-auto">
+            <div className="container px-5 py-20 mx-auto">
               <div className="max-w-3xl mx-auto">
                 <h2 className="section-title mb-8" style={{ color: '#1A202C' }}>関連情報</h2>
                 <div className="grid md:grid-cols-2 gap-4">

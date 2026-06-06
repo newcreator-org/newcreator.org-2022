@@ -10,7 +10,7 @@ export default function Terms() {
       <Header />
       <main>
         <section style={{ background: "#F8FCFF" }}>
-          <div className="container mx-auto px-5 py-16">
+          <div className="container mx-auto px-5 py-20">
             <div className="max-w-2xl">
               <p className="text-xs mb-2" style={{ color: "#718096" }}>
                 2020年6月9日 制定・2020年10月18日 更新
@@ -25,7 +25,7 @@ export default function Terms() {
           </div>
         </section>
 
-        <article className="container mx-auto px-5 py-16 max-w-2xl legal-body">
+        <article className="container mx-auto px-5 py-20 max-w-2xl legal-body">
           <p className="mb-10 leading-8" style={{ color: "#4A5568" }}>
             この規約（以下「本規約」といいます）は、特定非営利活動法人ニュークリエイター・オルグ（以下「当法人」といいます）が提供する「newCreator School」及び関連するサービス（以下「本サービス」といいます）をご利用頂く際の取扱いにつき定めるものです。利用者は、本規約をよく読み同意した上で本サービスをご利用ください。
           </p>

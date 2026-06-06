@@ -62,7 +62,7 @@ export default function CaseStudyDetail({ caseStudy }) {
           ]}
         />
         <main className="mx-auto">
-          <article className="py-16">
+          <article className="py-20">
             <div className="container px-5 mx-auto max-w-4xl">
 
 
@@ -92,7 +92,7 @@ export default function CaseStudyDetail({ caseStudy }) {
               />
 
               <div className="mt-12 pt-8 border-t border-[#E2E8F0]">
-                <div className="rounded-sm p-8" style={{ background: '#EDF6FB' }}>
+                <div className="rounded-sm p-6" style={{ background: '#EDF6FB' }}>
                   <h2 className="section-title text-[#1A202C] mb-4">
                     貴校でも導入してみませんか
                   </h2>

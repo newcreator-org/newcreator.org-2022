@@ -54,7 +54,7 @@ export default function Company() {
         {/* 基本情報テーブル */}
         <ScrollFadeIn>
           <section className="body-font bg-white">
-            <div className="container px-5 py-16 mx-auto">
+            <div className="container px-5 py-20 mx-auto">
               <div className="max-w-3xl mx-auto">
                 <h2
                   className="section-title mb-8"
@@ -106,7 +106,7 @@ export default function Company() {
         {/* 設立の経緯 */}
         <ScrollFadeIn>
           <section className="body-font" style={{ background: "#F8FCFF" }}>
-            <div className="container px-5 py-16 mx-auto">
+            <div className="container px-5 py-20 mx-auto">
               <div className="max-w-3xl mx-auto">
                 <h2 className="section-title mb-6" style={{ color: "#1A202C" }}>
                   設立の経緯
@@ -141,7 +141,7 @@ export default function Company() {
         {/* 関連ページリンク */}
         <ScrollFadeIn>
           <section className="body-font bg-white">
-            <div className="container px-5 py-16 mx-auto">
+            <div className="container px-5 py-20 mx-auto">
               <div className="max-w-3xl mx-auto">
                 <h2 className="section-title mb-8" style={{ color: "#1A202C" }}>
                   関連情報

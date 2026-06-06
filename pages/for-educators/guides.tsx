@@ -57,7 +57,7 @@ export default function Guides({ guides }) {
         />
         <main className="mx-auto">
           <ScrollFadeIn>
-            <section className="py-16 bg-[#F8FCFF]">
+            <section className="py-20 bg-[#F8FCFF]">
               <div className="container px-5 mx-auto max-w-6xl">
                 <h1 className="page-title font-bold text-[#1A202C] mb-4 text-center">
                   実践ガイド
@@ -95,7 +95,7 @@ export default function Guides({ guides }) {
           </ScrollFadeIn>
 
           <ScrollFadeIn>
-            <section className="py-16">
+            <section className="py-20">
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="grid md:grid-cols-3 gap-8">
                   {filteredGuides.map((guide) => (
@@ -110,7 +110,7 @@ export default function Guides({ guides }) {
                   ))}
                 </div>
                 {filteredGuides.length === 0 && (
-                  <div className="text-center py-16">
+                  <div className="text-center py-20">
                     <p className="text-[#4A5568]">該当するガイドが見つかりませんでした。</p>
                   </div>
                 )}
@@ -119,7 +119,7 @@ export default function Guides({ guides }) {
           </ScrollFadeIn>
 
           <ScrollFadeIn>
-            <section className="py-16 bg-[#F8FCFF]">
+            <section className="py-20 bg-[#F8FCFF]">
               <div className="container px-5 mx-auto max-w-4xl text-center">
                 <h2 className="section-title text-[#1A202C] mb-4">
                   導入のご相談はこちら

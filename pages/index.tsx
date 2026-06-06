@@ -33,7 +33,7 @@ export default function Home({ news, archives, media }) {
           {/* 実績 */}
           <ScrollFadeIn>
             <section className="border-b border-[rgba(20,118,166,0.10)]">
-              <div className="container px-5 py-16 mx-auto">
+              <div className="container px-5 py-20 mx-auto">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
                   <div className="text-center">
                     <p className="page-title font-bold text-[#1A202C] tracking-tight">
@@ -82,7 +82,7 @@ export default function Home({ news, archives, media }) {
                 </div>
               </div>
               <div className="container px-5 mx-auto pb-16">
-                <div className="py-8" style={{ borderTop: '1px solid rgba(20,118,166,0.12)' }}>
+                <div className="py-12" style={{ borderTop: '1px solid rgba(20,118,166,0.12)' }}>
                   <p className="sm:text-xl text-lg font-bold text-[#1A202C] leading-relaxed">
                     「STEAM教育を、全国の子どもたちに格差なく」
                   </p>
@@ -110,14 +110,14 @@ export default function Home({ news, archives, media }) {
 
                 {/* メインサービス */}
                 <div className="flex flex-wrap -m-4 mb-8">
-                  <div className="w-full p-4">
+                  <div className="w-full p-6">
                     <div className="bg-white md:flex overflow-hidden" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                       <img
                         className="h-64 md:h-auto md:w-1/2 w-full object-cover object-center"
                         src="/img/works/otsumajyoshi.jpg"
                         alt="学校向け出張授業・登壇"
                       />
-                      <div className="p-6 md:p-8 flex flex-col justify-center">
+                      <div className="p-6 md:p-6 flex flex-col justify-center">
                         <p className="text-xs font-bold tracking-wider mb-2" style={{ color: '#1476A6' }}>10都道府県 22校で実施</p>
                         <h2 className="section-title text-[#1A202C] title-font mb-3">
                           学校向け出張授業・登壇
@@ -134,7 +134,7 @@ export default function Home({ news, archives, media }) {
                 </div>
 
                 <div className="flex flex-wrap -m-4 mb-8">
-                  <div className="xl:w-1/2 md:w-1/2 p-4">
+                  <div className="xl:w-1/2 md:w-1/2 p-6">
                     <div className="bg-white overflow-hidden h-full" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                       <img
                         className="h-48 w-full object-cover object-center"
@@ -154,7 +154,7 @@ export default function Home({ news, archives, media }) {
                       </div>
                     </div>
                   </div>
-                  <div className="xl:w-1/2 md:w-1/2 p-4">
+                  <div className="xl:w-1/2 md:w-1/2 p-6">
                     <div className="bg-white overflow-hidden h-full" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                       <img
                         className="h-48 w-full object-cover object-center"
@@ -175,14 +175,14 @@ export default function Home({ news, archives, media }) {
 
                 {/* その他のサービス */}
                 <div className="flex flex-wrap -m-4">
-                  <div className="xl:w-1/3 md:w-1/3 p-4">
+                  <div className="xl:w-1/3 md:w-1/3 p-6">
                     <div className="bg-white overflow-hidden h-full" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                       <img
                         className="h-40 w-full object-cover object-center"
                         src="/img/works/workshop.jpg"
                         alt="プログラミング教育"
                       />
-                      <div className="p-5">
+                      <div className="p-6">
                         <h2 className="section-title text-[#1A202C] title-font mb-2">
                           プログラミング教育
                         </h2>
@@ -192,14 +192,14 @@ export default function Home({ news, archives, media }) {
                       </div>
                     </div>
                   </div>
-                  <div className="xl:w-1/3 md:w-1/3 p-4">
+                  <div className="xl:w-1/3 md:w-1/3 p-6">
                     <div className="bg-white overflow-hidden h-full" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                       <img
                         className="h-40 w-full object-cover object-center"
                         src="/img/works/school.jpg"
                         alt="オンラインスクール"
                       />
-                      <div className="p-5">
+                      <div className="p-6">
                         <h2 className="section-title text-[#1A202C] title-font mb-2">
                           オンラインスクール
                         </h2>
@@ -209,14 +209,14 @@ export default function Home({ news, archives, media }) {
                       </div>
                     </div>
                   </div>
-                  <div className="xl:w-1/3 md:w-1/3 p-4">
+                  <div className="xl:w-1/3 md:w-1/3 p-6">
                     <div className="bg-white overflow-hidden h-full" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                       <img
                         className="h-40 w-full object-cover object-center"
                         src="/img/works/logy.jpg"
                         alt="学校支援"
                       />
-                      <div className="p-5">
+                      <div className="p-6">
                         <h2 className="section-title text-[#1A202C] title-font mb-2">
                           学校支援
                         </h2>
@@ -233,7 +233,7 @@ export default function Home({ news, archives, media }) {
 
           {/* 先生・学校向けCTA */}
           <ScrollFadeIn>
-            <section className="text-white py-16" style={{ background: '#1476A6' }}>
+            <section className="text-white py-20" style={{ background: '#1476A6' }}>
               <div className="container px-5 mx-auto max-w-5xl">
                 <div className="text-center mb-8">
                   <h2 className="page-title font-bold mb-4">
@@ -351,14 +351,14 @@ export default function Home({ news, archives, media }) {
                 <div className="flex flex-wrap -m-4">
                   {archives &&
                     archives.map((archive) => (
-                      <div className="w-full xl:w-1/4 md:w-1/2 p-4" key={archive.title}>
+                      <div className="w-full xl:w-1/4 md:w-1/2 p-6" key={archive.title}>
                         <div className="bg-white overflow-hidden" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                           <img
                             className="h-40 w-full object-cover object-center"
                             src="/ogp.png"
                             alt="content"
                           />
-                          <div className="p-5">
+                          <div className="p-6">
                             <p className="text-xs font-medium mb-1" style={{ color: '#1476A6' }}>
                               {dayjs(archive.date).format("YYYY.MM.DD")}
                             </p>
@@ -394,7 +394,7 @@ export default function Home({ news, archives, media }) {
                 <div className="flex flex-wrap -m-4">
                   {media &&
                     media.map((post) => (
-                      <div className="w-full xl:w-1/3 md:w-1/2 p-4" key={post.id}>
+                      <div className="w-full xl:w-1/3 md:w-1/2 p-6" key={post.id}>
                         <a href={`/media/${post.id}`}>
                           <div className="bg-white overflow-hidden h-full" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                             <div className="p-6">
@@ -445,7 +445,7 @@ export default function Home({ news, archives, media }) {
                   {news &&
                     news.map((news) => (
                       <a
-                        className="p-4 flex flex-col md:flex-no-wrap border-b border-[rgba(20,118,166,0.10)] hover:bg-[#F8FCFF] rounded-sm transition-colors"
+                        className="p-6 flex flex-col md:flex-no-wrap border-b border-[rgba(20,118,166,0.10)] hover:bg-[#F8FCFF] rounded-sm transition-colors"
                         key={news.id}
                         href={"/information/" + news.id}
                       >
@@ -476,7 +476,7 @@ export default function Home({ news, archives, media }) {
 
           <ScrollFadeIn>
             <section className="text-[#1A202C] body-font bg-[#F8FCFF]">
-              <div className="container px-5 py-16 mx-auto">
+              <div className="container px-5 py-20 mx-auto">
                 <h1 className="page-title font-bold title-font text-[#1A202C] mb-8 text-center">
                   メディア掲載
                 </h1>
@@ -574,7 +574,7 @@ export default function Home({ news, archives, media }) {
                 </div>
                 <div className="lg:w-3/4 mx-auto mb-12">
                   <div className="flex flex-wrap -m-4">
-                    <div className="p-4 md:w-1/3 w-full">
+                    <div className="p-6 md:w-1/3 w-full">
                       <div className="border border-[#E2E8F0] rounded-sm p-6 h-full">
                         <p className="text-2xl font-bold mb-2" style={{ color: '#1476A6' }}>¥3,000</p>
                         <p className="text-[#4A5568] text-sm leading-relaxed">
@@ -582,7 +582,7 @@ export default function Home({ news, archives, media }) {
                         </p>
                       </div>
                     </div>
-                    <div className="p-4 md:w-1/3 w-full">
+                    <div className="p-6 md:w-1/3 w-full">
                       <div className="border border-[#E2E8F0] rounded-sm p-6 h-full">
                         <p className="text-2xl font-bold mb-2" style={{ color: '#1476A6' }}>¥10,000</p>
                         <p className="text-[#4A5568] text-sm leading-relaxed">
@@ -590,7 +590,7 @@ export default function Home({ news, archives, media }) {
                         </p>
                       </div>
                     </div>
-                    <div className="p-4 md:w-1/3 w-full">
+                    <div className="p-6 md:w-1/3 w-full">
                       <div className="border border-[#E2E8F0] rounded-sm p-6 h-full">
                         <p className="text-2xl font-bold mb-2" style={{ color: '#1476A6' }}>¥30,000</p>
                         <p className="text-[#4A5568] text-sm leading-relaxed">

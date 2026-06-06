@@ -51,7 +51,7 @@ export default function Apply() {
                     </p>
                 </footer>
                 <section className="text-[#1A202C] body-font">
-                    <div className="container px-5 py-24 mx-auto flex flex-wrap">
+                    <div className="container px-5 py-20 mx-auto flex flex-wrap">
                         <div className="flex flex-col text-center w-full mb-10">
                             <h1 className="page-title font-medium title-font text-[#1A202C]">
                                 はじめに
@@ -80,7 +80,7 @@ export default function Apply() {
                 </section>
 
                 <section className="text-[#1A202C] body-font">
-                    <div className="container px-5 py-24 mx-auto flex flex-wrap">
+                    <div className="container px-5 py-20 mx-auto flex flex-wrap">
                         <div className="flex flex-col text-center w-full mb-10">
                             <h1 className="page-title font-medium title-font text-[#1A202C]">
                                 対象
@@ -136,7 +136,7 @@ export default function Apply() {
                         </div>
                         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
                             <img
-                                className="object-cover object-center rounded"
+                                className="object-cover object-center rounded-sm"
                                 alt="hero"
                                 src="/img/apply/microbit.png"
                             />
@@ -148,7 +148,7 @@ export default function Apply() {
                     <div className="container mx-auto flex px-5 mb-12 md:flex-row flex-col items-center">
                         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
                             <img
-                                className="object-cover object-center rounded"
+                                className="object-cover object-center rounded-sm"
                                 alt="hero"
                                 src="/img/apply/text.png"
                             />
@@ -173,7 +173,7 @@ export default function Apply() {
                     </p>
                 </section>
                 <section className="text-[#1A202C] body-font mt-10">
-                    <div className="container px-5 py-24 mx-auto text-center">
+                    <div className="container px-5 py-20 mx-auto text-center">
                         <div className="text-center mb-20">
                             <h1 className="page-title font-medium text-center title-font text-[#1A202C] mb-4">
                                 micro:bit とは？
@@ -197,7 +197,7 @@ export default function Apply() {
                                 </p>
                             </div>
                             <div className="p-2 sm:w-1/2 w-full">
-                                <div className="bg-[#E2E8F0] rounded flex p-4 h-full items-center">
+                                <div className="bg-[#E2E8F0] rounded-sm flex p-6 h-full items-center">
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
@@ -216,7 +216,7 @@ export default function Apply() {
                                 </div>
                             </div>
                             <div className="p-2 sm:w-1/2 w-full">
-                                <div className="bg-[#E2E8F0] rounded flex p-4 h-full items-center">
+                                <div className="bg-[#E2E8F0] rounded-sm flex p-6 h-full items-center">
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
@@ -235,7 +235,7 @@ export default function Apply() {
                                 </div>
                             </div>
                             <div className="p-2 sm:w-1/2 w-full">
-                                <div className="bg-[#E2E8F0] rounded flex p-4 h-full items-center">
+                                <div className="bg-[#E2E8F0] rounded-sm flex p-6 h-full items-center">
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
@@ -254,7 +254,7 @@ export default function Apply() {
                                 </div>
                             </div>
                             <div className="p-2 sm:w-1/2 w-full">
-                                <div className="bg-[#E2E8F0] rounded flex p-4 h-full items-center">
+                                <div className="bg-[#E2E8F0] rounded-sm flex p-6 h-full items-center">
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
@@ -273,7 +273,7 @@ export default function Apply() {
                                 </div>
                             </div>
                             <div className="p-2 sm:w-1/2 w-full">
-                                <div className="bg-[#E2E8F0] rounded flex p-4 h-full items-center">
+                                <div className="bg-[#E2E8F0] rounded-sm flex p-6 h-full items-center">
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
@@ -292,7 +292,7 @@ export default function Apply() {
                                 </div>
                             </div>
                             <div className="p-2 sm:w-1/2 w-full">
-                                <div className="bg-[#E2E8F0] rounded flex p-4 h-full items-center">
+                                <div className="bg-[#E2E8F0] rounded-sm flex p-6 h-full items-center">
                                     <svg
                                         fill="none"
                                         stroke="currentColor"
@@ -323,7 +323,7 @@ export default function Apply() {
                     </div>
                 </section>
                 <section className="text-[#1A202C] body-font">
-                    <div className="container px-5 py-24 mx-auto flex flex-wrap">
+                    <div className="container px-5 py-20 mx-auto flex flex-wrap">
                         <div className="flex flex-col text-center w-full mb-12">
                             <h1 className="page-title font-medium title-font mb-4 text-[#1A202C]">
                                 ご応募の流れ
@@ -469,7 +469,7 @@ export default function Apply() {
                     </div>
                 </section>
                 <section className="text-[#1A202C] body-font relative">
-                    <div className="container px-5 py-24 mx-auto">
+                    <div className="container px-5 py-20 mx-auto">
                         <div className="flex flex-col text-center w-full mb-12">
                             <h1 className="page-title font-medium title-font mb-4 text-[#1A202C]">
                                 ご応募はこちらから
@@ -493,7 +493,7 @@ export default function Apply() {
                     </div>
                 </section>
                 <section className="text-[#1A202C] body-font">
-                    <div className="container px-5 py-24 mx-auto">
+                    <div className="container px-5 py-20 mx-auto">
                         <div className="flex flex-col text-center w-full mb-20">
                             <h1 className="page-title font-medium title-font mb-4 text-[#1A202C]">
                                 支援者の方々
@@ -505,9 +505,9 @@ export default function Apply() {
                             </p>
                         </div>
                         <div className="flex flex-wrap -m-4">
-                            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+                            <div className="lg:w-1/4 md:w-1/2 p-6 w-full">
                                 <a
-                                    className="block relative h-48 rounded overflow-hidden"
+                                    className="block relative h-48 rounded-sm overflow-hidden"
                                     href="https://logy.app"
                                 >
                                     <img
@@ -525,8 +525,8 @@ export default function Apply() {
                                     </h2>
                                 </div>
                             </div>
-                            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-                                <a className="block relative h-48 rounded overflow-hidden">
+                            <div className="lg:w-1/4 md:w-1/2 p-6 w-full">
+                                <a className="block relative h-48 rounded-sm overflow-hidden">
                                     <img
                                         alt="ecommerce"
                                         className="object-cover object-center w-full h-full block"
@@ -542,9 +542,9 @@ export default function Apply() {
                                     </h2>
                                 </div>
                             </div>
-                            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+                            <div className="lg:w-1/4 md:w-1/2 p-6 w-full">
                                 <a
-                                    className="block relative h-48 rounded overflow-hidden"
+                                    className="block relative h-48 rounded-sm overflow-hidden"
                                     href="https://www.kidsweekend.jp/portal"
                                 >
                                     <img
@@ -562,8 +562,8 @@ export default function Apply() {
                                     </h2>
                                 </div>
                             </div>
-                            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-                                <a className="block relative h-48 rounded overflow-hidden">
+                            <div className="lg:w-1/4 md:w-1/2 p-6 w-full">
+                                <a className="block relative h-48 rounded-sm overflow-hidden">
                                     <img
                                         alt="ecommerce"
                                         className="object-cover object-center w-full h-full block"
@@ -579,8 +579,8 @@ export default function Apply() {
                                     </h2>
                                 </div>
                             </div>
-                            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-                                <a className="block relative h-48 rounded overflow-hidden">
+                            <div className="lg:w-1/4 md:w-1/2 p-6 w-full">
+                                <a className="block relative h-48 rounded-sm overflow-hidden">
                                     <img
                                         alt="ecommerce"
                                         className="object-cover object-center w-full h-full block"
@@ -596,8 +596,8 @@ export default function Apply() {
                                     </h2>
                                 </div>
                             </div>
-                            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-                                <a className="block relative h-48 rounded overflow-hidden">
+                            <div className="lg:w-1/4 md:w-1/2 p-6 w-full">
+                                <a className="block relative h-48 rounded-sm overflow-hidden">
                                     <img
                                         alt="ecommerce"
                                         className="object-cover object-center w-full h-full block"
@@ -613,8 +613,8 @@ export default function Apply() {
                                     </h2>
                                 </div>
                             </div>
-                            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-                                <a className="block relative h-48 rounded overflow-hidden">
+                            <div className="lg:w-1/4 md:w-1/2 p-6 w-full">
+                                <a className="block relative h-48 rounded-sm overflow-hidden">
                                     <img
                                         alt="ecommerce"
                                         className="object-cover object-center w-full h-full block"
@@ -630,8 +630,8 @@ export default function Apply() {
                                     </h2>
                                 </div>
                             </div>
-                            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-                                <a className="block relative h-48 rounded overflow-hidden">
+                            <div className="lg:w-1/4 md:w-1/2 p-6 w-full">
+                                <a className="block relative h-48 rounded-sm overflow-hidden">
                                     <img
                                         alt="ecommerce"
                                         className="object-cover object-center w-full h-full block"
@@ -647,8 +647,8 @@ export default function Apply() {
                                     </h2>
                                 </div>
                             </div>
-                            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-                                <a className="block relative h-48 rounded overflow-hidden">
+                            <div className="lg:w-1/4 md:w-1/2 p-6 w-full">
+                                <a className="block relative h-48 rounded-sm overflow-hidden">
                                     <img
                                         alt="ecommerce"
                                         className="object-cover object-center w-full h-full block"
@@ -664,8 +664,8 @@ export default function Apply() {
                                     </h2>
                                 </div>
                             </div>
-                            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-                                <a className="block relative h-48 rounded overflow-hidden">
+                            <div className="lg:w-1/4 md:w-1/2 p-6 w-full">
+                                <a className="block relative h-48 rounded-sm overflow-hidden">
                                     <img
                                         alt="ecommerce"
                                         className="object-cover object-center w-full h-full block"
@@ -681,8 +681,8 @@ export default function Apply() {
                                     </h2>
                                 </div>
                             </div>
-                            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-                                <a className="block relative h-48 rounded overflow-hidden">
+                            <div className="lg:w-1/4 md:w-1/2 p-6 w-full">
+                                <a className="block relative h-48 rounded-sm overflow-hidden">
                                     <img
                                         alt="ecommerce"
                                         className="object-cover object-center w-full h-full block"
@@ -698,9 +698,9 @@ export default function Apply() {
                                     </h2>
                                 </div>
                             </div>
-                            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+                            <div className="lg:w-1/4 md:w-1/2 p-6 w-full">
                                 <a
-                                    className="block relative h-48 rounded overflow-hidden"
+                                    className="block relative h-48 rounded-sm overflow-hidden"
                                     href="https://crssrds.jp/aboutus/"
                                 >
                                     <img
@@ -718,9 +718,9 @@ export default function Apply() {
                                     </h2>
                                 </div>
                             </div>
-                            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+                            <div className="lg:w-1/4 md:w-1/2 p-6 w-full">
                                 <a
-                                    className="block relative h-48 rounded overflow-hidden"
+                                    className="block relative h-48 rounded-sm overflow-hidden"
                                     href="https://geolonia.com/"
                                 >
                                     <img
@@ -738,8 +738,8 @@ export default function Apply() {
                                     </h2>
                                 </div>
                             </div>
-                            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-                                <a className="block relative h-48 rounded overflow-hidden">
+                            <div className="lg:w-1/4 md:w-1/2 p-6 w-full">
+                                <a className="block relative h-48 rounded-sm overflow-hidden">
                                     <img
                                         alt="ecommerce"
                                         className="object-cover object-center w-full h-full block"
@@ -755,7 +755,7 @@ export default function Apply() {
                     </div>
                 </section>
                 <section className="text-[#1A202C] body-font relative">
-                    <div className="container px-5 py-24 mx-auto">
+                    <div className="container px-5 py-20 mx-auto">
                         <div className="flex flex-col text-center w-full mb-12">
                             <h1 className="page-title font-medium title-font mb-4 text-[#1A202C]">
                                 お知らせ
@@ -785,14 +785,14 @@ export default function Apply() {
                     </div>
                 </section>
                 <section className="text-[#1A202C] body-font">
-                    <div className="container px-5 py-24 mx-auto flex flex-wrap">
+                    <div className="container px-5 py-20 mx-auto flex flex-wrap">
                         <div className="flex flex-col text-center w-full mb-12">
                             <h1 className="page-title font-medium title-font mb-4 text-[#1A202C]">
                                 企画・運営
                             </h1>
                         </div>
                         <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
-                            <div className="w-full sm:p-4 px-4 mb-6">
+                            <div className="w-full sm:p-6 px-4 mb-6">
                                 <h1 className="page-title title-font mb-2 text-[#1A202C]">
                                     特定非営利活動法人ニュークリエイター・オルグ
                                 </h1>

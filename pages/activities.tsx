@@ -189,7 +189,7 @@ export default function Activities() {
 
         <ScrollFadeIn>
           <section className="text-gray-600 body-font border-b border-[rgba(20,118,166,0.10)]">
-            <div className="container px-5 py-16 mx-auto">
+            <div className="container px-5 py-20 mx-auto">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
                 <div className="text-center">
                   <p className="page-title font-bold text-[#1A202C] tracking-tight">
@@ -269,7 +269,7 @@ export default function Activities() {
 
         {/* CTA */}
         <section className="text-gray-600 body-font" style={{ background: '#1476A6' }}>
-          <div className="container px-5 py-16 mx-auto">
+          <div className="container px-5 py-20 mx-auto">
             <div className="flex flex-col text-center w-full">
               <h1 className="page-title font-bold title-font mb-4 text-white">
                 研修・ワークショップのご依頼

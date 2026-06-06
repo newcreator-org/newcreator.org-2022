@@ -114,7 +114,7 @@ export default function FAQ() {
         <Header />
         <main className="mx-auto">
           <ScrollFadeIn>
-            <section className="bg-[#F8FCFF] py-16 md:py-20">
+            <section className="bg-[#F8FCFF] py-20 md:py-20">
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="text-center">
                   <h1 className="page-title font-bold text-[#1A202C] mb-4">
@@ -130,7 +130,7 @@ export default function FAQ() {
           </ScrollFadeIn>
 
           <ScrollFadeIn>
-            <section className="py-16">
+            <section className="py-20">
               <div className="container px-5 mx-auto max-w-4xl">
                 {faqData.map((category, categoryIndex) => (
                   <div key={categoryIndex} className="mb-12">
@@ -162,7 +162,7 @@ export default function FAQ() {
           </ScrollFadeIn>
 
           <ScrollFadeIn>
-            <section className="py-16 bg-[#F8FCFF]">
+            <section className="py-20 bg-[#F8FCFF]">
               <div className="container px-5 mx-auto max-w-4xl text-center">
                 <h2 className="section-title text-[#1A202C] mb-4">
                   その他のご質問はこちら
@@ -189,7 +189,7 @@ export default function FAQ() {
           </ScrollFadeIn>
 
           <ScrollFadeIn>
-            <section className="py-16">
+            <section className="py-20">
               <div className="container px-5 mx-auto max-w-6xl">
                 <h2 className="section-title text-[#1A202C] mb-8 text-center">
                   関連情報

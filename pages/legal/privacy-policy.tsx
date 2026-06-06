@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
       <Header />
       <main>
         <section style={{ background: "#F8FCFF" }}>
-          <div className="container mx-auto px-5 py-16">
+          <div className="container mx-auto px-5 py-20">
             <div className="max-w-2xl">
               <p className="text-xs mb-2" style={{ color: "#718096" }}>
                 2020年6月9日 制定
@@ -25,7 +25,7 @@ export default function PrivacyPolicy() {
           </div>
         </section>
 
-        <article className="container mx-auto px-5 py-16 max-w-2xl legal-body">
+        <article className="container mx-auto px-5 py-20 max-w-2xl legal-body">
           <p className="mb-8 leading-8" style={{ color: "#4A5568" }}>
             特定非営利活動法人ニュークリエイター・オルグ（理事長　改野由尚、以下「当法人」といいます。）は、当法人が提供するサービスにおける利用者の個人情報の取扱いについて以下の通りプライバシーポリシー（以下、「本ポリシー」といいます。）を定めます。
           </p>

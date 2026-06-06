@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section id="contact" className="py-10 pb-20 w-full">
+    <section id="contact" className="py-12 pb-20 w-full">
       <div
         className="relative overflow-hidden mx-auto"
         style={{

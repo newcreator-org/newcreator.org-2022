@@ -58,10 +58,10 @@ export default function LegalIndex() {
           </div>
         </section>
 
-        <section className="container mx-auto px-5 py-16 max-w-2xl">
+        <section className="container mx-auto px-5 py-20 max-w-2xl">
           <ul className="divide-y" style={{ borderColor: "#E2E8F0" }}>
             {legalPages.map((page) => (
-              <li key={page.href} className="py-8">
+              <li key={page.href} className="py-12">
                 <Link href={page.href}>
                   <a className="group block">
                     <p

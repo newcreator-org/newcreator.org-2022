@@ -6,7 +6,7 @@ export default function FooterCta() {
       className="body-font"
       style={{ background: '#1476A6' }}
     >
-      <div className="container px-5 py-16 mx-auto">
+      <div className="container px-5 py-20 mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
 
           {/* 左側: 寄付の呼びかけ */}

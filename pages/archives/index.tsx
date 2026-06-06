@@ -24,7 +24,7 @@ const AchivePage: NextPage<{ archives: AchieveType[] }> = ({ archives }) => {
           className="text-[#1A202C] body-font overflow-hidden"
           id="information"
         >
-          <div className="container px-5 py-24 mx-auto">
+          <div className="container px-5 py-20 mx-auto">
             <div className="flex flex-col text-center w-full mb-20">
               <h2 className="section-title text-[#1476A6] tracking-widest title-font mb-1">
                 Archives
@@ -36,10 +36,10 @@ const AchivePage: NextPage<{ archives: AchieveType[] }> = ({ archives }) => {
             <div className="flex flex-wrap -m-4">
               {archives &&
                 archives.map((archive) => (
-                  <div className="w-full xl:w-1/4 md:w-1/2 p-4">
+                  <div className="w-full xl:w-1/4 md:w-1/2 p-6">
                     <div className="bg-[#EDF6FB] p-6 rounded-sm">
                       <img
-                        className="h-40 rounded w-full object-cover object-center mb-6"
+                        className="h-40 rounded-sm w-full object-cover object-center mb-6"
                         src="/ogp.png"
                         alt="content"
                       />
