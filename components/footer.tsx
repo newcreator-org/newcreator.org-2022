@@ -34,14 +34,12 @@ export default function Footer() {
           style={{ gap: "0.5rem" }}
         >
           {[
-            { href: "https://legal.newcreator.org/privacy-policy/", label: "プライバシーポリシー" },
-            { href: "https://legal.newcreator.org/tos/",            label: "各種サービス利用規約" },
+            { href: "/legal/privacy-policy", label: "プライバシーポリシー" },
+            { href: "/legal/terms",          label: "各種サービス利用規約" },
           ].map(({ href, label }) => (
             <p key={href} style={{ fontSize: "0.775rem", margin: "0 4px" }}>
               <a
                 href={href}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="text-muted hover:text-brand-blue hover:underline transition-colors duration-200"
               >
                 {label}
