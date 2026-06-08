@@ -47,13 +47,13 @@ export default function CaseStudies({ caseStudies }) {
         />
         <main className="mx-auto">
           <ScrollFadeIn>
-            <section className="py-16 bg-gradient-to-b from-blue-50 to-white">
+            <section className="py-20 bg-[#F8FCFF]">
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="text-center">
-                  <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+                  <h1 className="page-title font-bold text-[#1A202C] mb-4">
                     導入事例
                   </h1>
-                  <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                  <p className="text-lg text-[#4A5568] max-w-2xl mx-auto">
                     全国の学校でのAI導入事例をご紹介します。具体的な活用方法や成果、導入のポイントなど、実践的な情報をお届けします。
                   </p>
                 </div>
@@ -62,11 +62,11 @@ export default function CaseStudies({ caseStudies }) {
           </ScrollFadeIn>
 
           <ScrollFadeIn>
-            <section className="py-16">
+            <section className="py-20">
               <div className="container px-5 mx-auto max-w-6xl">
                 {caseStudies.length === 0 ? (
                   <div className="text-center py-12">
-                    <p className="text-gray-600">現在、事例を準備中です。</p>
+                    <p className="text-[#4A5568]">現在、事例を準備中です。</p>
                   </div>
                 ) : (
                   <div className="grid md:grid-cols-2 gap-8">
@@ -88,16 +88,16 @@ export default function CaseStudies({ caseStudies }) {
           </ScrollFadeIn>
 
           <ScrollFadeIn>
-            <section className="py-16 bg-gray-50">
+            <section className="py-20 bg-[#F8FCFF]">
               <div className="container px-5 mx-auto max-w-4xl text-center">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                <h2 className="section-title text-[#1A202C] mb-4">
                   貴校でも導入してみませんか
                 </h2>
-                <p className="text-gray-600 mb-8">
+                <p className="text-[#4A5568] mb-8">
                   学校の規模や状況に合わせて、最適なプランをご提案いたします。まずはお気軽にご相談ください。
                 </p>
                 <Link href="/apply">
-                  <a className="inline-block bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors shadow-md">
+                  <a className="btn-primary-lg">
                     お問い合わせフォームへ
                   </a>
                 </Link>

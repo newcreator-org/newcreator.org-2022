@@ -114,13 +114,13 @@ export default function FAQ() {
         <Header />
         <main className="mx-auto">
           <ScrollFadeIn>
-            <section className="bg-gradient-to-b from-blue-50 to-white py-16 md:py-20">
+            <section className="bg-[#F8FCFF] py-20 md:py-20">
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="text-center">
-                  <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+                  <h1 className="page-title font-bold text-[#1A202C] mb-4">
                     よくある質問
                   </h1>
-                  <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                  <p className="text-lg text-[#4A5568] max-w-2xl mx-auto">
                     教育現場でのAI導入に関するよくある質問にお答えします。<br />
                     こちらに掲載されていない質問は、お気軽にお問い合わせください。
                   </p>
@@ -130,27 +130,27 @@ export default function FAQ() {
           </ScrollFadeIn>
 
           <ScrollFadeIn>
-            <section className="py-16">
+            <section className="py-20">
               <div className="container px-5 mx-auto max-w-4xl">
                 {faqData.map((category, categoryIndex) => (
                   <div key={categoryIndex} className="mb-12">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b-2 border-blue-600">
+                    <h2 className="section-title text-[#1A202C] mb-6 pb-3 border-b-2 border-[#1476A6]">
                       {category.category}
                     </h2>
                     <div className="space-y-6">
                       {category.questions.map((item, itemIndex) => (
-                        <div key={itemIndex} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-                          <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-start">
-                            <span className="inline-block bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">
+                        <div key={itemIndex} className="bg-white rounded-sm p-6 border border-[rgba(20,118,166,0.10)]">
+                          <h3 className="card-title text-[#1A202C] mb-3 flex items-start">
+                            <span className="inline-block text-[#1476A6] font-bold mr-3 mt-0.5 flex-shrink-0 text-base">
                               Q
                             </span>
                             <span>{item.q}</span>
                           </h3>
                           <div className="flex items-start">
-                            <span className="inline-block bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">
+                            <span className="inline-block text-[#1476A6] font-bold mr-3 mt-0.5 flex-shrink-0 text-base">
                               A
                             </span>
-                            <p className="text-gray-700 leading-relaxed">{item.a}</p>
+                            <p className="text-[#1A202C] leading-relaxed">{item.a}</p>
                           </div>
                         </div>
                       ))}
@@ -162,24 +162,24 @@ export default function FAQ() {
           </ScrollFadeIn>
 
           <ScrollFadeIn>
-            <section className="py-16 bg-gray-50">
+            <section className="py-20 bg-[#F8FCFF]">
               <div className="container px-5 mx-auto max-w-4xl text-center">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                <h2 className="section-title text-[#1A202C] mb-4">
                   その他のご質問はこちら
                 </h2>
-                <p className="text-gray-600 mb-8">
+                <p className="text-[#4A5568] mb-8">
                   掲載されていない質問や、より詳しい情報をお求めの方は、<br />
                   お気軽にお問い合わせください。
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link href="/apply">
-                    <a className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    <a className="btn-primary-lg">
                       お問い合わせフォームへ
                     </a>
                   </Link>
                   <a 
                     href="mailto:contact@newcreator.org" 
-                    className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold border-2 border-blue-600 hover:bg-blue-50 transition-colors"
+                    className="inline-block bg-white text-[#1476A6] px-8 py-4 rounded-sm font-bold border-2 border-[#1476A6] hover:bg-[#F8FCFF] transition-colors"
                   >
                     メールで相談する
                   </a>
@@ -189,32 +189,32 @@ export default function FAQ() {
           </ScrollFadeIn>
 
           <ScrollFadeIn>
-            <section className="py-16">
+            <section className="py-20">
               <div className="container px-5 mx-auto max-w-6xl">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
+                <h2 className="section-title text-[#1A202C] mb-8 text-center">
                   関連情報
                 </h2>
                 <div className="grid md:grid-cols-3 gap-6">
                   <Link href="/for-educators/guides">
-                    <a className="block bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
-                      <h3 className="text-lg font-bold text-gray-900 mb-2">実践ガイド</h3>
-                      <p className="text-gray-600 text-sm">
+                    <a className="block bg-white rounded-sm p-6 border border-[rgba(20,118,166,0.10)]">
+                      <h3 className="card-title text-[#1A202C] mb-2">実践ガイド</h3>
+                      <p className="text-[#4A5568] text-sm">
                         授業での活用方法や校務効率化のテクニックをご紹介
                       </p>
                     </a>
                   </Link>
                   <Link href="/for-educators/case-studies">
-                    <a className="block bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
-                      <h3 className="text-lg font-bold text-gray-900 mb-2">導入事例</h3>
-                      <p className="text-gray-600 text-sm">
+                    <a className="block bg-white rounded-sm p-6 border border-[rgba(20,118,166,0.10)]">
+                      <h3 className="card-title text-[#1A202C] mb-2">導入事例</h3>
+                      <p className="text-[#4A5568] text-sm">
                         全国の学校での具体的な活用事例をご紹介
                       </p>
                     </a>
                   </Link>
                   <Link href="/for-educators">
-                    <a className="block bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
-                      <h3 className="text-lg font-bold text-gray-900 mb-2">サービス一覧</h3>
-                      <p className="text-gray-600 text-sm">
+                    <a className="block bg-white rounded-sm p-6 border border-[rgba(20,118,166,0.10)]">
+                      <h3 className="card-title text-[#1A202C] mb-2">サービス一覧</h3>
+                      <p className="text-[#4A5568] text-sm">
                         研修、導入支援、プライベートGPTなどのサービス
                       </p>
                     </a>

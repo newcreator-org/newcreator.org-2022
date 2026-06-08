@@ -1,7 +1,7 @@
 import Footer from "../../../components/footer";
 import Header from "../../../components/header";
 import Heads from "./_head";
-import component from "../../../components/hero.module.scss";
+
 
 export default function Apply() {
     return (
@@ -10,19 +10,30 @@ export default function Apply() {
             <Header />
             <main>
                 <section
-                    className={component.hero__subpage_cover}
                     style={{
-                        backgroundImage: `url(/img/event/at-google/CV201906-90-black.jpg)`,
+                        backgroundImage: 'url(/img/event/at-google/CV201906-90-black.jpg)',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        minHeight: '400px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        position: 'relative',
                     }}
                 >
-                    <div className={`${component.hero__subpage_cover_container} container max-w-6xl`}>
-                        <h1 className={component.hero__subpage_cover_title}>
-                            【中高校生向け/参加費無料】<br/>Creative Village 2023
+                    <div
+                      style={{
+                        position: 'absolute', inset: 0,
+                        background: 'rgba(20,118,166,0.55)',
+                      }}
+                    />
+                    <div className="container max-w-6xl" style={{ position: 'relative', zIndex: 1, padding: '60px 24px', color: '#fff' }}>
+                        <h1 style={{ fontSize: '2rem', fontWeight: 'bold', lineHeight: 1.4, marginBottom: '1rem' }}>
+                            【中高校生向け/参加費無料】<br/>クリエイティブ Village 2023
                         </h1>
-                        <h2 className={component.hero__subpage_cover_subtitle}>
-                        身近な課題をテクノロジーを使って解決するアイデアを考えよう
+                        <h2 style={{ fontSize: '1.2rem', fontWeight: 500, lineHeight: 1.7, opacity: 0.9, marginBottom: '1rem' }}>
+                            身近な課題をテクノロジーを使って解決するアイデアを考えよう
                         </h2>
-                        <div className={component.hero__subpage_cover_text}>
+                        <div style={{ fontSize: '1rem', opacity: 0.85 }}>
                             日時：2023年7月30日（東京）
                             <br />
                             会場：Google 渋谷オフィス
@@ -49,10 +60,10 @@ export default function Apply() {
                     </p>
                 </footer>
                 */}
-                <section className="text-gray-700 body-font">
+                <section className="text-[#1A202C] body-font">
                     <div className="container px-5 py-12 mx-auto flex flex-wrap max-w-6xl">
                         <div className="flex flex-col text-left w-full mb-10">
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
+                            <h1 className="page-title font-medium title-font text-[#1A202C]">
                                 身近な課題を解決するアイデアを考えよう！
                             </h1>
                         </div>
@@ -70,15 +81,15 @@ export default function Apply() {
                     </div>
                 </section>
 
-                <section className="text-gray-700 body-font">
+                <section className="text-[#1A202C] body-font">
                     <div className="container px-5 py-12 mx-auto flex flex-wrap max-w-6xl">
                         <div className="flex flex-col text-left w-full mb-7">
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
+                            <h1 className="page-title font-medium title-font text-[#1A202C]">
                                 タイムテーブル
                             </h1>
                         </div>
                         <div className="px-2 flex-initial w-1/1 sm:w-1/1 md:w-0 lg:w-0 xl:w-0">
-                            <div className="overflow-hidden rounded-lg">
+                            <div className="overflow-hidden rounded-sm">
                                 <img
                                     src="/img/event/at-google/CV201906-90.jpg"
                                     className=""
@@ -149,10 +160,10 @@ export default function Apply() {
                 </section>
 
 
-                <section className="text-gray-700 body-font">
+                <section className="text-[#1A202C] body-font">
                     <div className="container px-5 py-12 mx-auto flex flex-wrap max-w-6xl">
                         <div className="flex flex-col text-left w-full mb-5">
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
+                            <h1 className="page-title font-medium title-font text-[#1A202C]">
                                 参加申込
                             </h1>
                         </div>
@@ -212,7 +223,7 @@ export default function Apply() {
                                     </tbody>
                                 </table>
                                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbIg1GD8oSiQ2CUexsCOFHrX5zEkc5euXEIdlk5CnfxextKQ/viewform?usp=sf_link">
-                                    <button className="mx-auto mt-2 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                                    <button className="btn-primary mx-auto mt-2">
                                         参加申込する
                                     </button>
                                 </a>
@@ -221,10 +232,10 @@ export default function Apply() {
                     </div>
                 </section>
 
-                <section className="text-gray-700 body-font">
-                    <div className="container px-5 py-10 mx-auto flex flex-wrap max-w-6xl">
+                <section className="text-[#1A202C] body-font">
+                    <div className="container px-5 py-12 mx-auto flex flex-wrap max-w-6xl">
                         <div className="flex flex-col text-left w-full mb-5 leading-relaxed text-base">
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+                            <h1 className="page-title font-medium title-font mb-4 text-[#1A202C]">
                                 企画・運営
                             </h1>
                             <p>

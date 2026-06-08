@@ -57,12 +57,12 @@ export default function Guides({ guides }) {
         />
         <main className="mx-auto">
           <ScrollFadeIn>
-            <section className="py-16 bg-gradient-to-b from-orange-50 to-white">
+            <section className="py-20 bg-[#F8FCFF]">
               <div className="container px-5 mx-auto max-w-6xl">
-                <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 text-center">
+                <h1 className="page-title font-bold text-[#1A202C] mb-4 text-center">
                   実践ガイド
                 </h1>
-                <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto">
+                <p className="text-lg text-[#4A5568] text-center max-w-3xl mx-auto">
                   教育現場で今すぐ使える実践的なガイドを提供しています。授業での活用方法から業務効率化まで、様々なテーマをカバーしています。
                 </p>
               </div>
@@ -70,24 +70,24 @@ export default function Guides({ guides }) {
           </ScrollFadeIn>
 
           <ScrollFadeIn>
-            <section className="py-12 border-b border-gray-100">
+            <section className="py-12 border-b border-[rgba(20,118,166,0.10)]">
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="flex flex-wrap gap-3 justify-center">
                   {categories.map((category) => (
                     <button
                       key={category}
                       onClick={() => setSelectedCategory(category)}
-                      className={`px-6 py-2 rounded-full font-semibold transition-all ${
+                      className={`px-5 py-2 rounded-sm font-medium transition-all ${
                         selectedCategory === category
-                          ? 'bg-orange-600 text-white shadow-md'
-                          : 'bg-white text-gray-700 border border-gray-300 hover:border-orange-600 hover:text-orange-600'
+                          ? 'text-white bg-[#1476A6]'
+                          : 'bg-white text-[#1A202C] border border-[#CBD5E0]'
                       }`}
                     >
                       {category}
                     </button>
                   ))}
                 </div>
-                <p className="text-center text-gray-600 mt-6">
+                <p className="text-center text-[#4A5568] mt-6">
                   {filteredGuides.length}件のガイド
                 </p>
               </div>
@@ -95,7 +95,7 @@ export default function Guides({ guides }) {
           </ScrollFadeIn>
 
           <ScrollFadeIn>
-            <section className="py-16">
+            <section className="py-20">
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="grid md:grid-cols-3 gap-8">
                   {filteredGuides.map((guide) => (
@@ -110,8 +110,8 @@ export default function Guides({ guides }) {
                   ))}
                 </div>
                 {filteredGuides.length === 0 && (
-                  <div className="text-center py-16">
-                    <p className="text-gray-600">該当するガイドが見つかりませんでした。</p>
+                  <div className="text-center py-20">
+                    <p className="text-[#4A5568]">該当するガイドが見つかりませんでした。</p>
                   </div>
                 )}
               </div>
@@ -119,16 +119,16 @@ export default function Guides({ guides }) {
           </ScrollFadeIn>
 
           <ScrollFadeIn>
-            <section className="py-16 bg-gray-50">
+            <section className="py-20 bg-[#F8FCFF]">
               <div className="container px-5 mx-auto max-w-4xl text-center">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                <h2 className="section-title text-[#1A202C] mb-4">
                   導入のご相談はこちら
                 </h2>
-                <p className="text-gray-600 mb-8">
+                <p className="text-[#4A5568] mb-8">
                   研修のご依頼や導入相談など、お気軽にお問い合わせください。
                 </p>
                 <Link href="/apply">
-                  <a className="inline-block bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors shadow-md">
+                  <a className="btn-primary-lg">
                     お問い合わせフォームへ
                   </a>
                 </Link>

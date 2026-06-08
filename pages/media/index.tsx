@@ -17,13 +17,13 @@ type MediaType = {
 const categoryColor = (category: string) => {
   switch (category) {
     case "AI教育":
-      return "bg-blue-100 text-blue-700";
+      return "bg-[#EDF6FB] text-[#1476A6]";
     case "IT教育":
-      return "bg-green-100 text-green-700";
+      return "bg-[#EDF6FB] text-[#1476A6]";
     case "キャリア教育":
-      return "bg-purple-100 text-purple-700";
+      return "bg-[#EDF6FB] text-[#1476A6]";
     default:
-      return "bg-gray-100 text-gray-700";
+      return "bg-[#EDF6FB] text-[#1A202C]";
   }
 };
 
@@ -34,13 +34,13 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
       <Header />
       <main className="mx-auto">
         {/* ヒーローセクション */}
-        <section className="text-gray-600 body-font bg-gradient-to-r from-orange-50 to-blue-50">
+        <section className="text-gray-600 body-font bg-[#F8FCFF]">
           <div className="container mx-auto flex px-5 py-20 items-center justify-center flex-col">
             <div className="text-center lg:w-2/3 w-full">
-              <h1 className="title-font sm:text-5xl text-4xl mb-4 font-bold text-gray-900 animate-fade-in-up">
+              <h1 className="title-font page-title mb-4 font-bold text-[#1A202C] animate-fade-in-up">
                 メディア
               </h1>
-              <p className="mb-8 leading-7 text-lg text-gray-700 animate-fade-in-up-delay">
+              <p className="mb-8 leading-7 text-lg text-[#1A202C] animate-fade-in-up-delay">
                 AI教育・IT教育・キャリア教育に関するコラムをお届けします
               </p>
             </div>
@@ -48,37 +48,37 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
         </section>
 
         <ScrollFadeIn>
-          <section className="text-gray-700 body-font overflow-hidden">
+          <section className="text-[#1A202C] body-font overflow-hidden">
             <div className="container px-5 py-20 mx-auto">
               <div className="flex flex-col text-center w-full mb-12">
-                <h2 className="text-xs text-orange-500 tracking-[0.2em] font-medium title-font mb-1">
+                <h2 className="section-title tracking-[0.2em] title-font mb-1" style={{ color: '#1476A6' }}>
                   MEDIA
                 </h2>
-                <h1 className="sm:text-3xl text-2xl font-bold title-font text-gray-900">
+                <h1 className="page-title font-bold title-font text-[#1A202C]">
                   記事一覧
                 </h1>
               </div>
               <div className="flex flex-wrap -m-4">
                 {media &&
                   media.map((post) => (
-                    <div className="w-full xl:w-1/3 md:w-1/2 p-4" key={post.id}>
+                    <div className="w-full xl:w-1/3 md:w-1/2 p-6" key={post.id}>
                       <a href={`/media/${post.id}`}>
-                        <div className="bg-white rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-gray-100 overflow-hidden group h-full">
+                        <div className="bg-white overflow-hidden group h-full" style={{ border: '1px solid rgba(20,118,166,0.10)', borderRadius: '4px' }}>
                           <div className="p-6">
                             <span
-                              className={`inline-block text-xs font-medium px-3 py-1 rounded-full mb-3 ${categoryColor(
+                              className={`inline-block text-xs font-medium px-3 py-1 rounded-sm mb-3 ${categoryColor(
                                 post.category
                               )}`}
                             >
                               {post.category}
                             </span>
-                            <h2 className="text-lg text-gray-900 font-bold title-font mb-2 group-hover:text-orange-500 transition-colors">
+                            <h2 className="section-title text-[#1A202C] title-font mb-2 group-hover:transition-colors" style={{ color: '#1476A6' }}>
                               {post.title}
                             </h2>
-                            <p className="text-sm text-gray-500 mb-3">
+                            <p className="text-sm text-[#718096] mb-3">
                               {dayjs(post.date).format("YYYY.MM.DD")}
                             </p>
-                            <p className="leading-relaxed text-sm text-gray-600">
+                            <p className="leading-relaxed text-sm text-[#4A5568]">
                               {post.description}
                             </p>
                           </div>
@@ -92,10 +92,10 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
         </ScrollFadeIn>
 
         {/* CTAセクション */}
-        <section className="text-gray-600 body-font bg-gradient-to-r from-orange-500 to-orange-400">
-          <div className="container px-5 py-16 mx-auto">
+        <section className="text-white body-font" style={{ background: '#1476A6' }}>
+          <div className="container px-5 py-20 mx-auto">
             <div className="flex flex-col text-center w-full">
-              <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-white">
+              <h1 className="page-title font-bold title-font mb-4 text-white">
                 一緒に子どもたちの未来を創りませんか?
               </h1>
               <p className="lg:w-2/3 mx-auto leading-7 text-base text-white mb-8">
@@ -106,13 +106,14 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
                   href="https://syncable.biz/associate/newcreator-org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex text-orange-500 bg-white border-0 py-3 px-8 focus:outline-none hover:bg-gray-100 hover:-translate-y-0.5 active:translate-y-0 rounded-full text-lg font-bold shadow-lg transition-all duration-200"
+                  className="btn-white text-base"
                 >
                   寄付で支援
                 </a>
                 <a
                   href="/#contact"
-                  className="inline-flex text-white bg-orange-600 border-0 py-3 px-8 focus:outline-none hover:bg-orange-700 hover:-translate-y-0.5 active:translate-y-0 rounded-full text-lg font-bold shadow-lg transition-all duration-200"
+                  className="inline-flex border-0 py-3 px-8 focus:outline-none rounded-sm text-lg font-bold transition-colors duration-200"
+                  style={{ background: 'rgba(255,255,255,0.15)', color: '#fff', border: '2px solid rgba(255,255,255,0.6)' }}
                 >
                   お問い合わせ
                 </a>

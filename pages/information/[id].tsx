@@ -2,7 +2,6 @@ import Heads from "../../components/customHead";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import dayjs from "dayjs";
-import blogStyle from "../../styles/pages/blog.module.scss";
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -20,15 +19,15 @@ export default function BlogId({ blog }) {
       <>
         <Header />
         <main>
-          <section className={blogStyle.header}>
-            <div>
+          <section className="blog-header">
+            <div className="blog-header-inner">
               <time dateTime={dayjs(blog.date).format("YYYY-MM-DD")}>
                 {dayjs(blog.date).format("YYYY.MM.DD")}
               </time>
               <h1>{blog.title}</h1>
             </div>
           </section>
-          <section className={blogStyle.content}>
+          <section className="blog-content">
             <div
               dangerouslySetInnerHTML={{
                 __html: blog.content ? `${blog.content}` : "本文はありません",
@@ -36,33 +35,29 @@ export default function BlogId({ blog }) {
             />
 
             {blog.link && (
-              <p className={blogStyle.link}>
+              <p className="blog-link">
                 関連リンク:
                 <a href={blog.link}> {blog.link}</a>
               </p>
             )}
-            <div className={blogStyle.sns}>
+            <div className="blog-sns">
               <p>Share: </p>
               <FacebookShareButton
-                url={"https://newcreator.org/information/${blog.id}"}
-                quote={
-                  "特定非営利活動法人ニュークリエイター・オルグ｜${blog.title}"
-                }
+                url={`https://newcreator.org/information/${blog.id}`}
+                quote={`特定非営利活動法人ニュークリエイター・オルグ｜${blog.title}`}
               >
                 <FacebookIcon size={28} round />
               </FacebookShareButton>
               <TwitterShareButton
-                url={"https://newcreator.org/information/${blog.id}"}
-                title={
-                  "特定非営利活動法人ニュークリエイター・オルグ｜${blog.title}"
-                }
+                url={`https://newcreator.org/information/${blog.id}`}
+                title={`特定非営利活動法人ニュークリエイター・オルグ｜${blog.title}`}
                 via={"nC_org"}
               >
                 <TwitterIcon size={28} round />
               </TwitterShareButton>
             </div>
             <a href="/">
-              <p className={blogStyle.top}>TOPに戻る</p>
+              <p className="blog-top">TOPに戻る</p>
             </a>
           </section>
         </main>
@@ -83,12 +78,9 @@ export const getStaticProps = async (context) => {
   const newsPost = getNewsById(id);
 
   if (!newsPost) {
-    return {
-      notFound: true,
-    };
+    return { notFound: true };
   }
 
-  // MarkdownをシンプルなHTMLに変換
   const htmlContent = newsPost.content
     .split('\n\n')
     .map(para => `<p>${para.replace(/\n/g, '<br>')}</p>`)
