@@ -86,9 +86,7 @@ export default function Rule() {
           </section>
 
           <div className="mt-16 pt-8" style={{ borderTop: "1px solid #E2E8F0" }}>
-            <Link href="/legal">
-              <a className="text-sm" style={{ color: "#1476A6" }}>← 法的情報一覧に戻る</a>
-            </Link>
+            <Link href="/legal" className="text-sm" style={{ color: "#1476A6" }}>← 法的情報一覧に戻る</Link>
           </div>
         </article>
       </main>

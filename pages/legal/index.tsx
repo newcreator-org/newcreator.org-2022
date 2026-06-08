@@ -62,8 +62,7 @@ export default function LegalIndex() {
           <ul className="divide-y" style={{ borderColor: "#E2E8F0" }}>
             {legalPages.map((page) => (
               <li key={page.href} className="py-12">
-                <Link href={page.href}>
-                  <a className="group block">
+                <Link href={page.href} className="group block">
                     <p
                       className="text-xs mb-2"
                       style={{ color: "#718096" }}
@@ -79,8 +78,7 @@ export default function LegalIndex() {
                     <p className="text-sm leading-6" style={{ color: "#4A5568" }}>
                       {page.description}
                     </p>
-                  </a>
-                </Link>
+                  </Link>
               </li>
             ))}
           </ul>

@@ -9,7 +9,7 @@ export default function About() {
     <>
       <Heads child="私たちについて" />
       <Header />
-      <main className="mx-auto">
+      <main id="main-content" className="mx-auto">
 
         {/* ヒーロー — シンプルに。英語ラベル廃止 */}
         <section className="body-font bg-white border-b border-[rgba(20,118,166,0.10)]">
@@ -158,11 +158,9 @@ export default function About() {
                   </table>
                 </div>
                 <div className="mt-6">
-                  <Link href="/about/company">
-                    <a className="link-brand">
+                  <Link href="/about/company" className="link-brand">
                       詳細な法人概要を見る →
-                    </a>
-                  </Link>
+                    </Link>
                 </div>
               </div>
             </div>
@@ -245,16 +243,16 @@ export default function About() {
                     { href: '/activities', label: '活動実績' },
                     { href: '/#contact', label: 'お問い合わせ' },
                   ].map(({ href, label }) => (
-                    <Link key={href} href={href}>
-                      <a
-                        className="flex items-center justify-between py-4 px-5 text-sm font-medium border-b transition-colors"
-                        style={{ borderColor: 'rgba(20,118,166,0.15)', color: '#1476A6' }}
-                      >
-                        {label}
-                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4" viewBox="0 0 24 24">
-                          <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                      </a>
+                    <Link
+                      key={href}
+                      href={href}
+                      className="flex items-center justify-between py-4 px-5 text-sm font-medium border-b transition-colors"
+                      style={{ borderColor: 'rgba(20,118,166,0.15)', color: '#1476A6' }}
+                    >
+                      {label}
+                      <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                      </svg>
                     </Link>
                   ))}
                 </div>

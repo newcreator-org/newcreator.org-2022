@@ -32,7 +32,7 @@ const MediaPage: NextPage<{ media: MediaType[] }> = ({ media }) => {
     <>
       <Heads child="メディア" />
       <Header />
-      <main className="mx-auto">
+      <main id="main-content" className="mx-auto">
         {/* ヒーローセクション */}
         <section className="text-gray-600 body-font bg-[#F8FCFF]">
           <div className="container mx-auto flex px-5 py-20 items-center justify-center flex-col">

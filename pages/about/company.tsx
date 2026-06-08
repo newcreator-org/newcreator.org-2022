@@ -9,7 +9,7 @@ export default function Company() {
     <>
       <Heads child="法人概要" />
       <Header />
-      <main className="mx-auto">
+      <main id="main-content" className="mx-auto">
 
         {/* ヒーロー */}
         <section className="body-font bg-white border-b border-[rgba(20,118,166,0.10)]">
@@ -28,9 +28,9 @@ export default function Company() {
         {/* パンくず */}
         <div className="container mx-auto px-5 py-4">
           <nav className="flex items-center gap-2 text-sm" style={{ color: "#718096" }}>
-            <Link href="/"><a className="link-brand">ホーム</a></Link>
+            <Link href="/" className="link-brand">ホーム</Link>
             <span>/</span>
-            <Link href="/about"><a className="link-brand">私たちについて</a></Link>
+            <Link href="/about" className="link-brand">私たちについて</Link>
             <span>/</span>
             <span>法人概要</span>
           </nav>
@@ -160,16 +160,16 @@ export default function Company() {
                     { href: '/activities', label: '活動実績' },
                     { href: '/#contact', label: 'お問い合わせ' },
                   ].map(({ href, label }) => (
-                    <Link key={href} href={href}>
-                      <a
-                        className="flex items-center justify-between py-4 px-5 text-sm font-medium border-b transition-colors"
-                        style={{ borderColor: 'rgba(20,118,166,0.15)', color: '#1476A6' }}
-                      >
-                        {label}
-                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4" viewBox="0 0 24 24">
-                          <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                      </a>
+                    <Link
+                      key={href}
+                      href={href}
+                      className="flex items-center justify-between py-4 px-5 text-sm font-medium border-b transition-colors"
+                      style={{ borderColor: 'rgba(20,118,166,0.15)', color: '#1476A6' }}
+                    >
+                      {label}
+                      <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                      </svg>
                     </Link>
                   ))}
                 </div>

@@ -29,17 +29,14 @@ const categoryColor = (category: string) => {
 export default function ForEducators({ guides, caseStudies }) {
   return (
     <>
-      <Heads 
-        child={{
-          title: "先生・学校向けAI活用支援 | 研修・導入・実践ガイド | ニュークリエイター・オルグ",
-          description: "学校でのAI導入を完全サポート。全国22校の実績をもとに、教員研修、授業での活用方法、セキュリティ対策まで、教育現場に寄り添った支援を提供します。ChatGPT、生成AI活用の実践ガイドと導入事例を多数掲載。",
-          ogUrl: "https://newcreator.org/for-educators",
-          keywords: "学校AI導入,教員AI研修,生成AI教育,ChatGPT授業活用,学校DX,教育AI,AI導入支援,教員研修,授業改善,業務効率化",
-        }} 
+      <Heads
+        child="先生・学校向けAI活用支援"
+        description="学校でのAI導入を完全サポート。全国22校の実績をもとに、教員研修、授業での活用方法、セキュリティ対策まで、教育現場に寄り添った支援を提供します。ChatGPT、生成AI活用の実践ガイドと導入事例を多数掲載。"
+        canonicalPath="/for-educators"
       />
       <>
         <Header />
-        <main className="mx-auto">
+        <main id="main-content" className="mx-auto">
           {/* ヒーローセクション */}
           <ScrollFadeIn>
             <section className="py-20 md:py-20" style={{ background: '#F8FCFF' }}>
@@ -52,16 +49,12 @@ export default function ForEducators({ guides, caseStudies }) {
                     生成AIの登場により、教育現場は大きな転換期を迎えています。私たちは全国10都道府県22校での実績をもとに、先生方のAI活用を研修から導入まで一貫して支援します。
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Link href="/for-educators/guides">
-                      <a className="btn-primary-lg">
+                    <Link href="/for-educators/guides" className="btn-primary-lg">
                         実践ガイドを見る
-                      </a>
-                    </Link>
-                    <Link href="#contact">
-                      <a className="btn-outline-lg">
+                      </Link>
+                    <Link href="#contact" className="btn-outline-lg">
                         導入相談をする
-                      </a>
-                    </Link>
+                      </Link>
                   </div>
                 </div>
               </div>
@@ -149,7 +142,7 @@ export default function ForEducators({ guides, caseStudies }) {
                         <p className="text-[#4A5568] text-sm leading-relaxed mb-4">
                           生徒向け・教員向けの生成AI活用研修を実施します。学校のカリキュラムや目的に応じたプログラムを設計し、実践的な内容をお届けします。
                         </p>
-                        <Link href="/apply"><a className="link-brand">研修のご依頼はこちら →</a></Link>
+                        <Link href="/apply" className="link-brand">研修のご依頼はこちら →</Link>
                       </div>
                     </div>
                   </div>
@@ -163,7 +156,7 @@ export default function ForEducators({ guides, caseStudies }) {
                         <p className="text-[#4A5568] text-sm leading-relaxed mb-4">
                           活用方針の策定、教員向け研修、ガイドライン整備など、学校のニーズに合わせた支援を行います。
                         </p>
-                        <Link href="/apply"><a className="link-brand">導入相談はこちら →</a></Link>
+                        <Link href="/apply" className="link-brand">導入相談はこちら →</Link>
                       </div>
                     </div>
                   </div>
@@ -177,7 +170,7 @@ export default function ForEducators({ guides, caseStudies }) {
                         <p className="text-[#4A5568] text-sm leading-relaxed mb-4">
                           生徒数単位の課金・契約期間の縛りなし・請求書払い対応。情報セキュリティに対応した環境で安心してご利用いただけます。
                         </p>
-                        <Link href="/apply"><a className="link-brand">詳細・お問い合わせ →</a></Link>
+                        <Link href="/apply" className="link-brand">詳細・お問い合わせ →</Link>
                       </div>
                     </div>
                   </div>
@@ -191,7 +184,7 @@ export default function ForEducators({ guides, caseStudies }) {
                         <p className="text-[#4A5568] text-sm leading-relaxed mb-4">
                           企業・行政と連携したワークショップ、講師派遣による出張授業を全国各地で実施。STEAM教育を通じて子どもたちの創造性を育みます。
                         </p>
-                        <Link href="/activities"><a className="link-brand">活動実績を見る →</a></Link>
+                        <Link href="/activities" className="link-brand">活動実績を見る →</Link>
                       </div>
                     </div>
                   </div>
@@ -214,11 +207,9 @@ export default function ForEducators({ guides, caseStudies }) {
                         すぐに使える実践的なガイドを提供しています
                       </p>
                     </div>
-                    <Link href="/for-educators/guides">
-                      <a className="font-bold transition-colors" style={{ color: '#1476A6' }}>
+                    <Link href="/for-educators/guides" className="font-bold transition-colors" style={{ color: '#1476A6' }}>
                         すべて見る →
-                      </a>
-                    </Link>
+                      </Link>
                   </div>
                   <div className="grid md:grid-cols-3 gap-8">
                     {guides.slice(0, 6).map((guide) => (
@@ -251,11 +242,9 @@ export default function ForEducators({ guides, caseStudies }) {
                         全国の学校での導入事例をご紹介します
                       </p>
                     </div>
-                    <Link href="/for-educators/case-studies">
-                      <a className="font-bold transition-colors" style={{ color: '#1476A6' }}>
+                    <Link href="/for-educators/case-studies" className="font-bold transition-colors" style={{ color: '#1476A6' }}>
                         すべて見る →
-                      </a>
-                    </Link>
+                      </Link>
                   </div>
                   <div className="grid md:grid-cols-2 gap-8">
                     {caseStudies.slice(0, 4).map((caseStudy) => (
@@ -293,22 +282,18 @@ export default function ForEducators({ guides, caseStudies }) {
                     <p className="text-[#4A5568] mb-6 text-sm leading-relaxed">
                       計画策定から運用まで、学校でのAI導入の全プロセスを詳しく解説したガイドブックです。
                     </p>
-                    <Link href="/for-educators/resources">
-<a className="btn-primary">
+                    <Link href="/for-educators/resources" className="btn-primary">
                       ダウンロード
-                    </a>
-                    </Link>
+</Link>
                   </div>
                   <div className="bg-white border border-[#E2E8F0] rounded-sm p-6">
                     <h3 className="card-title text-[#1A202C] mb-3">学校AI活用チェックリスト</h3>
                     <p className="text-[#4A5568] mb-6 text-sm leading-relaxed">
                       AI導入前に確認すべき項目をまとめたチェックリスト。導入計画の策定に役立ちます。
                     </p>
-                    <Link href="/for-educators/resources">
-                      <a className="btn-primary">
+                    <Link href="/for-educators/resources" className="btn-primary">
                         ダウンロード
-                      </a>
-                    </Link>
+                      </Link>
                   </div>
                 </div>
               </div>
@@ -357,11 +342,9 @@ export default function ForEducators({ guides, caseStudies }) {
                   </details>
                 </div>
                 <div className="text-center mt-12">
-                  <Link href="/for-educators/faq">
-                    <a className="font-bold transition-colors" style={{ color: '#1476A6' }}>
+                  <Link href="/for-educators/faq" className="font-bold transition-colors" style={{ color: '#1476A6' }}>
                       すべてのFAQを見る →
-                    </a>
-                  </Link>
+                    </Link>
                 </div>
               </div>
             </section>
@@ -379,16 +362,12 @@ export default function ForEducators({ guides, caseStudies }) {
                     貴校の状況に合わせた最適なプランをご提案いたします
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Link href="/apply">
-                      <a className="btn-accent-lg">
+                    <Link href="/apply" className="btn-accent-lg">
                         お問い合わせ
-                      </a>
-                    </Link>
-                    <Link href="/for-educators/resources">
-                      <a className="btn-ghost-white-lg">
+                      </Link>
+                    <Link href="/for-educators/resources" className="btn-ghost-white-lg">
                         資料をダウンロード
-                      </a>
-                    </Link>
+                      </Link>
                   </div>
                 </div>
               </div>

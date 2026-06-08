@@ -28,7 +28,7 @@ export default function Transparency() {
     <>
       <Heads child="情報公開・透明性" />
       <Header />
-      <main className="mx-auto">
+      <main id="main-content" className="mx-auto">
 
         {/* ヒーロー */}
         <section
@@ -64,9 +64,9 @@ export default function Transparency() {
         {/* パンくず */}
         <div className="container mx-auto px-5 py-4">
           <nav className="flex items-center gap-2 text-sm" style={{ color: "#718096" }}>
-            <Link href="/"><a className="link-brand">ホーム</a></Link>
+            <Link href="/" className="link-brand">ホーム</Link>
             <span>/</span>
-            <Link href="/about"><a className="link-brand">私たちについて</a></Link>
+            <Link href="/about" className="link-brand">私たちについて</Link>
             <span>/</span>
             <span>情報公開・透明性</span>
           </nav>
@@ -114,7 +114,7 @@ export default function Transparency() {
                       </div>
                       <p className="text-sm leading-7 mb-3" style={{ color: "#4A5568" }}>{desc}</p>
                       <p className="text-xs mb-4" style={{ color: "#A0AEC0" }}>{note}</p>
-                      <button
+                      <button type="button"
                         className="link-brand"
                       >
                         PDFをダウンロード
@@ -197,7 +197,7 @@ export default function Transparency() {
                     </table>
                   </div>
                   <div className="mt-6">
-                    <button className="link-brand">
+                    <button type="button" className="link-brand">
                       詳細な財務諸表をダウンロード
                       <DownloadIcon />
                     </button>
@@ -244,7 +244,7 @@ export default function Transparency() {
                           <p className="font-bold text-sm" style={{ color: "#1A202C" }}>{year} 年次報告書</p>
                           <p className="text-xs mt-0.5" style={{ color: "#718096" }}>活動実績、財務報告、今後の展望</p>
                         </div>
-                        <button className="link-brand">
+                        <button type="button" className="link-brand">
                           ダウンロード
                           <DownloadIcon />
                         </button>

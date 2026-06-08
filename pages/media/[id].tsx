@@ -15,7 +15,7 @@ import { getAllMedia, getMediaById } from "../../libs/markdown";
 export default function MediaId({ media }) {
   return (
     <>
-      <Heads child={media.title} />
+      <Heads child={media.title} canonicalPath={`/media/${media.id}`} ogType="article" />
       <>
         <Header />
         <main>

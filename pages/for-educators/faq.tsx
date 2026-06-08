@@ -103,16 +103,14 @@ const faqData = [
 export default function FAQ() {
   return (
     <>
-      <Heads 
-        child={{
-          title: "よくある質問 | 先生・学校関係者の方へ | 特定非営利活動法人ニュークリエイター・オルグ",
-          description: "教育現場でのAI導入に関するよくある質問にお答えします。費用、セキュリティ、活用方法など、導入前の疑問を解消します。",
-          ogUrl: "https://newcreator.org/for-educators/faq",
-        }} 
+      <Heads
+        child="よくある質問"
+        description="教育現場でのAI導入に関するよくある質問にお答えします。費用、セキュリティ、活用方法など、導入前の疑問を解消します。"
+        canonicalPath="/for-educators/faq"
       />
       <>
         <Header />
-        <main className="mx-auto">
+        <main id="main-content" className="mx-auto">
           <ScrollFadeIn>
             <section className="bg-[#F8FCFF] py-20 md:py-20">
               <div className="container px-5 mx-auto max-w-6xl">
@@ -172,11 +170,9 @@ export default function FAQ() {
                   お気軽にお問い合わせください。
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link href="/apply">
-                    <a className="btn-primary-lg">
+                  <Link href="/apply" className="btn-primary-lg">
                       お問い合わせフォームへ
-                    </a>
-                  </Link>
+                    </Link>
                   <a 
                     href="mailto:contact@newcreator.org" 
                     className="inline-block bg-white text-[#1476A6] px-8 py-4 rounded-sm font-bold border-2 border-[#1476A6] hover:bg-[#F8FCFF] transition-colors"
@@ -195,30 +191,24 @@ export default function FAQ() {
                   関連情報
                 </h2>
                 <div className="grid md:grid-cols-3 gap-6">
-                  <Link href="/for-educators/guides">
-                    <a className="block bg-white rounded-sm p-6 border border-[rgba(20,118,166,0.10)]">
+                  <Link href="/for-educators/guides" className="block bg-white rounded-sm p-6 border border-[rgba(20,118,166,0.10)]">
                       <h3 className="card-title text-[#1A202C] mb-2">実践ガイド</h3>
                       <p className="text-[#4A5568] text-sm">
                         授業での活用方法や校務効率化のテクニックをご紹介
                       </p>
-                    </a>
-                  </Link>
-                  <Link href="/for-educators/case-studies">
-                    <a className="block bg-white rounded-sm p-6 border border-[rgba(20,118,166,0.10)]">
+                    </Link>
+                  <Link href="/for-educators/case-studies" className="block bg-white rounded-sm p-6 border border-[rgba(20,118,166,0.10)]">
                       <h3 className="card-title text-[#1A202C] mb-2">導入事例</h3>
                       <p className="text-[#4A5568] text-sm">
                         全国の学校での具体的な活用事例をご紹介
                       </p>
-                    </a>
-                  </Link>
-                  <Link href="/for-educators">
-                    <a className="block bg-white rounded-sm p-6 border border-[rgba(20,118,166,0.10)]">
+                    </Link>
+                  <Link href="/for-educators" className="block bg-white rounded-sm p-6 border border-[rgba(20,118,166,0.10)]">
                       <h3 className="card-title text-[#1A202C] mb-2">サービス一覧</h3>
                       <p className="text-[#4A5568] text-sm">
                         研修、導入支援、プライベートGPTなどのサービス
                       </p>
-                    </a>
-                  </Link>
+                    </Link>
                 </div>
               </div>
             </section>

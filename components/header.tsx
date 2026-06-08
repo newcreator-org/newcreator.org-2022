@@ -36,6 +36,15 @@ export default function Header() {
 
   return (
     <>
+      {/* ---- Skip navigation (a11y) ---- */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:rounded focus:text-white focus:font-bold"
+        style={{ background: "#1476A6" }}
+      >
+        メインコンテンツへスキップ
+      </a>
+
       {/* ---- Header bar ---- */}
       <header
         className="sticky top-0 z-50 w-full bg-white transition-colors duration-200"
@@ -112,6 +121,7 @@ export default function Header() {
 
           {/* Hamburger (mobile) */}
           <button
+            type="button"
             className="hamburger-btn ml-auto flex flex-col justify-center items-center bg-transparent border-0 cursor-pointer flex-shrink-0"
             style={{ width: "44px", height: "44px", padding: "8px", zIndex: 60 }}
             onClick={() => setMenuOpen(!menuOpen)}

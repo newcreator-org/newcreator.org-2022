@@ -29,12 +29,10 @@ const schoolTypeColor = (schoolType: string) => {
 export default function CaseStudies({ caseStudies }) {
   return (
     <>
-      <Heads 
-        child={{
-          title: "導入事例一覧 | 先生・学校向けAI活用支援 | ニュークリエイター・オルグ",
-          description: "全国の学校でのAI導入事例をご紹介します。具体的な活用方法や成果、導入のポイントなど、実践的な情報をお届けします。",
-          ogUrl: "https://newcreator.org/for-educators/case-studies",
-        }} 
+      <Heads
+        child="導入事例一覧"
+        description="全国の学校でのAI導入事例をご紹介します。具体的な活用方法や成果、導入のポイントなど、実践的な情報をお届けします。"
+        canonicalPath="/for-educators/case-studies"
       />
       <>
         <Header />
@@ -45,7 +43,7 @@ export default function CaseStudies({ caseStudies }) {
             { label: "導入事例" },
           ]}
         />
-        <main className="mx-auto">
+        <main id="main-content" className="mx-auto">
           <ScrollFadeIn>
             <section className="py-20 bg-[#F8FCFF]">
               <div className="container px-5 mx-auto max-w-6xl">
@@ -96,11 +94,9 @@ export default function CaseStudies({ caseStudies }) {
                 <p className="text-[#4A5568] mb-8">
                   学校の規模や状況に合わせて、最適なプランをご提案いたします。まずはお気軽にご相談ください。
                 </p>
-                <Link href="/apply">
-                  <a className="btn-primary-lg">
+                <Link href="/apply" className="btn-primary-lg">
                     お問い合わせフォームへ
-                  </a>
-                </Link>
+                  </Link>
               </div>
             </section>
           </ScrollFadeIn>

@@ -34,9 +34,7 @@ export default function GuideDetail({ guide }) {
         <Header />
         <main className="container px-5 py-20 mx-auto max-w-4xl text-center">
           <h1 className="page-title text-[#1A202C] mb-4">ガイドが見つかりません</h1>
-          <Link href="/for-educators/guides">
-            <a className="link-brand">ガイド一覧に戻る</a>
-          </Link>
+          <Link href="/for-educators/guides" className="link-brand">ガイド一覧に戻る</Link>
         </main>
         <Footer />
       </>
@@ -45,12 +43,11 @@ export default function GuideDetail({ guide }) {
 
   return (
     <>
-      <Heads 
-        child={{
-          title: `${guide.title} | 実践ガイド | 特定非営利活動法人ニュークリエイター・オルグ`,
-          description: guide.description,
-          ogUrl: `https://newcreator.org/for-educators/guides/${guide.id}`,
-        }} 
+      <Heads
+        child={`${guide.title} | 実践ガイド`}
+        description={guide.description}
+        canonicalPath={`/for-educators/guides/${guide.id}`}
+        ogType="article"
       />
       <>
         <Header />
@@ -97,22 +94,16 @@ export default function GuideDetail({ guide }) {
                   <p className="text-[#1A202C] mb-6">
                     研修のご依頼や導入相談など、お気軽にお問い合わせください。貴校の状況に合わせた最適なプランをご提案いたします。
                   </p>
-                  <Link href="/apply">
-                    <a
-                      className="btn-primary"
-                    >
+                  <Link href="/apply" className="btn-primary">
                       お問い合わせフォームへ
-                    </a>
-                  </Link>
+                    </Link>
                 </div>
               </div>
 
               <div className="mt-8">
-                <Link href="/for-educators/guides">
-                  <a className="link-brand">
+                <Link href="/for-educators/guides" className="link-brand">
                     ← ガイド一覧に戻る
-                  </a>
-                </Link>
+                  </Link>
               </div>
             </div>
           </article>

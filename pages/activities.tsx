@@ -173,7 +173,7 @@ export default function Activities() {
     <>
       <Heads child={null} />
       <Header />
-      <main className="mx-auto">
+      <main id="main-content" className="mx-auto">
         <section className="text-gray-600 body-font">
           <div className="container mx-auto flex px-5 py-20 items-center justify-center flex-col">
             <div className="text-center lg:w-2/3 w-full">
@@ -234,7 +234,7 @@ export default function Activities() {
                   { key: "teacher", label: "教員向け研修" },
                   { key: "special", label: "特別プログラム" },
                 ].map((btn) => (
-                  <button
+                  <button type="button"
                     key={btn.key}
                     onClick={() => setFilter(btn.key)}
                     className={`px-5 py-2 rounded-sm text-sm font-medium transition-colors ${

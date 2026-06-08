@@ -168,7 +168,7 @@ export default function Withus() {
                     </p>
                     <a href="mailto:contact@newcreator.org">
                         {" "}
-                        <button className="btn-primary mx-auto mt-8">
+                        <button type="button" className="btn-primary mx-auto mt-8">
                             問い合わせる
                         </button>
                     </a>
