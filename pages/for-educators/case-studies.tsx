@@ -45,7 +45,7 @@ export default function CaseStudies({ caseStudies }) {
             { label: "導入事例" },
           ]}
         />
-        <main className="mx-auto">
+        <main id="main-content" className="mx-auto">
           <ScrollFadeIn>
             <section className="py-20 bg-[#F8FCFF]">
               <div className="container px-5 mx-auto max-w-6xl">

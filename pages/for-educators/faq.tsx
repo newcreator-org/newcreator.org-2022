@@ -112,7 +112,7 @@ export default function FAQ() {
       />
       <>
         <Header />
-        <main className="mx-auto">
+        <main id="main-content" className="mx-auto">
           <ScrollFadeIn>
             <section className="bg-[#F8FCFF] py-20 md:py-20">
               <div className="container px-5 mx-auto max-w-6xl">

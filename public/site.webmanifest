@@ -1,0 +1,16 @@
+{
+  "name": "newCreator.org",
+  "short_name": "newCreator",
+  "description": "全国の子どもたちにSTEAM教育を格差なく届ける特定非営利活動法人",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#53B1F0",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}

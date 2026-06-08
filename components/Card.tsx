@@ -96,7 +96,7 @@ export const Card: React.FC<CardProps> = ({
 
   if (onClick) {
     return (
-      <button
+      <button type="button"
         onClick={onClick}
         className="block w-full text-left"
         style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}

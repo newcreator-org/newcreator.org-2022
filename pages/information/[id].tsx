@@ -15,7 +15,7 @@ import { getAllNews, getNewsById } from "../../libs/markdown";
 export default function BlogId({ blog }) {
   return (
     <>
-      <Heads child={blog.title} />
+      <Heads child={blog.title} canonicalPath={`/information/${blog.id}`} ogType="article" />
       <>
         <Header />
         <main>

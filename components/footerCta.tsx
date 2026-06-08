@@ -48,10 +48,8 @@ export default function FooterCta() {
             <p className="label-text mb-8" style={{ color: 'rgba(255,255,255,0.6)' }}>
               学校・自治体・企業との連携も大歓迎。
             </p>
-            <Link href="/#contact">
-              <a className="btn-ghost-white">
-                話を聞いてみる
-              </a>
+            <Link href="/#contact" className="btn-ghost-white">
+              話を聞いてみる
             </Link>
           </div>
 

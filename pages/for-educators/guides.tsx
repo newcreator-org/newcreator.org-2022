@@ -55,7 +55,7 @@ export default function Guides({ guides }) {
             { label: "実践ガイド" },
           ]}
         />
-        <main className="mx-auto">
+        <main id="main-content" className="mx-auto">
           <ScrollFadeIn>
             <section className="py-20 bg-[#F8FCFF]">
               <div className="container px-5 mx-auto max-w-6xl">
@@ -74,7 +74,7 @@ export default function Guides({ guides }) {
               <div className="container px-5 mx-auto max-w-6xl">
                 <div className="flex flex-wrap gap-3 justify-center">
                   {categories.map((category) => (
-                    <button
+                    <button type="button"
                       key={category}
                       onClick={() => setSelectedCategory(category)}
                       className={`px-5 py-2 rounded-sm font-medium transition-all ${

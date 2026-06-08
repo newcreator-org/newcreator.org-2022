@@ -37,7 +37,7 @@ export default function Resources() {
       />
       <>
         <Header />
-        <main className="mx-auto">
+        <main id="main-content" className="mx-auto">
           {/* ヒーローセクション */}
           <ScrollFadeIn>
             <section className="bg-[#F8FCFF] py-20 md:py-20">

@@ -15,7 +15,7 @@ import { getAllArchives, getArchiveById } from "../../libs/markdown";
 export default function AchieveId({ archives }) {
   return (
     <>
-      <Heads child={archives.title} />
+      <Heads child={archives.title} canonicalPath={`/archives/${archives.id}`} ogType="article" />
       <>
         <Header />
         <main>

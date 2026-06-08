@@ -29,7 +29,7 @@ export default function Home({ news, archives, media }) {
       <>
         <Header />
         <Hero />
-        <main className="mx-auto">
+        <main id="main-content" className="mx-auto">
           {/* 実績 */}
           <ScrollFadeIn>
             <section className="border-b border-[rgba(20,118,166,0.10)]">
@@ -606,7 +606,7 @@ export default function Home({ news, archives, media }) {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button
+                    <button type="button"
                       className="text-white border-0 py-3 px-12 focus:outline-none rounded-sm text-base font-medium transition-colors"
                       style={{ background: '#FDCA60', color: '#1A202C' }}
                     >

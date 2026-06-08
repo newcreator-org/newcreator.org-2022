@@ -9,7 +9,7 @@ export default function Company() {
     <>
       <Heads child="法人概要" />
       <Header />
-      <main className="mx-auto">
+      <main id="main-content" className="mx-auto">
 
         {/* ヒーロー */}
         <section className="body-font bg-white border-b border-[rgba(20,118,166,0.10)]">
@@ -28,9 +28,9 @@ export default function Company() {
         {/* パンくず */}
         <div className="container mx-auto px-5 py-4">
           <nav className="flex items-center gap-2 text-sm" style={{ color: "#718096" }}>
-            <Link href="/"><a className="link-brand">ホーム</a></Link>
+            <Link href="/" className="link-brand">ホーム</Link>
             <span>/</span>
-            <Link href="/about"><a className="link-brand">私たちについて</a></Link>
+            <Link href="/about" className="link-brand">私たちについて</Link>
             <span>/</span>
             <span>法人概要</span>
           </nav>

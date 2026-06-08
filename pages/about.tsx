@@ -9,7 +9,7 @@ export default function About() {
     <>
       <Heads child="私たちについて" />
       <Header />
-      <main className="mx-auto">
+      <main id="main-content" className="mx-auto">
 
         {/* ヒーロー — シンプルに。英語ラベル廃止 */}
         <section className="body-font bg-white border-b border-[rgba(20,118,166,0.10)]">

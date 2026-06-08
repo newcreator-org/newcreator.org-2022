@@ -39,7 +39,7 @@ export default function ForEducators({ guides, caseStudies }) {
       />
       <>
         <Header />
-        <main className="mx-auto">
+        <main id="main-content" className="mx-auto">
           {/* ヒーローセクション */}
           <ScrollFadeIn>
             <section className="py-20 md:py-20" style={{ background: '#F8FCFF' }}>
@@ -149,7 +149,7 @@ export default function ForEducators({ guides, caseStudies }) {
                         <p className="text-[#4A5568] text-sm leading-relaxed mb-4">
                           生徒向け・教員向けの生成AI活用研修を実施します。学校のカリキュラムや目的に応じたプログラムを設計し、実践的な内容をお届けします。
                         </p>
-                        <Link href="/apply"><a className="link-brand">研修のご依頼はこちら →</a></Link>
+                        <Link href="/apply" className="link-brand">研修のご依頼はこちら →</Link>
                       </div>
                     </div>
                   </div>
@@ -163,7 +163,7 @@ export default function ForEducators({ guides, caseStudies }) {
                         <p className="text-[#4A5568] text-sm leading-relaxed mb-4">
                           活用方針の策定、教員向け研修、ガイドライン整備など、学校のニーズに合わせた支援を行います。
                         </p>
-                        <Link href="/apply"><a className="link-brand">導入相談はこちら →</a></Link>
+                        <Link href="/apply" className="link-brand">導入相談はこちら →</Link>
                       </div>
                     </div>
                   </div>
@@ -177,7 +177,7 @@ export default function ForEducators({ guides, caseStudies }) {
                         <p className="text-[#4A5568] text-sm leading-relaxed mb-4">
                           生徒数単位の課金・契約期間の縛りなし・請求書払い対応。情報セキュリティに対応した環境で安心してご利用いただけます。
                         </p>
-                        <Link href="/apply"><a className="link-brand">詳細・お問い合わせ →</a></Link>
+                        <Link href="/apply" className="link-brand">詳細・お問い合わせ →</Link>
                       </div>
                     </div>
                   </div>
@@ -191,7 +191,7 @@ export default function ForEducators({ guides, caseStudies }) {
                         <p className="text-[#4A5568] text-sm leading-relaxed mb-4">
                           企業・行政と連携したワークショップ、講師派遣による出張授業を全国各地で実施。STEAM教育を通じて子どもたちの創造性を育みます。
                         </p>
-                        <Link href="/activities"><a className="link-brand">活動実績を見る →</a></Link>
+                        <Link href="/activities" className="link-brand">活動実績を見る →</Link>
                       </div>
                     </div>
                   </div>
