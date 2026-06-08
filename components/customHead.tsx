@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 type HeadsProps = {
   child?: string;
   description?: string;
