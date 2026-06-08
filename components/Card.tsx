@@ -86,10 +86,8 @@ export const Card: React.FC<CardProps> = ({
 
   if (href) {
     return (
-      <Link href={href}>
-        <a className="block w-full" style={{ textDecoration: 'none', color: 'inherit' }}>
-          {cardContent}
-        </a>
+      <Link href={href} className="block w-full" style={{ textDecoration: 'none', color: 'inherit' }}>
+        {cardContent}
       </Link>
     );
   }

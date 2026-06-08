@@ -33,9 +33,7 @@ export default function CaseStudyDetail({ caseStudy }) {
         <Header />
         <main className="container px-5 py-20 mx-auto max-w-4xl text-center">
           <h1 className="page-title text-[#1A202C] mb-4">事例が見つかりません</h1>
-          <Link href="/for-educators/case-studies">
-            <a className="link-brand">事例一覧に戻る</a>
-          </Link>
+          <Link href="/for-educators/case-studies" className="link-brand">事例一覧に戻る</Link>
         </main>
         <Footer />
       </>
@@ -44,12 +42,11 @@ export default function CaseStudyDetail({ caseStudy }) {
 
   return (
     <>
-      <Heads 
-        child={{
-          title: `${caseStudy.title} | ${caseStudy.school} | 導入事例 | 特定非営利活動法人ニュークリエイター・オルグ`,
-          description: caseStudy.description,
-          ogUrl: `https://newcreator.org/for-educators/case-studies/${caseStudy.id}`,
-        }} 
+      <Heads
+        child={`${caseStudy.title} | ${caseStudy.school} | 導入事例`}
+        description={caseStudy.description}
+        canonicalPath={`/for-educators/case-studies/${caseStudy.id}`}
+        ogType="article"
       />
       <>
         <Header />
@@ -99,13 +96,9 @@ export default function CaseStudyDetail({ caseStudy }) {
                   <p className="text-[#1A202C] mb-6">
                     学校の規模や状況に合わせて、最適なプランをご提案いたします。まずはお気軽にご相談ください。
                   </p>
-                  <Link href="/apply">
-                    <a
-                      className="btn-primary"
-                    >
+                  <Link href="/apply" className="btn-primary">
                       お問い合わせフォームへ
-                    </a>
-                  </Link>
+                    </Link>
                 </div>
               </div>
 

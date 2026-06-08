@@ -260,14 +260,9 @@ export default function Home({ news, archives, media }) {
                   ))}
                 </div>
                 <div className="text-center">
-                  <Link href="/for-educators">
-                    <a
-                      className="inline-block px-8 py-4 rounded-sm font-bold transition-colors"
-                      style={{ background: '#FDCA60', color: '#1A202C' }}
-                    >
+                  <Link href="/for-educators" className="inline-block px-8 py-4 rounded-sm font-bold transition-colors" style={{ background: '#FDCA60', color: '#1A202C' }}>
                       詳しく見る
-                    </a>
-                  </Link>
+                    </Link>
                 </div>
               </div>
             </section>
@@ -373,14 +368,12 @@ export default function Home({ news, archives, media }) {
                       </div>
                     ))}
                 </div>
-                <Link href="/archives">
-                  <a className="flex justify-center items-center mt-12 font-medium transition-colors" style={{ color: '#1476A6' }}>
+                <Link href="/archives" className="flex justify-center items-center mt-12 font-medium transition-colors" style={{ color: '#1476A6' }}>
                     <span>すべての活動を見る（更新中）</span>
                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                       <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
-                  </a>
-                </Link>
+                  </Link>
               </div>
             </section>
           </ScrollFadeIn>
@@ -420,14 +413,12 @@ export default function Home({ news, archives, media }) {
                       </div>
                     ))}
                 </div>
-                <Link href="/media">
-                  <a className="flex justify-center items-center mt-12 font-medium transition-colors" style={{ color: '#1476A6' }}>
+                <Link href="/media" className="flex justify-center items-center mt-12 font-medium transition-colors" style={{ color: '#1476A6' }}>
                     <span>すべての記事を見る</span>
                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                       <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
-                  </a>
-                </Link>
+                  </Link>
               </div>
             </section>
           </ScrollFadeIn>
@@ -462,14 +453,12 @@ export default function Home({ news, archives, media }) {
                       </a>
                     ))}
                 </div>
-                <Link href="/information">
-                  <a className="flex justify-center items-center mt-12 font-medium transition-colors" style={{ color: '#1476A6' }}>
+                <Link href="/information" className="flex justify-center items-center mt-12 font-medium transition-colors" style={{ color: '#1476A6' }}>
                     <span>すべてのお知らせを見る</span>
                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                       <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
-                  </a>
-                </Link>
+                  </Link>
               </div>
             </section>
           </ScrollFadeIn>

@@ -39,12 +39,10 @@ export default function Guides({ guides }) {
 
   return (
     <>
-      <Heads 
-        child={{
-          title: "実践ガイド一覧 | 先生・学校向けAI活用支援 | ニュークリエイター・オルグ",
-          description: "学校でのAI活用に役立つ実践ガイドを多数掲載。授業での活用方法、業務効率化、セキュリティ対策など、教育現場で今すぐ使える情報を提供します。",
-          ogUrl: "https://newcreator.org/for-educators/guides",
-        }} 
+      <Heads
+        child="実践ガイド一覧"
+        description="学校でのAI活用に役立つ実践ガイドを多数掲載。授業での活用方法、業務効率化、セキュリティ対策など、教育現場で今すぐ使える情報を提供します。"
+        canonicalPath="/for-educators/guides"
       />
       <>
         <Header />
@@ -127,11 +125,9 @@ export default function Guides({ guides }) {
                 <p className="text-[#4A5568] mb-8">
                   研修のご依頼や導入相談など、お気軽にお問い合わせください。
                 </p>
-                <Link href="/apply">
-                  <a className="btn-primary-lg">
+                <Link href="/apply" className="btn-primary-lg">
                     お問い合わせフォームへ
-                  </a>
-                </Link>
+                  </Link>
               </div>
             </section>
           </ScrollFadeIn>

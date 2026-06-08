@@ -27,13 +27,10 @@ const resources = [
 export default function Resources() {
   return (
     <>
-      <Heads 
-        child={{
-          title: "ダウンロード資料 | 先生・学校向けAI活用支援 | ニュークリエイター・オルグ",
-          description: "学校でのAI導入に役立つ資料を無料でダウンロードできます。導入完全ガイド、チェックリスト、活用事例集など、実践的な資料を多数ご用意しています。",
-          ogUrl: "https://newcreator.org/for-educators/resources",
-          keywords: "AI導入ガイド,学校AI資料,教員研修資料,AI活用チェックリスト,教育DX資料,無料ダウンロード",
-        }} 
+      <Heads
+        child="ダウンロード資料"
+        description="学校でのAI導入に役立つ資料を無料でダウンロードできます。導入完全ガイド、チェックリスト、活用事例集など、実践的な資料を多数ご用意しています。"
+        canonicalPath="/for-educators/resources"
       />
       <>
         <Header />
@@ -106,8 +103,7 @@ export default function Resources() {
                   その他のリソース
                 </h2>
                 <div className="grid md:grid-cols-3 gap-6">
-                  <Link href="/for-educators/guides">
-                    <a className="block bg-white border border-[#E2E8F0] rounded-sm p-6">
+                  <Link href="/for-educators/guides" className="block bg-white border border-[#E2E8F0] rounded-sm p-6">
                       <h3 className="card-title text-[#1A202C] mb-3">
                         実践ガイド
                       </h3>
@@ -117,10 +113,8 @@ export default function Resources() {
                       <span className="text-[#1476A6] font-bold">
                         ガイドを見る →
                       </span>
-                    </a>
-                  </Link>
-                  <Link href="/for-educators/case-studies">
-                    <a className="block bg-white border border-[#E2E8F0] rounded-sm p-6">
+                    </Link>
+                  <Link href="/for-educators/case-studies" className="block bg-white border border-[#E2E8F0] rounded-sm p-6">
                       <h3 className="card-title text-[#1A202C] mb-3">
                         導入事例
                       </h3>
@@ -130,10 +124,8 @@ export default function Resources() {
                       <span className="text-[#1476A6] font-bold">
                         事例を見る →
                       </span>
-                    </a>
-                  </Link>
-                  <Link href="/for-educators/faq">
-                    <a className="block bg-white border border-[#E2E8F0] rounded-sm p-6">
+                    </Link>
+                  <Link href="/for-educators/faq" className="block bg-white border border-[#E2E8F0] rounded-sm p-6">
                       <h3 className="card-title text-[#1A202C] mb-3">
                         よくある質問
                       </h3>
@@ -143,8 +135,7 @@ export default function Resources() {
                       <span className="text-[#1476A6] font-bold">
                         FAQを見る →
                       </span>
-                    </a>
-                  </Link>
+                    </Link>
                 </div>
               </div>
             </section>
@@ -161,11 +152,9 @@ export default function Resources() {
                   <p className="text-lg mb-8 opacity-90">
                     貴校の状況に合わせた導入計画の策定から、教員研修、実践サポートまで、一貫して支援いたします。
                   </p>
-                  <Link href="/contact">
-                    <a className="btn-white">
+                  <Link href="/contact" className="btn-white">
                       お問い合わせ
-                    </a>
-                  </Link>
+                    </Link>
                 </div>
               </div>
             </section>

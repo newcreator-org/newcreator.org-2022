@@ -29,12 +29,11 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
           >
             {item.href ? (
               <>
-                <Link href={item.href}>
-                  <a
-                    className="link-brand hover:opacity-70 transition-opacity duration-200"
-                  >
-                    {item.label}
-                  </a>
+                <Link
+                  href={item.href}
+                  className="link-brand hover:opacity-70 transition-opacity duration-200"
+                >
+                  {item.label}
                 </Link>
                 {index < items.length - 1 && (
                   <span style={{ color: '#A0AEC0', margin: '0 4px' }}>/</span>
