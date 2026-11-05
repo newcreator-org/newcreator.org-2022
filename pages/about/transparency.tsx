@@ -55,7 +55,7 @@ export default function Transparency() {
               >
                 NPOとして、活動の透明性を確保し、支援してくださる皆さんに信頼していただける組織であり続けます。
                 <br />
-                定款・財務情報・役員名簿をこちらで公開しています。
+                定款・財務情報・貸借対照表の公告・役員名簿をこちらで公開しています。
               </p>
             </div>
           </div>
@@ -81,26 +81,32 @@ export default function Transparency() {
                   定款・規約
                 </h2>
                 <p className="text-sm mb-8" style={{ color: "#718096" }}>
-                  法人の目的・事業内容・組織体制を定めた文書を公開しています。
+                  法人の目的・事業内容・組織体制を定めた文書と、サービス提供に関する規約です。
                 </p>
                 <div className="grid md:grid-cols-3 gap-4">
                   {[
                     {
                       title: "定款",
-                      desc: "特定非営利活動法人newCreator.orgの定款です。法人の目的、事業内容、組織体制などを定めています。",
-                      note: "最終改定：2023年4月",
+                      desc: "特定非営利活動法人ニュークリエイター・オルグの定款です。法人の目的、事業内容、組織体制などを定めています。所轄庁（豊中市）および内閣府NPO法人ポータルサイトで閲覧できます。",
+                      href: "https://www.npo-homepage.go.jp/npoportal/",
+                      label: "NPO法人ポータルサイト",
+                      external: true,
                     },
                     {
-                      title: "活動規約",
-                      desc: "ワークショップやイベントにおける参加規約、行動規範などを定めています。",
-                      note: "最終改定：2023年4月",
+                      title: "提供にあたってのルール",
+                      desc: "当法人が提供する教材・サービスの利用条件を定めています。",
+                      href: "/legal/rule",
+                      label: "ルールを見る",
+                      external: false,
                     },
                     {
                       title: "プライバシーポリシー",
                       desc: "個人情報の取り扱いについて定めたプライバシーポリシーです。",
-                      note: "最終改定：2023年4月",
+                      href: "/legal/privacy-policy",
+                      label: "ポリシーを見る",
+                      external: false,
                     },
-                  ].map(({ title, desc, note }) => (
+                  ].map(({ title, desc, href, label, external }) => (
                     <div
                       key={title}
                       className="p-6 rounded-sm border"
@@ -112,14 +118,16 @@ export default function Transparency() {
                         </div>
                         <h3 className="card-title" style={{ color: "#1A202C" }}>{title}</h3>
                       </div>
-                      <p className="text-sm leading-7 mb-3" style={{ color: "#4A5568" }}>{desc}</p>
-                      <p className="text-xs mb-4" style={{ color: "#A0AEC0" }}>{note}</p>
-                      <button type="button"
-                        className="link-brand"
-                      >
-                        PDFをダウンロード
-                        <DownloadIcon />
-                      </button>
+                      <p className="text-sm leading-7 mb-4" style={{ color: "#4A5568" }}>{desc}</p>
+                      {external ? (
+                        <a href={href} className="link-brand" target="_blank" rel="noopener noreferrer">
+                          {label}
+                        </a>
+                      ) : (
+                        <Link href={href} className="link-brand">
+                          {label}
+                        </Link>
+                      )}
                     </div>
                   ))}
                 </div>
@@ -137,120 +145,106 @@ export default function Transparency() {
                   財務情報
                 </h2>
                 <p className="text-sm mb-8" style={{ color: "#718096" }}>
-                  収支報告・寄付金の使途を公開しています。数字は実際の報告書に基づき更新します。
+                  所轄庁（豊中市）に提出した事業報告書等に基づいて掲載しています。事業年度は毎年6月1日から翌年5月31日までです。
                 </p>
 
-                {/* 収支報告テーブル */}
+                {/* 活動計算書の概要 */}
                 <div className="bg-white rounded-sm p-6 mb-6 border" style={{ borderColor: "rgba(20,118,166,0.12)" }}>
-                  <h3 className="card-title mb-6" style={{ color: "#1A202C" }}>
-                    2023年度 収支報告
+                  <h3 className="card-title mb-2" style={{ color: "#1A202C" }}>
+                    2025（令和7）年度 活動計算書の概要
                   </h3>
+                  <p className="text-xs mb-6" style={{ color: "#718096" }}>
+                    2025年6月1日から2026年5月31日まで（単位：円）
+                  </p>
                   <div className="overflow-x-auto">
                     <table className="w-full text-left">
                       <thead>
                         <tr style={{ borderBottom: "2px solid rgba(20,118,166,0.15)" }}>
-                          <th className="py-3 px-4 text-sm font-bold" style={{ color: "#1A202C" }}>項目</th>
+                          <th className="py-3 px-4 text-sm font-bold" style={{ color: "#1A202C" }}>科目</th>
                           <th className="py-3 px-4 text-sm font-bold text-right" style={{ color: "#1A202C" }}>金額（円）</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td className="py-3 px-4 text-sm font-bold text-[#1476A6]">【収入の部】</td>
+                          <td className="py-3 px-4 text-sm font-bold text-[#1476A6]">【経常収益】</td>
                           <td />
                         </tr>
                         {[
-                          { label: "寄付金収入", value: "3,500,000", indent: true },
-                          { label: "助成金収入", value: "2,000,000", indent: true },
-                          { label: "事業収入", value: "1,500,000", indent: true },
-                        ].map(({ label, value, indent }) => (
+                          { label: "受取寄附金", value: "10,119" },
+                          { label: "事業収益", value: "5,610,000" },
+                          { label: "その他収益", value: "5,446" },
+                        ].map(({ label, value }) => (
                           <tr key={label} style={{ borderBottom: "1px solid rgba(20,118,166,0.08)" }}>
-                            <td className={`py-3 px-4 text-sm ${indent ? "pl-8" : ""}`} style={{ color: "#4A5568" }}>{label}</td>
+                            <td className="py-3 px-4 text-sm pl-8" style={{ color: "#4A5568" }}>{label}</td>
                             <td className="py-3 px-4 text-sm text-right" style={{ color: "#4A5568" }}>{value}</td>
                           </tr>
                         ))}
                         <tr style={{ background: "#EDF6FB", borderBottom: "1px solid rgba(20,118,166,0.12)" }}>
-                          <td className="py-3 px-4 text-sm font-bold" style={{ color: "#1A202C" }}>収入合計</td>
-                          <td className="py-3 px-4 text-sm font-bold text-right" style={{ color: "#1A202C" }}>7,000,000</td>
+                          <td className="py-3 px-4 text-sm font-bold" style={{ color: "#1A202C" }}>経常収益計</td>
+                          <td className="py-3 px-4 text-sm font-bold text-right" style={{ color: "#1A202C" }}>5,625,565</td>
                         </tr>
                         <tr>
-                          <td className="py-3 px-4 text-sm font-bold pt-5 text-[#1476A6]">【支出の部】</td>
+                          <td className="py-3 px-4 text-sm font-bold pt-5 text-[#1476A6]">【経常費用】</td>
                           <td />
                         </tr>
                         {[
-                          { label: "事業費", value: "5,000,000", indent: true },
-                          { label: "管理費", value: "1,500,000", indent: true },
-                        ].map(({ label, value, indent }) => (
+                          { label: "事業費", value: "2,758,719" },
+                          { label: "管理費", value: "135,208" },
+                        ].map(({ label, value }) => (
                           <tr key={label} style={{ borderBottom: "1px solid rgba(20,118,166,0.08)" }}>
-                            <td className={`py-3 px-4 text-sm ${indent ? "pl-8" : ""}`} style={{ color: "#4A5568" }}>{label}</td>
+                            <td className="py-3 px-4 text-sm pl-8" style={{ color: "#4A5568" }}>{label}</td>
                             <td className="py-3 px-4 text-sm text-right" style={{ color: "#4A5568" }}>{value}</td>
                           </tr>
                         ))}
                         <tr style={{ background: "#EDF6FB", borderBottom: "1px solid rgba(20,118,166,0.12)" }}>
-                          <td className="py-3 px-4 text-sm font-bold" style={{ color: "#1A202C" }}>支出合計</td>
-                          <td className="py-3 px-4 text-sm font-bold text-right" style={{ color: "#1A202C" }}>6,500,000</td>
+                          <td className="py-3 px-4 text-sm font-bold" style={{ color: "#1A202C" }}>経常費用計</td>
+                          <td className="py-3 px-4 text-sm font-bold text-right" style={{ color: "#1A202C" }}>2,893,927</td>
                         </tr>
                         <tr style={{ background: "#DBEAFE" }}>
-                          <td className="py-3 px-4 text-sm font-bold text-[#1476A6]">当期収支差額</td>
-                          <td className="py-3 px-4 text-sm font-bold text-right text-[#1476A6]">500,000</td>
+                          <td className="py-3 px-4 text-sm font-bold text-[#1476A6]">当期正味財産増減額</td>
+                          <td className="py-3 px-4 text-sm font-bold text-right text-[#1476A6]">2,731,638</td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
-                  <div className="mt-6">
-                    <button type="button" className="link-brand">
-                      詳細な財務諸表をダウンロード
-                      <DownloadIcon />
-                    </button>
-                  </div>
                 </div>
 
-                {/* 寄付金の使途 */}
-                <div className="bg-white rounded-sm p-6 mb-6 border" style={{ borderColor: "rgba(20,118,166,0.12)" }}>
-                  <h3 className="card-title mb-6" style={{ color: "#1A202C" }}>
-                    寄付金の使途内訳（2023年度）
+                {/* 貸借対照表の公告 */}
+                <div id="balance-sheet" className="bg-white rounded-sm p-6 border" style={{ borderColor: "rgba(20,118,166,0.12)" }}>
+                  <h3 className="card-title mb-2" style={{ color: "#1A202C" }}>
+                    貸借対照表の公告
                   </h3>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    {[
-                      { pct: "60%", label: "ワークショップ\n運営費" },
-                      { pct: "20%", label: "教材開発費" },
-                      { pct: "15%", label: "広報・\nマーケティング" },
-                      { pct: "5%",  label: "管理費" },
-                    ].map(({ pct, label }) => (
-                      <div
-                        key={pct + label}
-                        className="rounded-sm p-6 text-center"
-                        style={{ background: "#EDF6FB" }}
-                      >
-                        <p className="text-3xl font-bold mb-2" style={{ color: "#1476A6" }}>{pct}</p>
-                        <p className="text-sm whitespace-pre-line" style={{ color: "#4A5568" }}>{label}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* 年次報告書 */}
-                <div className="bg-white rounded-sm p-6 border" style={{ borderColor: "rgba(20,118,166,0.12)" }}>
-                  <h3 className="card-title mb-6" style={{ color: "#1A202C" }}>
-                    年次報告書
-                  </h3>
+                  <p className="text-sm leading-7 mb-6" style={{ color: "#4A5568" }}>
+                    特定非営利活動促進法第28条の2の規定に基づき、各事業年度の貸借対照表を公告します。
+                  </p>
                   <div className="space-y-3">
-                    {["2023年度", "2022年度", "2021年度"].map((year) => (
+                    {[
+                      { year: "2025（令和7）年度", date: "2026年5月31日現在", net: "4,063,120", file: "bs-fy2025.pdf" },
+                      { year: "2024（令和6）年度", date: "2025年5月31日現在", net: "1,331,482", file: "bs-fy2024.pdf" },
+                      { year: "2023（令和5）年度", date: "2024年5月31日現在", net: "2,939,683", file: "bs-fy2023.pdf" },
+                      { year: "2022（令和4）年度", date: "2023年5月31日現在", net: "2,387,735", file: "bs-fy2022.pdf" },
+                      { year: "2021（令和3）年度", date: "2022年5月31日現在", net: "740,953", file: "bs-fy2021.pdf" },
+                      { year: "2020（令和2）年度", date: "2021年5月31日現在", net: "251,425", file: "bs-fy2020.pdf" },
+                    ].map(({ year, date, net, file }) => (
                       <div
                         key={year}
                         className="flex items-center justify-between p-6 rounded-sm"
                         style={{ background: "#F8FCFF" }}
                       >
                         <div>
-                          <p className="font-bold text-sm" style={{ color: "#1A202C" }}>{year} 年次報告書</p>
-                          <p className="text-xs mt-0.5" style={{ color: "#718096" }}>活動実績、財務報告、今後の展望</p>
+                          <p className="font-bold text-sm" style={{ color: "#1A202C" }}>{year} 貸借対照表</p>
+                          <p className="text-xs mt-0.5" style={{ color: "#718096" }}>{date}　正味財産合計 {net}円</p>
                         </div>
-                        <button type="button" className="link-brand">
-                          ダウンロード
+                        <a href={`/downloads/koukoku/${file}`} className="link-brand" target="_blank" rel="noopener noreferrer">
+                          PDF
                           <DownloadIcon />
-                        </button>
+                        </a>
                       </div>
                     ))}
                   </div>
+                  <p className="text-xs mt-4" style={{ color: "#A0AEC0" }}>
+                    公告開始日：2026年11月5日
+                  </p>
                 </div>
               </div>
             </div>
@@ -266,7 +260,7 @@ export default function Transparency() {
                   役員名簿
                 </h2>
                 <p className="text-sm mb-8" style={{ color: "#718096" }}>
-                  特定非営利活動促進法の規定に基づき公開しています。
+                  2026年9月30日の通常総会で選任された役員です（役員はいずれも無報酬）。
                 </p>
                 <div className="overflow-hidden rounded-sm border" style={{ borderColor: "rgba(20,118,166,0.15)" }}>
                   <table className="w-full text-left">
@@ -279,11 +273,11 @@ export default function Transparency() {
                     </thead>
                     <tbody>
                       {[
-                        { role: "代表理事", name: "吉久 良平", term: "2023年4月〜2025年3月" },
-                        { role: "理事",     name: "（氏名）", term: "2023年4月〜2025年3月" },
-                        { role: "理事",     name: "（氏名）", term: "2023年4月〜2025年3月" },
-                        { role: "監事",     name: "（氏名）", term: "2023年4月〜2025年3月" },
-                      ].map(({ role, name, term }, i) => (
+                        { role: "理事長", name: "改野 由尚" },
+                        { role: "副理事長", name: "小山 優輝" },
+                        { role: "理事", name: "衛藤 泰地" },
+                        { role: "監事", name: "山下 真歩" },
+                      ].map(({ role, name }, i) => (
                         <tr
                           key={i}
                           style={{
@@ -293,15 +287,12 @@ export default function Transparency() {
                         >
                           <td className="py-3 px-5 text-sm font-bold text-[#1476A6]">{role}</td>
                           <td className="py-3 px-5 text-sm" style={{ color: "#4A5568" }}>{name}</td>
-                          <td className="py-3 px-5 text-sm" style={{ color: "#718096" }}>{term}</td>
+                          <td className="py-3 px-5 text-sm" style={{ color: "#718096" }}>2026年9月30日〜2028年9月29日</td>
                         </tr>
                       ))}
                     </tbody>
                   </table>
                 </div>
-                <p className="text-xs mt-3" style={{ color: "#A0AEC0" }}>
-                  ※ 氏名欄は順次更新します。最新情報はお問い合わせください。
-                </p>
               </div>
             </div>
           </section>
