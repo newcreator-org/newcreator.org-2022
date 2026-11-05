@@ -71,12 +71,6 @@ const SERVICES = [
     },
 ];
 
-const DONATIONS = [
-    { amount: "3,000", body: "1人の子どもが1ヶ月間プログラミング教室に参加できます" },
-    { amount: "10,000", body: "地方での出張授業1回分の交通費になります" },
-    { amount: "30,000", body: "新しい教材の開発費に充てられます" },
-];
-
 export default function HomePage() {
     const news = getAllNews().slice(0, 5);
     const archives = getAllArchives().slice(0, 4);
@@ -266,7 +260,7 @@ export default function HomePage() {
                 </div>
             </Section>
 
-            <Section tone="muted" aria-labelledby="media-heading">
+            <Section ruled aria-labelledby="media-heading">
                 <SectionHeading
                     id="media-heading"
                     index="05"
@@ -289,13 +283,13 @@ export default function HomePage() {
             </Section>
 
             {/* ---- 理事長メッセージ・法人情報 ---- */}
-            <Section aria-labelledby="message-heading">
+            <Section tone="muted" aria-labelledby="message-heading">
                 <div className="grid gap-16 lg:grid-cols-12">
                     <div className="lg:col-span-6">
                         <h2 id="message-heading" className="border-t-2 border-ink pt-5 text-h2 font-bold">
                             想い
                         </h2>
-                        <Message name="改野 由尚" role="理事長" photo="/img/member/yoshi.jpg" className="mt-10">
+                        <Message name="改野 由尚" role="理事長" photo="/img/member/yoshi-face.jpg" className="mt-10">
                             <p>
                                 不登校の子どもも、地方に住む子どもも、「ITは自分には関係ない」と思っている女の子も——どんな子どもにも、学ぶ機会は平等にあるべきだと思っています。
                             </p>
@@ -329,39 +323,6 @@ export default function HomePage() {
                         <div className="mt-8">
                             <TextLink href="/about/company/">法人概要を見る</TextLink>
                         </div>
-                    </div>
-                </div>
-            </Section>
-
-            {/* ---- 寄付 ---- */}
-            <Section id="donation" tone="pale" aria-labelledby="donation-heading">
-                <SectionHeading
-                    id="donation-heading"
-                    title="活動を応援してください"
-                    lead="私たちの活動は300円から応援いただけます。皆さまの寄付が、子どもたちの未来を切り開く力になります。"
-                />
-                <RuledColumns columns={3}>
-                    {DONATIONS.map((d) => (
-                        <Column key={d.amount}>
-                            <p className="nc-num text-[2.5rem] font-semibold leading-none text-ink">
-                                <span className="mr-1 text-[0.6em]">¥</span>
-                                {d.amount}
-                            </p>
-                            <p className="mt-4">{d.body}</p>
-                        </Column>
-                    ))}
-                </RuledColumns>
-                <div className="mt-14 flex flex-col gap-8 border-t border-rule pt-10 md:flex-row md:items-center md:justify-between">
-                    <Button href={SITE.donateUrl} variant="donate" size="lg" arrow>
-                        クレジットカードで寄付する
-                    </Button>
-                    <div className="text-small">
-                        <p className="font-bold text-ink">銀行振込でもご支援いただけます</p>
-                        <p className="mt-1">
-                            GMOあおぞらネット銀行 法人営業部（101） <span className="nc-num">1193846</span>
-                            <br />
-                            トクヒ）ニュークリエイターオルグ
-                        </p>
                     </div>
                 </div>
             </Section>
