@@ -1,9 +1,10 @@
 import type { ReactElement, SVGProps } from "react";
 
-type IconName = "arrow-right" | "external" | "menu" | "close" | "x" | "facebook" | "line" | "mail" | "plus";
+type IconName = "download" | "arrow-right" | "external" | "menu" | "close" | "x" | "facebook" | "line" | "mail" | "plus";
 
 const paths: Record<IconName, ReactElement> = {
     "arrow-right": <path d="M4 12h15m-6-6 6 6-6 6" />,
+    download: <path d="M12 4v11m-5-5 5 5 5-5M5 20h14" />,
     external: <path d="M14 4h6v6m0-6-9 9M10 6H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5" />,
     menu: <path d="M3 7h18M3 12h18M3 17h18" />,
     close: <path d="m5 5 14 14M19 5 5 19" />,

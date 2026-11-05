@@ -1,0 +1,48 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="はじめに" />
+
+# newCreator.org デザインシステム
+
+特定非営利活動法人ニュークリエイター・オルグの公式サイト（[newcreator.org](https://newcreator.org)）で使う部品と決まりごとをまとめたものです。
+ページはこの部品だけで組みます。ページ側に色や余白の値を直接書かないでください。
+
+## 考え方：紙面型
+
+白地・罫線・文字組みで見せる「紙面型」です。2026-10-03 に改野がスライド（Skill `nco-slides`）について決めた方針を、Web にもそのまま当てはめています。スライドと Web で同じ見た目になるよう、色・書体・罫線の使い方をそろえています。
+
+- **地は白。** 区切りは面の色ではなく罫線で付けます。見出しの上に 2px の墨の罫線、項目のあいだに 1px の罫線を引きます。
+- **色はロゴの青 1 色と、黄のマーカーだけ。** 青（`#1476A6`）はリンクと主ボタンに使います。黄（`#FDCA60`）は強調のマーカーと寄付ボタンだけに使います。
+- **文字で見せる。** 和文は Zen Kaku Gothic New、数字と欧文は Inter です。見出しの大きさと太さの差で強弱を付けます。
+- **章番号は数字だけ。** 見出しの頭に `01` `02` と付けます（スライドの章番号と同じ扱い）。
+
+## やらないこと
+
+AI が作ったように見える飾りは使いません。
+
+| 使わないもの | 代わりにすること |
+|---|---|
+| 角丸のカード・影で浮かせたカード | 上の罫線で区切る（`RuledColumns`・`ArticleCard`） |
+| 色の塗りのラベル・バッジ | 青の文字と細い線だけの `Tag` |
+| 英字の飾り見出し（`ABOUT US` `OUR MISSION` など） | 日本語の見出しと章番号 |
+| グラデーション・スタンプ・絵文字のアイコン | 写真と、線のアイコン（`Icon`）だけ |
+| ロゴ画像を記事サムネイルとして使い回すこと | 画像が無ければ枠ごと出さない |
+
+## 使い方
+
+```tsx
+import { Section, SectionHeading, RuledColumns, Column, TextLink } from "../components/ui";
+
+<Section tone="muted">
+    <SectionHeading index="01" title="いま、日本の子どもたちに起きていること" lead="数字ではなく、一人ひとりの子どもの話として考えてほしい。" />
+    <RuledColumns columns={3}>
+        <Column label="不登校" title="35万人を超える子どもが、居場所を失っている">…</Column>
+    </RuledColumns>
+    <TextLink href="/about/">私たちについて詳しく見る</TextLink>
+</Section>
+```
+
+- 値の正本は `styles/tokens.css`。Tailwind のクラス名（`text-ink` `bg-brand` `text-h2` `px-gutter` など）はこの変数を指しています。
+- 部品は `components/ui/`、ヘッダー・フッターなど全ページ共通の枠は `components/layout/` にあります。
+- 部品を足したら、同じフォルダに `*.stories.tsx` を書いてください。
+- アクセシビリティの検査（addon-a11y）は、違反があればエラーにする設定です。

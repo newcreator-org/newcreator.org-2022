@@ -17,7 +17,9 @@ export function SupportCta() {
                             <br />
                             子どもの「作れた！」になる。
                         </p>
-                        <p className="mt-5">学校に行けない子も、地方に住む子も、「私には無理」と思っている女の子も。毎月300円から支援できます。</p>
+                        <p className="mt-5">
+                            学校に行けない子も、地方に住む子も、「私には無理」と思っている女の子も。毎月300円から支援できます。
+                        </p>
                         <div className="mt-8">
                             <Button href={SITE.donateUrl} variant="donate" size="lg" arrow>
                                 寄付で支援する

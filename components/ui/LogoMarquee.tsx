@@ -28,7 +28,8 @@ export function LogoMarquee({ src, width, height, displayHeight = 56, label, cla
                         alt=""
                         width={w}
                         height={displayHeight}
-                        loading="lazy"
+                        // 横にはみ出した位置に置くので lazy だと読み込まれないことがある
+                        loading="eager"
                         decoding="async"
                         className="block max-w-none shrink-0 pr-12"
                         style={{ width: w, height: displayHeight }}

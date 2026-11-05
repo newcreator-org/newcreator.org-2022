@@ -2,7 +2,6 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import type { Metadata, Viewport } from "next";
 import { Inter, Zen_Kaku_Gothic_New } from "next/font/google";
 import type { ReactNode } from "react";
-import { SiteFooter, SiteHeader, SupportCta } from "../components/layout";
 import { SITE_TITLE } from "../libs/metadata";
 import { SITE } from "../libs/site";
 import "../styles/globals.css";
@@ -49,14 +48,12 @@ const orgJsonLd = {
     sameAs: [SITE.xUrl, SITE.githubUrl],
 };
 
+// ヘッダー・フッターは app/(site)/layout.tsx。ここは html・フォント・計測だけ
 export default function RootLayout({ children }: { children: ReactNode }) {
     return (
         <html lang="ja" className={`${zenKaku.variable} ${inter.variable}`}>
             <body>
-                <SiteHeader />
-                <main id="main-content">{children}</main>
-                <SupportCta />
-                <SiteFooter />
+                {children}
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
             </body>
             <GoogleTagManager gtmId={GTM_ID} />

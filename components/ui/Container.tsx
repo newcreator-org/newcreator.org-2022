@@ -15,7 +15,9 @@ export function Container({ width = "default", as: Tag = "div", className, child
         <Tag
             className={cn(
                 "mx-auto w-full px-gutter",
-                width === "narrow" ? "max-w-[calc(var(--nc-container-narrow)+var(--nc-gutter)*2)]" : "max-w-[calc(var(--nc-container)+var(--nc-gutter)*2)]",
+                width === "narrow"
+                    ? "max-w-[calc(var(--nc-container-narrow)+var(--nc-gutter)*2)]"
+                    : "max-w-[calc(var(--nc-container)+var(--nc-gutter)*2)]",
                 className,
             )}
         >

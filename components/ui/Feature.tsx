@@ -37,7 +37,13 @@ export function Feature({
     return (
         <article className={cn(wide && "md:grid md:grid-cols-12 md:items-center md:gap-12", className)}>
             {image && (
-                <div className={cn("overflow-hidden bg-hair", ratioClass[ratio], wide ? cn("md:col-span-7", reverse && "md:order-2") : "mb-6")}>
+                <div
+                    className={cn(
+                        "overflow-hidden bg-hair",
+                        ratioClass[ratio],
+                        wide ? cn("md:col-span-7", reverse && "md:order-2") : "mb-6",
+                    )}
+                >
                     <img src={image} alt={imageAlt} loading="lazy" decoding="async" className="h-full w-full object-cover" />
                 </div>
             )}

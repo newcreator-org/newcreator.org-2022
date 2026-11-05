@@ -15,11 +15,7 @@ export function SmartLink({ href, children, ...rest }: SmartLinkProps) {
     if (isExternal(href)) {
         const newTab = /^(https?:)?\/\//.test(href);
         return (
-            <a
-                href={href}
-                {...(newTab ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                {...rest}
-            >
+            <a href={href} {...(newTab ? { target: "_blank", rel: "noopener noreferrer" } : {})} {...rest}>
                 {children}
             </a>
         );

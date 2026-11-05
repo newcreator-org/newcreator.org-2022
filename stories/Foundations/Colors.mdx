@@ -1,0 +1,46 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Foundations/Colors" />
+
+export const Swatch = ({ name, token, hex, use, tw }) => (
+    <div style={{ borderTop: "1px solid var(--nc-rule)", padding: "16px 0", display: "grid", gridTemplateColumns: "88px 1fr", gap: 20, alignItems: "center" }}>
+        <div style={{ width: 88, height: 56, background: `var(${token})`, boxShadow: "inset 0 0 0 1px rgba(0,0,0,0.08)" }} />
+        <div>
+            <div style={{ fontWeight: 700, color: "var(--nc-ink)" }}>{name}</div>
+            <div style={{ fontSize: 13, color: "var(--nc-sub)", fontFamily: "var(--nc-font-num)" }}>
+                {token} ・ {hex} ・ <code>{tw}</code>
+            </div>
+            <div style={{ fontSize: 14, marginTop: 4 }}>{use}</div>
+        </div>
+    </div>
+);
+
+# 色
+
+値の正本は `styles/tokens.css`。色を足したいときは、まずここにある色で足りないかを考えてください。
+
+## 文字色・罫線
+
+<Swatch name="墨" token="--nc-ink" hex="#1b2126" tw="text-ink / border-ink / bg-ink" use="見出し・強調・見出しの上の 2px 罫線・フッターの地" />
+<Swatch name="本文" token="--nc-body" hex="#3a4249" tw="text-body" use="本文" />
+<Swatch name="補足" token="--nc-sub" hex="#6e777f" tw="text-sub" use="日付・キャプション・出典" />
+<Swatch name="罫線" token="--nc-rule" hex="#d6dce0" tw="border-rule" use="項目のあいだの 1px 罫線" />
+<Swatch name="細線・薄い面" token="--nc-hair" hex="#e8ecef" tw="border-hair / bg-hair" use="画像の読み込み前の地" />
+<Swatch name="地" token="--nc-paper" hex="#ffffff" tw="bg-paper" use="基本の地" />
+<Swatch name="一段沈めた地" token="--nc-paper-2" hex="#f6f8f9" tw="bg-paper-2（Section tone=muted）" use="セクションを交互に区切るとき" />
+
+## ブランド（ロゴ由来）
+
+<Swatch name="ブルー" token="--nc-blue" hex="#1476a6" tw="text-brand / bg-brand" use="ロゴタイプの色。リンク・主ボタン・章番号" />
+<Swatch name="ブルー 2" token="--nc-blue-2" hex="#2789b9" tw="text-brand-2" use="シンボルの翅。補助" />
+<Swatch name="ディープブルー" token="--nc-blue-deep" hex="#0d4d6d" tw="bg-brand-deep" use="ボタンのホバー・支援の案内（SupportCta）の地" />
+<Swatch name="ライトブルー" token="--nc-light" hex="#95d4e8" tw="text-brand-light" use="濃色の地の上の小見出し" />
+<Swatch name="ペールブルー" token="--nc-pale" hex="#eef6fa" tw="bg-brand-pale（Section tone=pale）" use="寄付のセクションなど、淡く区切る面" />
+<Swatch name="イエロー" token="--nc-yellow" hex="#fdca60" tw="bg-marker / .nc-marker" use="マーカーと寄付ボタンだけ。ほかには使わない" />
+<Swatch name="イエロー（濃）" token="--nc-yellow-deep" hex="#f5b730" tw="bg-marker-deep" use="寄付ボタンのホバー" />
+
+## 組み合わせの決まり
+
+- 本文（`--nc-body`）と補足（`--nc-sub`）は白地の上でコントラスト比 4.5:1 以上を満たします。`--nc-sub` を `--nc-paper-2` より濃い地に載せないでください。
+- 黄色の地の上の文字は必ず墨（`--nc-ink`）。白文字は載せません。
+- 濃色の地（`Section tone="ink"` / `"brand"`）の中では、見出し・罫線・リンクが自動で白に切り替わります。

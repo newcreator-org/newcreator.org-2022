@@ -1,0 +1,3 @@
+# Cloudflare Workers（静的アセット）のリダイレクト。書式: 元 先 ステータス
+/event/at-google-2023/ /event/creative-village-2023/ 301
+/event/at-google-2023 /event/creative-village-2023/ 301

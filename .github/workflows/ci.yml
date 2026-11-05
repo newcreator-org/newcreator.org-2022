@@ -1,0 +1,54 @@
+# PR と master への push ごとに、型・ビルド・リンク切れ・Storybook を確かめる。
+# 本番へのデプロイは Cloudflare Workers Builds が master への push で行う（ここではしない）。
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  site:
+    name: サイトのビルドと検査
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - run: npm ci
+      - name: 型チェック
+        run: npm run typecheck
+      - name: ビルド（静的書き出し）
+        run: npm run build
+      - name: サイト内リンク切れ
+        run: npm run check-links
+      - name: 依存ライブラリの脆弱性（本番依存の high 以上で落とす）
+        run: npm audit --omit=dev --audit-level=high
+
+  storybook:
+    name: Storybook のビルド
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - run: npm ci
+      - run: npm run build-storybook -- --quiet
+      - uses: actions/upload-artifact@v4
+        with:
+          name: storybook-static
+          path: storybook-static
+          retention-days: 7

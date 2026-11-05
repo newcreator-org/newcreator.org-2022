@@ -48,7 +48,9 @@ export function Column({ label, title, children, note, className }: ColumnProps)
             )}
             {title && <h3 className="text-h3 font-bold">{title}</h3>}
             {children && <div className={cn(title && "mt-3")}>{children}</div>}
-            {note && <p className="mt-4 text-caption text-sub [[data-tone=ink]_&]:text-white/60 [[data-tone=brand]_&]:text-white/60">{note}</p>}
+            {note && (
+                <p className="mt-4 text-caption text-sub [[data-tone=ink]_&]:text-white/60 [[data-tone=brand]_&]:text-white/60">{note}</p>
+            )}
         </div>
     );
 }

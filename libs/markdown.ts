@@ -1,235 +1,235 @@
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-import { marked } from 'marked';
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import { marked } from "marked";
 
-const contentDirectory = path.join(process.cwd(), 'content');
+const contentDirectory = path.join(process.cwd(), "content");
 
 export interface NewsPost {
-  id: string;
-  title: string;
-  date: string;
-  create_at?: string;
-  link?: string;
-  content: string;
+    id: string;
+    title: string;
+    date: string;
+    create_at?: string;
+    link?: string;
+    content: string;
 }
 
 export interface ArchivePost {
-  id: string;
-  title: string;
-  date: string;
-  description?: string;
-  link?: string;
-  content: string;
+    id: string;
+    title: string;
+    date: string;
+    description?: string;
+    link?: string;
+    content: string;
 }
 
 export function getAllNews(): NewsPost[] {
-  const newsDir = path.join(contentDirectory, 'news');
-  
-  if (!fs.existsSync(newsDir)) {
-    return [];
-  }
+    const newsDir = path.join(contentDirectory, "news");
 
-  const fileNames = fs.readdirSync(newsDir);
-  const allNews = fileNames
-    .filter(fileName => fileName.endsWith('.md'))
-    .map(fileName => {
-      const fullPath = path.join(newsDir, fileName);
-      const fileContents = fs.readFileSync(fullPath, 'utf8');
-      const { data, content } = matter(fileContents);
+    if (!fs.existsSync(newsDir)) {
+        return [];
+    }
 
-      return {
-        id: data.id,
-        title: data.title,
-        date: data.date,
-        create_at: data.date,
-        link: data.link || null,
-        content: content,
-      };
+    const fileNames = fs.readdirSync(newsDir);
+    const allNews = fileNames
+        .filter((fileName) => fileName.endsWith(".md"))
+        .map((fileName) => {
+            const fullPath = path.join(newsDir, fileName);
+            const fileContents = fs.readFileSync(fullPath, "utf8");
+            const { data, content } = matter(fileContents);
+
+            return {
+                id: data.id,
+                title: data.title,
+                date: data.date,
+                create_at: data.date,
+                link: data.link || null,
+                content: content,
+            };
+        });
+
+    // 日付順にソート（新しい順）
+    return allNews.sort((a, b) => {
+        return new Date(b.date).getTime() - new Date(a.date).getTime();
     });
-
-  // 日付順にソート（新しい順）
-  return allNews.sort((a, b) => {
-    return new Date(b.date).getTime() - new Date(a.date).getTime();
-  });
 }
 
 export function getNewsById(id: string): NewsPost | null {
-  const allNews = getAllNews();
-  return allNews.find(post => post.id === id) || null;
+    const allNews = getAllNews();
+    return allNews.find((post) => post.id === id) || null;
 }
 
 export function getAllArchives(): ArchivePost[] {
-  const archiveDir = path.join(contentDirectory, 'archives');
-  
-  if (!fs.existsSync(archiveDir)) {
-    return [];
-  }
+    const archiveDir = path.join(contentDirectory, "archives");
 
-  const fileNames = fs.readdirSync(archiveDir);
-  const allArchives = fileNames
-    .filter(fileName => fileName.endsWith('.md'))
-    .map(fileName => {
-      const fullPath = path.join(archiveDir, fileName);
-      const fileContents = fs.readFileSync(fullPath, 'utf8');
-      const { data, content } = matter(fileContents);
+    if (!fs.existsSync(archiveDir)) {
+        return [];
+    }
 
-      return {
-        id: data.id,
-        title: data.title,
-        date: data.date,
-        description: data.description || null,
-        link: data.link || null,
-        content: content,
-      };
+    const fileNames = fs.readdirSync(archiveDir);
+    const allArchives = fileNames
+        .filter((fileName) => fileName.endsWith(".md"))
+        .map((fileName) => {
+            const fullPath = path.join(archiveDir, fileName);
+            const fileContents = fs.readFileSync(fullPath, "utf8");
+            const { data, content } = matter(fileContents);
+
+            return {
+                id: data.id,
+                title: data.title,
+                date: data.date,
+                description: data.description || null,
+                link: data.link || null,
+                content: content,
+            };
+        });
+
+    // 日付順にソート（新しい順）
+    return allArchives.sort((a, b) => {
+        return new Date(b.date).getTime() - new Date(a.date).getTime();
     });
-
-  // 日付順にソート（新しい順）
-  return allArchives.sort((a, b) => {
-    return new Date(b.date).getTime() - new Date(a.date).getTime();
-  });
 }
 
 export function getArchiveById(id: string): ArchivePost | null {
-  const allArchives = getAllArchives();
-  return allArchives.find(post => post.id === id) || null;
+    const allArchives = getAllArchives();
+    return allArchives.find((post) => post.id === id) || null;
 }
 
 export interface MediaPost {
-  id: string;
-  title: string;
-  date: string;
-  category: string;
-  description: string;
-  content: string;
+    id: string;
+    title: string;
+    date: string;
+    category: string;
+    description: string;
+    content: string;
 }
 
 export function getAllMedia(): MediaPost[] {
-  const mediaDir = path.join(contentDirectory, 'media');
+    const mediaDir = path.join(contentDirectory, "media");
 
-  if (!fs.existsSync(mediaDir)) {
-    return [];
-  }
+    if (!fs.existsSync(mediaDir)) {
+        return [];
+    }
 
-  const fileNames = fs.readdirSync(mediaDir);
-  const allMedia = fileNames
-    .filter(fileName => fileName.endsWith('.md'))
-    .map(fileName => {
-      const fullPath = path.join(mediaDir, fileName);
-      const fileContents = fs.readFileSync(fullPath, 'utf8');
-      const { data, content } = matter(fileContents);
+    const fileNames = fs.readdirSync(mediaDir);
+    const allMedia = fileNames
+        .filter((fileName) => fileName.endsWith(".md"))
+        .map((fileName) => {
+            const fullPath = path.join(mediaDir, fileName);
+            const fileContents = fs.readFileSync(fullPath, "utf8");
+            const { data, content } = matter(fileContents);
 
-      return {
-        id: data.id,
-        title: data.title,
-        date: data.date,
-        category: data.category || '',
-        description: data.description || '',
-        content: content,
-      };
+            return {
+                id: data.id,
+                title: data.title,
+                date: data.date,
+                category: data.category || "",
+                description: data.description || "",
+                content: content,
+            };
+        });
+
+    // 日付順にソート（新しい順）
+    return allMedia.sort((a, b) => {
+        return new Date(b.date).getTime() - new Date(a.date).getTime();
     });
-
-  // 日付順にソート（新しい順）
-  return allMedia.sort((a, b) => {
-    return new Date(b.date).getTime() - new Date(a.date).getTime();
-  });
 }
 
 export function getMediaById(id: string): MediaPost | null {
-  const allMedia = getAllMedia();
-  return allMedia.find(post => post.id === id) || null;
+    const allMedia = getAllMedia();
+    return allMedia.find((post) => post.id === id) || null;
 }
 
 // Educator Guides
 export interface EducatorGuide {
-  id: string;
-  title: string;
-  date: string;
-  category: string;
-  description: string;
-  content: string;
+    id: string;
+    title: string;
+    date: string;
+    category: string;
+    description: string;
+    content: string;
 }
 
 export function getAllEducatorGuides(): EducatorGuide[] {
-  const guidesDir = path.join(contentDirectory, 'for-educators/guides');
+    const guidesDir = path.join(contentDirectory, "for-educators/guides");
 
-  if (!fs.existsSync(guidesDir)) {
-    return [];
-  }
+    if (!fs.existsSync(guidesDir)) {
+        return [];
+    }
 
-  const fileNames = fs.readdirSync(guidesDir);
-  const allGuides = fileNames
-    .filter(fileName => fileName.endsWith('.md'))
-    .map(fileName => {
-      const fullPath = path.join(guidesDir, fileName);
-      const fileContents = fs.readFileSync(fullPath, 'utf8');
-      const { data, content } = matter(fileContents);
+    const fileNames = fs.readdirSync(guidesDir);
+    const allGuides = fileNames
+        .filter((fileName) => fileName.endsWith(".md"))
+        .map((fileName) => {
+            const fullPath = path.join(guidesDir, fileName);
+            const fileContents = fs.readFileSync(fullPath, "utf8");
+            const { data, content } = matter(fileContents);
 
-      return {
-        id: data.id || fileName.replace(/\.md$/, ''),
-        title: data.title,
-        date: data.date,
-        category: data.category || '',
-        description: data.description || '',
-        content: content,
-      };
+            return {
+                id: data.id || fileName.replace(/\.md$/, ""),
+                title: data.title,
+                date: data.date,
+                category: data.category || "",
+                description: data.description || "",
+                content: content,
+            };
+        });
+
+    return allGuides.sort((a, b) => {
+        return new Date(b.date).getTime() - new Date(a.date).getTime();
     });
-
-  return allGuides.sort((a, b) => {
-    return new Date(b.date).getTime() - new Date(a.date).getTime();
-  });
 }
 
 export function getEducatorGuideById(id: string): EducatorGuide | null {
-  const allGuides = getAllEducatorGuides();
-  return allGuides.find(post => post.id === id) || null;
+    const allGuides = getAllEducatorGuides();
+    return allGuides.find((post) => post.id === id) || null;
 }
 
 // Educator Case Studies
 export interface EducatorCaseStudy {
-  id: string;
-  title: string;
-  date: string;
-  school: string;
-  schoolType: string;
-  description: string;
-  content: string;
+    id: string;
+    title: string;
+    date: string;
+    school: string;
+    schoolType: string;
+    description: string;
+    content: string;
 }
 
 export function getAllEducatorCaseStudies(): EducatorCaseStudy[] {
-  const caseStudiesDir = path.join(contentDirectory, 'for-educators/case-studies');
+    const caseStudiesDir = path.join(contentDirectory, "for-educators/case-studies");
 
-  if (!fs.existsSync(caseStudiesDir)) {
-    return [];
-  }
+    if (!fs.existsSync(caseStudiesDir)) {
+        return [];
+    }
 
-  const fileNames = fs.readdirSync(caseStudiesDir);
-  const allCaseStudies = fileNames
-    .filter(fileName => fileName.endsWith('.md'))
-    .map(fileName => {
-      const fullPath = path.join(caseStudiesDir, fileName);
-      const fileContents = fs.readFileSync(fullPath, 'utf8');
-      const { data, content } = matter(fileContents);
+    const fileNames = fs.readdirSync(caseStudiesDir);
+    const allCaseStudies = fileNames
+        .filter((fileName) => fileName.endsWith(".md"))
+        .map((fileName) => {
+            const fullPath = path.join(caseStudiesDir, fileName);
+            const fileContents = fs.readFileSync(fullPath, "utf8");
+            const { data, content } = matter(fileContents);
 
-      return {
-        id: data.id,
-        title: data.title,
-        date: data.date,
-        school: data.school || '',
-        schoolType: data.schoolType || '',
-        description: data.description || '',
-        content: content,
-      };
+            return {
+                id: data.id,
+                title: data.title,
+                date: data.date,
+                school: data.school || "",
+                schoolType: data.schoolType || "",
+                description: data.description || "",
+                content: content,
+            };
+        });
+
+    return allCaseStudies.sort((a, b) => {
+        return new Date(b.date).getTime() - new Date(a.date).getTime();
     });
-
-  return allCaseStudies.sort((a, b) => {
-    return new Date(b.date).getTime() - new Date(a.date).getTime();
-  });
 }
 
 export function getEducatorCaseStudyById(id: string): EducatorCaseStudy | null {
-  const allCaseStudies = getAllEducatorCaseStudies();
-  return allCaseStudies.find(post => post.id === id) || null;
+    const allCaseStudies = getAllEducatorCaseStudies();
+    return allCaseStudies.find((post) => post.id === id) || null;
 }
 
 /**

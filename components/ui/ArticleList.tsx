@@ -77,7 +77,11 @@ export function ArticleCard({ href, title, date, category, description, image, i
             )}
             <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-small text-sub">
                 {category && <Tag>{category}</Tag>}
-                {date && <time className="nc-num" dateTime={date}>{formatDate(date)}</time>}
+                {date && (
+                    <time className="nc-num" dateTime={date}>
+                        {formatDate(date)}
+                    </time>
+                )}
             </div>
             <h3 className="mt-3 text-h3 font-bold">
                 <SmartLink

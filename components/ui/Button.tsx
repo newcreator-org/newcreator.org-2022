@@ -12,6 +12,8 @@ type Common = {
     /** 右に矢印を出す。外部リンクは自動で外部アイコンになる */
     arrow?: boolean;
     fullWidth?: boolean;
+    /** ファイル（PDF など）をダウンロードさせる。next/link を通さず <a download> で出す */
+    download?: boolean;
     className?: string;
     children: ReactNode;
 };
@@ -40,7 +42,7 @@ const sizeClass: Record<ButtonSize, string> = {
  * ボタン。角は丸めない（紙面型）。押せる高さは最低 44px。
  * 寄付は donate、それ以外の主な行動は primary を 1 画面に 1 つまで。
  */
-export function Button({ variant = "primary", size = "md", arrow, fullWidth, className, children, ...rest }: ButtonProps) {
+export function Button({ variant = "primary", size = "md", arrow, fullWidth, download, className, children, ...rest }: ButtonProps) {
     const classes = cn(
         "inline-flex items-center justify-center gap-2.5 font-bold leading-snug tracking-[0.04em] no-underline",
         "transition-colors duration-nc ease-nc disabled:cursor-not-allowed disabled:opacity-50",
@@ -50,8 +52,21 @@ export function Button({ variant = "primary", size = "md", arrow, fullWidth, cla
         className,
     );
     const { href, type = "button", ...buttonRest } = rest;
-    const icon = arrow ? <Icon name={href && /^https?:/.test(href) ? "external" : "arrow-right"} size={size === "lg" ? 20 : 17} /> : null;
+    const iconSize = size === "lg" ? 20 : 17;
+    const icon = download ? (
+        <Icon name="download" size={iconSize} />
+    ) : arrow ? (
+        <Icon name={href && /^https?:/.test(href) ? "external" : "arrow-right"} size={iconSize} />
+    ) : null;
 
+    if (href !== undefined && download) {
+        return (
+            <a href={href} download className={classes}>
+                <span>{children}</span>
+                {icon}
+            </a>
+        );
+    }
     if (href !== undefined) {
         return (
             <SmartLink href={href} className={classes}>
