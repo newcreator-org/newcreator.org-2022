@@ -15,7 +15,7 @@ export const Row = ({ cls, token, size, use, children }) => (
 
 ## 書体
 
-- **和文**：Zen Kaku Gothic New（400・500・700）。`--nc-font-ja` / Tailwind の `font-sans`
+- **和文**：Noto Sans JP（400・500・700）。`--nc-font-ja` / Tailwind の `font-sans`
 - **数字・欧文**：Inter。実績の数字・金額・日付に使う。`--nc-font-num` / `.nc-num` / `font-num`
 - どちらも `next/font` でビルド時に取り込み、自前で配信します（外部のフォント配信に依存しない）。
 - 本文は `font-feature-settings: "palt"`（約物の詰め）と字間 0.02em。見出しは `word-break: auto-phrase` で文節ごとに折り返します。

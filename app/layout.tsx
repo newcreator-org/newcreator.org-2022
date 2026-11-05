@@ -1,19 +1,19 @@
 import { GoogleTagManager } from "@next/third-parties/google";
 import type { Metadata, Viewport } from "next";
-import { Inter, Zen_Kaku_Gothic_New } from "next/font/google";
+import { Inter, Noto_Sans_JP } from "next/font/google";
 import type { ReactNode } from "react";
 import { SITE_TITLE } from "../libs/metadata";
 import { SITE } from "../libs/site";
 import "../styles/globals.css";
 
-// 和文は Zen Kaku Gothic New、数字・欧文は Inter（スライドと同じ組み合わせ）。
+// 和文は Noto Sans JP、数字は Inter（2026-11-05 改野の判断で Zen Kaku Gothic New から変更）。
 // next/font がビルド時に取得して自前で配信するので、外部のフォント配信が落ちても崩れない。
-const zenKaku = Zen_Kaku_Gothic_New({
+const notoSans = Noto_Sans_JP({
     weight: ["400", "500", "700"],
     subsets: ["latin"],
     display: "swap",
     preload: false,
-    variable: "--font-zen-kaku",
+    variable: "--font-noto-sans-jp",
 });
 const inter = Inter({ subsets: ["latin"], display: "swap", variable: "--font-inter" });
 
@@ -51,7 +51,7 @@ const orgJsonLd = {
 // ヘッダー・フッターは app/(site)/layout.tsx。ここは html・フォント・計測だけ
 export default function RootLayout({ children }: { children: ReactNode }) {
     return (
-        <html lang="ja" className={`${zenKaku.variable} ${inter.variable}`}>
+        <html lang="ja" className={`${notoSans.variable} ${inter.variable}`}>
             <body>
                 {children}
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
