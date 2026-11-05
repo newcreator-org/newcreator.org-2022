@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { Container, formatDate, PageHeader, Prose, ShareLinks, Tag, TextLink } from "../../../components/ui";
+import { Container, formatDate, PageHeader, Prose, ShareLinks, Tag, TextLink, SmartLink } from "../../../components/ui";
 import type { BreadcrumbItem } from "../../../components/ui";
 import { SITE } from "../../../libs/site";
 
@@ -48,9 +48,12 @@ export function ArticleDetail({ title, date, category, section, path, html, link
                 {link && (
                     <p className={hasBody ? "mt-12 border-t border-rule pt-6 text-small" : "text-small"}>
                         <span className="mr-3 font-bold text-ink">関連リンク</span>
-                        <a href={link} className="break-all font-bold text-brand underline underline-offset-[0.3em] hover:text-brand-deep">
+                        <SmartLink
+                            href={link}
+                            className="break-all font-bold text-brand underline underline-offset-[0.3em] hover:text-brand-deep"
+                        >
                             {link}
-                        </a>
+                        </SmartLink>
                     </p>
                 )}
                 <div className="mt-12 flex flex-col gap-8 border-t-2 border-ink pt-8 md:flex-row md:items-center md:justify-between">
