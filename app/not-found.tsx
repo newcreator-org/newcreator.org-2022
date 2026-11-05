@@ -23,7 +23,7 @@ export default function NotFound() {
             <SiteHeader />
             <main id="main-content">
                 <Container className="py-section">
-                    <div className="border-b-2 border-ink pb-12">
+                    <div className="border-b border-rule pb-12">
                         <p className="nc-num text-[clamp(4rem,3rem+5vw,7rem)] font-semibold leading-none text-brand">404</p>
                         <h1 className="mt-6 text-h1 font-bold">お探しのページは見つかりませんでした</h1>
                         <p className="mt-6 text-lead">

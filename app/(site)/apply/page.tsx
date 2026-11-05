@@ -159,7 +159,7 @@ export default function ApplyPage() {
             <Section tone="muted" aria-labelledby="microbit-heading">
                 <div className="grid gap-12 md:grid-cols-12">
                     <div className="md:col-span-7">
-                        <h2 id="microbit-heading" className="border-t-2 border-ink pt-5 text-h2 font-bold">
+                        <h2 id="microbit-heading" className="text-h2 font-bold">
                             micro:bit とは？
                         </h2>
                         <div className="mt-8 space-y-6">
@@ -173,7 +173,7 @@ export default function ApplyPage() {
                         </div>
                     </div>
                     <div className="md:col-span-5">
-                        <p className="border-t-2 border-ink pt-5 text-small font-bold text-ink">機能の一例</p>
+                        <p className="text-small font-bold text-ink">機能の一例</p>
                         <ul className="nc-list mt-5 text-ink">
                             {FEATURES.map((f) => (
                                 <li key={f}>{f}</li>
@@ -281,7 +281,7 @@ export default function ApplyPage() {
             <Section tone="muted" aria-labelledby="crowdfunding-heading">
                 <div className="grid gap-10 md:grid-cols-12">
                     <div className="md:col-span-6">
-                        <h2 id="crowdfunding-heading" className="border-t-2 border-ink pt-5 text-h2 font-bold">
+                        <h2 id="crowdfunding-heading" className="text-h2 font-bold">
                             お知らせ
                         </h2>
                         <p className="mt-6 text-lead">

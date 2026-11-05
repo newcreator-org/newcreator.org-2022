@@ -138,7 +138,7 @@ export default function AboutPage() {
 
             <Section tone="muted" aria-labelledby="team-heading">
                 <SectionHeading id="team-heading" index="05" title="代表" />
-                <div className="max-w-narrow border-t-2 border-ink pt-5">
+                <div className="max-w-narrow">
                     <p className="text-small font-bold text-brand">理事長</p>
                     <p className="mt-2 text-h3 font-bold tracking-[0.12em] text-ink">改野 由尚</p>
                     <p className="mt-3">

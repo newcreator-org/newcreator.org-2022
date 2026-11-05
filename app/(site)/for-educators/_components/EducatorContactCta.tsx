@@ -15,7 +15,7 @@ export type EducatorContactCtaProps = {
 export function EducatorContactCta({ title, lead, secondary, id, tone = "pale" }: EducatorContactCtaProps) {
     return (
         <Section id={id} tone={tone} spacing="compact">
-            <div className="border-t-2 border-ink pt-6 md:grid md:grid-cols-12 md:gap-10">
+            <div className="pt-6 md:grid md:grid-cols-12 md:gap-10">
                 <h2 className="text-h2 font-bold md:col-span-5">{title}</h2>
                 <div className="mt-4 md:col-span-7 md:mt-1">
                     <p className="text-lead">{lead}</p>

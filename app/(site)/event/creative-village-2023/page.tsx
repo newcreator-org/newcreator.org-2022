@@ -87,7 +87,7 @@ export default function CreativeVillage2023Page() {
             <Section tone="muted" aria-labelledby="timetable-heading">
                 <SectionHeading id="timetable-heading" title="タイムテーブル" />
                 <div className="grid gap-12 lg:grid-cols-12">
-                    <ol className="border-t-2 border-ink lg:col-span-7">
+                    <ol className="lg:col-span-7">
                         {TIMETABLE.map((row) => (
                             <li key={row.time} className="grid grid-cols-[5.5rem_1fr] gap-4 border-b border-rule py-5">
                                 <span className="nc-num font-bold text-brand">{row.time}</span>

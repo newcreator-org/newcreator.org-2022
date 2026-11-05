@@ -14,7 +14,7 @@ export function Message({ children, name, role, photo, className }: MessageProps
     return (
         <figure className={cn("m-0", className)}>
             <blockquote className="m-0 space-y-5 text-lead text-ink">{children}</blockquote>
-            <figcaption className="mt-8 flex items-center gap-4 border-t border-rule pt-6">
+            <figcaption className="mt-8 flex items-center gap-4">
                 {photo && (
                     <img
                         src={photo}

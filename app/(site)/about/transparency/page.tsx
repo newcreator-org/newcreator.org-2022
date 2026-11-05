@@ -87,7 +87,7 @@ export default function TransparencyPage() {
                             label: "ポリシーを見る",
                         },
                     ].map((d) => (
-                        <div key={d.title} className="border-t-2 border-ink pt-5">
+                        <div key={d.title}>
                             <h3 className="text-h3 font-bold">{d.title}</h3>
                             <p className="mt-3 text-small">{d.desc}</p>
                             <div className="mt-5">
@@ -111,7 +111,7 @@ export default function TransparencyPage() {
                         <p className="mt-2 text-small text-sub">2025年6月1日から2026年5月31日まで（単位：円）</p>
                         <table className="mt-6 w-full border-collapse text-small">
                             <thead>
-                                <tr className="border-b-2 border-ink text-left text-ink">
+                                <tr className="border-b border-rule text-left text-ink">
                                     <th className="py-2 font-bold">科目</th>
                                     <th className="py-2 text-right font-bold">金額（円）</th>
                                 </tr>
@@ -135,7 +135,7 @@ export default function TransparencyPage() {
                                     <AmountRow key={r.label} {...r} />
                                 ))}
                                 <AmountRow label="経常費用計" value="2,893,927" total />
-                                <tr className="border-b-2 border-ink bg-white font-bold text-ink">
+                                <tr className="border-b border-rule bg-white font-bold text-ink">
                                     <td className="px-3 py-4">当期正味財産増減額</td>
                                     <td className="nc-num px-3 py-4 text-right">2,731,638</td>
                                 </tr>
@@ -146,7 +146,7 @@ export default function TransparencyPage() {
                     <div id="balance-sheet">
                         <h3 className="text-h3 font-bold">貸借対照表の公告</h3>
                         <p className="mt-2 text-small">特定非営利活動促進法第28条の2の規定に基づき、各事業年度の貸借対照表を公告します。</p>
-                        <ul className="mt-6 border-t-2 border-ink">
+                        <ul className="mt-6">
                             {BALANCE_SHEETS.map((b) => (
                                 <li key={b.year} className="flex items-center justify-between gap-4 border-b border-rule py-4">
                                     <div>
@@ -182,7 +182,7 @@ export default function TransparencyPage() {
                 />
                 <table className="w-full border-collapse">
                     <thead>
-                        <tr className="border-b-2 border-ink text-left text-small text-ink">
+                        <tr className="border-b border-rule text-left text-small text-ink">
                             <th className="py-3 font-bold">役職</th>
                             <th className="py-3 font-bold">氏名</th>
                             <th className="hidden py-3 font-bold md:table-cell">任期</th>

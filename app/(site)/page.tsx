@@ -126,7 +126,7 @@ export default function HomePage() {
             </section>
 
             {/* ---- 協力企業・団体 ---- */}
-            <section aria-label="これまでに協力いただいた企業・学校" className="border-y border-rule bg-white py-6">
+            <section aria-label="これまでに協力いただいた企業・学校" className="bg-white py-8">
                 <LogoMarquee
                     src="/img/partner.png"
                     width={15137}
@@ -151,7 +151,7 @@ export default function HomePage() {
                 <Reveal>
                     <div className="grid gap-10 md:grid-cols-12">
                         <div className="md:col-span-5">
-                            <h2 id="why-heading" className="border-t-2 border-ink pt-5 text-h2 font-bold">
+                            <h2 id="why-heading" className="text-h2 font-bold">
                                 なぜ、私たちは
                                 <br className="hidden md:block" />
                                 これをやっているのか
@@ -218,7 +218,7 @@ export default function HomePage() {
                             <p className="text-small">{s.body}</p>
                         </Feature>
                     ))}
-                    <div className="flex flex-col justify-between border-t-2 border-ink bg-white p-6 sm:col-span-2 lg:col-span-1">
+                    <div className="flex flex-col justify-between bg-white p-6 sm:col-span-2 lg:col-span-1">
                         <div>
                             <p className="text-h3 font-bold text-ink">先生・学校関係者の方へ</p>
                             <p className="mt-3 text-small">
@@ -260,7 +260,7 @@ export default function HomePage() {
                 </div>
             </Section>
 
-            <Section ruled aria-labelledby="media-heading">
+            <Section aria-labelledby="media-heading">
                 <SectionHeading
                     id="media-heading"
                     index="05"
@@ -269,7 +269,7 @@ export default function HomePage() {
                     action={<TextLink href="/media/">すべての記事を見る</TextLink>}
                 />
                 <ArticleList items={media.map((m) => ({ href: `/media/${m.id}/`, title: m.title, date: m.date, category: m.category }))} />
-                <div className="mt-16 border-t border-rule pt-10">
+                <div className="mt-16">
                     <p className="text-small font-bold text-ink">これまでの掲載</p>
                     <img
                         src="/img/media.png"
@@ -286,7 +286,7 @@ export default function HomePage() {
             <Section tone="muted" aria-labelledby="message-heading">
                 <div className="grid gap-16 lg:grid-cols-12">
                     <div className="lg:col-span-6">
-                        <h2 id="message-heading" className="border-t-2 border-ink pt-5 text-h2 font-bold">
+                        <h2 id="message-heading" className="text-h2 font-bold">
                             想い
                         </h2>
                         <Message name="改野 由尚" role="理事長" photo="/img/member/yoshi-face.jpg" className="mt-10">
@@ -300,9 +300,9 @@ export default function HomePage() {
                         </Message>
                     </div>
                     <div className="lg:col-span-6">
-                        <h2 className="border-t-2 border-ink pt-5 text-h2 font-bold">法人情報</h2>
+                        <h2 className="text-h2 font-bold">法人情報</h2>
                         <DefinitionList
-                            className="mt-10 border-t-0"
+                            className="mt-10"
                             items={[
                                 { term: "法人名", detail: SITE.name },
                                 { term: "法人番号", detail: <span className="nc-num">3120905005839</span> },

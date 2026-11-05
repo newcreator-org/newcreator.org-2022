@@ -42,7 +42,7 @@ export function ActivityTable() {
             <p className="mb-4 text-small text-sub" aria-live="polite">
                 <span className="nc-num">{rows.length}</span>件
             </p>
-            <ul className="border-t-2 border-ink">
+            <ul>
                 {rows.map((a, i) => (
                     <li
                         key={`${a.date}-${a.school}-${a.title}-${i}`}

@@ -39,7 +39,7 @@ export default function LegalIndexPage() {
                 breadcrumb={[{ label: "法的情報" }]}
             />
             <Container className="py-section">
-                <ul className="border-t-2 border-ink">
+                <ul>
                     {legalPages.map((page) => (
                         <li key={page.href} className="border-b border-rule">
                             <SmartLink

@@ -17,7 +17,7 @@ export function SupportCta() {
                 </h2>
                 <div className="grid gap-14 md:grid-cols-2 md:gap-0">
                     <div className="md:pr-14">
-                        <p className="border-t-2 border-white pt-5 text-small font-bold text-brand-light">寄付する</p>
+                        <p className="pt-5 text-small font-bold text-brand-light">寄付する</p>
                         <p className="mt-4 text-h2 font-bold text-white">
                             あなたの支援が、
                             <br />
@@ -26,7 +26,7 @@ export function SupportCta() {
                         <p className="mt-5">
                             学校に行けない子も、地方に住む子も、「私には無理」と思っている女の子も。毎月300円から支援できます。
                         </p>
-                        <dl className="mt-8 grid gap-3 border-t border-white/25 pt-6 text-small">
+                        <dl className="mt-8 grid gap-3 text-small">
                             {DONATIONS.map((d) => (
                                 <div key={d.amount} className="flex items-baseline gap-4">
                                     <dt className="nc-num w-[5.5rem] shrink-0 text-h3 font-semibold text-white">¥{d.amount}</dt>
@@ -44,8 +44,8 @@ export function SupportCta() {
                             トクヒ）ニュークリエイターオルグ
                         </p>
                     </div>
-                    <div className="md:border-l md:border-white/25 md:pl-14">
-                        <p className="border-t-2 border-white pt-5 text-small font-bold text-brand-light">参加する・連携する</p>
+                    <div className="md:pl-14">
+                        <p className="pt-5 text-small font-bold text-brand-light">参加する・連携する</p>
                         <p className="mt-4 text-h2 font-bold text-white">
                             スキルより、
                             <br />

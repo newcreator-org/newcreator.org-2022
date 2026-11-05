@@ -81,7 +81,7 @@ export default function CompanyPage() {
             <Section tone="muted" aria-labelledby="origin-heading">
                 <div className="grid gap-10 md:grid-cols-12">
                     <div className="md:col-span-5">
-                        <h2 id="origin-heading" className="border-t-2 border-ink pt-5 text-h2 font-bold">
+                        <h2 id="origin-heading" className="text-h2 font-bold">
                             <span className="nc-num mr-4 inline-block align-[0.12em] text-[0.6em] font-bold text-brand">02</span>
                             設立の経緯
                         </h2>

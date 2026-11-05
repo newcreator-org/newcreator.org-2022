@@ -10,7 +10,7 @@ export type SectionHeadingProps = {
     index?: string;
     /** split = 見出し左・導入文右（PC）、stack = 縦積み */
     layout?: "split" | "stack";
-    /** 見出しの上の太い罫線 */
+    /** 見出しの上に細い罫線を引く（既定はなし。余白で区切る） */
     rule?: boolean;
     /** 右端に置くリンクなど */
     action?: ReactNode;
@@ -28,7 +28,7 @@ export function SectionHeading({
     lead,
     index,
     layout = "split",
-    rule = true,
+    rule = false,
     action,
     id,
     as: Tag = "h2",
@@ -38,7 +38,7 @@ export function SectionHeading({
         <header
             className={cn(
                 "mb-10 md:mb-14",
-                rule && "border-t-2 border-ink pt-5 [[data-tone=ink]_&]:border-white [[data-tone=brand]_&]:border-white",
+                rule && "border-t border-rule pt-5 [[data-tone=ink]_&]:border-white/30 [[data-tone=brand]_&]:border-white/30",
                 layout === "split" && lead && "md:grid md:grid-cols-12 md:gap-10",
                 className,
             )}
