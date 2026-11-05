@@ -10,11 +10,11 @@
         "postinstall": "echo 'Dependencies installed successfully'"
     },
     "dependencies": {
-        "@next/third-parties": "^14.2.0",
+        "@next/third-parties": "^16.4.5",
         "dayjs": "^1.10.5",
         "gray-matter": "^4.0.3",
         "marked": "^17.0.5",
-        "next": "^14.2.0",
+        "next": "^16.4.5",
         "node-fetch": "^2.6.1",
         "react": "^18.3.0",
         "react-dom": "^18.3.0",
