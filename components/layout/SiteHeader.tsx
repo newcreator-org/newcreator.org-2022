@@ -110,7 +110,7 @@ export function SiteHeader() {
                 aria-hidden={!open}
             >
                 <nav aria-label="メインメニュー（モバイル）" className="px-gutter pb-12 pt-4">
-                    <ul className="border-t-2 border-ink">
+                    <ul>
                         {[...NAV_LINKS, { href: "/#contact", label: "お問い合わせ" }].map((l) => (
                             <li key={l.href} className="border-b border-rule">
                                 <SmartLink

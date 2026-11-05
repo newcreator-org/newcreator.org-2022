@@ -31,14 +31,14 @@
   --nc-font-num: var(--font-inter, "Inter"), var(--font-noto-sans-jp, "Noto Sans JP"),
     "Hiragino Sans", sans-serif;
 
-  /* ---- 文字サイズ（流動）。PC と SP の間は画面幅で補間 ---- */
-  --nc-text-display: clamp(2.125rem, 1.35rem + 3.4vw, 3.75rem);
-  --nc-text-h1: clamp(1.75rem, 1.35rem + 1.7vw, 2.625rem);
-  --nc-text-h2: clamp(1.4375rem, 1.2rem + 1vw, 2rem);
-  --nc-text-h3: clamp(1.125rem, 1.05rem + 0.3vw, 1.3125rem);
-  --nc-text-lead: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
-  --nc-text-body: 1rem;
-  --nc-text-small: 0.875rem;
+  /* ---- 文字サイズ（流動）。PC と SP の間は画面幅で補間。2026-11-05 改野の指摘で一段小さく ---- */
+  --nc-text-display: clamp(1.875rem, 1.3rem + 2.5vw, 3rem);
+  --nc-text-h1: clamp(1.5rem, 1.2rem + 1.3vw, 2.25rem);
+  --nc-text-h2: clamp(1.3125rem, 1.12rem + 0.8vw, 1.75rem);
+  --nc-text-h3: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --nc-text-lead: clamp(0.9375rem, 0.9rem + 0.2vw, 1.0625rem);
+  --nc-text-body: 0.9375rem;
+  --nc-text-small: 0.8125rem;
   --nc-text-caption: 0.75rem;
 
   /* ---- 余白 ---- */

@@ -28,7 +28,7 @@ export function SiteFooter() {
                     <nav aria-label="サイトマップ" className="grid grid-cols-2 gap-x-8 gap-y-10 md:grid-cols-4 lg:col-span-8">
                         {FOOTER_LINKS.map((group) => (
                             <div key={group.heading}>
-                                <p className="border-t border-white/30 pt-4 text-small font-bold text-white">{group.heading}</p>
+                                <p className="text-small font-bold text-white">{group.heading}</p>
                                 <ul className="mt-4 space-y-2.5">
                                     {group.links.map((l) => (
                                         <li key={l.href}>

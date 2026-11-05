@@ -3,23 +3,22 @@ import { cn } from "./cn";
 
 export type RuledColumnsProps = {
     columns?: 2 | 3 | 4;
-    /** strong = 2px の墨、light = 1px の罫線 */
-    weight?: "strong" | "light";
+    /** none = 罫線なし（既定）、light = 1px の細い罫線 */
+    weight?: "none" | "light";
     className?: string;
     children: ReactNode;
 };
 
 /** 段組み。各段の頭に罫線を引く（スライドの .cols と同じ） */
-export function RuledColumns({ columns = 3, weight = "strong", className, children }: RuledColumnsProps) {
+export function RuledColumns({ columns = 3, weight = "none", className, children }: RuledColumnsProps) {
     return (
         <div
             className={cn(
                 "grid gap-x-10 gap-y-12 md:grid-cols-2",
                 columns === 3 && "lg:grid-cols-3",
                 columns === 4 && "lg:grid-cols-4",
-                weight === "strong" ? "[&>*]:border-t-2 [&>*]:border-ink" : "[&>*]:border-t [&>*]:border-rule",
-                "[[data-tone=ink]_&>*]:border-white/70 [[data-tone=brand]_&>*]:border-white/70",
-                "[&>*]:pt-5",
+                weight === "light" && "[&>*]:border-t [&>*]:border-rule [&>*]:pt-5",
+                weight === "light" && "[[data-tone=ink]_&>*]:border-white/30 [[data-tone=brand]_&>*]:border-white/30",
                 className,
             )}
         >

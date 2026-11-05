@@ -56,7 +56,7 @@ export function ArticleDetail({ title, date, category, section, path, html, link
                         </SmartLink>
                     </p>
                 )}
-                <div className="mt-12 flex flex-col gap-8 border-t-2 border-ink pt-8 md:flex-row md:items-center md:justify-between">
+                <div className="mt-12 flex flex-col gap-8 pt-8 md:flex-row md:items-center md:justify-between">
                     <ShareLinks url={`${SITE.url}${path}`} title={`${SITE.name}｜${title}`} />
                     <TextLink href={section.href}>{backLabel}</TextLink>
                 </div>

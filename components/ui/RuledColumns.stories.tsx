@@ -5,10 +5,10 @@ const meta = {
     title: "UI/RuledColumns",
     component: RuledColumns,
     tags: ["autodocs"],
-    args: { columns: 3, weight: "strong", children: null },
+    args: { columns: 3, weight: "none", children: null },
     argTypes: {
         columns: { control: "inline-radio", options: [2, 3, 4] },
-        weight: { control: "inline-radio", options: ["strong", "light"] },
+        weight: { control: "inline-radio", options: ["none", "light"] },
     },
     render: (args) => (
         <RuledColumns {...args}>

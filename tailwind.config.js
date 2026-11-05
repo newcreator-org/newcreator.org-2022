@@ -70,11 +70,7 @@ module.exports = {
                         "--tw-prose-th-borders": "var(--nc-ink)",
                         "--tw-prose-td-borders": "var(--nc-rule)",
                         lineHeight: "1.95",
-                        h2: {
-                            borderTop: "2px solid var(--nc-ink)",
-                            paddingTop: "0.9em",
-                            marginTop: "2.4em",
-                        },
+                        h2: { marginTop: "2.4em" },
                         a: { textUnderlineOffset: "0.2em" },
                         "a:hover": { color: "var(--nc-blue-deep)" },
                         blockquote: { fontStyle: "normal", fontWeight: "500" },

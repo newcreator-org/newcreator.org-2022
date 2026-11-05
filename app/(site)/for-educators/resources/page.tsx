@@ -60,7 +60,7 @@ export default function ResourcesPage() {
                 lead="学校でのAI導入に役立つ資料を無料でダウンロードできます。導入計画の策定、教員研修、保護者説明など、様々な場面でご活用ください。"
             />
             <Section>
-                <ul className="border-t-2 border-ink">
+                <ul>
                     {RESOURCES.map((r) => (
                         <li key={r.downloadUrl} className="grid gap-6 border-b border-rule py-10 md:grid-cols-12 md:items-center md:gap-10">
                             <div className="md:col-span-8">

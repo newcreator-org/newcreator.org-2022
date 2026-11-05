@@ -7,7 +7,7 @@ export type FaqItem = { question: string; answer: ReactNode };
 /** よくある質問。details/summary で開閉（JS 不要） */
 export function Faq({ items, className }: { items: FaqItem[]; className?: string }) {
     return (
-        <div className={cn("border-t-2 border-ink", className)}>
+        <div className={cn("", className)}>
             {items.map((item, i) => (
                 <details key={i} className="group border-b border-rule">
                     <summary className="flex cursor-pointer list-none items-start gap-4 py-5 font-bold text-ink marker:hidden hover:text-brand [&::-webkit-details-marker]:hidden">

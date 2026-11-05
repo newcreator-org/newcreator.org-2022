@@ -18,7 +18,7 @@ const meta = {
         <div>
             <div className="flex h-[120vh] items-start text-small text-sub">↓ スクロール</div>
             <Reveal>
-                <p className="border-t-2 border-ink pt-5 text-h2 font-bold text-ink">学びは、どこにいても届くべきだ。</p>
+                <p className="text-h2 font-bold text-ink">学びは、どこにいても届くべきだ。</p>
             </Reveal>
         </div>
     ),

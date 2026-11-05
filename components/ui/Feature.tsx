@@ -47,7 +47,7 @@ export function Feature({
                     <img src={image} alt={imageAlt} loading="lazy" decoding="async" className="h-full w-full object-cover" />
                 </div>
             )}
-            <div className={cn(wide && "mt-6 md:col-span-5 md:mt-0", "border-t border-ink pt-5")}>
+            <div className={cn(wide && "mt-6 md:col-span-5 md:mt-0", "")}>
                 {meta && <p className="mb-2 text-small font-bold text-brand">{meta}</p>}
                 <h3 className={cn("font-bold", wide ? "text-h2" : "text-h3")}>{title}</h3>
                 <div className="mt-3 text-body text-body">{children}</div>

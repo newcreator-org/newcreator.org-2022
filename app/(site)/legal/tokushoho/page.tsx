@@ -65,7 +65,7 @@ export default function TokushohoPage() {
                     サービスの性質上、原則として返品・返金はお受けしておりません。ただし、当法人サービスは特定商取引法の対象であるため、『契約書を受け取った日』から数えて8日以内であれば、クーリングオフが可能となり、以下の金額が返金されます。
                 </p>
 
-                <div className="not-prose my-8 border-t-2 border-ink">
+                <div className="not-prose my-8">
                     <div className="border-b border-rule py-5">
                         <p className="font-bold text-ink">
                             契約解除がサービス開始前（クーリングオフ期間は経過したが、まだ授業を受けていない）

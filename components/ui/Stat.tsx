@@ -11,8 +11,8 @@ export type StatProps = {
 /** 実績の数字。数字は Inter、単位は小さく */
 export function Stat({ value, unit, label, className }: StatProps) {
     return (
-        <div className={cn("border-t border-rule pt-4", className)}>
-            <p className="nc-num text-[clamp(2.25rem,1.6rem+2.4vw,3.5rem)] font-semibold leading-none tracking-tight text-ink">
+        <div className={cn(className)}>
+            <p className="nc-num text-[clamp(2rem,1.5rem+1.8vw,2.875rem)] font-semibold leading-none tracking-tight text-ink">
                 {value}
                 {unit && <span className="ml-1 font-sans text-[0.38em] font-bold tracking-normal text-body">{unit}</span>}
             </p>

@@ -22,7 +22,7 @@ export function formatDate(date?: string): string {
 /** お知らせなどの一覧。1 行 1 件、罫線で区切る */
 export function ArticleList({ items, className }: { items: ArticleListItem[]; className?: string }) {
     return (
-        <ul className={cn("border-t border-ink", className)}>
+        <ul className={cn("", className)}>
             {items.map((item) => (
                 <li key={item.href} className="border-b border-rule">
                     <SmartLink
@@ -63,7 +63,7 @@ export type ArticleCardProps = {
 /** 記事・事例のカード。浮かせず、上の罫線で区切る */
 export function ArticleCard({ href, title, date, category, description, image, imageAlt = "", footer, className }: ArticleCardProps) {
     return (
-        <article className={cn("group relative border-t border-ink pt-5", className)}>
+        <article className={cn("group relative", className)}>
             {image && (
                 <div className="mb-5 aspect-[3/2] overflow-hidden bg-hair">
                     <img

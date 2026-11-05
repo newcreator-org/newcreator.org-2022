@@ -71,12 +71,6 @@ const SERVICES = [
     },
 ];
 
-const DONATIONS = [
-    { amount: "3,000", body: "1人の子どもが1ヶ月間プログラミング教室に参加できます" },
-    { amount: "10,000", body: "地方での出張授業1回分の交通費になります" },
-    { amount: "30,000", body: "新しい教材の開発費に充てられます" },
-];
-
 export default function HomePage() {
     const news = getAllNews().slice(0, 5);
     const archives = getAllArchives().slice(0, 4);
@@ -132,7 +126,7 @@ export default function HomePage() {
             </section>
 
             {/* ---- 協力企業・団体 ---- */}
-            <section aria-label="これまでに協力いただいた企業・学校" className="border-y border-rule bg-white py-6">
+            <section aria-label="これまでに協力いただいた企業・学校" className="bg-white py-8">
                 <LogoMarquee
                     src="/img/partner.png"
                     width={15137}
@@ -157,7 +151,7 @@ export default function HomePage() {
                 <Reveal>
                     <div className="grid gap-10 md:grid-cols-12">
                         <div className="md:col-span-5">
-                            <h2 id="why-heading" className="border-t-2 border-ink pt-5 text-h2 font-bold">
+                            <h2 id="why-heading" className="text-h2 font-bold">
                                 なぜ、私たちは
                                 <br className="hidden md:block" />
                                 これをやっているのか
@@ -224,7 +218,7 @@ export default function HomePage() {
                             <p className="text-small">{s.body}</p>
                         </Feature>
                     ))}
-                    <div className="flex flex-col justify-between border-t-2 border-ink bg-white p-6 sm:col-span-2 lg:col-span-1">
+                    <div className="flex flex-col justify-between bg-white p-6 sm:col-span-2 lg:col-span-1">
                         <div>
                             <p className="text-h3 font-bold text-ink">先生・学校関係者の方へ</p>
                             <p className="mt-3 text-small">
@@ -266,7 +260,7 @@ export default function HomePage() {
                 </div>
             </Section>
 
-            <Section tone="muted" aria-labelledby="media-heading">
+            <Section aria-labelledby="media-heading">
                 <SectionHeading
                     id="media-heading"
                     index="05"
@@ -275,7 +269,7 @@ export default function HomePage() {
                     action={<TextLink href="/media/">すべての記事を見る</TextLink>}
                 />
                 <ArticleList items={media.map((m) => ({ href: `/media/${m.id}/`, title: m.title, date: m.date, category: m.category }))} />
-                <div className="mt-16 border-t border-rule pt-10">
+                <div className="mt-16">
                     <p className="text-small font-bold text-ink">これまでの掲載</p>
                     <img
                         src="/img/media.png"
@@ -289,13 +283,13 @@ export default function HomePage() {
             </Section>
 
             {/* ---- 理事長メッセージ・法人情報 ---- */}
-            <Section aria-labelledby="message-heading">
+            <Section tone="muted" aria-labelledby="message-heading">
                 <div className="grid gap-16 lg:grid-cols-12">
                     <div className="lg:col-span-6">
-                        <h2 id="message-heading" className="border-t-2 border-ink pt-5 text-h2 font-bold">
+                        <h2 id="message-heading" className="text-h2 font-bold">
                             想い
                         </h2>
-                        <Message name="改野 由尚" role="理事長" photo="/img/member/yoshi.jpg" className="mt-10">
+                        <Message name="改野 由尚" role="理事長" photo="/img/member/yoshi-face.jpg" className="mt-10">
                             <p>
                                 不登校の子どもも、地方に住む子どもも、「ITは自分には関係ない」と思っている女の子も——どんな子どもにも、学ぶ機会は平等にあるべきだと思っています。
                             </p>
@@ -306,9 +300,9 @@ export default function HomePage() {
                         </Message>
                     </div>
                     <div className="lg:col-span-6">
-                        <h2 className="border-t-2 border-ink pt-5 text-h2 font-bold">法人情報</h2>
+                        <h2 className="text-h2 font-bold">法人情報</h2>
                         <DefinitionList
-                            className="mt-10 border-t-0"
+                            className="mt-10"
                             items={[
                                 { term: "法人名", detail: SITE.name },
                                 { term: "法人番号", detail: <span className="nc-num">3120905005839</span> },
@@ -329,39 +323,6 @@ export default function HomePage() {
                         <div className="mt-8">
                             <TextLink href="/about/company/">法人概要を見る</TextLink>
                         </div>
-                    </div>
-                </div>
-            </Section>
-
-            {/* ---- 寄付 ---- */}
-            <Section id="donation" tone="pale" aria-labelledby="donation-heading">
-                <SectionHeading
-                    id="donation-heading"
-                    title="活動を応援してください"
-                    lead="私たちの活動は300円から応援いただけます。皆さまの寄付が、子どもたちの未来を切り開く力になります。"
-                />
-                <RuledColumns columns={3}>
-                    {DONATIONS.map((d) => (
-                        <Column key={d.amount}>
-                            <p className="nc-num text-[2.5rem] font-semibold leading-none text-ink">
-                                <span className="mr-1 text-[0.6em]">¥</span>
-                                {d.amount}
-                            </p>
-                            <p className="mt-4">{d.body}</p>
-                        </Column>
-                    ))}
-                </RuledColumns>
-                <div className="mt-14 flex flex-col gap-8 border-t border-rule pt-10 md:flex-row md:items-center md:justify-between">
-                    <Button href={SITE.donateUrl} variant="donate" size="lg" arrow>
-                        クレジットカードで寄付する
-                    </Button>
-                    <div className="text-small">
-                        <p className="font-bold text-ink">銀行振込でもご支援いただけます</p>
-                        <p className="mt-1">
-                            GMOあおぞらネット銀行 法人営業部（101） <span className="nc-num">1193846</span>
-                            <br />
-                            トクヒ）ニュークリエイターオルグ
-                        </p>
                     </div>
                 </div>
             </Section>

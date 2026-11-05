@@ -5,7 +5,7 @@ export type RelatedLink = { href: string; label: string };
 /** ページ末尾の「関連情報」。罫線で区切ったリンクの一覧 */
 export function RelatedLinks({ links }: { links: RelatedLink[] }) {
     return (
-        <ul className="grid border-t-2 border-ink md:grid-cols-2 md:gap-x-10">
+        <ul className="grid md:grid-cols-2 md:gap-x-10">
             {links.map((l) => (
                 <li key={l.href} className="border-b border-rule">
                     <SmartLink
