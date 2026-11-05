@@ -1,8 +1,8 @@
 import type { Preview } from "@storybook/nextjs";
-import { Inter, Zen_Kaku_Gothic_New } from "next/font/google";
+import { Inter, Noto_Sans_JP } from "next/font/google";
 import "../styles/globals.css";
 
-const zenKaku = Zen_Kaku_Gothic_New({ weight: ["400", "500", "700"], subsets: ["latin"], preload: false, variable: "--font-zen-kaku" });
+const notoSans = Noto_Sans_JP({ weight: ["400", "500", "700"], subsets: ["latin"], preload: false, variable: "--font-noto-sans-jp" });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 const preview: Preview = {
@@ -24,7 +24,7 @@ const preview: Preview = {
     },
     decorators: [
         (Story) => (
-            <div className={`${zenKaku.variable} ${inter.variable}`} style={{ fontFamily: "var(--nc-font-ja)" }}>
+            <div className={`${notoSans.variable} ${inter.variable}`} style={{ fontFamily: "var(--nc-font-ja)" }}>
                 <Story />
             </div>
         ),

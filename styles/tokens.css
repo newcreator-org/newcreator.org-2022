@@ -26,9 +26,9 @@
   --nc-yellow-deep: #f5b730;
 
   /* ---- 書体 ---- */
-  --nc-font-ja: var(--font-zen-kaku, "Zen Kaku Gothic New"), "Hiragino Sans",
+  --nc-font-ja: var(--font-noto-sans-jp, "Noto Sans JP"), "Hiragino Sans",
     "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
-  --nc-font-num: var(--font-inter, "Inter"), var(--font-zen-kaku, "Zen Kaku Gothic New"),
+  --nc-font-num: var(--font-inter, "Inter"), var(--font-noto-sans-jp, "Noto Sans JP"),
     "Hiragino Sans", sans-serif;
 
   /* ---- 文字サイズ（流動）。PC と SP の間は画面幅で補間 ---- */
