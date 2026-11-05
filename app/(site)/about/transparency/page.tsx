@@ -34,7 +34,7 @@ const OFFICERS = [
     { role: "理事", name: "衛藤 泰地" },
     { role: "監事", name: "山下 真歩" },
 ];
-const OFFICER_TERM = "2026年9月30日〜2028年9月29日";
+const OFFICER_TERM = "2026年10月20日〜2028年10月19日";
 
 function AmountRow({ label, value, total }: { label: string; value: string; total?: boolean }) {
     return (
@@ -178,7 +178,7 @@ export default function TransparencyPage() {
                     id="officers-heading"
                     index="03"
                     title="役員名簿"
-                    lead="2026年9月30日の通常総会で選任された役員です（役員はいずれも無報酬）。"
+                    lead="2026年9月30日の通常総会で選任された役員です（任期は2026年10月20日から。役員はいずれも無報酬）。"
                 />
                 <table className="w-full border-collapse">
                     <thead>
