@@ -50,7 +50,7 @@ export default function Company() {
                       {[
                         { label: '法人名', value: '特定非営利活動法人ニュークリエイター・オルグ' },
                         { label: '設立', value: '2019年1月18日（2016年より活動開始）' },
-                        { label: '代表理事', value: '改野 由尚' },
+                        { label: '理事長', value: '改野 由尚' },
                         { label: '所在地', value: '大阪府豊中市桜の町３丁目７番７号' },
                         { label: '事業内容', value: 'IT教育事業及び啓発事業・次世代人材の育成に関する情報提供事業' },
                         { label: '連絡先', value: 'contact@newcreator.org' },
