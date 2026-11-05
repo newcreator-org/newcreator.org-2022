@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import { marked } from 'marked';
 
 const contentDirectory = path.join(process.cwd(), 'content');
 
@@ -229,4 +230,12 @@ export function getAllEducatorCaseStudies(): EducatorCaseStudy[] {
 export function getEducatorCaseStudyById(id: string): EducatorCaseStudy | null {
   const allCaseStudies = getAllEducatorCaseStudies();
   return allCaseStudies.find(post => post.id === id) || null;
+}
+
+/**
+ * Markdown を HTML にする。本文はリポジトリ内の自前の原稿だけなので、サニタイズはしない。
+ * お知らせ・アーカイブは改行をそのまま改行として扱う（旧 microCMS からの移行原稿のため）。
+ */
+export function renderMarkdown(content: string, options: { breaks?: boolean } = {}): string {
+    return marked.parse(content || "", { async: false, gfm: true, breaks: options.breaks ?? false }) as string;
 }

@@ -1,0 +1,55 @@
+/* ============================================================
+   newCreator.org Design Tokens
+   特定非営利活動法人ニュークリエイター・オルグの Web 用トークン。
+   スライド（nco-slides の deck.css）と同じ「紙面型」：白地・罫線・文字組み。
+   色はロゴのブルー1色＋黄のマーカーだけ。値を変えるときはこのファイルだけを直す。
+   一覧と使い方は Storybook の「Foundations」を参照。
+   ============================================================ */
+
+:root {
+  /* ---- 文字色・罫線（無彩色） ---- */
+  --nc-ink: #1b2126;        /* 見出し・強調 */
+  --nc-body: #3a4249;       /* 本文 */
+  --nc-sub: #6e777f;        /* 補足・日付・キャプション */
+  --nc-rule: #d6dce0;       /* 罫線 */
+  --nc-hair: #e8ecef;       /* 細い区切り・薄い面 */
+  --nc-paper: #ffffff;      /* 地 */
+  --nc-paper-2: #f6f8f9;    /* 一段沈めた地 */
+
+  /* ---- ブランド（ロゴ由来） ---- */
+  --nc-blue: #1476a6;       /* ロゴタイプ。リンク・主ボタン */
+  --nc-blue-2: #2789b9;     /* シンボルの翅 */
+  --nc-blue-deep: #0d4d6d;  /* ホバー・濃色面 */
+  --nc-light: #95d4e8;      /* シンボルの翅（濃色面の上の文字） */
+  --nc-pale: #eef6fa;       /* 淡い面 */
+  --nc-yellow: #fdca60;     /* シンボルの翅。マーカー・寄付ボタンだけに使う */
+  --nc-yellow-deep: #f5b730;
+
+  /* ---- 書体 ---- */
+  --nc-font-ja: var(--font-zen-kaku, "Zen Kaku Gothic New"), "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+  --nc-font-num: var(--font-inter, "Inter"), var(--font-zen-kaku, "Zen Kaku Gothic New"),
+    "Hiragino Sans", sans-serif;
+
+  /* ---- 文字サイズ（流動）。PC と SP の間は画面幅で補間 ---- */
+  --nc-text-display: clamp(2.125rem, 1.35rem + 3.4vw, 3.75rem);
+  --nc-text-h1: clamp(1.75rem, 1.35rem + 1.7vw, 2.625rem);
+  --nc-text-h2: clamp(1.4375rem, 1.2rem + 1vw, 2rem);
+  --nc-text-h3: clamp(1.125rem, 1.05rem + 0.3vw, 1.3125rem);
+  --nc-text-lead: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --nc-text-body: 1rem;
+  --nc-text-small: 0.875rem;
+  --nc-text-caption: 0.75rem;
+
+  /* ---- 余白 ---- */
+  --nc-gutter: clamp(1.25rem, 0.8rem + 2vw, 2.5rem);   /* 画面端の余白 */
+  --nc-section: clamp(4rem, 2.8rem + 5vw, 8rem);        /* セクションの上下 */
+  --nc-container: 1200px;
+  --nc-container-narrow: 760px;
+
+  /* ---- 動き ---- */
+  --nc-ease: cubic-bezier(0.2, 0, 0, 1);
+  --nc-duration: 180ms;
+
+  --nc-header-h: 72px;
+}
