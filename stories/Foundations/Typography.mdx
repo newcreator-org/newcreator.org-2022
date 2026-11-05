@@ -1,0 +1,44 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Foundations/Typography" />
+
+export const Row = ({ cls, token, size, use, children }) => (
+    <div style={{ borderTop: "1px solid var(--nc-rule)", padding: "20px 0" }}>
+        <div style={{ fontSize: 12, color: "var(--nc-sub)", fontFamily: "var(--nc-font-num)", marginBottom: 8 }}>
+            <code>{cls}</code> ・ {token} ・ {size} ・ {use}
+        </div>
+        <div className={cls} style={{ color: "var(--nc-ink)" }}>{children}</div>
+    </div>
+);
+
+# 文字
+
+## 書体
+
+- **和文**：Zen Kaku Gothic New（400・500・700）。`--nc-font-ja` / Tailwind の `font-sans`
+- **数字・欧文**：Inter。実績の数字・金額・日付に使う。`--nc-font-num` / `.nc-num` / `font-num`
+- どちらも `next/font` でビルド時に取り込み、自前で配信します（外部のフォント配信に依存しない）。
+- 本文は `font-feature-settings: "palt"`（約物の詰め）と字間 0.02em。見出しは `word-break: auto-phrase` で文節ごとに折り返します。
+
+## 大きさ
+
+PC と SP のあいだは画面幅に合わせて補間します（`clamp()`）。数値は「SP 〜 PC」。
+
+<Row cls="text-display font-bold" token="--nc-text-display" size="34–60px" use="トップの一番大きな見出しだけ">学びは、どこにいても届くべきだ。</Row>
+<Row cls="text-h1 font-bold" token="--nc-text-h1" size="28–42px" use="下層ページの h1（PageHeader）">私たちについて</Row>
+<Row cls="text-h2 font-bold" token="--nc-text-h2" size="23–32px" use="セクション見出し（SectionHeading）">いま、日本の子どもたちに起きていること</Row>
+<Row cls="text-h3 font-bold" token="--nc-text-h3" size="18–21px" use="段組み・カードの見出し">35万人を超える子どもが、居場所を失っている</Row>
+<Row cls="text-lead" token="--nc-text-lead" size="17–19px" use="導入文">数字ではなく、一人ひとりの子どもの話として考えてほしい。</Row>
+<Row cls="text-body" token="--nc-text-body" size="16px" use="本文（行間 1.9）">学校に行けなくなった子の中には、「学びたくない」のではなく、「学びたいのに場所がない」子がたくさんいます。オンラインで、自分のペースで、安心できる場所で学べる環境をつくることが、私たちの役割だと思っています。</Row>
+<Row cls="text-small" token="--nc-text-small" size="14px" use="カードの本文・ナビ・ボタン">教育機関向けに、安全な生成AI利用環境を提供。</Row>
+<Row cls="text-caption" token="--nc-text-caption" size="12px" use="出典・キャプション・パンくず">文部科学省「令和6年度 児童生徒の問題行動・不登校等調査」より</Row>
+
+## 数字
+
+<div className="nc-num" style={{ fontSize: 48, fontWeight: 600, color: "var(--nc-ink)" }}>1,000 ・ ¥30,000 ・ 2026.11.05</div>
+
+## マーカー
+
+強調したい語に `.nc-marker` を付けると、黄色の下線マーカーになります（スライドの `<mark>` と同じ）。1 画面に 1 か所までにしてください。
+
+<p className="text-h2 font-bold" style={{ color: "var(--nc-ink)" }}>学びは、<span className="nc-marker">どこにいても</span>届くべきだ。</p>

@@ -3,12 +3,8 @@ export default function Withus() {
         <section className="text-[#1A202C] body-font">
             <div className="container px-5 py-20 mx-auto flex flex-wrap">
                 <div className="flex flex-col text-center w-full mb-20">
-                    <h2 className="section-title text-[#1476A6] tracking-widest title-font mb-1">
-                        WITH US
-                    </h2>
-                    <h1 className="page-title font-medium title-font text-[#1A202C]">
-                        一緒に新しい教育を作りませんか？
-                    </h1>
+                    <h2 className="section-title text-[#1476A6] tracking-widest title-font mb-1">WITH US</h2>
+                    <h1 className="page-title font-medium title-font text-[#1A202C]">一緒に新しい教育を作りませんか？</h1>
                 </div>
                 <div className="flex flex-wrap -m-4">
                     <div className="p-6 lg:w-1/2 md:w-full">
@@ -21,16 +17,11 @@ export default function Withus() {
                             </svg>
                           </div> --> */}
                             <div className="flex-grow">
-                                <h2 className="section-title text-[#1A202C] title-font mb-3">
-                                    プロジェクトスタッフ
-                                </h2>
+                                <h2 className="section-title text-[#1A202C] title-font mb-3">プロジェクトスタッフ</h2>
                                 <p className="leading-relaxed text-base">
                                     教材の企画やキャンプの計画など、直接的にnewCreatorを支えてくださる方を募集しています。
                                 </p>
-                                <a
-                                    className="mt-3 text-[#1476A6] inline-flex items-center"
-                                    href="mailto:contact@newcreator.org"
-                                >
+                                <a className="mt-3 text-[#1476A6] inline-flex items-center" href="mailto:contact@newcreator.org">
                                     お問い合わせはこちら
                                     <svg
                                         fill="none"
@@ -58,16 +49,11 @@ export default function Withus() {
                             </svg>
                           </div> --> */}
                             <div className="flex-grow">
-                                <h2 className="section-title text-[#1A202C] title-font mb-3">
-                                    コラボレーター
-                                </h2>
+                                <h2 className="section-title text-[#1A202C] title-font mb-3">コラボレーター</h2>
                                 <p className="leading-relaxed text-base">
                                     オープンソース版教材の開発に是非参加してください。GitHubで管理しているため、誰でも参加可能です。
                                 </p>
-                                <a
-                                    className="mt-3 text-[#1476A6] inline-flex items-center"
-                                    href="https://github.com/newcreator-org"
-                                >
+                                <a className="mt-3 text-[#1476A6] inline-flex items-center" href="https://github.com/newcreator-org">
                                     GitHubで開発に参加
                                     <svg
                                         fill="none"
@@ -95,16 +81,11 @@ export default function Withus() {
                                         </svg>
                                       </div> --> */}
                             <div className="flex-grow">
-                                <h2 className="section-title text-[#1A202C] title-font mb-3">
-                                    企業スポンサー
-                                </h2>
+                                <h2 className="section-title text-[#1A202C] title-font mb-3">企業スポンサー</h2>
                                 <p className="leading-relaxed text-base">
                                     教育の行き届かない地域での、ＩＴ教育を広める取り組みに資金面や様々な形でのリソース提供にご協力ください。
                                 </p>
-                                <a
-                                    className="mt-3 text-[#1476A6] inline-flex items-center"
-                                    href="mailto:contact@newcreator.org"
-                                >
+                                <a className="mt-3 text-[#1476A6] inline-flex items-center" href="mailto:contact@newcreator.org">
                                     お問い合わせはこちら
                                     <svg
                                         fill="none"
@@ -132,16 +113,11 @@ export default function Withus() {
                                         </svg>
                                       </div> --> */}
                             <div className="flex-grow">
-                                <h2 className="section-title text-[#1A202C] title-font mb-3">
-                                    協力コミュニティー
-                                </h2>
+                                <h2 className="section-title text-[#1A202C] title-font mb-3">協力コミュニティー</h2>
                                 <p className="leading-relaxed text-base">
                                     newCreator教材を活用した、プログラミング教室をあなたの街や学校で実施してくださる団体を募集しています。
                                 </p>
-                                <a
-                                    className="mt-3 text-[#1476A6] inline-flex items-center"
-                                    href="mailto:contact@newcreator.org"
-                                >
+                                <a className="mt-3 text-[#1476A6] inline-flex items-center" href="mailto:contact@newcreator.org">
                                     お問い合わせはこちら
                                     <svg
                                         fill="none"

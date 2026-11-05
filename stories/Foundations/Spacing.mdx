@@ -1,0 +1,35 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Foundations/Spacing" />
+
+export const Bar = ({ label, width, note }) => (
+    <div style={{ borderTop: "1px solid var(--nc-rule)", padding: "16px 0" }}>
+        <div style={{ fontSize: 13, color: "var(--nc-ink)", fontWeight: 700 }}>{label}</div>
+        <div style={{ fontSize: 13, color: "var(--nc-sub)", margin: "4px 0 10px" }}>{note}</div>
+        <div style={{ height: 12, width, maxWidth: "100%", background: "var(--nc-blue)" }} />
+    </div>
+);
+
+# 余白と幅
+
+横の位置はすべて `Container`、縦の区切りはすべて `Section` で決めます。ページ側で `px-5` `py-20` のような値を直接書かないでください（以前のサイトはここがページごとにばらばらで、左端がそろっていませんでした）。
+
+<Bar label="--nc-gutter（px-gutter）" width="var(--nc-gutter)" note="画面端の余白。SP 20px 〜 PC 40px" />
+<Bar label="--nc-section（py-section）" width="var(--nc-section)" note="セクションの上下の余白。SP 64px 〜 PC 128px。Section spacing=compact はその 0.6 倍" />
+<Bar label="--nc-header-h（h-header）" width="var(--nc-header-h)" note="ヘッダーの高さ 72px。ページ内リンクの止まる位置もこれに合わせている" />
+
+## 幅
+
+| トークン | 値 | 使うところ |
+|---|---|---|
+| `--nc-container` / `max-w-container` | 1200px | ページの基本幅（`Container width="default"`） |
+| `--nc-container-narrow` / `max-w-narrow` | 760px | 記事・規約などの読み物（`Container width="narrow"`、`PageHeader width="narrow"`） |
+
+## グリッド
+
+- PC は 12 列（`md:grid-cols-12`）。見出し 5 列＋本文 7 列が基本（`SectionHeading layout="split"`）。
+- 段組みは `RuledColumns`（2〜4 段）、カードは `CardGrid`。段のあいだは横 40px、縦 48px。
+
+## 押せる大きさ
+
+ボタン・アイコンのリンクは高さ 44px 以上（`Button size="md"` が 44px、`lg` が 56px）。

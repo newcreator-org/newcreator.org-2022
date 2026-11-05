@@ -1,12 +1,8 @@
-const path = require("path");
-
+/** @type {import("next").NextConfig} */
 module.exports = {
-    output: "export",         // next export 廃止に伴う代替設定 (Next.js 14+)
+    // 静的書き出し（out/）を Cloudflare Workers の静的アセットとして配信する
+    output: "export",
     trailingSlash: true,
-    images: {
-        unoptimized: true,  // Cloudflare Pages対応: 画像最適化を無効化
-    },
-    sassOptions: {
-        includePaths: [path.join(__dirname, "styles")],
-    },
+    images: { unoptimized: true },
+    reactStrictMode: true,
 };
