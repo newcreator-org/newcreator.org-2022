@@ -17,7 +17,7 @@
         "@next/third-parties": "^16.4.5",
         "dayjs": "^1.10.5",
         "gray-matter": "^4.0.3",
-        "marked": "^17.0.5",
+        "marked": "^18.1.2",
         "next": "^16.4.5",
         "react": "^19.3.1",
         "react-dom": "^19.3.1"
