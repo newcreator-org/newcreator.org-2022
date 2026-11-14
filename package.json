@@ -15,7 +15,7 @@
     },
     "dependencies": {
         "@next/third-parties": "^16.4.5",
-        "dayjs": "^1.10.5",
+        "dayjs": "^1.11.23",
         "gray-matter": "^4.0.3",
         "marked": "^17.0.5",
         "next": "^16.4.5",
