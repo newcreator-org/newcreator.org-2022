@@ -19,7 +19,7 @@ import { EducatorContactCta } from "./_components/EducatorContactCta";
 export const metadata = pageMetadata({
     title: "先生・学校向けAI活用支援",
     description:
-        "学校でのAI導入を完全サポート。全国22校の実績をもとに、教員研修、授業での活用方法、セキュリティ対策まで、教育現場に寄り添った支援を提供します。ChatGPT、生成AI活用の実践ガイドと導入事例を多数掲載。",
+        "学校でのAI導入を完全サポート。全国15校以上の実績をもとに、教員研修、授業での活用方法、セキュリティ対策まで、教育現場に寄り添った支援を提供します。ChatGPT、生成AI活用の実践ガイドと導入事例を多数掲載。",
     path: "/for-educators/",
 });
 
@@ -41,7 +41,7 @@ const CHALLENGES = [
 const SERVICES = [
     {
         title: "学校向け出張研修",
-        meta: "全国10都道府県22校の実績",
+        meta: "全国10都道府県・15校以上の実績",
         body: "生徒向け・教員向けの生成AI活用研修を実施します。学校のカリキュラムや目的に応じたプログラムを設計し、実践的な内容をお届けします。",
         link: { href: "#contact", label: "研修のご依頼はこちら" },
     },
@@ -99,7 +99,7 @@ export default function ForEducatorsPage() {
                         全力でサポートします
                     </>
                 }
-                lead="生成AIの登場により、教育現場は大きな転換期を迎えています。私たちは全国10都道府県22校での実績をもとに、先生方のAI活用を研修から導入まで一貫して支援します。"
+                lead="生成AIの登場により、教育現場は大きな転換期を迎えています。私たちは全国10都道府県・15校以上での実績をもとに、先生方のAI活用を研修から導入まで一貫して支援します。"
             >
                 <div className="mt-10 flex flex-wrap gap-3">
                     <Button href="/for-educators/guides/" size="lg" arrow>
@@ -113,7 +113,7 @@ export default function ForEducatorsPage() {
 
             <Section spacing="compact">
                 <StatGrid>
-                    <Stat value="22" unit="校" label="導入実績" />
+                    <Stat value="15" unit="校以上" label="導入実績" />
                     <Stat value="10" label="都道府県" />
                     <Stat value="1,000" unit="+" label="参加生徒数" />
                     <Stat value="2016" unit="年から" label="活動開始" />

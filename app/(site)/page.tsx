@@ -140,7 +140,7 @@ export default function HomePage() {
             <Section spacing="compact">
                 <StatGrid>
                     <Stat value="1,000" unit="人以上" label="累計参加生徒数" />
-                    <Stat value="50" unit="回以上" label="ワークショップ実施回数" />
+                    <Stat value="30" unit="回以上" label="ワークショップ実施回数" />
                     <Stat value="10" unit="都道府県" label="活動地域" />
                     <Stat value="2016" unit="年から" label="活動開始" />
                 </StatGrid>
@@ -202,7 +202,7 @@ export default function HomePage() {
                 />
                 <Feature
                     layout="wide"
-                    meta="10都道府県 22校で実施"
+                    meta="10都道府県・15校以上で実施"
                     title="学校向け出張授業・登壇"
                     image="/img/works/otsumajyoshi.jpg"
                     imageAlt="学校での生成AI活用研修の様子"
